@@ -5,3 +5,4 @@ Modelica_EmbeddedSystems
 *.uses
 *.rev
 build
+debian-build

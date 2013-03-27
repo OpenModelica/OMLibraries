@@ -26,5 +26,7 @@ EOF
     cat error.log
     exit 1
   fi
+  LIB=`echo $f | sed s,/package.mo,, | sed s,.mo$,, | sed s,build/,,`
+  find "`echo $f | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "build/$LIB.hash"
 done
 rm -f test-valid.mos

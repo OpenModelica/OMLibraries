@@ -2,6 +2,7 @@
 
 ENCODING=UTF-8
 STD=3.3
+LICENSE=modelica2
 while echo $1 | grep "^--"; do
 OPT="$1"
 shift
@@ -12,6 +13,10 @@ case $OPT in
   ;;
 --std)
   STD=$1
+  shift
+  ;;
+--license)
+  LICENSE=$1
   shift
   ;;
 *)
@@ -52,6 +57,7 @@ else
 fi
 
 else # GIT
+# git --no-pager log --date=short --max-count=1 Makefile | grep Date: | cut -d\  -f4
   exit 1
 fi
 
@@ -99,6 +105,10 @@ for f in $LIBS "$@"; do
   else
     NAME="$LIB $VER"
   fi
+  if test "$TYPE" = SVN; then
+    svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*" > "build/$NAME.last_change"
+  fi
+  echo $LICENSE > "build/$NAME.license"
   rm -rf "build/$NAME" "build/$NAME.mo"
   cp -rp "$SOURCE" "build/$NAME$EXT"
 

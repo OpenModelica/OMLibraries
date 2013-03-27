@@ -1,0 +1,14 @@
+Source: @DEBNAME@
+Section: math
+Priority: optional
+Maintainer: Martin Sjölund <martin@sjoelund.se>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://openmodelica.org
+
+Package: @DEBNAME@
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: omc
+Description: @NAME@ is a Modelica library
+ @NAME@ is a Modelica library
