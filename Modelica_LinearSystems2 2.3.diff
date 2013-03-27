@@ -1,0 +1,84 @@
+diff -u -x .svn -r Modelica_EmbeddedSystems/Modelica_LinearSystems2/Internal/timeResponseSamples.mo build/Modelica_LinearSystems2 2.3/Internal/timeResponseSamples.mo
+--- Modelica_EmbeddedSystems/Modelica_LinearSystems2/Internal/timeResponseSamples.mo	2013-03-27 16:59:33.347093948 +0100
++++ build/Modelica_LinearSystems2 2.3/Internal/timeResponseSamples.mo	2013-03-27 16:59:02.543093163 +0100
+@@ -36,7 +36,7 @@
+      // set sample time:
+      dt := tSpan/1000;
+   else
+-    tSpan = 1.0;
+-    dt = 0.01;
++    tSpan := 1.0;
++    dt := 0.01;
+   end if;
+ end timeResponseSamples;
+diff -u -x .svn -r Modelica_EmbeddedSystems/Modelica_LinearSystems2/StateSpace.mo build/Modelica_LinearSystems2 2.3/StateSpace.mo
+--- Modelica_EmbeddedSystems/Modelica_LinearSystems2/StateSpace.mo	2013-03-27 16:59:33.411093953 +0100
++++ build/Modelica_LinearSystems2 2.3/StateSpace.mo	2013-03-27 16:59:02.543093163 +0100
+@@ -713,11 +713,11 @@
+ 
+       // If system has no states, modify analyze options that do not make sense
+       if nx < 1 then
+-         analyseOptions2.plotEigenValues=false;
+-         analyseOptions2.plotInvariantZeros=false;
+-         analyseOptions2.printEigenValues=false;
+-         analyseOptions2.printEigenValueProperties=false;
+-         analyseOptions2.printInvariantZeros=false;
++         analyseOptions2.plotEigenValues := false;
++         analyseOptions2.plotInvariantZeros := false;
++         analyseOptions2.printEigenValues := false;
++         analyseOptions2.printEigenValueProperties := false;
++         analyseOptions2.printInvariantZeros := false;
+       end if;
+ 
+ 
+diff -u -x .svn -r Modelica_EmbeddedSystems/Modelica_LinearSystems2/Utilities/Plot/Examples/showLinePatterns.mo build/Modelica_LinearSystems2 2.3/Utilities/Plot/Examples/showLinePatterns.mo
+--- Modelica_EmbeddedSystems/Modelica_LinearSystems2/Utilities/Plot/Examples/showLinePatterns.mo	2013-03-27 16:59:33.343093949 +0100
++++ build/Modelica_LinearSystems2 2.3/Utilities/Plot/Examples/showLinePatterns.mo	2013-03-27 16:59:02.543093163 +0100
+@@ -1,6 +1,8 @@
+-function showLinePatterns "Show the available line patterns"
+-protected
+-  Real x1[:]={0,1};
++within Modelica_LinearSystems2.Utilities.Plot.Examples;
++
++function showLinePatterns "Show the available line patterns"
++protected
++  Real x1[:]={0,1};
+   Real y1[:]=x1;
+ 
+   Real x2[:]=x1 + 0.1*ones(size(x1, 1));
+@@ -52,7 +54,7 @@
+ This function demonstrates the supported line patters defined via enumeration
+ <a href=\"modelica://Modelica_LinearSystems2.Utilities.Plot.Types.LinePattern\">Modelica_LinearSystems2.Utilities.Plot.Types.LinePattern</a>:
+ </p>
+-
+-<p><img src=\"modelica://Modelica_LinearSystems2/Resources/Images/Utilities/showLinePatterns.png\"></p>
+-</html>"));
+-end showLinePatterns;
+\ No newline at end of file
++
++<p><img src=\"modelica://Modelica_LinearSystems2/Resources/Images/Utilities/showLinePatterns.png\"></p>
++</html>"));
++end showLinePatterns;
+diff -u -x .svn -r Modelica_EmbeddedSystems/Modelica_LinearSystems2/Utilities/Plot/Examples/showPointSymbols.mo build/Modelica_LinearSystems2 2.3/Utilities/Plot/Examples/showPointSymbols.mo
+--- Modelica_EmbeddedSystems/Modelica_LinearSystems2/Utilities/Plot/Examples/showPointSymbols.mo	2013-03-27 16:59:33.343093949 +0100
++++ build/Modelica_LinearSystems2 2.3/Utilities/Plot/Examples/showPointSymbols.mo	2013-03-27 16:59:02.543093163 +0100
+@@ -1,6 +1,8 @@
+-function showPointSymbols "Show the available point symbols"
+-protected
+-  Real y1[:]=0:0.2:1.0;
++within Modelica_LinearSystems2.Utilities.Plot.Examples;
++
++function showPointSymbols "Show the available point symbols"
++protected
++  Real y1[:]=0:0.2:1.0;
+   Real x1[:]=0.01*ones(size(y1, 1));
+ 
+   Real x2[:]=x1 + 0.1*ones(size(y1, 1));
+diff -u -x .svn -r Modelica_EmbeddedSystems/Modelica_LinearSystems2/WorkInProgress/Tests/Analysis/package.order build/Modelica_LinearSystems2 2.3/WorkInProgress/Tests/Analysis/package.order
+--- Modelica_EmbeddedSystems/Modelica_LinearSystems2/WorkInProgress/Tests/Analysis/package.order	2013-03-27 16:59:33.395093952 +0100
++++ build/Modelica_LinearSystems2 2.3/WorkInProgress/Tests/Analysis/package.order	2013-03-27 16:59:02.543093163 +0100
+@@ -1,3 +1,4 @@
+ invariantZeros
+ invariantZeros2
+ fullAnalysis1
++fullAnalysisForNamesOnFile
