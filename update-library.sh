@@ -1,12 +1,17 @@
 #!/bin/sh
 
 ENCODING=UTF-8
+STD=3.3
 while echo $1 | grep "^--"; do
 OPT="$1"
 shift
 case $OPT in
 --encoding)
   ENCODING=$1
+  shift
+  ;;
+--std)
+  STD=$1
   shift
   ;;
 *)
@@ -18,7 +23,10 @@ esac
 done
 
 if test $# -lt 5 || !(test "$1" = SVN || test "$1" = GIT); then
-  echo "Usage: $0 [SVN|GIT] URL REVISION DEST [LIBRARIES]"
+  echo "Usage: $0 [flags] [SVN|GIT] URL REVISION DEST [LIBRARIES]"
+  echo "   --encoding=[UTF-8]"
+  echo "   --std=[3.3]"
+  exit 1
 fi
 TYPE="$1"
 URL="$2"
@@ -48,26 +56,52 @@ else # GIT
 fi
 
 mkdir -p build/
-while test $# -gt 0; do
-  LIB=`echo $1 | cut -d" " -f1`
-  VER=`echo $1 | cut -d" " -f2`
-  test -z "$VER" || VERSPACE=" $VER"
-  NAME="$LIB$VERSPACE"
-  shift
-  rm -rf "build/$NAME" "build/$NAME.mo"
-  echo Copy library $LIB version $VER
+if test "$*" = "all"; then
+ shift
+ CURWD=`pwd`
+ cd "$DEST"
+ for f in *.mo */package.mo; do
+   LIBS="$LIBS `echo $f | grep -v "[*]" | sed "s/ /%20/g" | sed "s,/package.mo,," | sed "s,.mo$,,"`"
+ done
+ cd "$CURWD"
+fi
+echo $LIBS
+for f in $LIBS "$@"; do
+  LIB=`echo $f | sed "s/%20/ /g" | cut -d" " -f1`
+  VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2`
+  echo Copy library $LIB version $VER from `pwd`
   if test -d "$DEST/$LIB $VER"; then
-    cp -rp "$DEST/$LIB $VER" "build/$NAME" || exit 1
+    SOURCE="$DEST/$LIB $VER"
+    EXT=""
   elif test -f "$DEST/$LIB $VER.mo"; then
-    cp -p "$DEST/$LIB $VER.mo" "build/$NAME.mo" || exit 1
+    SOURCE="$DEST/$LIB $VER.mo"
+    EXT=".mo"
   elif test -d "$DEST/$LIB"; then
-    cp -rp "$DEST/$LIB" "build/$NAME" || exit 1
+    SOURCE="$DEST/$LIB"
+    MOFILE="$DEST/$LIB/package.mo"
+    EXT=""
   elif test -f "$DEST/$LIB.mo"; then
-    cp -p "$DEST/$LIB.mo" "build/$NAME.mo" || exit 1
+    SOURCE="$DEST/$LIB.mo"
+    MOFILE="$SOURCE"
+    EXT=".mo"
   else
-    echo "Did not find library $DEST/$LIB"
+    echo "Did not find library $DEST/$LIB :("
     exit 1
   fi
+  if test -z "$VER"; then
+    VER=`./get-version.sh "$MOFILE" "$LIB" "$ENCODING" "$STD"`
+    echo "Got version $VER for $LIB"
+    if test -z "$VER"; then
+      NAME="$LIB"
+    else
+      NAME="$LIB $VER"
+    fi
+  else
+    NAME="$LIB $VER"
+  fi
+  rm -rf "build/$NAME" "build/$NAME.mo"
+  cp -rp "$SOURCE" "build/$NAME$EXT"
+
   if test -f "$NAME.patch"; then
     if ! patch -d build/ -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
