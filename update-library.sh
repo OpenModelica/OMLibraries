@@ -54,6 +54,7 @@ while test $# -gt 0; do
   test -z "$VER" || VERSPACE=" $VER"
   NAME="$LIB$VERSPACE"
   shift
+  rm -rf "build/$NAME" "build/$NAME.mo"
   echo Copy library $LIB version $VER
   if test -d "$DEST/$LIB $VER"; then
     cp -rp "$DEST/$LIB $VER" "build/$NAME" || exit 1
@@ -68,10 +69,11 @@ while test $# -gt 0; do
     exit 1
   fi
   if test -f "$NAME.patch"; then
-    if ! patch -d build/ -p3 < "$NAME.patch"; then
+    if ! patch -d build/ -p0 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi
+    echo "Applied $NAME.patch"
   fi
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "build/$NAME/package.encoding"
