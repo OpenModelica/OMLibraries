@@ -7,9 +7,9 @@ msl32:
 msl31:
 	./update-library.sh SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 5515 "MSL 3.1" "Modelica 3.1" "ModelicaServices 1.0"
 linearsystems:
-	./update-library.sh SVN https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6145 "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3"
-diff-linearsystems:
-	./diff-library.sh "Modelica_EmbeddedSystems/Modelica_LinearSystems2/" "Modelica_LinearSystems2 2.3" "Modelica_LinearSystems2 2.3.patch"
+	./update-library.sh SVN https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6147 "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3"
+#diff-linearsystems:
+#	./diff-library.sh "Modelica_EmbeddedSystems/Modelica_LinearSystems2/" "Modelica_LinearSystems2 2.3" "Modelica_LinearSystems2 2.3.patch"
 msl222:
 	./update-library.sh --encoding "Windows-1252" SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6145 "MSL 2.2.2" "Modelica 2.2.2"
 
