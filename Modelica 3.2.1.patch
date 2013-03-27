@@ -1,6 +1,6 @@
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo Modelica 3.2.1/Mechanics/MultiBody/package.mo
 --- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-01-25 21:49:43.336416132 +0100
-+++ Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-02-21 15:52:11.673485501 +0100
++++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-02-21 15:52:11.673485501 +0100
 @@ -1231,6 +1231,7 @@
      "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
      annotation (Dialog(tab="Defaults"));
@@ -50,7 +50,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
       other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/package.mo Modelica 3.2.1/Media/package.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/package.mo	2013-01-25 21:49:43.496416137 +0100
-+++ Modelica 3.2.1/Media/package.mo	2013-02-21 15:52:11.673485501 +0100
++++ build/Modelica 3.2.1/Media/package.mo	2013-02-21 15:52:11.673485501 +0100
 @@ -3567,7 +3567,7 @@
                  Inverse_sine_definition.f_nonlinear_Data(A=A, w=w);
        Real x_zero "y_zero = A*sin(w*x_zero)";
@@ -125,7 +125,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/package.mo Modelica 3
        T := h/cp_const + T0;
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo Modelica 3.2.1/Media/Water/IF97_Utilities.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-02-18 14:23:52.240727649 +0100
-+++ Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-02-21 15:52:11.677485501 +0100
++++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-02-21 15:52:11.677485501 +0100
 @@ -6824,7 +6824,7 @@
      aux.region := if region == 0 then BaseIF97.Regions.region_pT(p=p,T= T) else region;
      aux.R := BaseIF97.data.RH2O;
@@ -137,7 +137,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.
        aux.h := aux.R*aux.T*g.tau*g.gtau;
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/package.mo Modelica 3.2.1/Media/Water/package.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/Water/package.mo	2013-01-25 21:49:43.504416137 +0100
-+++ Modelica 3.2.1/Media/Water/package.mo	2013-02-21 15:52:11.677485501 +0100
++++ build/Modelica 3.2.1/Media/Water/package.mo	2013-02-21 15:52:11.677485501 +0100
 @@ -3,7 +3,7 @@
  
  

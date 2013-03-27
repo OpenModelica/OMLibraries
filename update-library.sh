@@ -69,7 +69,7 @@ while test $# -gt 0; do
     exit 1
   fi
   if test -f "$NAME.patch"; then
-    if ! patch -d build/ -p0 < "$NAME.patch"; then
+    if ! patch -d build/ -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi
