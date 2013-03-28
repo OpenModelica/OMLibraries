@@ -14,13 +14,16 @@ LICENSE=`cat "build/$NAME.license"`
 if test -f "build/$NAME.mo"; then
   EXT=".mo"
 fi
-DEBNAME="omlibrary-`echo $LIB | tr '[:upper:]_' '[:lower:]-'``test -z "$VERSION" || echo "-"`$VERSION"
+DEBNAME=`./debian-name.sh "$LIB" $VERSION`
 DEBREV=`cat "build/$NAME.last_change"`
 FULLNAME="${DEBNAME}_${DEBREV}"
 DIR="debian-build/$FULLNAME"
 DEBIAN="$DIR/debian/"
+DEPENDS=`test -f "build/$NAME.depends" && cat "build/$NAME.depends"`
+DEPENDS=`for f in $DEPENDS; do echo -n $f,; done`
 echo "Build debian package for $LIB of version $VERSION"
 echo "Debian package will be named $DEBNAME with revision $DEBREV"
+echo "$DEBNAME has dependencies $DEPENDS"
 rm -rf "$DIR" "$DIR.*" "$DIR-*"
 mkdir -p "$DIR"
 cp -r "build/$NAME$EXT" "$DIR/" || exit 1
@@ -35,7 +38,7 @@ echo "$DEBNAME has license $LICENSE"
 cp "templates/debian/copyright.$LICENSE" "$DEBIAN/copyright"
 cp "templates/debian/rules" "$DEBIAN/rules"
 echo 8 > "$DEBIAN/compat"
-sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" > "$DEBIAN/control"
+sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" | sed s"/@DEPENDS@/$DEPENDS/" > "$DEBIAN/control"
 echo "$DEBNAME ($DEBREV-1) unstable; urgency=low" > "$DEBIAN/changelog"
 echo "  * Automatic subversion build" >> "$DEBIAN/changelog"
 cat "build/$NAME.changes" >> "$DEBIAN/changelog"

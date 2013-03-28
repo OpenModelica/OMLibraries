@@ -4,7 +4,7 @@ all: Makefile.numjobs
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: msl32 msl31 linearsystems msl222
+all-work: msl32 msl31 linearsystems msl222 msl16
 
 Makefile.numjobs:
 	echo 1 > $@
@@ -17,6 +17,8 @@ msl31:
 	./update-library.sh SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 5515 "MSL 3.1" Modelica ModelicaServices
 msl222:
 	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6145 "MSL 2.2.2" all
+msl16:
+	./update-library.sh --license "modelica1.1" --std "1.x" SVN https://svn.modelica.org/projects/Modelica/tags/V1_6 939 "MSL 1.6" "Modelica 1.6"
 
 linearsystems:
 	./update-library.sh SVN https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6147 "Modelica_EmbeddedSystems" Modelica_LinearSystems2

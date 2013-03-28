@@ -8,7 +8,7 @@ Homepage: https://openmodelica.org
 
 Package: @DEBNAME@
 Architecture: all
-Depends: ${misc:Depends}
+Depends: @DEPENDS@${misc:Depends}
 Recommends: omc
 Description: @NAME@ is a Modelica library
  @NAME@ is a Modelica library
