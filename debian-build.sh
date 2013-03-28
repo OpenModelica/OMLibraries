@@ -6,12 +6,12 @@ if test $# -ne 1 || ! test -f "$1"; then
 fi
 
 mkdir -p debian-build
-LIB=`echo $1 | sed "s,build/\(.*\)/package.mo,\1,"`
+LIB=`echo $1 | sed "s,build/\(.*\).hash,\1,"`
 VERSION=`echo $LIB | grep " " | cut -d" " -f2`
 LIB=`echo $LIB | cut -d" " -f1`
 NAME="$LIB`test -z "$VERSION" || echo " "`$VERSION"
 LICENSE=`cat "build/$NAME.license"`
-if ! test "`basename "$1"`" = package.mo; then
+if test -f "build/$NAME.mo"; then
   EXT=".mo"
 fi
 DEBNAME="omlibrary-`echo $LIB | tr '[:upper:]_' '[:lower:]-'``test -z "$VERSION" || echo "-"`$VERSION"
@@ -25,7 +25,10 @@ rm -rf "$DIR" "$DIR.*" "$DIR-*"
 mkdir -p "$DIR"
 cp -r "build/$NAME$EXT" "$DIR/" || exit 1
 sed "s/@EXT@/$EXT/" "templates/debian/Makefile" | sed "s/@NAME@/$NAME/" > "$DIR/Makefile"
-(cd "debian-build" && tar czf "$FULLNAME.orig.tar.gz" "$FULLNAME") || exit 1
+if ! (cd "debian-build" && tar czf "$FULLNAME.orig.tar.gz" "$FULLNAME"); then
+  echo "Error: *** Failed to create original tarball $FULLNAME.orig.tar.gz"
+  exit 1
+fi
 #(cd "$DIR" && dh_make -p "$FULLNAME" --createorig --packageclass=i) || exit 1
 mkdir -p "$DEBIAN"
 echo "$DEBNAME has license $LICENSE"
@@ -39,5 +42,11 @@ cat "build/$NAME.changes" >> "$DEBIAN/changelog"
 echo " -- OpenModelica Build System <build@openmodelica.org>  `date -R`" >> "$DEBIAN/changelog"
 mkdir -p "$DEBIAN/source"
 echo "3.0 (quilt)" > "$DEBIAN/source/format"
-(cd "$DIR" && debuild -us -uc -S || exit 1)
-(cd "$DIR" && dpkg-buildpackage -us -uc || exit 1)
+if ! (cd "$DIR" && debuild -us -uc -S); then
+  echo "Error: *** Failed to build source package $FULLNAME"
+  exit 1
+fi
+if ! (cd "$DIR" && dpkg-buildpackage -us -uc); then
+  echo "Error: *** Failed to build package $FULLNAME"
+  exit 1
+fi

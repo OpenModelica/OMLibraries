@@ -30,7 +30,7 @@ test:
 uses:
 	find build/*.uses -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-uses.sh "$$1"' sh
 debian:
-	find build/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
+	find build/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
 
 clean:
 	rm -f *.rev *.uses  test-valid.*.mos
