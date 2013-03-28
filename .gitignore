@@ -6,3 +6,4 @@ Modelica_EmbeddedSystems
 *.rev
 build
 debian-build
+Makefile.numjobs

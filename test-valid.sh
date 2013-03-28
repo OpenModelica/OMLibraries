@@ -1,32 +1,18 @@
 #!/bin/sh
 
-# Check that all used libraries exist
-for f in build/*.uses; do
-  for l in `cat "$f" | sed "s/ /%20/g"`; do
-    LIB=`echo $l | sed "s/%20/ /g"`
-    if ! (test -f "build/$LIB"*".mo" || test -f "build/$LIB"*"/package.mo"); then
-      echo "Could not find library $LIB, used by $f"
-      exit 1
-    fi
-  done
-done
+if test $# -ne 1 || ! test -f "$1"; then
+  echo "Usage: $0 path/file.mo"
+  exit 1
+fi
 
 # Verify that all libraries parse
-rm -f error.log
-for f in build/*.mo build/*/package.mo; do
-  cat > test-valid.mos <<EOF
-b:=loadFile("$f");
+cat > test-valid.$$.mos <<EOF
+b:=loadFile("$1");
 s:=getErrorString();
 if not b then
-  writeFile("error.log","Failed to load $f:\n" + s + "\n");
+  writeFile("error.log","Failed to load $1:\n" + s + "\n",append=true);
 end if;
 EOF
-  omc test-valid.mos > /dev/null
-  if test -f error.log; then
-    cat error.log
-    exit 1
-  fi
-  LIB=`echo $f | sed s,/package.mo,, | sed s,.mo$,, | sed s,build/,,`
-  find "`echo $f | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "build/$LIB.hash"
-done
-rm -f test-valid.mos
+omc test-valid.$$.mos > /dev/null
+LIB=`echo $1 | sed s,/package.mo,, | sed s,.mo$,, | sed s,build/,,`
+find "`echo $1 | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "build/$LIB.hash"

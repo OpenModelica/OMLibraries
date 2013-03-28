@@ -360,7 +360,7 @@
       <xsl:with-param name="txt" select="substring-before($txt,'&#10;')" />
      </xsl:call-template>
      <!-- print tab -->
-     <xsl:text>&#32;&#32;&#32;</xsl:text>
+     <xsl:text>&#10;&#32;&#32;&#32;&#32;</xsl:text>
      <!-- wrap the rest of the text -->
      <xsl:call-template name="wrap">
       <xsl:with-param name="txt" select="substring-after($txt,'&#10;')" />
