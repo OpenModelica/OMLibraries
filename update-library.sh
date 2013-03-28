@@ -107,6 +107,7 @@ for f in $LIBS "$@"; do
   fi
   if test "$TYPE" = SVN; then
     svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*" > "build/$NAME.last_change"
+    svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
   fi
   echo $LICENSE > "build/$NAME.license"
   rm -rf "build/$NAME" "build/$NAME.mo"

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Check that all used libraries exist
-for f in *.uses; do
+for f in build/*.uses; do
   for l in `cat "$f" | sed "s/ /%20/g"`; do
     LIB=`echo $l | sed "s/%20/ /g"`
     if ! (test -f "build/$LIB"*".mo" || test -f "build/$LIB"*"/package.mo"); then

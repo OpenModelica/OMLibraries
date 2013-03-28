@@ -1,7 +1,7 @@
 Source: @DEBNAME@
 Section: math
 Priority: optional
-Maintainer: Martin Sjölund <martin@sjoelund.se>
+Maintainer: OpenModelica Build System <build@openmodelica.org>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: https://openmodelica.org

@@ -20,6 +20,7 @@ for f in build/Modelica*3.1/package.mo; do
   rm -rf "$DIR" "$DIR.*" "$DIR-*"
   mkdir -p "$DIR"
   cp -r "build/$NAME$EXT" "$DIR/" || exit 1
+  sed "s/@EXT@/$EXT/" "templates/debian/Makefile" | sed "s/@NAME@/$NAME/" > "$DIR/Makefile"
   (cd "debian-build" && tar czf "$FULLNAME.orig.tar.gz" "$FULLNAME") || exit 1
   #(cd "$DIR" && dh_make -p "$FULLNAME" --createorig --packageclass=i) || exit 1
   mkdir -p "$DEBIAN"
@@ -28,7 +29,11 @@ for f in build/Modelica*3.1/package.mo; do
   cp "templates/debian/rules" "$DEBIAN/rules"
   echo 8 > "$DEBIAN/compat"
   sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" > "$DEBIAN/control"
-  sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/changelog" | sed "s/@DEBREV@/$DEBREV/" | sed "s/@TIME@/`date -R`/" > "$DEBIAN/changelog"
+  echo "$DEBNAME ($DEBREV-1) unstable; urgency=low" > "$DEBIAN/changelog"
+  echo "" >> "$DEBIAN/changelog"
+  echo "* Automatic subversion build" >> "$DEBIAN/changelog"
+  cat "build/$NAME.changes" >> "$DEBIAN/changelog"
+  echo "-- OpenModelica Build System <build@openmodelica.org>  `date -R`" >> "$DEBIAN/changelog"
   mkdir -p "$DEBIAN/source"
   echo "3.0 (quilt)" > "$DEBIAN/source/format"
   (cd "$DIR" && debuild -us -uc -S || exit 1)
