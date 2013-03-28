@@ -7,3 +7,4 @@ Modelica_EmbeddedSystems
 build
 debian-build
 Makefile.numjobs
+config.done
