@@ -31,7 +31,7 @@ msl32: config.done
 	./update-library.sh SVN https://svn.modelica.org/projects/Modelica/trunk 6065 "MSL 3.2.1" all
 	# Moving ModelicaReference so there is only one package for it
 	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
-modelica3d:
+modelica3d: msl32
 	./update-library.sh SVN https://openmodelica.org/svn/OpenModelica/trunk/3rdParty/modelica3d 15181 "Modelica3D" none
 	@echo Much more work is needed for Modelica3D. We should move it to an external repository...
 	@echo Modelica3D also needs native debian builds
