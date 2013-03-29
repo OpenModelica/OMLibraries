@@ -67,7 +67,9 @@ if test "$*" = "all"; then
  CURWD=`pwd`
  cd "$DEST"
  for f in *.mo */package.mo; do
-   LIBS="$LIBS `echo $f | grep -v "[*]" | sed "s/ /%20/g" | sed "s,/package.mo,," | sed "s,.mo$,,"`"
+   if test "$f" != "package.mo"; then
+     LIBS="$LIBS `echo $f | grep -v "[*]" | sed "s/ /%20/g" | sed "s,/package.mo,," | sed "s,.mo$,,"`"
+   fi
  done
  cd "$CURWD"
 elif test "$*" = "none"; then
@@ -75,10 +77,22 @@ elif test "$*" = "none"; then
 fi
 echo $LIBS
 for f in $LIBS "$@"; do
-  LIB=`echo $f | sed "s/%20/ /g" | cut -d" " -f1`
-  VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2`
-  echo Copy library $LIB version $VER from `pwd`
-  if test -d "$DEST/$LIB $VER"; then
+  if test "$f" = "self"; then
+    LIB=`./get-name.sh "$DEST/package.mo" "$ENCODING" "$STD"`
+    VER=""
+    if test -z "$LIB"; then
+      echo "*** Error: Failed to read package name from $DEST/package.mo"
+      exit 1
+    fi
+  else
+    LIB=`echo $f | sed "s/%20/ /g" | cut -d" " -f1`
+    VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2`
+    echo Copy library $LIB version $VER from `pwd`
+  fi
+  if test "$f" = "self"; then
+    SOURCE="$DEST"
+    EXT=""
+  elif test -d "$DEST/$LIB $VER"; then
     SOURCE="$DEST/$LIB $VER"
     EXT=""
   elif test -f "$DEST/$LIB $VER.mo"; then
@@ -114,6 +128,7 @@ for f in $LIBS "$@"; do
   echo $LICENSE > "build/$NAME.license"
   rm -rf "build/$NAME" "build/$NAME.mo"
   cp -rp "$SOURCE" "build/$NAME$EXT"
+  rm -rf "build/$NAME$EXT/.svn" "build/$NAME$EXT/.git*"
 
   if test -f "$NAME.patch"; then
     if ! patch -d build/ -p1 < "$NAME.patch"; then

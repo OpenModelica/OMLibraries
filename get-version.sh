@@ -16,7 +16,7 @@ str:=sum(uses[i,1] + " " + uses[i,2] + "\n" for i in 1:size(uses,1));
 writeFile("build/$2" + (if version <> "" then (" " + version) else "") + ".uses",str);getErrorString();
 EOF
 omc "+std=$4" $MOS > /dev/null 2>&1
-VERSION=`cat "$VER"`
+VERSION=`test -f "$VER" && cat "$VER"`
 rm -f $MOS $VER
 if test -z "$VERSION"; then
   exit 1

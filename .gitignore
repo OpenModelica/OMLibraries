@@ -9,3 +9,10 @@ debian-build
 Makefile.numjobs
 config.done
 Modelica3D
+ADGenKinetics
+BondGraph
+Buildings
+IndustrialControlSystems
+LinearMPC
+OpenHydraulics
+RealTimeCoordinationLibrary

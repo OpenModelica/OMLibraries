@@ -15,4 +15,5 @@ end if;
 EOF
 omc test-valid.$$.mos > /dev/null
 LIB=`echo $1 | sed s,/package.mo,, | sed s,.mo$,, | sed s,build/,,`
+echo $1 turned to $LIB
 find "`echo $1 | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "build/$LIB.hash"

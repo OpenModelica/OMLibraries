@@ -5,6 +5,15 @@ MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6
 MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939
 MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6147
 M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
+ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2
+BONDGRAPHREV=https://github.com/modelica-3rdparty/BondGraph/trunk 2
+BUILDINGSREV=https://github.com/modelica-3rdparty/Buildings/trunk 1176
+ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 6
+LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8
+OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 17
+# This is an unexpected format... package.mo straight in trunk
+RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 8
+SVN_DIRS="MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "MSL 1.6" "Modelica3D" "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary"
 
 all: Makefile.numjobs config.done
 	rm -rf build
@@ -12,7 +21,7 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: modelica3d msl31 msl222 msl16 embeddedsystems
+all-work: modelica3d msl31 msl222 msl16 embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl
 
 config.done: Makefile
 	which rm
@@ -31,6 +40,7 @@ Makefile.numjobs:
 msl32: config.done
 	./update-library.sh SVN $(MSL32REV) "MSL 3.2.1" all
 	# Moving ModelicaReference so there is only one package for it
+	rm -rf build/ModelicaReference build/ModelicaReference.*
 	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
 modelica3d: msl32
 	./update-library.sh SVN $(M3DREV) "Modelica3D" none
@@ -60,6 +70,20 @@ embeddedsystems: config.done
 	./update-library.sh SVN $(MEMBEDDEDREV) "Modelica_EmbeddedSystems" Modelica_LinearSystems2
 #diff-linearsystems:
 #	./diff-library.sh "Modelica_EmbeddedSystems/Modelica_LinearSystems2/" "Modelica_LinearSystems2 2.3" "Modelica_LinearSystems2 2.3.patch"
+adgenkin: config.done
+	./update-library.sh SVN $(ADGENKINREV) "ADGenKinetics" all
+bondgraph: config.done
+	./update-library.sh --license "gpl3+" SVN $(BONDGRAPHREV) "BondGraph" all
+buildings: config.done
+	./update-library.sh --license "buildings" SVN $(BUILDINGSREV) "Buildings" Buildings
+ics: config.done
+	./update-library.sh SVN $(ICSREV) "IndustrialControlSystems" all
+linearmpc: config.done
+	./update-library.sh SVN $(LINEARMPCREV) "LinearMPC" all
+openhydraulics: config.done
+	./update-library.sh SVN $(OPENHYDRAULICSREV) "OpenHydraulics" all
+rtcl: config.done
+	./update-library.sh --encoding "Windows-1252" SVN $(RTCLREV) "RealTimeCoordinationLibrary" self
 
 test: config.done
 	rm -f error.log test-valid.*.mos
@@ -72,4 +96,5 @@ debian: config.done
 
 clean:
 	rm -f *.rev *.uses  test-valid.*.mos config.done
-	rm -rf "MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "MSL 1.6" Modelica3D "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3" build debian-build
+	rm -rf build debian-build $(SVN_DIRS)
+
