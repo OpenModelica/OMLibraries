@@ -70,6 +70,8 @@ if test "$*" = "all"; then
    LIBS="$LIBS `echo $f | grep -v "[*]" | sed "s/ /%20/g" | sed "s,/package.mo,," | sed "s,.mo$,,"`"
  done
  cd "$CURWD"
+elif test "$*" = "none"; then
+ shift
 fi
 echo $LIBS
 for f in $LIBS "$@"; do

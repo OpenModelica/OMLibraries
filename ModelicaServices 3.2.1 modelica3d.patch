@@ -1,0 +1,29 @@
+--- build/lib/omlibrary/ModelicaServices 3.2.1/package.mo	2013-02-21 15:52:11.689485500 +0100
++++ build/lib/omlibrary/ModelicaServices 3.2.1 modelica3d/package.mo	2013-02-21 15:52:11.713485502 +0100
+@@ -1,5 +1,5 @@
+ within ;
+-package ModelicaServices "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
++package ModelicaServices "ModelicaServices (OpenModelica implementation + Modelica3D hooks) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
+ extends Modelica.Icons.Package;
+ constant String target="OpenModelica"
+   "Target of this ModelicaServices implementation";
+@@ -650,8 +650,8 @@
+   extends Modelica.Icons.Package;
+   model Shape
+     "Different visual shapes with variable size; all data have to be set as modifiers (see info layer)"
+-    extends
+-      Modelica.Utilities.Internal.PartialModelicaServices.Animation.PartialShape;
++    extends Modelica.Utilities.Internal.PartialModelicaServices.Animation.PartialShape;
++    extends ModelicaServices.Modelica3D.PartialShape;
+ 
+     annotation (Icon(coordinateSystem(
+           preserveAspectRatio=true,
+@@ -751,7 +751,7 @@
+ annotation (
+   Protection(access=Access.hide),
+   preferredView="info",
+-  version="3.2.1",
++  version="3.2.1 modelica3d",
+   versionDate="2012-12-05",
+   versionBuild=0,
+   revisionId="$Id:: package.mo 5999 2013-02-17 01:18:46Z #$",

@@ -8,3 +8,4 @@ build
 debian-build
 Makefile.numjobs
 config.done
+Modelica3D
