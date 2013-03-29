@@ -1,9 +1,10 @@
-# Mostly a convenient location to update svn revisions at
-MSL32REV=6065
-MSL31REV=5515
-MSL22REV=6145
-MSL16REV=939
-MEMBEDDEDREV=6147
+# Mostly a convenient location to update svn revisions
+MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6065
+MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 5515
+MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6145
+MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939
+MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6147
+M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
 
 all: Makefile.numjobs config.done
 	rm -rf build
@@ -28,11 +29,11 @@ Makefile.numjobs:
 	echo 7 > $@
 	echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
 msl32: config.done
-	./update-library.sh SVN https://svn.modelica.org/projects/Modelica/trunk 6065 "MSL 3.2.1" all
+	./update-library.sh SVN $(MSL32REV) "MSL 3.2.1" all
 	# Moving ModelicaReference so there is only one package for it
 	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
 modelica3d: msl32
-	./update-library.sh SVN https://openmodelica.org/svn/OpenModelica/trunk/3rdParty/modelica3d 15181 "Modelica3D" none
+	./update-library.sh SVN $(M3DREV) "Modelica3D" none
 	@echo Much more work is needed for Modelica3D. We should move it to an external repository...
 	@echo Modelica3D also needs native debian builds
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/"
@@ -45,18 +46,18 @@ modelica3d: msl32
 	install -p -m644 "build/ModelicaServices 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/package.mo"
 	patch "build/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
 	find "build/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
-	svn info --xml "Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*" > "build/ModelicaServices 3.2.1 modelica3d.last_change"
+	echo `cat "build/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"` > "build/ModelicaServices 3.2.1 modelica3d.last_change"
 	svn log --xml --verbose "Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/ModelicaServices 3.2.1 modelica3d.changes"
 	cp "build/ModelicaServices 3.2.1.license" "build/ModelicaServices 3.2.1 modelica3d.license"
 msl31: config.done
-	./update-library.sh SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 5515 "MSL 3.1" Modelica ModelicaServices
+	./update-library.sh SVN $(MSL31REV) "MSL 3.1" Modelica ModelicaServices
 msl222: config.done
-	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6145 "MSL 2.2.2" all
+	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN $(MSL22REV) "MSL 2.2.2" all
 msl16: config.done
-	./update-library.sh --license "modelica1.1" --std "1.x" SVN https://svn.modelica.org/projects/Modelica/tags/V1_6 939 "MSL 1.6" "Modelica 1.6"
+	./update-library.sh --license "modelica1.1" --std "1.x" SVN $(MSL16REV) "MSL 1.6" "Modelica 1.6"
 
 embeddedsystems: config.done
-	./update-library.sh SVN https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6147 "Modelica_EmbeddedSystems" Modelica_LinearSystems2
+	./update-library.sh SVN $(MEMBEDDEDREV) "Modelica_EmbeddedSystems" Modelica_LinearSystems2
 #diff-linearsystems:
 #	./diff-library.sh "Modelica_EmbeddedSystems/Modelica_LinearSystems2/" "Modelica_LinearSystems2 2.3" "Modelica_LinearSystems2 2.3.patch"
 

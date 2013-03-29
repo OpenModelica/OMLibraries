@@ -1,13 +1,13 @@
 #!/bin/sh
 
 if test $# -ne 1 || ! test -f "$1"; then
-  echo "Usage: $0 path/file.mo"
+  echo "Error: *** Usage: $0 path/file.mo"
   exit 1
 fi
 
 mkdir -p debian-build
 LIB=`echo $1 | sed "s,build/\(.*\).hash,\1,"`
-VERSION=`echo $LIB | grep " " | cut -d" " -f2`
+VERSION=`echo $LIB | grep " " | cut -d" " -f2-`
 LIB=`echo $LIB | cut -d" " -f1`
 NAME="$LIB`test -z "$VERSION" || echo " "`$VERSION"
 LICENSE=`cat "build/$NAME.license"`
@@ -26,7 +26,10 @@ echo "Debian package will be named $DEBNAME with revision $DEBREV"
 echo "$DEBNAME has dependencies $DEPENDS"
 rm -rf "$DIR" "$DIR.*" "$DIR-*"
 mkdir -p "$DIR"
-cp -r "build/$NAME$EXT" "$DIR/" || exit 1
+if ! cp -r "build/$NAME$EXT" "$DIR/"; then
+  echo "Error: *** Failed to copy build/$NAME$EXT to $DIR/"
+  exit 1
+fi
 sed "s/@EXT@/$EXT/" "templates/debian/Makefile" | sed "s/@NAME@/$NAME/" > "$DIR/Makefile"
 if ! (cd "debian-build" && tar czf "$FULLNAME.orig.tar.gz" "$FULLNAME"); then
   echo "Error: *** Failed to create original tarball $FULLNAME.orig.tar.gz"
