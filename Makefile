@@ -71,4 +71,4 @@ debian: config.done
 
 clean:
 	rm -f *.rev *.uses  test-valid.*.mos config.done
-	rm -rf "MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3"
+	rm -rf "MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "MSL 1.6" Modelica3D "Modelica_EmbeddedSystems" "Modelica_LinearSystems2 2.3" build debian-build
