@@ -3,6 +3,7 @@
 ENCODING=UTF-8
 STD=3.3
 LICENSE=modelica2
+SVNOPTS="--non-interactive --username anonymous"
 while echo $1 | grep -q "^--"; do
 OPT="$1"
 shift
@@ -42,12 +43,12 @@ shift;shift;shift;shift
 if test "$TYPE" = SVN; then
 
 if ! test -d "$DEST"; then
-  svn co "-r$REVISION" "$URL" "$DEST" || exit 1
+  svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
 elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s/URL: //"`"; then
   echo "Not same URL... $URL and `svn info "$DEST" | grep ^URL: | sed "s/URL: //"`"
   rm -rf "$DEST"
-  svn co "-r$REVISION" "$URL" "$DEST" || exit 1
+  svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
 elif ! test `cat "$DEST.rev"` = $REVISION; then
   svn up "-r$REVISION" "$DEST" || exit 1
