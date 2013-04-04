@@ -51,7 +51,11 @@ elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s
   svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
 elif ! test `cat "$DEST.rev"` = $REVISION; then
-  svn up "-r$REVISION" "$DEST" || exit 1
+  if ! svn up "-r$REVISION" "$DEST"; then
+    echo "Failed to update $DEST"
+    rm -rf "$DEST"
+    exit 1
+  fi
   echo "$REVISION" > "$DEST.rev"
 else
   echo "$DEST is up to date"

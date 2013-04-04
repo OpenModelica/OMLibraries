@@ -48,6 +48,7 @@ cat "build/$NAME.changes" >> "$DEBIAN/changelog"
 echo " -- OpenModelica Build System <build@openmodelica.org>  `date -R`" >> "$DEBIAN/changelog"
 mkdir -p "$DEBIAN/source"
 echo "3.0 (quilt)" > "$DEBIAN/source/format"
+# TODO: Change to xz when all distros support it
 if ! (cd "$DIR" && debuild -us -uc -S); then
   echo "Error: *** Failed to build source package $FULLNAME"
   exit 1

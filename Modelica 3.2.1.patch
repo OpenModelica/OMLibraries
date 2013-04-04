@@ -48,81 +48,6 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
  
    /* The World object can only use the Modelica.Mechanics.MultiBody.Visualizers.Advanced.Shape model, but no
       other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/package.mo Modelica 3.2.1/Media/package.mo
---- libraries/Modelica 3.2.1/Modelica/Media/package.mo	2013-01-25 21:49:43.496416137 +0100
-+++ build/Modelica 3.2.1/Media/package.mo	2013-02-21 15:52:11.673485501 +0100
-@@ -3567,7 +3567,7 @@
-                 Inverse_sine_definition.f_nonlinear_Data(A=A, w=w);
-       Real x_zero "y_zero = A*sin(w*x_zero)";
- 
--   encapsulated package Inverse_sine_definition
-+   package Inverse_sine_definition
-         "Define sine as non-linear equation to be solved"
-         import Modelica;
-       extends Modelica.Media.Common.OneNonLinearEquation;
-@@ -5524,7 +5524,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input Temperature T "Temperature";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output SpecificEnthalpy h "Specific enthalpy at p, T, X";
-@@ -5537,7 +5537,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input SpecificEnthalpy h "Specific enthalpy";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output Temperature T "Temperature";
-@@ -5550,7 +5550,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input SpecificEnthalpy h "Specific enthalpy";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output Density d "density";
-@@ -5563,7 +5563,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input SpecificEntropy s "Specific entropy";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output Temperature T "Temperature";
-@@ -5576,7 +5576,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input SpecificEntropy s "Specific entropy";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output Density d "Density";
-@@ -5589,7 +5589,7 @@
-         extends Modelica.Icons.Function;
-         input AbsolutePressure p "Pressure";
-         input SpecificEntropy s "Specific entropy";
--        input MassFraction X[nX] "Mass fractions";
-+        input MassFraction X[:] "Mass fractions";
-         input FixedPhase phase=0
-         "2 for two-phase, 1 for one-phase, 0 if not known";
-         output SpecificEnthalpy h "specific enthalpy";
-@@ -6288,7 +6288,7 @@
-       extends Modelica.Icons.Function;
-       input AbsolutePressure p "Pressure";
-       input SpecificEnthalpy h "Specific enthalpy";
--      input MassFraction X[nX] "Mass fractions";
-+      input MassFraction X[:] "Mass fractions";
-       output Temperature T "Temperature";
-     algorithm
-       T := h/cp_const + T0;
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo Modelica 3.2.1/Media/Water/IF97_Utilities.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-02-18 14:23:52.240727649 +0100
 +++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-02-21 15:52:11.677485501 +0100
@@ -135,15 +60,3 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.
      if (aux.region == 1) then
        g := BaseIF97.Basic.g1(p, T);
        aux.h := aux.R*aux.T*g.tau*g.gtau;
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/package.mo Modelica 3.2.1/Media/Water/package.mo
---- libraries/Modelica 3.2.1/Modelica/Media/Water/package.mo	2013-01-25 21:49:43.504416137 +0100
-+++ build/Modelica 3.2.1/Media/Water/package.mo	2013-02-21 15:52:11.677485501 +0100
-@@ -3,7 +3,7 @@
- 
- 
-   extends Modelica.Icons.MaterialPropertiesPackage;
--
-+  import Modelica.Media.Water.ConstantPropertyLiquidWater.simpleWaterConstants;
- 
- package IdealSteam "Water: Steam as ideal gas from NASA source"
- 
