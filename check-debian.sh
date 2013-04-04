@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FILES=library-files
-SOURCES=library-sources
+FILES=nightly-library-files
+SOURCES=nightly-library-sources
 rm -f "$FILES" "$SOURCES"
 for f in build/*.last_change; do
   LIB=`echo $f | sed s/.last_change// | sed s,build/,,`

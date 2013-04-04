@@ -21,6 +21,12 @@ DIR="debian-build/$FULLNAME"
 DEBIAN="$DIR/debian/"
 DEPENDS=`test -f "build/$NAME.depends" && cat "build/$NAME.depends"`
 DEPENDS=`for f in $DEPENDS; do echo -n $f,; done`
+if test -f "build/$NAME.breaks"; then
+  BREAKS=`cat "build/$NAME.breaks"`
+  BREAKCMD="s/@BREAKS@/Breaks: ${BREAKS}/"
+else
+  BREAKCMD="/@BREAKS@/d"
+fi
 echo "Build debian package for $LIB of version $VERSION"
 echo "Debian package will be named $DEBNAME with revision $DEBREV"
 echo "$DEBNAME has dependencies $DEPENDS"
@@ -41,7 +47,7 @@ echo "$DEBNAME has license $LICENSE"
 cp "templates/debian/copyright.$LICENSE" "$DEBIAN/copyright"
 cp "templates/debian/rules" "$DEBIAN/rules"
 echo 8 > "$DEBIAN/compat"
-sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" | sed s"/@DEPENDS@/$DEPENDS/" > "$DEBIAN/control"
+sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" | sed s"/@DEPENDS@/$DEPENDS/" | sed "$BREAKCMD" > "$DEBIAN/control"
 echo "$DEBNAME ($DEBREV-1) unstable; urgency=low" > "$DEBIAN/changelog"
 echo "  * Automatic subversion build" >> "$DEBIAN/changelog"
 cat "build/$NAME.changes" >> "$DEBIAN/changelog"

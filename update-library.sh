@@ -20,6 +20,10 @@ case $OPT in
   LICENSE=$1
   shift
   ;;
+--breaks)
+  BREAKS=$1
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1
@@ -126,22 +130,31 @@ for f in $LIBS "$@"; do
   else
     NAME="$LIB $VER"
   fi
-  if test "$TYPE" = SVN; then
-    svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*" > "build/$NAME.last_change"
-    svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
-  fi
   echo $LICENSE > "build/$NAME.license"
   rm -rf "build/$NAME" "build/$NAME.mo"
   cp -rp "$SOURCE" "build/$NAME$EXT"
-  rm -rf "build/$NAME$EXT/.svn" "build/$NAME$EXT/.git*"
-
   if test -f "$NAME.patch"; then
     if ! patch -d build/ -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi
     echo "Applied $NAME.patch"
+    PATCHREV=`git rev-list HEAD --count "$NAME.patch" 2>/dev/null`
+    if test -z "$PATCHREV"; then
+      echo "Not a git repository. We need it to give patch revisions."
+      exit 1
+    fi
+    PATCHREV=`echo -om$PATCHREV`
   fi
+  if test "$TYPE" = SVN; then
+    echo `svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
+    svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
+  fi
+  if ! test -z "$BREAKS"; then
+    echo $BREAKS > "build/$NAME.breaks"
+  fi
+  rm -rf "build/$NAME$EXT/.svn" "build/$NAME$EXT/.git*"
+
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "build/$NAME/package.encoding"
   fi
