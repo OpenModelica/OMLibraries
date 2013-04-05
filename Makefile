@@ -12,7 +12,7 @@ ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 6
 LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8
 OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 17
 # This is an unexpected format... package.mo straight in trunk
-RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 15
+RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 17
 SVN_DIRS="MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "MSL 1.6" "Modelica3D" "Modelica_EmbeddedSystems" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary"
 
 all: Makefile.numjobs config.done
@@ -109,8 +109,12 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
 	find build/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
 	./check-debian.sh
-	diff -u nightly-library-files .remote/nightly-library-files || true
-	diff -u nightly-library-sources .remote/nightly-library-sources || true
-upload: config.done .remote/control-files .remote/pool
-	scp debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
+	diff -u .remote/nightly-library-files nightly-library-files || true
+	diff -u .remote/nightly-library-sources nightly-library-sources || true
+upload: config.done .remote/control-files .remote/pool .remote/release-command
+	diff -u .remote/nightly-library-files nightly-library-files || scp debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
 	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
+	`cat .remote/release-command`
+	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
+	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
+	./check-debian.sh
