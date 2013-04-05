@@ -16,5 +16,6 @@ IndustrialControlSystems
 LinearMPC
 OpenHydraulics
 RealTimeCoordinationLibrary
-library-files
-library-sources
+nightly-library-files
+nightly-library-sources
+.remote

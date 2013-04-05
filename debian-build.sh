@@ -27,6 +27,10 @@ if test -f "build/$NAME.breaks"; then
 else
   BREAKCMD="/@BREAKS@/d"
 fi
+if grep -q "$FULLNAME-1_all.deb" .remote/nightly-library-files; then
+  echo "$FULLNAME-1_all.deb already built - skipping"
+  exit 0
+fi
 echo "Build debian package for $LIB of version $VERSION"
 echo "Debian package will be named $DEBNAME with revision $DEBREV"
 echo "$DEBNAME has dependencies $DEPENDS"

@@ -1,5 +1,5 @@
 # Mostly a convenient location to update svn revisions
-MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6210
+MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6212
 MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200
 MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200
 MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939
@@ -92,9 +92,6 @@ test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos
 uses: config.done Makefile.numjobs
 	find build/*.uses -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-uses.sh "$$1"' sh
-debian: config.done Makefile.numjobs
-	find build/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
-	./check-debian.sh
 clean:
 	rm -f *.rev *.uses  test-valid.*.mos config.done
 	rm -rf build debian-build $(SVN_DIRS)
@@ -102,3 +99,18 @@ clean:
 check-latest: config.done Makefile.numjobs
 	echo "Looking for more recent versions of packages"
 	find $(SVN_DIRS) -prune -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-latest.sh "$$1"' sh
+
+# .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
+# .remote/pool: Directory where the deb-packages and sources should be stored
+debian: config.done Makefile.numjobs .remote/control-files .remote/pool
+	rm -rf debian-build
+	mkdir -p debian-build
+	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
+	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
+	find build/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
+	./check-debian.sh
+	diff -u nightly-library-files .remote/nightly-library-files || true
+	diff -u nightly-library-sources .remote/nightly-library-sources || true
+upload: config.done .remote/control-files .remote/pool
+	scp debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
+	scp .remote/nightly-library-files .remote/nightly-library-sources "`cat .remote/control-files`"

@@ -9,8 +9,11 @@ for f in build/*.last_change; do
   REV=`cat "$f"`
   SRC=`echo ${NAME}_$REV-1.dsc`
   DEB=`echo ${NAME}_$REV-1_all.deb`
-  if ! (test -f "debian-build/$DEB" && test -f "debian-build/$SRC"); then
+  if grep -q "$DEB" ".remote/nightly-library-files" && grep -q "$SRC" ".remote/nightly-library-sources"; then
+    true
+  elif ! (test -f "debian-build/$DEB" && test -f "debian-build/$SRC"); then
     echo "Error: Could not find $DEB and $SRC"
+    exit 1
   fi
   echo $DEB >> "$FILES"
   echo $SRC >> "$SOURCES"
