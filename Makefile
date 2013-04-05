@@ -7,7 +7,7 @@ MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 62
 M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
 ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2
 BONDGRAPHREV=https://github.com/modelica-3rdparty/BondGraph/trunk 2
-BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1288
+BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1292
 ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 6
 LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8
 OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 17
@@ -113,4 +113,4 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	diff -u nightly-library-sources .remote/nightly-library-sources || true
 upload: config.done .remote/control-files .remote/pool
 	scp debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
-	scp .remote/nightly-library-files .remote/nightly-library-sources "`cat .remote/control-files`"
+	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
