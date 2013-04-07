@@ -145,6 +145,8 @@ for f in $LIBS "$@"; do
       exit 1
     fi
     PATCHREV=`echo -om$PATCHREV`
+  else
+    PATCHREV=""
   fi
   if test "$TYPE" = SVN; then
     echo `svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"

@@ -7,7 +7,7 @@ MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 62
 M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
 ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2
 BONDGRAPHREV=https://github.com/modelica-3rdparty/BondGraph/trunk 2
-BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1292
+BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1304
 ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 6
 LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8
 OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 17
@@ -39,7 +39,7 @@ Makefile.numjobs:
 	echo 7 > $@
 	echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
 msl32: config.done
-	./update-library.sh --breaks omlibrary-msl32 SVN $(MSL32REV) "MSL 3.2.1" all
+	./update-library.sh --breaks omlibrary-msl32,omlibrary-reference SVN $(MSL32REV) "MSL 3.2.1" all
 	# Moving ModelicaReference so there is only one package for it
 	rm -rf build/ModelicaReference build/ModelicaReference.*
 	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
