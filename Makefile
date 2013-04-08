@@ -1,4 +1,4 @@
-# Mostly a convenient location to update svn revisions
+# Mostly a convenient location to update svn revisions.
 MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6212
 MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200
 MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200
