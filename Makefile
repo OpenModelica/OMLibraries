@@ -1,5 +1,5 @@
 # Mostly a convenient location to update svn revisions
-MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6212
+MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6221
 MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200
 MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200
 MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939
@@ -7,10 +7,10 @@ MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 62
 M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
 ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2
 BONDGRAPHREV=https://github.com/modelica-3rdparty/BondGraph/trunk 2
-BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1304
+BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1315
 ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 6
 LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8
-OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 17
+OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 26
 # This is an unexpected format... package.mo straight in trunk
 RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 17
 SVN_DIRS="MSL 3.2.1" "MSL 2.2.2" "MSL 3.1" "MSL 1.6" "Modelica3D" "Modelica_EmbeddedSystems" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary"
