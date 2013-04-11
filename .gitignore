@@ -17,6 +17,9 @@ IndustrialControlSystems
 LinearMPC
 OpenHydraulics
 RealTimeCoordinationLibrary
+EEnStorage
+InstantaneousSymmetricalComponents
+PowerFlow
 nightly-library-files
 nightly-library-sources
 .remote
