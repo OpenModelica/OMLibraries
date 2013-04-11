@@ -3,6 +3,7 @@ MSL32REV=https://svn.modelica.org/projects/Modelica/trunk 6221
 MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200
 MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200
 MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939
+NEWTABLES=https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica 6223
 MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6215
 M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16
 ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2
@@ -21,7 +22,7 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: modelica3d msl31 msl222 msl16 embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl
+all-work: modelica3d msl31 msl222 msl16 newtables embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl
 
 config.done: Makefile
 	which rm > /dev/null
@@ -67,6 +68,8 @@ msl222: config.done
 	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN $(MSL22REV) "MSL 2.2.2" all
 msl16: config.done
 	./update-library.sh --license "modelica1.1" --std "1.x" SVN $(MSL16REV) "MSL 1.6" "Modelica 1.6"
+newtables: config.done
+	./update-library.sh SVN $(NEWTABLES) "NewTables" all
 
 embeddedsystems: config.done
 	./update-library.sh SVN $(MEMBEDDEDREV) "Modelica_EmbeddedSystems" Modelica_LinearSystems2
