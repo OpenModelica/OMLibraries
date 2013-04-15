@@ -6,8 +6,9 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: config.done Makefile.numJobs
-	./update-library.py -n `cat Makefile.numJobs`
+all-work: config.done Makefile.numjobs
+	mkdir -p build
+	./update-library.py -n `cat Makefile.numjobs`
 	$(MAKE) modelica3d
 config.done: Makefile
 	which rm > /dev/null
@@ -24,15 +25,8 @@ config.done: Makefile
 Makefile.numjobs:
 	@echo 7 > $@
 	@echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
-msl321: config.done
-	./update-library.sh --breaks omlibrary-msl32,omlibrary-reference SVN $(MSL321REV) all
-	# Moving ModelicaReference so there is only one package for it
-	rm -rf build/ModelicaReference build/ModelicaReference.*
-	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
-modelica3d: msl321
-	./update-library.sh SVN $(M3DREV) none
-	@echo Much more work is needed for Modelica3D. We should move it to an external repository...
-	@echo Modelica3D also needs native debian builds
+modelica3d:
+	@echo Much more work is needed for Modelica3D. For now the native builds are part of the omc packages
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/"
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modbus"
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modcount"
@@ -62,7 +56,7 @@ clean:
 
 check-latest: config.done Makefile.numjobs
 	@echo "Looking for more recent versions of packages"
-	find $(SVN_DIRS) -prune -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-latest.sh "$$1"' sh
+	./update-library.py -n `cat Makefile.numjobs` --check-latest
 
 # .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
 # .remote/pool: Directory where the deb-packages and sources should be stored

@@ -1,11 +1,14 @@
 {
   "provided": ["Modelica 3.2"],
+  "provides": {"Modelica 3.2.1":"omlib-modelica-3.2"},
+  "github-repos": ["https://api.github.com/users/modelica-3rdParty/repos"],
+  "github-ignore": ["https://github.com/modelica-3rdparty/Buildings"],
   "repos": [
     {
       "dest": "MSL 3.2.1",
-      "options":{"breaks":"omlibrary-msl32,omlibrary-reference","provides":"omlib-modelica-3.2"},
+      "options":{"breaks":"omlibrary-msl32,omlibrary-reference"},
       "rev": 6226,
-      "targets":["Complex","Modelica","ModelicaReference","ModelicaServices","ObsoleteModelica3"],
+      "targets":["Complex","Modelica","ModelicaReference none","ModelicaServices","ModelicaTest","ObsoleteModelica3"],
       "url": "https://svn.modelica.org/projects/Modelica/trunk"
     },
     {
@@ -69,6 +72,7 @@
     },
     {
       "dest": "IndustrialControlSystems",
+      "options":{"encoding":"Windows-1252"},
       "rev": 7,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
     },

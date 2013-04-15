@@ -127,6 +127,8 @@ for f in $LIBS "$@"; do
     else
       NAME="$LIB $VER"
     fi
+  elif test "$VER" = "none"; then
+    NAME="$LIB"
   else
     NAME="$LIB $VER"
   fi
