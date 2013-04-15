@@ -1,22 +1,3 @@
-# Mostly a convenient location to update svn revisions
-MSL321REV=https://svn.modelica.org/projects/Modelica/trunk 6226 "MSL 3.2.1"
-MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200 "MSL 3.1"
-MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200 "MSL 2.2.2"
-BIOCHEMREV=https://github.com/OpenModelica/BioChem/trunk 1 "BioChem"
-MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939 "MSL 1.6"
-NEWTABLESREV=https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica 6245 "NewTables"
-MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6251 "Modelica_EmbeddedSystems"
-M3DREV=https://github.com/OpenModelica/modelica3d/trunk 16 "Modelica3D"
-ADGENKINREV=https://github.com/modelica-3rdparty/ADGenKinetics/trunk 2 "ADGenKinetics"
-BONDGRAPHREV=https://github.com/modelica-3rdparty/BondGraph/trunk 2 "BondGraph"
-BUILDINGSREV=https://github.com/lbl-srg/modelica-buildings/trunk 1323 "Buildings"
-ICSREV=https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk 7 "IndustrialControlSystems"
-LINEARMPCREV=https://github.com/modelica-3rdparty/LinearMPC/trunk 8 "LinearMPC"
-OPENHYDRAULICSREV=https://github.com/modelica-3rdparty/OpenHydraulics/trunk 26 "OpenHydraulics"
-RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 17 "RealTimeCoordinationLibrary"
-POWERFLOWREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk 6234 "PowerFlow"
-EENSTORAGEREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages 6236 "EEnStorage"
-INSTSYMMCOMPREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents 6234 "InstantaneousSymmetricalComponents"
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 all: Makefile.numjobs config.done
@@ -25,8 +6,9 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: modelica3d msl31 msl222 msl16 biochem newtables embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl eenstorage powerflow instsymmcomp
-
+all-work: config.done Makefile.numJobs
+	./update-library.py -n `cat Makefile.numJobs`
+	$(MAKE) modelica3d
 config.done: Makefile
 	which rm > /dev/null
 	which svn > /dev/null
@@ -44,9 +26,6 @@ Makefile.numjobs:
 	@echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
 msl321: config.done
 	./update-library.sh --breaks omlibrary-msl32,omlibrary-reference SVN $(MSL321REV) all
-	# MSL 3.2.1 is MSL 3.2-compatible
-	echo "omlib-modelica-3.2" > "build/Modelica 3.2.1.provides"
-	touch "build/Modelica 3.2.provided"
 	# Moving ModelicaReference so there is only one package for it
 	rm -rf build/ModelicaReference build/ModelicaReference.*
 	for f in "build/ModelicaReference 3.2.1"*; do mv "$$f" "`echo $$f | sed 's/ 3.2.1//'`"; done
@@ -68,41 +47,6 @@ modelica3d: msl321
 	svn log --xml --verbose "Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/ModelicaServices 3.2.1 modelica3d.changes"
 	cp "build/ModelicaServices 3.2.1.license" "build/ModelicaServices 3.2.1 modelica3d.license"
 	echo "deb:libmodelica3d" >> "build/ModelicaServices 3.2.1 modelica3d.uses"
-msl31: config.done
-	./update-library.sh SVN $(MSL31REV) Modelica ModelicaServices
-msl222: config.done
-	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN $(MSL22REV) all
-msl16: config.done
-	./update-library.sh --encoding "Windows-1252" --license "modelica1.1" --std "1.x" SVN $(MSL16REV) "Modelica 1.6"
-biochem: config.done
-	./update-library.sh SVN $(BIOCHEMREV) all
-newtables: config.done
-	./update-library.sh SVN $(NEWTABLESREV) all
-
-embeddedsystems: config.done
-	./update-library.sh SVN $(MEMBEDDEDREV) Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Synchronous
-#diff-linearsystems:
-#	./diff-library.sh "Modelica_EmbeddedSystems/Modelica_LinearSystems2/" "Modelica_LinearSystems2 2.3" "Modelica_LinearSystems2 2.3.patch"
-adgenkin: config.done
-	./update-library.sh SVN $(ADGENKINREV) all
-bondgraph: config.done
-	./update-library.sh --license "gpl3+" SVN $(BONDGRAPHREV) all
-buildings: config.done
-	./update-library.sh --license "buildings" SVN $(BUILDINGSREV) Buildings
-ics: config.done
-	./update-library.sh --encoding "Windows-1252" SVN $(ICSREV) all
-linearmpc: config.done
-	./update-library.sh SVN $(LINEARMPCREV) all
-openhydraulics: config.done
-	./update-library.sh SVN $(OPENHYDRAULICSREV) all
-rtcl: config.done
-	./update-library.sh --encoding "Windows-1252" SVN $(RTCLREV) self
-eenstorage: config.done
-	./update-library.sh SVN $(EENSTORAGEREV) all
-powerflow: config.done
-	./update-library.sh SVN $(POWERFLOWREV) all
-instsymmcomp: config.done
-	./update-library.sh SVN $(INSTSYMMCOMPREV) all
 
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos

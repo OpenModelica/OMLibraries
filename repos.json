@@ -1,0 +1,108 @@
+{
+  "provided": ["Modelica 3.2"],
+  "repos": [
+    {
+      "dest": "MSL 3.2.1",
+      "options":{"breaks":"omlibrary-msl32,omlibrary-reference","provides":"omlib-modelica-3.2"},
+      "rev": 6226,
+      "targets":["Complex","Modelica","ModelicaReference","ModelicaServices","ObsoleteModelica3"],
+      "url": "https://svn.modelica.org/projects/Modelica/trunk"
+    },
+    {
+      "dest": "MSL 3.1",
+      "rev": 6200,
+      "targets":["Modelica","ModelicaServices"],
+      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1"
+    },
+    {
+      "dest": "MSL 2.2.2",
+      "options":{"encoding":"Windows-1252","license":"modelica1.1","std":"2.x"},
+      "rev": 6200,
+      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
+    },
+    {
+      "dest": "BioChem",
+      "rev": 1,
+      "url": "https://github.com/OpenModelica/BioChem/trunk"
+    },
+    {
+      "dest": "MSL 1.6",
+      "options":{"encoding":"Windows-1252","license":"modelica1.1","std":"1.x"},
+      "rev": 939,
+      "targets":["Modelica 1.6"],
+      "url": "https://svn.modelica.org/projects/Modelica/tags/V1_6"
+    },
+    {
+      "dest": "NewTables",
+      "rev": 6245,
+      "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
+    },
+    {
+      "dest": "Modelica_EmbeddedSystems",
+      "rev": 6251,
+      "targets":["Modelica_DeviceDrivers","Modelica_LinearSystems2","Modelica_Synchronous"],
+      "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
+    },
+    {
+      "dest": "Modelica3D",
+      "rev": 16,
+      "targets":["none"],
+      "url": "https://github.com/OpenModelica/modelica3d/trunk"
+    },
+    {
+      "dest": "ADGenKinetics",
+      "rev": 2,
+      "url": "https://github.com/modelica-3rdparty/ADGenKinetics/trunk"
+    },
+    {
+      "dest": "BondGraph",
+      "options":{"license":"gpl3+"},
+      "rev": 2,
+      "url": "https://github.com/modelica-3rdparty/BondGraph/trunk"
+    },
+    {
+      "dest": "Buildings",
+      "options":{"license":"buildings"},
+      "rev": 1323,
+      "targets":["Buildings"],
+      "url": "https://github.com/lbl-srg/modelica-buildings/trunk"
+    },
+    {
+      "dest": "IndustrialControlSystems",
+      "rev": 7,
+      "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
+    },
+    {
+      "dest": "LinearMPC",
+      "rev": 8,
+      "url": "https://github.com/modelica-3rdparty/LinearMPC/trunk"
+    },
+    {
+      "dest": "OpenHydraulics",
+      "rev": 26,
+      "url": "https://github.com/modelica-3rdparty/OpenHydraulics/trunk"
+    },
+    {
+      "dest": "RealTimeCoordinationLibrary",
+      "options":{"encoding":"Windows-1252"},
+      "rev": 17,
+      "targets":["self"],
+      "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk"
+    },
+    {
+      "dest": "PowerFlow",
+      "rev": 6234,
+      "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
+    },
+    {
+      "dest": "Modelica_ElectricalEnergyStorages",
+      "rev": 6236,
+      "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
+    },
+    {
+      "dest": "InstantaneousSymmetricalComponents",
+      "rev": 6234,
+      "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents"
+    }
+  ]
+}
