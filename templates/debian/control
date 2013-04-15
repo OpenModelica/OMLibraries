@@ -10,6 +10,7 @@ Package: @DEBNAME@
 Architecture: all
 Depends: @DEPENDS@${misc:Depends}
 @BREAKS@
+@PROVIDES@
 Recommends: omc
 Description: @NAME@ is a Modelica library
  @NAME@ is a Modelica library

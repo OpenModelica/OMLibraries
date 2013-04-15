@@ -27,6 +27,12 @@ if test -f "build/$NAME.breaks"; then
 else
   BREAKCMD="/@BREAKS@/d"
 fi
+if test -f "build/$NAME.provides"; then
+  PROVIDES=`cat "build/$NAME.provides"`
+  PROVIDESCMD="s/@PROVIDES@/Provides: ${PROVIDES}/"
+else
+  PROVIDESCMD="/@PROVIDES@/d"
+fi
 if grep -q "$FULLNAME-1_all.deb" .remote/nightly-library-files; then
   echo "$FULLNAME-1_all.deb already built - skipping"
   exit 0
@@ -51,7 +57,7 @@ echo "$DEBNAME has license $LICENSE"
 cp "templates/debian/copyright.$LICENSE" "$DEBIAN/copyright"
 cp "templates/debian/rules" "$DEBIAN/rules"
 echo 8 > "$DEBIAN/compat"
-sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" | sed s"/@DEPENDS@/$DEPENDS/" | sed "$BREAKCMD" > "$DEBIAN/control"
+sed "s/@DEBNAME@/$DEBNAME/" "templates/debian/control" | sed "s/@NAME@/$NAME/" | sed s"/@DEPENDS@/$DEPENDS/" | sed "$BREAKCMD" | sed "$PROVIDESCMD" > "$DEBIAN/control"
 echo "$DEBNAME ($DEBREV-1) unstable; urgency=low" > "$DEBIAN/changelog"
 echo "  * Automatic subversion build" >> "$DEBIAN/changelog"
 cat "build/$NAME.changes" >> "$DEBIAN/changelog"
