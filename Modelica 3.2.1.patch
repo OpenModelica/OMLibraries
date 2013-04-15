@@ -1,6 +1,6 @@
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo Modelica 3.2.1/Mechanics/MultiBody/package.mo
 --- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-01-25 21:49:43.336416132 +0100
-+++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-02-21 15:52:11.673485501 +0100
++++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-04-15 15:52:11.673485501 +0100
 @@ -1231,6 +1231,7 @@
      "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
      annotation (Dialog(tab="Defaults"));
