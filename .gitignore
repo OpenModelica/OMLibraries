@@ -12,6 +12,7 @@ config.done
 Modelica3D
 ADGenKinetics
 BondGraph
+BioChem
 Buildings
 IndustrialControlSystems
 LinearMPC

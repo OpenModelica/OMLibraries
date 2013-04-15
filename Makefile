@@ -2,6 +2,7 @@
 MSL321REV=https://svn.modelica.org/projects/Modelica/trunk 6226 "MSL 3.2.1"
 MSL31REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1 6200 "MSL 3.1"
 MSL22REV=https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2 6200 "MSL 2.2.2"
+BIOCHEMREV=https://github.com/OpenModelica/BioChem/trunk 1 "BioChem"
 MSL16REV=https://svn.modelica.org/projects/Modelica/tags/V1_6 939 "MSL 1.6"
 NEWTABLESREV=https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica 6245 "NewTables"
 MEMBEDDEDREV=https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk 6251 "Modelica_EmbeddedSystems"
@@ -16,7 +17,7 @@ RTCLREV=https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk 1
 POWERFLOWREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk 6234 "PowerFlow"
 EENSTORAGEREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages 6236 "EEnStorage"
 INSTSYMMCOMPREV=https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents 6234 "InstantaneousSymmetricalComponents"
-SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
+SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 all: Makefile.numjobs config.done
 	rm -rf build
@@ -24,7 +25,7 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	$(MAKE) test uses
 	$(MAKE) debian
-all-work: modelica3d msl31 msl222 msl16 newtables embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl eenstorage powerflow instsymmcomp
+all-work: modelica3d msl31 msl222 msl16 biochem newtables embeddedsystems adgenkin bondgraph buildings ics linearmpc openhydraulics rtcl eenstorage powerflow instsymmcomp
 
 config.done: Makefile
 	which rm > /dev/null
@@ -73,6 +74,8 @@ msl222: config.done
 	./update-library.sh --encoding "Windows-1252" --std "2.x" --license "modelica1.1" SVN $(MSL22REV) all
 msl16: config.done
 	./update-library.sh --encoding "Windows-1252" --license "modelica1.1" --std "1.x" SVN $(MSL16REV) "Modelica 1.6"
+biochem: config.done
+	./update-library.sh SVN $(BIOCHEMREV) all
 newtables: config.done
 	./update-library.sh SVN $(NEWTABLESREV) all
 
