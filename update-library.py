@@ -75,6 +75,7 @@ elif options.add_missing:
     print "Adding entry",entry
     jsondata['repos'].append(entry)
   f = open("repos.json","w")
+  jsondata['repos'] = sorted(jsondata['repos'], key=lambda k: k['dest']) 
   simplejson.dump(jsondata, f, indent=2, sort_keys=True)
 else:
   sys.exit(update())
