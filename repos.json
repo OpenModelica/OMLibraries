@@ -2,7 +2,6 @@
   "github-ignore": [
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/DESLib",
-    "https://github.com/modelica-3rdparty/MotorcycleDynamics",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
@@ -173,6 +172,11 @@
         "Modelica_Synchronous"
       ],
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
+    },
+    {
+      "dest": "MotorcycleDynamics",
+      "rev": 8,
+      "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master"
     },
     {
       "dest": "NewTables",
