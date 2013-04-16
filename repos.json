@@ -16,6 +16,7 @@
   ],
   "provided": [
     "Complex 1.0",
+    "Modelica 3.0",
     "Modelica 3.2",
     "ModelicaServices 3.2",
     "Modelica 2.2.1"
@@ -23,7 +24,7 @@
   "provides": {
     "Complex 3.2.1": "omlib-complex-1.0",
     "Modelica 2.2.2": "omlib-modelica-2.2.1",
-    "Modelica 3.2.1": "omlib-modelica-3.2",
+    "Modelica 3.2.1": "omlib-modelica-3.2,omlib-modelica-3.0",
     "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2"
   },
   "repos": [
@@ -63,6 +64,11 @@
         "Buildings"
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings/trunk"
+    },
+    {
+      "dest": "ComplexLib",
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/ComplexLib/trunk"
     },
     {
       "dest": "ExtendedPetriNets",
@@ -214,6 +220,11 @@
         "self"
       ],
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk"
+    },
+    {
+      "dest": "SPOT",
+      "rev": 6,
+      "url": "https://github.com/modelica-3rdparty/SPOT/trunk"
     },
     {
       "dest": "SystemDynamics",
