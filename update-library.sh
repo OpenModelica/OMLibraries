@@ -159,6 +159,9 @@ for f in $LIBS "$@"; do
   fi
   rm -rf "build/$NAME$EXT/.svn" "build/$NAME$EXT/.git*"
 
+  if ! test "$STD" = "3.3"; then
+    echo "$STD" > "build/$NAME.std"
+  fi
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "build/$NAME/package.encoding"
   fi

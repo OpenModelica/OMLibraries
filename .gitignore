@@ -25,3 +25,15 @@ PowerFlow
 nightly-library-files
 nightly-library-sources
 .remote
+BondLib
+DESLib
+HelmholtzMedia
+MoMoLib
+MotorcycleDynamics
+MotorcycleLib
+MultiBondLib
+QSSFluidFlow
+ThermoBondLib
+Verif
+WasteWater
+WheelsAndTires

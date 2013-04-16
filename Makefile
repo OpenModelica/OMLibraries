@@ -57,6 +57,9 @@ clean:
 check-latest: config.done Makefile.numjobs
 	@echo "Looking for more recent versions of packages"
 	./update-library.py -n `cat Makefile.numjobs` --check-latest
+add-missing: config.done Makefile.numjobs
+	@echo "Adding missing github repositories using trunk / latest revision"
+	./update-library.py -n `cat Makefile.numjobs` --add-missing
 
 # .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
 # .remote/pool: Directory where the deb-packages and sources should be stored

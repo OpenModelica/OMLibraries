@@ -5,10 +5,12 @@ import sys
 import simplejson
 from joblib import Parallel, delayed
 from optparse import OptionParser
+import subprocess
 
 parser = OptionParser()
 parser.add_option("-n", type="int", help="number of threads", dest="n_jobs", default=1)
 parser.add_option("--check-latest", help="check for latest svn version", action="store_true", dest="check_latest")
+parser.add_option("--add-missing", help="add missing github svn repositories", action="store_true", dest="add_missing")
 (options, args) = parser.parse_args()
 n_jobs = options.n_jobs
 
@@ -48,16 +50,31 @@ def findPrefix(pre,strs):
       return True
   return False
 
-if options.check_latest:
-  Parallel(n_jobs=n_jobs)(delayed(os.system)('./check-latest.sh "%s"' % repo['dest']) for repo in repos)
-  urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
-  for gh in jsondata['github-repos']:
+def checkGithub(ghs,urls):
+  res = []
+  for gh in ghs:
     r = requests.get(gh)
     if(r.ok):
       for repo in simplejson.loads(r.text or r.content):
         if not findPrefix(repo['svn_url'],urls):
-          print "Repository not in database: %s" % repo['svn_url']
+          res.append(repo)
     else:
-      print "GitHub request failed"
+      raise "GitHub request failed"
+  return res
+
+if options.check_latest:
+  Parallel(n_jobs=n_jobs)(delayed(os.system)('./check-latest.sh "%s"' % repo['dest']) for repo in repos)
+  urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
+  for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
+elif options.add_missing:
+  urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
+  for repo in checkGithub(jsondata['github-repos'],urls):
+    url = repo['svn_url'] + "/trunk"
+    rev = int(subprocess.check_output("svn info --xml '%s' | xpath -q -e '/info/entry/commit/@revision' | grep -o '[0-9]*'" % url, shell=True))
+    entry = {'dest':repo['name'],'rev':rev,'url':url}
+    print "Adding entry",entry
+    jsondata['repos'].append(entry)
+  f = open("repos.json","w")
+  simplejson.dump(jsondata, f, indent=2, sort_keys=True)
 else:
   sys.exit(update())

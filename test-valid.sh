@@ -13,7 +13,11 @@ if not b then
   writeFile("error.log","Failed to load $1:\n" + s + "\n",append=true);
 end if;
 EOF
-omc test-valid.$$.mos > /dev/null
 LIB=`echo $1 | sed s,/package.mo,, | sed s,.mo$,, | sed s,build/,,`
+if test -f "build/$LIB.std"; then
+  STD=`cat "build/$LIB.std"`
+  STD="+std=$STD"
+fi
+omc $STD test-valid.$$.mos > /dev/null
 echo $1 turned to $LIB
 find "`echo $1 | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "build/$LIB.hash"

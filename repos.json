@@ -1,25 +1,62 @@
 {
-  "provided": ["Modelica 3.2"],
-  "provides": {"Modelica 3.2.1":"omlib-modelica-3.2"},
-  "github-repos": ["https://api.github.com/users/modelica-3rdParty/repos"],
-  "github-ignore": ["https://github.com/modelica-3rdparty/Buildings"],
+  "github-ignore": [
+    "https://github.com/modelica-3rdparty/Buildings",
+    "https://github.com/modelica-3rdparty/DESLib",
+    "https://github.com/modelica-3rdparty/MotorcycleDynamics",
+    "https://github.com/modelica-3rdparty/MotorcycleLib",
+    "https://github.com/modelica-3rdparty/MultiBondLib",
+    "https://github.com/modelica-3rdparty/ThermoBondLib",
+    "https://github.com/modelica-3rdparty/Verif",
+    "https://github.com/modelica-3rdparty/WheelsAndTires"
+  ],
+  "github-repos": [
+    "https://api.github.com/users/modelica-3rdParty/repos?type=owner"
+  ],
+  "provided": [
+    "Complex 1.0",
+    "Modelica 3.2",
+    "ModelicaServices 3.2",
+    "Modelica 2.2.1"
+  ],
+  "provides": {
+    "Complex 3.2.1": "omlib-complex-1.0",
+    "Modelica 3.2.1": "omlib-modelica-3.2",
+    "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2",
+    "Modelica 2.2.2": "omlib-modelica-2.2.1"
+  },
   "repos": [
     {
       "dest": "MSL 3.2.1",
-      "options":{"breaks":"omlibrary-msl32,omlibrary-reference"},
+      "options": {
+        "breaks": "omlibrary-msl32,omlibrary-reference"
+      },
       "rev": 6226,
-      "targets":["Complex","Modelica","ModelicaReference none","ModelicaServices","ModelicaTest","ObsoleteModelica3"],
+      "targets": [
+        "Complex",
+        "Modelica",
+        "ModelicaReference none",
+        "ModelicaServices",
+        "ModelicaTest",
+        "ObsoleteModelica3"
+      ],
       "url": "https://svn.modelica.org/projects/Modelica/trunk"
     },
     {
       "dest": "MSL 3.1",
       "rev": 6200,
-      "targets":["Modelica","ModelicaServices"],
+      "targets": [
+        "Modelica",
+        "ModelicaServices"
+      ],
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1"
     },
     {
       "dest": "MSL 2.2.2",
-      "options":{"encoding":"Windows-1252","license":"modelica1.1","std":"2.x"},
+      "options": {
+        "encoding": "Windows-1252",
+        "license": "modelica1.1",
+        "std": "2.x"
+      },
       "rev": 6200,
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
     },
@@ -30,9 +67,15 @@
     },
     {
       "dest": "MSL 1.6",
-      "options":{"encoding":"Windows-1252","license":"modelica1.1","std":"1.x"},
+      "options": {
+        "encoding": "Windows-1252",
+        "license": "modelica1.1",
+        "std": "1.x"
+      },
       "rev": 939,
-      "targets":["Modelica 1.6"],
+      "targets": [
+        "Modelica 1.6"
+      ],
       "url": "https://svn.modelica.org/projects/Modelica/tags/V1_6"
     },
     {
@@ -43,13 +86,19 @@
     {
       "dest": "Modelica_EmbeddedSystems",
       "rev": 6251,
-      "targets":["Modelica_DeviceDrivers","Modelica_LinearSystems2","Modelica_Synchronous"],
+      "targets": [
+        "Modelica_DeviceDrivers",
+        "Modelica_LinearSystems2",
+        "Modelica_Synchronous"
+      ],
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
     },
     {
       "dest": "Modelica3D",
       "rev": 16,
-      "targets":["none"],
+      "targets": [
+        "none"
+      ],
       "url": "https://github.com/OpenModelica/modelica3d/trunk"
     },
     {
@@ -59,20 +108,28 @@
     },
     {
       "dest": "BondGraph",
-      "options":{"license":"gpl3+"},
+      "options": {
+        "license": "gpl3+"
+      },
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/BondGraph/trunk"
     },
     {
       "dest": "Buildings",
-      "options":{"license":"buildings"},
+      "options": {
+        "license": "buildings"
+      },
       "rev": 1323,
-      "targets":["Buildings"],
+      "targets": [
+        "Buildings"
+      ],
       "url": "https://github.com/lbl-srg/modelica-buildings/trunk"
     },
     {
       "dest": "IndustrialControlSystems",
-      "options":{"encoding":"Windows-1252"},
+      "options": {
+        "encoding": "Windows-1252"
+      },
       "rev": 7,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
     },
@@ -88,9 +145,13 @@
     },
     {
       "dest": "RealTimeCoordinationLibrary",
-      "options":{"encoding":"Windows-1252"},
+      "options": {
+        "encoding": "Windows-1252"
+      },
       "rev": 17,
-      "targets":["self"],
+      "targets": [
+        "self"
+      ],
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk"
     },
     {
@@ -107,6 +168,49 @@
       "dest": "InstantaneousSymmetricalComponents",
       "rev": 6234,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents"
+    },
+    {
+      "dest": "BondLib",
+      "options": {
+        "encoding": "Windows-1252"
+      },
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/BondLib/trunk"
+    },
+    {
+      "dest": "HelmholtzMedia",
+      "options": {
+        "encoding": "Windows-1252"
+      },
+      "rev": 418,
+      "targets": [
+        "self"
+      ],
+      "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
+    },
+    {
+      "dest": "MoMoLib",
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/MoMoLib/trunk"
+    },
+    {
+      "dest": "QSSFluidFlow",
+      "options": {
+        "encoding": "Windows-1252",
+        "license": "modelica1.1",
+        "std": "2.x"
+      },
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/QSSFluidFlow/trunk"
+    },
+    {
+      "dest": "WasteWater",
+       "options": {
+        "encoding": "Windows-1252",
+        "std": "2.x"
+      },
+      "rev": 5,
+      "url": "https://github.com/modelica-3rdparty/WasteWater/branches/master"
     }
   ]
 }
