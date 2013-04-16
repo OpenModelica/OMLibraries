@@ -34,7 +34,7 @@ def update():
   for k in jsondata['provides'].keys():
     f = open("build/%s.provides" % k,'w')
     f.write(jsondata['provides'][k])
-  commands = ['./update-library.sh %s SVN "%s" %d "%s" %s' % (opts(r),r['url'],r['rev'],r['dest'],targets(r)) for r in repos]
+  commands = ['./update-library.sh %s SVN "%s" %d "svn/%s" %s' % (opts(r),r['url'],r['rev'],r['dest'],targets(r)) for r in repos]
   for cmd in commands: print cmd
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
   exit = 0
@@ -63,7 +63,7 @@ def checkGithub(ghs,urls):
   return res
 
 if options.check_latest:
-  Parallel(n_jobs=n_jobs)(delayed(os.system)('./check-latest.sh "%s"' % repo['dest']) for repo in repos)
+  Parallel(n_jobs=n_jobs)(delayed(os.system)('./check-latest.sh "svn/%s"' % repo['dest']) for repo in repos)
   urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
   for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
 elif options.add_missing:

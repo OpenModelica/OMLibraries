@@ -7,7 +7,7 @@ all: Makefile.numjobs config.done
 	$(MAKE) test uses
 	$(MAKE) debian
 all-work: config.done Makefile.numjobs
-	mkdir -p build
+	mkdir -p build svn
 	./update-library.py -n `cat Makefile.numjobs`
 	$(MAKE) modelica3d
 config.done: Makefile
@@ -31,14 +31,14 @@ modelica3d:
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modbus"
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modcount"
 	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/Modelica3D"
-	install -p -m644 "Modelica3D/lib/modbus/src/modelica/modbus/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modbus/package.mo"
-	install -p -m644 "Modelica3D/lib/mod3d/src/modelica/Modelica3D 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/Modelica3D/package.mo"
-	install -p -m644 "Modelica3D/lib/modcount/src/modelica/modcount/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modcount/package.mo"
+	install -p -m644 "svn/Modelica3D/lib/modbus/src/modelica/modbus/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modbus/package.mo"
+	install -p -m644 "svn/Modelica3D/lib/mod3d/src/modelica/Modelica3D 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/Modelica3D/package.mo"
+	install -p -m644 "svn/Modelica3D/lib/modcount/src/modelica/modcount/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modcount/package.mo"
 	install -p -m644 "build/ModelicaServices 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/package.mo"
 	patch "build/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
 	find "build/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
-	echo `cat "build/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch"` > "build/ModelicaServices 3.2.1 modelica3d.last_change"
-	svn log --xml --verbose "Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/ModelicaServices 3.2.1 modelica3d.changes"
+	echo `cat "build/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "svn/Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch"` > "build/ModelicaServices 3.2.1 modelica3d.last_change"
+	svn log --xml --verbose "svn/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/ModelicaServices 3.2.1 modelica3d.changes"
 	cp "build/ModelicaServices 3.2.1.license" "build/ModelicaServices 3.2.1 modelica3d.license"
 	echo "deb:libmodelica3d" >> "build/ModelicaServices 3.2.1 modelica3d.uses"
 
