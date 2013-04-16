@@ -41,7 +41,7 @@
       "options": {
         "license": "gpl3+"
       },
-      "rev": 2,
+      "rev": 3,
       "url": "https://github.com/modelica-3rdparty/BondGraph/trunk"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "dest": "NewTables",
-      "rev": 6245,
+      "rev": 6254,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
