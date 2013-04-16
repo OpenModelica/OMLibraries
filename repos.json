@@ -11,7 +11,7 @@
     "https://github.com/modelica-3rdparty/WheelsAndTires"
   ],
   "github-repos": [
-    "https://api.github.com/users/modelica-3rdParty/repos?type=owner"
+    "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100"
   ],
   "provided": [
     "Complex 1.0",
