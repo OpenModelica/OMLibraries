@@ -6,6 +6,7 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
+    "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
     "https://github.com/modelica-3rdparty/Verif",
     "https://github.com/modelica-3rdparty/WheelsAndTires"
@@ -208,6 +209,14 @@
         "self"
       ],
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk"
+    },
+    {
+      "dest": "SystemDynamics",
+      "options": {
+        "encoding": "Windows-1252"
+      },
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/SystemDynamics/trunk"
     },
     {
       "dest": "WasteWater",
