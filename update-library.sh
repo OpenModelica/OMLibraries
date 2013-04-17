@@ -24,6 +24,10 @@ case $OPT in
   BREAKS=$1
   shift
   ;;
+--patchlevel)
+  PATCHLEVEL=$1
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1
@@ -150,6 +154,7 @@ for f in $LIBS "$@"; do
   else
     PATCHREV=""
   fi
+  PATCHREV="$PATCHREV$PATCHLEVEL"
   if test "$TYPE" = SVN; then
     echo `svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
     svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"

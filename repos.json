@@ -59,7 +59,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1323,
+      "rev": 1355,
       "targets": [
         "Buildings"
       ],
@@ -122,6 +122,7 @@
       "options": {
         "encoding": "Windows-1252",
         "license": "modelica1.1",
+        "patchlevel": "-p1",
         "std": "2.x"
       },
       "rev": 6200,
@@ -187,7 +188,7 @@
     },
     {
       "dest": "NewTables",
-      "rev": 6254,
+      "rev": 6256,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
