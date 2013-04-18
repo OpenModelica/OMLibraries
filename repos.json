@@ -41,7 +41,7 @@
     },
     {
       "dest": "BioChem",
-      "rev": 33,
+      "rev": 38,
       "url": "https://github.com/OpenModelica/BioChem/trunk"
     },
     {
@@ -65,7 +65,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1368,
+      "rev": 1384,
       "targets": [
         "Buildings"
       ],
@@ -94,7 +94,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 418,
+      "rev": 444,
       "targets": [
         "self"
       ],
@@ -155,7 +155,7 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1"
+        "patchlevel": "Complex:-om1,Modelica:-om6"
       },
       "rev": 6226,
       "targets": [
@@ -216,7 +216,7 @@
     },
     {
       "dest": "NewTables",
-      "rev": 6262,
+      "rev": 6264,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
