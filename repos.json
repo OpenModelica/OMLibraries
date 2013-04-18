@@ -1,12 +1,16 @@
 {
   "github-ignore": [
+    "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/DESLib",
+    "https://github.com/modelica-3rdparty/FuelCellLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
+    "https://github.com/modelica-3rdparty/PDElib",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/SPICELib",
+    "https://github.com/modelica-3rdparty/TechThermo/trunk",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
     "https://github.com/modelica-3rdparty/Verif",
     "https://github.com/modelica-3rdparty/WheelsAndTires"
@@ -19,11 +23,12 @@
     "Modelica 3.0",
     "Modelica 3.2",
     "ModelicaServices 3.2",
+    "Modelica 2.2",
     "Modelica 2.2.1"
   ],
   "provides": {
     "Complex 3.2.1": "omlib-complex-1.0",
-    "Modelica 2.2.2": "omlib-modelica-2.2.1",
+    "Modelica 2.2.2": "omlib-modelica-2.2.1,omlib-modelica-2.2",
     "Modelica 3.2.1": "omlib-modelica-3.2,omlib-modelica-3.0",
     "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2"
   },
@@ -35,7 +40,7 @@
     },
     {
       "dest": "BioChem",
-      "rev": 1,
+      "rev": 12,
       "url": "https://github.com/OpenModelica/BioChem/trunk"
     },
     {
@@ -59,7 +64,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1355,
+      "rev": 1368,
       "targets": [
         "Buildings"
       ],
@@ -74,6 +79,14 @@
       "dest": "ExtendedPetriNets",
       "rev": 1,
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
+    },
+    {
+      "dest": "FuzzyControl",
+      "options": {
+        "std": "2.x"
+      },
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/FuzzyControl/trunk"
     },
     {
       "dest": "HelmholtzMedia",
@@ -122,7 +135,7 @@
       "options": {
         "encoding": "Windows-1252",
         "license": "modelica1.1",
-        "patchlevel": "-p1",
+        "patchlevel": "-p2",
         "std": "2.x"
       },
       "rev": 6200,
@@ -167,6 +180,11 @@
       "url": "https://github.com/OpenModelica/modelica3d/trunk"
     },
     {
+      "dest": "ModelicaDEVS",
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
+    },
+    {
       "dest": "Modelica_ElectricalEnergyStorages",
       "rev": 6246,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
@@ -187,8 +205,16 @@
       "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master"
     },
     {
+      "dest": "NeuralNetwork",
+      "options": {
+        "encoding": "Windows-1252"
+      },
+      "rev": 1,
+      "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
+    },
+    {
       "dest": "NewTables",
-      "rev": 6256,
+      "rev": 6262,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
@@ -234,6 +260,11 @@
       },
       "rev": 1,
       "url": "https://github.com/modelica-3rdparty/SystemDynamics/trunk"
+    },
+    {
+      "dest": "ThermoPower",
+      "rev": 148,
+      "url": "https://github.com/modelica-3rdparty/ThermoPower/trunk"
     },
     {
       "dest": "WasteWater",
