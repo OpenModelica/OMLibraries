@@ -1,6 +1,7 @@
 {
   "github-ignore": [
     "https://github.com/modelica-3rdparty/ATplus",
+    "https://github.com/modelica-3rdparty/BioChem",
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/DESLib",
     "https://github.com/modelica-3rdparty/FuelCellLib",
@@ -40,7 +41,7 @@
     },
     {
       "dest": "BioChem",
-      "rev": 12,
+      "rev": 33,
       "url": "https://github.com/OpenModelica/BioChem/trunk"
     },
     {
@@ -153,7 +154,8 @@
     {
       "dest": "MSL 3.2.1",
       "options": {
-        "breaks": "omlibrary-msl32,omlibrary-reference"
+        "breaks": "omlibrary-msl32,omlibrary-reference",
+        "patchlevel": "Complex:-om1"
       },
       "rev": 6226,
       "targets": [

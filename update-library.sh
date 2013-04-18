@@ -154,7 +154,15 @@ for f in $LIBS "$@"; do
   else
     PATCHREV=""
   fi
-  PATCHREV="$PATCHREV$PATCHLEVEL"
+  # Add custom patch levels
+  if echo "$PATCHLEVEL" | grep -q ":"; then
+    PATCHLEVELTHIS=`echo "$PATCHLEVEL" | grep -o "$LIB:[A-Za-z0-9_-]*" | cut -d: -f2`
+  else
+    PATCHLEVELTHIS="$PATCHLEVEL"
+  fi
+  if test ! -z "$PATCHLEVELTHIS"; then
+    PATCHREV="$PATCHLEVELTHIS"
+  fi
   if test "$TYPE" = SVN; then
     echo `svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
     svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
