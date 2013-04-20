@@ -138,7 +138,8 @@ for f in $LIBS "$@"; do
   fi
   echo $LICENSE > "build/$NAME.license"
   rm -rf "build/$NAME" "build/$NAME.mo"
-  cp -rp "$SOURCE" "build/$NAME$EXT"
+  # Link recursive... Fast, efficient
+  cp -rlp "$SOURCE" "build/$NAME$EXT"
   if test -f "$NAME.patch"; then
     if ! patch -d build/ -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
