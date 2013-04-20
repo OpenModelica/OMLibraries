@@ -59,7 +59,7 @@ elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s
   svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
 elif ! test `cat "$DEST.rev"` = $REVISION; then
-  if ! svn up "-r$REVISION" "$DEST"; then
+  if ! svn up $SVNOPTS "-r$REVISION" "$DEST"; then
     echo "Failed to update $DEST"
     rm -rf "$DEST"
     exit 1
@@ -165,7 +165,7 @@ for f in $LIBS "$@"; do
     PATCHREV="$PATCHLEVELTHIS"
   fi
   if test "$TYPE" = SVN; then
-    echo `svn info --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
+    echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
     svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
   fi
   if ! test -z "$BREAKS"; then

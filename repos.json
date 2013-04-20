@@ -41,7 +41,7 @@
     },
     {
       "dest": "BioChem",
-      "rev": 38,
+      "rev": 40,
       "url": "https://github.com/OpenModelica/BioChem/trunk"
     },
     {
@@ -57,7 +57,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/BondLib/trunk"
     },
     {
@@ -65,7 +65,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1384,
+      "rev": 1401,
       "targets": [
         "Buildings"
       ],
@@ -73,12 +73,12 @@
     },
     {
       "dest": "ComplexLib",
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ComplexLib/trunk"
     },
     {
       "dest": "ExtendedPetriNets",
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
     },
     {
@@ -86,7 +86,7 @@
       "options": {
         "std": "2.x"
       },
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/FuzzyControl/trunk"
     },
     {
@@ -105,12 +105,12 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 7,
+      "rev": 8,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
     },
     {
       "dest": "InstantaneousSymmetricalComponents",
-      "rev": 6234,
+      "rev": 6107,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents"
     },
     {
@@ -170,7 +170,7 @@
     },
     {
       "dest": "MoMoLib",
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/MoMoLib/trunk"
     },
     {
@@ -211,7 +211,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
     },
     {
@@ -226,7 +226,7 @@
     },
     {
       "dest": "PowerFlow",
-      "rev": 6234,
+      "rev": 3174,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
     },
     {
@@ -236,7 +236,7 @@
         "license": "modelica1.1",
         "std": "2.x"
       },
-      "rev": 1,
+      "rev": 4,
       "url": "https://github.com/modelica-3rdparty/QSSFluidFlow/trunk"
     },
     {
@@ -260,12 +260,12 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/SystemDynamics/trunk"
     },
     {
       "dest": "ThermoPower",
-      "rev": 148,
+      "rev": 179,
       "url": "https://github.com/modelica-3rdparty/ThermoPower/trunk"
     },
     {
