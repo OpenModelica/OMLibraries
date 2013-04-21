@@ -203,6 +203,17 @@
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
     },
     {
+      "dest": "Modelica_StateGraph2",
+      "rev": 6251,
+      "options": {
+        "encoding": "Windows-1252"
+      },
+      "targets": [
+        "self"
+      ],
+      "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2"
+    },
+    {
       "dest": "MotorcycleDynamics",
       "rev": 8,
       "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master"
