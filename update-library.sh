@@ -69,6 +69,10 @@ elif ! test `cat "$DEST.rev"` = $REVISION; then
     rm -rf "$DEST"
     exit 1
   fi
+  if ! svn-clean "$DEST"; then
+    rm -rf "$DEST"
+    exit 1
+  fi
   echo "$REVISION" > "$DEST.rev"
 else
   echo "$DEST is up to date"

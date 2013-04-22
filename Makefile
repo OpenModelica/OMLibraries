@@ -15,6 +15,7 @@ all-work: config.done Makefile.numjobs
 config.done: Makefile
 	which rm > /dev/null
 	which svn > /dev/null
+	which svn-clean > /dev/null
 	which git > /dev/null
 	which omc > /dev/null
 	which debuild > /dev/null
