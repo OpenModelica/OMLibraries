@@ -2,14 +2,14 @@ BUILD_DIR=build/
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 all: Makefile.numjobs config.done
-	rm -rf build
+	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
 	$(MAKE) all-work
 	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
 	$(MAKE) uses
 	$(MAKE) test
 all-work: config.done Makefile.numjobs
-	mkdir -p build svn
+	mkdir -p $(BUILD_DIR) svn
 	./update-library.py -n `cat Makefile.numjobs` --build-dir $(BUILD_DIR)
 	$(MAKE) modelica3d
 config.done: Makefile
