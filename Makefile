@@ -1,14 +1,16 @@
+BUILD_DIR=build/
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 all: Makefile.numjobs config.done
 	rm -rf build
 	rm -f *.uses
 	$(MAKE) all-work
-	$(MAKE) test uses
-	$(MAKE) debian
+	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
+	$(MAKE) uses
+	$(MAKE) test
 all-work: config.done Makefile.numjobs
 	mkdir -p build svn
-	./update-library.py -n `cat Makefile.numjobs`
+	./update-library.py -n `cat Makefile.numjobs` --build-dir $(BUILD_DIR)
 	$(MAKE) modelica3d
 config.done: Makefile
 	which rm > /dev/null
@@ -27,29 +29,29 @@ Makefile.numjobs:
 	@echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
 modelica3d:
 	@echo Much more work is needed for Modelica3D. For now the native builds are part of the omc packages
-	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/"
-	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modbus"
-	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/modcount"
-	install -m755 -d "build/ModelicaServices 3.2.1 modelica3d/Modelica3D"
-	install -p -m644 "svn/Modelica3D/lib/modbus/src/modelica/modbus/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modbus/package.mo"
-	install -p -m644 "svn/Modelica3D/lib/mod3d/src/modelica/Modelica3D 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/Modelica3D/package.mo"
-	install -p -m644 "svn/Modelica3D/lib/modcount/src/modelica/modcount/package.mo" "build/ModelicaServices 3.2.1 modelica3d/modcount/package.mo"
-	install -p -m644 "build/ModelicaServices 3.2.1/package.mo" "build/ModelicaServices 3.2.1 modelica3d/package.mo"
-	patch "build/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
-	find "build/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
-	echo `cat "build/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "svn/Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch"` > "build/ModelicaServices 3.2.1 modelica3d.last_change"
-	svn log --xml --verbose "svn/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/ModelicaServices 3.2.1 modelica3d.changes"
-	cp "build/ModelicaServices 3.2.1.license" "build/ModelicaServices 3.2.1 modelica3d.license"
-	echo "deb:libmodelica3d" >> "build/ModelicaServices 3.2.1 modelica3d.uses"
+	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/"
+	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modbus"
+	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modcount"
+	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Modelica3D"
+	install -p -m644 "svn/Modelica3D/lib/modbus/src/modelica/modbus/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modbus/package.mo"
+	install -p -m644 "svn/Modelica3D/lib/mod3d/src/modelica/Modelica3D 3.2.1/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Modelica3D/package.mo"
+	install -p -m644 "svn/Modelica3D/lib/modcount/src/modelica/modcount/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modcount/package.mo"
+	install -p -m644 "$(BUILD_DIR)/ModelicaServices 3.2.1/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/package.mo"
+	patch "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
+	find "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
+	echo `cat "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "svn/Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch"` > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.last_change"
+	svn log --xml --verbose "svn/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.changes"
+	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
+	echo "deb:libmodelica3d" >> "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.uses"
 
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos
-	find build/*.mo build/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './test-valid.sh "$$1"' sh
+	find $(BUILD_DIR)/*.mo $(BUILD_DIR)/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './test-valid.sh "$(BUILD_DIR)" "$$1"' sh
 	test ! -f error.log || cat error.log
 	test ! -f error.log
 	rm -f error.log test-valid.*.mos
 uses: config.done Makefile.numjobs
-	find build/*.uses -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-uses.sh "$$1"' sh
+	find $(BUILD_DIR)/*.uses -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './check-uses.sh "$(BUILD_DIR)" "$$1"' sh
 clean:
 	rm -f *.rev *.uses  test-valid.*.mos config.done
 	rm -rf build debian-build $(SVN_DIRS)
@@ -68,7 +70,7 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	mkdir -p debian-build
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
-	find build/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
+	find $(BUILD_DIR)/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
 	./check-debian.sh
 	diff -u .remote/nightly-library-files nightly-library-files || true
 	diff -u .remote/nightly-library-sources nightly-library-sources || true

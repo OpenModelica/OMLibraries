@@ -1,4 +1,5 @@
 #!/bin/sh
+BUILD=build/
 
 ENCODING=UTF-8
 STD=3.3
@@ -8,6 +9,10 @@ while echo $1 | grep -q "^--"; do
 OPT="$1"
 shift
 case $OPT in
+--build-dir)
+  BUILD=$1
+  shift
+  ;;
 --encoding)
   ENCODING=$1
   shift
@@ -74,7 +79,7 @@ else # GIT
   exit 1
 fi
 
-mkdir -p build/
+mkdir -p "$BUILD"
 if test "$*" = "all"; then
  shift
  CURWD=`pwd`
@@ -124,7 +129,7 @@ for f in $LIBS "$@"; do
     exit 1
   fi
   if test -z "$VER"; then
-    VER=`./get-version.sh "$MOFILE" "$LIB" "$ENCODING" "$STD"`
+    VER=`./get-version.sh "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"`
     echo "Got version $VER for $LIB"
     if test -z "$VER"; then
       NAME="$LIB"
@@ -136,12 +141,12 @@ for f in $LIBS "$@"; do
   else
     NAME="$LIB $VER"
   fi
-  echo $LICENSE > "build/$NAME.license"
-  rm -rf "build/$NAME" "build/$NAME.mo"
+  echo $LICENSE > "$BUILD/$NAME.license"
+  rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
-  cp -rlp "$SOURCE" "build/$NAME$EXT"
+  cp -rlp "$SOURCE" "$BUILD/$NAME$EXT"
   if test -f "$NAME.patch"; then
-    if ! patch -d build/ -p1 < "$NAME.patch"; then
+    if ! patch -d "$BUILD/" -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi
@@ -165,18 +170,18 @@ for f in $LIBS "$@"; do
     PATCHREV="$PATCHLEVELTHIS"
   fi
   if test "$TYPE" = SVN; then
-    echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "build/$NAME.last_change"
-    svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "build/$NAME.changes"
+    echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "$BUILD/$NAME.last_change"
+    # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
   fi
   if ! test -z "$BREAKS"; then
-    echo $BREAKS > "build/$NAME.breaks"
+    echo $BREAKS > "$BUILD/$NAME.breaks"
   fi
-  rm -rf "build/$NAME$EXT/.svn" "build/$NAME$EXT/.git*"
+  rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git*"
 
   if ! test "$STD" = "3.3"; then
-    echo "$STD" > "build/$NAME.std"
+    echo "$STD" > "$BUILD/$NAME.std"
   fi
   if ! test "$ENCODING" = "UTF-8"; then
-    echo "$ENCODING" > "build/$NAME/package.encoding"
+    echo "$ENCODING" > "$BUILD/$NAME/package.encoding"
   fi
 done
