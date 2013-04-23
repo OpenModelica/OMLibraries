@@ -65,7 +65,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1458,
+      "rev": 1499,
       "targets": [
         "Buildings"
       ],
@@ -191,7 +191,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 6251,
+      "rev": 6291,
       "targets": [
         "Modelica_DeviceDrivers",
         "Modelica_LinearSystems2",
