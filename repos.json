@@ -143,6 +143,10 @@
     {
       "dest": "MSL 3.1",
       "rev": 6200,
+      "options": {
+        "breaks": "omlibrary-msl31",
+        "patchlevel": "ModelicaServices:-om1"
+      },
       "targets": [
         "Modelica",
         "ModelicaServices"

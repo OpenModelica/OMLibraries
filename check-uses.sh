@@ -18,7 +18,7 @@ for l in `cat "$2" | sed "s/ /%20/g"`; do
   elif test -f "$BUILD/$LIB.provided"; then
     ./debian-name.sh `echo "$LIB"` >> $DEPS
   else
-    echo "Could not find library $LIB, used by $1"
+    echo "Could not find library $LIB, used by $2"
     exit 1
   fi
 done

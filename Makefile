@@ -68,7 +68,7 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	mkdir -p debian-build
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
-	find $(BUILD_DIR)/*.hash -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
+	find $(BUILD_DIR)/*.ok -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './debian-build.sh "$$1"' sh
 	./check-debian.sh
 	diff -u .remote/nightly-library-files nightly-library-files || true
 	diff -u .remote/nightly-library-sources nightly-library-sources || true

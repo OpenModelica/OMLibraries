@@ -153,7 +153,7 @@ for f in $LIBS "$@"; do
   # Link recursive... Fast, efficient
   cp -rlp "$SOURCE" "$BUILD/$NAME$EXT"
   if test -f "$NAME.patch"; then
-    if ! patch -d "$BUILD/" -p1 < "$NAME.patch"; then
+    if ! patch -d "$BUILD/" -f -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi
