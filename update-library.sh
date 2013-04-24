@@ -133,6 +133,7 @@ for f in $LIBS "$@"; do
     exit 1
   fi
   if test -z "$VER"; then
+    echo ./get-version.sh "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"
     VER=`./get-version.sh "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"`
     echo "Got version $VER for $LIB"
     if test -z "$VER"; then
