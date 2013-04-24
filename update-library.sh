@@ -5,32 +5,37 @@ ENCODING=UTF-8
 STD=3.3
 LICENSE=modelica2
 SVNOPTS="--non-interactive --username anonymous"
+OMC=omc
 while echo $1 | grep -q "^--"; do
 OPT="$1"
 shift
 case $OPT in
+--omc)
+  OMC="$1"
+  shift
+  ;;
 --build-dir)
-  BUILD=$1
+  BUILD="$1"
   shift
   ;;
 --encoding)
-  ENCODING=$1
+  ENCODING="$1"
   shift
   ;;
 --std)
-  STD=$1
+  STD="$1"
   shift
   ;;
 --license)
-  LICENSE=$1
+  LICENSE="$1"
   shift
   ;;
 --breaks)
-  BREAKS=$1
+  BREAKS="$1"
   shift
   ;;
 --patchlevel)
-  PATCHLEVEL=$1
+  PATCHLEVEL="$1"
   shift
   ;;
 *)
@@ -98,7 +103,7 @@ fi
 echo $LIBS
 for f in $LIBS "$@"; do
   if test "$f" = "self"; then
-    LIB=`./get-name.sh "$DEST/package.mo" "$ENCODING" "$STD"`
+    LIB=`./get-name.sh "$OMC" "$DEST/package.mo" "$ENCODING" "$STD"`
     VER=""
     if test -z "$LIB"; then
       echo "*** Error: Failed to read package name from $DEST/package.mo"
@@ -131,8 +136,7 @@ for f in $LIBS "$@"; do
     exit 1
   fi
   if test -z "$VER"; then
-    echo ./get-version.sh "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"
-    VER=`./get-version.sh "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"`
+    VER=`./get-version.sh "$OMC" "$BUILD" "$MOFILE" "$LIB" "$ENCODING" "$STD"`
     echo "Got version $VER for $LIB"
     if test -z "$VER"; then
       NAME="$LIB"

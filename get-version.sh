@@ -1,14 +1,15 @@
 #!/bin/sh
 # Gets the version of the library and its uses-annotations
 
-if test $# -ne 5; then
+if test $# -ne 6; then
   exit 1
 fi
-BUILD="$1"
-FILE="$2"
-LIB="$3"
-ENCODING="$4"
-STD="$5"
+OMC="$1"
+BUILD="$2"
+FILE="$3"
+LIB="$4"
+ENCODING="$5"
+STD="$6"
 MOS="get-version.$$.mos"
 VER="get-version.$$.ver"
 rm -f $MOS $VER
@@ -20,7 +21,7 @@ uses:=getUses($LIB);getErrorString();
 str:=sum(uses[i,1] + " " + uses[i,2] + "\n" for i in 1:size(uses,1));
 writeFile("$BUILD/$LIB" + (if version <> "" then (" " + version) else "") + ".uses",str);getErrorString();
 EOF
-omc "+std=$STD" $MOS > /dev/null 2>&1
+"$OMC" "+std=$STD" $MOS > /dev/null 2>&1
 VERSION=`test -f "$VER" && cat "$VER"`
 rm -f $MOS $VER
 if test -z "$VERSION"; then

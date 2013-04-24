@@ -1,4 +1,5 @@
 BUILD_DIR=build/
+OMC=omc
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 all: Makefile.numjobs config.done
@@ -10,13 +11,13 @@ all: Makefile.numjobs config.done
 	$(MAKE) test
 all-work: config.done Makefile.numjobs
 	mkdir -p $(BUILD_DIR) svn
-	./update-library.py -n `cat Makefile.numjobs` --build-dir $(BUILD_DIR)
+	./update-library.py -n `cat Makefile.numjobs` --build-dir $(BUILD_DIR) --omc $(OMC)
 	$(MAKE) modelica3d
 config.done: Makefile
 	which rm > /dev/null
 	which svn > /dev/null
 	which git > /dev/null
-	which omc > /dev/null
+	$(OMC) ++v > /dev/null
 	which xargs > /dev/null
 	which xsltproc > /dev/null
 	which xpath > /dev/null
@@ -43,7 +44,7 @@ modelica3d:
 
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos
-	find $(BUILD_DIR)/*.mo $(BUILD_DIR)/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './test-valid.sh "$(BUILD_DIR)" "$$1"' sh
+	find $(BUILD_DIR)/*.mo $(BUILD_DIR)/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './test-valid.sh "$(OMC)" "$(BUILD_DIR)" "$$1"' sh
 	test ! -f error.log || cat error.log
 	test ! -f error.log
 	rm -f error.log test-valid.*.mos

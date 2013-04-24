@@ -12,6 +12,7 @@ parser.add_option("-n", type="int", help="number of threads", dest="n_jobs", def
 parser.add_option("--check-latest", help="check for latest svn version", action="store_true", dest="check_latest")
 parser.add_option("--add-missing", help="add missing github svn repositories", action="store_true", dest="add_missing")
 parser.add_option("--build-dir", help="directory to put libraries", dest="build", type="string", default="build/")
+parser.add_option("--omc", help="path to the omc executable", dest="omc", type="string", default="omc")
 (options, args) = parser.parse_args()
 n_jobs = options.n_jobs
 
@@ -35,7 +36,7 @@ def update():
   for k in jsondata['provides'].keys():
     f = open(options.build + "/%s.provides" % k,'w')
     f.write(jsondata['provides'][k])
-  commands = ['./update-library.sh --build-dir "%s" %s SVN "%s" %d "svn/%s" %s' % (options.build,opts(r),r['url'],r['rev'],r['dest'],targets(r)) for r in repos]
+  commands = ['./update-library.sh --omc "%s" --build-dir "%s" %s SVN "%s" %d "svn/%s" %s' % (options.omc,options.build,opts(r),r['url'],r['rev'],r['dest'],targets(r)) for r in repos]
   for cmd in commands: print cmd
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
   exit = 0
