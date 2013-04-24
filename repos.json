@@ -65,7 +65,7 @@
       "options": {
         "license": "buildings"
       },
-      "rev": 1499,
+      "rev": 1512,
       "targets": [
         "Buildings"
       ],
@@ -195,7 +195,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 6291,
+      "rev": 6303,
       "targets": [
         "Modelica_DeviceDrivers",
         "Modelica_LinearSystems2",
@@ -278,7 +278,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 179,
+      "rev": 180,
       "url": "https://github.com/modelica-3rdparty/ThermoPower/trunk"
     },
     {
