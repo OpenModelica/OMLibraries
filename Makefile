@@ -15,12 +15,8 @@ all-work: config.done Makefile.numjobs
 config.done: Makefile
 	which rm > /dev/null
 	which svn > /dev/null
-	which svn-clean > /dev/null
 	which git > /dev/null
 	which omc > /dev/null
-	which debuild > /dev/null
-	which dpkg-buildpackage > /dev/null
-	which sha1sum > /dev/null
 	which xargs > /dev/null
 	which xsltproc > /dev/null
 	which xpath > /dev/null

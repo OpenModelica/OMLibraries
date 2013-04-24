@@ -6,7 +6,7 @@ if test $# -ne 1 || ! test -f "$1"; then
 fi
 
 mkdir -p debian-build
-LIB=`echo $1 | sed "s,build/*\(.*\).hash,\1,"`
+LIB=`echo $1 | sed "s,build/*\(.*\).ok,\1,"`
 VERSION=`echo $LIB | grep " " | cut -d" " -f2-`
 LIB=`echo $LIB | cut -d" " -f1`
 NAME="$LIB`test -z "$VERSION" || echo " "`$VERSION"

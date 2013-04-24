@@ -21,4 +21,5 @@ if test -f "$BUILD/$LIB.std"; then
 fi
 omc $STD test-valid.$$.mos > /dev/null
 echo $2 turned to $LIB
-find "`echo $2 | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "$BUILD/$LIB.hash"
+# find "`echo $2 | sed s,/package.mo,,`" -type f -print0 | sort -z | xargs -0 cat | sha1sum > "$BUILD/$LIB.hash"
+touch "$BUILD/$LIB.ok"
