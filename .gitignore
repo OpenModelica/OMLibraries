@@ -1,4 +1,3 @@
-*.rev
 build
 debian-build
 Makefile.numjobs
@@ -7,3 +6,4 @@ nightly-library-files
 nightly-library-sources
 .remote
 svn
+git

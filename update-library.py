@@ -68,8 +68,20 @@ def checkGithub(ghs,urls):
       raise "GitHub request failed"
   return res
 
+def checkLatest(repo):
+  if repo['dest'].endswith('git'):
+    if repo['options'] is None:
+      repo['options'] = {}
+    branch = repo['options']['gitbranch']
+    if branch is None:
+      branch = 'release'
+    rev = int(subprocess.check_output('git ls-remote "%s" "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True))
+    if rev <> repo['rev']:
+      print '%s head is different' % repo['dest']
+  else:
+    os.system('./check-latest.sh "svn/%s"' % repo['dest'])
 if options.check_latest:
-  Parallel(n_jobs=n_jobs)(delayed(os.system)('./check-latest.sh "svn/%s"' % repo['dest']) for repo in repos)
+  Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
   urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
   for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
 elif options.add_missing:

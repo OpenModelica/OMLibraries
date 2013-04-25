@@ -63,13 +63,14 @@
     {
       "dest": "Buildings",
       "options": {
+        "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": 1512,
+      "rev": "850d9e579a6a4179657f61a285391e85c8f49903",
       "targets": [
         "Buildings"
       ],
-      "url": "https://github.com/lbl-srg/modelica-buildings/trunk"
+      "url": "https://github.com/lbl-srg/modelica-buildings.git"
     },
     {
       "dest": "ComplexLib",
