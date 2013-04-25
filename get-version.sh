@@ -2,6 +2,7 @@
 # Gets the version of the library and its uses-annotations
 
 if test $# -ne 6; then
+  echo "Wrong number of arguments: $#, expected 6" >&2
   exit 1
 fi
 OMC="$1"
@@ -21,10 +22,10 @@ uses:=getUses($LIB);getErrorString();
 str:=sum(uses[i,1] + " " + uses[i,2] + "\n" for i in 1:size(uses,1));
 writeFile("$BUILD/$LIB" + (if version <> "" then (" " + version) else "") + ".uses",str);getErrorString();
 EOF
-"$OMC" "+std=$STD" $MOS > /dev/null 2>&1
+"$OMC" "+std=$STD" $MOS >&2
 VERSION=`test -f "$VER" && cat "$VER"`
 rm -f $MOS $VER
 if test -z "$VERSION"; then
   exit 1
 fi
-echo $VERSION
+echo "$VERSION"

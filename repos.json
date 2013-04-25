@@ -77,6 +77,14 @@
       "url": "https://github.com/modelica-3rdparty/ComplexLib/trunk"
     },
     {
+      "dest": "Modelica_DeviceDrivers",
+      "targets": [
+        "self"
+      ],
+      "rev": 53,
+      "url": "https://github.com/modelica/Modelica_DeviceDrivers/branches/master"
+    },
+    {
       "dest": "ExtendedPetriNets",
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
@@ -197,7 +205,6 @@
       "dest": "Modelica_EmbeddedSystems",
       "rev": 6303,
       "targets": [
-        "Modelica_DeviceDrivers",
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
       ],

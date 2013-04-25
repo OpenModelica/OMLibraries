@@ -116,6 +116,7 @@ for f in $LIBS "$@"; do
   fi
   if test "$f" = "self"; then
     SOURCE="$DEST"
+    MOFILE="$DEST/package.mo"
     EXT=""
   elif test -d "$DEST/$LIB $VER"; then
     SOURCE="$DEST/$LIB $VER"
