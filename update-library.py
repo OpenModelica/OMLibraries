@@ -69,15 +69,17 @@ def checkGithub(ghs,urls):
   return res
 
 def checkLatest(repo):
-  if repo['dest'].endswith('git'):
+  if repo['url'].endswith('git'):
     if repo['options'] is None:
       repo['options'] = {}
     branch = repo['options']['gitbranch']
     if branch is None:
       branch = 'release'
-    rev = int(subprocess.check_output('git ls-remote "%s" "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True))
-    if rev <> repo['rev']:
-      print '%s head is different' % repo['dest']
+    os.system('cd "git/%s" && git fetch -q && git checkout -q %s' % (repo['dest'],branch))
+    cnt = int(subprocess.check_output('cd "git/%s" && git rev-list %s..HEAD --count' % (repo['dest'],repo['rev']), shell=True))
+    if cnt <> 0:
+      rev=subprocess.check_output('cd "git/%s" && git rev-list HEAD -n1' % repo['dest'], shell=True).strip()
+      print '%s head is %d behind - latest hash %s' % (repo['dest'],cnt,rev)
   else:
     os.system('./check-latest.sh "svn/%s"' % repo['dest'])
 if options.check_latest:
