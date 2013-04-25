@@ -78,11 +78,14 @@
     },
     {
       "dest": "Modelica_DeviceDrivers",
+      "options": {
+        "gitbranch": "master"
+      },
       "targets": [
         "self"
       ],
-      "rev": 53,
-      "url": "https://github.com/modelica/Modelica_DeviceDrivers/branches/master"
+      "rev": "2ad1a5ace20760293e5e56b27ceee17ca69e65b3",
+      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
       "dest": "ExtendedPetriNets",

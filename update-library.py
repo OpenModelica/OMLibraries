@@ -36,7 +36,11 @@ def update():
   for k in jsondata['provides'].keys():
     f = open(options.build + "/%s.provides" % k,'w')
     f.write(jsondata['provides'][k])
-  commands = ['./update-library.sh --omc "%s" --build-dir "%s" %s SVN "%s" %d "svn/%s" %s' % (options.omc,options.build,opts(r),r['url'],r['rev'],r['dest'],targets(r)) for r in repos]
+  commands = [
+     './update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' %
+     (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
+     for r in repos
+   ]
   for cmd in commands: print cmd
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
   exit = 0

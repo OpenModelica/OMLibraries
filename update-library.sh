@@ -6,6 +6,7 @@ STD=3.3
 LICENSE=modelica2
 SVNOPTS="--non-interactive --username anonymous"
 OMC=omc
+GITBRANCH=release
 while echo $1 | grep -q "^--"; do
 OPT="$1"
 shift
@@ -36,6 +37,10 @@ case $OPT in
   ;;
 --patchlevel)
   PATCHLEVEL="$1"
+  shift
+  ;;
+--gitbranch)
+  GITBRANCH="$1"
   shift
   ;;
 *)
@@ -81,8 +86,16 @@ else
   echo "$DEST is up to date"
 fi
 
-else # GIT
-# git --no-pager log --date=short --max-count=1 Makefile | grep Date: | cut -d\  -f4
+elif test "$TYPE" = GIT; then
+
+if ! test -d "$DEST"; then
+  git clone "$URL" "$DEST" || exit 1
+fi
+(cd "$DEST" && git checkout -q "$REVISION" || (git fetch -q "$URL" origin "$GITBRANCH" && git checkout -q "$REVISION"))
+echo "$REVISION" > "$DEST.rev"
+
+else
+  echo "Unknown repository type: $TYPE" >&2
   exit 1
 fi
 
@@ -179,7 +192,12 @@ for f in $LIBS "$@"; do
   fi
   if test "$TYPE" = SVN; then
     echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "$BUILD/$NAME.last_change"
+    # Skipping changelog
     # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
+  else
+    CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
+    echo "$CHANGED~git~$GITBRANCH" > "$BUILD/$NAME.last_change"
+    cat "$BUILD/$NAME.last_change"
   fi
   if ! test -z "$BREAKS"; then
     echo $BREAKS > "$BUILD/$NAME.breaks"
