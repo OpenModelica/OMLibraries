@@ -154,7 +154,7 @@
     },
     {
       "dest": "MSL 3.1",
-      "rev": 6200,
+      "rev": 6307,
       "options": {
         "breaks": "omlibrary-msl31",
         "patchlevel": "ModelicaServices:-om1"
@@ -207,7 +207,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 6303,
+      "rev": 6306,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -289,7 +289,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 180,
+      "rev": 181,
       "url": "https://github.com/modelica-3rdparty/ThermoPower/trunk"
     },
     {
