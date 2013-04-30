@@ -91,7 +91,10 @@ elif test "$TYPE" = GIT; then
 if ! test -d "$DEST"; then
   git clone "$URL" "$DEST" || exit 1
 fi
-(cd "$DEST" && git checkout -q "$REVISION" || (git fetch -q "$URL" origin "$GITBRANCH" && git checkout -q "$REVISION"))
+(cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" origin "$GITBRANCH")
+if ! (cd "$DEST" && git checkout "$REVISION" ); then
+  exit 1
+fi
 echo "$REVISION" > "$DEST.rev"
 
 else
