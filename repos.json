@@ -289,8 +289,11 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 181,
-      "url": "https://github.com/modelica-3rdparty/ThermoPower/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "3d716c97f4c58ab7d7aeb1a5b5cba579b3a5f6e5",
+      "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
       "dest": "WasteWater",
