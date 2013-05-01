@@ -76,6 +76,7 @@ def checkLatest(repo):
     if branch is None:
       branch = 'release'
     os.system('cd "git/%s" && git fetch -q && git checkout -q %s' % (repo['dest'],branch))
+    os.system('cd "git/%s" && git pull -q' % repo['dest'])
     cnt = int(subprocess.check_output('cd "git/%s" && git rev-list %s..HEAD --count' % (repo['dest'],repo['rev']), shell=True))
     if cnt <> 0:
       rev=subprocess.check_output('cd "git/%s" && git rev-list HEAD -n1' % repo['dest'], shell=True).strip()
