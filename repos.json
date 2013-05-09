@@ -66,7 +66,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "560585f103901e69fff9c52af3f5aee934769ddf",
+      "rev": "3a8dc004994278a6c42741e7a0271b50fb95324a",
       "targets": [
         "Buildings"
       ],
@@ -197,7 +197,7 @@
     },
     {
       "dest": "ModelicaDEVS",
-      "rev": 1,
+      "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
     },
     {
@@ -240,7 +240,7 @@
     },
     {
       "dest": "NewTables",
-      "rev": 6324,
+      "rev": 6329,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
