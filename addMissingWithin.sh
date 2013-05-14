@@ -5,6 +5,10 @@
 # $ addMissingWithin.sh
 # Will then fix all mo-files visible from here (i.e. all in Modelica 1.6)
 
+if test "$1" = "--remove-old-within"; then
+  find . -name "*.mo" -exec sed -i "/^within.*; *$/d" {} ";"
+fi
+
 for f in `find . -name "*.mo"`; do
   WITHIN=`dirname $f | sed "s,./,within ," | tr / .| sed 's/$/;/'`
   if test "package.mo" = "`basename $f`"; then
