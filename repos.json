@@ -169,7 +169,7 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
+        "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1"
       },
       "rev": 6359,
       "targets": [

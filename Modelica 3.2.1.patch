@@ -1,6 +1,6 @@
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo Modelica 3.2.1/Mechanics/MultiBody/package.mo
---- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-01-25 21:49:43.336416132 +0100
-+++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-04-15 15:52:11.673485501 +0100
+diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo build/Modelica 3.2.1/Mechanics/MultiBody/package.mo
+--- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-04-13 03:29:10.867372471 +0200
++++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-05-14 17:43:21.325050310 +0200
 @@ -1231,6 +1231,7 @@
      "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
      annotation (Dialog(tab="Defaults"));
@@ -8,7 +8,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
 +  /* adrpo: 2012-09-04 -> replace gravityAcceleration function with the one in MSL 3.1 (not replaceable)
    replaceable function gravityAcceleration =
         Modelica.Mechanics.MultiBody.Forces.Internal.standardGravityAcceleration
-       (    gravityType=gravityType, g=g*Modelica.Math.Vectors.normalize(n,0.0), mue=mue)
+       (    gravityType=gravityType, g=g*Modelica.Math.Vectors.normalizeWithAssert(n), mue=mue)
 @@ -1249,6 +1250,38 @@
       <a href=\"modelica://Modelica.Mechanics.MultiBody.Examples.Elementary.UserDefinedGravityField\">Examples.Elementary.UserDefinedGravityField</a>.
  </p>
@@ -48,10 +48,21 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
  
    /* The World object can only use the Modelica.Mechanics.MultiBody.Visualizers.Advanced.Shape model, but no
       other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo Modelica 3.2.1/Media/Water/IF97_Utilities.mo
---- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-02-18 14:23:52.240727649 +0100
-+++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-02-21 15:52:11.677485501 +0100
-@@ -6824,7 +6824,7 @@
+diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Air.mo build/Modelica 3.2.1/Media/Air.mo
+--- libraries/Modelica 3.2.1/Modelica/Media/Air.mo	2013-05-14 17:42:50.240896173 +0200
++++ build/Modelica 3.2.1/Media/Air.mo	2013-05-14 19:03:43.000000000 +0200
+@@ -429,6 +429,7 @@
+       annotation (
+         Inline=false,
+         smoothOrder=5,
++        derivative=sublimationPressureIce_der,
+         Documentation(info="<html>
+ <p>Sublimation pressure of water below the triple point temperature is computed from temperature.</p>
+ <p>Source: W Wagner, A Saul, A Pruss: &QUOT;International equations for the pressure along the melting and along the sublimation curve of ordinary water substance&QUOT;, equation 3.5</p>
+diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo
+--- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-04-13 03:29:10.623371263 +0200
++++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-05-14 17:43:21.325050310 +0200
+@@ -6866,7 +6866,7 @@
      aux.region := if region == 0 then BaseIF97.Regions.region_pT(p=p,T= T) else region;
      aux.R := BaseIF97.data.RH2O;
      aux.p := p;
