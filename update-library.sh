@@ -93,6 +93,7 @@ if ! test -d "$DEST"; then
 fi
 (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" origin "$GITBRANCH")
 if ! (cd "$DEST" && git checkout "$REVISION" ); then
+  rm -rf "$DEST"
   exit 1
 fi
 echo "$REVISION" > "$DEST.rev"

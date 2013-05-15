@@ -66,11 +66,11 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "057f6a88f40a6a8f82f9ef1b725e81c4d2912c11",
+      "rev": "a4f7280bedbe765c4ef7e8feefae00e7e4c1625e",
       "targets": [
         "Buildings"
       ],
-      "url": "https://github.com/lbl-srg/modelica-buildings.git"
+      "url": "https://github.com/sjoelund/modelica-buildings.git"
     },
     {
       "dest": "ComplexLib",
@@ -85,7 +85,7 @@
       "targets": [
         "self"
       ],
-      "rev": "817ea54158e42f822e95563f0f15896b3b198189",
+      "rev": "f29a2aa025b3797a081f68100c1639452aa907e6",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -169,9 +169,9 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1,Modelica:-om6,ModelicaServices:-om1"
+        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
       },
-      "rev": 6272,
+      "rev": 6359,
       "targets": [
         "Complex",
         "Modelica",
@@ -207,7 +207,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 6306,
+      "rev": 6334,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
