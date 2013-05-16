@@ -43,6 +43,11 @@ case $OPT in
   GITBRANCH="$1"
   shift
   ;;
+--no-package)
+  # $1 will be a comment
+  NOPACKAGE="$1"
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1
@@ -204,7 +209,10 @@ for f in $LIBS "$@"; do
     cat "$BUILD/$NAME.last_change"
   fi
   if ! test -z "$BREAKS"; then
-    echo $BREAKS > "$BUILD/$NAME.breaks"
+    echo "$BREAKS" > "$BUILD/$NAME.breaks"
+  fi
+  if ! test -z "$NOPACKAGE"; then
+    echo "$NOPACKAGE" > "$BUILD/$NAME.nopackage"
   fi
   rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git*"
 

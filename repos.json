@@ -308,6 +308,17 @@
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
+      "dest": "ThermoSysPro",
+      "options": {
+        "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
+      },
+      "rev": 16068,
+      "targets": [
+        "self"
+      ],
+      "url": "https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.0"
+    },
+    {
       "dest": "WasteWater",
       "options": {
         "encoding": "Windows-1252",

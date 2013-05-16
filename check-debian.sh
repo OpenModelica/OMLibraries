@@ -4,6 +4,9 @@ FILES=nightly-library-files
 SOURCES=nightly-library-sources
 rm -f "$FILES" "$SOURCES"
 for f in build/*.last_change; do
+  if test -f "`echo $f | sed s/last_change/nopackage/`"; then
+    continue
+  fi
   LIB=`echo $f | sed s/.last_change// | sed s,build/,,`
     NAME=`./debian-name.sh $LIB`
   REV=`cat "$f"`
