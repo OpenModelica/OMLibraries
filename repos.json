@@ -66,11 +66,23 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "a4f7280bedbe765c4ef7e8feefae00e7e4c1625e",
+      "rev": "3d22b1d5917e89ac36be2e2e6c19f47b8beae0cd",
+      "targets": [
+        "Buildings latest"
+      ],
+      "url": "https://github.com/lbl-srg/modelica-buildings.git"
+    },
+    {
+      "dest": "Buildings-release",
+      "options": {
+        "gitbranch": "release",
+        "license": "buildings"
+      },
+      "rev": "e60c3c26b367907e3022325f758f5dc67b6aec5a",
       "targets": [
         "Buildings"
       ],
-      "url": "https://github.com/sjoelund/modelica-buildings.git"
+      "url": "https://github.com/lbl-srg/modelica-buildings.git"
     },
     {
       "dest": "ComplexLib",
