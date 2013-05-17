@@ -118,7 +118,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 444,
+      "rev": 478,
       "targets": [
         "self"
       ],
@@ -129,7 +129,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 8,
+      "rev": 9,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
     },
     {
@@ -183,7 +183,7 @@
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
       },
-      "rev": 6364,
+      "rev": 6384,
       "targets": [
         "Complex",
         "Modelica",
@@ -312,7 +312,7 @@
       "options": {
         "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
       },
-      "rev": 16068,
+      "rev": 16076,
       "targets": [
         "self"
       ],
