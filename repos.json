@@ -183,7 +183,7 @@
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
       },
-      "rev": 6384,
+      "rev": 6392,
       "targets": [
         "Complex",
         "Modelica",
@@ -252,7 +252,7 @@
     },
     {
       "dest": "NewTables",
-      "rev": 6329,
+      "rev": 6392,
       "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
