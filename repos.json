@@ -181,7 +181,8 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
+        "remove-files": "Resources/Library",
+        "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1"
       },
       "rev": 6565,
       "targets": [

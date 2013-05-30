@@ -48,6 +48,11 @@ case $OPT in
   NOPACKAGE="$1"
   shift
   ;;
+--remove-files)
+  # Files that should be stripped from the package. Usually redundant binaries.
+  REMOVE_FILES="$1"
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1
@@ -175,6 +180,9 @@ for f in $LIBS "$@"; do
   rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
   cp -rlp "$SOURCE" "$BUILD/$NAME$EXT"
+  for FILES in $REMOVE_FILES; do
+    rm -rf "$BUILD/$NAME$EXT/$FILES"
+  done
   if test -f "$NAME.patch"; then
     if ! patch -d "$BUILD/" -f -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
