@@ -183,7 +183,7 @@
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
       },
-      "rev": 6545,
+      "rev": 6565,
       "targets": [
         "Complex",
         "Modelica",
