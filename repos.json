@@ -66,7 +66,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3d22b1d5917e89ac36be2e2e6c19f47b8beae0cd",
+      "rev": "52833e49a2ff87541b2155d80551370335b87304",
       "targets": [
         "Buildings latest"
       ],
@@ -97,7 +97,7 @@
       "targets": [
         "self"
       ],
-      "rev": "f29a2aa025b3797a081f68100c1639452aa907e6",
+      "rev": "fae8d8d28f17671f1f1ad5df5cc258cf6ea19911",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -250,11 +250,6 @@
       },
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
-    },
-    {
-      "dest": "NewTables",
-      "rev": 6392,
-      "url": "https://svn.modelica.org/projects/Modelica/branches/development/OpenSourceTables/Modelica"
     },
     {
       "dest": "OpenHydraulics",
