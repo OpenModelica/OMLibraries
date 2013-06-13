@@ -1,7 +1,7 @@
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Modelica 3.2.1/Blocks/Sources.mo
---- libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo	2013-05-31 20:59:13.226088323 +0200
-+++ build/Modelica 3.2.1/Blocks/Sources.mo	2013-05-31 21:12:25.933886186 +0200
-@@ -2146,7 +2146,7 @@
+--- libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo	2013-06-12 13:00:23.873463128 +0200
++++ build/Modelica 3.2.1/Blocks/Sources.mo	2013-06-12 13:08:30.731877337 +0200
+@@ -2308,7 +2308,7 @@
        input Modelica.SIunits.Time timeIn;
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
@@ -10,7 +10,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -2164,7 +2164,7 @@
+@@ -2326,7 +2326,7 @@
        input Modelica.SIunits.Time timeIn;
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
@@ -19,7 +19,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -2178,7 +2178,7 @@
+@@ -2340,7 +2340,7 @@
        input Modelica.SIunits.Time timeIn;
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
@@ -28,7 +28,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        input Real der_timeIn;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTimeTable_getDerValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent, der_timeIn)
-@@ -2189,7 +2189,7 @@
+@@ -2351,7 +2351,7 @@
        "Return minimum time value of 1-dim. table where first column is time"
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
@@ -37,7 +37,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        output Modelica.SIunits.Time timeMin "Minimum time value in table";
        external"C" timeMin = ModelicaStandardTables_CombiTimeTable_minimumTime(tableID)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -2199,7 +2199,7 @@
+@@ -2361,7 +2361,7 @@
        "Return maximum time value of 1-dim. table where first column is time"
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
@@ -46,7 +46,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        output Modelica.SIunits.Time timeMax "Maximum time value in table";
        external"C" timeMax = ModelicaStandardTables_CombiTimeTable_maximumTime(tableID)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -2210,7 +2210,7 @@
+@@ -2372,7 +2372,7 @@
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Modelica.SIunits.Time timeIn;
@@ -55,11 +55,10 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
        output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-Only in build/Modelica 3.2.1/Blocks: Sources.mo~
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Modelica 3.2.1/Blocks/Tables.mo
---- libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo	2013-05-31 20:59:13.226088323 +0200
-+++ build/Modelica 3.2.1/Blocks/Tables.mo	2013-05-31 21:12:22.293721703 +0200
-@@ -51,7 +51,7 @@
+--- libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo	2013-06-12 13:00:23.869463103 +0200
++++ build/Modelica 3.2.1/Blocks/Tables.mo	2013-06-12 13:10:34.416491382 +0200
+@@ -55,7 +55,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -68,7 +67,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -63,7 +63,7 @@
+@@ -67,7 +67,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -77,7 +76,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -75,7 +75,7 @@
+@@ -79,7 +79,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -86,7 +85,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        input Real der_u;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
-@@ -343,7 +343,7 @@
+@@ -339,7 +339,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -95,7 +94,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -355,7 +355,7 @@
+@@ -351,7 +351,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -104,7 +103,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -367,7 +367,7 @@
+@@ -363,7 +363,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable1D tableID;
        input Integer icol;
        input Real u;
@@ -113,6 +112,15 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        input Real der_u;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
+@@ -618,7 +618,7 @@
+       input Modelica.Blocks.Types.ExternalCombiTable2D tableID;
+       input Real u1;
+       input Real u2;
+-      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
++      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
+         annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
 @@ -630,7 +630,7 @@
        input Modelica.Blocks.Types.ExternalCombiTable2D tableID;
        input Real u1;
@@ -128,22 +136,12 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        input Real u2;
 -      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
 +      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
-       output Real y;
-       external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
-         annotation (Library={"ModelicaStandardTables", "ModelicaExternalC"});
-@@ -654,7 +654,7 @@
-       input Modelica.Blocks.Types.ExternalCombiTable2D tableID;
-       input Real u1;
-       input Real u2;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        input Real der_u1;
        input Real der_u2;
        output Real der_y;
-Only in build/Modelica 3.2.1/Blocks: Tables.mo~
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo build/Modelica 3.2.1/Mechanics/MultiBody/package.mo
---- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-05-16 12:08:21.616665761 +0200
-+++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-05-31 21:10:25.752456140 +0200
+--- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-06-12 13:00:19.541441643 +0200
++++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-06-12 13:08:30.731877337 +0200
 @@ -1231,6 +1231,7 @@
      "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
      annotation (Dialog(tab="Defaults"));
@@ -192,8 +190,8 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
    /* The World object can only use the Modelica.Mechanics.MultiBody.Visualizers.Advanced.Shape model, but no
       other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo
---- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
-+++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-05-31 21:10:25.756456320 +0200
+--- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-06-03 11:46:13.663485553 +0200
++++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-06-12 13:08:30.735877350 +0200
 @@ -7161,7 +7161,7 @@
         else region;
      aux.R := BaseIF97.data.RH2O;
