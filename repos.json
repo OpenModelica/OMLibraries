@@ -91,25 +91,6 @@
       "url": "https://github.com/modelica-3rdparty/ComplexLib/trunk"
     },
     {
-      "dest": "Modelica_DeviceDrivers",
-      "options": {
-        "gitbranch": "master"
-      },
-      "targets": [
-        "self"
-      ],
-      "rev": "00a948b65770c1da801bdc53c7f17df0f490538a",
-      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
-    },
-    {
-      "dest": "Modelica_DeviceDrivers-release",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "088ebb0ae3ca012fa15261d13280665ebf331734",
-      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
-    },
-    {
       "dest": "ExtendedPetriNets",
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
@@ -127,7 +108,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 478,
+      "rev": 492,
       "targets": [
         "self"
       ],
@@ -175,11 +156,11 @@
     },
     {
       "dest": "MSL 3.1",
-      "rev": 6307,
       "options": {
         "breaks": "omlibrary-msl31",
         "patchlevel": "ModelicaServices:-om1"
       },
+      "rev": 6307,
       "targets": [
         "Modelica",
         "ModelicaServices"
@@ -190,10 +171,10 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "remove-files": "Resources/Library",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1"
+        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+        "remove-files": "Resources/Library"
       },
-      "rev": 6693,
+      "rev": 6699,
       "targets": [
         "Complex",
         "Modelica",
@@ -218,6 +199,25 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
     },
     {
+      "dest": "Modelica_DeviceDrivers",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "00a948b65770c1da801bdc53c7f17df0f490538a",
+      "targets": [
+        "self"
+      ],
+      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
+    },
+    {
+      "dest": "Modelica_DeviceDrivers-release",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "088ebb0ae3ca012fa15261d13280665ebf331734",
+      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
+    },
+    {
       "dest": "Modelica_ElectricalEnergyStorages",
       "rev": 6246,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
@@ -233,10 +233,10 @@
     },
     {
       "dest": "Modelica_StateGraph2",
-      "rev": 4365,
       "options": {
         "encoding": "Windows-1252"
       },
+      "rev": 4365,
       "targets": [
         "self"
       ],
