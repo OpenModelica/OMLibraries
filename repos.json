@@ -5,6 +5,7 @@
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/DESLib",
     "https://github.com/modelica-3rdparty/FuelCellLib",
+    "https://github.com/modelica-3rdparty/FCSys.git",
     "https://github.com/modelica-3rdparty/MoMoLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
@@ -96,6 +97,14 @@
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
     },
     {
+      "dest": "FCSys",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "cb98fb045f65621284828c6295f221a069d3426d",
+      "url": "https://github.com/kdavies4/FCSys.git"
+    },
+    {
       "dest": "FuzzyControl",
       "options": {
         "std": "2.x"
@@ -171,7 +180,7 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+        "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
       "rev": 6699,
