@@ -1,6 +1,6 @@
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Modelica 3.2.1/Blocks/Sources.mo
---- libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo	2013-06-27 18:19:23.755158782 +0200
-+++ build/Modelica 3.2.1/Blocks/Sources.mo	2013-06-27 18:46:23.757169766 +0200
+--- libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo	2013-07-24 09:57:04.613832572 +0200
++++ build/Modelica 3.2.1/Blocks/Sources.mo	2013-07-24 10:05:34.218901723 +0200
 @@ -2309,7 +2309,7 @@
        input Modelica.SIunits.Time timeIn;
        discrete input Modelica.SIunits.Time nextTimeEvent;
@@ -57,7 +57,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Mod
          annotation (Library={"ModelicaStandardTables"});
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Modelica 3.2.1/Blocks/Tables.mo
 --- libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo	2013-06-27 18:19:23.743158383 +0200
-+++ build/Modelica 3.2.1/Blocks/Tables.mo	2013-06-27 18:46:23.757169766 +0200
++++ build/Modelica 3.2.1/Blocks/Tables.mo	2013-07-24 10:05:34.218901723 +0200
 @@ -58,7 +58,7 @@
        input Integer icol;
        input Real u;
@@ -140,8 +140,8 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        input Real der_u2;
        output Real der_y;
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Modelica 3.2.1/Math/package.mo
---- libraries/Modelica 3.2.1/Modelica/Math/package.mo	2013-06-27 18:44:19.965069596 +0200
-+++ build/Modelica 3.2.1/Math/package.mo	2013-06-27 18:46:23.761169900 +0200
+--- libraries/Modelica 3.2.1/Modelica/Math/package.mo	2013-07-24 09:57:03.089781530 +0200
++++ build/Modelica 3.2.1/Math/package.mo	2013-07-24 10:07:04.201916056 +0200
 @@ -12542,9 +12542,67 @@
  
    annotation (Documentation(info="<html>
@@ -151,8 +151,8 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Model
 +derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
  end tempInterpol1;
  
-+function tempInterpol1_der 
-+    "Temporary function for linear interpolation (will be removed)"
++function tempInterpol1_der
++  "Temporary function for linear interpolation (will be removed)"
 +  input Real u "input value (first column of table)";
 +  input Real table[:, :] "table to be interpolated";
 +  input Integer icol "column of table to be interpolated";
@@ -287,16 +287,9 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Model
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-@@ -12657,4 +12780,4 @@
- </ul>
- 
- </html>"));
--end Math;
-\ No newline at end of file
-+end Math;
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.order build/Modelica 3.2.1/Math/package.order
 --- libraries/Modelica 3.2.1/Modelica/Math/package.order	2013-05-16 12:08:21.352656731 +0200
-+++ build/Modelica 3.2.1/Math/package.order	2013-06-27 18:46:23.761169900 +0200
++++ build/Modelica 3.2.1/Math/package.order	2013-07-24 10:05:34.234902259 +0200
 @@ -24,4 +24,6 @@
  baseIcon1
  baseIcon2
@@ -306,7 +299,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.order build/Mo
 +tempInterpol2_der
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo build/Modelica 3.2.1/Mechanics/MultiBody/package.mo
 --- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-06-27 18:19:21.579086395 +0200
-+++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-06-27 18:46:23.761169900 +0200
++++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-07-24 10:05:34.234902259 +0200
 @@ -1268,6 +1268,7 @@
      "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
      annotation (Dialog(tab="Defaults"));
@@ -356,7 +349,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package
       other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
-+++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-06-27 18:46:23.765170033 +0200
++++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-07-24 10:05:34.234902259 +0200
 @@ -7161,7 +7161,7 @@
         else region;
      aux.R := BaseIF97.data.RH2O;
