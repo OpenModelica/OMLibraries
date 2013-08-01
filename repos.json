@@ -183,7 +183,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 6858,
+      "rev": 6913,
       "targets": [
         "Complex",
         "Modelica",
@@ -192,7 +192,7 @@
         "ModelicaTest",
         "ObsoleteModelica3"
       ],
-      "url": "https://svn.modelica.org/projects/Modelica/trunk"
+      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.2.1"
     },
     {
       "dest": "Modelica3D",
