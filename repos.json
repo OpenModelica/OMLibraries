@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1f4823d060e1b225c0906847902afb6a6b6c7f7b",
+      "rev": "4dfde17c91f5575e58ed309f7a8bf9dbc9424258",
       "targets": [
         "Buildings latest"
       ],
@@ -80,7 +80,7 @@
         "gitbranch": "release",
         "license": "buildings"
       },
-      "rev": "cc56b3dd4e357700c87742de54cf90f1f7f3f5f6",
+      "rev": "eea1b3720534e0c9aa6c076f865224acdca38997",
       "targets": [
         "Buildings"
       ],
@@ -117,7 +117,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 492,
+      "rev": 533,
       "targets": [
         "self"
       ],
@@ -180,7 +180,7 @@
       "dest": "MSL 3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
-        "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
+        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
       "rev": 6913,
@@ -196,7 +196,7 @@
     },
     {
       "dest": "Modelica3D",
-      "rev": 16,
+      "rev": 20,
       "targets": [
         "none"
       ],
@@ -313,7 +313,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2dad371bac9db91347b9e87a05205be5cb0d26fb",
+      "rev": "3e59956461861291d23af794bb0ba2ba0ab309b5",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
@@ -321,7 +321,7 @@
       "options": {
         "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
       },
-      "rev": 16076,
+      "rev": 16716,
       "targets": [
         "self"
       ],
