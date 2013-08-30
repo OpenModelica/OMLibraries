@@ -98,12 +98,13 @@ fi
 
 elif test "$TYPE" = GIT; then
 
-if ! test -d "$DEST"; then
-  git clone "$URL" "$DEST" || exit 1
+if test -d "$DEST"; then
+  (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" origin "$GITBRANCH" || (sleep 10 && git fetch -q "$URL" origin "$GITBRANCH") || (sleep 20 && git fetch -q "$URL" origin "$GITBRANCH") || rm -rf "$DEST")
 fi
-(cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" origin "$GITBRANCH")
+if ! test -d "$DEST"; then
+  (git clone "$URL" "$DEST" || (sleep 10 && git clone "$URL" "$DEST") || (sleep 30 && git clone "$URL" "$DEST")) || exit 1
+fi
 if ! (cd "$DEST" && git checkout "$REVISION" ); then
-  rm -rf "$DEST"
   exit 1
 fi
 echo "$REVISION" > "$DEST.rev"
