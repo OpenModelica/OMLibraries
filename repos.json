@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4dfde17c91f5575e58ed309f7a8bf9dbc9424258",
+      "rev": "eed15bb9eb1335148b34ce3a5796607799f06dc5",
       "targets": [
         "Buildings latest"
       ],
@@ -80,7 +80,7 @@
         "gitbranch": "release",
         "license": "buildings"
       },
-      "rev": "eea1b3720534e0c9aa6c076f865224acdca38997",
+      "rev": "cc56b3dd4e357700c87742de54cf90f1f7f3f5f6",
       "targets": [
         "Buildings"
       ],
@@ -117,18 +117,15 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 533,
-      "targets": [
-        "self"
-      ],
-      "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
+      "rev": 546,
+        "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
     },
     {
       "dest": "IndustrialControlSystems",
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 9,
+      "rev": 11,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
     },
     {
@@ -196,7 +193,7 @@
     },
     {
       "dest": "Modelica3D",
-      "rev": 20,
+      "rev": 22,
       "targets": [
         "none"
       ],
@@ -228,7 +225,7 @@
     },
     {
       "dest": "Modelica_ElectricalEnergyStorages",
-      "rev": 6246,
+      "rev": 6973,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
     },
     {
@@ -266,7 +263,7 @@
     },
     {
       "dest": "OpenHydraulics",
-      "rev": 26,
+      "rev": 28,
       "url": "https://github.com/modelica-3rdparty/OpenHydraulics/trunk"
     },
     {
