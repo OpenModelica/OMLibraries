@@ -200,6 +200,11 @@
       "url": "https://github.com/OpenModelica/modelica3d/trunk"
     },
     {
+      "dest": "ModelicaCompliance",
+      "rev": 17064,
+      "url": "https://openmodelica.org/svn/OpenModelica/compliance"
+    },
+    {
       "dest": "ModelicaDEVS",
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
