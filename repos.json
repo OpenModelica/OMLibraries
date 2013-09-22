@@ -27,13 +27,15 @@
     "Modelica 3.2",
     "ModelicaServices 3.2",
     "Modelica 2.2",
-    "Modelica 2.2.1"
+    "Modelica 2.2.1",
+    "Modelica_Synchronous 0.91"
   ],
   "provides": {
     "Complex 3.2.1": "omlib-complex-1.0",
     "Modelica 2.2.2": "omlib-modelica-2.2.1,omlib-modelica-2.2",
     "Modelica 3.2.1": "omlib-modelica-3.2,omlib-modelica-3.0",
-    "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2"
+    "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2",
+    "Modelica_Synchronous 0.92": "omlib-modelica-synchronous-0.91"
   },
   "repos": [
     {
@@ -68,7 +70,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "eed15bb9eb1335148b34ce3a5796607799f06dc5",
+      "rev": "c3d255fa3aab4f1302fc4adb3e053bf02dbb8a66",
       "targets": [
         "Buildings latest"
       ],
@@ -80,7 +82,7 @@
         "gitbranch": "release",
         "license": "buildings"
       },
-      "rev": "cc56b3dd4e357700c87742de54cf90f1f7f3f5f6",
+      "rev": "2fc4ed13a4b53c65e981677126a7a7d6309976c4",
       "targets": [
         "Buildings"
       ],
@@ -117,7 +119,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 546,
+      "rev": 559,
         "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
     },
     {
@@ -193,7 +195,7 @@
     },
     {
       "dest": "Modelica3D",
-      "rev": 22,
+      "rev": 23,
       "targets": [
         "none"
       ],
@@ -201,7 +203,7 @@
     },
     {
       "dest": "ModelicaCompliance",
-      "rev": 17064,
+      "rev": 17284,
       "url": "https://openmodelica.org/svn/OpenModelica/compliance"
     },
     {
@@ -214,7 +216,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00a948b65770c1da801bdc53c7f17df0f490538a",
+      "rev": "d675cef257ad2f27cf73d21b8ca929cd9b2b64b5",
       "targets": [
         "self"
       ],
@@ -225,7 +227,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "088ebb0ae3ca012fa15261d13280665ebf331734",
+      "rev": "0efcab000d7459fa6e4450e99092dfd288427090",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -235,7 +237,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 6334,
+      "rev": 7015,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -247,7 +249,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 4365,
+      "rev": 7002,
       "targets": [
         "self"
       ],
@@ -315,7 +317,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3e59956461861291d23af794bb0ba2ba0ab309b5",
+      "rev": "597fe013cd36696dfe2132e0cfb74e9697f15c51",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
@@ -323,7 +325,7 @@
       "options": {
         "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
       },
-      "rev": 16716,
+      "rev": 17324,
       "targets": [
         "self"
       ],
