@@ -325,7 +325,7 @@
       "options": {
         "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
       },
-      "rev": 17324,
+      "rev": 17327,
       "targets": [
         "self"
       ],
