@@ -70,7 +70,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c3d255fa3aab4f1302fc4adb3e053bf02dbb8a66",
+      "rev": "dda8e71758e7479422dfa8b4a49ec0dbfe6a0423",
       "targets": [
         "Buildings latest"
       ],
@@ -119,7 +119,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 559,
+      "rev": 563,
         "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
     },
     {
@@ -182,7 +182,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 6936,
+      "rev": 7053,
       "targets": [
         "Complex",
         "Modelica",
@@ -203,7 +203,7 @@
     },
     {
       "dest": "ModelicaCompliance",
-      "rev": 17284,
+      "rev": 17408,
       "url": "https://openmodelica.org/svn/OpenModelica/compliance"
     },
     {
@@ -317,7 +317,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "597fe013cd36696dfe2132e0cfb74e9697f15c51",
+      "rev": "0329c7d8652c6ee2de67412c789329bd2b7b913b",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
