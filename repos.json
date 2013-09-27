@@ -125,7 +125,7 @@
     {
       "dest": "IndustrialControlSystems",
       "options": {
-        "encoding": "Windows-1252"
+        "patchlevel": "om1"
       },
       "rev": 11,
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
