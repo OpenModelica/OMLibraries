@@ -28,7 +28,7 @@ def update():
     f = open(options.build + "/%s.provides" % k,'w')
     f.write(jsondata['provides'][k])
   commands = [
-     './update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' %
+     'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' %
      (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
      for r in repos
    ]
