@@ -3,18 +3,8 @@ import os
 import requests
 import sys
 import simplejson
-from joblib import Parallel, delayed
 from optparse import OptionParser
 import subprocess
-
-parser = OptionParser()
-parser.add_option("-n", type="int", help="number of threads", dest="n_jobs", default=1)
-parser.add_option("--check-latest", help="check for latest svn version", action="store_true", dest="check_latest")
-parser.add_option("--add-missing", help="add missing github svn repositories", action="store_true", dest="add_missing")
-parser.add_option("--build-dir", help="directory to put libraries", dest="build", type="string", default="build/")
-parser.add_option("--omc", help="path to the omc executable", dest="omc", type="string", default="omc")
-(options, args) = parser.parse_args()
-n_jobs = options.n_jobs
 
 def targets(r):
   if not r.has_key('targets'):
@@ -31,6 +21,7 @@ with open("repos.json") as f:
 repos = jsondata['repos']
 
 def update():
+  from joblib import Parallel, delayed
   for p in jsondata['provided']:
     open(options.build + "/%s.provided" % p,'w')
   for k in jsondata['provides'].keys():
@@ -83,20 +74,29 @@ def checkLatest(repo):
       print '%s head is %d behind - latest hash %s' % (repo['dest'],cnt,rev)
   else:
     os.system('./check-latest.sh "svn/%s"' % repo['dest'])
-if options.check_latest:
-  Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
-  urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
-  for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
-elif options.add_missing:
-  urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
-  for repo in checkGithub(jsondata['github-repos'],urls):
-    url = repo['svn_url'] + "/trunk"
-    rev = int(subprocess.check_output("svn info --xml '%s' | xpath -q -e '/info/entry/commit/@revision' | grep -o '[0-9]*'" % url, shell=True))
-    entry = {'dest':repo['name'],'rev':rev,'url':url}
-    print "Adding entry",entry
-    jsondata['repos'].append(entry)
-  f = open("repos.json","w")
-  jsondata['repos'] = sorted(jsondata['repos'], key=lambda k: k['dest']) 
-  simplejson.dump(jsondata, f, indent=2, sort_keys=True)
-else:
-  sys.exit(update())
+if __name__ == '__main__':
+  parser = OptionParser()
+  parser.add_option("-n", type="int", help="number of threads", dest="n_jobs", default=1)
+  parser.add_option("--check-latest", help="check for latest svn version", action="store_true", dest="check_latest")
+  parser.add_option("--add-missing", help="add missing github svn repositories", action="store_true", dest="add_missing")
+  parser.add_option("--build-dir", help="directory to put libraries", dest="build", type="string", default="build/")
+  parser.add_option("--omc", help="path to the omc executable", dest="omc", type="string", default="omc")
+  (options, args) = parser.parse_args()
+  n_jobs = options.n_jobs
+  if options.check_latest:
+    Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
+    urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
+    for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
+  elif options.add_missing:
+    urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
+    for repo in checkGithub(jsondata['github-repos'],urls):
+      url = repo['svn_url'] + "/trunk"
+      rev = int(subprocess.check_output("svn info --xml '%s' | xpath -q -e '/info/entry/commit/@revision' | grep -o '[0-9]*'" % url, shell=True))
+      entry = {'dest':repo['name'],'rev':rev,'url':url}
+      print "Adding entry",entry
+      jsondata['repos'].append(entry)
+    f = open("repos.json","w")
+    jsondata['repos'] = sorted(jsondata['repos'], key=lambda k: k['dest']) 
+    simplejson.dump(jsondata, f, indent=2, sort_keys=True)
+  else:
+    sys.exit(update())
