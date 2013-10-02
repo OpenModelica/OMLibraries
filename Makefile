@@ -19,7 +19,7 @@ config.done: Makefile
 	which git > /dev/null
 	$(OMC) ++v > /dev/null
 	which xargs > /dev/null
-	which xsltproc > /dev/null
+	#which xsltproc > /dev/null
 	which xpath > /dev/null
 	touch config.done
 Makefile.numjobs:
@@ -38,7 +38,7 @@ modelica3d:
 	patch "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
 	find "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
 	echo `cat "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"`-m3d`svn info --xml "svn/Modelica3D" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch"` > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.last_change"
-	svn log --xml --verbose "svn/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.changes"
+	# svn log --xml --verbose "svn/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.changes"
 	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
 	echo "deb:libmodelica3d" >> "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.uses"
 
