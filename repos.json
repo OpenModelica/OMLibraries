@@ -322,10 +322,7 @@
     },
     {
       "dest": "ThermoSysPro",
-      "options": {
-        "no-package": "Not packaged on request by daniel.bouskela<at>edf.fr (he wishes to collect names of users of the library; so send him an email)"
-      },
-      "rev": 17330,
+      "rev": 17479,
       "targets": [
         "self"
       ],
