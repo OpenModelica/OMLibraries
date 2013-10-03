@@ -140,16 +140,16 @@ for f in $LIBS "$@"; do
   else
     LIB=`echo $f | sed "s/%20/ /g" | cut -d" " -f1`
     VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2`
-    echo Copy library $LIB version $VER from `pwd`
+    echo Copy library [$LIB] version [$VER] from `pwd`
   fi
   if test "$f" = "self"; then
     SOURCE="$DEST"
     MOFILE="$DEST/package.mo"
     EXT=""
-  elif test -d "$DEST/$LIB $VER"; then
+  elif [ ! -z "$VER" ] && [ -d "$DEST/$LIB $VER" ]; then
     SOURCE="$DEST/$LIB $VER"
     EXT=""
-  elif test -f "$DEST/$LIB $VER.mo"; then
+  elif [ ! -z "$VER" ] && [ -f "$DEST/$LIB $VER.mo" ]; then
     SOURCE="$DEST/$LIB $VER.mo"
     EXT=".mo"
   elif test -d "$DEST/$LIB"; then
@@ -180,7 +180,9 @@ for f in $LIBS "$@"; do
   echo $LICENSE > "$BUILD/$NAME.license"
   rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
-  cp -rlp "$SOURCE" "$BUILD/$NAME$EXT"
+  echo Copy: cp -rp "$SOURCE" "$BUILD/$NAME$EXT"
+  cp -rp "$SOURCE" "$BUILD/$NAME$EXT"
+  echo Removing files: [$REMOVE_FILES]
   for FILES in $REMOVE_FILES; do
     rm -rf "$BUILD/$NAME$EXT/$FILES"
   done
@@ -210,7 +212,7 @@ for f in $LIBS "$@"; do
   fi
   if test "$TYPE" = SVN; then
     echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "$BUILD/$NAME.last_change"
-    # Skipping changelog
+    # Skipping changelog. Was only used for debian packages, but it is not that useful and quite slow
     # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
   else
     CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
