@@ -157,7 +157,8 @@
       "dest": "MSL 2.2.2",
       "options": {
         "breaks": "omlibrary-msl222",
-        "license": "modelica1.1"
+        "license": "modelica1.1",
+        "patchlevel": "Modelica:-om1"
       },
       "rev": 6277,
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
