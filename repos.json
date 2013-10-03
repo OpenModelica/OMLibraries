@@ -143,8 +143,8 @@
     {
       "dest": "MSL 1.6",
       "options": {
-        "encoding": "Windows-1252",
         "license": "modelica1.1",
+        "patchlevel": "Modelica:-om1",
         "std": "1.x"
       },
       "rev": 939,
