@@ -214,7 +214,7 @@ for f in $LIBS "$@"; do
     # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
   else
     CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
-    echo "$CHANGED~git~$GITBRANCH" > "$BUILD/$NAME.last_change"
+    echo "$CHANGED~git~$GITBRANCH$PATCHREV" > "$BUILD/$NAME.last_change"
     cat "$BUILD/$NAME.last_change"
   fi
   if ! test -z "$BREAKS"; then
@@ -223,7 +223,7 @@ for f in $LIBS "$@"; do
   if ! test -z "$NOPACKAGE"; then
     echo "$NOPACKAGE" > "$BUILD/$NAME.nopackage"
   fi
-  rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git*"
+  rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git"*
 
   if ! test "$STD" = "3.3"; then
     echo "$STD" > "$BUILD/$NAME.std"

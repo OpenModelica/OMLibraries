@@ -214,6 +214,7 @@
     {
       "dest": "Modelica_DeviceDrivers",
       "options": {
+        "patchlevel": "-om1",
         "gitbranch": "master"
       },
       "rev": "d675cef257ad2f27cf73d21b8ca929cd9b2b64b5",
