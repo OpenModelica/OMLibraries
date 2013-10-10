@@ -84,6 +84,7 @@ if __name__ == '__main__':
   (options, args) = parser.parse_args()
   n_jobs = options.n_jobs
   if options.check_latest:
+    from joblib import Parallel, delayed
     Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']

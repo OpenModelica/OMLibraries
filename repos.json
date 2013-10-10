@@ -28,6 +28,7 @@
     "ModelicaServices 3.2",
     "Modelica 2.2",
     "Modelica 2.2.1",
+    "Modelica_StateGraph2 2.0.1",
     "Modelica_Synchronous 0.91"
   ],
   "provides": {
@@ -35,6 +36,7 @@
     "Modelica 2.2.2": "omlib-modelica-2.2.1,omlib-modelica-2.2",
     "Modelica 3.2.1": "omlib-modelica-3.2,omlib-modelica-3.0",
     "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2",
+    "Modelica_StateGraph2 2.0.2": "omlib-modelica-stategraph2-2.0.1",
     "Modelica_Synchronous 0.92": "omlib-modelica-synchronous-0.91"
   },
   "repos": [
@@ -70,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "dda8e71758e7479422dfa8b4a49ec0dbfe6a0423",
+      "rev": "b797baeeeeb43f95a9be698e09ec693b26cd9e22",
       "targets": [
         "Buildings latest"
       ],
@@ -204,7 +206,7 @@
     },
     {
       "dest": "ModelicaCompliance",
-      "rev": 17408,
+      "rev": 17601,
       "url": "https://openmodelica.org/svn/OpenModelica/compliance"
     },
     {
@@ -239,7 +241,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7015,
+      "rev": 7061,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -251,7 +253,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 7002,
+      "rev": 7061,
       "targets": [
         "self"
       ],
@@ -295,7 +297,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 20,
+      "rev": 24,
       "targets": [
         "self"
       ],
@@ -316,11 +318,8 @@
     },
     {
       "dest": "ThermoPower",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "0329c7d8652c6ee2de67412c789329bd2b7b913b",
-      "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
+      "rev": 228,
+      "url": "svn://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
       "dest": "ThermoSysPro",
