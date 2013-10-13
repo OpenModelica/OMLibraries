@@ -283,6 +283,25 @@
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
     },
     {
+      "dest": "PowerSystems-latest",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "7211e2d3cbd0c80f612084dace15cc5918e467fe",
+      "targets": [
+        "PowerSystems latest"
+      ],
+      "url": "https://github.com/modelica/PowerSystems.git"
+    },
+    {
+      "dest": "PowerSystems",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "9d837c58260320195d247ca1bfdb6bed8e35041f",
+      "url": "https://github.com/modelica/PowerSystems.git"
+    },
+    {
       "dest": "QSSFluidFlow",
       "options": {
         "encoding": "Windows-1252",
