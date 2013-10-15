@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b797baeeeeb43f95a9be698e09ec693b26cd9e22",
+      "rev": "e3d5b8b435945c03163151939bb01f294ab903c3",
       "targets": [
         "Buildings latest"
       ],
@@ -220,7 +220,7 @@
         "patchlevel": "-om1",
         "gitbranch": "master"
       },
-      "rev": "d675cef257ad2f27cf73d21b8ca929cd9b2b64b5",
+      "rev": "78b1d33161eac926aadd0598211829662b2cb1fe",
       "targets": [
         "self"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "dest": "Modelica_ElectricalEnergyStorages",
-      "rev": 6973,
+      "rev": 7072,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
     },
     {
@@ -337,7 +337,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 228,
+      "rev": 229,
       "url": "svn://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
