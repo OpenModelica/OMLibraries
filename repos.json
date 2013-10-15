@@ -314,13 +314,14 @@
     {
       "dest": "RealTimeCoordinationLibrary",
       "options": {
-        "encoding": "Windows-1252"
+        "encoding": "Windows-1252",
+        "gitbranch": "master"
       },
-      "rev": 24,
+      "rev": "2efd954f6d57a71f12f1c3d95a199a650017b76e",
       "targets": [
         "self"
       ],
-      "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary/trunk"
+      "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git"
     },
     {
       "dest": "SPOT",
