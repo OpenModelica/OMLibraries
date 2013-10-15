@@ -83,17 +83,18 @@ elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s
   rm -rf "$DEST"
   svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
-elif ! test `cat "$DEST.rev"` = $REVISION; then
-  if ! svn up $SVNOPTS "-r$REVISION" "$DEST"; then
+else
+  if test `svn info $SVNOPTS --xml "$DEST" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"` = "$REVISION"; then
+    echo "$DEST is up to date"
+  elif ! svn up $SVNOPTS "-r$REVISION" "$DEST"; then
     echo "Failed to update $DEST"
     rm -rf "$DEST"
     exit 1
+  else
+    # svn-clean is a nice extra; not needed
+    svn-clean "$DEST" 2> /dev/null
   fi
-  # svn-clean is a nice extra; not needed
-  svn-clean "$DEST" 2> /dev/null
   echo "$REVISION" > "$DEST.rev"
-else
-  echo "$DEST is up to date"
 fi
 
 elif test "$TYPE" = GIT; then
