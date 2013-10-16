@@ -206,8 +206,11 @@
     },
     {
       "dest": "ModelicaCompliance",
-      "rev": 17601,
-      "url": "https://openmodelica.org/svn/OpenModelica/compliance"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "ef2b8fd89179a7430434689764fb02b8830b5035",
+      "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
       "dest": "ModelicaDEVS",
@@ -331,7 +334,8 @@
     {
       "dest": "SystemDynamics",
       "options": {
-        "encoding": "Windows-1252"
+        "encoding": "Windows-1252",
+        "license": "modelica1.1"
       },
       "rev": 2,
       "url": "https://github.com/modelica-3rdparty/SystemDynamics/trunk"
