@@ -15,6 +15,7 @@
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo/trunk",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
+    "https://github.com/modelica-3rdparty/ThermoPower",
     "https://github.com/modelica-3rdparty/Verif",
     "https://github.com/modelica-3rdparty/WheelsAndTires"
   ],
@@ -223,7 +224,7 @@
         "patchlevel": "-om1",
         "gitbranch": "master"
       },
-      "rev": "78b1d33161eac926aadd0598211829662b2cb1fe",
+      "rev": "d75d8c0c0299bb5d0249a42615e505c335955ff6",
       "targets": [
         "self"
       ],
@@ -334,11 +335,11 @@
     {
       "dest": "SystemDynamics",
       "options": {
-        "encoding": "Windows-1252",
+        "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/SystemDynamics/trunk"
+      "rev": "31b2a25bfdecb66fb3c8dcad923d324bd739b84f",
+      "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
       "dest": "ThermoPower",
