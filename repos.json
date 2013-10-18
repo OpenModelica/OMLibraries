@@ -73,7 +73,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e3d5b8b435945c03163151939bb01f294ab903c3",
+      "rev": "9d03bf1a3097d5f6914672bf1e3816bbe9ea363c",
       "targets": [
         "Buildings latest"
       ],
@@ -122,7 +122,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 563,
+      "rev": 574,
         "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
     },
     {
@@ -321,7 +321,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "2efd954f6d57a71f12f1c3d95a199a650017b76e",
+      "rev": "c56d568b92c8d646872f8db8f8f709610d5590a4",
       "targets": [
         "self"
       ],
@@ -338,7 +338,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "31b2a25bfdecb66fb3c8dcad923d324bd739b84f",
+      "rev": "eee9b7c42fdbcba0fc281348aa93aa2d12b5f5ae",
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
