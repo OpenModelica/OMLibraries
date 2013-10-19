@@ -47,6 +47,15 @@
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics/trunk"
     },
     {
+      "dest": "Annex60",
+      "options": {
+        "gitbranch": "master",
+        "license": "buildings"
+      },
+      "rev": "6da390a8ab7c824e770229b5aeaf77f8baa50371",
+      "url": "https://github.com/iea-annex60/modelica-annex60.git"
+    },
+    {
       "dest": "BioChem",
       "rev": 40,
       "url": "https://github.com/OpenModelica/BioChem/trunk"
@@ -73,7 +82,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9d03bf1a3097d5f6914672bf1e3816bbe9ea363c",
+      "rev": "af718dd03db7ee45c5e46fd7dfe9a9ad1e996cb4",
       "targets": [
         "Buildings latest"
       ],
@@ -186,7 +195,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7053,
+      "rev": 7087,
       "targets": [
         "Complex",
         "Modelica",
