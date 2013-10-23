@@ -52,7 +52,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "af9b8b61a006283b7b6c036c94f7dfb172a4955e",
+      "rev": "145b080daf37120ea18fbff2db8aaefe0d4e6ba6",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -82,7 +82,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "af718dd03db7ee45c5e46fd7dfe9a9ad1e996cb4",
+      "rev": "617ec31d77a972683e667132cb8ce6405e274705",
       "targets": [
         "Buildings latest"
       ],
@@ -347,7 +347,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "6415dd189c2f93403b0bcc4ebcffb9a3b8ede92e",
+      "rev": "9989d05bcabee606f97fb8f09c408f8af00c9460",
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
