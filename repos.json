@@ -288,8 +288,11 @@
     },
     {
       "dest": "OpenHydraulics",
-      "rev": 28,
-      "url": "https://github.com/modelica-3rdparty/OpenHydraulics/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "6ba88126e675d4d9f7969d493e0b165ef9127a21",
+      "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
       "dest": "PowerFlow",
