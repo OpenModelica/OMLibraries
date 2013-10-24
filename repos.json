@@ -129,10 +129,11 @@
     {
       "dest": "HelmholtzMedia",
       "options": {
+        "gitbranch": "master",
         "encoding": "Windows-1252"
       },
-      "rev": 574,
-        "url": "https://github.com/modelica-3rdparty/HelmholtzMedia/trunk"
+      "rev": "2aa19026905e4aefb50c15e1c00534df4a110a1e",
+      "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
       "dest": "IndustrialControlSystems",
