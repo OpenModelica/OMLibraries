@@ -43,8 +43,11 @@
   "repos": [
     {
       "dest": "ADGenKinetics",
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/ADGenKinetics/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "42428db6e84bcde28543a3bba9bccee581309bb1",
+      "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
       "dest": "Annex60",
@@ -57,24 +60,29 @@
     },
     {
       "dest": "BioChem",
-      "rev": 40,
-      "url": "https://github.com/OpenModelica/BioChem/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "2752a9abad6a331cee30159ddbbaff1645357751",
+      "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
       "dest": "BondGraph",
       "options": {
+        "gitbranch": "master",
         "license": "gpl3+"
       },
-      "rev": 3,
-      "url": "https://github.com/modelica-3rdparty/BondGraph/trunk"
+      "rev": "e742f7fe9f15d76aacb5efb2e725aec3dd70638e",
+      "url": "https://github.com/modelica-3rdparty/BondGraph.git"
     },
     {
       "dest": "BondLib",
       "options": {
-        "encoding": "Windows-1252"
+        "encoding": "Windows-1252",
+        "gitbranch": "release"
       },
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/BondLib/trunk"
+      "rev": "df7a40fe612617da22e27d39edfa4b27d65f23d0",
+      "url": "https://github.com/modelica-3rdparty/BondLib.git"
     },
     {
       "dest": "Buildings",
@@ -102,13 +110,19 @@
     },
     {
       "dest": "ComplexLib",
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/ComplexLib/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "0b78942ee4fa95ae71347a0d552dd869fdf4c708",
+      "url": "https://github.com/modelica-3rdparty/ComplexLib.git"
     },
     {
       "dest": "ExtendedPetriNets",
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets/trunk"
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "2f4eac0651c1ab0ed56b75ec61424e0ef15181d3",
+      "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets.git"
     },
     {
       "dest": "FCSys",
@@ -121,10 +135,11 @@
     {
       "dest": "FuzzyControl",
       "options": {
+        "gitbranch": "master",
         "std": "2.x"
       },
-      "rev": 2,
-      "url": "https://github.com/modelica-3rdparty/FuzzyControl/trunk"
+      "rev": "19ff67ff129a440482cc85f216f287b05ea6ec0d",
+      "url": "https://github.com/modelica-3rdparty/FuzzyControl.git"
     },
     {
       "dest": "HelmholtzMedia",
@@ -138,10 +153,11 @@
     {
       "dest": "IndustrialControlSystems",
       "options": {
+        "gitbranch": "master",
         "patchlevel": "om1"
       },
-      "rev": 11,
-      "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems/trunk"
+      "rev": "6a2414307d5998c6d081efe803c2b575a532b3ba",
+      "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems.git"
     },
     {
       "dest": "InstantaneousSymmetricalComponents",
@@ -150,8 +166,11 @@
     },
     {
       "dest": "LinearMPC",
-      "rev": 8,
-      "url": "https://github.com/modelica-3rdparty/LinearMPC/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "1e91a5dcaa662cd30c5b09a9d0267289703f933b",
+      "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
     },
     {
       "dest": "MSL 1.6",
@@ -209,11 +228,14 @@
     },
     {
       "dest": "Modelica3D",
-      "rev": 23,
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "d6597fd353a98899d0326aa08bfcd6928771c72d",
       "targets": [
         "none"
       ],
-      "url": "https://github.com/OpenModelica/modelica3d/trunk"
+      "url": "https://github.com/OpenModelica/modelica3d.git"
     },
     {
       "dest": "ModelicaCompliance",
