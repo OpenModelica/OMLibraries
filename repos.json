@@ -10,6 +10,7 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
+    "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/SPICELib",
@@ -55,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "145b080daf37120ea18fbff2db8aaefe0d4e6ba6",
+      "rev": "b744d29f68038000472942cf62391d9e4cf7a308",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -63,7 +64,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2752a9abad6a331cee30159ddbbaff1645357751",
+      "rev": "c0426191125b5465bf035c8df6261fdec8607ac0",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -90,7 +91,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "617ec31d77a972683e667132cb8ce6405e274705",
+      "rev": "0662384b716683eba912afb2df0db5047bd34571",
       "targets": [
         "Buildings latest"
       ],
@@ -215,7 +216,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7087,
+      "rev": 7110,
       "targets": [
         "Complex",
         "Modelica",
@@ -356,7 +357,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "c56d568b92c8d646872f8db8f8f709610d5590a4",
+      "rev": "c56a9b97aba51133b7f71c5119f2e587c7d19147",
       "targets": [
         "self"
       ],
