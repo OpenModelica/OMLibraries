@@ -216,7 +216,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7110,
+      "rev": 7126,
       "targets": [
         "Complex",
         "Modelica",
@@ -226,6 +226,23 @@
         "ObsoleteModelica3"
       ],
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.2.1"
+    },
+    {
+      "dest": "MSL trunk",
+      "options": {
+        "breaks": "omlibrary-msl32,omlibrary-reference",
+        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+        "remove-files": "Resources/Library"
+      },
+      "rev": 7126,
+      "targets": [
+        "Complex trunk",
+        "Modelica trunk",
+        "ModelicaReference trunk",
+        "ModelicaServices trunk",
+        "ModelicaTest trunk"
+      ],
+      "url": "https://svn.modelica.org/projects/Modelica/trunk"
     },
     {
       "dest": "Modelica3D",

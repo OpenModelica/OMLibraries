@@ -179,7 +179,6 @@ for f in $LIBS "$@"; do
   else
     NAME="$LIB $VER"
   fi
-  echo $LICENSE > "$BUILD/$NAME.license"
   rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
   echo Copy: cp -rp "$SOURCE" "$BUILD/$NAME$EXT"
@@ -200,6 +199,12 @@ for f in $LIBS "$@"; do
       exit 1
     fi
     PATCHREV=`echo -om$PATCHREV`
+    # Do this a second time after patching for updated uses-annotations... Yes, a bit weird
+    if test -d "$BUILD/$NAME$EXT"; then
+      ./get-version.sh "$OMC" "$BUILD" "$BUILD/$NAME$EXT/package.mo" "$LIB" "$ENCODING" "$STD"
+    else
+      ./get-version.sh "$OMC" "$BUILD" "$BUILD/$NAME$EXT" "$LIB" "$ENCODING" "$STD"
+    fi
   else
     PATCHREV=""
   fi
@@ -212,6 +217,7 @@ for f in $LIBS "$@"; do
   if test ! -z "$PATCHLEVELTHIS"; then
     PATCHREV="$PATCHLEVELTHIS"
   fi
+  echo $LICENSE > "$BUILD/$NAME.license"
   if test "$TYPE" = SVN; then
     echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "$BUILD/$NAME.last_change"
     # Skipping changelog. Was only used for debian packages, but it is not that useful and quite slow

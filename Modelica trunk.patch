@@ -1,0 +1,380 @@
+--- svn/MSL trunk/Modelica/Blocks/Sources.mo	2013-11-09 15:52:45.985924970 +0100
++++ build/Modelica trunk/Blocks/Sources.mo	2013-11-09 15:55:32.343609690 +0100
+@@ -2432,7 +2432,7 @@
+       discrete input Modelica.SIunits.Time nextTimeEvent;
+       discrete input Modelica.SIunits.Time pre_nextTimeEvent;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -2451,7 +2451,7 @@
+       discrete input Modelica.SIunits.Time nextTimeEvent;
+       discrete input Modelica.SIunits.Time pre_nextTimeEvent;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -2466,7 +2466,7 @@
+       discrete input Modelica.SIunits.Time nextTimeEvent;
+       discrete input Modelica.SIunits.Time pre_nextTimeEvent;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real der_timeIn;
+       output Real der_y;
+       external"C" der_y = ModelicaStandardTables_CombiTimeTable_getDerValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent, der_timeIn)
+@@ -2478,7 +2478,7 @@
+       extends Modelica.Icons.Function;
+       input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Modelica.SIunits.Time timeMin "Minimum time value in table";
+       external"C" timeMin = ModelicaStandardTables_CombiTimeTable_minimumTime(tableID)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -2489,7 +2489,7 @@
+       extends Modelica.Icons.Function;
+       input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Modelica.SIunits.Time timeMax "Maximum time value in table";
+       external"C" timeMax = ModelicaStandardTables_CombiTimeTable_maximumTime(tableID)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -2501,7 +2501,7 @@
+       input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
+       input Modelica.SIunits.Time timeIn;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
+       external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
+         annotation (Library={"ModelicaStandardTables"});
+diff -u -x .svn -r libraries/Modelica trunk/Modelica/Blocks/Tables.mo build/Modelica trunk/Blocks/Tables.mo
+--- libraries/Modelica trunk/Modelica/Blocks/Tables.mo	2013-06-27 18:19:23.743158383 +0200
++++ build/Modelica trunk/Blocks/Tables.mo	2013-07-24 10:05:34.218901723 +0200
+@@ -58,7 +58,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -72,7 +72,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -85,7 +85,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real der_u;
+       output Real der_y;
+       external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
+@@ -360,7 +360,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -374,7 +374,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -387,7 +387,7 @@
+       input Integer icol;
+       input Real u;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real der_u;
+       output Real der_y;
+       external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
+@@ -657,7 +657,7 @@
+       input Real u1;
+       input Real u2;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -671,7 +671,7 @@
+       input Real u1;
+       input Real u2;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       output Real y;
+       external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
+         annotation (Library={"ModelicaStandardTables"});
+@@ -684,7 +684,7 @@
+       input Real u1;
+       input Real u2;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real der_u1;
+       input Real der_u2;
+       output Real der_y;
+diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.mo build/Modelica trunk/Math/package.mo
+--- libraries/Modelica trunk/Modelica/Math/package.mo	2013-07-24 09:57:03.089781530 +0200
++++ build/Modelica trunk/Math/package.mo	2013-07-24 10:07:04.201916056 +0200
+@@ -12542,9 +12542,67 @@
+ 
+   annotation (Documentation(info="<html>
+ 
+-</html>"));
++</html>"),
++derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
+ end tempInterpol1;
+ 
++function tempInterpol1_der
++  "Temporary function for linear interpolation (will be removed)"
++  input Real u "input value (first column of table)";
++  input Real table[:, :] "table to be interpolated";
++  input Integer icol "column of table to be interpolated";
++  input Real du;
++  output Real dy "interpolated input value (icol column of table)";
++  protected 
++  Integer i;
++  Integer n "number of rows of table";
++  Real u1;
++  Real u2;
++  Real y1;
++  Real y2;
++algorithm 
++  n := size(table, 1);
++
++  if n <= 1 then
++    dy := 0;
++
++  else
++    // Search interval
++
++    if u <= table[1, 1] then
++      i := 1;
++
++    else
++      i := 2;
++      // Supports duplicate table[i, 1] values
++      // in the interior to allow discontinuities.
++      // Interior means that
++      // if table[i, 1] = table[i+1, 1] we require i>1 and i+1<n
++
++      while i < n and u >= table[i, 1] loop
++        i := i + 1;
++
++      end while;
++      i := i - 1;
++
++    end if;
++
++    // Get interpolation data
++    u1 := table[i, 1];
++    u2 := table[i + 1, 1];
++    y1 := table[i, icol];
++    y2 := table[i + 1, icol];
++
++    assert(u2 > u1, "Table index must be increasing");
++    // Interpolate
++    dy := (y2 - y1)/(u2 - u1);
++ 
++  end if;
++
++  annotation (Documentation(info="<html>
++
++</html>"));
++end tempInterpol1_der;
+ 
+ function tempInterpol2
+   "Temporary function for vectorized linear interpolation (will be removed)"
+@@ -12604,9 +12662,74 @@
+ 
+   annotation (Documentation(info="<html>
+ 
+-</html>"));
++</html>"),
++derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
+ end tempInterpol2;
+ 
++function tempInterpol2_der
++  "Temporary function for vectorized linear interpolation (will be removed)"
++  extends Modelica.Icons.Function;
++  extends Modelica.Icons.ObsoleteModel;
++
++  input Real u "input value (first column of table)";
++  input Real table[:, :] "table to be interpolated";
++  input Integer icol[:] "column(s) of table to be interpolated";
++  input Real du "input value (first column of table)";
++  output Real dy[1, size(icol, 1)]
++    "interpolated input value(s) (column(s) icol of table)";
++protected
++  Integer i;
++  Integer n "number of rows of table";
++  Real u1;
++  Real u2;
++  Real y1[1, size(icol, 1)];
++  Real y2[1, size(icol, 1)];
++algorithm
++  n := size(table, 1);
++
++  if n <= 1 then
++    dy := zeros(1, size(icol,1));
++
++  else
++    // Search interval
++
++    if u <= table[1, 1] then
++      i := 1;
++
++    else
++      i := 2;
++      // Supports duplicate table[i, 1] values
++      // in the interior to allow discontinuities.
++      // Interior means that
++      // if table[i, 1] = table[i+1, 1] we require i>1 and i+1<n
++
++      while i < n and u >= table[i, 1] loop
++        i := i + 1;
++
++      end while;
++      i := i - 1;
++
++    end if;
++
++    // Get interpolation data
++    u1 := table[i, 1];
++    u2 := table[i + 1, 1];
++    y1 := transpose([table[i, icol]]);
++    y2 := transpose([table[i + 1, icol]]);
++
++    assert(u2 > u1, "Table index must be increasing");
++    // Interpolate
++    dy := (y2 - y1)/(u2 - u1);
++
++  end if;
++
++  annotation (Documentation(info="<html>
++
++</html>")
++);
++end tempInterpol2_der;
++
++
+ 
+ annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
+           {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
+diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.order build/Modelica trunk/Math/package.order
+--- libraries/Modelica trunk/Modelica/Math/package.order	2013-05-16 12:08:21.352656731 +0200
++++ build/Modelica trunk/Math/package.order	2013-07-24 10:05:34.234902259 +0200
+@@ -24,4 +24,6 @@
+ baseIcon1
+ baseIcon2
+ tempInterpol1
++tempInterpol1_der
+ tempInterpol2
++tempInterpol2_der
+diff -u -x .svn -r libraries/Modelica trunk/Modelica/Mechanics/MultiBody/package.mo build/Modelica trunk/Mechanics/MultiBody/package.mo
+--- libraries/Modelica trunk/Modelica/Mechanics/MultiBody/package.mo	2013-06-27 18:19:21.579086395 +0200
++++ build/Modelica trunk/Mechanics/MultiBody/package.mo	2013-07-24 10:05:34.234902259 +0200
+@@ -1268,6 +1268,7 @@
+     "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
+     annotation (Dialog(tab="Defaults"));
+ 
++  /* adrpo: 2012-09-04 -> replace gravityAcceleration function with the one in MSL 3.1 (not replaceable)
+   replaceable function gravityAcceleration =
+        Modelica.Mechanics.MultiBody.Forces.Internal.standardGravityAcceleration
+       (    gravityType=gravityType, g=g*Modelica.Math.Vectors.normalizeWithAssert(n), mue=mue)
+@@ -1286,6 +1287,38 @@
+      <a href=\"modelica://Modelica.Mechanics.MultiBody.Examples.Elementary.UserDefinedGravityField\">Examples.Elementary.UserDefinedGravityField</a>.
+ </p>
+ </html>"));
++*/
++
++function gravityAcceleration = gravityAccelerationTypes (
++      gravityType=gravityType,
++      g=g*Modelica.Math.Vectors.normalize(
++                                     n),
++      mue=mue);
++
++protected
++  function gravityAccelerationTypes
++    "Gravity field acceleration depending on field type and position"
++    import Modelica.Mechanics.MultiBody.Types.GravityTypes;
++    extends Modelica.Icons.Function;
++    input SI.Position r[3]
++      "Position vector from world frame to actual point, resolved in world frame";
++    input GravityTypes gravityType "Type of gravity field";
++    input SI.Acceleration g[3]
++      "Constant gravity acceleration, resolved in world frame, if gravityType=1";
++    input Real mue(unit="m3/s2")
++      "Field constant of point gravity field, if gravityType=2";
++    output SI.Acceleration gravity[3]
++      "Gravity acceleration at point r, resolved in world frame";
++  algorithm
++    gravity := if gravityType == GravityTypes.UniformGravity then g else
++               if gravityType == GravityTypes.PointGravity then
++                  -(mue/(r*r))*(r/Modelica.Math.Vectors.length(
++                                                r)) else
++                    zeros(3);
++    annotation(Inline=true);          
++  end gravityAccelerationTypes;
++
++
+ 
+   /* The World object can only use the Modelica.Mechanics.MultiBody.Visualizers.Advanced.Shape model, but no
+      other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
+diff -u -x .svn -r libraries/Modelica trunk/Modelica/Media/Water/IF97_Utilities.mo build/Modelica trunk/Media/Water/IF97_Utilities.mo
+--- libraries/Modelica trunk/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
++++ build/Modelica trunk/Media/Water/IF97_Utilities.mo	2013-07-24 10:05:34.234902259 +0200
+@@ -7161,7 +7161,7 @@
+        else region;
+     aux.R := BaseIF97.data.RH2O;
+     aux.p := p;
+-    aux.T := T;
++    aux.T := T; /* OpenModelica patch */ aux.dpT := 0.0; aux.pt := 0.0; aux.pd := 0.0; aux.x := 0.0; aux.rho := 0.0; aux.vt := 0.0; aux.vp := 0.0; aux.cp := 0.0; /* end OpenModelica patch */
+     if (aux.region == 1) then
+       g := BaseIF97.Basic.g1(p, T);
+       aux.h := aux.R*aux.T*g.tau*g.gtau;
+Only in libraries/Modelica trunk/Modelica/Resources: BuildProjects
+Only in libraries/Modelica trunk/Modelica/Resources: Library
+--- svn/MSL trunk/Modelica/package.mo	2013-11-09 15:11:25.009064393 +0100
++++ build/Modelica trunk/package.mo	2013-11-09 15:19:16.285222869 +0100
+@@ -7765,12 +7765,12 @@
+ 
+ annotation (
+ preferredView="info",
+-version="3.2.1",
+-versionBuild=2,
++version="trunk",
++versionBuild=0,
+ versionDate="2013-08-14",
+ dateModified = "2013-08-14 08:44:41Z",
+ revisionId="$Id:: package.mo 6946 2013-08-23 07:40:29Z #$",
+-uses(Complex(version="3.2.1"), ModelicaServices(version="3.2.1")),
++uses(Complex(version="trunk"), ModelicaServices(version="trunk")),
+ conversion(
+  noneFromVersion="3.2",
+  noneFromVersion="3.1",

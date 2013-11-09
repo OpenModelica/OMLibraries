@@ -1,0 +1,13 @@
+--- svn/MSL trunk/Complex.mo	2013-11-09 15:11:23.605016263 +0100
++++ build/Complex trunk.mo	2013-11-09 15:43:43.395390587 +0100
+@@ -236,8 +236,8 @@
+   end 'String';
+ 
+ annotation (Protection(access=Access.hide),
+-version="3.2.1",
+-versionBuild=2,
++version="trunk",
++versionBuild=0,
+ versionDate="2013-08-14",
+ dateModified = "2013-08-14 08:44:41Z",
+ revisionId="$Id:: Complex.mo 6931 2013-08-14 11:38:51Z #$",
