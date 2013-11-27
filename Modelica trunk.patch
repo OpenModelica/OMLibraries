@@ -366,13 +366,12 @@ Only in libraries/Modelica trunk/Modelica/Resources: Library
  
  annotation (
  preferredView="info",
--version="3.2.1",
--versionBuild=2,
+-version="3.2.2",
 +version="trunk",
-+versionBuild=0,
+ versionBuild=0,
  versionDate="2013-08-14",
  dateModified = "2013-08-14 08:44:41Z",
- revisionId="$Id:: package.mo 6946 2013-08-23 07:40:29Z #$",
+ revisionId="$Id:: package.mo 7129 2013-11-10 20:36:57Z #$",
 -uses(Complex(version="3.2.1"), ModelicaServices(version="3.2.1")),
 +uses(Complex(version="trunk"), ModelicaServices(version="trunk")),
  conversion(

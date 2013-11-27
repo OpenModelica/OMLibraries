@@ -56,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e05d05c5b338e934349aae3a900ec9b1b83dcb62",
+      "rev": "1c2f0ae4faf4c1a08a8c831bbc732b5fe423dfb2",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -91,7 +91,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "ed5eafb1a8de182973c08cb141d50ae49e0a8f36",
+      "rev": "606736aed8f31af94aec9e971d3dae359931f5ca",
       "targets": [
         "Buildings latest"
       ],
@@ -216,7 +216,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7126,
+      "rev": 7148,
       "targets": [
         "Complex",
         "Modelica",
@@ -234,7 +234,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7126,
+      "rev": 7147,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -274,7 +274,7 @@
         "patchlevel": "-om1",
         "gitbranch": "master"
       },
-      "rev": "d75d8c0c0299bb5d0249a42615e505c335955ff6",
+      "rev": "2934bff06fb1a30fb4ed7899a1e1635a862f2673",
       "targets": [
         "self"
       ],
@@ -295,7 +295,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7061,
+      "rev": 7146,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -307,7 +307,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 7061,
+      "rev": 7117,
       "targets": [
         "self"
       ],
