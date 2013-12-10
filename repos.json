@@ -128,7 +128,8 @@
     {
       "dest": "FCSys",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "remove-files": "Resources/Source/Python/doc"
       },
       "rev": "cb98fb045f65621284828c6295f221a069d3426d",
       "url": "https://github.com/kdavies4/FCSys.git"

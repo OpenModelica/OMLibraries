@@ -61,6 +61,25 @@ add-missing: config.done Makefile.numjobs
 	@echo "Adding missing github repositories using trunk / latest revision"
 	./update-library.py -n `cat Makefile.numjobs` --add-missing
 
+MACPORTSTARBALL=macports-build/openmodelicalibraries_$(GITREVISION).tar.xz
+dist-tarball:
+	test "$(BUILD_DIR)" = "build/"
+	$(MAKE) GITREVISION=`git show -s --format="%ad" --date="iso" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -` dist-tarball-internal
+dist-tarball-internal:
+	test ! -z $(GITREVISION)
+	$(MAKE) all
+	rm -f build/*.uses build/*.ok build/*.license build/*.depends build/*.last_change build/*.breaks build/*.std build/*.provides build/*.provided
+	rm -rf openmodelicalibraries_$(GITREVISION)/
+	mkdir -p openmodelicalibraries_$(GITREVISION)/
+	mv build openmodelicalibraries_$(GITREVISION)/libraries
+	cp templates/macports/Makefile.in templates/macports/configure.in openmodelicalibraries_$(GITREVISION)/
+	mkdir -p macports-build
+	tar cJf $(MACPORTSTARBALL) openmodelicalibraries_$(GITREVISION)
+	sed -e "s/@REV@/$(GITREVISION)/" \
+        -e "s/@MD5@/`openssl md5 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
+        -e "s/@SHA1@/`openssl sha1 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
+        -e "s/@RMD160@/`openssl rmd160 $(MACPORTSTARBALL) | cut -d \  -f 2`/" templates/macports/Portfile.in > macports-build/Portfile
+
 # .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
 # .remote/pool: Directory where the deb-packages and sources should be stored
 debian: config.done Makefile.numjobs .remote/control-files .remote/pool

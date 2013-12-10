@@ -1,0 +1,4 @@
+all:
+install:
+	mkdir -p ${DESTDIR}@prefix@/lib/omlibrary/
+	cp -a libraries/* ${DESTDIR}@prefix@/lib/omlibrary/

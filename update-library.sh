@@ -181,10 +181,10 @@ for f in $LIBS "$@"; do
   fi
   rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
-  echo Copy: cp -rp "$SOURCE" "$BUILD/$NAME$EXT"
-  cp -rp "$SOURCE" "$BUILD/$NAME$EXT"
-  echo Removing files: [$REMOVE_FILES]
+  echo Copy: cp -a "$SOURCE" "$BUILD/$NAME$EXT"
+  cp -a "$SOURCE" "$BUILD/$NAME$EXT"
   for FILES in $REMOVE_FILES; do
+    echo Removing files: [$BUILD/$NAME$EXT/$FILES]
     rm -rf "$BUILD/$NAME$EXT/$FILES"
   done
   if test -f "$NAME.patch"; then

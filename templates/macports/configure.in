@@ -1,0 +1,2 @@
+AC_INIT([OpenModelica],[dev],[https://trac.openmodelica.org/OpenModelica],[openmodelica],[https://openmodelica.org])
+AC_OUTPUT(Makefile)

@@ -1,0 +1,23 @@
+# $Id$
+
+PortSystem          1.0
+
+name                openmodelicalibraries
+version             @REV@
+categories          lang math
+platforms           darwin
+maintainers         martin.sjolund@liu.se
+description         Modelica libraries for OpenModelica
+long_description    A collection of Modelica libraries for OpenModelica.
+homepage            http://openmodelica.org/
+license             Varies with each library in the collection
+
+master_sites        http://build.openmodelica.org/libraries/
+distfiles           openmodelicalibraries_${version}.tar.xz
+worksrcdir          openmodelicalibraries_${version}
+
+checksums           md5     @MD5@ \
+                    sha1    @SHA1@ \
+                    rmd160  @RMD160@
+
+use_autoconf        yes
