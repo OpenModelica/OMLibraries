@@ -114,10 +114,14 @@ if __name__ == '__main__':
   if options.check_latest:
     from joblib import Parallel, delayed
     (msgs,repos) = zip(*list(Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)))
+    os.system("rm -f test-valid*.mos")
     jsondata['repos'] = sorted(repos, key=lambda k: k['dest']) 
+    f = open("commit.log","w")
+    f.write("Bump libraries\n")
     for msg in msgs:
       if msg is not None:
         print msg
+        f.write("- %s\n" % msg)
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
     f = open("repos.json","w")
