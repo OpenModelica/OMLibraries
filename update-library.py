@@ -20,6 +20,8 @@ with open("repos.json") as f:
   jsondata = simplejson.load(f)
 repos = jsondata['repos']
 
+def updateCommand(r):
+  return 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
 def update():
   from joblib import Parallel, delayed
   for p in jsondata['provided']:
@@ -27,12 +29,12 @@ def update():
   for k in jsondata['provides'].keys():
     f = open(options.build + "/%s.provides" % k,'w')
     f.write(jsondata['provides'][k])
-  commands = [
-     'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' %
-     (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
-     for r in repos
-   ]
+  commands = [updateCommand(r) for r in repos]
   for cmd in commands: print cmd
+  try:
+    os.remove('error.log')
+  except OSError:
+    pass
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
   exit = 0
   for (i,cmd) in zip(res,commands):
@@ -60,6 +62,7 @@ def checkGithub(ghs,urls):
   return res
 
 def checkLatest(repo):
+  msg = None
   if repo['url'].endswith('git'):
     if repo['options'] is None:
       repo['options'] = {}
@@ -71,9 +74,34 @@ def checkLatest(repo):
     cnt = int(subprocess.check_output('cd "git/%s" && git rev-list %s..HEAD --count' % (repo['dest'],repo['rev']), shell=True))
     if cnt <> 0:
       rev=subprocess.check_output('cd "git/%s" && git rev-list HEAD -n1' % repo['dest'], shell=True).strip()
-      print '%s head is %d behind - latest hash %s' % (repo['dest'],cnt,rev)
+      oldrev = repo['rev']
+      repo['rev'] = rev
+      if 0==os.system(updateCommand(repo)):
+        msg = '%s head is %d behind - latest is working hash %s' % (repo['dest'],cnt,rev)
+      else:
+        repo['rev'] = oldrev
+        msg = '%s head is %d behind - latest is FAILING hash %s, %s' % (repo['dest'],cnt,rev,repo['url'])
   else:
-    os.system('./check-latest.sh "svn/%s"' % repo['dest'])
+    svncmd = "svn --non-interactive --username anonymous"
+    # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
+    remoteurl = repo['url']
+    oldrev = int(repo['rev'])
+    newrev = int(subprocess.check_output('%s info --xml "%s" | xpath -q -e "/info/entry/commit/@revision" | grep -o "[0-9]*"' % (svncmd,remoteurl), shell=True))
+    repo['rev'] = newrev
+    if oldrev < newrev:
+      #changesCmd = '%s log -qv -r%s:%s %s | egrep -o "(/(tags|branches)/[^/]*/|/trunk/)" | sed "s, (from /,/," | sort -u' % (svncmd,oldrev,newrev,remoteurl)
+      #changes = subprocess.check_output(changesCmd, shell=True).strip()
+      updateLibraryCmd = updateCommand(repo)
+      if 0==os.system(updateLibraryCmd):
+        if repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+          repo['rev'] = oldrev
+          msg = "svn/%s uses %d but %d is available. It was not updated because the library was marked not to update it." % (repo['dest'],oldrev,newrev)
+        else:
+          msg = "svn/%s uses %d but %d is available. It was updated in the repository." % (repo['dest'],oldrev,newrev)
+      else:
+        repo['rev'] = oldrev
+        msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
+  return (msg,repo)
 if __name__ == '__main__':
   parser = OptionParser()
   parser.add_option("-n", type="int", help="number of threads", dest="n_jobs", default=1)
@@ -85,9 +113,15 @@ if __name__ == '__main__':
   n_jobs = options.n_jobs
   if options.check_latest:
     from joblib import Parallel, delayed
-    Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
+    (msgs,repos) = zip(*list(Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)))
+    jsondata['repos'] = sorted(repos, key=lambda k: k['dest']) 
+    for msg in msgs:
+      if msg is not None:
+        print msg
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
+    f = open("repos.json","w")
+    simplejson.dump(jsondata, f, indent=2, sort_keys=True)
   elif options.add_missing:
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls):

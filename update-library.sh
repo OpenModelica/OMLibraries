@@ -53,6 +53,10 @@ case $OPT in
   REMOVE_FILES="$1"
   shift
   ;;
+--automatic-updates)
+  # Skip this; used in the python script
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1
@@ -241,4 +245,10 @@ for f in $LIBS "$@"; do
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "$BUILD/$NAME/package.encoding"
   fi
+  if test -d "$BUILD/$NAME$EXT"; then
+    LIBTOTEST="$BUILD/$NAME$EXT/package.mo"
+  else
+    LIBTOTEST="$BUILD/$NAME$EXT"
+  fi
+  ./test-valid.sh "$OMC" "$BUILD" "$LIBTOTEST" || exit 1
 done

@@ -146,10 +146,10 @@
     {
       "dest": "HelmholtzMedia",
       "options": {
-        "gitbranch": "master",
-        "encoding": "Windows-1252"
+        "encoding": "Windows-1252",
+        "gitbranch": "master"
       },
-      "rev": "2aa19026905e4aefb50c15e1c00534df4a110a1e",
+      "rev": "76ec2436f59725937d60f43347a115d6f9eb301f",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -200,6 +200,7 @@
     {
       "dest": "MSL 3.1",
       "options": {
+        "automatic-updates": "no",
         "breaks": "omlibrary-msl31",
         "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
       },
@@ -213,6 +214,7 @@
     {
       "dest": "MSL 3.2.1",
       "options": {
+        "automatic-updates": "no",
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
@@ -235,7 +237,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7169,
+      "rev": 7195,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -261,32 +263,20 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ef2b8fd89179a7430434689764fb02b8830b5035",
+      "rev": "8420e946cf81ed5d995ef54e691f0faa8e5fa399",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
       "dest": "ModelicaDEVS",
-      "rev": 2,
+      "rev": 1,
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
-    },
-    {
-      "dest": "Modelica_DeviceDrivers",
-      "options": {
-        "patchlevel": "-om1",
-        "gitbranch": "master"
-      },
-      "rev": "ddc34ccaf7cb7a204e3813eb129cab3d3318a58f",
-      "targets": [
-        "self"
-      ],
-      "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
       "dest": "Modelica_DeviceDrivers-release",
       "options": {
         "gitbranch": "release"
       },
-      "rev": "0efcab000d7459fa6e4450e99092dfd288427090",
+      "rev": "43886bbead73d448a636e04156c218b69b886926",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -324,7 +314,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 2,
+      "rev": 1,
       "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
     },
     {
@@ -336,9 +326,22 @@
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
+      "dest": "Physiolibrary",
+      "rev": 22,
+      "url": "https://github.com/modelica-3rdparty/Physiolibrary/trunk"
+    },
+    {
       "dest": "PowerFlow",
       "rev": 3174,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
+    },
+    {
+      "dest": "PowerSystems",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "9d837c58260320195d247ca1bfdb6bed8e35041f",
+      "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
       "dest": "PowerSystems-latest",
@@ -352,21 +355,13 @@
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
-      "dest": "PowerSystems",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "9d837c58260320195d247ca1bfdb6bed8e35041f",
-      "url": "https://github.com/modelica/PowerSystems.git"
-    },
-    {
       "dest": "QSSFluidFlow",
       "options": {
         "encoding": "Windows-1252",
         "license": "modelica1.1",
         "std": "2.x"
       },
-      "rev": 4,
+      "rev": 1,
       "url": "https://github.com/modelica-3rdparty/QSSFluidFlow/trunk"
     },
     {
@@ -375,7 +370,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "47b1dc9858c74098728a2e3b20c14b1fe2b99fab",
+      "rev": "7949d94098e881b745c0cbb8924664b8b97db87a",
       "targets": [
         "self"
       ],

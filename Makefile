@@ -8,7 +8,6 @@ all: Makefile.numjobs config.done
 	$(MAKE) all-work
 	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
 	$(MAKE) uses
-	$(MAKE) test
 all-work: config.done Makefile.numjobs
 	mkdir -p $(BUILD_DIR) svn
 	./update-library.py -n `cat Makefile.numjobs` --build-dir $(BUILD_DIR) --omc $(OMC)
