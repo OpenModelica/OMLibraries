@@ -69,18 +69,18 @@ def checkLatest(repo):
     branch = repo['options']['gitbranch']
     if branch is None:
       branch = 'release'
-    os.system('cd "git/%s" && git fetch -q && git checkout -q %s' % (repo['dest'],branch))
-    os.system('cd "git/%s" && git pull -q' % repo['dest'])
-    cnt = int(subprocess.check_output('cd "git/%s" && git rev-list %s..HEAD --count' % (repo['dest'],repo['rev']), shell=True))
-    if cnt <> 0:
-      rev=subprocess.check_output('cd "git/%s" && git rev-list HEAD -n1' % repo['dest'], shell=True).strip()
-      oldrev = repo['rev']
-      repo['rev'] = rev
-      if 0==os.system(updateCommand(repo)):
-        msg = '%s head is %d behind - latest is working hash %s' % (repo['dest'],cnt,rev)
-      else:
+    oldrev = repo['rev']
+    newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
+    if oldrev <> newrev:
+      repo['rev'] = newrev
+      if 0<>os.system(updateCommand(repo)):
         repo['rev'] = oldrev
-        msg = '%s head is %d behind - latest is FAILING hash %s, %s' % (repo['dest'],cnt,rev,repo['url'])
+        msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
+      elif repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+        repo['rev'] = oldrev
+        msg = '%s branch %s has working head, but not updating to %s since this package is pinned' % (repo['url'],branch,newrev)
+      else:
+        msg = '%s branch %s has working head - updated to %s' % (repo['url'],branch,newrev)
   else:
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
@@ -92,15 +92,14 @@ def checkLatest(repo):
       #changesCmd = '%s log -qv -r%s:%s %s | egrep -o "(/(tags|branches)/[^/]*/|/trunk/)" | sed "s, (from /,/," | sort -u' % (svncmd,oldrev,newrev,remoteurl)
       #changes = subprocess.check_output(changesCmd, shell=True).strip()
       updateLibraryCmd = updateCommand(repo)
-      if 0==os.system(updateLibraryCmd):
-        if repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
-          repo['rev'] = oldrev
-          msg = "svn/%s uses %d but %d is available. It was not updated because the library was marked not to update it." % (repo['dest'],oldrev,newrev)
-        else:
-          msg = "svn/%s uses %d but %d is available. It was updated in the repository." % (repo['dest'],oldrev,newrev)
-      else:
+      if 0<>os.system(updateLibraryCmd):
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
+      elif repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+        repo['rev'] = oldrev
+        msg = "svn/%s uses %d but %d is available. It was not updated because the library was marked not to update it." % (repo['dest'],oldrev,newrev)
+      else:
+        msg = "svn/%s uses %d but %d is available. It was updated in the repository." % (repo['dest'],oldrev,newrev)
   return (msg,repo)
 if __name__ == '__main__':
   parser = OptionParser()
