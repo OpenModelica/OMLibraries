@@ -78,9 +78,9 @@ def checkLatest(repo):
         msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
       elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
         repo['rev'] = oldrev
-        msg = '%s branch %s has working head, but not updating to %s since this package is pinned' % (repo['url'],branch,newrev)
+        msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
-        msg = '%s branch %s has working head - updated to %s' % (repo['url'],branch,newrev)
+        msg = '%s branch %s has working head %s. It has been updated.' % (repo['url'],branch,newrev)
   else:
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
@@ -97,9 +97,9 @@ def checkLatest(repo):
         msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
       elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
         repo['rev'] = oldrev
-        msg = "svn/%s uses %d but %d is available. It was not updated because the library was marked not to update it." % (repo['dest'],oldrev,newrev)
+        msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
-        msg = "svn/%s uses %d but %d is available. It was updated in the repository." % (repo['dest'],oldrev,newrev)
+        msg = "svn/%s uses %d but %d is available. It has been updated." % (repo['dest'],oldrev,newrev)
   return (msg,repo)
 if __name__ == '__main__':
   parser = OptionParser()
