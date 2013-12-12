@@ -76,7 +76,7 @@ def checkLatest(repo):
       if 0<>os.system(updateCommand(repo)):
         repo['rev'] = oldrev
         msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
-      elif repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+      elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
         repo['rev'] = oldrev
         msg = '%s branch %s has working head, but not updating to %s since this package is pinned' % (repo['url'],branch,newrev)
       else:
@@ -95,7 +95,7 @@ def checkLatest(repo):
       if 0<>os.system(updateLibraryCmd):
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
-      elif repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+      elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It was not updated because the library was marked not to update it." % (repo['dest'],oldrev,newrev)
       else:
