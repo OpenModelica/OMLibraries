@@ -131,7 +131,7 @@
         "gitbranch": "master",
         "remove-files": "Resources/Source/Python/doc"
       },
-      "rev": "cb98fb045f65621284828c6295f221a069d3426d",
+      "rev": "6143054e866b61042a0070824d14130d57cd6b6d",
       "url": "https://github.com/kdavies4/FCSys.git"
     },
     {
@@ -263,7 +263,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8420e946cf81ed5d995ef54e691f0faa8e5fa399",
+      "rev": "c4daf0cb1cdb3d9c10f493eedae32effc87bfa1b",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
