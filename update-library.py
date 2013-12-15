@@ -81,6 +81,8 @@ def checkLatest(repo):
         msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
         msg = '%s branch %s has working head %s. It has been updated.' % (repo['url'],branch,newrev)
+      logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit' % (repo['dest'],oldrev,newrev), shell=True).strip()
+      msg = msg + logmsg + "\n"
   else:
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
@@ -100,6 +102,8 @@ def checkLatest(repo):
         msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
         msg = "svn/%s uses %d but %d is available. It has been updated." % (repo['dest'],oldrev,newrev)
+      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh' % (repo['dest'],oldrev,newrev), shell=True).strip()
+      msg = msg + logmsg + "\n"
   return (msg,repo)
 if __name__ == '__main__':
   parser = OptionParser()
