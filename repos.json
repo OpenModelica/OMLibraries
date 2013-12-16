@@ -149,7 +149,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "1376df22f56ebcc85bf433c143e356eace688810",
+      "rev": "dda555484ae8fd01d24ee68509a865dc2f7853e8",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -263,7 +263,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4daf0cb1cdb3d9c10f493eedae32effc87bfa1b",
+      "rev": "e527317cf4631d775eefbc3c8ef140acf3d2ee48",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
