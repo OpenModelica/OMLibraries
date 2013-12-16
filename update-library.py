@@ -80,8 +80,13 @@ def checkLatest(repo):
         repo['rev'] = oldrev
         msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
-        msg = '%s branch %s has working head %s. It has been updated.' % (repo['url'],branch,newrev)
-      logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
+        msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
+      logmsg = ''
+      if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
+        commiturl = repo['url'][:-4]
+        logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl), shell=True).strip()
+      else:
+        logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
   else:
     svncmd = "svn --non-interactive --username anonymous"
