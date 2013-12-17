@@ -57,6 +57,10 @@ case $OPT in
   # Skip this; used in the python script
   shift
   ;;
+--intertrac)
+  # Skip this; used in the python script
+  shift
+  ;;
 *)
   echo "Unknown option $OPT"
   exit 1

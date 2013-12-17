@@ -177,6 +177,7 @@
     {
       "dest": "MSL 1.6",
       "options": {
+        "intertrac": "m:",
         "license": "modelica1.1",
         "patchlevel": "Modelica:-om1",
         "std": "1.x"
@@ -191,6 +192,7 @@
       "dest": "MSL 2.2.2",
       "options": {
         "breaks": "omlibrary-msl222",
+        "intertrac": "m:",
         "license": "modelica1.1",
         "patchlevel": "Modelica:-om1"
       },
@@ -202,6 +204,7 @@
       "options": {
         "automatic-updates": "no",
         "breaks": "omlibrary-msl31",
+        "intertrac": "m:",
         "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
       },
       "rev": 6307,
@@ -216,6 +219,7 @@
       "options": {
         "automatic-updates": "no",
         "breaks": "omlibrary-msl32,omlibrary-reference",
+        "intertrac": "m:",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
@@ -234,6 +238,7 @@
       "dest": "MSL trunk",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
+        "intertrac": "m:",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },

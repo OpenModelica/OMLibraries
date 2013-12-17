@@ -63,9 +63,9 @@ def checkGithub(ghs,urls):
 
 def checkLatest(repo):
   msg = None
+  if repo['options'] is None:
+    repo['options'] = {}
   if repo['url'].endswith('git'):
-    if repo['options'] is None:
-      repo['options'] = {}
     branch = repo['options']['gitbranch']
     if branch is None:
       branch = 'release'
@@ -84,12 +84,13 @@ def checkLatest(repo):
       logmsg = ''
       if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
         commiturl = repo['url'][:-4]
-        cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
+        cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/commit/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
         logmsg = subprocess.check_output(cmd, shell=True).strip()
       else:
         logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
   else:
+    intertrac = repo['options']['intertrac'] or ''
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
     remoteurl = repo['url']
@@ -108,7 +109,7 @@ def checkLatest(repo):
         msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
         msg = "svn/%s has been updated to r%d." % (repo['dest'],newrev)
-      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * /"' % (repo['dest'],newrev,oldrev), shell=True).strip()
+      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * %s/"' % (repo['dest'],newrev,oldrev,intertrac), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
   return (msg,repo)
 if __name__ == '__main__':
