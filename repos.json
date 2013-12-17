@@ -327,8 +327,11 @@
     },
     {
       "dest": "Physiolibrary",
-      "rev": 36,
-      "url": "https://github.com/modelica-3rdparty/Physiolibrary/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "a540cf4445874c579914656a5fadc77bd95a36f9",
+      "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
       "dest": "PowerFlow",
