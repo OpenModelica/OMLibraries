@@ -84,7 +84,8 @@ def checkLatest(repo):
       logmsg = ''
       if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
         commiturl = repo['url'][:-4]
-        logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl), shell=True).strip()
+        cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
+        logmsg = subprocess.check_output(cmd, shell=True).strip()
       else:
         logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
@@ -106,8 +107,8 @@ def checkLatest(repo):
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
-        msg = "svn/%s uses %d but %d is available. It has been updated." % (repo['dest'],oldrev,newrev)
-      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * /' % (repo['dest'],oldrev,newrev), shell=True).strip()
+        msg = "svn/%s has been updated to r%d." % (repo['dest'],newrev)
+      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * /"' % (repo['dest'],newrev,oldrev), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
   return (msg,repo)
 if __name__ == '__main__':
@@ -137,9 +138,10 @@ if __name__ == '__main__':
   elif options.add_missing:
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls):
-      url = repo['svn_url'] + "/trunk"
-      rev = int(subprocess.check_output("svn info --xml '%s' | xpath -q -e '/info/entry/commit/@revision' | grep -o '[0-9]*'" % url, shell=True))
-      entry = {'dest':repo['name'],'rev':rev,'url':url}
+      url = repo['clone_url']
+      branch = repo['default_branch']
+      rev = subprocess.check_output("git ls-remote '%s' refs/heads/%s | cut -f1" % (url,branch), shell=True)
+      entry = {'dest':repo['name'],'options':{'gitbranch':branch},'rev':rev,'url':url}
       print "Adding entry",entry
       jsondata['repos'].append(entry)
     f = open("repos.json","w")
