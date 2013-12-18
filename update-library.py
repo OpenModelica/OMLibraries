@@ -63,12 +63,9 @@ def checkGithub(ghs,urls):
 
 def checkLatest(repo):
   msg = None
-  if repo['options'] is None:
-    repo['options'] = {}
+  options = repo.get('options') or {}
   if repo['url'].endswith('git'):
-    branch = repo['options']['gitbranch']
-    if branch is None:
-      branch = 'release'
+    branch = options.get('gitbranch') or 'release'
     oldrev = repo['rev']
     newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
     if oldrev <> newrev:
@@ -76,7 +73,7 @@ def checkLatest(repo):
       if 0<>os.system(updateCommand(repo)):
         repo['rev'] = oldrev
         msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
-      elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+      elif options.get('automatic-updates') or 'no':
         repo['rev'] = oldrev
         msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
@@ -90,7 +87,7 @@ def checkLatest(repo):
         logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
       msg = msg + "\n  " + logmsg + "\n"
   else:
-    intertrac = repo['options']['intertrac'] or ''
+    intertrac = options.get('intertrac') or ''
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
     remoteurl = repo['url']
@@ -104,7 +101,7 @@ def checkLatest(repo):
       if 0<>os.system(updateLibraryCmd):
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
-      elif repo.has_key('options') and repo['options'].has_key('automatic-updates') and repo['options']['automatic-updates'] == 'no':
+      elif options.get('automatic-updates') == 'no':
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
