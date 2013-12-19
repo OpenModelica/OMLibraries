@@ -73,7 +73,7 @@ def checkLatest(repo):
       if 0<>os.system(updateCommand(repo)):
         repo['rev'] = oldrev
         msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
-      elif options.get('automatic-updates') or 'no':
+      elif options.get('automatic-updates') == 'no':
         repo['rev'] = oldrev
         msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
