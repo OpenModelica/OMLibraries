@@ -22,6 +22,7 @@
 # With every separator line, output what we stored before and reset the comment variable
 # To skip the first line we also check if we've already stored a revision
 /^-+$/ && rev {
-   print rev " | " user " | " date " | " time " | " comment
+#   print rev " | " user " | " date " | " time " | " comment
+   print rev " " comment
    comment = ""
 }
