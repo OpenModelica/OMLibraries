@@ -149,7 +149,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "dda555484ae8fd01d24ee68509a865dc2f7853e8",
+      "rev": "e82eb9b0105d4401aab3e7a27c928336da4cc152",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -242,7 +242,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7205,
+      "rev": 7213,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -335,7 +335,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a540cf4445874c579914656a5fadc77bd95a36f9",
+      "rev": "0b6724be818c87a921e271e912c7496d0afafbd9",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
