@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import io
 import os
 import requests
 import sys
@@ -85,6 +86,7 @@ def checkLatest(repo):
         logmsg = subprocess.check_output(cmd, shell=True).strip()
       else:
         logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
+      logmsg = logmsg.decode('utf-8','ignore')
       msg = msg + "\n  " + logmsg + "\n"
   else:
     intertrac = options.get('intertrac') or ''
@@ -107,6 +109,7 @@ def checkLatest(repo):
       else:
         msg = "svn/%s has been updated to r%d." % (repo['dest'],newrev)
       logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * %s/"' % (repo['dest'],newrev,oldrev,intertrac), shell=True).strip()
+      logmsg = logmsg.decode('utf-8','ignore')
       msg = msg + "\n  " + logmsg + "\n"
   return (msg,repo)
 if __name__ == '__main__':
@@ -120,11 +123,13 @@ if __name__ == '__main__':
   n_jobs = options.n_jobs
   if options.check_latest:
     from joblib import Parallel, delayed
-    (msgs,repos) = zip(*list(Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)))
+    res = Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
+    # res = [checkLatest(repo) for repo in repos]
+    (msgs,repos) = zip(*list(res))
     os.system("rm -f test-valid*.mos")
     jsondata['repos'] = sorted(repos, key=lambda k: k['dest']) 
-    f = open("commit.log","w")
-    f.write("Bump libraries\n")
+    f = io.open("commit.log","w",encoding='utf-8')
+    f.write(u"Bump libraries\n")
     for msg in msgs:
       if msg is not None:
         print msg
