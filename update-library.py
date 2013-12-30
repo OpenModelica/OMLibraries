@@ -132,7 +132,7 @@ if __name__ == '__main__':
     f.write(u"Bump libraries\n")
     for msg in msgs:
       if msg is not None:
-        print msg
+        print msg.encode('utf-8')
         f.write("- %s\n" % msg)
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
     for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
