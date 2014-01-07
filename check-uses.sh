@@ -16,9 +16,14 @@ for l in `cat "$2" | sed "s/ /%20/g"`; do
   elif test -f "$BUILD/$LIB.license"; then
     ./debian-name.sh `echo "$LIB"` >> $DEPS
   elif test -f "$BUILD/$LIB.provided"; then
-    ./debian-name.sh `echo "$LIB"` >> $DEPS
+    ./debian-name.sh `cat "$BUILD/$LIB.provided"` >> $DEPS
   else
     echo "Could not find library $LIB, used by $2"
     exit 1
   fi
 done
+
+# Remove self-reference
+LIB=`echo $DEPS | grep -o "[^/]*$" | sed s/.depends//`
+THIS_NAME=`./debian-name.sh $LIB`
+test ! -f "$DEPS" || sed -i "/$THIS_NAME/d" "$DEPS"

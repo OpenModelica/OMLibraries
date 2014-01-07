@@ -5,6 +5,7 @@ import requests
 import sys
 import simplejson
 from optparse import OptionParser
+from collections import defaultdict
 import subprocess
 
 def targets(r):
@@ -25,11 +26,15 @@ def updateCommand(r):
   return 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
 def update():
   from joblib import Parallel, delayed
-  for p in jsondata['provided']:
-    open(options.build + "/%s.provided" % p,'w')
-  for k in jsondata['provides'].keys():
+  provides = defaultdict(list)
+  for p in jsondata['provided'].keys():
+    f = open(options.build + "/%s.provided" % p,'w')
+    pack = jsondata['provided'][p]
+    f.write(pack)
+    provides[pack] += [p]
+  for k in provides.keys():
     f = open(options.build + "/%s.provides" % k,'w')
-    f.write(jsondata['provides'][k])
+    f.write(','.join([subprocess.check_output("./debian-name.sh %s" % item, shell=True).strip() for item in provides[k]]))
   commands = [updateCommand(r) for r in repos]
   for cmd in commands: print cmd
   try:

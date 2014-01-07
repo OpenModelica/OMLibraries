@@ -48,6 +48,10 @@ case $OPT in
   NOPACKAGE="$1"
   shift
   ;;
+--no-dependencies)
+  NO_DEPENDENCY="$1"
+  shift
+  ;;
 --remove-files)
   # Files that should be stripped from the package. Usually redundant binaries.
   REMOVE_FILES="$1"
@@ -216,6 +220,7 @@ for f in $LIBS "$@"; do
   else
     PATCHREV=""
   fi
+  echo "$NO_DEPENDENCY" | grep -q "^$LIB\$" && echo > "$BUILD/$NAME.uses"
   # Add custom patch levels
   if echo "$PATCHLEVEL" | grep -q ":"; then
     PATCHLEVELTHIS=`echo "$PATCHLEVEL" | grep -o "$LIB:[A-Za-z0-9_-]*" | cut -d: -f2`
@@ -249,6 +254,7 @@ for f in $LIBS "$@"; do
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "$BUILD/$NAME/package.encoding"
   fi
+  echo $URL > "$BUILD/$NAME.url"
   if test -d "$BUILD/$NAME$EXT"; then
     LIBTOTEST="$BUILD/$NAME$EXT/package.mo"
   else

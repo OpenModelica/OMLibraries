@@ -7,3 +7,6 @@ nightly-library-sources
 .remote
 svn
 git
+macports
+macports-build
+get-version.*.mos

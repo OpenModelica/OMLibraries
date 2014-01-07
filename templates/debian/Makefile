@@ -1,4 +1,6 @@
+PREFIX=/usr
+
 build:
 install:
-	mkdir -p "$(DESTDIR)/usr/lib/omlibrary/"
-	cp -rp "@NAME@@EXT@" "$(DESTDIR)/usr/lib/omlibrary/"
+	mkdir -p "$(DESTDIR)$(PREFIX)/lib/omlibrary/"
+	cp -rp "@NAME@@EXT@" "$(DESTDIR)$(PREFIX)/lib/omlibrary/"

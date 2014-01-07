@@ -23,23 +23,15 @@
   "github-repos": [
     "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100"
   ],
-  "provided": [
-    "Complex 1.0",
-    "Modelica 3.0",
-    "Modelica 3.2",
-    "ModelicaServices 3.2",
-    "Modelica 2.2",
-    "Modelica 2.2.1",
-    "Modelica_StateGraph2 2.0.1",
-    "Modelica_Synchronous 0.91"
-  ],
-  "provides": {
-    "Complex 3.2.1": "omlib-complex-1.0",
-    "Modelica 2.2.2": "omlib-modelica-2.2.1,omlib-modelica-2.2",
-    "Modelica 3.2.1": "omlib-modelica-3.2,omlib-modelica-3.0",
-    "ModelicaServices 3.2.1": "omlib-modelicaservices-3.2",
-    "Modelica_StateGraph2 2.0.2": "omlib-modelica-stategraph2-2.0.1",
-    "Modelica_Synchronous 0.92": "omlib-modelica-synchronous-0.91"
+  "provided": {
+    "Complex 1.0": "Complex 3.2.1",
+    "Modelica 3.0": "Modelica 3.2.1",
+    "Modelica 3.2": "Modelica 3.2.1",
+    "ModelicaServices 3.2": "ModelicaServices 3.2.1",
+    "Modelica 2.2": "Modelica 2.2.2",
+    "Modelica 2.2.1": "Modelica 2.2.2",
+    "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.2",
+    "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92"
   },
   "repos": [
     {
@@ -205,6 +197,7 @@
         "automatic-updates": "no",
         "breaks": "omlibrary-msl31",
         "intertrac": "m:",
+        "no-dependencies": "ModelicaServices",
         "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
       },
       "rev": 6307,
@@ -220,6 +213,7 @@
         "automatic-updates": "no",
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "intertrac": "m:",
+        "no-dependencies": "ModelicaServices",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
@@ -239,6 +233,7 @@
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "intertrac": "m:",
+        "no-dependencies": "ModelicaServices",
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },

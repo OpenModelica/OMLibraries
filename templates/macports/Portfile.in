@@ -13,11 +13,12 @@ homepage            http://openmodelica.org/
 license             Varies with each library in the collection
 
 master_sites        http://build.openmodelica.org/libraries/
-distfiles           openmodelicalibraries_${version}.tar.xz
-worksrcdir          openmodelicalibraries_${version}
+distfiles           
+worksrcdir          
 
-checksums           md5     @MD5@ \
-                    sha1    @SHA1@ \
-                    rmd160  @RMD160@
+checksums           
 
-use_autoconf        yes
+use_configure       no
+build.cmd           true
+destroot.cmd        mkdir -p ${destroot}${prefix}/share/doc/omlib && echo "OpenModelica library collection" > ${destroot}${prefix}/share/doc/omlib/README
+depends_run         @DEPENDS@

@@ -2,6 +2,9 @@ BUILD_DIR=build/
 OMC=omc
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
+default: all
+.PHONY: macports
+
 all: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
@@ -74,10 +77,21 @@ dist-tarball-internal:
 	cp templates/macports/Makefile.in templates/macports/configure.in openmodelicalibraries_$(GITREVISION)/
 	mkdir -p macports-build
 	tar cJf $(MACPORTSTARBALL) openmodelicalibraries_$(GITREVISION)
-	sed -e "s/@REV@/$(GITREVISION)/" \
-        -e "s/@MD5@/`openssl md5 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
-        -e "s/@SHA1@/`openssl sha1 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
-        -e "s/@RMD160@/`openssl rmd160 $(MACPORTSTARBALL) | cut -d \  -f 2`/" templates/macports/Portfile.in > macports-build/Portfile
+#	sed -e "s/@REV@/$(GITREVISION)/" \
+#        -e "s/@MD5@/`openssl md5 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
+#        -e "s/@SHA1@/`openssl sha1 $(MACPORTSTARBALL) | cut -d \  -f 2`/" \
+#        -e "s/@RMD160@/`openssl rmd160 $(MACPORTSTARBALL) | cut -d \  -f 2`/" templates/macports/Portfile.in > macports-build/Portfile
+
+macports:
+	$(MAKE) GITREVISION=`git show -s --format="%ad" --date="iso" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -` macports-internal
+macports-internal:
+	test -f .remote/macports
+	rsync --delete -a rsync://build.openmodelica.org/macports macports
+	find $(BUILD_DIR)/*.ok -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './macports-build.sh "$$1"' sh
+	rm -rf macports/lang/omlib-all/
+	mkdir -p macports/lang/openmodelicalibraries/
+	( cd build ; sed s/@REV@/$(GITREVISION)/ ../templates/macports/Portfile.in | sed "s/@DEPENDS@/`../macports-all-depends.sh`/" > ../macports/lang/openmodelicalibraries/Portfile )
+	rsync -a --delete macports `cat .remote/macports`
 
 # .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
 # .remote/pool: Directory where the deb-packages and sources should be stored
