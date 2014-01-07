@@ -20,5 +20,5 @@ checksums
 
 use_configure       no
 build.cmd           true
-destroot.cmd        mkdir -p ${destroot}${prefix}/share/doc/omlib && echo "OpenModelica library collection" > ${destroot}${prefix}/share/doc/omlib/README
+destroot.cmd        mkdir -p ${destroot}${prefix}/share/doc/omlibrary && echo "OpenModelica library collection" > ${destroot}${prefix}/share/doc/omlibrary/README
 depends_run         @DEPENDS@

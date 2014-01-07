@@ -1,0 +1,29 @@
+# $Id$
+
+PortSystem          1.0
+
+name                @NAME@
+version             @REV@
+categories          lang math
+platforms           darwin
+maintainers         martin.sjolund@liu.se
+description         A Modelica library
+long_description    A Modelica library
+homepage            @URL@
+license             @LICENSE@
+
+master_sites        https://build.openmodelica.org/apt/pool/libraries/
+distfiles           ${name}_${version}.orig.tar.gz
+worksrcdir          ${name}_${version}
+
+checksums           md5     @MD5@ \
+                    sha1    @SHA1@ \
+                    rmd160  @RMD160@
+
+build.cmd           true
+destroot.cmd        mkdir -p ${destroot}${prefix}/lib/omlibrary/ && cp
+destroot.pre_args   -a
+destroot.post_args  "@SOURCE@" ${destroot}${prefix}/lib/omlibrary/
+use_configure       no
+
+depends_run         @DEPENDS@
