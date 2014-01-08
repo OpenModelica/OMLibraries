@@ -34,7 +34,7 @@ def update():
     provides[pack] += [p]
   for k in provides.keys():
     f = open(options.build + "/%s.provides" % k,'w')
-    f.write(','.join([subprocess.check_output("./debian-name.sh %s" % item, shell=True).strip() for item in provides[k]]))
+    f.write(','.join([subprocess.check_output("sh ./debian-name.sh %s" % item, shell=True).strip() for item in provides[k]]))
   commands = [updateCommand(r) for r in repos]
   for cmd in commands: print cmd
   try:
