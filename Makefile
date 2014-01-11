@@ -91,7 +91,7 @@ macports-internal:
 	rm -rf macports/lang/omlib-all/
 	mkdir -p macports/lang/openmodelicalibraries/
 	( cd build ; sed s/@REV@/$(GITREVISION)/ ../templates/macports/Portfile.in | sed "s/@DEPENDS@/`../macports-all-depends.sh`/" > ../macports/lang/openmodelicalibraries/Portfile )
-	rsync -a --delete macports `cat .remote/macports`
+	.remote/macports
 
 # .remote/control-files: Directory where the list of packages should be stored. Used by a shell-script + apt-ftparchive
 # .remote/pool: Directory where the deb-packages and sources should be stored
