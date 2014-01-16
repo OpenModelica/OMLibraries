@@ -83,7 +83,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "7ddc6f19fe13b8d48f26957de32a34cc646ffb8e",
+      "rev": "5f39fc69d1ab23eadbaff8098f6eb709fcd34b4a",
       "targets": [
         "Buildings latest"
       ],
@@ -123,7 +123,7 @@
         "gitbranch": "master",
         "remove-files": "Resources/Source/Python/doc"
       },
-      "rev": "4e270efb84206a6e2e7eff314c1036e6bb38dbab",
+      "rev": "04e0af29d4c2de88ecb4594722a99371ad872806",
       "url": "https://github.com/kdavies4/FCSys.git"
     },
     {
@@ -237,7 +237,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7228,
+      "rev": 7229,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a3b96258e5a43a0351dd571027c14df7087b1e5b",
+      "rev": "46bfae36b19a997f936b79ecf65520c1a6fb7f9f",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
