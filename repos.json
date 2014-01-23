@@ -237,7 +237,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7236,
+      "rev": 7237,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f06a21d7e48c2e30682b2f694667d5f03b74d437",
+      "rev": "97dd68796d6a22a737ccdb98e4ac29eba3ed04d3",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
