@@ -371,7 +371,7 @@ Only in libraries/Modelica trunk/Modelica/Resources: Library
  versionBuild=0,
  versionDate="2013-08-14",
  dateModified = "2013-08-14 08:44:41Z",
- revisionId="$Id:: package.mo 7129 2013-11-10 20:36:57Z #$",
+ revisionId="$Id:: package.mo 7250 2014-01-26 15:04:14Z #$",
 -uses(Complex(version="3.2.1"), ModelicaServices(version="3.2.1")),
 +uses(Complex(version="trunk"), ModelicaServices(version="trunk")),
  conversion(
