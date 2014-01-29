@@ -123,7 +123,7 @@
         "gitbranch": "master",
         "remove-files": "Resources/Source/Python/doc"
       },
-      "rev": "882a4216fb1745ee834492740a58ab62d12040d3",
+      "rev": "cb4b17f34313b9d8f2d4223d5365684b4dc1ab65",
       "url": "https://github.com/kdavies4/FCSys.git"
     },
     {
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1fc7ff7a92d6052d3eb6ed7a3a90a0d105c4d1ed",
+      "rev": "6d90a6a4a3bf242688359d0262d1a9f8fd328bbc",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
