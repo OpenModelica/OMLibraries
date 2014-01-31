@@ -48,7 +48,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "7fccf60aaedaf78060ca94a8744ceaeebab69781",
+      "rev": "d917da8bdc52e883686afc1b5b06de119206d445",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -83,7 +83,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "5f39fc69d1ab23eadbaff8098f6eb709fcd34b4a",
+      "rev": "d9c5618edbe6b375edc4700e5111676063dedd5a",
       "targets": [
         "Buildings latest"
       ],
@@ -237,7 +237,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7252,
+      "rev": 7259,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6d90a6a4a3bf242688359d0262d1a9f8fd328bbc",
+      "rev": "73c961e52fc6abfac3b642fbfc977f2f028e11f3",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -395,7 +395,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 230,
+      "rev": 231,
       "url": "svn://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
