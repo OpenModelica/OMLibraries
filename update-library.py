@@ -148,7 +148,7 @@ if __name__ == '__main__':
     for repo in checkGithub(jsondata['github-repos'],urls):
       url = repo['clone_url']
       branch = repo['default_branch']
-      rev = subprocess.check_output("git ls-remote '%s' refs/heads/%s | cut -f1" % (url,branch), shell=True)
+      rev = subprocess.check_output("git ls-remote '%s' refs/heads/%s | cut -f1" % (url,branch), shell=True).strip()
       entry = {'dest':repo['name'],'options':{'gitbranch':branch},'rev':rev,'url':url}
       print "Adding entry",entry
       jsondata['repos'].append(entry)

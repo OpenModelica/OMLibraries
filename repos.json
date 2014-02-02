@@ -334,6 +334,14 @@
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
+      "dest": "PlanarMechanics",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "ca6f7b4aa0113f270940c91dc81196b292df48b9",
+      "url": "https://github.com/modelica-3rdparty/PlanarMechanics.git"
+    },
+    {
       "dest": "PowerFlow",
       "rev": 3174,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
