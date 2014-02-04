@@ -338,7 +338,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ca6f7b4aa0113f270940c91dc81196b292df48b9",
+      "rev": "f8da87c2a6e99e183c326605ada0ebecdebb95ed",
       "url": "https://github.com/modelica-3rdparty/PlanarMechanics.git"
     },
     {
@@ -403,7 +403,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 238,
+      "rev": 240,
       "url": "svn://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
