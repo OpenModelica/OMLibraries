@@ -238,7 +238,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7270,
+      "rev": 7271,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ddd6b1a8d5423d63b47042df2856578e078bca46",
+      "rev": "0d199759748d6d43b668b14be65b726f228de007",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -339,7 +339,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f8da87c2a6e99e183c326605ada0ebecdebb95ed",
+      "rev": "938285af23db2622218d3dccc2f83ffd3a326157",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
