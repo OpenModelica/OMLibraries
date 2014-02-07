@@ -12,6 +12,7 @@
     "https://github.com/modelica-3rdparty/NCLib",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
+    "https://github.com/modelica-3rdparty/PlanarMechanics.git",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo/trunk",
@@ -339,7 +340,7 @@
         "gitbranch": "master"
       },
       "rev": "f8da87c2a6e99e183c326605ada0ebecdebb95ed",
-      "url": "https://github.com/modelica-3rdparty/PlanarMechanics.git"
+      "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
       "dest": "PowerFlow",
