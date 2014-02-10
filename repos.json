@@ -264,7 +264,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e527317cf4631d775eefbc3c8ef140acf3d2ee48",
+      "rev": "0fe2358581b7233c3fbb5f5489b74f8121470fd9",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "955127595f4202a7d9256fda7bad18e586cb85d3",
+      "rev": "56d9e425ee57121b7fd0824be6c2b522a99e0d42",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
