@@ -84,7 +84,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "15ebc95bfeff41d818fc663d83b1adb311eff7a6",
+      "rev": "b8defa21efc9f05516c2f2595e8b3553226be726",
       "targets": [
         "Buildings latest"
       ],
@@ -399,7 +399,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "9989d05bcabee606f97fb8f09c408f8af00c9460",
+      "rev": "c58a26dc3e62a50e64fd336dc4aa499b2d5ad314",
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
