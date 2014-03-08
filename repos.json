@@ -84,7 +84,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b8defa21efc9f05516c2f2595e8b3553226be726",
+      "rev": "7fefdd4e2859cb98cd9c692cd395e3d2226bb4e0",
       "targets": [
         "Buildings latest"
       ],
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "686b64db98aac926246e41def7d20e0f81307e49",
+      "rev": "99d57dcda8621a360dd42eb800b85e229a4ec8b1",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
