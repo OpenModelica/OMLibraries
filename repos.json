@@ -189,7 +189,7 @@
         "license": "modelica1.1",
         "patchlevel": "Modelica:-om1"
       },
-      "rev": 6277,
+      "rev": 7415,
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
     },
     {
@@ -238,7 +238,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7390,
+      "rev": 7415,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "99d57dcda8621a360dd42eb800b85e229a4ec8b1",
+      "rev": "b0148ed9e6d76afc9eb6bfc58b3f224595021a34",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
