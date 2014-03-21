@@ -113,7 +113,7 @@ def checkLatest(repo):
         msg = "svn/%s uses %d but %d is available. It was pinned to the old revision and will not be updated." % (repo['dest'],oldrev,newrev)
       else:
         msg = "svn/%s has been updated to r%d." % (repo['dest'],newrev)
-      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * %s/"' % (repo['dest'],newrev,oldrev,intertrac), shell=True).strip()
+      logmsg = subprocess.check_output('svn log "svn/%s" -l15 -r%d:%d | ./svn-logoneline.sh | sed "s/^/  * %s/"' % (repo['dest'],newrev,oldrev+1,intertrac), shell=True).strip()
       logmsg = logmsg.decode('utf-8','ignore')
       msg = msg + "\n  " + logmsg + "\n"
   return (msg,repo)

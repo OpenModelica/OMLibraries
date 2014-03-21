@@ -10,13 +10,15 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
+    "https://github.com/modelica-3rdparty/ObjectStab",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
-    "https://github.com/modelica-3rdparty/PlanarMechanics.git",
+    "https://github.com/modelica-3rdparty/PlanarMechanics",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/SPICELib",
-    "https://github.com/modelica-3rdparty/TechThermo/trunk",
+    "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
+    "https://github.com/modelica-3rdparty/Thermocycle-library",
     "https://github.com/modelica-3rdparty/ThermoPower",
     "https://github.com/modelica-3rdparty/Verif",
     "https://github.com/modelica-3rdparty/WheelsAndTires"
@@ -195,13 +197,12 @@
     {
       "dest": "MSL 3.1",
       "options": {
-        "automatic-updates": "no",
         "breaks": "omlibrary-msl31",
         "intertrac": "m:",
         "no-dependencies": "ModelicaServices",
         "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
       },
-      "rev": 6307,
+      "rev": 7415,
       "targets": [
         "Modelica",
         "ModelicaServices"
@@ -331,7 +332,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b0148ed9e6d76afc9eb6bfc58b3f224595021a34",
+      "rev": "23dafcb22a189c20bf97590a15d4c70fb90c43c5",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -389,9 +390,12 @@
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git"
     },
     {
-      "dest": "SPOT",
-      "rev": 6,
-      "url": "https://github.com/modelica-3rdparty/SPOT/trunk"
+      "dest": "Spot",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "6d3f363402218ce3cdc1a942acda391d1267d75c",
+      "url": "https://github.com/modelica-3rdparty/Spot.git"
     },
     {
       "dest": "SystemDynamics",
@@ -405,7 +409,7 @@
     {
       "dest": "ThermoPower",
       "rev": 240,
-      "url": "svn://svn.code.sf.net/p/thermopower/svn/trunk"
+      "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
       "dest": "ThermoSysPro",
