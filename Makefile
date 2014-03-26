@@ -43,6 +43,7 @@ modelica3d:
 	# svn log --xml --verbose "git/Modelica3D" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.changes"
 	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
 	echo "deb:libmodelica3d" >> "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.uses"
+	echo ok > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.ok"
 
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos

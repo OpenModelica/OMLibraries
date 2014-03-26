@@ -8,7 +8,7 @@ for f in build/*.last_change; do
     continue
   fi
   LIB=`echo $f | sed s/.last_change// | sed s,build/,,`
-    NAME=`./debian-name.sh $LIB`
+  NAME=`./debian-name.sh $LIB`
   REV=`cat "$f"`
   SRC=`echo ${NAME}_$REV-1.dsc`
   DEB=`echo ${NAME}_$REV-1_all.deb`

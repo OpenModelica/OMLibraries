@@ -218,7 +218,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7377,
+      "rev": 7449,
       "targets": [
         "Complex",
         "Modelica",
@@ -253,7 +253,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d6597fd353a98899d0326aa08bfcd6928771c72d",
+      "rev": "0d87322d7c4ef97d2a6fe1cbdcb34a242518fa5f",
       "targets": [
         "none"
       ],
@@ -323,7 +323,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6ba88126e675d4d9f7969d493e0b165ef9127a21",
+      "rev": "81bcc88de8b26e19fd6e578f52d6137489f37e31",
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "068a9e7ade15440fa2f8193b3a23f3c60143a478",
+      "rev": "1a8fd68acb2b554fdae271bb7b2f50644107974e",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
