@@ -212,7 +212,6 @@
     {
       "dest": "MSL 3.2.1",
       "options": {
-        "automatic-updates": "no",
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "intertrac": "m:",
         "no-dependencies": "ModelicaServices",
