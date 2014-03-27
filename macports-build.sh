@@ -24,6 +24,7 @@ RMD160=`openssl rmd160 $SOURCETARBALL | cut -d \  -f 2`
 
 mkdir -p `dirname "$PORTFILE"`
 SOURCE_ESCAPED=`echo $NAME$EXT | tr " " "*"`
+DEPENDS=`echo $DEPENDS | sed s/libmodelica3d//`
 
 cat ../templates/macports/Portfile.omlib.in \
   | sed "s,@URL@,$ORIGURL," \
