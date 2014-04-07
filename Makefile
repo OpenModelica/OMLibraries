@@ -44,7 +44,7 @@ modelica3d:
 	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
 	echo "deb:libmodelica3d" >> "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.uses"
 	echo ok > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.ok"
-
+	echo "https://github.com/OpenModelica/modelica3d.git" > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.url"
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos
 	find $(BUILD_DIR)/*.mo $(BUILD_DIR)/*/package.mo -print0 | xargs -0 -n 1 -P `cat Makefile.numjobs` sh -c './test-valid.sh "$(OMC)" "$(BUILD_DIR)" "$$1"' sh
