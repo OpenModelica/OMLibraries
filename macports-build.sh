@@ -1,7 +1,7 @@
 #!/bin/sh
 
 . ./build-common.sh
-DEPENDS=`for f in $DEPENDS; do echo -n "port:$f "; done`
+DEPENDS=`for f in $DEPENDS; do test ! -z "$f" || echo -n "port:$f "; done`
 
 mkdir -p macports-build
 cd macports-build
