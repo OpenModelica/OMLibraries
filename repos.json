@@ -218,7 +218,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7485,
+      "rev": 7487,
       "targets": [
         "Complex",
         "Modelica",
@@ -407,7 +407,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 248,
+      "rev": 249,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
