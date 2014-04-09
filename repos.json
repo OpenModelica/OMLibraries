@@ -144,7 +144,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "0885b01311611f3c5a22452fb881c1527ccdb59c",
+      "rev": "a397946c986081e0373c1c68c900a19fa68eefe5",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -339,7 +339,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b98a8e6fee4c4277886282b6bdd501bfa7495270",
+      "rev": "6d7503e6417f78ec7e96c70a4ae3a5e5f99fb7f3",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -393,7 +393,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6d3f363402218ce3cdc1a942acda391d1267d75c",
+      "rev": "2f74417f1681570900a1ed373dcbe4b42634ec7b",
       "url": "https://github.com/modelica-3rdparty/Spot.git"
     },
     {
@@ -407,7 +407,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 249,
+      "rev": 251,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
