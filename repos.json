@@ -339,7 +339,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6d7503e6417f78ec7e96c70a4ae3a5e5f99fb7f3",
+      "rev": "65d0960215916c4b4c0371708cd92bad611adb2f",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -407,7 +407,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 251,
+      "rev": 257,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
