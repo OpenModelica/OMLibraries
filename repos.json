@@ -51,7 +51,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1f7225ef8d53ac3c0d982666e259862baeb7ef0a",
+      "rev": "ec3e51f7ac52f781fa27858fdb212e740c4dcfef",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -264,7 +264,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4cceeb097af7f92517fa9f4a93436edd828ea847",
+      "rev": "c162cbe6a5af9d75b416a382d397bf05243e2bbb",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "dest": "ThermoSysPro",
-      "rev": 17673,
+      "rev": 20164,
       "targets": [
         "self"
       ],
