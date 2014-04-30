@@ -260,6 +260,14 @@
       "url": "https://github.com/OpenModelica/modelica3d.git"
     },
     {
+      "dest": "ModelicaBook",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "8947a2f8f8082a155200687beec37305380984ac",
+      "url": "https://github.com/xogeny/ModelicaBook.git"
+    },
+    {
       "dest": "ModelicaCompliance",
       "options": {
         "gitbranch": "master"
