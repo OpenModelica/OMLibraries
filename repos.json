@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c0426191125b5465bf035c8df6261fdec8607ac0",
+      "rev": "58cccf133e75eec2d9985071a95b973dc6ffed20",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -218,7 +218,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7521,
+      "rev": 7540,
       "targets": [
         "Complex",
         "Modelica",
@@ -347,7 +347,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "84d5fe9ee70b31a59bddc4fcc8b27b9675490f80",
+      "rev": "d8f8d1e5cf69ac13405602435c79fbbdc07d2b8d",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
