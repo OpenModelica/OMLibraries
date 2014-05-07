@@ -238,7 +238,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7543,
+      "rev": 7545,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -331,7 +331,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "81bcc88de8b26e19fd6e578f52d6137489f37e31",
+      "rev": "d3173d1f06f7d14c9d7c41769f143617ff03a3ad",
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
