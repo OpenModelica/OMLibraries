@@ -112,7 +112,7 @@ fi
 elif test "$TYPE" = GIT; then
 
 if test -d "$DEST"; then
-  (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" origin "$GITBRANCH" || (sleep 10 && git fetch -q "$URL" origin "$GITBRANCH") || (sleep 20 && git fetch -q "$URL" origin "$GITBRANCH")) || rm -rf "$DEST"
+  (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" "$GITBRANCH" || (sleep 10 && git fetch -q "$URL" "$GITBRANCH") || (sleep 20 && git fetch -q "$URL" "$GITBRANCH")) || rm -rf "$DEST"
 fi
 if ! test -d "$DEST"; then
   echo "[$DEST] does not exist: cloning [$URL]"
