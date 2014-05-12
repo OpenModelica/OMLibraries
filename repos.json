@@ -130,6 +130,14 @@
       "url": "https://github.com/kdavies4/FCSys.git"
     },
     {
+      "dest": "FaultTriggering",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "809b528089921243046670df3bd552fec31f61e4",
+      "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
+    },
+    {
       "dest": "FuzzyControl",
       "options": {
         "gitbranch": "master",
@@ -146,6 +154,14 @@
       },
       "rev": "a397946c986081e0373c1c68c900a19fa68eefe5",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
+    },
+    {
+      "dest": "IdealizedContact",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "dca62e24d2c9c5b347a7bca12c02b58b8cbab7c6",
+      "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
       "dest": "IndustrialControlSystems",
