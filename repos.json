@@ -161,7 +161,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dca62e24d2c9c5b347a7bca12c02b58b8cbab7c6",
+      "rev": "36e556a9bad6f779462674eaf34f5752126f1d0d",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7491ddb60dba6d4cad1a014a3e436cb03d135233",
+      "rev": "b037df33ee3d27119242e180bdd9a59db5612e12",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
