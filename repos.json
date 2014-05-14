@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7557,
+      "rev": 7562,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b037df33ee3d27119242e180bdd9a59db5612e12",
+      "rev": "226adba918309f07f65abead2decb39c55843165",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -356,7 +356,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "80a0f5fc8c9acd5b1551b84e9f1c78abfa26650c",
+      "rev": "e590b711bfe61ab47ae06dfe35f727a035fb2533",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -364,7 +364,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d8f8d1e5cf69ac13405602435c79fbbdc07d2b8d",
+      "rev": "71fbd0ce6d6dc2aefeffe384922e3baff4fedf76",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 262,
+      "rev": 263,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
