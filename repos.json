@@ -161,7 +161,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "36e556a9bad6f779462674eaf34f5752126f1d0d",
+      "rev": "097ffea97cb3d9f689eeeb75356078fb52616093",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
@@ -235,7 +235,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7551,
+      "rev": 7571,
       "targets": [
         "Complex",
         "Modelica",
@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7562,
+      "rev": 7569,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "226adba918309f07f65abead2decb39c55843165",
+      "rev": "2627f7f97443dbde315b01270b5f282f28bddd3f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -356,7 +356,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e590b711bfe61ab47ae06dfe35f727a035fb2533",
+      "rev": "6fb2d3c72e2e9668da90f4504d0fdce7da9ea3a0",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
