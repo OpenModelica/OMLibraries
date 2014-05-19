@@ -52,7 +52,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4a06413d1559863ae672a8cb4cb5a035286dacbb",
+      "rev": "dcf221d770ea52c6795c4896b705fd8fe4951094",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -235,7 +235,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7589,
+      "rev": 7591,
       "targets": [
         "Complex",
         "Modelica",
@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7588,
+      "rev": 7590,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -302,7 +302,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "43886bbead73d448a636e04156c218b69b886926",
+      "rev": "1e7470a3ded11770fbc80cba0142e1419e79d821",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
