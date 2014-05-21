@@ -135,7 +135,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "809b528089921243046670df3bd552fec31f61e4",
+      "rev": "8cc821329f385f41dc36089b21701ce79d2cdc99",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -235,7 +235,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7591,
+      "rev": 7600,
       "targets": [
         "Complex",
         "Modelica",
@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7592,
+      "rev": 7599,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "24265a27303a975b2421d699d8f5728f9a48cc15",
+      "rev": "81643556d492e0a0b4f31697d5a2896fe4393e1c",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
