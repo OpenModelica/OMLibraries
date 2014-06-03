@@ -87,7 +87,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "578ce4c9785973ede530309eae1f9a34412bcda6",
+      "rev": "4c8a49ccaca0caed970df8fb5d4ea81404766411",
       "targets": [
         "Buildings latest"
       ],
@@ -235,7 +235,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7601,
+      "rev": 7622,
       "targets": [
         "Complex",
         "Modelica",
@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7604,
+      "rev": 7621,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -356,7 +356,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0faff22c513351aadb5c1240f9f852aa7a359dba",
+      "rev": "18fc4fdb707671554bb44120bc1b6678c0916c08",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
