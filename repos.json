@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c517a94d2aa26c77a5cd674ebc3cbf8167d4e432",
+      "rev": "292d1ae131759419c4ac4f2b280c3760969a351f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 267,
+      "rev": 269,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
