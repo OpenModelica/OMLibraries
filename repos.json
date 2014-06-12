@@ -270,7 +270,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0d87322d7c4ef97d2a6fe1cbdcb34a242518fa5f",
+      "rev": "507291eb3902f6f2dcd6ca58f9d91a617c0081a3",
       "targets": [
         "none"
       ],
@@ -432,7 +432,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 272,
+      "rev": 276,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
