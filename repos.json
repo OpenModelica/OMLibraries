@@ -437,11 +437,11 @@
     },
     {
       "dest": "ThermoSysPro",
-      "rev": 20164,
+      "rev": 21155,
       "targets": [
         "self"
       ],
-      "url": "https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.0"
+      "url": "https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.1"
     },
     {
       "dest": "WasteWater",
