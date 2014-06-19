@@ -451,6 +451,14 @@
       },
       "rev": 5,
       "url": "https://github.com/modelica-3rdparty/WasteWater/branches/master"
+    },
+    {
+      "dest": "msgpack-modelica",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "26acb99c0d1d6e415d71380f6db77e8610c98e95",
+      "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     }
   ]
 }
