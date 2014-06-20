@@ -99,7 +99,7 @@
         "gitbranch": "release",
         "license": "buildings"
       },
-      "rev": "6e363fd194aed6541715d0a67b7f438d6d96c7d5",
+      "rev": "99085737e986760ea05a4c7c0036e574eac9a162",
       "targets": [
         "Buildings"
       ],
@@ -235,7 +235,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7700,
+      "rev": 7722,
       "targets": [
         "Complex",
         "Modelica",
@@ -255,7 +255,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7699,
+      "rev": 7721,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -457,7 +457,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "26acb99c0d1d6e415d71380f6db77e8610c98e95",
+      "rev": "9c8cb27c3812b17525a440443479df730c70fc48",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     }
   ]
