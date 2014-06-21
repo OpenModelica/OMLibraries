@@ -119,6 +119,12 @@ if ! test -d "$DEST"; then
   (git clone "$URL" "$DEST" || (sleep 10 && git clone "$URL" "$DEST") || (sleep 30 && git clone "$URL" "$DEST")) || exit 1
 fi
 if ! (cd "$DEST" && git checkout "$REVISION" ); then
+  echo "git checkout $REVISION failed for: $DEST"
+  exit 1
+fi
+
+if ! (cd "$DEST" && git clean -f); then
+  echo "git clean failed: $DEST"
   exit 1
 fi
 echo "$REVISION" > "$DEST.rev"
