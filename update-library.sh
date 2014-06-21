@@ -112,6 +112,9 @@ fi
 elif test "$TYPE" = GIT; then
 
 if test -d "$DEST"; then
+  # Clean out any old mess
+  (cd "$DEST" && git reset --hard)
+  (cd "$DEST" && git clean -f)
   (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" "$GITBRANCH" || (sleep 10 && git fetch -q "$URL" "$GITBRANCH") || (sleep 20 && git fetch -q "$URL" "$GITBRANCH")) || rm -rf "$DEST"
 fi
 if ! test -d "$DEST"; then
@@ -123,10 +126,9 @@ if ! (cd "$DEST" && git checkout "$REVISION" ); then
   exit 1
 fi
 
-if ! (cd "$DEST" && git clean -f); then
-  echo "git clean failed: $DEST"
-  exit 1
-fi
+(cd "$DEST" && git reset --hard)
+(cd "$DEST" && git clean -f)
+
 echo "$REVISION" > "$DEST.rev"
 
 else
