@@ -10,6 +10,7 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
+    "https://github.com/modelica-3rdparty/Noise",
     "https://github.com/modelica-3rdparty/ObjectStab",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
@@ -342,6 +343,14 @@
       },
       "rev": 1,
       "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
+    },
+    {
+      "dest": "Noise",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "077d1d53ad09497473b750d9adae8e59985f3647",
+      "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
       "dest": "OpenHydraulics",
