@@ -120,8 +120,11 @@ fi
 if ! test -d "$DEST"; then
   echo "[$DEST] does not exist: cloning [$URL]"
   (git clone "$URL" "$DEST" || (sleep 10 && git clone "$URL" "$DEST") || (sleep 30 && git clone "$URL" "$DEST")) || exit 1
+  # In case of CRLF properties, etc
+  (cd "$DEST" && git reset --hard)
+  (cd "$DEST" && git clean -f)
 fi
-if ! (cd "$DEST" && git checkout "$REVISION" ); then
+if ! (cd "$DEST" && git checkout -f "$REVISION" ); then
   echo "git checkout $REVISION failed for: $DEST"
   exit 1
 fi
