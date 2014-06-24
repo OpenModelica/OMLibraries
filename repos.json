@@ -88,7 +88,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9f4ba998b427da6f30f9ca6ea0230c7f351c5665",
+      "rev": "90b4756c525d5d2df6167027d57bf07e5c1a7de4",
       "targets": [
         "Buildings latest"
       ],
@@ -349,7 +349,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "077d1d53ad09497473b750d9adae8e59985f3647",
+      "rev": "b46935fd876562bc42658c82664b3739d65f9dc5",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -365,7 +365,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1ca847c0e24d07bbd0bbdd0d5363e067d33a8497",
+      "rev": "e4b2ccd3d4f9dd301c5187ff3684b081788f1c22",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -466,7 +466,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9c8cb27c3812b17525a440443479df730c70fc48",
+      "rev": "d6963f7ca913dfab92c8003d4f9a9016cd235f38",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     }
   ]
