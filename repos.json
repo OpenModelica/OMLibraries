@@ -256,7 +256,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7735,
+      "rev": 7742,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -349,7 +349,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b46935fd876562bc42658c82664b3739d65f9dc5",
+      "rev": "3847c515fd0b3676b38593261815c1fe28e64c8b",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
