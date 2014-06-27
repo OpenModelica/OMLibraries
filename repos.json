@@ -53,7 +53,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "07a35f55e9a77bc6b02fd25753578287e932087c",
+      "rev": "92bc4175bca8a713f0c1213e271c9c2190f08a64",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -236,7 +236,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7753,
+      "rev": 7767,
       "targets": [
         "Complex",
         "Modelica",
@@ -373,7 +373,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5f5e57562e9f3d792764b44513de8771f4c5ea92",
+      "rev": "b662231935966322abb987c1a98adceb1f869dda",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
