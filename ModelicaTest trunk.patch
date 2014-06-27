@@ -4,13 +4,12 @@
  
  
    annotation (preferredView="info",
--       version="3.2.1",
--       versionBuild=2,
+-       version="3.2.2",
 +       version="trunk",
-+       versionBuild=0,
+        versionBuild=0,
         versionDate="2013-08-14",
         dateModified = "2013-08-14 08:44:41Z",
-        revisionId="$Id:: package.mo 6931 2013-08-14 11:38:51Z #$",
+        revisionId="$Id:: package.mo 7758 2014-06-27 08:16:43Z #$",
 -       uses(Modelica(version="3.2.1")),
 +       uses(Modelica(version="trunk")),
      Documentation(info="<html>
