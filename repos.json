@@ -136,7 +136,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8cc821329f385f41dc36089b21701ce79d2cdc99",
+      "rev": "10c226b7e5b2af901b356ac437c90d6616a6e9a4",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -236,7 +236,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7767,
+      "rev": 7771,
       "targets": [
         "Complex",
         "Modelica",
@@ -256,7 +256,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7766,
+      "rev": 7770,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
