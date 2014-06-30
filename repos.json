@@ -1,11 +1,15 @@
 {
   "github-ignore": [
+    "https://github.com/modelica/Modelica",
+    "https://github.com/modelica/Modelica_EnergyStorages",
+    "https://github.com/modelica/Modelica_StateGraph2",
+    "https://github.com/modelica/Modelica_LinearSystems2",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/BioChem",
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/DESLib",
+    "https://github.com/modelica-3rdparty/FCSys",
     "https://github.com/modelica-3rdparty/FuelCellLib",
-    "https://github.com/modelica-3rdparty/FCSys.git",
     "https://github.com/modelica-3rdparty/MoMoLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
@@ -25,7 +29,8 @@
     "https://github.com/modelica-3rdparty/WheelsAndTires"
   ],
   "github-repos": [
-    "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100"
+    "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100",
+    "https://api.github.com/users/modelica/repos?type=owner&per_page=100"
   ],
   "provided": {
     "Complex 1.0": "Complex 3.2.1",
@@ -121,6 +126,14 @@
       },
       "rev": "2f4eac0651c1ab0ed56b75ec61424e0ef15181d3",
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets.git"
+    },
+    {
+      "dest": "ExternalMedia",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "710fb1919bab805cd0eb670d9a5b39a8485024e0",
+      "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
       "dest": "FCSys",
@@ -321,6 +334,14 @@
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
     },
     {
+      "dest": "Modelica_EnergyStorages",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9f057365232364e31a31a8e525f96284b98c7de3",
+      "url": "https://github.com/modelica/Modelica_EnergyStorages.git"
+    },
+    {
       "dest": "Modelica_StateGraph2",
       "options": {
         "encoding": "Windows-1252"
@@ -330,6 +351,14 @@
         "self"
       ],
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2"
+    },
+    {
+      "dest": "Modelica_Synchronous",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "15faf7a47d14a86cd4c3c83de5398b7428b2ef05",
+      "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
       "dest": "MotorcycleDynamics",
@@ -451,6 +480,14 @@
         "self"
       ],
       "url": "https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.1"
+    },
+    {
+      "dest": "VehicleInterfaces",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "ad956a35643d53e207ee126d67ea1f3f38337a39",
+      "url": "https://github.com/modelica/VehicleInterfaces.git"
     },
     {
       "dest": "WasteWater",
