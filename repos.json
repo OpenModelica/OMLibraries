@@ -132,7 +132,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "710fb1919bab805cd0eb670d9a5b39a8485024e0",
+      "rev": "5e9ff3aae0a90af50ab5bb6b5a56e3eeb478d39d",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -249,7 +249,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7771,
+      "rev": 7774,
       "targets": [
         "Complex",
         "Modelica",
