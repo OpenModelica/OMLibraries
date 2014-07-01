@@ -2,8 +2,9 @@
   "github-ignore": [
     "https://github.com/modelica/Modelica",
     "https://github.com/modelica/Modelica_EnergyStorages",
-    "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_LinearSystems2",
+    "https://github.com/modelica/Modelica_StateGraph2",
+    "https://github.com/modelica/Modelica_Synchronous",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/BioChem",
     "https://github.com/modelica-3rdparty/Buildings",
@@ -351,14 +352,6 @@
         "self"
       ],
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2"
-    },
-    {
-      "dest": "Modelica_Synchronous",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "15faf7a47d14a86cd4c3c83de5398b7428b2ef05",
-      "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
       "dest": "MotorcycleDynamics",
