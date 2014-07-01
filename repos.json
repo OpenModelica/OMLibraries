@@ -59,7 +59,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "92bc4175bca8a713f0c1213e271c9c2190f08a64",
+      "rev": "b6c48774b97c8cb9e38d341e3df08944c68f96ea",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -387,7 +387,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e4b2ccd3d4f9dd301c5187ff3684b081788f1c22",
+      "rev": "25548e84a4d2b68a6f487b687a609e236cb5cab3",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
