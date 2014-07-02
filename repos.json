@@ -133,7 +133,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5e9ff3aae0a90af50ab5bb6b5a56e3eeb478d39d",
+      "rev": "e7a2a44939865535c5bb47924ffc23c70f944ecc",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -250,7 +250,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7774,
+      "rev": 7778,
       "targets": [
         "Complex",
         "Modelica",
@@ -270,7 +270,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7770,
+      "rev": 7779,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -304,7 +304,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f5653cfdf6d4af1313d5f1861cb8db646f5c00a9",
+      "rev": "9b38bd2e16577339a91d53b978c6c1efa9c63872",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
