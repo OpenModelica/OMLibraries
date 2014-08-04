@@ -35,6 +35,7 @@
   ],
   "provided": {
     "Complex 1.0": "Complex 3.2.1",
+    "DataFiles 1.0": "ModelicaServices 3.2.1",
     "ModelManagement 1.1.1": "ModelicaServices 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
@@ -42,7 +43,8 @@
     "Modelica 3.2": "Modelica 3.2.1",
     "ModelicaServices 3.2": "ModelicaServices 3.2.1",
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.2",
-    "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92"
+    "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
+    "PowerLib 1": "ModelicaServices 3.2.1"
   },
   "repos": [
     {
@@ -87,6 +89,14 @@
       },
       "rev": "df7a40fe612617da22e27d39edfa4b27d65f23d0",
       "url": "https://github.com/modelica-3rdparty/BondLib.git"
+    },
+    {
+      "dest": "BrineProp",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
+      "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
       "dest": "Buildings",
@@ -498,6 +508,14 @@
       },
       "rev": "d6963f7ca913dfab92c8003d4f9a9016cd235f38",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
+    },
+    {
+      "dest": "open-bldc-modelica",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "d4c0d8779a16cce4ed1bf838574ed619203e3bc8",
+      "url": "https://github.com/modelica-3rdparty/open-bldc-modelica.git"
     }
   ]
 }
