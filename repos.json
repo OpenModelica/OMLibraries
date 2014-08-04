@@ -35,16 +35,13 @@
   ],
   "provided": {
     "Complex 1.0": "Complex 3.2.1",
-    "DataFiles 1.0": "ModelicaServices 3.2.1",
-    "ModelManagement 1.1.1": "ModelicaServices 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
     "Modelica 3.0": "Modelica 3.2.1",
     "Modelica 3.2": "Modelica 3.2.1",
     "ModelicaServices 3.2": "ModelicaServices 3.2.1",
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.2",
-    "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
-    "PowerLib 1": "ModelicaServices 3.2.1"
+    "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92"
   },
   "repos": [
     {
@@ -93,6 +90,7 @@
     {
       "dest": "BrineProp",
       "options": {
+        "no-dependencies": "BrineProp",
         "gitbranch": "master"
       },
       "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
@@ -156,8 +154,18 @@
       "url": "https://github.com/kdavies4/FCSys.git"
     },
     {
+      "dest": "FastBuildings",
+      "options": {
+        "no-dependencies": "FastBuildings",
+        "gitbranch": "master"
+      },
+      "rev": "2c1feaa914d76fcda0020a293da7a2c2ac5190cb",
+      "url": "https://github.com/modelica-3rdparty/FastBuildings.git"
+    },
+    {
       "dest": "FaultTriggering",
       "options": {
+        "no-dependencies": "FaultTriggering",
         "gitbranch": "master"
       },
       "rev": "10c226b7e5b2af901b356ac437c90d6616a6e9a4",
@@ -455,6 +463,14 @@
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git"
     },
     {
+      "dest": "Servomechanisms",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "22e1874ef9ad46156617817c67a4fb1238621bf5",
+      "url": "https://github.com/modelica-3rdparty/Servomechanisms.git"
+    },
+    {
       "dest": "Spot",
       "options": {
         "gitbranch": "master"
@@ -512,6 +528,7 @@
     {
       "dest": "open-bldc-modelica",
       "options": {
+        "no-dependencies": "OpenBLDC",
         "gitbranch": "master"
       },
       "rev": "d4c0d8779a16cce4ed1bf838574ed619203e3bc8",
