@@ -90,8 +90,8 @@
     {
       "dest": "BrineProp",
       "options": {
-        "no-dependencies": "BrineProp",
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "no-dependencies": "BrineProp"
       },
       "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
@@ -156,8 +156,8 @@
     {
       "dest": "FastBuildings",
       "options": {
-        "no-dependencies": "FastBuildings",
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "no-dependencies": "FastBuildings"
       },
       "rev": "2c1feaa914d76fcda0020a293da7a2c2ac5190cb",
       "url": "https://github.com/modelica-3rdparty/FastBuildings.git"
@@ -165,8 +165,8 @@
     {
       "dest": "FaultTriggering",
       "options": {
-        "no-dependencies": "FaultTriggering",
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "no-dependencies": "FaultTriggering"
       },
       "rev": "10c226b7e5b2af901b356ac437c90d6616a6e9a4",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
@@ -405,7 +405,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1c7234e09dab2a2828c986bb061278e933bcf95a",
+      "rev": "b2d07384556b955d52de51aa2bf18d4b75ab7716",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -528,8 +528,8 @@
     {
       "dest": "open-bldc-modelica",
       "options": {
-        "no-dependencies": "OpenBLDC",
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "no-dependencies": "OpenBLDC"
       },
       "rev": "d4c0d8779a16cce4ed1bf838574ed619203e3bc8",
       "url": "https://github.com/modelica-3rdparty/open-bldc-modelica.git"
