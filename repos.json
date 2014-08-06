@@ -58,7 +58,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0d267f220be6ce20879dce6f7df4232be51d4b9c",
+      "rev": "3a1eb5288f808356cec91837ff03706b0d1949e9",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -102,7 +102,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9c9d19c8f4c1a5d4d0c94072c368be30ed7a4552",
+      "rev": "7946160720180ecfa0a735d00dc24ab752d69e04",
       "targets": [
         "Buildings latest"
       ],
@@ -268,7 +268,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7778,
+      "rev": 7803,
       "targets": [
         "Complex",
         "Modelica",
@@ -288,7 +288,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7794,
+      "rev": 7801,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -314,7 +314,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cf4b2e3c0b8df135dd910d9140f7df5c9b29cc07",
+      "rev": "31cf53035fbf6f3b948861325972d188b7e67202",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -405,7 +405,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "78ac2c42c8703faba5512b4ae23bcc8cb48736af",
+      "rev": "df37af152485242af40bff87d9dde1406bea9479",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
