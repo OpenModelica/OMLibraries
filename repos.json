@@ -102,7 +102,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4ce1281f8c1730585f2430d376dd4eabfc139ede",
+      "rev": "0baf55441cf979765ac4146277c46ccf99815032",
       "targets": [
         "Buildings latest"
       ],
@@ -314,7 +314,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9a158b339804c09cd825264d83b056ccb4056d1f",
+      "rev": "f927fa45f729fe86bea8a2fd3619732253a2a26c",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
