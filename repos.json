@@ -304,7 +304,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7ab6337e8ba0c706664adb1e3530277599f8c601",
+      "rev": "4183b683c7d064ea8bc32f0f30a984e3cdb87e98",
       "targets": [
         "none"
       ],
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a9a408fdd9aa1b55774851db83d3da5b127d4e8f",
+      "rev": "ae4b3a233e0cf560940fb6be27e9a4dc48e4ff41",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
