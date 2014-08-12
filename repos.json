@@ -103,7 +103,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "617f3289418a526239a1c07f433e4a1a461a5d49",
+      "rev": "bfd3add5b486469826038d27baa266f2210626fd",
       "targets": [
         "Buildings latest"
       ],
@@ -289,7 +289,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7817,
+      "rev": 7818,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2ec6cb22bc32070a5b64ecf25841d54b146a5402",
+      "rev": "a9a408fdd9aa1b55774851db83d3da5b127d4e8f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -406,7 +406,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "df37af152485242af40bff87d9dde1406bea9479",
+      "rev": "68323eee37b7084898c3251a2b1ccc2cd0d39d06",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -532,7 +532,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "d4c0d8779a16cce4ed1bf838574ed619203e3bc8",
+      "rev": "082e43ae00e9da4a75e7f6d8fbb5fd238a6a848e",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
