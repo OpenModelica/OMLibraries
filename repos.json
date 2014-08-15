@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ae4b3a233e0cf560940fb6be27e9a4dc48e4ff41",
+      "rev": "f1b06ad5e202ee34b422d96156b804914e6452ac",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -435,7 +435,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0197ae16506083b4b9c1c27dc0afafc822e7ced2",
+      "rev": "d42043955413b43f2cc539b25595ca6cf649b7f0",
       "targets": [
         "PowerSystems latest"
       ],
