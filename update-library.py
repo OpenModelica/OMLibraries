@@ -9,11 +9,11 @@ from collections import defaultdict
 import subprocess
 
 def targets(r):
-  if not r.has_key('targets'):
+  if not 'targets' in r:
     return "all"
   return ' '.join(['"%s"' % t for t in r['targets']])
 def opts(r):
-  if not r.has_key('options'):
+  if 'options' not in r:
     return ""
   opts = r['options']
   return " ".join(['--%s "%s"' % (key,opts[key]) for key in opts.keys()])
@@ -34,9 +34,9 @@ def update():
     provides[pack] += [p]
   for k in provides.keys():
     f = open(options.build + "/%s.provides" % k,'w')
-    f.write(','.join([subprocess.check_output("sh ./debian-name.sh %s" % item, shell=True).strip() for item in provides[k]]))
+    f.write(','.join([str(subprocess.check_output("sh ./debian-name.sh %s" % item, shell=True)).strip() for item in provides[k]]))
   commands = [updateCommand(r) for r in repos]
-  for cmd in commands: print cmd
+  for cmd in commands: print(cmd)
   try:
     os.remove('error.log')
   except OSError:
@@ -44,8 +44,8 @@ def update():
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
   exit = 0
   for (i,cmd) in zip(res,commands):
-    if i<>0:
-      print '*** Failed: %s' % cmd
+    if i != 0:
+      print('*** Failed: %s' % cmd)
       exit = 1
   return exit
 
@@ -74,9 +74,9 @@ def checkLatest(repo):
     branch = options.get('gitbranch') or 'release'
     oldrev = repo['rev']
     newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
-    if oldrev <> newrev:
+    if oldrev != newrev:
       repo['rev'] = newrev
-      if 0<>os.system(updateCommand(repo)):
+      if 0 != os.system(updateCommand(repo)):
         repo['rev'] = oldrev
         msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
       elif options.get('automatic-updates') == 'no':
@@ -105,7 +105,7 @@ def checkLatest(repo):
       #changesCmd = '%s log -qv -r%s:%s %s | egrep -o "(/(tags|branches)/[^/]*/|/trunk/)" | sed "s, (from /,/," | sort -u' % (svncmd,oldrev,newrev,remoteurl)
       #changes = subprocess.check_output(changesCmd, shell=True).strip()
       updateLibraryCmd = updateCommand(repo)
-      if 0<>os.system(updateLibraryCmd):
+      if 0 != os.system(updateLibraryCmd):
         repo['rev'] = oldrev
         msg = "svn/%s uses %d but %d is available. It FAILED to update using %s" % (repo['dest'],oldrev,newrev,updateLibraryCmd)
       elif options.get('automatic-updates') == 'no':
@@ -132,15 +132,15 @@ if __name__ == '__main__':
     # res = [checkLatest(repo) for repo in repos]
     (msgs,repos) = zip(*list(res))
     os.system("rm -f test-valid*.mos")
-    jsondata['repos'] = sorted(repos, key=lambda k: k['dest']) 
+    jsondata['repos'] = sorted(repos, key=lambda k: k['dest'])
     f = io.open("commit.log","w",encoding='utf-8')
     f.write(u"Bump libraries\n")
     for msg in msgs:
       if msg is not None:
-        print msg.encode('utf-8')
+        print(msg.encode('utf-8'))
         f.write("- %s\n" % msg)
     urls = [repo['url'] for repo in repos] + jsondata['github-ignore']
-    for repo in checkGithub(jsondata['github-repos'],urls): print "Repository not in database: %s" % repo['svn_url']
+    for repo in checkGithub(jsondata['github-repos'],urls): print("Repository not in database: %s" % repo['svn_url'])
     f = open("repos.json","w")
     simplejson.dump(jsondata, f, indent=2, sort_keys=True)
   elif options.add_missing:
@@ -150,10 +150,10 @@ if __name__ == '__main__':
       branch = repo['default_branch']
       rev = subprocess.check_output("git ls-remote '%s' refs/heads/%s | cut -f1" % (url,branch), shell=True).strip()
       entry = {'dest':repo['name'],'options':{'gitbranch':branch},'rev':rev,'url':url}
-      print "Adding entry",entry
+      print("Adding entry",entry)
       jsondata['repos'].append(entry)
     f = open("repos.json","w")
-    jsondata['repos'] = sorted(jsondata['repos'], key=lambda k: k['dest']) 
+    jsondata['repos'] = sorted(jsondata['repos'], key=lambda k: k['dest'])
     simplejson.dump(jsondata, f, indent=2, sort_keys=True)
   else:
     sys.exit(update())
