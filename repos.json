@@ -289,7 +289,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7834,
+      "rev": 7835,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ca61d5cf730c59bb855f44c08612050519a882a1",
+      "rev": "d2a61c4c0301c07661b845fc4332552b0d4874cf",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
