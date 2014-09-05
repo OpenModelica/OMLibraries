@@ -346,7 +346,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7155,
+      "rev": 7839,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -406,7 +406,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2c9c17099f3c3f3bf8989f2428dfa7ecd9752f7e",
+      "rev": "92cbc90c684e6b9074e3280b7f85f8a840f1d774",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
