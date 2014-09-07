@@ -346,7 +346,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7839,
+      "rev": 7840,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
