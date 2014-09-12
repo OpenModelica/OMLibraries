@@ -103,7 +103,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "79ddc9bfa40c495e01b6b8334640792f22086162",
+      "rev": "aea72e1bc8c88bcbfe78f0d5c2cbb27e94cd514f",
       "targets": [
         "Buildings latest"
       ],
@@ -346,7 +346,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7841,
+      "rev": 7847,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
