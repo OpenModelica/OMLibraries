@@ -94,7 +94,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "d5a4aa61ec102762c6046465ba9126254f71f2d3",
+      "rev": "42b05dd20a8c78560adcbe9dfb95a645e470b184",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -269,7 +269,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7857,
+      "rev": 7862,
       "targets": [
         "Complex",
         "Modelica",
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "84ed6d29b78e35dd852743e1f267bdfa2a6968e6",
+      "rev": "a6f7097f322f71392af0b8a90f277e54df975429",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -346,7 +346,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7847,
+      "rev": 7861,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
