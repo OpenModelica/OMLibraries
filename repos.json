@@ -187,7 +187,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "cf4d3b81861bdb23d0752fafd6f82b3e89301920",
+      "rev": "113db922ed5f632b2ac188ab4335beb2035bdd1f",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a6f7097f322f71392af0b8a90f277e54df975429",
+      "rev": "0dcbb7bd7daa88f5c6a27ccc7e9624144355c7de",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -406,7 +406,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aff4984fbe1a6300a75792df750fd4185b5a4820",
+      "rev": "fde3270a13da276718d747129432fe8f1941384a",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
