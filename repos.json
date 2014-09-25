@@ -184,7 +184,6 @@
     {
       "dest": "HelmholtzMedia",
       "options": {
-        "encoding": "Windows-1252",
         "gitbranch": "master"
       },
       "rev": "e61c8108b8d282395e6c724a1e89b0cf18cb246b",
