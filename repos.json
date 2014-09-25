@@ -187,7 +187,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "113db922ed5f632b2ac188ab4335beb2035bdd1f",
+      "rev": "e61c8108b8d282395e6c724a1e89b0cf18cb246b",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -315,7 +315,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0dcbb7bd7daa88f5c6a27ccc7e9624144355c7de",
+      "rev": "72396215e59adadda0dc807cf340287515403528",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
