@@ -297,56 +297,6 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.order build/Mo
 +tempInterpol1_der
  tempInterpol2
 +tempInterpol2_der
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo build/Modelica 3.2.1/Mechanics/MultiBody/package.mo
---- libraries/Modelica 3.2.1/Modelica/Mechanics/MultiBody/package.mo	2013-06-27 18:19:21.579086395 +0200
-+++ build/Modelica 3.2.1/Mechanics/MultiBody/package.mo	2013-07-24 10:05:34.234902259 +0200
-@@ -1268,6 +1268,7 @@
-     "Default scaling of torque arrows (length = torque/defaultNm_to_m)"
-     annotation (Dialog(tab="Defaults"));
- 
-+  /* adrpo: 2012-09-04 -> replace gravityAcceleration function with the one in MSL 3.1 (not replaceable)
-   replaceable function gravityAcceleration =
-        Modelica.Mechanics.MultiBody.Forces.Internal.standardGravityAcceleration
-       (    gravityType=gravityType, g=g*Modelica.Math.Vectors.normalizeWithAssert(n), mue=mue)
-@@ -1286,6 +1287,38 @@
-      <a href=\"modelica://Modelica.Mechanics.MultiBody.Examples.Elementary.UserDefinedGravityField\">Examples.Elementary.UserDefinedGravityField</a>.
- </p>
- </html>"));
-+*/
-+
-+function gravityAcceleration = gravityAccelerationTypes (
-+      gravityType=gravityType,
-+      g=g*Modelica.Math.Vectors.normalize(
-+                                     n),
-+      mue=mue);
-+
-+protected
-+  function gravityAccelerationTypes
-+    "Gravity field acceleration depending on field type and position"
-+    import Modelica.Mechanics.MultiBody.Types.GravityTypes;
-+    extends Modelica.Icons.Function;
-+    input SI.Position r[3]
-+      "Position vector from world frame to actual point, resolved in world frame";
-+    input GravityTypes gravityType "Type of gravity field";
-+    input SI.Acceleration g[3]
-+      "Constant gravity acceleration, resolved in world frame, if gravityType=1";
-+    input Real mue(unit="m3/s2")
-+      "Field constant of point gravity field, if gravityType=2";
-+    output SI.Acceleration gravity[3]
-+      "Gravity acceleration at point r, resolved in world frame";
-+  algorithm
-+    gravity := if gravityType == GravityTypes.UniformGravity then g else
-+               if gravityType == GravityTypes.PointGravity then
-+                  -(mue/(r*r))*(r/Modelica.Math.Vectors.length(
-+                                                r)) else
-+                    zeros(3);
-+    annotation(Inline=true);          
-+  end gravityAccelerationTypes;
-+
-+
- 
-   /* The World object can only use the Modelica.Mechanics.MultiBody.Visualizers.Advanced.Shape model, but no
-      other models in package Modelica.Mechanics.MultiBody.Visualizers, since the other models access
 diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo
 --- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
 +++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-07-24 10:05:34.234902259 +0200
