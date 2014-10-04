@@ -531,7 +531,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "082e43ae00e9da4a75e7f6d8fbb5fd238a6a848e",
+      "rev": "86b438cbf64fcbff217a2c8e4403ae9beca5f036",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
