@@ -191,7 +191,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e61c8108b8d282395e6c724a1e89b0cf18cb246b",
+      "rev": "e7313421cb3040d98d106bcd64288c3450628a64",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "95265adb4ccf46a1a5ccf0ccb9cbd7c6599fcca8",
+      "rev": "e79ab45b1eece2e293b9e5e1ceb841186941fcf4",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
