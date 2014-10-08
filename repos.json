@@ -17,7 +17,6 @@
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/NCLib",
     "https://github.com/modelica-3rdparty/Noise",
-    "https://github.com/modelica-3rdparty/ObjectStab",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
     "https://github.com/modelica-3rdparty/PlanarMechanics",
@@ -393,6 +392,14 @@
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
+      "dest": "ObjectStab",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "2a723e0b223af50f4ffdd62f8ac901e0f87b9323",
+      "url": "https://github.com/modelica-3rdparty/ObjectStab.git"
+    },
+    {
       "dest": "OpenHydraulics",
       "options": {
         "gitbranch": "master"
@@ -439,6 +446,14 @@
         "PowerSystems latest"
       ],
       "url": "https://github.com/modelica/PowerSystems.git"
+    },
+    {
+      "dest": "QCalc",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "5403ae672ac631655a24cdcb3561a37653c817e2",
+      "url": "https://github.com/modelica-3rdparty/QCalc.git"
     },
     {
       "dest": "QSSFluidFlow",
@@ -516,6 +531,14 @@
       },
       "rev": 5,
       "url": "https://github.com/modelica-3rdparty/WasteWater/branches/master"
+    },
+    {
+      "dest": "XogenyTest",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9b98981e8ff0f440dd319d1a806e1fd2f0ab3436",
+      "url": "https://github.com/xogeny/XogenyTest.git"
     },
     {
       "dest": "msgpack-modelica",
