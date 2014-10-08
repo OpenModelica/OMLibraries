@@ -6,16 +6,14 @@
     "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_Synchronous",
     "https://github.com/modelica-3rdparty/open-bldc-modelica.git",
+    "https://github.com/modelica-3rdparty/AixLib",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/BioChem",
     "https://github.com/modelica-3rdparty/Buildings",
-    "https://github.com/modelica-3rdparty/DESLib",
     "https://github.com/modelica-3rdparty/FCSys",
     "https://github.com/modelica-3rdparty/FuelCellLib",
-    "https://github.com/modelica-3rdparty/MoMoLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
-    "https://github.com/modelica-3rdparty/NCLib",
     "https://github.com/modelica-3rdparty/Noise",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
@@ -127,6 +125,14 @@
       },
       "rev": "0b78942ee4fa95ae71347a0d552dd869fdf4c708",
       "url": "https://github.com/modelica-3rdparty/ComplexLib.git"
+    },
+    {
+      "dest": "DESLib",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "7a473d8d16b118c3ea05761c6f43b17fd9838e4e",
+      "url": "https://github.com/modelica-3rdparty/DESLib.git"
     },
     {
       "dest": "ExtendedPetriNets",
@@ -374,6 +380,14 @@
       "dest": "MotorcycleDynamics",
       "rev": 8,
       "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master"
+    },
+    {
+      "dest": "NCLib",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "ed3d72f176ac6b7031ce73be9d80101141e74a69",
+      "url": "https://github.com/modelica-3rdparty/NCLib.git"
     },
     {
       "dest": "NeuralNetwork",
