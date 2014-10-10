@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "07ddc7ea022dceb4a4d451c3000782c81a6ed359",
+      "rev": "82e410529cba271b9b61964e09d3bee2f1e9df2e",
       "targets": [
         "Buildings latest"
       ],
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "425fc8b6e3c77886585b90bcf14d960d654be7de",
+      "rev": "5bf6ed639c21b88121dccac76334a33d48c90fe2",
       "targets": [
         "PowerSystems latest"
       ],
