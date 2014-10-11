@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "82e410529cba271b9b61964e09d3bee2f1e9df2e",
+      "rev": "6f7088e024726b1ffec3738615998517e977f75e",
       "targets": [
         "Buildings latest"
       ],
@@ -191,7 +191,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "205a063b28aaf84f7e67e196b9173a9832be5001",
+      "rev": "b0ccde0356c6c9df59936b390b95c3144b8252ae",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 280,
+      "rev": 281,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
