@@ -147,7 +147,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "18c02f751a7011540743c5e03bf1c6aabaebf90e",
+      "rev": "06b89b59fe3b17bf42062ec1bd23a3f8eda0396a",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -191,7 +191,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b0ccde0356c6c9df59936b390b95c3144b8252ae",
+      "rev": "09c9beea31e4584f8cf09e43821428297b472b28",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -273,7 +273,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7879,
+      "rev": 7883,
       "targets": [
         "Complex",
         "Modelica",
@@ -293,7 +293,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7878,
+      "rev": 7884,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ff430647379fc5a7645676627a93d2a8eb731e34",
+      "rev": "12fee3b4fbf9c01daeababccf30ac78413559640",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ccf796c1cbcb8b9e2121f08b682169c87b016dda",
+      "rev": "4aff5eec08bedb662132c0522f423a52acd0eae8",
       "targets": [
         "PowerSystems latest"
       ],
