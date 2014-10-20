@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e459e72b7e18ec3ff965893c64b98337c4ae2733",
+      "rev": "c0e3a47b6c11468bbf8e9e88d9dad318f310c05b",
       "targets": [
         "Buildings latest"
       ],
@@ -447,7 +447,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "9d837c58260320195d247ca1bfdb6bed8e35041f",
+      "rev": "945b3cb40f4939560307e8b5b61c075cc674a152",
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a6da1d281a8c794589d2469092dd3dd2d06c7313",
+      "rev": "f147a14c271827e7f1583863f86e7c9461261f2a",
       "targets": [
         "PowerSystems latest"
       ],
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 281,
+      "rev": 285,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
