@@ -56,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e79002f98c394e2fcb9eca35324ec5fee1d7e610",
+      "rev": "6f82841b61b29239e713e7f1384db0fc91ccbadf",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c0e3a47b6c11468bbf8e9e88d9dad318f310c05b",
+      "rev": "3f9aa1ffa47a44833aea65962a3d267cbd06c63f",
       "targets": [
         "Buildings latest"
       ],
@@ -319,7 +319,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "83e4a6f876cc4ebb0fdab3d74029db64ed1afb92",
+      "rev": "f4ab483571e0ec040bc5fd39099b6f241e13e956",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c1d50c105ee4b3aacdf8774e5af134815d0ee1d0",
+      "rev": "217eed9845d9e6c7c090431d6530b2f566b8b16a",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -447,7 +447,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "945b3cb40f4939560307e8b5b61c075cc674a152",
+      "rev": "2aad57920f6fa4b83ee969c1bdb1f27737fae83e",
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ae0b99f0bccf9b77eecef487e1872bf04292aaac",
+      "rev": "9bc36fd39fd439ddb1651f726fb3a54c40996353",
       "targets": [
         "PowerSystems latest"
       ],
