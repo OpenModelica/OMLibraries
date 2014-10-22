@@ -16,7 +16,7 @@ MOS="get-version.$$.mos"
 VER="get-version.$$.ver"
 rm -f $MOS $VER
 cat > $MOS <<EOF
-loadFile("$FILE",encoding="$ENCODING");getErrorString();
+loadFile("$FILE",encoding="$ENCODING",uses=false);getErrorString();
 version:=getVersion($LIB);getErrorString();
 writeFile("$VER",version);getErrorString();
 uses:=getUses($LIB);getErrorString();

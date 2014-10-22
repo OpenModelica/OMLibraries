@@ -11,7 +11,7 @@ FILE=$3
 rm -f $$.parse.log
 # Verify that all libraries parse
 cat > test-valid.$$.mos <<EOF
-b:=loadFile("$FILE");
+b:=loadFile("$FILE",uses=false);
 s:=getErrorString();
 if not b then
   writeFile("$$.parse.log","Failed to load $FILE:\n" + s + "\n");
