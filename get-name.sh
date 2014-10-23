@@ -12,6 +12,7 @@ MOS="get-name.$$.mos"
 NAME="get-name.$$.name"
 rm -f $MOS $NAME
 cat > $MOS <<EOF
+setModelicaPath("");getErrorString();
 loadFile("$FILE",encoding="$ENCODING",uses=false);getErrorString();
 names:=getClassNames();getErrorString();
 name:=names[1];getErrorString();
