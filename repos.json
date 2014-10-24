@@ -56,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e69b1a5f41175dca493c3e57b8c2da40b16ede4d",
+      "rev": "3a3c9b33795ffe577f322f342b9a205b196fae5d",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3f9aa1ffa47a44833aea65962a3d267cbd06c63f",
+      "rev": "38cd751e1025cf0f43d517f843b54dc71620a6be",
       "targets": [
         "Buildings latest"
       ],
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 285,
+      "rev": 287,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
