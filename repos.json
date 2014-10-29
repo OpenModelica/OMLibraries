@@ -191,7 +191,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c0180f71f14af455977cc0e1c263a8bc3f5f8395",
+      "rev": "40eca24d9ed1b5d49e3266ff958edd7b6f79dea1",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -273,7 +273,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7883,
+      "rev": 7888,
       "targets": [
         "Complex",
         "Modelica",
@@ -293,7 +293,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7884,
+      "rev": 7887,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -434,7 +434,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ee28e9b4ab1a9c8f91056ae8fba9e23f9921e775",
+      "rev": "b01b90ade9bcf30b20a55378c66f19fdcbd061a8",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
