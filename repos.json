@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bcf7ce7dbfb71814d7c2493bcacd790a0c69441a",
+      "rev": "2e6a9bcb1574500fff14aabefba51e1f66f22c74",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9bc36fd39fd439ddb1651f726fb3a54c40996353",
+      "rev": "62c17b39eefa83181c754b8a562ce04e9133aa69",
       "targets": [
         "PowerSystems latest"
       ],
@@ -485,7 +485,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "91f0809aa53398fe008a1b5df56f45a66dd7e5de",
+      "rev": "655ac1a22aa6deb04ea8e3869dd0aa9fb9540754",
       "targets": [
         "self"
       ],
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 289,
+      "rev": 290,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
