@@ -147,7 +147,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "06b89b59fe3b17bf42062ec1bd23a3f8eda0396a",
+      "rev": "3185d9922e290e30f707d4fae3b1f5b5db5008ac",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -434,7 +434,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b01b90ade9bcf30b20a55378c66f19fdcbd061a8",
+      "rev": "6efbcd9a98949480f1380a5ed1692580c01c11a1",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "62c17b39eefa83181c754b8a562ce04e9133aa69",
+      "rev": "c4a8e47e5dc40aae0b7514c832964eeaa518f77a",
       "targets": [
         "PowerSystems latest"
       ],
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 290,
+      "rev": 291,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
