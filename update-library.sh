@@ -5,14 +5,14 @@ ENCODING=UTF-8
 STD=3.3
 LICENSE=modelica2
 SVNOPTS="--non-interactive --username anonymous"
-OMC=omc
+OMC=omc +n=1
 GITBRANCH=release
 while echo $1 | grep -q "^--"; do
 OPT="$1"
 shift
 case $OPT in
 --omc)
-  OMC="$1"
+  OMC="$1 +n=1"
   shift
   ;;
 --build-dir)
