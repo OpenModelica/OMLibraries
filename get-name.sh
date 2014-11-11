@@ -19,7 +19,7 @@ name:=names[1];getErrorString();
 nameStr:=typeNameString(name);getErrorString();
 writeFile("$NAME",nameStr);getErrorString();
 EOF
-"$OMC" "+std=$STD" $MOS > /dev/null 2>&1
+"$OMC" "+n=1" "+std=$STD" $MOS > /dev/null 2>&1
 PACKAGE=`test -f "$NAME" && cat "$NAME"`
 #rm -f $MOS $NAME
 if test -z "$PACKAGE"; then
