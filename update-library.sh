@@ -5,7 +5,7 @@ ENCODING=UTF-8
 STD=3.3
 LICENSE=modelica2
 SVNOPTS="--non-interactive --username anonymous"
-OMC=omc +n=1
+OMC="omc +n=1"
 GITBRANCH=release
 while echo $1 | grep -q "^--"; do
 OPT="$1"
