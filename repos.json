@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2e6a9bcb1574500fff14aabefba51e1f66f22c74",
+      "rev": "c59a3783ec5b097e2cfdf096d9c92eca05a99227",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -434,7 +434,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6efbcd9a98949480f1380a5ed1692580c01c11a1",
+      "rev": "83cbad8f2d89842146226a350e809c13852308a0",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 291,
+      "rev": 294,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
