@@ -91,7 +91,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "42b05dd20a8c78560adcbe9dfb95a645e470b184",
+      "rev": "a23a56f6f7daba92a750523dd080d2aef01fe526",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1a12eccbad069d74c9067c18ab48bf0688a0d6e6",
+      "rev": "729bcd8eefc9da8763e4be0d8855143a9760cd0c",
       "targets": [
         "Buildings latest"
       ],
@@ -199,7 +199,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fc8fd15d817a68e31e462c9f63c2ec65e5849ba1",
+      "rev": "7739d36bbd91e960d716533d716bb2432c329286",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
