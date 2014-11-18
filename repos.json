@@ -56,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3c5db0bdf03129710d81d3f6687f4e3fbd1a13ce",
+      "rev": "84246a05faa640ee46a9b7e738a1d356fce32b78",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "82c6c9f2c30ac6ce48948cf5dbcb48ecb46f4800",
+      "rev": "30921f84d87116cc762f5457143574ae8a740eb4",
       "targets": [
         "Buildings latest"
       ],
@@ -199,7 +199,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7739d36bbd91e960d716533d716bb2432c329286",
+      "rev": "989ac2eaa57c2a6ad73894d906a1436acb1bd5f7",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
