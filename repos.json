@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9188bdac212ab6db91fd647cd7f6e7f4e9f28675",
+      "rev": "ae5efba8e4915e8215c4c354cbedea92ad2159ae",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -434,7 +434,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "766011e8737579b0e4745e92b9d437e984503ff7",
+      "rev": "844e9e777a504bdb282931d92ed15a06209d44db",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
