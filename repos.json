@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "30921f84d87116cc762f5457143574ae8a740eb4",
+      "rev": "1266d93a5a2b0a5e308ca4f65240d90e6feec076",
       "targets": [
         "Buildings latest"
       ],
@@ -199,7 +199,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "989ac2eaa57c2a6ad73894d906a1436acb1bd5f7",
+      "rev": "fdef83e7aac0edb3e9acec1a704a0791935c98de",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
