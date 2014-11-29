@@ -199,7 +199,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6a6edf50f025b18da6081a8ba56faef243a9c93e",
+      "rev": "ac88b32c30b972f3e2a4dc10f1a5218eec6e9d22",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
@@ -518,7 +518,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 297,
+      "rev": 299,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
