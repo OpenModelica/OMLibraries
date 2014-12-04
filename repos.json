@@ -56,7 +56,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "f925d53edfa668b945b19c3b895ea0b6e9589bc3",
+      "rev": "a4637962d40e7edf198fd4d5fc6f21214c7a7ba9",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -91,7 +91,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "a23a56f6f7daba92a750523dd080d2aef01fe526",
+      "rev": "93aa7a61ed954192db58b1814609df92c8f7b719",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -100,7 +100,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0ce41bc2b7722ec04208df5daa7212e7ccd16434",
+      "rev": "8f00a89b354dd0a58831a4d15d1ed2a460bbd1e6",
       "targets": [
         "Buildings latest"
       ],
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ae5efba8e4915e8215c4c354cbedea92ad2159ae",
+      "rev": "a93d8fce29aeb7f3cd428cbba98f379fb90688dd",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
