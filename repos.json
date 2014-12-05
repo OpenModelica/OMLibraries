@@ -55,10 +55,10 @@
       "options": {
         "gitbranch": "master"
       },
+      "rev": "ed0305603f86b46d9af03e7d37dcb8b6704915b4",
       "targets": [
         "self"
       ],
-      "rev": "ed0305603f86b46d9af03e7d37dcb8b6704915b4",
       "url": "https://github.com/modelica-3rdparty/ADMSL.git"
     },
     {
@@ -478,10 +478,10 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
+      "rev": "f7db177786f84033f3a50b7474988b190a1dfb46",
       "targets": [
         "PraxisSimulationstechnik"
       ],
-      "rev": "f7db177786f84033f3a50b7474988b190a1dfb46",
       "url": "https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git"
     },
     {
