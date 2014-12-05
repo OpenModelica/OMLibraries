@@ -51,6 +51,17 @@
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
+      "dest": "ADMSL",
+      "options": {
+        "gitbranch": "master"
+      },
+      "targets": [
+        "self"
+      ],
+      "rev": "ed0305603f86b46d9af03e7d37dcb8b6704915b4",
+      "url": "https://github.com/modelica-3rdparty/ADMSL.git"
+    },
+    {
       "dest": "Annex60",
       "options": {
         "gitbranch": "master",
@@ -460,6 +471,18 @@
         "PowerSystems latest"
       ],
       "url": "https://github.com/modelica/PowerSystems.git"
+    },
+    {
+      "dest": "PraxisSimulationstechnik",
+      "options": {
+        "gitbranch": "master",
+        "license": "gpl3"
+      },
+      "targets": [
+        "PraxisSimulationstechnik"
+      ],
+      "rev": "f7db177786f84033f3a50b7474988b190a1dfb46",
+      "url": "https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git"
     },
     {
       "dest": "QCalc",
