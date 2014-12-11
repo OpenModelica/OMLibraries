@@ -102,7 +102,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "93aa7a61ed954192db58b1814609df92c8f7b719",
+      "rev": "488a1cb171fee4f26c037ef87dc29ee7bb1e09ef",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -202,7 +202,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e972b16b4cac5610688189d0501ac3592cd45989",
+      "rev": "e9bfbc7487bc280e3fac07a4437f96d120a3b436",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -224,7 +224,7 @@
     },
     {
       "dest": "InstantaneousSymmetricalComponents",
-      "rev": 6107,
+      "rev": 7978,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents"
     },
     {
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7963,
+      "rev": 7979,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f4ab483571e0ec040bc5fd39099b6f241e13e956",
+      "rev": "4ec57f74e84db5cd682aa8255804b28c36086385",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
