@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b712f58eaa7719cf711eb86ad699d9a62f81e2fd",
+      "rev": "9c4b3a6b326ed655f5528c1fccd13c08ad3db001",
       "targets": [
         "Buildings latest"
       ],
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7935,
+      "rev": 7988,
       "targets": [
         "Complex",
         "Modelica",
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 7979,
+      "rev": 7989,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -330,7 +330,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4ec57f74e84db5cd682aa8255804b28c36086385",
+      "rev": "216b4781585bf56c2b6cbcb291da9721ce18bd10",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 299,
+      "rev": 300,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
