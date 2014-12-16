@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "a4637962d40e7edf198fd4d5fc6f21214c7a7ba9",
+      "rev": "02830bf17edfbd1f9e403e890f0fe3e371ada57d",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -591,7 +591,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "6dd6aeecf92dc8bc307e4c238a909e5748d8023d",
+      "rev": "7058934d28f96e224b235009dd69f11ce2b784ea",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
