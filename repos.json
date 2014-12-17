@@ -202,7 +202,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e9bfbc7487bc280e3fac07a4437f96d120a3b436",
+      "rev": "34a9d5da089a5ea205e02d4100c8f28050babcdd",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 300,
+      "rev": 301,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
