@@ -3,7 +3,7 @@ OMC=omc
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 default: all
-.PHONY: macports
+.PHONY: macports Modelica\ 3.2.1.patch
 
 all: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
@@ -114,3 +114,6 @@ upload: config.done .remote/control-files .remote/pool .remote/release-command
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
 	./check-debian.sh
+
+Modelica\ 3.2.1.patch:
+	diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica" "build/Modelica 3.2.1" > "$@"

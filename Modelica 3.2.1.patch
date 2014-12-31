@@ -1,63 +1,63 @@
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo build/Modelica 3.2.1/Blocks/Sources.mo
---- libraries/Modelica 3.2.1/Modelica/Blocks/Sources.mo	2013-07-24 09:57:04.613832572 +0200
-+++ build/Modelica 3.2.1/Blocks/Sources.mo	2013-07-24 10:05:34.218901723 +0200
-@@ -2309,7 +2309,7 @@
-       input Modelica.SIunits.Time timeIn;
+diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica/Blocks/Sources.mo" "build/Modelica 3.2.1/Blocks/Sources.mo"
+--- "svn/MSL 3.2.1/Modelica/Blocks/Sources.mo"	2014-12-31 19:52:22.410931274 +0100
++++ "build/Modelica 3.2.1/Blocks/Sources.mo"	2014-12-31 20:02:33.012474808 +0100
+@@ -2313,7 +2313,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2327,7 +2327,7 @@
-       input Modelica.SIunits.Time timeIn;
+@@ -2332,7 +2332,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2341,7 +2341,7 @@
-       input Modelica.SIunits.Time timeIn;
+@@ -2347,7 +2347,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        input Real der_timeIn;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTimeTable_getDerValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent, der_timeIn)
-@@ -2352,7 +2352,7 @@
-       "Return minimum time value of 1-dim. table where first column is time"
+@@ -2359,7 +2359,7 @@
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        output Modelica.SIunits.Time timeMin "Minimum time value in table";
        external"C" timeMin = ModelicaStandardTables_CombiTimeTable_minimumTime(tableID)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2362,7 +2362,7 @@
-       "Return maximum time value of 1-dim. table where first column is time"
+@@ -2370,7 +2370,7 @@
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        output Modelica.SIunits.Time timeMax "Maximum time value in table";
        external"C" timeMax = ModelicaStandardTables_CombiTimeTable_maximumTime(tableID)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2373,7 +2373,7 @@
-       extends Modelica.Icons.Function;
+@@ -2382,7 +2382,7 @@
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Modelica.SIunits.Time timeIn;
--      input Real tableAvailable "Dummy input to ensure correct sorting of function calls";
-+      input Real tableAvailable "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable=true);
        output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables"});
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Modelica 3.2.1/Blocks/Tables.mo
---- libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo	2013-06-27 18:19:23.743158383 +0200
-+++ build/Modelica 3.2.1/Blocks/Tables.mo	2013-07-24 10:05:34.218901723 +0200
+diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica/Blocks/Tables.mo" "build/Modelica 3.2.1/Blocks/Tables.mo"
+--- "svn/MSL 3.2.1/Modelica/Blocks/Tables.mo"	2014-05-05 20:17:45.090764986 +0200
++++ "build/Modelica 3.2.1/Blocks/Tables.mo"	2014-12-31 19:54:19.531073997 +0100
 @@ -58,7 +58,7 @@
        input Integer icol;
        input Real u;
@@ -139,10 +139,10 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Blocks/Tables.mo build/Mode
        input Real der_u1;
        input Real der_u2;
        output Real der_y;
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Modelica 3.2.1/Math/package.mo
---- libraries/Modelica 3.2.1/Modelica/Math/package.mo	2013-07-24 09:57:03.089781530 +0200
-+++ build/Modelica 3.2.1/Math/package.mo	2013-07-24 10:07:04.201916056 +0200
-@@ -12542,9 +12542,67 @@
+diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica/Math/package.mo" "build/Modelica 3.2.1/Math/package.mo"
+--- "svn/MSL 3.2.1/Modelica/Math/package.mo"	2014-12-31 19:52:22.314927878 +0100
++++ "build/Modelica 3.2.1/Math/package.mo"	2014-12-31 19:54:19.531073997 +0100
+@@ -12722,9 +12722,67 @@
  
    annotation (Documentation(info="<html>
  
@@ -211,7 +211,7 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Model
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -12604,9 +12662,74 @@
+@@ -12784,9 +12842,74 @@
  
    annotation (Documentation(info="<html>
  
@@ -287,9 +287,9 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.mo build/Model
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.order build/Modelica 3.2.1/Math/package.order
---- libraries/Modelica 3.2.1/Modelica/Math/package.order	2013-05-16 12:08:21.352656731 +0200
-+++ build/Modelica 3.2.1/Math/package.order	2013-07-24 10:05:34.234902259 +0200
+diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica/Math/package.order" "build/Modelica 3.2.1/Math/package.order"
+--- "svn/MSL 3.2.1/Modelica/Math/package.order"	2014-04-07 09:23:24.742123932 +0200
++++ "build/Modelica 3.2.1/Math/package.order"	2014-12-31 19:54:19.531073997 +0100
 @@ -24,4 +24,6 @@
  baseIcon1
  baseIcon2
@@ -297,10 +297,10 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Math/package.order build/Mo
 +tempInterpol1_der
  tempInterpol2
 +tempInterpol2_der
-diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo
---- libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
-+++ build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo	2013-07-24 10:05:34.234902259 +0200
-@@ -7161,7 +7161,7 @@
+diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica/Media/Water/IF97_Utilities.mo" "build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo"
+--- "svn/MSL 3.2.1/Modelica/Media/Water/IF97_Utilities.mo"	2014-12-04 09:16:53.807509442 +0100
++++ "build/Modelica 3.2.1/Media/Water/IF97_Utilities.mo"	2014-12-31 19:54:19.535074138 +0100
+@@ -7159,7 +7159,7 @@
         else region;
      aux.R := BaseIF97.data.RH2O;
      aux.p := p;
@@ -309,5 +309,3 @@ diff -u -x .svn -r libraries/Modelica 3.2.1/Modelica/Media/Water/IF97_Utilities.
      if (aux.region == 1) then
        g := BaseIF97.Basic.g1(p, T);
        aux.h := aux.R*aux.T*g.tau*g.gtau;
-Only in libraries/Modelica 3.2.1/Modelica/Resources: BuildProjects
-Only in libraries/Modelica 3.2.1/Modelica/Resources: Library
