@@ -116,4 +116,4 @@ upload: config.done .remote/control-files .remote/pool .remote/release-command
 	./check-debian.sh
 
 Modelica\ 3.2.1.patch:
-	diff -u -x .svn -x Library -r "svn/MSL 3.2.1/Modelica" "build/Modelica 3.2.1" > "$@"
+	diff -u -x .svn -x Library -r svn/MSL\ 3.2.1/Modelica build/Modelica\ 3.2.1 > "$@"
