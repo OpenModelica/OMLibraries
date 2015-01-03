@@ -287,9 +287,9 @@ diff -u -x .svn -x Library -r svn/MSL 3.2.1/Modelica/Math/package.mo build/Model
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-diff -u -x .svn -x Library -r svn/MSL 3.2.1/Modelica/Math/package.order" build/Modelica 3.2.1/Math/package.order"
---- svn/MSL 3.2.1/Modelica/Math/package.order"	2014-04-07 09:23:24.742123932 +0200
-+++ build/Modelica 3.2.1/Math/package.order"	2014-12-31 19:54:19.531073997 +0100
+diff -u -x .svn -x Library -r svn/MSL 3.2.1/Modelica/Math/package.order build/Modelica 3.2.1/Math/package.order
+--- svn/MSL 3.2.1/Modelica/Math/package.order	2014-04-07 09:23:24.742123932 +0200
++++ build/Modelica 3.2.1/Math/package.order	2014-12-31 19:54:19.531073997 +0100
 @@ -24,4 +24,6 @@
  baseIcon1
  baseIcon2
