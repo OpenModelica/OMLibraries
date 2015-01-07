@@ -102,7 +102,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "488a1cb171fee4f26c037ef87dc29ee7bb1e09ef",
+      "rev": "57307d85dfbcb72b3e9370a219e92d93047a2a5d",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0df55bc189c2cef6a2194b7f25252c9781ff64cc",
+      "rev": "1b805602bc5925c48d48b63a49f97b5fb654823b",
       "targets": [
         "Buildings latest"
       ],
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8030,
+      "rev": 8041,
       "targets": [
         "Complex",
         "Modelica",
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8031,
+      "rev": 8042,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 307,
+      "rev": 322,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
@@ -591,7 +591,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "6c947117ae19769c6ca85242a827bfcbd3f4e88d",
+      "rev": "6b215fc819b99cf2b26c2477f025f8e19e276e33",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
