@@ -102,7 +102,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "57307d85dfbcb72b3e9370a219e92d93047a2a5d",
+      "rev": "a5dd98399c5c74e1f1f289f6c2084fb81b8b1f77",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1b805602bc5925c48d48b63a49f97b5fb654823b",
+      "rev": "c6044e35f8acece13b610271e3d8bf951eb724b4",
       "targets": [
         "Buildings latest"
       ],
@@ -158,7 +158,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3185d9922e290e30f707d4fae3b1f5b5db5008ac",
+      "rev": "fcf4470dc17da6dc13ee38b98cf7dbc3f9e88f1c",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8041,
+      "rev": 8049,
       "targets": [
         "Complex",
         "Modelica",
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8042,
+      "rev": 8048,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 322,
+      "rev": 326,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
