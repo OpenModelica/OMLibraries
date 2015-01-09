@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c6044e35f8acece13b610271e3d8bf951eb724b4",
+      "rev": "6ba69918ac8a0ff5097560eb634f3019c8a02a9a",
       "targets": [
         "Buildings latest"
       ],
@@ -158,7 +158,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fcf4470dc17da6dc13ee38b98cf7dbc3f9e88f1c",
+      "rev": "ad6866901eef3130c0c84dea68cb546ee6382faf",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -176,7 +176,7 @@
         "gitbranch": "master",
         "no-dependencies": "FastBuildings"
       },
-      "rev": "2c1feaa914d76fcda0020a293da7a2c2ac5190cb",
+      "rev": "69dc522a3c759bb4a34048f7bdfc1f651f943fa8",
       "url": "https://github.com/modelica-3rdparty/FastBuildings.git"
     },
     {
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8049,
+      "rev": 8052,
       "targets": [
         "Complex",
         "Modelica",
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8048,
+      "rev": 8054,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -319,7 +319,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4183b683c7d064ea8bc32f0f30a984e3cdb87e98",
+      "rev": "e5b1c360b820373f9fb4fa8731f483967f0b22fa",
       "targets": [
         "none"
       ],
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 326,
+      "rev": 341,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
@@ -591,7 +591,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "6b215fc819b99cf2b26c2477f025f8e19e276e33",
+      "rev": "8d55c9c116b9542d106240648892994d764b685a",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
