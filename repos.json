@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d042d19e92eabb7a669361639f84b3825141143e",
+      "rev": "67846f023fa972daa1169ac411c3399b9cc2b954",
       "targets": [
         "Buildings latest"
       ],
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8055,
+      "rev": 8056,
       "targets": [
         "Complex",
         "Modelica",
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 355,
+      "rev": 356,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
