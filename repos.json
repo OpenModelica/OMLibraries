@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "67846f023fa972daa1169ac411c3399b9cc2b954",
+      "rev": "7dc490b2ba5f479f1610154dd4ca622b19810ae8",
       "targets": [
         "Buildings latest"
       ],
@@ -284,7 +284,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8056,
+      "rev": 8058,
       "targets": [
         "Complex",
         "Modelica",
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8055,
+      "rev": 8057,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "94c26180c5d81309f542c4742450e5f9ef747e92",
+      "rev": "1d72905a50c9893ab31c7acf2c1e7836e453c359",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -541,7 +541,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 356,
+      "rev": 364,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
