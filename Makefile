@@ -19,7 +19,7 @@ config.done: Makefile
 	which rm > /dev/null
 	which svn > /dev/null
 	which git > /dev/null
-	$(OMC) ++v > /dev/null
+	$(OMC) +version > /dev/null
 	which xargs > /dev/null
 	#which xsltproc > /dev/null
 	which xpath > /dev/null
