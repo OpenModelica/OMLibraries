@@ -326,6 +326,15 @@
       "url": "https://github.com/OpenModelica/modelica3d.git"
     },
     {
+      "dest": "ModelicaAdditions",
+      "options": {
+        "gitbranch": "release",
+        "std": "1.x"
+      },
+      "rev": "568db43766186826b880f9d4bfafeff25cc2c4ab",
+      "url": "https://github.com/modelica-deprecated/ModelicaAdditions.git"
+    },
+    {
       "dest": "ModelicaBook",
       "options": {
         "gitbranch": "master"
