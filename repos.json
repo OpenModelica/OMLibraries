@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "7dc490b2ba5f479f1610154dd4ca622b19810ae8",
+      "rev": "8467aaaf1d6c679b822a10666ac96ee29c90795d",
       "targets": [
         "Buildings latest"
       ],
@@ -550,7 +550,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 366,
+      "rev": 368,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
