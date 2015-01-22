@@ -572,11 +572,10 @@
     {
       "dest": "WasteWater",
       "options": {
-        "encoding": "Windows-1252",
-        "std": "2.x"
+        "gitbranch": "master"
       },
-      "rev": 5,
-      "url": "https://github.com/modelica-3rdparty/WasteWater/branches/master"
+      "rev": "4f3e457f818f790c1bd7b29c1ffe6bbc40d94741",
+      "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
       "dest": "XogenyTest",
