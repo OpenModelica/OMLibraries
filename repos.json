@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "2baa44acdfe009a442322d7bf7c1102d3eac9cd4",
+      "rev": "0c65d469f10c8ed6d9f899d6c9c323d0d688dcb2",
       "targets": [
         "Buildings latest"
       ],
@@ -304,7 +304,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8062,
+      "rev": 8067,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -339,7 +339,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "216b4781585bf56c2b6cbcb291da9721ce18bd10",
+      "rev": "7a5ae4fe0bc7da7dad384c1062dffd4e327f0b79",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -550,7 +550,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 369,
+      "rev": 372,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
@@ -574,7 +574,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4f3e457f818f790c1bd7b29c1ffe6bbc40d94741",
+      "rev": "d42eef9dda75a3f2235a31c4176d3d8a7f327ba6",
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
@@ -599,7 +599,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "8d55c9c116b9542d106240648892994d764b685a",
+      "rev": "cd940dc0d94ea30b243afed450d5e6b147fcb6c9",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
