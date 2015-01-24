@@ -111,7 +111,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0c65d469f10c8ed6d9f899d6c9c323d0d688dcb2",
+      "rev": "3aa6e8e453bfbfa49d2ede32e5904579eebef047",
       "targets": [
         "Buildings latest"
       ],
@@ -599,7 +599,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "cd940dc0d94ea30b243afed450d5e6b147fcb6c9",
+      "rev": "57635358d255a59c5a4a64c934ce6b6cfa79124a",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
