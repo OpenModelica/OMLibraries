@@ -73,9 +73,10 @@
     {
       "dest": "BioChem",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "license": "mpl2"
       },
-      "rev": "58cccf133e75eec2d9985071a95b973dc6ffed20",
+      "rev": "b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
