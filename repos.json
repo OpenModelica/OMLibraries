@@ -357,11 +357,14 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
     },
     {
-      "dest": "Modelica_DeviceDrivers-release",
+      "dest": "Modelica_DeviceDrivers",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "master"
       },
-      "rev": "1e7470a3ded11770fbc80cba0142e1419e79d821",
+      "rev": "26cf52c8407475a90991327b833ae16537933216",
+      "targets": [
+        "self"
+      ],
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
