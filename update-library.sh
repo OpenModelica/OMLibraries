@@ -97,11 +97,14 @@ elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s
   svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
   echo "$REVISION" > "$DEST.rev"
 else
+  if test -d "$DEST"; then
+    (svn cleanup "$DEST" && svn revert -R "$DEST") || rm -r "$DEST"
+  fi
   if test `svn info $SVNOPTS --xml "$DEST" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"` = "$REVISION"; then
     echo "$DEST is up to date"
   elif ! svn up $SVNOPTS "-r$REVISION" "$DEST"; then
     echo "Failed to update $DEST"
-    rm -rf "$DEST"
+    test -d "$DEST" && rm -r "$DEST"
     exit 1
   else
     # svn-clean is a nice extra; not needed
