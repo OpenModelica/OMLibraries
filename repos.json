@@ -103,7 +103,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "a5dd98399c5c74e1f1f289f6c2084fb81b8b1f77",
+      "rev": "92ed6fccf3f073d2d7ac76cb63346d0988276405",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "6a87622096cf93cf7204958cfbef0ed400301da5",
+      "rev": "8bd03a714ddafa82cf3349de89283818b56492b0",
       "targets": [
         "Buildings latest"
       ],
@@ -554,7 +554,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 376,
+      "rev": 377,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
