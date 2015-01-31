@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "8bd03a714ddafa82cf3349de89283818b56492b0",
+      "rev": "d0a0dc5f4238056ea54e17f65ac5c71c85588bcf",
       "targets": [
         "Buildings latest"
       ],
@@ -450,7 +450,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1d72905a50c9893ab31c7acf2c1e7836e453c359",
+      "rev": "be65e951c239d9b4f1f12f9cb49dbcf2115a64ed",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -554,7 +554,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 379,
+      "rev": 381,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
