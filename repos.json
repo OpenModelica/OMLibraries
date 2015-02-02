@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8068,
+      "rev": 8073,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -603,7 +603,7 @@
         "gitbranch": "master",
         "no-dependencies": "OpenBLDC"
       },
-      "rev": "285b4e96bd94772a83d59bef39a128495450f110",
+      "rev": "7817cd703b88fc1f433269d32c31e75eb50a21c6",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
