@@ -340,7 +340,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ccb54e7d9e9b0673ee6196c843bad0079514247b",
+      "rev": "86911097b7b88af423af2c83d4d30b053e8482e3",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -450,7 +450,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "be65e951c239d9b4f1f12f9cb49dbcf2115a64ed",
+      "rev": "d90db75535e554035771d69056510cfb4ae970d5",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -554,7 +554,7 @@
     },
     {
       "dest": "ThermoPower",
-      "rev": 382,
+      "rev": 383,
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
