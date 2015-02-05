@@ -203,7 +203,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "34a9d5da089a5ea205e02d4100c8f28050babcdd",
+      "rev": "579bf71c06f3bc317e6490929f3249157fea2e05",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -458,7 +458,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e25c36faf37703b115f9633cd692e9f57d63b663",
+      "rev": "a4b02d626bac5348c014a85f1fae04087959c880",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
