@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1cc553f5c332482c4fbdbb1589eba3613a774191",
+      "rev": "3f37723390b059663d8b2e8a2d11658787bbeb87",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d0a0dc5f4238056ea54e17f65ac5c71c85588bcf",
+      "rev": "205e55b94fa163cb8207f7d6bc4a826059128999",
       "targets": [
         "Buildings latest"
       ],
@@ -203,7 +203,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "579bf71c06f3bc317e6490929f3249157fea2e05",
+      "rev": "d3eb320221af94ee181d55095667e1af4775aa8f",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
