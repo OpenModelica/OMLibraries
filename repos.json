@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3f37723390b059663d8b2e8a2d11658787bbeb87",
+      "rev": "02b622016922eebd6b84bf534fccf877e98c2cb8",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4723171c0049ae001869c35d100391eb5eb9fed3",
+      "rev": "daba4962a20b01fd433b8ccd674b95d593e370c4",
       "targets": [
         "Buildings latest"
       ],
@@ -285,7 +285,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8069,
+      "rev": 8083,
       "targets": [
         "Complex",
         "Modelica",
@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8074,
+      "rev": 8084,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -458,7 +458,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a4b02d626bac5348c014a85f1fae04087959c880",
+      "rev": "1596ae7619ae32baa08922d811cd70560e7a2126",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
