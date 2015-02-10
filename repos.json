@@ -285,7 +285,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8083,
+      "rev": 8086,
       "targets": [
         "Complex",
         "Modelica",
@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8084,
+      "rev": 8085,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d0c5c3e78c2500b92b3f5d730f56ccd9cbd3aedc",
+      "rev": "57a9e3e363e956fbf0fa3a7675b42a7c1af058b0",
       "targets": [
         "self"
       ],
