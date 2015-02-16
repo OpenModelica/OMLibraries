@@ -348,7 +348,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "89912d6b8a48a6f16699d3d3c5f6dbe023270675",
+      "rev": "5a0d416aa5e2ee10bb21baefb62959551848d599",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -479,7 +479,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "72a2f445f51235f6d96493a5575c4843282cf737",
+      "rev": "88cc808727afec9e6efef8a56b43535ba6d48b4c",
       "targets": [
         "PowerSystems latest"
       ],
