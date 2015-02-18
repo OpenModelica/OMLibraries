@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "16d4d92558e7951a98983ae6a18ad4baf05557c0",
+      "rev": "20b2b3444af0869fbfcf5a3e96b10cd996a0fec3",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -203,7 +203,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d3eb320221af94ee181d55095667e1af4775aa8f",
+      "rev": "56db3e2db0de7330e183db57b251d64887d31c67",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "59903e62b60379956dba4b19ffcdf7aa7f999a93",
+      "rev": "488ee8f167d0d05881e4c3d37e333304615855d0",
       "targets": [
         "self"
       ],
@@ -450,7 +450,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d90db75535e554035771d69056510cfb4ae970d5",
+      "rev": "652453bb925dde88d725b4e7fcbd26c31d8b26a0",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -479,7 +479,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "88cc808727afec9e6efef8a56b43535ba6d48b4c",
+      "rev": "5dcebbfafb646b3915c5d42f3f48d0d74732fd2c",
       "targets": [
         "PowerSystems latest"
       ],
