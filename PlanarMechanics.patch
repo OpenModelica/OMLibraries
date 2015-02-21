@@ -1,0 +1,216 @@
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/ControlledCraneCrab.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/ControlledCraneCrab.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/ControlledCraneCrab.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/ControlledCraneCrab.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -49,8 +49,6 @@
+         extent={{-10,10},{10,-10}},
+         rotation=270,
+         origin={-10,0})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(fixedTranslation.frame_b, body.frame_a) annotation (Line(
+       points={{-10,-40},{-10,-45},{-10,-50}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/CounterSpin.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/CounterSpin.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/CounterSpin.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/CounterSpin.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -24,8 +24,6 @@
+     x(fixed=true),
+     vSlide=0.03,
+     mu_A=0.5) annotation (Placement(transformation(extent={{20,-10},{40,10}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-60,-40},{-40,-20}})));
+ equation
+   connect(body.frame_a, slipBasedRolling.frame_a) annotation (Line(
+       points={{0,0},{20,0}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/CraneCrab.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/CraneCrab.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/CraneCrab.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/CraneCrab.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -42,8 +42,6 @@
+         origin={-66,60})));
+   Modelica.Mechanics.Translational.Components.Damper damper1D(d=10)
+     annotation (Placement(transformation(extent={{-50,50},{-30,70}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(fixedTranslation.frame_b, body.frame_a) annotation (Line(
+       points={{-10,-40},{-10,-50}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/DoublePendulum.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/DoublePendulum.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/DoublePendulum.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/DoublePendulum.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -22,13 +22,11 @@
+   inner PlanarWorld planarWorld(enableAnimation=true,
+     animateWorld=true,
+     animateGravity=true)
+-    annotation (Placement(transformation(extent={{-40,60},{-20,80}})));
++    annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+   Joints.Revolute revolute(phi(fixed=true, start=0), w(fixed=true, start=0))
+     annotation (Placement(transformation(extent={{-70,10},{-50,30}})));
+   Joints.Revolute revolute1(phi(fixed=true, start=0), w(fixed=true, start=0))
+     annotation (Placement(transformation(extent={{0,-30},{20,-10}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+ equation
+   connect(fixedTranslation.frame_b, body.frame_a) annotation (Line(
+       points={{-20,20},{0,20}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/FreeBody.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/FreeBody.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/FreeBody.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/FreeBody.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -12,8 +12,6 @@
+     phi(fixed=true),
+     w(fixed=true))
+     annotation (Placement(transformation(extent={{10,-10},{30,10}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-30,34},{-10,54}})));
+   annotation (
+     experiment(StopTime=3),
+     Documentation(revisions="<html>
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/InvertedCraneCrab.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/InvertedCraneCrab.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/InvertedCraneCrab.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/InvertedCraneCrab.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -47,8 +47,6 @@
+     s(fixed=true),
+     v(fixed=true))
+     annotation (Placement(transformation(extent={{-40,40},{-20,20}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(inverseBlockConstraints.u1, angleSensor.phi) annotation (Line(
+       points={{35.5,0},{33.875,0},{33.875,0},{
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/KinematicLoop_DynamicStateSelection.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/KinematicLoop_DynamicStateSelection.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/KinematicLoop_DynamicStateSelection.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/KinematicLoop_DynamicStateSelection.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -60,8 +60,6 @@
+         origin={-46,90})));
+   inner PlanarWorld planarWorld
+     annotation (Placement(transformation(extent={{-80,0},{-60,20}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-40},{-60,-20}})));
+ equation
+   connect(fixedTranslation1.frame_a, revolute1.frame_b) annotation (Line(
+       points={{-20,20},{-20,30}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/KinematicLoop.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/KinematicLoop.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/KinematicLoop.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/KinematicLoop.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -69,8 +69,6 @@
+         origin={-46,90})));
+   inner PlanarWorld planarWorld
+     annotation (Placement(transformation(extent={{-80,0},{-60,20}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-40},{-60,-20}})));
+ equation
+   connect(fixedTranslation1.frame_a, revolute1.frame_b) annotation (Line(
+       points={{-20,20},{-20,30}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/MeasureDemo.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/MeasureDemo.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/MeasureDemo.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/MeasureDemo.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -21,7 +21,7 @@
+   inner PlanarWorld planarWorld(enableAnimation=true,
+     animateWorld=false,
+     animateGravity=false)
+-    annotation (Placement(transformation(extent={{-60,60},{-40,80}})));
++    annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+   Sensors.AbsolutePosition absolutePosition(resolveInFrame=Modelica.Mechanics.MultiBody.Types.ResolveInFrameA.world)
+     annotation (Placement(transformation(extent={{10,-10},{-10,10}},
+         origin={-10,-90})));
+@@ -40,8 +40,6 @@
+     annotation (Placement(transformation(extent={{0,42},{20,62}})));
+   Joints.Revolute revolute2(phi(fixed=true), w(fixed=true))
+     annotation (Placement(transformation(extent={{0,-30},{20,-10}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-94,60},{-74,80}})));
+ equation
+   connect(fixedTranslation.frame_b,body. frame_a) annotation (Line(
+       points={{-20,20},{-2,20},{10,20}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/Pendulum.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/Pendulum.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/Pendulum.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/Pendulum.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -18,8 +18,6 @@
+         rotation=180,
+         origin={-60,0})));
+   inner PlanarWorld planarWorld(defaultWidthFraction=10)
+-    annotation (Placement(transformation(extent={{-40,60},{-20,80}})));
+-  inner MB.World world
+     annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+ equation
+   connect(revolute.frame_b, fixedTranslation.frame_a) annotation (Line(
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/PistonEngine_DynamicStateSelection.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/PistonEngine_DynamicStateSelection.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/PistonEngine_DynamicStateSelection.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/PistonEngine_DynamicStateSelection.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -38,8 +38,6 @@
+         origin={0,-30})));
+   inner PlanarWorld planarWorld(defaultWidthFraction=10)
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(fixed.frame, revoluteDrive.frame_a) annotation (Line(
+       points={{-80,50},{-70,50}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/PistonEngine.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/PistonEngine.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/PistonEngine.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/PistonEngine.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -41,8 +41,6 @@
+         origin={0,-30})));
+   inner PlanarWorld planarWorld(defaultWidthFraction=10)
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(fixed.frame, revoluteDrive.frame_a) annotation (Line(
+       points={{-80,50},{-70,50}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/PowerDistanceDemo.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/PowerDistanceDemo.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/PowerDistanceDemo.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/PowerDistanceDemo.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -21,7 +21,7 @@
+     I=0.1)
+     annotation (Placement(transformation(extent={{0,20},{20,40}})));
+   inner PlanarWorld planarWorld
+-    annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
++    annotation (Placement(transformation(extent={{-80,-22},{-60,-2}})));
+   Parts.Damper damper(d=1)
+     annotation (Placement(transformation(extent={{-40,40},{-20,60}})));
+   Joints.Revolute revolute(w(fixed=true), phi(fixed=true, start=2.6179938779915))
+@@ -40,8 +40,6 @@
+         origin={-10,-60})));
+   Sensors.Distance distance
+     annotation (Placement(transformation(extent={{2,62},{22,82}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(damper.frame_a, fixed.frame) annotation (Line(
+       points={{-40,50},{-60,50},{-60,30}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/SpringDamperDemo.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/SpringDamperDemo.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/SpringDamperDemo.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/SpringDamperDemo.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -32,8 +32,6 @@
+     annotation (Placement(transformation(extent={{-80,-40},{-60,-20}})));
+   Parts.FixedTranslation fixedTranslation(r={-1,0})
+     annotation (Placement(transformation(extent={{-40,30},{-20,50}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-80},{-60,-60}})));
+ equation
+   connect(fixed.frame, fixedTranslation.frame_a) annotation (Line(
+       points={{-60,40},{-40,40}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/SpringDemo.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/SpringDemo.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/SpringDemo.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/SpringDemo.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -36,8 +36,6 @@
+         extent={{-10,-10},{10,10}},
+         rotation=270,
+         origin={30,0})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-80},{-60,-60}})));
+ equation
+   connect(fixed.frame, fixedTranslation.frame_a) annotation (Line(
+       points={{-60,40},{-40,40}},
+diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics/PlanarMechanics/Examples/WheelBasedCranCrab.mo "build/PlanarMechanics 1.4.0 Development Version/Examples/WheelBasedCranCrab.mo"
+--- git/PlanarMechanics/PlanarMechanics/Examples/WheelBasedCranCrab.mo	2015-02-21 12:30:51.326840440 +0100
++++ "build/PlanarMechanics 1.4.0 Development Version/Examples/WheelBasedCranCrab.mo"	2015-02-21 12:26:29.449541860 +0100
+@@ -32,8 +32,6 @@
+         origin={-20,-50})));
+   inner PlanarWorld planarWorld(defaultWidthFraction=10, defaultZPosition=0)
+     annotation (Placement(transformation(extent={{-80,0},{-60,20}})));
+-  inner MB.World world
+-    annotation (Placement(transformation(extent={{-80,-40},{-60,-20}})));
+ equation
+   connect(revolute.frame_a, idealRolling.frame_a) annotation (Line(
+       points={{-20,20},{-20,40}},
