@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "000368c1ce951207983a1474920028f63b941d22",
+      "rev": "40d31208457a804ab247ac7f6ba2b8098425ae8a",
       "targets": [
         "self"
       ],
@@ -479,7 +479,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5dcebbfafb646b3915c5d42f3f48d0d74732fd2c",
+      "rev": "0f6df9276fe84f62f9f596272a82354292f4b2c5",
       "targets": [
         "PowerSystems latest"
       ],
