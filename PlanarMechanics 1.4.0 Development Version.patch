@@ -214,3 +214,89 @@ diff -u -x .git -x .gitattributes -x README.md -x Library -r git/PlanarMechanics
  equation
    connect(revolute.frame_a, idealRolling.frame_a) annotation (Line(
        points={{-20,20},{-20,40}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/GearComponents/Examples/PlanetaryGear.mo build/PlanarMechanics 1.4.0 Development Version/GearComponents/Examples/PlanetaryGear.mo
+--- git/PlanarMechanics/PlanarMechanics/GearComponents/Examples/PlanetaryGear.mo	2015-02-21 19:05:01.388114760 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/GearComponents/Examples/PlanetaryGear.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -20,6 +20,10 @@
+     annotation (Placement(transformation(extent={{-50,0},{-30,20}})));
+   Modelica.Mechanics.Rotational.Sources.ConstantTorque RingTorque(tau_constant=
+         1) annotation (Placement(transformation(extent={{-50,30},{-30,50}})));
++  inner PlanarWorld planarWorld
++    annotation (Placement(transformation(extent={{-80,-54},{-60,-34}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-80,-92},{-60,-72}})));
+ equation
+   connect(heatCapacitor.port, planetary.heatPort) annotation (Line(
+       points={{-10,-30},{0,-30},{0,0}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/GearComponents/Examples/SpurGear.mo build/PlanarMechanics 1.4.0 Development Version/GearComponents/Examples/SpurGear.mo
+--- git/PlanarMechanics/PlanarMechanics/GearComponents/Examples/SpurGear.mo	2015-02-21 19:05:01.388114760 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/GearComponents/Examples/SpurGear.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -38,6 +38,8 @@
+     annotation (Placement(transformation(extent={{60,60},{80,80}})));
+   RigidNoLossExternal gearwheelExternal
+     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{20,58},{40,80}})));
+ equation
+   connect(angle.frame_b, distance.frame_a)             annotation (Line(
+       points={{-20,-30},{-6,-30},{20,-30}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/SingleTrackWithEngine.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/SingleTrackWithEngine.mo
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/SingleTrackWithEngine.mo	2015-02-21 19:05:07.812146616 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/SingleTrackWithEngine.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -59,6 +59,8 @@
+   inner PlanarWorld planarWorld(defaultWidthFraction=10, defaultZPosition=0,
+     constantGravity={0,0})
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(idealWheelFront.frame_a, bodyFront.frame_a)
+                                                  annotation (Line(
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestDryFrictionWheel.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestDryFrictionWheel.mo
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestDryFrictionWheel.mo	2015-02-21 19:05:07.812146616 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestDryFrictionWheel.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -46,6 +46,8 @@
+         origin={0,30})));
+   inner PlanarWorld planarWorld(constantGravity={0,0})
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-78,-60},{-58,-40}})));
+ equation
+   connect(prismatic.frame_a, revolute.frame_b) annotation (Line(
+       points={{0,-20},{0,-20},{0,-30}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestIdealWheel.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestIdealWheel.mo
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestIdealWheel.mo	2015-02-21 19:05:07.812146616 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestIdealWheel.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -43,6 +43,8 @@
+         origin={0,60})));
+   inner PlanarWorld planarWorld(enableAnimation=true, constantGravity={0,0})
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(idealWheelJoint.frame_a, prismatic.frame_b) annotation (Line(
+       points={{0,26},{0,0}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestSlipBasedWheel.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestSlipBasedWheel.mo
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TestSlipBasedWheel.mo	2015-02-21 19:05:07.812146616 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TestSlipBasedWheel.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -48,6 +48,8 @@
+     annotation (Placement(transformation(extent={{-60,20},{-40,40}})));
+   inner PlanarWorld planarWorld(constantGravity={0,0})
+     annotation (Placement(transformation(extent={{-80,-20},{-60,0}})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-80,-60},{-60,-40}})));
+ equation
+   connect(prismatic.frame_a, revolute.frame_b) annotation (Line(
+       points={{0,-20},{0,-20},{0,-30}},
+diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-21 19:05:07.812146616 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-21 19:03:06.000000000 +0100
+@@ -163,6 +163,8 @@
+         extent={{-10,-10},{10,10}},
+         rotation=270,
+         origin={40,30})));
++  inner MB.World world
++    annotation (Placement(transformation(extent={{-100,-28},{-80,-8}})));
+ equation
+   connect(wheelJoint2.flange_a, inertia1.flange_b) annotation (Line(
+       points={{-74,-50},{-82,-50}}));
