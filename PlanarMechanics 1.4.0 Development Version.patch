@@ -289,9 +289,17 @@ diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleCompone
    connect(prismatic.frame_a, revolute.frame_b) annotation (Line(
        points={{0,-20},{0,-20},{0,-30}},
 diff -u -x .git -x Library -r git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo
---- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-21 19:05:07.812146616 +0100
-+++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-21 19:03:06.000000000 +0100
-@@ -163,6 +163,8 @@
+--- git/PlanarMechanics/PlanarMechanics/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-23 21:33:00.237011523 +0100
++++ build/PlanarMechanics 1.4.0 Development Version/VehicleComponents/Examples/TwoTrackWithDifferentialGear.mo	2015-02-23 21:34:39.321502856 +0100
+@@ -3,7 +3,6 @@
+   extends Modelica.Icons.Example;
+ 
+   Parts.Body body(
+-    g={0,0},
+     m=100,
+     I=1,
+     enableGravity=false)
+@@ -163,6 +162,8 @@
          extent={{-10,-10},{10,10}},
          rotation=270,
          origin={40,30})));
