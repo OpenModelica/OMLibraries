@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8096,
+      "rev": 8109,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -348,7 +348,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5a0d416aa5e2ee10bb21baefb62959551848d599",
+      "rev": "81d0f193b8f3e08ca2326bc37b87c36d992164e7",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -479,7 +479,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0f6df9276fe84f62f9f596272a82354292f4b2c5",
+      "rev": "af2926fed599408b55fe84937441bdc632febfb3",
       "targets": [
         "PowerSystems latest"
       ],
@@ -594,7 +594,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d6963f7ca913dfab92c8003d4f9a9016cd235f38",
+      "rev": "fec17b6d7632ff08f7526641d85325b69c9d738c",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
