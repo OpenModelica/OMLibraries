@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8109,
+      "rev": 8112,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "db8fb2b330d16dcf95c66176dfb38f16b57f6e96",
+      "rev": "ef386477e5b58ee1843048d25d32d0a40683e1e3",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
