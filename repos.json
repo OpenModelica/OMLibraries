@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8115,
+      "rev": 8120,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "23ce091f1ce7ef309651d01474f984d29d5cfa05",
+      "rev": "a7b3ece031730fbf152300bde22e167022e9aaf1",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -447,7 +447,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "652453bb925dde88d725b4e7fcbd26c31d8b26a0",
+      "rev": "0595a02e5b65653e0e49df8a12b82d18649631e2",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
