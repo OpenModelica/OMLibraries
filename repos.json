@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "20b2b3444af0869fbfcf5a3e96b10cd996a0fec3",
+      "rev": "fea0c392aa74febf3dd422261994c84c50600c16",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "24b175391591f178f72bc3d77261c49045465eb8",
+      "rev": "66140c4f7dbf12fb945ca4901a9cf4c695e21f42",
       "targets": [
         "Buildings latest"
       ],
@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8120,
+      "rev": 8122,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a7b3ece031730fbf152300bde22e167022e9aaf1",
+      "rev": "e50327dcd4906f2283f0cb5f940b6ed1616ba25e",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -371,7 +371,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 7861,
+      "rev": 8121,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -391,7 +391,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 7117,
+      "rev": 8121,
       "targets": [
         "self"
       ],
