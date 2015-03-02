@@ -112,7 +112,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "66140c4f7dbf12fb945ca4901a9cf4c695e21f42",
+      "rev": "f8ad2d0bd542aa28d36efeb80859c9d1d1587542",
       "targets": [
         "Buildings latest"
       ],
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e50327dcd4906f2283f0cb5f940b6ed1616ba25e",
+      "rev": "8d6c4a3ad51e2045163bccc0361ddbe8295b398f",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f548bd7ead982aa77441a56e533c3cc9e873a4f9",
+      "rev": "bd192d30f940f5661496e25daa223ec7f796d33b",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -476,7 +476,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "af2926fed599408b55fe84937441bdc632febfb3",
+      "rev": "d1058494e719cb20bef554af5edae4801f98b614",
       "targets": [
         "PowerSystems latest"
       ],
