@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "03f794117608179f25d155e39a48939986ba779d",
+      "rev": "fca848f4f62351dca58f9c7287bd32220face2ea",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bd192d30f940f5661496e25daa223ec7f796d33b",
+      "rev": "f8f8f18ebd43898aea2ed40e23edd9d8deb6506a",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
