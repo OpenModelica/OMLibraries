@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "fea0c392aa74febf3dd422261994c84c50600c16",
+      "rev": "9c945a75571cca3a4b0dd9226ba59953b52078fc",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -103,7 +103,7 @@
         "gitbranch": "master",
         "no-dependencies": "BrineProp"
       },
-      "rev": "7ce01d8b614521348869eaf9d046f16fded091d2",
+      "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -285,7 +285,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8095,
+      "rev": 8124,
       "targets": [
         "Complex",
         "Modelica",
@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8122,
+      "rev": 8123,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "af901c6ef9b822fd61967f2cf0ecbf7159881a49",
+      "rev": "4e1ea5218a4fb77ebcb978079e5105c053234538",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -447,7 +447,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0595a02e5b65653e0e49df8a12b82d18649631e2",
+      "rev": "a68f278e236f6780ce9b8cf166fa46131ddc01ea",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
