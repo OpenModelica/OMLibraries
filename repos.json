@@ -340,7 +340,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ac42608a8bd214d9e0d50cc8d2ac7f6cc3241980",
+      "rev": "be20d7e001036a568d440508ea6d5ac9e339d680",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9a1626e071dac764b6f140018c041d88b0bbf1bd",
+      "rev": "8bd0ba8d6725f8d2d318966966235666bd52ff55",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -476,7 +476,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "61d1c3739d14572450ea20a13866277c29bab499",
+      "rev": "e015604ad1d2ed98f2a773b73f4084f2387d8a44",
       "targets": [
         "PowerSystems latest"
       ],
