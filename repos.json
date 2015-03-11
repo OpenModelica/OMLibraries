@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e21ba4fa80f1c0c8569be178548b81f560530169",
+      "rev": "9637964bc90553cf215b44813dbadad88faed9e8",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -305,7 +305,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8123,
+      "rev": 8127,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -340,7 +340,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "be20d7e001036a568d440508ea6d5ac9e339d680",
+      "rev": "9b2ba64abc522b07751ebf1b2ba77fc3ca2d9bbe",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
