@@ -67,7 +67,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9637964bc90553cf215b44813dbadad88faed9e8",
+      "rev": "25376251ea98705b3b12fb4ba2e9d875c802e2a8",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8bd0ba8d6725f8d2d318966966235666bd52ff55",
+      "rev": "5089ca6ff8dbce10b04d9340d41d82513f95b9d8",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -463,7 +463,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6b2ca0e00ef5b94d63be6d31fe0fa5af818cb025",
+      "rev": "568d3bab00bddbe895af9b33b73b8b492afd7343",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -583,7 +583,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d42eef9dda75a3f2235a31c4176d3d8a7f327ba6",
+      "rev": "90ff44ac791ba5ed98444c8597efbd2a2af01cad",
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
