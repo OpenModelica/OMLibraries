@@ -443,6 +443,14 @@
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
+      "dest": "PNlib",
+      "options": {
+        "gitbranch": "dev"
+      },
+      "rev": "d931e2012f67d1c70f1380e4208706758626f827",
+      "url": "https://github.com/lochel/PNlib.git"
+    },
+    {
       "dest": "Physiolibrary",
       "options": {
         "gitbranch": "master"
