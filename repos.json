@@ -19,6 +19,7 @@
     "https://github.com/modelica-3rdparty/PDELib",
     "https://github.com/modelica-3rdparty/PlanarMechanics",
     "https://github.com/modelica-3rdparty/PNlib",
+    "https://github.com/modelica-3rdparty/ConPNlib",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
@@ -449,6 +450,14 @@
       },
       "rev": "c577b9a1d0c020271111659d186f199ff98a7f0c",
       "url": "https://github.com/lochel/PNlib.git"
+    },
+    {
+      "dest": "ConPNlib",
+      "options": {
+        "gitbranch": "dev"
+      },
+      "rev": "53efea6d2a4da346e7f86465cfa5da48be2e54d7",
+      "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
       "dest": "Physiolibrary",
