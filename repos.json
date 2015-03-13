@@ -361,7 +361,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4cebfa7162ef8a571cf2123d10327714aed88a20",
+      "rev": "6fb50f18e5b72ebeff479402a5a8f987faa550b7",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -447,7 +447,7 @@
       "options": {
         "gitbranch": "dev"
       },
-      "rev": "7beaac263cbf1eb2a29a1d9c35e67b1a92e42321",
+      "rev": "c577b9a1d0c020271111659d186f199ff98a7f0c",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
