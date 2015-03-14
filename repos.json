@@ -113,7 +113,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "36294164d2e532ba802155439a5c1d6a8d327783",
+      "rev": "5112ec0d1309e3c89ad1aed7be372f7898d51dc7",
       "targets": [
         "Buildings latest"
       ],
@@ -138,6 +138,14 @@
       },
       "rev": "0b78942ee4fa95ae71347a0d552dd869fdf4c708",
       "url": "https://github.com/modelica-3rdparty/ComplexLib.git"
+    },
+    {
+      "dest": "ConPNlib",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "53efea6d2a4da346e7f86465cfa5da48be2e54d7",
+      "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
       "dest": "DESLib",
@@ -362,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6fb50f18e5b72ebeff479402a5a8f987faa550b7",
+      "rev": "b00426f911f60461896df0b9135c88475aa35027",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -450,14 +458,6 @@
       },
       "rev": "c577b9a1d0c020271111659d186f199ff98a7f0c",
       "url": "https://github.com/lochel/PNlib.git"
-    },
-    {
-      "dest": "ConPNlib",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "53efea6d2a4da346e7f86465cfa5da48be2e54d7",
-      "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
       "dest": "Physiolibrary",
