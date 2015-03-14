@@ -485,7 +485,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "2aad57920f6fa4b83ee969c1bdb1f27737fae83e",
+      "rev": "7b551888089277a0dd979db636d47aba0279e8f0",
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
@@ -493,7 +493,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "592eaed2e3d1c48ac35da597a4d5860675796e20",
+      "rev": "3abd48aa53bbcd3f3e2ddfa2371680febf8baf48",
       "targets": [
         "PowerSystems latest"
       ],
