@@ -454,7 +454,7 @@
     {
       "dest": "ConPNlib",
       "options": {
-        "gitbranch": "dev"
+        "gitbranch": "master"
       },
       "rev": "53efea6d2a4da346e7f86465cfa5da48be2e54d7",
       "url": "https://github.com/lochel/ConPNlib.git"
