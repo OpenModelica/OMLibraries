@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3e781c93216b3b5b204e50070b02ba9c57bee708",
+      "rev": "1ad07b2b6d939e3cf15f922f79a3e4ec3ff7d027",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -314,7 +314,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8127,
+      "rev": 8131,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6d02efe7d10205f27307de4c43334902008858c3",
+      "rev": "1b768c4a071fa85cb6c47d813fde8748289f3706",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -456,7 +456,7 @@
       "options": {
         "gitbranch": "dev"
       },
-      "rev": "2844b7840a19febb2f5263c7dfea8f8c20dd96cb",
+      "rev": "06b56028d969a475501f16f3bad862d0981175c3",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
