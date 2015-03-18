@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1ad07b2b6d939e3cf15f922f79a3e4ec3ff7d027",
+      "rev": "e883804f2e9be6315ced44534cc894599ff57918",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -113,7 +113,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "05c326ee4aacebd3976bd3382dedf50496fbed4c",
+      "rev": "6ef86d735f1460bb5cbf8ed882af459384bf6ad2",
       "targets": [
         "Buildings latest"
       ],
@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6ae47680292bb01afeecc3824f07bdb03a60ff16",
+      "rev": "4572795229ce7102c6ceb18e67f151d0a568833f",
       "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
@@ -314,7 +314,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8131,
+      "rev": 8135,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1b768c4a071fa85cb6c47d813fde8748289f3706",
+      "rev": "c6d37db8b88d4bdcca0d5fe36dc57147a8e6d152",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -456,7 +456,7 @@
       "options": {
         "gitbranch": "dev"
       },
-      "rev": "06b56028d969a475501f16f3bad862d0981175c3",
+      "rev": "919533d685d2c118c83dfc7d0e6acbebf6fc876f",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
