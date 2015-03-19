@@ -113,7 +113,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "6ef86d735f1460bb5cbf8ed882af459384bf6ad2",
+      "rev": "9e055fe75b6726afd170d4340f002aae7f543249",
       "targets": [
         "Buildings latest"
       ],
@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4572795229ce7102c6ceb18e67f151d0a568833f",
+      "rev": "34bb7af0f1e0ea59353e8deceabcbd7993d65573",
       "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
@@ -212,7 +212,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "56db3e2db0de7330e183db57b251d64887d31c67",
+      "rev": "8ed14021c13d5c7181f4cc42695f6bb078b31611",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -294,7 +294,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8125,
+      "rev": 8136,
       "targets": [
         "Complex",
         "Modelica",
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c6d37db8b88d4bdcca0d5fe36dc57147a8e6d152",
+      "rev": "18dcbb07631b39dfea8957ce320045029dc51ee6",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -456,7 +456,7 @@
       "options": {
         "gitbranch": "dev"
       },
-      "rev": "919533d685d2c118c83dfc7d0e6acbebf6fc876f",
+      "rev": "f684ffa2c6adbe45db84b143aca027207191c6c0",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
