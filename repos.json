@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e883804f2e9be6315ced44534cc894599ff57918",
+      "rev": "0f4e310a784c99dd64b67aa9cd6153ecbd2a081e",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "794381485fd12756ccd5d67bda8402325e2f0aaa",
+      "rev": "6cdfb1df61dc8036ef970f0c0b9cac8640d1d9c7",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
