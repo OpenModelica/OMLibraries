@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0f4e310a784c99dd64b67aa9cd6153ecbd2a081e",
+      "rev": "1b613624adf9fae4799a685866afad49ee65cbdd",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6cdfb1df61dc8036ef970f0c0b9cac8640d1d9c7",
+      "rev": "7569d1fffb0174e1af27ba16e8ed0b70fea4154d",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -464,7 +464,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a68f278e236f6780ce9b8cf166fa46131ddc01ea",
+      "rev": "6c63839e9eae1d98a7c6dab35da4a9b5c619bb5f",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5403ae672ac631655a24cdcb3561a37653c817e2",
+      "rev": "af6c34dda691a9bdf7ca1de10650974b2d5cecf5",
       "url": "https://github.com/modelica-3rdparty/QCalc.git"
     },
     {
