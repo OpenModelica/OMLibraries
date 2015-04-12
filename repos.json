@@ -314,7 +314,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8151,
+      "rev": 8155,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -608,7 +608,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fec17b6d7632ff08f7526641d85325b69c9d738c",
+      "rev": "6ce2ca600c4902038c0f20b43ed442f1ee204310",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
