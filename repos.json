@@ -68,7 +68,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "aabad147373b615f09a8c42c4787b0416686c695",
+      "rev": "a1bc19a5caeee64d68d9b1e6f9c325b6f3ea86be",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -113,7 +113,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "36b465539a484cfa09dbd0542c829b3da230261e",
+      "rev": "c81aa348907f163ed4cdf13117d1fd7e5814e274",
       "targets": [
         "Buildings latest"
       ],
@@ -380,7 +380,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 8121,
+      "rev": 8160,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
