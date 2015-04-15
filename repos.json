@@ -349,7 +349,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0fd8db107aecab5a7792d8f2d04a341382b89740",
+      "rev": "5d3b120b5ab2883327a180cc9ee61264d382b3a8",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -357,7 +357,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "81d0f193b8f3e08ca2326bc37b87c36d992164e7",
+      "rev": "ca5092c14bb7af4507a10700ee49181a3a3ee199",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e1dfd3b8c5e6840b26a9226e4e4a6a2373a7260c",
+      "rev": "64be4173eab5bfee440d9fd715b783a9e4564ed5",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
