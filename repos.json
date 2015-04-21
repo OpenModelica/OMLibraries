@@ -294,7 +294,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8173,
+      "rev": 8174,
       "targets": [
         "Complex",
         "Modelica",
@@ -314,7 +314,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8172,
+      "rev": 8175,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1ac6bd2ceb8629075d1af306e0f4a176c2c13e7d",
+      "rev": "856ae25901d95e20d9b87dd09c567c9077cd100a",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -472,7 +472,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b7732a515f2caae7042b0cb5455dde93166af8b5",
+      "rev": "256afcf1607b01babe2b52c31e364cfc338f6f0d",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
