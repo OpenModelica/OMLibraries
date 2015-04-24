@@ -454,9 +454,9 @@
     {
       "dest": "PNlib",
       "options": {
-        "gitbranch": "dev"
+        "gitbranch": "master"
       },
-      "rev": "9a452d17726237cf182bbc511e67d72f5d96819e",
+      "rev": "57999d572556f2bd8e8102132ec518805e13b347",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
