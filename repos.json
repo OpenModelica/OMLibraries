@@ -294,7 +294,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8183,
+      "rev": 8187,
       "targets": [
         "Complex",
         "Modelica",
@@ -314,7 +314,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8175,
+      "rev": 8186,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -349,7 +349,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5d3b120b5ab2883327a180cc9ee61264d382b3a8",
+      "rev": "e205f2dc8cd23e0dcfaac6148ede89c2d61780f0",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e336a3fd4dcca9841af3affe70263f847e4fcdbe",
+      "rev": "f1b409acabd15e3ab8f4bc5fab1ebbb7d7732a27",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -456,7 +456,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dfe58491e2e3548ed62484d0d89b80bbe6e5da96",
+      "rev": "44c7d277980b7a88b449b72edec0a56416b40fa9",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -464,7 +464,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5fd64c02eba9244f8cbaa414103522eea9a8affa",
+      "rev": "74deaab8456f4e5145d42205bf9b821ef8e0c5c1",
       "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
     },
     {
