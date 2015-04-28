@@ -612,6 +612,14 @@
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
+      "dest": "netCDF-DataReader",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9f02bafbad0d30d060f318be4000c9ede280bb66",
+      "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
+    },
+    {
       "dest": "open-bldc-modelica",
       "options": {
         "gitbranch": "master",
