@@ -17,6 +17,7 @@
     "https://github.com/modelica-3rdparty/Noise",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
+    "https://github.com/modelica-3rdparty/Physiolibrary.git",
     "https://github.com/modelica-3rdparty/PlanarMechanics",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/ConPNlib",
@@ -162,6 +163,14 @@
       },
       "rev": "2f4eac0651c1ab0ed56b75ec61424e0ef15181d3",
       "url": "https://github.com/modelica-3rdparty/ExtendedPetriNets.git"
+    },
+    {
+      "dest": "ExternData",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "e5311eb04b05bc91d892e54d5b0e3d09c7bc1a16",
+      "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
       "dest": "ExternalMedia",
@@ -464,8 +473,8 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "74deaab8456f4e5145d42205bf9b821ef8e0c5c1",
-      "url": "https://github.com/modelica-3rdparty/Physiolibrary.git"
+      "rev": "d1d91b328cbd2d63b1c9e399aacae63d442fad8d",
+      "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
       "dest": "PlanarMechanics",
