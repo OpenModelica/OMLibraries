@@ -69,7 +69,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "98babbf67195e60ea17f36f39f5166ecffd86227",
+      "rev": "3f165b8a0a34eeaff10c1aa84f2fe5fa8ab89e82",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -114,7 +114,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "6b1a47e2bf9c2dd50fb82f1fa5dac51aa26125fb",
+      "rev": "9eb2691370d4605a7ac682f81ee09b5619e585e8",
       "targets": [
         "Buildings latest"
       ],
@@ -126,7 +126,7 @@
         "gitbranch": "release",
         "license": "buildings"
       },
-      "rev": "cbad6e491f794326c35cc296300aa3ef3124b63c",
+      "rev": "444aa231f423b8d04225bf8672e3212d089fbfe4",
       "targets": [
         "Buildings"
       ],
@@ -169,7 +169,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7c152bdb83c0c98e1cf2db5dfa66f62818f5aac3",
+      "rev": "0d88e7d2f93c288dc8e5475b93ea3551032dadef",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -303,7 +303,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8187,
+      "rev": 8201,
       "targets": [
         "Complex",
         "Modelica",
@@ -323,7 +323,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8186,
+      "rev": 8200,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -473,7 +473,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d1d91b328cbd2d63b1c9e399aacae63d442fad8d",
+      "rev": "8279f4816c18e53c54eb6eea4cb3af7ddec34df6",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
