@@ -73,6 +73,7 @@
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
+      "core": true,
       "dest": "BioChem",
       "options": {
         "gitbranch": "master",
@@ -255,7 +256,8 @@
       "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
     },
     {
-      "dest": "MSL 1.6",
+      "core": true,
+      "dest": "MSL-1.6",
       "options": {
         "intertrac": "m:",
         "license": "modelica1.1",
@@ -269,7 +271,8 @@
       "url": "https://svn.modelica.org/projects/Modelica/tags/V1_6"
     },
     {
-      "dest": "MSL 2.2.2",
+      "core": true,
+      "dest": "MSL-2.2.2",
       "options": {
         "breaks": "omlibrary-msl222",
         "intertrac": "m:",
@@ -280,7 +283,8 @@
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
     },
     {
-      "dest": "MSL 3.1",
+      "core": true,
+      "dest": "MSL-3.1",
       "options": {
         "breaks": "omlibrary-msl31",
         "intertrac": "m:",
@@ -295,7 +299,8 @@
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1"
     },
     {
-      "dest": "MSL 3.2.1",
+      "core": true,
+      "dest": "MSL-3.2.1",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "intertrac": "m:",
@@ -315,7 +320,7 @@
       "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.2.1"
     },
     {
-      "dest": "MSL trunk",
+      "dest": "MSL-trunk",
       "options": {
         "breaks": "omlibrary-msl32,omlibrary-reference",
         "intertrac": "m:",

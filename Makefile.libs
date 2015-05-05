@@ -1,0 +1,581 @@
+.PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL-1.6 MSL-2.2.2 MSL-3.1 MSL-3.2.1 MSL-trunk Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_ElectricalEnergyStorages Modelica_EmbeddedSystems Modelica_EnergyStorages Modelica_StateGraph2 MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+CORE_TARGET=$(BUILD_DIR)/20150505_172434.core
+ALL_TARGET=$(BUILD_DIR)/20150505_172434.all
+CORE_LIBS=BioChem MSL-1.6 MSL-2.2.2 MSL-3.1 MSL-3.2.1
+OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL-trunk Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_ElectricalEnergyStorages Modelica_EmbeddedSystems Modelica_EnergyStorages Modelica_StateGraph2 MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
+ADGenKinetics:
+	# Building git/ADGenKinetics
+	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
+	cp -a 'git/ADGenKinetics/ADGenKinetics.mo' "$(BUILD_DIR)/ADGenKinetics.mo"
+	echo '' > "$(BUILD_DIR)/ADGenKinetics.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ADGenKinetics.license"
+	rm -rf "$(BUILD_DIR)/ADGenKinetics.mo/.svn" "$(BUILD_DIR)/ADGenKinetics.mo/.git"*
+ADMSL:
+	# Building git/ADMSL
+	./checkout-git.sh 'git/ADMSL' 'https://github.com/modelica-3rdparty/ADMSL.git' 'master' 'ed0305603f86b46d9af03e7d37dcb8b6704915b4'
+	cp -a 'git/ADMSL' "$(BUILD_DIR)/ADMSL"
+	echo '' > "$(BUILD_DIR)/ADMSL.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ADMSL.license"
+	rm -rf "$(BUILD_DIR)/ADMSL/.svn" "$(BUILD_DIR)/ADMSL/.git"*
+Annex60:
+	# Building git/Annex60
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '3f165b8a0a34eeaff10c1aa84f2fe5fa8ab89e82'
+	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
+	echo '' > "$(BUILD_DIR)/Annex60 0.1.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
+	rm -rf "$(BUILD_DIR)/Annex60 0.1/.svn" "$(BUILD_DIR)/Annex60 0.1/.git"*
+BioChem:
+	# Building git/BioChem
+	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
+	cp -a 'git/BioChem/BioChem' "$(BUILD_DIR)/BioChem 1.0.1"
+	echo '' > "$(BUILD_DIR)/BioChem 1.0.1.uses"
+	echo 'mpl2' > "$(BUILD_DIR)/BioChem 1.0.1.license"
+	rm -rf "$(BUILD_DIR)/BioChem 1.0.1/.svn" "$(BUILD_DIR)/BioChem 1.0.1/.git"*
+BondGraph:
+	# Building git/BondGraph
+	./checkout-git.sh 'git/BondGraph' 'https://github.com/modelica-3rdparty/BondGraph.git' 'master' '20c23e60d12989bd4668ccac47659d82d39d29cc'
+	cp -a 'git/BondGraph/BondGraph.mo' "$(BUILD_DIR)/BondGraph.mo"
+	echo '' > "$(BUILD_DIR)/BondGraph.uses"
+	echo 'lgpl3+' > "$(BUILD_DIR)/BondGraph.license"
+	rm -rf "$(BUILD_DIR)/BondGraph.mo/.svn" "$(BUILD_DIR)/BondGraph.mo/.git"*
+BondLib:
+	# Building git/BondLib
+	./checkout-git.sh 'git/BondLib' 'https://github.com/modelica-3rdparty/BondLib.git' 'release' 'df7a40fe612617da22e27d39edfa4b27d65f23d0'
+	cp -a 'git/BondLib/BondLib 2.3' "$(BUILD_DIR)/BondLib 2.3"
+	echo '' > "$(BUILD_DIR)/BondLib 2.3.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/BondLib 2.3.license"
+	rm -rf "$(BUILD_DIR)/BondLib 2.3/.svn" "$(BUILD_DIR)/BondLib 2.3/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/BondLib 2.3/package.encoding"
+BrineProp:
+	# Building git/BrineProp
+	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' 'fed013cdeec0fb9552964376b575a8e3635539ab'
+	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.4.1"
+	echo '' > "$(BUILD_DIR)/BrineProp 0.4.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.4.1.license"
+	rm -rf "$(BUILD_DIR)/BrineProp 0.4.1/.svn" "$(BUILD_DIR)/BrineProp 0.4.1/.git"*
+Buildings:
+	# Building git/Buildings
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '9eb2691370d4605a7ac682f81ee09b5619e585e8'
+	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
+	echo '' > "$(BUILD_DIR)/Buildings latest.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
+	rm -rf "$(BUILD_DIR)/Buildings latest/.svn" "$(BUILD_DIR)/Buildings latest/.git"*
+Buildings-release:
+	# Building git/Buildings-release
+	./checkout-git.sh 'git/Buildings-release' 'https://github.com/lbl-srg/modelica-buildings.git' 'release' '444aa231f423b8d04225bf8672e3212d089fbfe4'
+	cp -a 'git/Buildings-release/Buildings' "$(BUILD_DIR)/Buildings 2.0.0"
+	echo '' > "$(BUILD_DIR)/Buildings 2.0.0.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Buildings 2.0.0.license"
+	rm -rf "$(BUILD_DIR)/Buildings 2.0.0/.svn" "$(BUILD_DIR)/Buildings 2.0.0/.git"*
+ComplexLib:
+	# Building git/ComplexLib
+	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
+	cp -a 'git/ComplexLib/ComplexLib.mo' "$(BUILD_DIR)/ComplexLib.mo"
+	echo '' > "$(BUILD_DIR)/ComplexLib.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ComplexLib.license"
+	rm -rf "$(BUILD_DIR)/ComplexLib.mo/.svn" "$(BUILD_DIR)/ComplexLib.mo/.git"*
+ConPNlib:
+	# Building git/ConPNlib
+	./checkout-git.sh 'git/ConPNlib' 'https://github.com/lochel/ConPNlib.git' 'master' 'bbf6e9711665d55e5a8cf2f7235fa013c2315104'
+	cp -a 'git/ConPNlib/ConPNlib' "$(BUILD_DIR)/ConPNlib"
+	echo '' > "$(BUILD_DIR)/ConPNlib.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ConPNlib.license"
+	rm -rf "$(BUILD_DIR)/ConPNlib/.svn" "$(BUILD_DIR)/ConPNlib/.git"*
+DESLib:
+	# Building git/DESLib
+	./checkout-git.sh 'git/DESLib' 'https://github.com/modelica-3rdparty/DESLib.git' 'release' '7a473d8d16b118c3ea05761c6f43b17fd9838e4e'
+	cp -a 'git/DESLib/DESLib 1.6.1' "$(BUILD_DIR)/DESLib 1.6.1"
+	echo '' > "$(BUILD_DIR)/DESLib 1.6.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/DESLib 1.6.1.license"
+	rm -rf "$(BUILD_DIR)/DESLib 1.6.1/.svn" "$(BUILD_DIR)/DESLib 1.6.1/.git"*
+ExtendedPetriNets:
+	# Building git/ExtendedPetriNets
+	./checkout-git.sh 'git/ExtendedPetriNets' 'https://github.com/modelica-3rdparty/ExtendedPetriNets.git' 'release' '2f4eac0651c1ab0ed56b75ec61424e0ef15181d3'
+	cp -a 'git/ExtendedPetriNets/ExtendedPetriNets 1.0' "$(BUILD_DIR)/ExtendedPetriNets 1.0"
+	echo '' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.license"
+	rm -rf "$(BUILD_DIR)/ExtendedPetriNets 1.0/.svn" "$(BUILD_DIR)/ExtendedPetriNets 1.0/.git"*
+ExternData:
+	# Building git/ExternData
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '0d88e7d2f93c288dc8e5475b93ea3551032dadef'
+	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData"
+	echo '' > "$(BUILD_DIR)/ExternData.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExternData.license"
+	rm -rf "$(BUILD_DIR)/ExternData/.svn" "$(BUILD_DIR)/ExternData/.git"*
+ExternalMedia:
+	# Building git/ExternalMedia
+	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
+FCSys:
+	# Building git/FCSys
+	./checkout-git.sh 'git/FCSys' 'https://github.com/kdavies4/FCSys.git' 'master' 'cb4b17f34313b9d8f2d4223d5365684b4dc1ab65'
+	cp -a 'git/FCSys/FCSys 0.2.6' "$(BUILD_DIR)/FCSys 0.2.6"
+	rm -rf "$(BUILD_DIR)/FCSys 0.2.6/Resources/Source/Python/doc"
+	echo '' > "$(BUILD_DIR)/FCSys 0.2.6.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FCSys 0.2.6.license"
+	rm -rf "$(BUILD_DIR)/FCSys 0.2.6/.svn" "$(BUILD_DIR)/FCSys 0.2.6/.git"*
+	cp -a 'git/FCSys/FCSysTest' "$(BUILD_DIR)/FCSysTest"
+	rm -rf "$(BUILD_DIR)/FCSysTest/Resources/Source/Python/doc"
+	echo '' > "$(BUILD_DIR)/FCSysTest.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FCSysTest.license"
+	rm -rf "$(BUILD_DIR)/FCSysTest/.svn" "$(BUILD_DIR)/FCSysTest/.git"*
+FastBuildings:
+	# Building git/FastBuildings
+	./checkout-git.sh 'git/FastBuildings' 'https://github.com/modelica-3rdparty/FastBuildings.git' 'master' '1f5cfebc2f42c13e272bff639ffa3449d5740bf7'
+	cp -a 'git/FastBuildings/FastBuildings' "$(BUILD_DIR)/FastBuildings 0.0"
+	echo '' > "$(BUILD_DIR)/FastBuildings 0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FastBuildings 0.0.license"
+	rm -rf "$(BUILD_DIR)/FastBuildings 0.0/.svn" "$(BUILD_DIR)/FastBuildings 0.0/.git"*
+FaultTriggering:
+	# Building git/FaultTriggering
+	./checkout-git.sh 'git/FaultTriggering' 'https://github.com/modelica-3rdparty/FaultTriggering.git' 'master' '10c226b7e5b2af901b356ac437c90d6616a6e9a4'
+	cp -a 'git/FaultTriggering/FaultTriggering' "$(BUILD_DIR)/FaultTriggering 0.5.0"
+	echo '' > "$(BUILD_DIR)/FaultTriggering 0.5.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FaultTriggering 0.5.0.license"
+	rm -rf "$(BUILD_DIR)/FaultTriggering 0.5.0/.svn" "$(BUILD_DIR)/FaultTriggering 0.5.0/.git"*
+FuzzyControl:
+	# Building git/FuzzyControl
+	./checkout-git.sh 'git/FuzzyControl' 'https://github.com/modelica-3rdparty/FuzzyControl.git' 'master' '19ff67ff129a440482cc85f216f287b05ea6ec0d'
+	cp -a 'git/FuzzyControl/FuzzyControl' "$(BUILD_DIR)/FuzzyControl"
+	echo '' > "$(BUILD_DIR)/FuzzyControl.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FuzzyControl.license"
+	rm -rf "$(BUILD_DIR)/FuzzyControl/.svn" "$(BUILD_DIR)/FuzzyControl/.git"*
+HelmholtzMedia:
+	# Building git/HelmholtzMedia
+	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' '8ed14021c13d5c7181f4cc42695f6bb078b31611'
+	cp -a 'git/HelmholtzMedia/HelmholtzMedia' "$(BUILD_DIR)/HelmholtzMedia"
+	echo '' > "$(BUILD_DIR)/HelmholtzMedia.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/HelmholtzMedia.license"
+	rm -rf "$(BUILD_DIR)/HelmholtzMedia/.svn" "$(BUILD_DIR)/HelmholtzMedia/.git"*
+IdealizedContact:
+	# Building git/IdealizedContact
+	./checkout-git.sh 'git/IdealizedContact' 'https://github.com/modelica-3rdparty/IdealizedContact.git' 'master' '8ebac550d913f6d2b3af4d1aea5044e72c7eb6b0'
+	cp -a 'git/IdealizedContact/IdealizedContact' "$(BUILD_DIR)/IdealizedContact 0.2.0"
+	echo '' > "$(BUILD_DIR)/IdealizedContact 0.2.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/IdealizedContact 0.2.0.license"
+	rm -rf "$(BUILD_DIR)/IdealizedContact 0.2.0/.svn" "$(BUILD_DIR)/IdealizedContact 0.2.0/.git"*
+IndustrialControlSystems:
+	# Building git/IndustrialControlSystems
+	./checkout-git.sh 'git/IndustrialControlSystems' 'https://github.com/modelica-3rdparty/IndustrialControlSystems.git' 'master' '6a2414307d5998c6d081efe803c2b575a532b3ba'
+	cp -a 'git/IndustrialControlSystems/IndustrialControlSystems' "$(BUILD_DIR)/IndustrialControlSystems 1"
+	echo '' > "$(BUILD_DIR)/IndustrialControlSystems 1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/IndustrialControlSystems 1.license"
+	rm -rf "$(BUILD_DIR)/IndustrialControlSystems 1/.svn" "$(BUILD_DIR)/IndustrialControlSystems 1/.git"*
+InstantaneousSymmetricalComponents:
+	# Building svn/InstantaneousSymmetricalComponents
+	./checkout-svn.sh 'svn/InstantaneousSymmetricalComponents' 'https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents' '7978'
+	cp -a 'svn/InstantaneousSymmetricalComponents/InstantaneousSymmetricalComponents.mo' "$(BUILD_DIR)/InstantaneousSymmetricalComponents.mo"
+	echo '' > "$(BUILD_DIR)/InstantaneousSymmetricalComponents.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/InstantaneousSymmetricalComponents.license"
+	echo '7978' > "$(BUILD_DIR)/InstantaneousSymmetricalComponents.last_change"
+	rm -rf "$(BUILD_DIR)/InstantaneousSymmetricalComponents.mo/.svn" "$(BUILD_DIR)/InstantaneousSymmetricalComponents.mo/.git"*
+LinearMPC:
+	# Building git/LinearMPC
+	./checkout-git.sh 'git/LinearMPC' 'https://github.com/modelica-3rdparty/LinearMPC.git' 'master' '1e91a5dcaa662cd30c5b09a9d0267289703f933b'
+	cp -a 'git/LinearMPC/LinearMPC.mo' "$(BUILD_DIR)/LinearMPC 1.mo"
+	echo '' > "$(BUILD_DIR)/LinearMPC 1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/LinearMPC 1.license"
+	rm -rf "$(BUILD_DIR)/LinearMPC 1.mo/.svn" "$(BUILD_DIR)/LinearMPC 1.mo/.git"*
+MSL-1.6:
+	# Building svn/MSL-1.6
+	./checkout-svn.sh 'svn/MSL-1.6' 'https://svn.modelica.org/projects/Modelica/tags/V1_6' '939'
+	cp -a 'svn/MSL-1.6/Modelica' "$(BUILD_DIR)/Modelica 1.6"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Modelica 1.6.patch'
+	echo '' > "$(BUILD_DIR)/Modelica 1.6.uses"
+	echo 'modelica1.1' > "$(BUILD_DIR)/Modelica 1.6.license"
+	echo '939-om1' > "$(BUILD_DIR)/Modelica 1.6.last_change"
+	rm -rf "$(BUILD_DIR)/Modelica 1.6/.svn" "$(BUILD_DIR)/Modelica 1.6/.git"*
+MSL-2.2.2:
+	# Building svn/MSL-2.2.2
+	./checkout-svn.sh 'svn/MSL-2.2.2' 'https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2' '7415'
+	cp -a 'svn/MSL-2.2.2/Modelica' "$(BUILD_DIR)/Modelica 2.2.2"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Modelica 2.2.2.patch'
+	echo '' > "$(BUILD_DIR)/Modelica 2.2.2.uses"
+	echo 'modelica1.1' > "$(BUILD_DIR)/Modelica 2.2.2.license"
+	echo '7415-om1' > "$(BUILD_DIR)/Modelica 2.2.2.last_change"
+	echo 'omlibrary-msl222' > "$(BUILD_DIR)/Modelica 2.2.2.breaks"
+	rm -rf "$(BUILD_DIR)/Modelica 2.2.2/.svn" "$(BUILD_DIR)/Modelica 2.2.2/.git"*
+MSL-3.1:
+	# Building svn/MSL-3.1
+	./checkout-svn.sh 'svn/MSL-3.1' 'https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1' '7446'
+	cp -a 'svn/MSL-3.1/Modelica' "$(BUILD_DIR)/Modelica 3.1"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Modelica 3.1.patch'
+	echo '' > "$(BUILD_DIR)/Modelica 3.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.1.license"
+	echo '7446-om1' > "$(BUILD_DIR)/Modelica 3.1.last_change"
+	echo 'omlibrary-msl31' > "$(BUILD_DIR)/Modelica 3.1.breaks"
+	rm -rf "$(BUILD_DIR)/Modelica 3.1/.svn" "$(BUILD_DIR)/Modelica 3.1/.git"*
+	cp -a 'svn/MSL-3.1/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 1.0"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices 1.0.patch'
+	echo '' > "$(BUILD_DIR)/ModelicaServices 1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices 1.0.license"
+	echo '3120-om1' > "$(BUILD_DIR)/ModelicaServices 1.0.last_change"
+	echo 'omlibrary-msl31' > "$(BUILD_DIR)/ModelicaServices 1.0.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaServices 1.0/.svn" "$(BUILD_DIR)/ModelicaServices 1.0/.git"*
+MSL-3.2.1:
+	# Building svn/MSL-3.2.1
+	./checkout-svn.sh 'svn/MSL-3.2.1' 'https://svn.modelica.org/projects/Modelica/branches/maintenance/3.2.1' '8201'
+	cp -a 'svn/MSL-3.2.1/Complex.mo' "$(BUILD_DIR)/Complex 3.2.1.mo"
+	rm -rf "$(BUILD_DIR)/Complex 3.2.1.mo/Resources/Library"
+	echo '' > "$(BUILD_DIR)/Complex 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Complex 3.2.1.license"
+	echo '6931-om1' > "$(BUILD_DIR)/Complex 3.2.1.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex 3.2.1.breaks"
+	rm -rf "$(BUILD_DIR)/Complex 3.2.1.mo/.svn" "$(BUILD_DIR)/Complex 3.2.1.mo/.git"*
+	cp -a 'svn/MSL-3.2.1/Modelica' "$(BUILD_DIR)/Modelica 3.2.1"
+	rm -rf "$(BUILD_DIR)/Modelica 3.2.1/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Modelica 3.2.1.patch'
+	echo '' > "$(BUILD_DIR)/Modelica 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.2.1.license"
+	echo '8201-om1' > "$(BUILD_DIR)/Modelica 3.2.1.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica 3.2.1.breaks"
+	rm -rf "$(BUILD_DIR)/Modelica 3.2.1/.svn" "$(BUILD_DIR)/Modelica 3.2.1/.git"*
+	cp -a 'svn/MSL-3.2.1/ModelicaReference' "$(BUILD_DIR)/ModelicaReference"
+	rm -rf "$(BUILD_DIR)/ModelicaReference/Resources/Library"
+	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference.license"
+	echo '7510' > "$(BUILD_DIR)/ModelicaReference.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaReference/.svn" "$(BUILD_DIR)/ModelicaReference/.git"*
+	cp -a 'svn/MSL-3.2.1/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 3.2.1"
+	rm -rf "$(BUILD_DIR)/ModelicaServices 3.2.1/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices 3.2.1.patch'
+	echo '' > "$(BUILD_DIR)/ModelicaServices 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices 3.2.1.license"
+	echo '6931-om1' > "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices 3.2.1.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaServices 3.2.1/.svn" "$(BUILD_DIR)/ModelicaServices 3.2.1/.git"*
+	cp -a 'svn/MSL-3.2.1/ModelicaTest' "$(BUILD_DIR)/ModelicaTest 3.2.1"
+	rm -rf "$(BUILD_DIR)/ModelicaTest 3.2.1/Resources/Library"
+	echo '' > "$(BUILD_DIR)/ModelicaTest 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest 3.2.1.license"
+	echo '8173' > "$(BUILD_DIR)/ModelicaTest 3.2.1.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest 3.2.1.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaTest 3.2.1/.svn" "$(BUILD_DIR)/ModelicaTest 3.2.1/.git"*
+	cp -a 'svn/MSL-3.2.1/ObsoleteModelica3.mo' "$(BUILD_DIR)/ObsoleteModelica3.mo"
+	rm -rf "$(BUILD_DIR)/ObsoleteModelica3.mo/Resources/Library"
+	echo '' > "$(BUILD_DIR)/ObsoleteModelica3.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ObsoleteModelica3.license"
+	echo '6852' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ObsoleteModelica3.breaks"
+	rm -rf "$(BUILD_DIR)/ObsoleteModelica3.mo/.svn" "$(BUILD_DIR)/ObsoleteModelica3.mo/.git"*
+MSL-trunk:
+	# Building svn/MSL-trunk
+	./checkout-svn.sh 'svn/MSL-trunk' 'https://svn.modelica.org/projects/Modelica/trunk' '8200'
+	cp -a 'svn/MSL-trunk/Complex.mo' "$(BUILD_DIR)/Complex trunk.mo"
+	rm -rf "$(BUILD_DIR)/Complex trunk.mo/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Complex trunk.patch'
+	echo '' > "$(BUILD_DIR)/Complex trunk.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Complex trunk.license"
+	echo '6931-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex trunk.breaks"
+	rm -rf "$(BUILD_DIR)/Complex trunk.mo/.svn" "$(BUILD_DIR)/Complex trunk.mo/.git"*
+	cp -a 'svn/MSL-trunk/Modelica' "$(BUILD_DIR)/Modelica trunk"
+	rm -rf "$(BUILD_DIR)/Modelica trunk/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'Modelica trunk.patch'
+	echo '' > "$(BUILD_DIR)/Modelica trunk.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica trunk.license"
+	echo '8200-om1' > "$(BUILD_DIR)/Modelica trunk.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica trunk.breaks"
+	rm -rf "$(BUILD_DIR)/Modelica trunk/.svn" "$(BUILD_DIR)/Modelica trunk/.git"*
+	cp -a 'svn/MSL-trunk/ModelicaReference' "$(BUILD_DIR)/ModelicaReference trunk"
+	rm -rf "$(BUILD_DIR)/ModelicaReference trunk/Resources/Library"
+	echo '' > "$(BUILD_DIR)/ModelicaReference trunk.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference trunk.license"
+	echo '8087' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference trunk.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaReference trunk/.svn" "$(BUILD_DIR)/ModelicaReference trunk/.git"*
+	cp -a 'svn/MSL-trunk/ModelicaServices' "$(BUILD_DIR)/ModelicaServices trunk"
+	rm -rf "$(BUILD_DIR)/ModelicaServices trunk/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices trunk.patch'
+	echo '' > "$(BUILD_DIR)/ModelicaServices trunk.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices trunk.license"
+	echo '6931-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices trunk.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaServices trunk/.svn" "$(BUILD_DIR)/ModelicaServices trunk/.git"*
+	cp -a 'svn/MSL-trunk/ModelicaTest' "$(BUILD_DIR)/ModelicaTest trunk"
+	rm -rf "$(BUILD_DIR)/ModelicaTest trunk/Resources/Library"
+	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
+	echo '' > "$(BUILD_DIR)/ModelicaTest trunk.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest trunk.license"
+	echo '8172-om3' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
+	rm -rf "$(BUILD_DIR)/ModelicaTest trunk/.svn" "$(BUILD_DIR)/ModelicaTest trunk/.git"*
+Modelica3D:
+	# Building git/Modelica3D
+	./checkout-git.sh 'git/Modelica3D' 'https://github.com/OpenModelica/modelica3d.git' 'master' 'daf5669b03ad33fc6999671d1c0e7521134a282b'
+ModelicaAdditions:
+	# Building git/ModelicaAdditions
+	./checkout-git.sh 'git/ModelicaAdditions' 'https://github.com/modelica-deprecated/ModelicaAdditions.git' 'release' '568db43766186826b880f9d4bfafeff25cc2c4ab'
+	cp -a 'git/ModelicaAdditions/ModelicaAdditions 1.5' "$(BUILD_DIR)/ModelicaAdditions 1.5"
+	echo '' > "$(BUILD_DIR)/ModelicaAdditions 1.5.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaAdditions 1.5.license"
+	rm -rf "$(BUILD_DIR)/ModelicaAdditions 1.5/.svn" "$(BUILD_DIR)/ModelicaAdditions 1.5/.git"*
+ModelicaBook:
+	# Building git/ModelicaBook
+	./checkout-git.sh 'git/ModelicaBook' 'https://github.com/xogeny/ModelicaBook.git' 'master' 'e205f2dc8cd23e0dcfaac6148ede89c2d61780f0'
+	cp -a 'git/ModelicaBook/ModelicaByExample' "$(BUILD_DIR)/ModelicaByExample"
+	echo '' > "$(BUILD_DIR)/ModelicaByExample.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaByExample.license"
+	rm -rf "$(BUILD_DIR)/ModelicaByExample/.svn" "$(BUILD_DIR)/ModelicaByExample/.git"*
+ModelicaCompliance:
+	# Building git/ModelicaCompliance
+	./checkout-git.sh 'git/ModelicaCompliance' 'https://github.com/modelica-compliance/compliance.git' 'master' 'ca5092c14bb7af4507a10700ee49181a3a3ee199'
+	cp -a 'git/ModelicaCompliance/ModelicaCompliance' "$(BUILD_DIR)/ModelicaCompliance 3.2"
+	echo '' > "$(BUILD_DIR)/ModelicaCompliance 3.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaCompliance 3.2.license"
+	rm -rf "$(BUILD_DIR)/ModelicaCompliance 3.2/.svn" "$(BUILD_DIR)/ModelicaCompliance 3.2/.git"*
+ModelicaDEVS:
+	# Building svn/ModelicaDEVS
+	./checkout-svn.sh 'svn/ModelicaDEVS' 'https://github.com/modelica-3rdparty/ModelicaDEVS/trunk' '1'
+	cp -a 'svn/ModelicaDEVS/ModelicaDEVS.mo' "$(BUILD_DIR)/ModelicaDEVS 1.mo"
+	echo '' > "$(BUILD_DIR)/ModelicaDEVS 1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaDEVS 1.license"
+	echo '1' > "$(BUILD_DIR)/ModelicaDEVS 1.last_change"
+	rm -rf "$(BUILD_DIR)/ModelicaDEVS 1.mo/.svn" "$(BUILD_DIR)/ModelicaDEVS 1.mo/.git"*
+Modelica_DeviceDrivers:
+	# Building git/Modelica_DeviceDrivers
+	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'f1b409acabd15e3ab8f4bc5fab1ebbb7d7732a27'
+	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.3"
+	echo '' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.3.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.3.license"
+	rm -rf "$(BUILD_DIR)/Modelica_DeviceDrivers 1.3/.svn" "$(BUILD_DIR)/Modelica_DeviceDrivers 1.3/.git"*
+Modelica_ElectricalEnergyStorages:
+	# Building svn/Modelica_ElectricalEnergyStorages
+	./checkout-svn.sh 'svn/Modelica_ElectricalEnergyStorages' 'https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages' '7072'
+	cp -a 'svn/Modelica_ElectricalEnergyStorages/Modelica_EnergyStorages.mo' "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo"
+	echo '' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.license"
+	echo '6973' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.last_change"
+	rm -rf "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo/.svn" "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo/.git"*
+Modelica_EmbeddedSystems:
+	# Building svn/Modelica_EmbeddedSystems
+	./checkout-svn.sh 'svn/Modelica_EmbeddedSystems' 'https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk' '8165'
+	cp -a 'svn/Modelica_EmbeddedSystems/Modelica_LinearSystems2' "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2"
+	echo '' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2.license"
+	echo '8165' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2.last_change"
+	rm -rf "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2/.svn" "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.2/.git"*
+	cp -a 'svn/Modelica_EmbeddedSystems/Modelica_Synchronous' "$(BUILD_DIR)/Modelica_Synchronous 0.92"
+	echo '' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.license"
+	echo '8163' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.last_change"
+	rm -rf "$(BUILD_DIR)/Modelica_Synchronous 0.92/.svn" "$(BUILD_DIR)/Modelica_Synchronous 0.92/.git"*
+Modelica_EnergyStorages:
+	# Building git/Modelica_EnergyStorages
+	./checkout-git.sh 'git/Modelica_EnergyStorages' 'https://github.com/modelica/Modelica_EnergyStorages.git' 'master' '9f057365232364e31a31a8e525f96284b98c7de3'
+	cp -a 'git/Modelica_EnergyStorages/Modelica_EnergyStorages.mo' "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo"
+	echo '' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.license"
+	rm -rf "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo/.svn" "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.mo/.git"*
+Modelica_StateGraph2:
+	# Building svn/Modelica_StateGraph2
+	./checkout-svn.sh 'svn/Modelica_StateGraph2' 'https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2' '8121'
+	cp -a 'svn/Modelica_StateGraph2' "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2"
+	echo '' > "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2.license"
+	echo '8121' > "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2.last_change"
+	rm -rf "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2/.svn" "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2/package.encoding"
+MotorcycleDynamics:
+	# Building svn/MotorcycleDynamics
+	./checkout-svn.sh 'svn/MotorcycleDynamics' 'https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master' '8'
+	cp -a 'svn/MotorcycleDynamics/MotorcycleDynamics' "$(BUILD_DIR)/MotorcycleDynamics"
+	echo '' > "$(BUILD_DIR)/MotorcycleDynamics.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/MotorcycleDynamics.license"
+	echo '7' > "$(BUILD_DIR)/MotorcycleDynamics.last_change"
+	rm -rf "$(BUILD_DIR)/MotorcycleDynamics/.svn" "$(BUILD_DIR)/MotorcycleDynamics/.git"*
+NCLib:
+	# Building git/NCLib
+	./checkout-git.sh 'git/NCLib' 'https://github.com/modelica-3rdparty/NCLib.git' 'release' 'ed3d72f176ac6b7031ce73be9d80101141e74a69'
+NeuralNetwork:
+	# Building svn/NeuralNetwork
+	./checkout-svn.sh 'svn/NeuralNetwork' 'https://github.com/modelica-3rdparty/NeuralNetwork/trunk' '1'
+	cp -a 'svn/NeuralNetwork/NeuralNetwork 1.0' "$(BUILD_DIR)/NeuralNetwork 1.0"
+	echo '' > "$(BUILD_DIR)/NeuralNetwork 1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/NeuralNetwork 1.0.license"
+	echo '1' > "$(BUILD_DIR)/NeuralNetwork 1.0.last_change"
+	rm -rf "$(BUILD_DIR)/NeuralNetwork 1.0/.svn" "$(BUILD_DIR)/NeuralNetwork 1.0/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/NeuralNetwork 1.0/package.encoding"
+Noise:
+	# Building git/Noise
+	./checkout-git.sh 'git/Noise' 'https://github.com/DLR-SR/Noise.git' 'master' '9b57476845539e56769cf76ea0fe7bf3c7eb5d11'
+	cp -a 'git/Noise/Noise' "$(BUILD_DIR)/Noise 0.2"
+	echo '' > "$(BUILD_DIR)/Noise 0.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Noise 0.2.license"
+	rm -rf "$(BUILD_DIR)/Noise 0.2/.svn" "$(BUILD_DIR)/Noise 0.2/.git"*
+ObjectStab:
+	# Building git/ObjectStab
+	./checkout-git.sh 'git/ObjectStab' 'https://github.com/modelica-3rdparty/ObjectStab.git' 'master' '2a723e0b223af50f4ffdd62f8ac901e0f87b9323'
+	cp -a 'git/ObjectStab/ObjectStab' "$(BUILD_DIR)/ObjectStab 1.1 Dev"
+	echo '' > "$(BUILD_DIR)/ObjectStab 1.1 Dev.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ObjectStab 1.1 Dev.license"
+	rm -rf "$(BUILD_DIR)/ObjectStab 1.1 Dev/.svn" "$(BUILD_DIR)/ObjectStab 1.1 Dev/.git"*
+OpenHydraulics:
+	# Building git/OpenHydraulics
+	./checkout-git.sh 'git/OpenHydraulics' 'https://github.com/cparedis/OpenHydraulics.git' 'master' 'd3173d1f06f7d14c9d7c41769f143617ff03a3ad'
+	cp -a 'git/OpenHydraulics/OpenHydraulics' "$(BUILD_DIR)/OpenHydraulics 1.0"
+	echo '' > "$(BUILD_DIR)/OpenHydraulics 1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/OpenHydraulics 1.0.license"
+	rm -rf "$(BUILD_DIR)/OpenHydraulics 1.0/.svn" "$(BUILD_DIR)/OpenHydraulics 1.0/.git"*
+PNlib:
+	# Building git/PNlib
+	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' '44c7d277980b7a88b449b72edec0a56416b40fa9'
+	cp -a 'git/PNlib/PNlib' "$(BUILD_DIR)/PNlib 1.1"
+	echo '' > "$(BUILD_DIR)/PNlib 1.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PNlib 1.1.license"
+	rm -rf "$(BUILD_DIR)/PNlib 1.1/.svn" "$(BUILD_DIR)/PNlib 1.1/.git"*
+Physiolibrary:
+	# Building git/Physiolibrary
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '8279f4816c18e53c54eb6eea4cb3af7ddec34df6'
+	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1alpha"
+	echo '' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.license"
+	rm -rf "$(BUILD_DIR)/Physiolibrary 2.3.1alpha/.svn" "$(BUILD_DIR)/Physiolibrary 2.3.1alpha/.git"*
+PlanarMechanics:
+	# Building git/PlanarMechanics
+	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' '256afcf1607b01babe2b52c31e364cfc338f6f0d'
+	cp -a 'git/PlanarMechanics/PlanarMechanics' "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version"
+	echo '' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.license"
+	rm -rf "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version/.svn" "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version/.git"*
+PowerFlow:
+	# Building svn/PowerFlow
+	./checkout-svn.sh 'svn/PowerFlow' 'https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk' '3174'
+	cp -a 'svn/PowerFlow/PowerFlow' "$(BUILD_DIR)/PowerFlow 0.3"
+	echo '' > "$(BUILD_DIR)/PowerFlow 0.3.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PowerFlow 0.3.license"
+	echo '3174' > "$(BUILD_DIR)/PowerFlow 0.3.last_change"
+	rm -rf "$(BUILD_DIR)/PowerFlow 0.3/.svn" "$(BUILD_DIR)/PowerFlow 0.3/.git"*
+PowerSystems:
+	# Building git/PowerSystems
+	./checkout-git.sh 'git/PowerSystems' 'https://github.com/modelica/PowerSystems.git' 'release' '7b551888089277a0dd979db636d47aba0279e8f0'
+	cp -a 'git/PowerSystems/PowerSystems 0.4.0' "$(BUILD_DIR)/PowerSystems 0.4.0"
+	echo '' > "$(BUILD_DIR)/PowerSystems 0.4.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 0.4.0.license"
+	rm -rf "$(BUILD_DIR)/PowerSystems 0.4.0/.svn" "$(BUILD_DIR)/PowerSystems 0.4.0/.git"*
+PowerSystems-latest:
+	# Building git/PowerSystems-latest
+	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' '3abd48aa53bbcd3f3e2ddfa2371680febf8baf48'
+	cp -a 'git/PowerSystems-latest/PowerSystems' "$(BUILD_DIR)/PowerSystems latest"
+	echo '' > "$(BUILD_DIR)/PowerSystems latest.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems latest.license"
+	rm -rf "$(BUILD_DIR)/PowerSystems latest/.svn" "$(BUILD_DIR)/PowerSystems latest/.git"*
+PraxisSimulationstechnik:
+	# Building git/PraxisSimulationstechnik
+	./checkout-git.sh 'git/PraxisSimulationstechnik' 'https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git' 'master' 'f7db177786f84033f3a50b7474988b190a1dfb46'
+	cp -a 'git/PraxisSimulationstechnik/PraxisSimulationstechnik' "$(BUILD_DIR)/PraxisSimulationstechnik"
+	echo '' > "$(BUILD_DIR)/PraxisSimulationstechnik.uses"
+	echo 'gpl3' > "$(BUILD_DIR)/PraxisSimulationstechnik.license"
+	rm -rf "$(BUILD_DIR)/PraxisSimulationstechnik/.svn" "$(BUILD_DIR)/PraxisSimulationstechnik/.git"*
+QCalc:
+	# Building git/QCalc
+	./checkout-git.sh 'git/QCalc' 'https://github.com/modelica-3rdparty/QCalc.git' 'master' 'af6c34dda691a9bdf7ca1de10650974b2d5cecf5'
+	cp -a 'git/QCalc/QCalc' "$(BUILD_DIR)/QCalc"
+	echo '' > "$(BUILD_DIR)/QCalc.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/QCalc.license"
+	rm -rf "$(BUILD_DIR)/QCalc/.svn" "$(BUILD_DIR)/QCalc/.git"*
+	cp -a 'git/QCalc/QCalcTests' "$(BUILD_DIR)/QCalcTests"
+	echo '' > "$(BUILD_DIR)/QCalcTests.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/QCalcTests.license"
+	rm -rf "$(BUILD_DIR)/QCalcTests/.svn" "$(BUILD_DIR)/QCalcTests/.git"*
+QSSFluidFlow:
+	# Building svn/QSSFluidFlow
+	./checkout-svn.sh 'svn/QSSFluidFlow' 'https://github.com/modelica-3rdparty/QSSFluidFlow/trunk' '1'
+	cp -a 'svn/QSSFluidFlow/QSSFluidFlow 1.0' "$(BUILD_DIR)/QSSFluidFlow 1.0"
+	echo '' > "$(BUILD_DIR)/QSSFluidFlow 1.0.uses"
+	echo 'modelica1.1' > "$(BUILD_DIR)/QSSFluidFlow 1.0.license"
+	echo '1' > "$(BUILD_DIR)/QSSFluidFlow 1.0.last_change"
+	rm -rf "$(BUILD_DIR)/QSSFluidFlow 1.0/.svn" "$(BUILD_DIR)/QSSFluidFlow 1.0/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/QSSFluidFlow 1.0/package.encoding"
+RealTimeCoordinationLibrary:
+	# Building git/RealTimeCoordinationLibrary
+	./checkout-git.sh 'git/RealTimeCoordinationLibrary' 'https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git' 'master' '655ac1a22aa6deb04ea8e3869dd0aa9fb9540754'
+	cp -a 'git/RealTimeCoordinationLibrary' "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2"
+	echo '' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.license"
+	rm -rf "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/.svn" "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/package.encoding"
+Servomechanisms:
+	# Building git/Servomechanisms
+	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' '22e1874ef9ad46156617817c67a4fb1238621bf5'
+	cp -a 'git/Servomechanisms/Servomechanisms 1.0' "$(BUILD_DIR)/Servomechanisms 1.0"
+	echo '' > "$(BUILD_DIR)/Servomechanisms 1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Servomechanisms 1.0.license"
+	rm -rf "$(BUILD_DIR)/Servomechanisms 1.0/.svn" "$(BUILD_DIR)/Servomechanisms 1.0/.git"*
+Spot:
+	# Building git/Spot
+	./checkout-git.sh 'git/Spot' 'https://github.com/modelica-3rdparty/Spot.git' 'master' '2f74417f1681570900a1ed373dcbe4b42634ec7b'
+	cp -a 'git/Spot/Spot' "$(BUILD_DIR)/Spot 0.706.1"
+	echo '' > "$(BUILD_DIR)/Spot 0.706.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Spot 0.706.1.license"
+	rm -rf "$(BUILD_DIR)/Spot 0.706.1/.svn" "$(BUILD_DIR)/Spot 0.706.1/.git"*
+	cp -a 'git/Spot/SpotExamples' "$(BUILD_DIR)/SpotExamples 0.706.1"
+	echo '' > "$(BUILD_DIR)/SpotExamples 0.706.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/SpotExamples 0.706.1.license"
+	rm -rf "$(BUILD_DIR)/SpotExamples 0.706.1/.svn" "$(BUILD_DIR)/SpotExamples 0.706.1/.git"*
+SystemDynamics:
+	# Building git/SystemDynamics
+	./checkout-git.sh 'git/SystemDynamics' 'https://github.com/modelica-3rdparty/SystemDynamics.git' 'master' 'c58a26dc3e62a50e64fd336dc4aa499b2d5ad314'
+	cp -a 'git/SystemDynamics/SystemDynamics 2.1' "$(BUILD_DIR)/SystemDynamics 2.1"
+	echo '' > "$(BUILD_DIR)/SystemDynamics 2.1.uses"
+	echo 'modelica1.1' > "$(BUILD_DIR)/SystemDynamics 2.1.license"
+	rm -rf "$(BUILD_DIR)/SystemDynamics 2.1/.svn" "$(BUILD_DIR)/SystemDynamics 2.1/.git"*
+ThermoPower:
+	# Building svn/ThermoPower
+	./checkout-svn.sh 'svn/ThermoPower' 'http://svn.code.sf.net/p/thermopower/svn/trunk' '384'
+	cp -a 'svn/ThermoPower/ThermoPower' "$(BUILD_DIR)/ThermoPower 3.1"
+	echo '' > "$(BUILD_DIR)/ThermoPower 3.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ThermoPower 3.1.license"
+	echo '384' > "$(BUILD_DIR)/ThermoPower 3.1.last_change"
+	rm -rf "$(BUILD_DIR)/ThermoPower 3.1/.svn" "$(BUILD_DIR)/ThermoPower 3.1/.git"*
+ThermoSysPro:
+	# Building svn/ThermoSysPro
+	./checkout-svn.sh 'svn/ThermoSysPro' 'https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.1' '21164'
+	cp -a 'svn/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
+	echo '' > "$(BUILD_DIR)/ThermoSysPro 3.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
+	echo '21164' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
+	rm -rf "$(BUILD_DIR)/ThermoSysPro 3.1/.svn" "$(BUILD_DIR)/ThermoSysPro 3.1/.git"*
+VehicleInterfaces:
+	# Building git/VehicleInterfaces
+	./checkout-git.sh 'git/VehicleInterfaces' 'https://github.com/modelica/VehicleInterfaces.git' 'release' 'ad956a35643d53e207ee126d67ea1f3f38337a39'
+	cp -a 'git/VehicleInterfaces/VehicleInterfaces 1.2.2' "$(BUILD_DIR)/VehicleInterfaces 1.2.2"
+	echo '' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.license"
+	rm -rf "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.svn" "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.git"*
+WasteWater:
+	# Building git/WasteWater
+	./checkout-git.sh 'git/WasteWater' 'https://github.com/modelica-3rdparty/WasteWater.git' 'master' '90ff44ac791ba5ed98444c8597efbd2a2af01cad'
+	cp -a 'git/WasteWater/WasteWater' "$(BUILD_DIR)/WasteWater 2.1.0"
+	echo '' > "$(BUILD_DIR)/WasteWater 2.1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/WasteWater 2.1.0.license"
+	rm -rf "$(BUILD_DIR)/WasteWater 2.1.0/.svn" "$(BUILD_DIR)/WasteWater 2.1.0/.git"*
+XogenyTest:
+	# Building git/XogenyTest
+	./checkout-git.sh 'git/XogenyTest' 'https://github.com/xogeny/XogenyTest.git' 'master' '9b98981e8ff0f440dd319d1a806e1fd2f0ab3436'
+	cp -a 'git/XogenyTest/XogenyTest' "$(BUILD_DIR)/XogenyTest 1.1"
+	echo '' > "$(BUILD_DIR)/XogenyTest 1.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/XogenyTest 1.1.license"
+	rm -rf "$(BUILD_DIR)/XogenyTest 1.1/.svn" "$(BUILD_DIR)/XogenyTest 1.1/.git"*
+msgpack-modelica:
+	# Building git/msgpack-modelica
+	./checkout-git.sh 'git/msgpack-modelica' 'https://github.com/modelica-3rdparty/msgpack-modelica.git' 'master' '6ce2ca600c4902038c0f20b43ed442f1ee204310'
+	cp -a 'git/msgpack-modelica/MessagePack' "$(BUILD_DIR)/MessagePack 0.1"
+	echo '' > "$(BUILD_DIR)/MessagePack 0.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/MessagePack 0.1.license"
+	rm -rf "$(BUILD_DIR)/MessagePack 0.1/.svn" "$(BUILD_DIR)/MessagePack 0.1/.git"*
+netCDF-DataReader:
+	# Building git/netCDF-DataReader
+	./checkout-git.sh 'git/netCDF-DataReader' 'https://github.com/modelica-3rdparty/netCDF-DataReader.git' 'master' '6dc5ee162d0cf536c10c350b9fc4f963f266099b'
+	cp -a 'git/netCDF-DataReader/NcDataReader2' "$(BUILD_DIR)/NcDataReader2"
+	echo '' > "$(BUILD_DIR)/NcDataReader2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/NcDataReader2.license"
+	rm -rf "$(BUILD_DIR)/NcDataReader2/.svn" "$(BUILD_DIR)/NcDataReader2/.git"*
+open-bldc-modelica:
+	# Building git/open-bldc-modelica
+	./checkout-git.sh 'git/open-bldc-modelica' 'https://github.com/joewa/open-bldc-modelica.git' 'master' '7817cd703b88fc1f433269d32c31e75eb50a21c6'
+	cp -a 'git/open-bldc-modelica/OpenBLDC' "$(BUILD_DIR)/OpenBLDC"
+	echo '' > "$(BUILD_DIR)/OpenBLDC.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/OpenBLDC.license"
+	rm -rf "$(BUILD_DIR)/OpenBLDC/.svn" "$(BUILD_DIR)/OpenBLDC/.git"*

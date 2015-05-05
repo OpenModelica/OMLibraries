@@ -2,10 +2,26 @@ BUILD_DIR=build/
 OMC=omc
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
-default: all
+default: core
 .PHONY: macports Modelica\ 3.2.1.patch
 
-all: Makefile.numjobs config.done
+include Makefile.libs
+
+core: $(CORE_TARGET)
+$(CORE_TARGET):
+	rm -rf $(BUILD_DIR) build
+	mkdir -p $(BUILD_DIR)
+	$(MAKE) $(CORE_LIBS)
+	touch $@
+
+all: $(ALL_TARGET)
+$(ALL_TARGET):
+	rm -rf $(BUILD_DIR) build
+	mkdir -p $(BUILD_DIR)
+	$(MAKE) $(ALL_LIBS)
+	touch $@
+
+python-update: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
 	$(MAKE) all-work

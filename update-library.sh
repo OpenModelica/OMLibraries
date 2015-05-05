@@ -86,58 +86,18 @@ REVISION="$3"
 DEST="$4"
 shift;shift;shift;shift
 
+CMD_REPLAY="$DEST.cmd"
+echo "# Building $DEST" > "$CMD_REPLAY"
+
 if test "$TYPE" = SVN; then
 
-if test -d "$DEST"; then
-  (svn cleanup "$DEST" && svn revert -R "$DEST") || rm -r "$DEST"
-fi
-
-if ! test -d "$DEST"; then
-  svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
-  echo "$REVISION" > "$DEST.rev"
-elif test -d "$DEST" && ! test "$URL" = "`svn info "$DEST" | grep ^URL: | sed "s/URL: //"`"; then
-  echo "Not same URL... $URL and `svn info "$DEST" | grep ^URL: | sed "s/URL: //"`"
-  rm -rf "$DEST"
-  svn co $SVNOPTS "-r$REVISION" "$URL" "$DEST" || exit 1
-  echo "$REVISION" > "$DEST.rev"
-else
-  if test `svn info $SVNOPTS --xml "$DEST" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"` = "$REVISION"; then
-    echo "$DEST is up to date"
-  elif ! svn up $SVNOPTS "-r$REVISION" "$DEST"; then
-    echo "Failed to update $DEST"
-    test -d "$DEST" && rm -r "$DEST"
-    exit 1
-  else
-    # svn-clean is a nice extra; not needed
-    svn-clean "$DEST" 2> /dev/null
-  fi
-  echo "$REVISION" > "$DEST.rev"
-fi
+  ./checkout-svn.sh "$DEST" "$URL" "$REVISION" || exit 1
+  echo "./checkout-svn.sh '$DEST' '$URL' '$REVISION'" >> "$CMD_REPLAY"
 
 elif test "$TYPE" = GIT; then
 
-if test -d "$DEST"; then
-  # Clean out any old mess
-  (cd "$DEST" && git reset --hard)
-  (cd "$DEST" && git clean -f)
-  (cd "$DEST" && git checkout -q "$REVISION" || git fetch -q "$URL" "$GITBRANCH" || (sleep 10 && git fetch -q "$URL" "$GITBRANCH") || (sleep 20 && git fetch -q "$URL" "$GITBRANCH")) || rm -rf "$DEST"
-fi
-if ! test -d "$DEST"; then
-  echo "[$DEST] does not exist: cloning [$URL]"
-  (git clone "$URL" "$DEST" || (sleep 10 && git clone "$URL" "$DEST") || (sleep 30 && git clone "$URL" "$DEST")) || exit 1
-  # In case of CRLF properties, etc
-  (cd "$DEST" && git reset --hard)
-  (cd "$DEST" && git clean -f)
-fi
-if ! (cd "$DEST" && git checkout -f "$REVISION" ); then
-  echo "git checkout $REVISION failed for: $DEST"
-  exit 1
-fi
-
-(cd "$DEST" && git reset --hard)
-(cd "$DEST" && git clean -f)
-
-echo "$REVISION" > "$DEST.rev"
+  ./checkout-git.sh "$DEST" "$URL" "$GITBRANCH" "$REVISION" || exit 1
+  echo "./checkout-git.sh '$DEST' '$URL' '$GITBRANCH' '$REVISION'" >> "$CMD_REPLAY"
 
 else
   echo "Unknown repository type: $TYPE" >&2
@@ -211,11 +171,14 @@ for f in $LIBS "$@"; do
   # Link recursive... Fast, efficient
   echo Copy: cp -a "$SOURCE" "$BUILD/$NAME$EXT"
   cp -a "$SOURCE" "$BUILD/$NAME$EXT"
+  echo "cp -a '$SOURCE' \"\$(BUILD_DIR)/$NAME$EXT\"" >> "$CMD_REPLAY"
   for FILES in $REMOVE_FILES; do
     echo Removing files: [$BUILD/$NAME$EXT/$FILES]
     rm -rf "$BUILD/$NAME$EXT/$FILES"
+    echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/$FILES\"" >> "$CMD_REPLAY"
   done
   if test -f "$NAME.patch"; then
+    echo "patch -d \"\$(BUILD_DIR)/\" -f -p1 < '$NAME.patch'" >> "$CMD_REPLAY"
     if ! patch -d "$BUILD/" -f -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
@@ -236,7 +199,9 @@ for f in $LIBS "$@"; do
   else
     PATCHREV=""
   fi
-  echo "$NO_DEPENDENCY" | grep -q "^$LIB\$" && echo > "$BUILD/$NAME.uses"
+  NO_DEPENDENCY_USES=`echo "$NO_DEPENDENCY" | grep -q "^$LIB\$"`
+  echo "$NO_DEPENDENCY_USES" > "$BUILD/$NAME.uses"
+  echo "echo '$NO_DEPENDENCY_USES' > \"\$(BUILD_DIR)/$NAME.uses\"" >> "$CMD_REPLAY"
   # Add custom patch levels
   if echo "$PATCHLEVEL" | grep -q ":"; then
     PATCHLEVELTHIS=`echo "$PATCHLEVEL" | grep -o "$LIB:[A-Za-z0-9_-]*" | cut -d: -f2`
@@ -247,28 +212,36 @@ for f in $LIBS "$@"; do
     PATCHREV="$PATCHLEVELTHIS"
   fi
   echo $LICENSE > "$BUILD/$NAME.license"
+  echo "echo '$LICENSE' > \"\$(BUILD_DIR)/$NAME.license\"" >> "$CMD_REPLAY"
   if test "$TYPE" = SVN; then
-    echo `svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`$PATCHREV > "$BUILD/$NAME.last_change"
+    CHANGED=`svn info $SVNOPTS --xml "$SOURCE" | xpath -q -e '/info/entry/commit/@revision' | grep -o "[0-9]*"`
+    echo $CHANGED$PATCHREV > "$BUILD/$NAME.last_change"
+    echo "echo '$CHANGED$PATCHREV' > \"\$(BUILD_DIR)/$NAME.last_change\"" >> "$CMD_REPLAY"
     # Skipping changelog. Was only used for debian packages, but it is not that useful and quite slow
     # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
   else
     CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
     echo "$CHANGED~git~$GITBRANCH$PATCHREV" > "$BUILD/$NAME.last_change"
+    echo "echo '$CHANGED~git~$GITBRANCH$PATCHREV' > \"\$(BUILD_DIR)/$NAME.last_change\""
     cat "$BUILD/$NAME.last_change"
   fi
   if ! test -z "$BREAKS"; then
     echo "$BREAKS" > "$BUILD/$NAME.breaks"
+    echo "echo '$BREAKS' > \"\$(BUILD_DIR)/$NAME.breaks\"" >> "$CMD_REPLAY"
   fi
   if ! test -z "$NOPACKAGE"; then
     echo "$NOPACKAGE" > "$BUILD/$NAME.nopackage"
+    echo "echo '$NOPACKAGE' > \"\$(BUILD_DIR)/$NAME.nopackage\"" >> "$CMD_REPLAY"
   fi
   rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git"*
+  echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/.svn\" \"\$(BUILD_DIR)/$NAME$EXT/.git\"*" >> "$CMD_REPLAY"
 
   if ! test "$STD" = "3.3"; then
     echo "$STD" > "$BUILD/$NAME.std"
   fi
   if ! test "$ENCODING" = "UTF-8"; then
     echo "$ENCODING" > "$BUILD/$NAME/package.encoding"
+    echo "echo '$ENCODING' > \"\$(BUILD_DIR)/$NAME/package.encoding\"" >> "$CMD_REPLAY"
   fi
   echo $URL > "$BUILD/$NAME.url"
   if test -d "$BUILD/$NAME$EXT"; then

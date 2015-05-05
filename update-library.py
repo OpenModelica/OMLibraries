@@ -7,6 +7,7 @@ import simplejson
 from optparse import OptionParser
 from collections import defaultdict
 import subprocess
+import datetime
 
 def targets(r):
   if not 'targets' in r:
@@ -24,6 +25,8 @@ repos = jsondata['repos']
 
 def updateCommand(r):
   return 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
+def makeFileReplayCommand(r):
+  return ("git" if r['url'].endswith(".git") else "svn") + "/" + r['dest'] + ".cmd"
 def update():
   from joblib import Parallel, delayed
   provides = defaultdict(list)
@@ -47,7 +50,31 @@ def update():
     if i != 0:
       print('*** Failed: %s' % cmd)
       exit = 1
-  return exit
+  if exit != 0:
+    return exit
+  core_lib=[]
+  other_lib=[]
+  lines=[]
+  phony=".PHONY:"
+  for r in sorted(repos,key=lambda r: r['dest']):
+    if r.get("core"):
+      core_lib.append(r['dest'])
+    else:
+      other_lib.append(r['dest'])
+    phony += " %s" % r['dest']
+    lines.append("%s:\n" % r['dest'])
+    for line in open(makeFileReplayCommand(r),"r").readlines():
+      lines.append("\t%s" % line)
+  with open("Makefile.libs","w") as fout:
+    fout.write(phony)
+    stamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    fout.write("\nCORE_TARGET=$(BUILD_DIR)/%s.core" % stamp)
+    fout.write("\nALL_TARGET=$(BUILD_DIR)/%s.all" % stamp)
+    fout.write("\nCORE_LIBS=" + " ".join(core_lib))
+    fout.write("\nOTHER_LIBS=" + " ".join(other_lib))
+    fout.write("\nALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)\n")
+    fout.writelines(lines)
+  return 0
 
 def findPrefix(pre,strs):
   for s in strs:
