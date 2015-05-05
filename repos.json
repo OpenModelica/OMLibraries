@@ -115,7 +115,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9eb2691370d4605a7ac682f81ee09b5619e585e8",
+      "rev": "6c6b3aadc531d0ddcb26db8649680f5f91cbd8c3",
       "targets": [
         "Buildings latest"
       ],
@@ -308,7 +308,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8201,
+      "rev": 8203,
       "targets": [
         "Complex",
         "Modelica",
@@ -328,7 +328,7 @@
         "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
         "remove-files": "Resources/Library"
       },
-      "rev": 8200,
+      "rev": 8202,
       "targets": [
         "Complex trunk",
         "Modelica trunk",
@@ -384,7 +384,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f1b409acabd15e3ab8f4bc5fab1ebbb7d7732a27",
+      "rev": "f4d92d5fc55f9db156fcc4522ec620d972b71432",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -394,7 +394,7 @@
     },
     {
       "dest": "Modelica_EmbeddedSystems",
-      "rev": 8165,
+      "rev": 8205,
       "targets": [
         "Modelica_LinearSystems2",
         "Modelica_Synchronous"
@@ -486,7 +486,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "256afcf1607b01babe2b52c31e364cfc338f6f0d",
+      "rev": "d998a1b27355e83d2ff4849d71281a919a3234aa",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -630,7 +630,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6dc5ee162d0cf536c10c350b9fc4f963f266099b",
+      "rev": "098aeb71a9f2d675794e38a4b227c83509d3a2f4",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
