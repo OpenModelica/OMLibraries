@@ -10,3 +10,5 @@ git
 /macports
 macports-build
 get-version.*.mos
+get-name*.mos
+get-name*.name
