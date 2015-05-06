@@ -13,7 +13,7 @@ if test -d "$DEST"; then
   # Clean out any old mess
   (cd "$DEST" && git reset --hard)
   (cd "$DEST" && git clean -f)
-  (cd "$DEST" && git checkout -q "$REVISION" || git fetch -fq "$URL" "$GITBRANCH" || (sleep 10 && git fetch -fq "$URL" "$GITBRANCH") || (sleep 20 && git fetch -fq "$URL" "$GITBRANCH")) || rm -rf "$DEST"
+  (cd "$DEST" && git checkout -q "$REVISION" || git fetch --tags -fq "$URL" "$GITBRANCH" || (sleep 10 && git fetch --tags -fq "$URL" "$GITBRANCH") || (sleep 20 && git fetch --tags -fq "$URL" "$GITBRANCH")) || rm -rf "$DEST"
 fi
 if ! test -d "$DEST"; then
   echo "[$DEST] does not exist: cloning [$URL]"
@@ -24,7 +24,7 @@ if ! test -d "$DEST"; then
 fi
 
 if ! (cd "$DEST" && git checkout -f "$REVISION" ); then
-  echo "git checkout $REVISION failed for: $DEST"
+  echo "Failed: $0 $*"
   exit 1
 fi
 

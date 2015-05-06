@@ -3,7 +3,7 @@ OMC=omc
 SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 
 default: core
-.PHONY: macports Modelica\ 3.2.1.patch
+.PHONY: macports Modelica\ 3.2.1.patch Modelica\ 1.6.patch Modelica\ trunk.patch ModelicaTest\ trunk.patch
 
 include Makefile.libs
 
@@ -132,4 +132,13 @@ upload: config.done .remote/control-files .remote/pool .remote/release-command
 	./check-debian.sh
 
 Modelica\ 3.2.1.patch:
-	diff -u -x .svn -x Library -r svn/MSL\ 3.2.1/Modelica build/Modelica\ 3.2.1 > "$@"
+	diff -u -x .svn -x .git -x Library -r git/MSL/Modelica build/Modelica\ 3.2.1 > "$@"
+
+Modelica\ 1.6.patch:
+	diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6" "build/Modelica 1.6" > "$@"
+
+Modelica\ trunk.patch:
+	diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica trunk" > "$@"
+
+ModelicaTest\ trunk.patch:
+	diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaTest" "build/ModelicaTest trunk" > "$@"

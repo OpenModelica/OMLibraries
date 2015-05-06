@@ -24,7 +24,18 @@ with open("repos.json") as f:
 repos = jsondata['repos']
 
 def updateCommand(r):
-  return 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest'],targets(r))
+  if r.get('multitarget'):
+    dest = 'git/'+r['dest']
+    commands = ['sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(multi),"GIT",r['url'],multi['rev'],dest,targets(multi)) for multi in r['multitarget']]
+    cmd = " && ".join(commands)
+  else:
+    dest = ("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest']
+    cmd = 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],dest,targets(r))
+  try:
+    os.remove(dest+'.cmd')
+  except:
+    pass
+  return cmd
 def makeFileReplayCommand(r):
   return ("git" if r['url'].endswith(".git") else "svn") + "/" + r['dest'] + ".cmd"
 def update():
@@ -98,6 +109,8 @@ def checkLatest(repo):
   msg = None
   options = repo.get('options') or {}
   if repo['url'].endswith('git'):
+    if options.get('gittag'):
+      return
     branch = options.get('gitbranch') or 'release'
     oldrev = repo['rev']
     newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()

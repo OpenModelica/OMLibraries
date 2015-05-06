@@ -1,5 +1,6 @@
---- svn/MSL trunk/ModelicaTest/package.mo	2013-11-09 15:11:31.125274052 +0100
-+++ build/ModelicaTest trunk/package.mo	2013-11-09 15:48:33.849310873 +0100
+diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
+--- git/MSL/ModelicaTest/package.mo	2015-05-06 13:10:32.283072507 +0200
++++ "build/ModelicaTest trunk/package.mo"	2015-05-06 13:11:19.007308844 +0200
 @@ -44,12 +44,12 @@
  
  
@@ -9,7 +10,7 @@
         versionBuild=0,
         versionDate="2013-08-14",
         dateModified = "2013-08-14 08:44:41Z",
-        revisionId="$Id:: package.mo 7947 2014-12-03 08:40:33Z #$",
+        revisionId="$Id::                                       $",
 -       uses(Modelica(version="3.2.1")),
 +       uses(Modelica(version="trunk")),
      Documentation(info="<html>

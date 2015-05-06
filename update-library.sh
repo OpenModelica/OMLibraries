@@ -44,6 +44,10 @@ case $OPT in
   GITBRANCH="$1"
   shift
   ;;
+--gittag)
+  GITBRANCH="$1"
+  shift
+  ;;
 --no-package)
   # $1 will be a comment
   NOPACKAGE="$1"
@@ -87,7 +91,7 @@ DEST="$4"
 shift;shift;shift;shift
 
 CMD_REPLAY="$DEST.cmd"
-echo "# Building $DEST" > "$CMD_REPLAY"
+echo "# Building $DEST" >> "$CMD_REPLAY"
 
 if test "$TYPE" = SVN; then
 
@@ -167,6 +171,20 @@ for f in $LIBS "$@"; do
   else
     NAME="$LIB $VER"
   fi
+
+  if test -z "$EXT"; then
+    echo "test ! -d '$BUILD/$NAME'" >> "$CMD_REPLAY"
+    if test -d "$BUILD/$NAME"; then
+      echo "$BUILD/$NAME already exists; bailing out (multiple repositories could try creating the same library)"
+      exit 1
+    fi
+  else
+    echo "test ! -f '$BUILD/$NAME$EXT'" >> "$CMD_REPLAY"
+    if test -f "$BUILD/$NAME$EXT"; then
+      echo "$BUILD/$NAME$EXT already exists; bailing out (multiple repositories could try creating the same library)"
+      exit 1
+    fi
+  fi
   rm -rf "$BUILD/$NAME" "$BUILD/$NAME.mo"
   # Link recursive... Fast, efficient
   echo Copy: cp -a "$SOURCE" "$BUILD/$NAME$EXT"
@@ -220,9 +238,22 @@ for f in $LIBS "$@"; do
     # Skipping changelog. Was only used for debian packages, but it is not that useful and quite slow
     # svn log --xml --verbose "$SOURCE" | sed "s,<date>.*</date>,<date>1970-01-01</date>," | sed "s,<author>\(.*\)</author>,<author>none</author><author-svn>\1</author-svn>," | xsltproc svn2cl.xsl - > "$BUILD/$NAME.changes"
   else
-    CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
-    echo "$CHANGED~git~$GITBRANCH$PATCHREV" > "$BUILD/$NAME.last_change"
-    echo "echo '$CHANGED~git~$GITBRANCH$PATCHREV' > \"\$(BUILD_DIR)/$NAME.last_change\""
+    # CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
+    if test ! -z "$VER"; then
+      CHANGED=`cd "$DEST" && git describe --match "v$VER*" 2>/dev/null || git describe --tags --match "v$VER*" 2>/dev/null`
+    fi
+    if test -z "$CHANGED"; then
+      CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2`
+      if test -z "$VER" || echo $VER | sed s,^v,, | grep -q [^0-9.]; then
+        CHANGED="$CHANGED~git~$GITBRANCH"
+      else
+        CHANGED="$VER-$CHANGED~git~$GITBRANCH"
+      fi
+    fi
+    CHANGED=`echo $CHANGED | tr -d : | tr " /" "--" | sed s,^v,,`
+    CHANGED="$CHANGED$PATCHREV"
+    echo "$CHANGED" > "$BUILD/$NAME.last_change"
+    echo "echo '$CHANGED' > \"\$(BUILD_DIR)/$NAME.last_change\"" >> "$CMD_REPLAY"
     cat "$BUILD/$NAME.last_change"
   fi
   if ! test -z "$BREAKS"; then

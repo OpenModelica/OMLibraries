@@ -257,86 +257,84 @@
     },
     {
       "core": true,
-      "dest": "MSL-1.6",
-      "options": {
-        "intertrac": "m:",
-        "license": "modelica1.1",
-        "patchlevel": "Modelica:-om1",
-        "std": "1.x"
-      },
-      "rev": 939,
-      "targets": [
-        "Modelica 1.6"
+      "dest": "MSL",
+      "multitarget": [
+        {
+          "options": {
+            "gittag": "release",
+            "intertrac": "m:",
+            "license": "modelica1.1",
+            "patchlevel": "Modelica:-om1",
+            "std": "1.x"
+          },
+          "rev": "v1.6",
+          "targets": [
+            "Modelica 1.6"
+          ]
+        },
+        {
+          "options": {
+            "breaks": "omlibrary-msl222",
+            "gitbranch": "maint/2.2.2",
+            "intertrac": "m:",
+            "license": "modelica1.1",
+            "patchlevel": "Modelica:-om1"
+          },
+          "rev": "d442bcd461b8db9873e33b6141bdbd37bcff9de8"
+        },
+        {
+          "options": {
+            "breaks": "omlibrary-msl31",
+            "gitbranch": "maint/3.1",
+            "intertrac": "m:",
+            "no-dependencies": "ModelicaServices",
+            "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
+          },
+          "rev": "af2a3e1597d648d6826665c89cf9eaf5c2a632bc",
+          "targets": [
+            "Modelica",
+            "ModelicaServices"
+          ]
+        },
+        {
+          "options": {
+            "breaks": "omlibrary-msl32,omlibrary-reference",
+            "gitbranch": "maint/3.2.1",
+            "intertrac": "m:",
+            "no-dependencies": "ModelicaServices",
+            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "8c47cb00163bc8d9e74ecc4acecb7ebbe370921d",
+          "targets": [
+            "Complex",
+            "Modelica",
+            "ModelicaReference none",
+            "ModelicaServices",
+            "ModelicaTest",
+            "ObsoleteModelica3"
+          ]
+        },
+        {
+          "options": {
+            "breaks": "omlibrary-msl32,omlibrary-reference",
+            "gitbranch": "master",
+            "intertrac": "m:",
+            "no-dependencies": "ModelicaServices",
+            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "df78006a75deee352e04d64227f31aca3a40994a",
+          "targets": [
+            "Complex trunk",
+            "Modelica trunk",
+            "ModelicaReference trunk",
+            "ModelicaServices trunk",
+            "ModelicaTest trunk"
+          ]
+        }
       ],
-      "url": "https://svn.modelica.org/projects/Modelica/tags/V1_6"
-    },
-    {
-      "core": true,
-      "dest": "MSL-2.2.2",
-      "options": {
-        "breaks": "omlibrary-msl222",
-        "intertrac": "m:",
-        "license": "modelica1.1",
-        "patchlevel": "Modelica:-om1"
-      },
-      "rev": 7415,
-      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/2.2.2"
-    },
-    {
-      "core": true,
-      "dest": "MSL-3.1",
-      "options": {
-        "breaks": "omlibrary-msl31",
-        "intertrac": "m:",
-        "no-dependencies": "ModelicaServices",
-        "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
-      },
-      "rev": 7446,
-      "targets": [
-        "Modelica",
-        "ModelicaServices"
-      ],
-      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.1"
-    },
-    {
-      "core": true,
-      "dest": "MSL-3.2.1",
-      "options": {
-        "breaks": "omlibrary-msl32,omlibrary-reference",
-        "intertrac": "m:",
-        "no-dependencies": "ModelicaServices",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
-        "remove-files": "Resources/Library"
-      },
-      "rev": 8203,
-      "targets": [
-        "Complex",
-        "Modelica",
-        "ModelicaReference none",
-        "ModelicaServices",
-        "ModelicaTest",
-        "ObsoleteModelica3"
-      ],
-      "url": "https://svn.modelica.org/projects/Modelica/branches/maintenance/3.2.1"
-    },
-    {
-      "dest": "MSL-trunk",
-      "options": {
-        "breaks": "omlibrary-msl32,omlibrary-reference",
-        "intertrac": "m:",
-        "no-dependencies": "ModelicaServices",
-        "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
-        "remove-files": "Resources/Library"
-      },
-      "rev": 8202,
-      "targets": [
-        "Complex trunk",
-        "Modelica trunk",
-        "ModelicaReference trunk",
-        "ModelicaServices trunk",
-        "ModelicaTest trunk"
-      ],
-      "url": "https://svn.modelica.org/projects/Modelica/trunk"
+      "url": "https://github.com/modelica/Modelica.git"
     },
     {
       "dest": "Modelica3D",
@@ -376,8 +374,11 @@
     },
     {
       "dest": "ModelicaDEVS",
-      "rev": 1,
-      "url": "https://github.com/modelica-3rdparty/ModelicaDEVS/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "a987aa9552fbbe71b2ee2e8c28958f9d213087ae",
+      "url": "https://github.com/modelica-3rdparty/ModelicaDEVS.git"
     },
     {
       "dest": "Modelica_DeviceDrivers",
@@ -388,18 +389,26 @@
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
-      "dest": "Modelica_ElectricalEnergyStorages",
-      "rev": 7072,
-      "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_ElectricalEnergyStorages"
+      "dest": "Modelica_LinearSystems2",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "18916fdc485285baab12481701b53d4eb606a3f1",
+      "targets": [
+        "self"
+      ],
+      "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
-      "dest": "Modelica_EmbeddedSystems",
-      "rev": 8205,
+      "dest": "Modelica_Synchronous",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "d0f5ee57bc7b639738e88026674a87343b33dbe1",
       "targets": [
-        "Modelica_LinearSystems2",
-        "Modelica_Synchronous"
+        "self"
       ],
-      "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk"
+      "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
       "dest": "Modelica_EnergyStorages",
@@ -422,8 +431,11 @@
     },
     {
       "dest": "MotorcycleDynamics",
-      "rev": 8,
-      "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics/branches/master"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "2be2667f9936d88ffb9b8a8246c5af9ccb0b307f",
+      "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics.git"
     },
     {
       "dest": "NCLib",
@@ -436,10 +448,11 @@
     {
       "dest": "NeuralNetwork",
       "options": {
-        "encoding": "Windows-1252"
+        "encoding": "Windows-1252",
+        "gitbranch": "release"
       },
-      "rev": 1,
-      "url": "https://github.com/modelica-3rdparty/NeuralNetwork/trunk"
+      "rev": "c44e4d1fe97fd4f86dafcd05ad3713692e3f1806",
+      "url": "https://github.com/modelica-3rdparty/NeuralNetwork.git"
     },
     {
       "dest": "Noise",
@@ -537,11 +550,12 @@
       "dest": "QSSFluidFlow",
       "options": {
         "encoding": "Windows-1252",
+        "gitbranch": "release",
         "license": "modelica1.1",
         "std": "2.x"
       },
-      "rev": 1,
-      "url": "https://github.com/modelica-3rdparty/QSSFluidFlow/trunk"
+      "rev": "d84a2c107132f2cd47ea3c3751238d69e4b1f64b",
+      "url": "https://github.com/modelica-3rdparty/QSSFluidFlow.git"
     },
     {
       "dest": "RealTimeCoordinationLibrary",

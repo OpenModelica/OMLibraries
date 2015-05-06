@@ -1,6 +1,7 @@
---- svn/MSL trunk/Modelica/Blocks/Sources.mo	2013-11-09 15:52:45.985924970 +0100
-+++ build/Modelica trunk/Blocks/Sources.mo	2013-11-09 15:55:32.343609690 +0100
-@@ -2336,7 +2336,7 @@
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/Modelica trunk/Blocks/Sources.mo"
+--- git/MSL/Modelica/Blocks/Sources.mo	2015-05-06 13:02:05.144474295 +0200
++++ "build/Modelica trunk/Blocks/Sources.mo"	2015-05-06 13:02:05.716477263 +0200
+@@ -2335,7 +2335,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
        input Real tableAvailable
@@ -9,7 +10,7 @@
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2355,7 +2355,7 @@
+@@ -2354,7 +2354,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
        input Real tableAvailable
@@ -18,7 +19,7 @@
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2370,7 +2370,7 @@
+@@ -2369,7 +2369,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
        input Real tableAvailable
@@ -27,7 +28,7 @@
        input Real der_timeIn;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTimeTable_getDerValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent, der_timeIn)
-@@ -2382,7 +2382,7 @@
+@@ -2381,7 +2381,7 @@
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Real tableAvailable
@@ -36,7 +37,7 @@
        output Modelica.SIunits.Time timeMin "Minimum time value in table";
        external"C" timeMin = ModelicaStandardTables_CombiTimeTable_minimumTime(tableID)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2393,7 +2393,7 @@
+@@ -2392,7 +2392,7 @@
        extends Modelica.Icons.Function;
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Real tableAvailable
@@ -45,7 +46,7 @@
        output Modelica.SIunits.Time timeMax "Maximum time value in table";
        external"C" timeMax = ModelicaStandardTables_CombiTimeTable_maximumTime(tableID)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2405,7 +2405,7 @@
+@@ -2404,7 +2404,7 @@
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Modelica.SIunits.Time timeIn;
        input Real tableAvailable
@@ -54,9 +55,10 @@
        output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables"});
-diff -u -x .svn -r libraries/Modelica trunk/Modelica/Blocks/Tables.mo build/Modelica trunk/Blocks/Tables.mo
---- libraries/Modelica trunk/Modelica/Blocks/Tables.mo	2013-06-27 18:19:23.743158383 +0200
-+++ build/Modelica trunk/Blocks/Tables.mo	2013-07-24 10:05:34.218901723 +0200
+Only in build/Modelica trunk/Blocks: Sources.mo.orig
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Tables.mo "build/Modelica trunk/Blocks/Tables.mo"
+--- git/MSL/Modelica/Blocks/Tables.mo	2015-05-06 13:01:55.516424327 +0200
++++ "build/Modelica trunk/Blocks/Tables.mo"	2015-05-06 13:02:05.716477263 +0200
 @@ -58,7 +58,7 @@
        input Integer icol;
        input Real u;
@@ -138,10 +140,10 @@ diff -u -x .svn -r libraries/Modelica trunk/Modelica/Blocks/Tables.mo build/Mode
        input Real der_u1;
        input Real der_u2;
        output Real der_y;
-diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.mo build/Modelica trunk/Math/package.mo
---- libraries/Modelica trunk/Modelica/Math/package.mo	2013-07-24 09:57:03.089781530 +0200
-+++ build/Modelica trunk/Math/package.mo	2013-07-24 10:07:04.201916056 +0200
-@@ -12542,9 +12542,67 @@
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
+--- git/MSL/Modelica/Math/package.mo	2015-05-06 13:02:05.172474440 +0200
++++ "build/Modelica trunk/Math/package.mo"	2015-05-06 13:02:05.720477283 +0200
+@@ -13162,9 +13162,67 @@
  
    annotation (Documentation(info="<html>
  
@@ -210,7 +212,7 @@ diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.mo build/Model
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -12604,9 +12662,74 @@
+@@ -13224,9 +13282,74 @@
  
    annotation (Documentation(info="<html>
  
@@ -286,9 +288,10 @@ diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.mo build/Model
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.order build/Modelica trunk/Math/package.order
---- libraries/Modelica trunk/Modelica/Math/package.order	2013-05-16 12:08:21.352656731 +0200
-+++ build/Modelica trunk/Math/package.order	2013-07-24 10:05:34.234902259 +0200
+Only in build/Modelica trunk/Math: package.mo.orig
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
+--- git/MSL/Modelica/Math/package.order	2015-05-06 13:01:55.544424473 +0200
++++ "build/Modelica trunk/Math/package.order"	2015-05-06 13:02:05.724477304 +0200
 @@ -24,4 +24,6 @@
  baseIcon1
  baseIcon2
@@ -296,10 +299,10 @@ diff -u -x .svn -r libraries/Modelica trunk/Modelica/Math/package.order build/Mo
 +tempInterpol1_der
  tempInterpol2
 +tempInterpol2_der
-diff -u -x .svn -r libraries/Modelica trunk/Modelica/Media/Water/IF97_Utilities.mo build/Modelica trunk/Media/Water/IF97_Utilities.mo
---- libraries/Modelica trunk/Modelica/Media/Water/IF97_Utilities.mo	2013-05-29 06:06:39.790286700 +0200
-+++ build/Modelica trunk/Media/Water/IF97_Utilities.mo	2013-07-24 10:05:34.234902259 +0200
-@@ -7161,7 +7161,7 @@
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Media/Water/IF97_Utilities.mo "build/Modelica trunk/Media/Water/IF97_Utilities.mo"
+--- git/MSL/Modelica/Media/Water/IF97_Utilities.mo	2015-05-06 13:02:05.184474503 +0200
++++ "build/Modelica trunk/Media/Water/IF97_Utilities.mo"	2015-05-06 13:02:05.724477304 +0200
+@@ -7159,7 +7159,7 @@
         else region;
      aux.R := BaseIF97.data.RH2O;
      aux.p := p;
@@ -308,11 +311,11 @@ diff -u -x .svn -r libraries/Modelica trunk/Modelica/Media/Water/IF97_Utilities.
      if (aux.region == 1) then
        g := BaseIF97.Basic.g1(p, T);
        aux.h := aux.R*aux.T*g.tau*g.gtau;
-Only in libraries/Modelica trunk/Modelica/Resources: BuildProjects
-Only in libraries/Modelica trunk/Modelica/Resources: Library
---- svn/MSL trunk/Modelica/package.mo	2013-11-09 15:11:25.009064393 +0100
-+++ build/Modelica trunk/package.mo	2013-11-09 15:19:16.285222869 +0100
-@@ -7765,12 +7765,12 @@
+Only in build/Modelica trunk/Media/Water: IF97_Utilities.mo.orig
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
+--- git/MSL/Modelica/package.mo	2015-05-06 13:02:05.220474689 +0200
++++ "build/Modelica trunk/package.mo"	2015-05-06 13:05:36.905566978 +0200
+@@ -7824,12 +7824,12 @@
  
  annotation (
  preferredView="info",
@@ -321,7 +324,7 @@ Only in libraries/Modelica trunk/Modelica/Resources: Library
  versionBuild=0,
  versionDate="2013-08-14",
  dateModified = "2013-08-14 08:44:41Z",
- revisionId="$Id:: package.mo 7855 2014-09-14 09:58:54Z #$",
+ revisionId="$Id::                                       $",
 -uses(Complex(version="3.2.1"), ModelicaServices(version="3.2.1")),
 +uses(Complex(version="trunk"), ModelicaServices(version="trunk")),
  conversion(
