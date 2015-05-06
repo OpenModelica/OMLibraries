@@ -132,13 +132,18 @@ upload: config.done .remote/control-files .remote/pool .remote/release-command
 	./check-debian.sh
 
 Modelica\ 3.2.1.patch:
-	diff -u -x .svn -x .git -x Library -r git/MSL/Modelica build/Modelica\ 3.2.1 > "$@"
-
+	-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica build/Modelica\ 3.2.1 > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	mv "$@.tmp" "$@"
 Modelica\ 1.6.patch:
-	diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6" "build/Modelica 1.6" > "$@"
-
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6" "build/Modelica 1.6" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	mv "$@.tmp" "$@"
 Modelica\ trunk.patch:
-	diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica trunk" > "$@"
-
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica trunk" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	mv "$@.tmp" "$@"
 ModelicaTest\ trunk.patch:
-	diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaTest" "build/ModelicaTest trunk" > "$@"
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaTest" "build/ModelicaTest trunk" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	mv "$@.tmp" "$@"
