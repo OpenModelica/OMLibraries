@@ -600,6 +600,7 @@
       "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
     },
     {
+      "core": true,
       "dest": "ThermoSysPro",
       "rev": 21164,
       "targets": [
