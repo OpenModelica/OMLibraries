@@ -17,7 +17,7 @@ if test -d "$DEST"; then
 fi
 if ! test -d "$DEST"; then
   echo "[$DEST] does not exist: cloning [$URL]"
-  (git clone "$URL" "$DEST" || (sleep 10 && git clone "$URL" "$DEST") || (sleep 30 && git clone "$URL" "$DEST")) || exit 1
+  (git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST" || (sleep 10 && git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST") || (sleep 30 && git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST")) || exit 1
   # In case of CRLF properties, etc
   (cd "$DEST" && git reset --hard)
   (cd "$DEST" && git clean -fdx)
