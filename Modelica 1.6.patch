@@ -10,7 +10,6 @@ diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6/Constants.mo" "build
      "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
  
    // Constants of nature
-Only in build/Modelica 1.6: Constants.mo.rej
 diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6/SIunits.mo" "build/Modelica 1.6/SIunits.mo"
 --- "git/MSL/Modelica 1.6/SIunits.mo"	2015-05-06 12:19:55.956057031 +0200
 +++ "build/Modelica 1.6/SIunits.mo"	2015-05-06 12:37:55.637173410 +0200
@@ -119,7 +118,6 @@ diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6/SIunits.mo" "build/M
            style(color=0, thickness=4)),
          Text(
            extent=[82, -7; 22, -67],
-Only in build/Modelica 1.6: SIunits.mo.rej
 diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6/Thermal/HeatTransfer.mo" "build/Modelica 1.6/Thermal/HeatTransfer.mo"
 --- "git/MSL/Modelica 1.6/Thermal/HeatTransfer.mo"	2015-05-06 12:19:55.956057031 +0200
 +++ "build/Modelica 1.6/Thermal/HeatTransfer.mo"	2015-05-06 12:38:34.853355796 +0200

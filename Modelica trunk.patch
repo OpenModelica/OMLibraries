@@ -55,7 +55,6 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/
        output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables"});
-Only in build/Modelica trunk/Blocks: Sources.mo.orig
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Tables.mo "build/Modelica trunk/Blocks/Tables.mo"
 --- git/MSL/Modelica/Blocks/Tables.mo	2015-05-06 13:01:55.516424327 +0200
 +++ "build/Modelica trunk/Blocks/Tables.mo"	2015-05-06 13:02:05.716477263 +0200
@@ -288,7 +287,6 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-Only in build/Modelica trunk/Math: package.mo.orig
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
 --- git/MSL/Modelica/Math/package.order	2015-05-06 13:01:55.544424473 +0200
 +++ "build/Modelica trunk/Math/package.order"	2015-05-06 13:02:05.724477304 +0200
@@ -311,7 +309,6 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Media/Water/IF97_Utilitie
      if (aux.region == 1) then
        g := BaseIF97.Basic.g1(p, T);
        aux.h := aux.R*aux.T*g.tau*g.gtau;
-Only in build/Modelica trunk/Media/Water: IF97_Utilities.mo.orig
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
 --- git/MSL/Modelica/package.mo	2015-05-06 13:02:05.220474689 +0200
 +++ "build/Modelica trunk/package.mo"	2015-05-06 13:05:36.905566978 +0200
