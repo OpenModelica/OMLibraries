@@ -12,6 +12,7 @@ $(CORE_TARGET):
 	rm -rf $(BUILD_DIR) build
 	mkdir -p $(BUILD_DIR)
 	$(MAKE) $(CORE_LIBS)
+	$(MAKE) modelica3d
 	touch $@
 
 all: $(ALL_TARGET)
@@ -19,6 +20,7 @@ $(ALL_TARGET):
 	rm -rf $(BUILD_DIR) build
 	mkdir -p $(BUILD_DIR)
 	$(MAKE) $(ALL_LIBS)
+	$(MAKE) modelica3d
 	touch $@
 
 python-update: Makefile.numjobs config.done
