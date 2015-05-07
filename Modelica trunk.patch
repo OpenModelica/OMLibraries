@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/Modelica trunk/Blocks/Sources.mo"
---- git/MSL/Modelica/Blocks/Sources.mo	2015-05-06 13:02:05.144474295 +0200
-+++ "build/Modelica trunk/Blocks/Sources.mo"	2015-05-06 13:02:05.716477263 +0200
+--- git/MSL/Modelica/Blocks/Sources.mo	2015-05-06 23:05:39.055855898 +0200
++++ build/Modelica trunk/Blocks/Sources.mo	2015-05-06 23:05:39.647876189 +0200
 @@ -2335,7 +2335,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
@@ -56,8 +56,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables"});
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Tables.mo "build/Modelica trunk/Blocks/Tables.mo"
---- git/MSL/Modelica/Blocks/Tables.mo	2015-05-06 13:01:55.516424327 +0200
-+++ "build/Modelica trunk/Blocks/Tables.mo"	2015-05-06 13:02:05.716477263 +0200
+--- git/MSL/Modelica/Blocks/Tables.mo	2015-05-06 23:05:25.479390598 +0200
++++ build/Modelica trunk/Blocks/Tables.mo	2015-05-06 23:05:39.651876327 +0200
 @@ -58,7 +58,7 @@
        input Integer icol;
        input Real u;
@@ -140,8 +140,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Tables.mo "build/M
        input Real der_u2;
        output Real der_y;
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2015-05-06 13:02:05.172474440 +0200
-+++ "build/Modelica trunk/Math/package.mo"	2015-05-06 13:02:05.720477283 +0200
+--- git/MSL/Modelica/Math/package.mo	2015-05-06 23:05:39.079856721 +0200
++++ build/Modelica trunk/Math/package.mo	2015-05-06 23:05:39.655876463 +0200
 @@ -13162,9 +13162,67 @@
  
    annotation (Documentation(info="<html>
@@ -288,8 +288,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2015-05-06 13:01:55.544424473 +0200
-+++ "build/Modelica trunk/Math/package.order"	2015-05-06 13:02:05.724477304 +0200
+--- git/MSL/Modelica/Math/package.order	2015-05-06 23:05:25.499391283 +0200
++++ build/Modelica trunk/Math/package.order	2015-05-06 23:05:39.655876463 +0200
 @@ -24,4 +24,6 @@
  baseIcon1
  baseIcon2
@@ -298,8 +298,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Media/Water/IF97_Utilities.mo "build/Modelica trunk/Media/Water/IF97_Utilities.mo"
---- git/MSL/Modelica/Media/Water/IF97_Utilities.mo	2015-05-06 13:02:05.184474503 +0200
-+++ "build/Modelica trunk/Media/Water/IF97_Utilities.mo"	2015-05-06 13:02:05.724477304 +0200
+--- git/MSL/Modelica/Media/Water/IF97_Utilities.mo	2015-05-06 23:05:39.091857132 +0200
++++ build/Modelica trunk/Media/Water/IF97_Utilities.mo	2015-05-06 23:05:39.655876463 +0200
 @@ -7159,7 +7159,7 @@
         else region;
      aux.R := BaseIF97.data.RH2O;
@@ -310,8 +310,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Media/Water/IF97_Utilitie
        g := BaseIF97.Basic.g1(p, T);
        aux.h := aux.R*aux.T*g.tau*g.gtau;
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/MSL/Modelica/package.mo	2015-05-06 13:02:05.220474689 +0200
-+++ "build/Modelica trunk/package.mo"	2015-05-06 13:05:36.905566978 +0200
+--- git/MSL/Modelica/package.mo	2015-05-06 23:05:39.119858092 +0200
++++ build/Modelica trunk/package.mo	2015-05-06 23:05:39.659876600 +0200
 @@ -7824,12 +7824,12 @@
  
  annotation (

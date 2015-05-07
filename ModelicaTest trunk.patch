@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
 --- git/MSL/ModelicaTest/package.mo	2015-05-06 13:10:32.283072507 +0200
-+++ "build/ModelicaTest trunk/package.mo"	2015-05-06 13:11:19.007308844 +0200
++++ build/ModelicaTest trunk/package.mo	2015-05-06 13:11:19.007308844 +0200
 @@ -44,12 +44,12 @@
  
  
