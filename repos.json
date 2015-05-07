@@ -25,7 +25,6 @@
     "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
     "https://github.com/modelica-3rdparty/Thermocycle-library",
-    "https://github.com/modelica-3rdparty/ThermoPower",
     "https://github.com/modelica-3rdparty/Verif",
     "https://github.com/modelica-3rdparty/WheelsAndTires"
   ],
@@ -595,18 +594,32 @@
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
+      "core": true,
       "dest": "ThermoPower",
-      "rev": 384,
-      "url": "http://svn.code.sf.net/p/thermopower/svn/trunk"
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "e012268625dd1645fe5570cf31d64129d83a8192",
+      "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
       "core": true,
       "dest": "ThermoSysPro",
-      "rev": 21164,
-      "targets": [
-        "self"
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "maint/3.0"
+          },
+          "rev": "d4f9c3ed35f7520f82439eb6e9f4057ae0f82b73"
+        },
+        {
+          "options": {
+            "gitbranch": "master"
+          },
+          "rev": "51e7ea2d2e121ee640e7897335c294923f8eaeb0"
+        }
       ],
-      "url": "https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.1"
+      "url": "https://openmodelica.org/git/ThermoSysPro.git"
     },
     {
       "dest": "VehicleInterfaces",

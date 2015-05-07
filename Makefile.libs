@@ -1,8 +1,8 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150506_230544.core
-ALL_TARGET=$(BUILD_DIR)/20150506_230544.all
-CORE_LIBS=BioChem MSL ThermoSysPro
-OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+CORE_TARGET=$(BUILD_DIR)/20150507_131230.core
+ALL_TARGET=$(BUILD_DIR)/20150507_131230.all
+CORE_LIBS=BioChem MSL ThermoPower ThermoSysPro
+OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 ADGenKinetics:
 	# Building git/ADGenKinetics
@@ -356,7 +356,7 @@ MSL:
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo '' > "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20150506-090834~git~master-om4' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20150506-090834~git~master-om5' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 	rm -rf "$(BUILD_DIR)/ModelicaTest trunk/.svn" "$(BUILD_DIR)/ModelicaTest trunk/.git"*
 Modelica3D:
@@ -625,22 +625,30 @@ SystemDynamics:
 	echo '2.1-7-gc58a26d' > "$(BUILD_DIR)/SystemDynamics 2.1.last_change"
 	rm -rf "$(BUILD_DIR)/SystemDynamics 2.1/.svn" "$(BUILD_DIR)/SystemDynamics 2.1/.git"*
 ThermoPower:
-	# Building svn/ThermoPower
-	./checkout-svn.sh 'svn/ThermoPower' 'http://svn.code.sf.net/p/thermopower/svn/trunk' '384'
+	# Building git/ThermoPower
+	./checkout-git.sh 'git/ThermoPower' 'https://github.com/modelica-3rdparty/ThermoPower.git' 'master' 'e012268625dd1645fe5570cf31d64129d83a8192'
 	test ! -d 'build//ThermoPower 3.1'
-	cp -a 'svn/ThermoPower/ThermoPower' "$(BUILD_DIR)/ThermoPower 3.1"
+	cp -a 'git/ThermoPower/ThermoPower' "$(BUILD_DIR)/ThermoPower 3.1"
 	echo '' > "$(BUILD_DIR)/ThermoPower 3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoPower 3.1.license"
-	echo '384' > "$(BUILD_DIR)/ThermoPower 3.1.last_change"
+	echo '3.1-20150326-182010~git~master' > "$(BUILD_DIR)/ThermoPower 3.1.last_change"
 	rm -rf "$(BUILD_DIR)/ThermoPower 3.1/.svn" "$(BUILD_DIR)/ThermoPower 3.1/.git"*
 ThermoSysPro:
-	# Building svn/ThermoSysPro
-	./checkout-svn.sh 'svn/ThermoSysPro' 'https://openmodelica.org/svn/OpenModelica/trunk/libraries/ThermoSysPro%203.1' '21164'
+	# Building git/ThermoSysPro
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'maint/3.0' 'd4f9c3ed35f7520f82439eb6e9f4057ae0f82b73'
+	test ! -d 'build//ThermoSysPro 3.0'
+	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.0"
+	echo '' > "$(BUILD_DIR)/ThermoSysPro 3.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.0.license"
+	echo '3.0+OSR-21-gd4f9c3e' > "$(BUILD_DIR)/ThermoSysPro 3.0.last_change"
+	rm -rf "$(BUILD_DIR)/ThermoSysPro 3.0/.svn" "$(BUILD_DIR)/ThermoSysPro 3.0/.git"*
+	# Building git/ThermoSysPro
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '51e7ea2d2e121ee640e7897335c294923f8eaeb0'
 	test ! -d 'build//ThermoSysPro 3.1'
-	cp -a 'svn/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
+	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
 	echo '' > "$(BUILD_DIR)/ThermoSysPro 3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
-	echo '21164' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
+	echo '3.1+OSR-4-g51e7ea2' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
 	rm -rf "$(BUILD_DIR)/ThermoSysPro 3.1/.svn" "$(BUILD_DIR)/ThermoSysPro 3.1/.git"*
 VehicleInterfaces:
 	# Building git/VehicleInterfaces
