@@ -336,6 +336,7 @@
       "url": "https://github.com/modelica/Modelica.git"
     },
     {
+      "core": true,
       "dest": "Modelica3D",
       "options": {
         "gitbranch": "master"
