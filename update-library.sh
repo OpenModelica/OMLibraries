@@ -208,18 +208,35 @@ for f in $LIBS "$@"; do
       exit 1
     fi
     PATCHREV=`echo -om$PATCHREV`
+  else
+    PATCHREV=""
+  fi
+
+  if echo "$NO_DEPENDENCY" | grep -q "^$LIB\$"; then
+    # Avoid cyclic dependencies
+    echo > "$BUILD/$NAME.uses"
+    echo "echo > \"\$(BUILD_DIR)/$NAME.uses\"" >> "$CMD_REPLAY"
+  else
     # Do this a second time after patching for updated uses-annotations... Yes, a bit weird
     if test -d "$BUILD/$NAME$EXT"; then
       ./get-version.sh "$OMC" "$BUILD" "$BUILD/$NAME$EXT/package.mo" "$LIB" "$ENCODING" "$STD"
     else
       ./get-version.sh "$OMC" "$BUILD" "$BUILD/$NAME$EXT" "$LIB" "$ENCODING" "$STD"
     fi
-  else
-    PATCHREV=""
+
+    cp "$BUILD/$NAME.uses" "$BUILD/$NAME.uses.1"
+
+    bash bad-uses.sh "$BUILD/$NAME.uses"
+    HAS_USES_LINE=0
+    while read line
+    do
+      echo "echo '$line' >> \"\$(BUILD_DIR)/$NAME.uses\"" >> "$CMD_REPLAY"
+      HAS_USES_LINE=1
+    done < "$BUILD/$NAME.uses"
+    if test "$HAS_USES_LINE" = 0; then
+      echo "echo '' > \"\$(BUILD_DIR)/$NAME.uses\"" >> "$CMD_REPLAY"
+    fi
   fi
-  NO_DEPENDENCY_USES=`echo "$NO_DEPENDENCY" | grep -q "^$LIB\$"`
-  echo "$NO_DEPENDENCY_USES" > "$BUILD/$NAME.uses"
-  echo "echo '$NO_DEPENDENCY_USES' > \"\$(BUILD_DIR)/$NAME.uses\"" >> "$CMD_REPLAY"
   # Add custom patch levels
   if echo "$PATCHLEVEL" | grep -q ":"; then
     PATCHLEVELTHIS=`echo "$PATCHLEVEL" | grep -o "$LIB:[A-Za-z0-9_-]*" | cut -d: -f2`

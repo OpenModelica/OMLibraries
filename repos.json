@@ -42,6 +42,10 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.2",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92"
   },
+  "bad-uses": [
+    "DataFiles 1.0",
+    "ModelManagement 1.1.1"
+  ],
   "repos": [
     {
       "dest": "ADGenKinetics",
@@ -102,8 +106,7 @@
     {
       "dest": "BrineProp",
       "options": {
-        "gitbranch": "master",
-        "no-dependencies": "BrineProp"
+        "gitbranch": "master"
       },
       "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
@@ -192,8 +195,7 @@
     {
       "dest": "FastBuildings",
       "options": {
-        "gitbranch": "master",
-        "no-dependencies": "FastBuildings"
+        "gitbranch": "master"
       },
       "rev": "1f5cfebc2f42c13e272bff639ffa3449d5740bf7",
       "url": "https://github.com/modelica-3rdparty/FastBuildings.git"
@@ -201,8 +203,7 @@
     {
       "dest": "FaultTriggering",
       "options": {
-        "gitbranch": "master",
-        "no-dependencies": "FaultTriggering"
+        "gitbranch": "master"
       },
       "rev": "10c226b7e5b2af901b356ac437c90d6616a6e9a4",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
@@ -665,8 +666,7 @@
     {
       "dest": "open-bldc-modelica",
       "options": {
-        "gitbranch": "master",
-        "no-dependencies": "OpenBLDC"
+        "gitbranch": "master"
       },
       "rev": "7817cd703b88fc1f433269d32c31e75eb50a21c6",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
