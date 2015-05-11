@@ -79,7 +79,10 @@ clean:
 
 check-latest: config.done Makefile.numjobs
 	@echo "Looking for more recent versions of packages"
+	rm -rf $(BUILD_DIR) build
+	mkdir -p $(BUILD_DIR)
 	./update-library.py -n `cat Makefile.numjobs` --check-latest
+	rm -rf .customBuild
 add-missing: config.done Makefile.numjobs
 	@echo "Adding missing github repositories using trunk / latest revision"
 	./update-library.py -n `cat Makefile.numjobs` --add-missing

@@ -23,14 +23,15 @@ with open("repos.json") as f:
   jsondata = simplejson.load(f)
 repos = jsondata['repos']
 
-def updateCommand(r):
+def updateCommand(r, customBuild=None):
+  buildDir = customBuild or options.build
   if r.get('multitarget'):
     dest = 'git/'+r['dest']
-    commands = ['sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(multi),"GIT",r['url'],multi['rev'],dest,targets(multi)) for multi in r['multitarget']]
+    commands = ['sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,buildDir,opts(multi),"GIT",r['url'],multi['rev'],dest,targets(multi)) for multi in r['multitarget']]
     cmd = " && ".join(commands)
   else:
     dest = ("git" if r['url'].endswith(".git") else "svn")+'/'+r['dest']
-    cmd = 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,options.build,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],dest,targets(r))
+    cmd = 'sh ./update-library.sh --omc "%s" --build-dir "%s" %s %s "%s" %s "%s" %s' % (options.omc,buildDir,opts(r),"GIT" if r['url'].endswith(".git") else "SVN",r['url'],r['rev'],dest,targets(r))
   try:
     os.remove(dest+'.cmd')
   except:
@@ -109,33 +110,35 @@ def checkGithub(ghs,urls):
 
 def checkLatest(repo):
   msg = None
-  options = repo.get('options') or {}
   if repo['url'].endswith('git'):
-    if options.get('gittag'):
-      return
-    branch = options.get('gitbranch') or 'release'
-    oldrev = repo['rev']
-    newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
-    if oldrev != newrev:
-      repo['rev'] = newrev
-      if 0 != os.system(updateCommand(repo)):
-        repo['rev'] = oldrev
-        msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
-      elif options.get('automatic-updates') == 'no':
-        repo['rev'] = oldrev
-        msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
-      else:
-        msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
-      logmsg = ''
-      if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
-        commiturl = repo['url'][:-4]
-        cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/commit/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
-        logmsg = subprocess.check_output(cmd, shell=True).strip()
-      else:
-        logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
-      logmsg = logmsg.decode('utf-8','ignore')
-      msg = msg + "\n  " + logmsg + "\n"
+    for r in repo['multitarget'] if repo.get('multitarget') else [repo]:
+      options = r.get('options') or {}
+      if options.get('gittag'):
+        continue
+      branch = options.get('gitbranch') or 'release'
+      oldrev = r['rev']
+      newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
+      if oldrev != newrev:
+        r['rev'] = newrev
+        if 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s" % repo['dest'])):
+          r['rev'] = oldrev
+          msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
+        elif options.get('automatic-updates') == 'no':
+          r['rev'] = oldrev
+          msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
+        else:
+          msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
+        logmsg = ''
+        if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
+          commiturl = repo['url'][:-4]
+          cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/commit/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
+          logmsg = subprocess.check_output(cmd, shell=True).strip()
+        else:
+          logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
+        logmsg = logmsg.decode('utf-8','ignore')
+        msg = msg + "\n  " + logmsg + "\n"
   else:
+    options = repo.get('options') or {}
     intertrac = options.get('intertrac') or ''
     svncmd = "svn --non-interactive --username anonymous"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
