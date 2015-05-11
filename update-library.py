@@ -120,7 +120,7 @@ def checkLatest(repo):
       newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
       if oldrev != newrev:
         r['rev'] = newrev
-        if 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s" % repo['dest'])):
+        if 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
           r['rev'] = oldrev
           msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
         elif options.get('automatic-updates') == 'no':

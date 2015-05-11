@@ -224,8 +224,7 @@ for f in $LIBS "$@"; do
       ./get-version.sh "$OMC" "$BUILD" "$BUILD/$NAME$EXT" "$LIB" "$ENCODING" "$STD"
     fi
 
-    cp "$BUILD/$NAME.uses" "$BUILD/$NAME.uses.1"
-
+    test -f "$BUILD/$NAME.uses" || touch "$BUILD/$NAME.uses"
     bash bad-uses.sh "$BUILD/$NAME.uses"
     HAS_USES_LINE=0
     while read line
@@ -285,7 +284,7 @@ for f in $LIBS "$@"; do
     if false && grep -q 'revisionId *= *"$Id:: *$"' "$TOPLEVEL_FILE"; then
       # sed -i on OSX requires the suffix
       REPLACE_CMD="s/revisionId *= *\"$Id:: *\$\"/revisionId = \"$CHANGED\"/"
-      sed -i= "$REPLACE_CMD" "$TOPLEVEL_FILE"
+      sed -i= "$REPLACE_CMD" "$TOPLEVEL_FILE" || exit 1
       echo "sed -i= '$REPLACE_CMD' \"$TOPLEVEL_FILE_MAKEFILE\"" >> "$CMD_REPLAY"
     fi
   fi
