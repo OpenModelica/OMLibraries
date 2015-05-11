@@ -272,7 +272,24 @@ for f in $LIBS "$@"; do
     echo "$CHANGED" > "$BUILD/$NAME.last_change"
     echo "echo '$CHANGED' > \"\$(BUILD_DIR)/$NAME.last_change\"" >> "$CMD_REPLAY"
     cat "$BUILD/$NAME.last_change"
+
+    # Fix svn $Id::
+    if test -d "$BUILD/$NAME$EXT"; then
+      TOPLEVEL_FILE="$BUILD/$NAME$EXT/package.mo"
+      TOPLEVEL_FILE_MAKEFILE="\$(BUILD_DIR)/$NAME$EXT/package.mo"
+    else
+      TOPLEVEL_FILE="$BUILD/$NAME$EXT"
+      TOPLEVEL_FILE_MAKEFILE="\$(BUILD_DIR)/$NAME$EXT"
+    fi
+    # Skip fixing it. It makes the test suite harder to maintain, for very little gain
+    if false && grep -q 'revisionId *= *"$Id:: *$"' "$TOPLEVEL_FILE"; then
+      # sed -i on OSX requires the suffix
+      REPLACE_CMD="s/revisionId *= *\"$Id:: *\$\"/revisionId = \"$CHANGED\"/"
+      sed -i= "$REPLACE_CMD" "$TOPLEVEL_FILE"
+      echo "sed -i= '$REPLACE_CMD' \"$TOPLEVEL_FILE_MAKEFILE\"" >> "$CMD_REPLAY"
+    fi
   fi
+
   if ! test -z "$BREAKS"; then
     echo "$BREAKS" > "$BUILD/$NAME.breaks"
     echo "echo '$BREAKS' > \"\$(BUILD_DIR)/$NAME.breaks\"" >> "$CMD_REPLAY"
