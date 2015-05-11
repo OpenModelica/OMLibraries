@@ -1,4 +1,8 @@
 {
+  "bad-uses": [
+    "DataFiles 1.0",
+    "ModelManagement 1.1.1"
+  ],
   "github-ignore": [
     "https://github.com/modelica/Modelica",
     "https://github.com/modelica/Modelica_EnergyStorages",
@@ -42,10 +46,6 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.2",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92"
   },
-  "bad-uses": [
-    "DataFiles 1.0",
-    "ModelManagement 1.1.1"
-  ],
   "repos": [
     {
       "dest": "ADGenKinetics",
@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3f165b8a0a34eeaff10c1aa84f2fe5fa8ab89e82",
+      "rev": "4efb6608345fbc714ad285e7ff989e20f73e8abb",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "6c6b3aadc531d0ddcb26db8649680f5f91cbd8c3",
+      "rev": "57d3fab9dc781562d77807622172fb53ea97297c",
       "targets": [
         "Buildings latest"
       ],
@@ -172,7 +172,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0d88e7d2f93c288dc8e5475b93ea3551032dadef",
+      "rev": "6ebdae23f99c21ad4394deb5a1c5683e3e18fcea",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -324,7 +324,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "df78006a75deee352e04d64227f31aca3a40994a",
+          "rev": "6c5de73996a56837ab3c4cbcb7d86100c5d45f68",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -362,7 +362,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e205f2dc8cd23e0dcfaac6148ede89c2d61780f0",
+      "rev": "42831efa24fd5d6104d2b5e6737b0a8930e71764",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -390,6 +390,14 @@
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
+      "dest": "Modelica_EnergyStorages",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9f057365232364e31a31a8e525f96284b98c7de3",
+      "url": "https://github.com/modelica/Modelica_EnergyStorages.git"
+    },
+    {
       "dest": "Modelica_LinearSystems2",
       "options": {
         "gitbranch": "master"
@@ -401,25 +409,6 @@
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
-      "dest": "Modelica_Synchronous",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "d0f5ee57bc7b639738e88026674a87343b33dbe1",
-      "targets": [
-        "self"
-      ],
-      "url": "https://github.com/modelica/Modelica_Synchronous.git"
-    },
-    {
-      "dest": "Modelica_EnergyStorages",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "9f057365232364e31a31a8e525f96284b98c7de3",
-      "url": "https://github.com/modelica/Modelica_EnergyStorages.git"
-    },
-    {
       "dest": "Modelica_StateGraph2",
       "options": {
         "encoding": "Windows-1252"
@@ -429,6 +418,17 @@
         "self"
       ],
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2"
+    },
+    {
+      "dest": "Modelica_Synchronous",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "d0f5ee57bc7b639738e88026674a87343b33dbe1",
+      "targets": [
+        "self"
+      ],
+      "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
       "dest": "MotorcycleDynamics",
@@ -660,7 +660,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "098aeb71a9f2d675794e38a4b227c83509d3a2f4",
+      "rev": "52be25b85a7c54f173bc8263031e5fa08ce90514",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
