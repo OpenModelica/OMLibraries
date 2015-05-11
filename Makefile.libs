@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150511_230248.core
-ALL_TARGET=$(BUILD_DIR)/20150511_230248.all
+CORE_TARGET=$(BUILD_DIR)/20150511_231222.core
+ALL_TARGET=$(BUILD_DIR)/20150511_231222.all
 CORE_LIBS=BioChem MSL Modelica3D ThermoPower ThermoSysPro
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -264,13 +264,13 @@ MSL:
 	echo 'omlibrary-msl31' > "$(BUILD_DIR)/ModelicaServices 1.0.breaks"
 	rm -rf "$(BUILD_DIR)/ModelicaServices 1.0/.svn" "$(BUILD_DIR)/ModelicaServices 1.0/.git"*
 	# Building git/MSL
-	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'maint/3.2.1' '8c47cb00163bc8d9e74ecc4acecb7ebbe370921d'
+	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'maint/3.2.1' 'e13571071ab06830096ec8e6ce77b851247b4fe3'
 	test ! -f 'build//Complex 3.2.1.mo'
 	cp -a 'git/MSL/Complex.mo' "$(BUILD_DIR)/Complex 3.2.1.mo"
 	rm -rf "$(BUILD_DIR)/Complex 3.2.1.mo/Resources/Library"
 	echo '' > "$(BUILD_DIR)/Complex 3.2.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Complex 3.2.1.license"
-	echo '3.2.1-20150505-075124~git~maint-3.2.1-om1' > "$(BUILD_DIR)/Complex 3.2.1.last_change"
+	echo '3.2.1-20150511-210923~git~maint-3.2.1-om1' > "$(BUILD_DIR)/Complex 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex 3.2.1.breaks"
 	rm -rf "$(BUILD_DIR)/Complex 3.2.1.mo/.svn" "$(BUILD_DIR)/Complex 3.2.1.mo/.git"*
 	test ! -d 'build//Modelica 3.2.1'
@@ -280,7 +280,7 @@ MSL:
 	echo 'Complex 3.2.1' >> "$(BUILD_DIR)/Modelica 3.2.1.uses"
 	echo 'ModelicaServices 3.2.1' >> "$(BUILD_DIR)/Modelica 3.2.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.2.1.license"
-	echo '3.2.1-20150505-075124~git~maint-3.2.1-om1' > "$(BUILD_DIR)/Modelica 3.2.1.last_change"
+	echo '3.2.1-20150511-210923~git~maint-3.2.1-om1' > "$(BUILD_DIR)/Modelica 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica 3.2.1.breaks"
 	rm -rf "$(BUILD_DIR)/Modelica 3.2.1/.svn" "$(BUILD_DIR)/Modelica 3.2.1/.git"*
 	test ! -d 'build//ModelicaReference'
@@ -288,7 +288,7 @@ MSL:
 	rm -rf "$(BUILD_DIR)/ModelicaReference/Resources/Library"
 	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference.license"
-	echo '20150505-075124~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaReference.last_change"
+	echo '20150511-210923~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaReference.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference.breaks"
 	rm -rf "$(BUILD_DIR)/ModelicaReference/.svn" "$(BUILD_DIR)/ModelicaReference/.git"*
 	test ! -d 'build//ModelicaServices 3.2.1'
@@ -297,7 +297,7 @@ MSL:
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices 3.2.1.patch'
 	echo > "$(BUILD_DIR)/ModelicaServices 3.2.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices 3.2.1.license"
-	echo '3.2.1-20150505-075124~git~maint-3.2.1-om1' > "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"
+	echo '3.2.1-20150511-210923~git~maint-3.2.1-om1' > "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices 3.2.1.breaks"
 	rm -rf "$(BUILD_DIR)/ModelicaServices 3.2.1/.svn" "$(BUILD_DIR)/ModelicaServices 3.2.1/.git"*
 	test ! -d 'build//ModelicaTest 3.2.1'
@@ -305,7 +305,7 @@ MSL:
 	rm -rf "$(BUILD_DIR)/ModelicaTest 3.2.1/Resources/Library"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ModelicaTest 3.2.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest 3.2.1.license"
-	echo '3.2.1-20150505-075124~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaTest 3.2.1.last_change"
+	echo '3.2.1-20150511-210923~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaTest 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest 3.2.1.breaks"
 	rm -rf "$(BUILD_DIR)/ModelicaTest 3.2.1/.svn" "$(BUILD_DIR)/ModelicaTest 3.2.1/.git"*
 	test ! -f 'build//ObsoleteModelica3.mo'
@@ -313,7 +313,7 @@ MSL:
 	rm -rf "$(BUILD_DIR)/ObsoleteModelica3.mo/Resources/Library"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ObsoleteModelica3.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ObsoleteModelica3.license"
-	echo '3.2.1-20150505-075124~git~maint-3.2.1' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
+	echo '3.2.1-20150511-210923~git~maint-3.2.1' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ObsoleteModelica3.breaks"
 	rm -rf "$(BUILD_DIR)/ObsoleteModelica3.mo/.svn" "$(BUILD_DIR)/ObsoleteModelica3.mo/.git"*
 	# Building git/MSL
