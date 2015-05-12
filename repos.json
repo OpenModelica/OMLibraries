@@ -661,7 +661,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "52be25b85a7c54f173bc8263031e5fa08ce90514",
+      "rev": "ed63feddfeb973eedae65b12527acdf33d612664",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
