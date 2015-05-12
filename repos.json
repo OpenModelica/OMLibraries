@@ -632,6 +632,7 @@
       "url": "https://github.com/modelica/VehicleInterfaces.git"
     },
     {
+      "core": true,
       "dest": "WasteWater",
       "options": {
         "gitbranch": "master"
