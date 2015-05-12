@@ -9,6 +9,16 @@ URL=$2
 GITBRANCH=$3
 REVISION=$4
 
+GIT_VERSION=`git --version | grep -o "[0-9.]*"`
+GIT_MAJOR=`echo $GIT_VERSION | cut -d. -f1`
+GIT_MINOR=`echo $GIT_VERSION | cut -d. -f2`
+
+if test "$GIT_MAJOR" -gt 1 || (test "$GIT_MAJOR" = 1 && test "$GIT_MINOR" -gt 7); then
+  SINGLE_BRANCH="--single-branch"
+else
+  SINGLE_BRANCH=""
+fi
+
 if test -d "$DEST"; then
   # Clean out any old mess
   (cd "$DEST" && git reset --hard)
@@ -17,7 +27,7 @@ if test -d "$DEST"; then
 fi
 if ! test -d "$DEST"; then
   echo "[$DEST] does not exist: cloning [$URL]"
-  (git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST" || (sleep 10 && git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST") || (sleep 30 && git clone --branch "$GITBRANCH" --single-branch "$URL" "$DEST")) || exit 1
+  (git clone --branch "$GITBRANCH" $SINGLE_BRANCH "$URL" "$DEST" || (sleep 10 && git clone --branch "$GITBRANCH" $SINGLE_BRANCH "$URL" "$DEST") || (sleep 30 && git clone --branch "$GITBRANCH" $SINGLE_BRANCH "$URL" "$DEST")) || exit 1
   # In case of CRLF properties, etc
   (cd "$DEST" && git reset --hard)
   (cd "$DEST" && git clean -fdx)
