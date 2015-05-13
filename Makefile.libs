@@ -1,8 +1,8 @@
-.PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150512_190240.core
-ALL_TARGET=$(BUILD_DIR)/20150512_190240.all
+.PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+CORE_TARGET=$(BUILD_DIR)/20150513_155350.core
+ALL_TARGET=$(BUILD_DIR)/20150513_155350.all
 CORE_LIBS=BioChem MSL Modelica3D ThermoPower ThermoSysPro WasteWater
-OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 ADGenKinetics:
 	# Building git/ADGenKinetics
@@ -87,6 +87,15 @@ Buildings-release:
 	echo 'buildings' > "$(BUILD_DIR)/Buildings 2.0.0.license"
 	echo '2.0.0-20150504-103547~git~release' > "$(BUILD_DIR)/Buildings 2.0.0.last_change"
 	rm -rf "$(BUILD_DIR)/Buildings 2.0.0/.svn" "$(BUILD_DIR)/Buildings 2.0.0/.git"*
+Chemical:
+	# Building git/Chemical
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '7c781836ae9fece630bbe1f873bd0d921a66e0a1'
+	test ! -d 'build//Chemical 1.1.0alpha'
+	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0alpha"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0alpha.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0alpha.license"
+	echo '20150513-141202~git~master' > "$(BUILD_DIR)/Chemical 1.1.0alpha.last_change"
+	rm -rf "$(BUILD_DIR)/Chemical 1.1.0alpha/.svn" "$(BUILD_DIR)/Chemical 1.1.0alpha/.git"*
 ComplexLib:
 	# Building git/ComplexLib
 	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
@@ -542,7 +551,7 @@ PowerSystems:
 	cp -a 'git/PowerSystems/PowerSystems 0.4.0' "$(BUILD_DIR)/PowerSystems 0.4.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/PowerSystems 0.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 0.4.0.license"
-	echo '0.4.0-20150314-135537~git~release' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
+	echo '0.4.0' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
 	rm -rf "$(BUILD_DIR)/PowerSystems 0.4.0/.svn" "$(BUILD_DIR)/PowerSystems 0.4.0/.git"*
 PowerSystems-latest:
 	# Building git/PowerSystems-latest
@@ -599,6 +608,15 @@ RealTimeCoordinationLibrary:
 	echo '1.0.2-25-g655ac1a' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.last_change"
 	rm -rf "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/.svn" "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/.git"*
 	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/package.encoding"
+ScalableTestSuite:
+	# Building git/ScalableTestSuite
+	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/modelica-3rdparty/ScalableTestSuite.git' 'master' 'c01684867871459606212ae4518518d1570755da'
+	test ! -d 'build//ScalableTestSuite 1.0.0'
+	cp -a 'git/ScalableTestSuite/ScalableTestSuite' "$(BUILD_DIR)/ScalableTestSuite 1.0.0"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ScalableTestSuite 1.0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ScalableTestSuite 1.0.0.license"
+	echo '1.0.0-3-gc016848' > "$(BUILD_DIR)/ScalableTestSuite 1.0.0.last_change"
+	rm -rf "$(BUILD_DIR)/ScalableTestSuite 1.0.0/.svn" "$(BUILD_DIR)/ScalableTestSuite 1.0.0/.git"*
 Servomechanisms:
 	# Building git/Servomechanisms
 	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' '22e1874ef9ad46156617817c67a4fb1238621bf5'
@@ -666,7 +684,7 @@ VehicleInterfaces:
 	cp -a 'git/VehicleInterfaces/VehicleInterfaces 1.2.2' "$(BUILD_DIR)/VehicleInterfaces 1.2.2"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/VehicleInterfaces 1.2.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.license"
-	echo '1.2.2-20140630-174808~git~release' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
+	echo '1.2.2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
 	rm -rf "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.svn" "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.git"*
 WasteWater:
 	# Building git/WasteWater
@@ -675,7 +693,7 @@ WasteWater:
 	cp -a 'git/WasteWater/WasteWater' "$(BUILD_DIR)/WasteWater 2.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/WasteWater 2.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/WasteWater 2.1.0.license"
-	echo '2.1.0-20150312-111716~git~master' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
+	echo '2.1.0-8-g90ff44a' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
 	rm -rf "$(BUILD_DIR)/WasteWater 2.1.0/.svn" "$(BUILD_DIR)/WasteWater 2.1.0/.git"*
 XogenyTest:
 	# Building git/XogenyTest
@@ -693,7 +711,7 @@ msgpack-modelica:
 	cp -a 'git/msgpack-modelica/MessagePack' "$(BUILD_DIR)/MessagePack 0.1"
 	echo '' > "$(BUILD_DIR)/MessagePack 0.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/MessagePack 0.1.license"
-	echo '0.1-20150412-164320~git~master' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
+	echo '0.1-11-g6ce2ca6' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
 	rm -rf "$(BUILD_DIR)/MessagePack 0.1/.svn" "$(BUILD_DIR)/MessagePack 0.1/.git"*
 netCDF-DataReader:
 	# Building git/netCDF-DataReader

@@ -136,6 +136,14 @@
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
     },
     {
+      "dest": "Chemical",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "7c781836ae9fece630bbe1f873bd0d921a66e0a1",
+      "url": "https://github.com/modelica-3rdparty/Chemical.git"
+    },
+    {
       "dest": "ComplexLib",
       "options": {
         "gitbranch": "master"
@@ -569,6 +577,14 @@
         "self"
       ],
       "url": "https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git"
+    },
+    {
+      "dest": "ScalableTestSuite",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "c01684867871459606212ae4518518d1570755da",
+      "url": "https://github.com/modelica-3rdparty/ScalableTestSuite.git"
     },
     {
       "dest": "Servomechanisms",
