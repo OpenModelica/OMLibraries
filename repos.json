@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6ebdae23f99c21ad4394deb5a1c5683e3e18fcea",
+      "rev": "f978a2babd113e78b8790364073de1509811422c",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -394,7 +394,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f4d92d5fc55f9db156fcc4522ec620d972b71432",
+      "rev": "edd9c870fd0d33c7c377a87183818924329e1425",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
