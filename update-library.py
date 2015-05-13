@@ -117,7 +117,7 @@ def checkLatest(repo):
         continue
       branch = options.get('gitbranch') or 'release'
       oldrev = r['rev']
-      newrev = subprocess.check_output('git ls-remote "%s" | grep "refs/heads/%s" | cut -f1' % (repo['url'],branch), shell=True).strip()
+      newrev = subprocess.check_output('git ls-remote "%s" | grep \'refs/heads/%s$\' | cut -f1' % (repo['url'],branch), shell=True).strip()
       if oldrev != newrev:
         r['rev'] = newrev
         if 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
