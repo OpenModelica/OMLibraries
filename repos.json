@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5b483a6ab1dafbd5e363c5040f862262891a4ed",
+      "rev": "065b52430a09e2be0e990cf85c966301abc64cd6",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6c5de73996a56837ab3c4cbcb7d86100c5d45f68",
+          "rev": "fa28052ccc86ef6b112558ae25f6cadb05044b39",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -583,7 +583,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c01684867871459606212ae4518518d1570755da",
+      "rev": "dc1c62b67ec0ff490e0c3e1f356e693e65a73239",
       "url": "https://github.com/modelica-3rdparty/ScalableTestSuite.git"
     },
     {
