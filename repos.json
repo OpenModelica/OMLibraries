@@ -595,6 +595,25 @@
       "url": "https://github.com/modelica-3rdparty/Servomechanisms.git"
     },
     {
+      "core": true,
+      "dest": "SiemensPower",
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "omctest"
+          },
+          "rev": "a544586b65e05ee4605a0a7ff4b9f3005cbe52f0"
+        },
+        {
+          "options": {
+            "gitbranch": "master"
+          },
+          "rev": "2bd9e367baaa8d44946897c3c3a32a4050ad2a2a"
+        }
+      ],
+      "url": "https://openmodelica.org/git/SiemensPower.git"
+    },
+    {
       "dest": "Spot",
       "options": {
         "gitbranch": "master"

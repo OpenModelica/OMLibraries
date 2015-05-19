@@ -1,7 +1,7 @@
-.PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150518_190305.core
-ALL_TARGET=$(BUILD_DIR)/20150518_190305.all
-CORE_LIBS=BioChem MSL Modelica3D ThermoPower ThermoSysPro WasteWater
+.PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
+CORE_TARGET=$(BUILD_DIR)/20150519_090446.core
+ALL_TARGET=$(BUILD_DIR)/20150519_090446.all
+CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 ADGenKinetics:
@@ -551,7 +551,7 @@ PowerSystems:
 	cp -a 'git/PowerSystems/PowerSystems 0.4.0' "$(BUILD_DIR)/PowerSystems 0.4.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/PowerSystems 0.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 0.4.0.license"
-	echo '0.4.0-20150314-135537~git~release' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
+	echo '0.4.0' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
 	rm -rf "$(BUILD_DIR)/PowerSystems 0.4.0/.svn" "$(BUILD_DIR)/PowerSystems 0.4.0/.git"*
 PowerSystems-latest:
 	# Building git/PowerSystems-latest
@@ -626,6 +626,23 @@ Servomechanisms:
 	echo 'modelica2' > "$(BUILD_DIR)/Servomechanisms 1.0.license"
 	echo '1.0-20140129-215129~git~master' > "$(BUILD_DIR)/Servomechanisms 1.0.last_change"
 	rm -rf "$(BUILD_DIR)/Servomechanisms 1.0/.svn" "$(BUILD_DIR)/Servomechanisms 1.0/.git"*
+SiemensPower:
+	# Building git/SiemensPower
+	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'omctest' 'a544586b65e05ee4605a0a7ff4b9f3005cbe52f0'
+	test ! -d 'build//SiemensPowerOMCtest'
+	cp -a 'git/SiemensPower/SiemensPowerOMCtest' "$(BUILD_DIR)/SiemensPowerOMCtest"
+	echo 'Modelica 3.1' >> "$(BUILD_DIR)/SiemensPowerOMCtest.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/SiemensPowerOMCtest.license"
+	echo '20150519-090014~git~omctest' > "$(BUILD_DIR)/SiemensPowerOMCtest.last_change"
+	rm -rf "$(BUILD_DIR)/SiemensPowerOMCtest/.svn" "$(BUILD_DIR)/SiemensPowerOMCtest/.git"*
+	# Building git/SiemensPower
+	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'master' '2bd9e367baaa8d44946897c3c3a32a4050ad2a2a'
+	test ! -d 'build//SiemensPower 2.2'
+	cp -a 'git/SiemensPower/SiemensPower' "$(BUILD_DIR)/SiemensPower 2.2"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/SiemensPower 2.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/SiemensPower 2.2.license"
+	echo '2.2-20150519-090124~git~master' > "$(BUILD_DIR)/SiemensPower 2.2.last_change"
+	rm -rf "$(BUILD_DIR)/SiemensPower 2.2/.svn" "$(BUILD_DIR)/SiemensPower 2.2/.git"*
 Spot:
 	# Building git/Spot
 	./checkout-git.sh 'git/Spot' 'https://github.com/modelica-3rdparty/Spot.git' 'master' '2f74417f1681570900a1ed373dcbe4b42634ec7b'
@@ -684,7 +701,7 @@ VehicleInterfaces:
 	cp -a 'git/VehicleInterfaces/VehicleInterfaces 1.2.2' "$(BUILD_DIR)/VehicleInterfaces 1.2.2"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/VehicleInterfaces 1.2.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.license"
-	echo '1.2.2-20140630-174808~git~release' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
+	echo '1.2.2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
 	rm -rf "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.svn" "$(BUILD_DIR)/VehicleInterfaces 1.2.2/.git"*
 WasteWater:
 	# Building git/WasteWater
@@ -693,7 +710,7 @@ WasteWater:
 	cp -a 'git/WasteWater/WasteWater' "$(BUILD_DIR)/WasteWater 2.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/WasteWater 2.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/WasteWater 2.1.0.license"
-	echo '2.1.0-20150312-111716~git~master' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
+	echo '2.1.0-8-g90ff44a' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
 	rm -rf "$(BUILD_DIR)/WasteWater 2.1.0/.svn" "$(BUILD_DIR)/WasteWater 2.1.0/.git"*
 XogenyTest:
 	# Building git/XogenyTest
@@ -711,7 +728,7 @@ msgpack-modelica:
 	cp -a 'git/msgpack-modelica/MessagePack' "$(BUILD_DIR)/MessagePack 0.1"
 	echo '' > "$(BUILD_DIR)/MessagePack 0.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/MessagePack 0.1.license"
-	echo '0.1-20150412-164320~git~master' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
+	echo '0.1-11-g6ce2ca6' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
 	rm -rf "$(BUILD_DIR)/MessagePack 0.1/.svn" "$(BUILD_DIR)/MessagePack 0.1/.git"*
 netCDF-DataReader:
 	# Building git/netCDF-DataReader
