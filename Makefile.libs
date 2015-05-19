@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150519_090446.core
-ALL_TARGET=$(BUILD_DIR)/20150519_090446.all
+CORE_TARGET=$(BUILD_DIR)/20150519_095917.core
+ALL_TARGET=$(BUILD_DIR)/20150519_095917.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -628,13 +628,21 @@ Servomechanisms:
 	rm -rf "$(BUILD_DIR)/Servomechanisms 1.0/.svn" "$(BUILD_DIR)/Servomechanisms 1.0/.git"*
 SiemensPower:
 	# Building git/SiemensPower
-	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'omctest' 'a544586b65e05ee4605a0a7ff4b9f3005cbe52f0'
-	test ! -d 'build//SiemensPowerOMCtest'
-	cp -a 'git/SiemensPower/SiemensPowerOMCtest' "$(BUILD_DIR)/SiemensPowerOMCtest"
-	echo 'Modelica 3.1' >> "$(BUILD_DIR)/SiemensPowerOMCtest.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/SiemensPowerOMCtest.license"
-	echo '20150519-090014~git~omctest' > "$(BUILD_DIR)/SiemensPowerOMCtest.last_change"
-	rm -rf "$(BUILD_DIR)/SiemensPowerOMCtest/.svn" "$(BUILD_DIR)/SiemensPowerOMCtest/.git"*
+	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'omctest' '73a3bfc6d2ddd72165bb0f3e7e9df48b643a5ed0'
+	test ! -d 'build//SiemensPower OMCtest'
+	cp -a 'git/SiemensPower/SiemensPower' "$(BUILD_DIR)/SiemensPower OMCtest"
+	echo 'Modelica 3.1' >> "$(BUILD_DIR)/SiemensPower OMCtest.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/SiemensPower OMCtest.license"
+	echo '20150519-092836~git~omctest' > "$(BUILD_DIR)/SiemensPower OMCtest.last_change"
+	rm -rf "$(BUILD_DIR)/SiemensPower OMCtest/.svn" "$(BUILD_DIR)/SiemensPower OMCtest/.git"*
+	# Building git/SiemensPower
+	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' '2.1/beta' '5ef2e38b64ff481801c0db19d52f0bef21f85f77'
+	test ! -d 'build//SiemensPower 2.1 beta'
+	cp -a 'git/SiemensPower/SiemensPower' "$(BUILD_DIR)/SiemensPower 2.1 beta"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/SiemensPower 2.1 beta.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/SiemensPower 2.1 beta.license"
+	echo '20150519-095758~git~2.1-beta' > "$(BUILD_DIR)/SiemensPower 2.1 beta.last_change"
+	rm -rf "$(BUILD_DIR)/SiemensPower 2.1 beta/.svn" "$(BUILD_DIR)/SiemensPower 2.1 beta/.git"*
 	# Building git/SiemensPower
 	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'master' '2bd9e367baaa8d44946897c3c3a32a4050ad2a2a'
 	test ! -d 'build//SiemensPower 2.2'

@@ -602,7 +602,13 @@
           "options": {
             "gitbranch": "omctest"
           },
-          "rev": "a544586b65e05ee4605a0a7ff4b9f3005cbe52f0"
+          "rev": "73a3bfc6d2ddd72165bb0f3e7e9df48b643a5ed0"
+        },
+        {
+          "options": {
+            "gitbranch": "2.1/beta"
+          },
+          "rev": "5ef2e38b64ff481801c0db19d52f0bef21f85f77"
         },
         {
           "options": {
