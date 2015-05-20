@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "57d3fab9dc781562d77807622172fb53ea97297c",
+      "rev": "ae270dab831b4b168da527cd423e01528e87a4ab",
       "targets": [
         "Buildings latest"
       ],
@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ba5f6c1b96d05520b8582d8a6fa1b70b41c93a13",
+      "rev": "e08e02c270aa666fd1eed81fe7236614bc8ac17f",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "246b7d21ad2b8a298468fbb6efedb47cb8618395",
+      "rev": "d77813f28c0218488a5da30152dc67c0ab4408d2",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -583,7 +583,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dc1c62b67ec0ff490e0c3e1f356e693e65a73239",
+      "rev": "c6319908d45ac97ffb10e96cd42654bce36ffb97",
       "url": "https://github.com/modelica-3rdparty/ScalableTestSuite.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed63feddfeb973eedae65b12527acdf33d612664",
+      "rev": "3d2cc8272abfbc4b667d8868f851bf3e11c6f00e",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
