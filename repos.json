@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "94aae0d1b2dcd98dd5b7df07c76fd679296ac508",
+      "rev": "da5e3538c2bedbcd93840c2b7f844649fb549ecf",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "ae270dab831b4b168da527cd423e01528e87a4ab",
+      "rev": "bc82efee7fe6b2b40c585981371b1a494d98bc77",
       "targets": [
         "Buildings latest"
       ],
@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e08e02c270aa666fd1eed81fe7236614bc8ac17f",
+      "rev": "862f567e2ff53dede43740027bc00dba40b47aec",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d77813f28c0218488a5da30152dc67c0ab4408d2",
+      "rev": "feda35987ef8b5e6d66f2c49f4de824811515750",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {

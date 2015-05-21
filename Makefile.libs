@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150520_190250.core
-ALL_TARGET=$(BUILD_DIR)/20150520_190250.all
+CORE_TARGET=$(BUILD_DIR)/20150521_190248.core
+ALL_TARGET=$(BUILD_DIR)/20150521_190248.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -24,12 +24,12 @@ ADMSL:
 	rm -rf "$(BUILD_DIR)/ADMSL/.svn" "$(BUILD_DIR)/ADMSL/.git"*
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '94aae0d1b2dcd98dd5b7df07c76fd679296ac508'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'da5e3538c2bedbcd93840c2b7f844649fb549ecf'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20150519-090223~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20150520-153100~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 	rm -rf "$(BUILD_DIR)/Annex60 0.1/.svn" "$(BUILD_DIR)/Annex60 0.1/.git"*
 BioChem:
 	# Building git/BioChem
@@ -70,12 +70,12 @@ BrineProp:
 	rm -rf "$(BUILD_DIR)/BrineProp 0.4.1/.svn" "$(BUILD_DIR)/BrineProp 0.4.1/.git"*
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'ae270dab831b4b168da527cd423e01528e87a4ab'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'bc82efee7fe6b2b40c585981371b1a494d98bc77'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo '' > "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20150519-111324~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20150520-164820~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	rm -rf "$(BUILD_DIR)/Buildings latest/.svn" "$(BUILD_DIR)/Buildings latest/.git"*
 Buildings-release:
 	# Building git/Buildings-release
@@ -89,13 +89,13 @@ Buildings-release:
 	rm -rf "$(BUILD_DIR)/Buildings 2.0.0/.svn" "$(BUILD_DIR)/Buildings 2.0.0/.git"*
 Chemical:
 	# Building git/Chemical
-	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'e08e02c270aa666fd1eed81fe7236614bc8ac17f'
-	test ! -d 'build//Chemical 1.1.0alpha'
-	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0alpha"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0alpha.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0alpha.license"
-	echo '20150520-021558~git~master' > "$(BUILD_DIR)/Chemical 1.1.0alpha.last_change"
-	rm -rf "$(BUILD_DIR)/Chemical 1.1.0alpha/.svn" "$(BUILD_DIR)/Chemical 1.1.0alpha/.git"*
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '862f567e2ff53dede43740027bc00dba40b47aec'
+	test ! -d 'build//Chemical 1.1.0'
+	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0.license"
+	echo '1.1.0-alpha-1-g862f567' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
+	rm -rf "$(BUILD_DIR)/Chemical 1.1.0/.svn" "$(BUILD_DIR)/Chemical 1.1.0/.git"*
 ComplexLib:
 	# Building git/ComplexLib
 	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
@@ -134,12 +134,12 @@ ExtendedPetriNets:
 	rm -rf "$(BUILD_DIR)/ExtendedPetriNets 1.0/.svn" "$(BUILD_DIR)/ExtendedPetriNets 1.0/.git"*
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'd77813f28c0218488a5da30152dc67c0ab4408d2'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'feda35987ef8b5e6d66f2c49f4de824811515750'
 	test ! -d 'build//ExternData'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData.license"
-	echo '20150519-235947~git~master' > "$(BUILD_DIR)/ExternData.last_change"
+	echo '20150520-092434~git~master' > "$(BUILD_DIR)/ExternData.last_change"
 	rm -rf "$(BUILD_DIR)/ExternData/.svn" "$(BUILD_DIR)/ExternData/.git"*
 ExternalMedia:
 	# Building git/ExternalMedia
