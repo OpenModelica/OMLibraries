@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "da5e3538c2bedbcd93840c2b7f844649fb549ecf",
+      "rev": "e764974d3c517935c478178bf5a6a909000e500f",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "862f567e2ff53dede43740027bc00dba40b47aec",
+      "rev": "f3428cfb506bca45ed1d3513c02606e71d6ecfae",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "feda35987ef8b5e6d66f2c49f4de824811515750",
+      "rev": "95a40d57db65b1a6b81865f4470ef2b8ada764c3",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ab314db33d4a9fda9793b16710a11d0a2e428275",
+          "rev": "2f18b89ecb603a8363fa2766a7b08e68a894540b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -394,7 +394,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "edd9c870fd0d33c7c377a87183818924329e1425",
+      "rev": "db912ba7e1317b8f6a776ccf9a19f69c77a9c477",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
