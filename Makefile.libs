@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150523_190318.core
-ALL_TARGET=$(BUILD_DIR)/20150523_190318.all
+CORE_TARGET=$(BUILD_DIR)/20150524_190237.core
+ALL_TARGET=$(BUILD_DIR)/20150524_190237.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -134,13 +134,13 @@ ExtendedPetriNets:
 	rm -rf "$(BUILD_DIR)/ExtendedPetriNets 1.0/.svn" "$(BUILD_DIR)/ExtendedPetriNets 1.0/.git"*
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '95a40d57db65b1a6b81865f4470ef2b8ada764c3'
-	test ! -d 'build//ExternData'
-	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ExternData.license"
-	echo '20150521-215711~git~master' > "$(BUILD_DIR)/ExternData.last_change"
-	rm -rf "$(BUILD_DIR)/ExternData/.svn" "$(BUILD_DIR)/ExternData/.git"*
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '396164fa708cc7c7e64da55ac0b3cba23939f790'
+	test ! -d 'build//ExternData 1.0.3-dev'
+	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.0.3-dev"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.0.3-dev.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.0.3-dev.license"
+	echo '20150523-095943~git~master' > "$(BUILD_DIR)/ExternData 1.0.3-dev.last_change"
+	rm -rf "$(BUILD_DIR)/ExternData 1.0.3-dev/.svn" "$(BUILD_DIR)/ExternData 1.0.3-dev/.git"*
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -386,12 +386,12 @@ ModelicaAdditions:
 	rm -rf "$(BUILD_DIR)/ModelicaAdditions 1.5/.svn" "$(BUILD_DIR)/ModelicaAdditions 1.5/.git"*
 ModelicaBook:
 	# Building git/ModelicaBook
-	./checkout-git.sh 'git/ModelicaBook' 'https://github.com/xogeny/ModelicaBook.git' 'master' '42831efa24fd5d6104d2b5e6737b0a8930e71764'
+	./checkout-git.sh 'git/ModelicaBook' 'https://github.com/xogeny/ModelicaBook.git' 'master' '0e670cfae4db653bd34ea777d6b56423e9be2c9f'
 	test ! -d 'build//ModelicaByExample'
 	cp -a 'git/ModelicaBook/ModelicaByExample' "$(BUILD_DIR)/ModelicaByExample"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ModelicaByExample.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaByExample.license"
-	echo '20150506-082825~git~master' > "$(BUILD_DIR)/ModelicaByExample.last_change"
+	echo '20150524-071059~git~master' > "$(BUILD_DIR)/ModelicaByExample.last_change"
 	rm -rf "$(BUILD_DIR)/ModelicaByExample/.svn" "$(BUILD_DIR)/ModelicaByExample/.git"*
 ModelicaCompliance:
 	# Building git/ModelicaCompliance
