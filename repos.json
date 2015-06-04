@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "63c39858a6d7eff91e3b62c9b952dd89fb906657",
+      "rev": "2f99ab1ec16cd10793f55c6be9c0bdbba5413e66",
       "targets": [
         "Buildings latest"
       ],
@@ -230,7 +230,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8ed14021c13d5c7181f4cc42695f6bb078b31611",
+      "rev": "5246c47bd76b542fc6ecdfc46b04cc57ee09a454",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
