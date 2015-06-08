@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "6a4d46cffcde1ea381d28322e219a4c7ca5eadf9",
+      "rev": "ba202a76a052e6be3f5757a77d5fa418025dbf91",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "47f7b63feff0bac91a2746e248a12acc87d41f22",
+      "rev": "9ad851a4576952eaaff620288037048393481b5f",
       "targets": [
         "Buildings latest"
       ],
@@ -313,7 +313,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "14bf4d486f4811a1b46fcc15d68d1ea7fca5f888",
+          "rev": "48943d87db45a6c312b5a5789d384acde44a934b",
           "targets": [
             "Complex",
             "Modelica",
@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "8e5c1bf91e8a0222b1b73b02062f0cc4ea8b9564",
+          "rev": "df482bba1ba962e29c9a53654852b62f59f0a5ad",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
