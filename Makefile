@@ -73,6 +73,7 @@ modelica3d-binary:
 	@test ! -z "$(RPATH_QMAKE)" || (echo You need to pass RPATH_QMAKE in order to run the modelica3d target; false)
 	@test ! -z "$(SHREXT)" || (echo You need to pass SHREXT in order to run the modelica3d target; false)
 	cd "$(MODELICA3D_DIR)" && mkdir -p build
+	test -z "$(MODELICA3D_TARGET)" || mkdir -p "$(BUILD_DIR)/../$(host_short)/"
 	cd "$(MODELICA3D_DIR)/build" && $(CMAKE_RPATH) -DCMAKE_VERBOSE_MAKEFILE:Bool=ON -DCMAKE_COLOR_MAKEFILE:Bool=OFF -DOSG_BACKEND=1 -DUSE_OMC=0 $(BOOST_INCLUDE) ..
 	$(MAKE) -C "$(MODELICA3D_DIR)/build"
 	cp -p "$(MODELICA3D_DIR)/build/backends/osg-gtk/libm3d-osg-gtk$(SHREXT)" "$(MODELICA3D_DIR)/build/lib/proc3d/libproc3d$(SHREXT)" "$(BUILD_DIR)/../$(host_short)"
