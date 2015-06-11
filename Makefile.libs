@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150610_190234.core
-ALL_TARGET=$(BUILD_DIR)/20150610_190234.all
+CORE_TARGET=$(BUILD_DIR)/20150611_190240.core
+ALL_TARGET=$(BUILD_DIR)/20150611_190240.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -24,12 +24,12 @@ ADMSL:
 	rm -rf "$(BUILD_DIR)/ADMSL/.svn" "$(BUILD_DIR)/ADMSL/.git"*
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'c5df69b5a7709564d20a3d4d5d1f9c0e3ef6fff5'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '058b7cd1381e1febee87bc782432a0c66765ca0b'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20150610-090253~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20150610-104247~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 	rm -rf "$(BUILD_DIR)/Annex60 0.1/.svn" "$(BUILD_DIR)/Annex60 0.1/.git"*
 BioChem:
 	# Building git/BioChem
@@ -70,12 +70,12 @@ BrineProp:
 	rm -rf "$(BUILD_DIR)/BrineProp 0.4.1/.svn" "$(BUILD_DIR)/BrineProp 0.4.1/.git"*
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '3bb683614c783baab7394d87779f5ae9e77c57bc'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'ef89361cc8673b077b9221efbf78aa63b4d7babd'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo '' > "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20150608-203145~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20150610-162850~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	rm -rf "$(BUILD_DIR)/Buildings latest/.svn" "$(BUILD_DIR)/Buildings latest/.git"*
 Buildings-release:
 	# Building git/Buildings-release
@@ -519,12 +519,12 @@ PNlib:
 	rm -rf "$(BUILD_DIR)/PNlib 1.1/.svn" "$(BUILD_DIR)/PNlib 1.1/.git"*
 Physiolibrary:
 	# Building git/Physiolibrary
-	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'dde75d42f5838f09062c2daeceb6109b8a80f008'
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '49d59060f6e5b4cb68560c6d7467e84ea4318056'
 	test ! -d 'build//Physiolibrary 2.3.1alpha'
 	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1alpha"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.license"
-	echo '20150515-205346~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
+	echo '20150610-194618~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
 	rm -rf "$(BUILD_DIR)/Physiolibrary 2.3.1alpha/.svn" "$(BUILD_DIR)/Physiolibrary 2.3.1alpha/.git"*
 PlanarMechanics:
 	# Building git/PlanarMechanics

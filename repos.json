@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c5df69b5a7709564d20a3d4d5d1f9c0e3ef6fff5",
+      "rev": "058b7cd1381e1febee87bc782432a0c66765ca0b",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3bb683614c783baab7394d87779f5ae9e77c57bc",
+      "rev": "ef89361cc8673b077b9221efbf78aa63b4d7babd",
       "targets": [
         "Buildings latest"
       ],
@@ -500,7 +500,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dde75d42f5838f09062c2daeceb6109b8a80f008",
+      "rev": "49d59060f6e5b4cb68560c6d7467e84ea4318056",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
