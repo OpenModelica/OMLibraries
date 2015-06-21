@@ -192,8 +192,11 @@ for f in $LIBS "$@"; do
   echo "cp -a '$SOURCE' \"\$(BUILD_DIR)/$NAME$EXT\"" >> "$CMD_REPLAY"
   for FILES in $REMOVE_FILES; do
     echo Removing files: [$BUILD/$NAME$EXT/$FILES]
-    rm -rf "$BUILD/$NAME$EXT/$FILES"
-    echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/$FILES\"" >> "$CMD_REPLAY"
+    # Need to check if the file exists, because OSX fails on /path/to/file/Dir
+    if test -e "$BUILD/$NAME$EXT/$FILES"; then
+      rm -rf "$BUILD/$NAME$EXT/$FILES"
+      echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/$FILES\"" >> "$CMD_REPLAY"
+    fi
   done
   if test -f "$NAME.patch"; then
     echo "patch -d \"\$(BUILD_DIR)/\" -f -p1 < '$NAME.patch'" >> "$CMD_REPLAY"
