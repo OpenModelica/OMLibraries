@@ -313,7 +313,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e8805db1c702097189970c73c7cba7e6cb6aa244",
+          "rev": "84000601efc8b6900f1b42123930cb5ebe1baf74",
           "targets": [
             "Complex",
             "Modelica",
@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "928961c4cb326117e79eb34b7d79771eeafda4de",
+          "rev": "14a877a3d926461047d8d3dbacd51cf2360bfb2c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -468,7 +468,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9b57476845539e56769cf76ea0fe7bf3c7eb5d11",
+      "rev": "87e317edeb9dfb635fa80a689169ab245a3f57ef",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
