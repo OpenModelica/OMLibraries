@@ -300,8 +300,14 @@ for f in $LIBS "$@"; do
     echo "$NOPACKAGE" > "$BUILD/$NAME.nopackage"
     echo "echo '$NOPACKAGE' > \"\$(BUILD_DIR)/$NAME.nopackage\"" >> "$CMD_REPLAY"
   fi
-  rm -rf "$BUILD/$NAME$EXT/.svn" "$BUILD/$NAME$EXT/.git"*
-  echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/.svn\" \"\$(BUILD_DIR)/$NAME$EXT/.git\"*" >> "$CMD_REPLAY"
+
+  if test -e "$BUILD/$NAME$EXT/.svn"; then
+    rm -rf "$BUILD/$NAME$EXT/.svn"
+    echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/.svn\"" >> "$CMD_REPLAY"
+  elif test -e "$BUILD/$NAME$EXT/.git"; then
+    rm -rf "$BUILD/$NAME$EXT/.git"*
+    echo "rm -rf \"\$(BUILD_DIR)/$NAME$EXT/.git\"*" >> "$CMD_REPLAY"
+  fi
 
   if ! test "$STD" = "3.3"; then
     echo "$STD" > "$BUILD/$NAME.std"
