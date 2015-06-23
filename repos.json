@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d42aa653847ab8176a2dec5f6229c4d38ffcb20c",
+          "rev": "3cdfc460b291215711d82831c957113560edd8b2",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
