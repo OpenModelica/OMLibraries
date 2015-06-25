@@ -133,7 +133,7 @@ for f in $LIBS "$@"; do
     fi
   else
     LIB=`echo $f | sed "s/%20/ /g" | cut -d" " -f1`
-    VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2`
+    VER=`echo $f | sed "s/%20/ /g" | grep " " | cut -d" " -f2-`
     echo Copy library [$LIB] version [$VER] from `pwd`
   fi
   if test "$f" = "self"; then
