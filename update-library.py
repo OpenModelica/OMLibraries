@@ -179,7 +179,7 @@ if __name__ == '__main__':
     os.system("rm -f test-valid*.mos")
     jsondata['repos'] = sorted(repos, key=lambda k: k['dest'])
     f = io.open("commit.log","w",encoding='utf-8')
-    f.write(u"Bump libraries\n")
+    f.write(u"Bump libraries\n\n")
     for msg in msgs:
       if msg is not None:
         print(msg.encode('utf-8'))
