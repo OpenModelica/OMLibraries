@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150628_190244.core
-ALL_TARGET=$(BUILD_DIR)/20150628_190244.all
+CORE_TARGET=$(BUILD_DIR)/20150629_190403.core
+ALL_TARGET=$(BUILD_DIR)/20150629_190403.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -81,12 +81,12 @@ Buildings-release:
 	echo '2.0.0-20150504-103547~git~release' > "$(BUILD_DIR)/Buildings 2.0.0.last_change"
 Chemical:
 	# Building git/Chemical
-	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '9e2e2cd9d4fb6c160e571fdb75f1769c1d0ba895'
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'e2706ece8689e9e67de79628949191cc91bde659'
 	test ! -d 'build//Chemical 1.1.0'
 	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0.license"
-	echo '1.1.0-alpha-14-g9e2e2cd' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
+	echo '1.1.0-alpha-15-ge2706ec' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
 ComplexLib:
 	# Building git/ComplexLib
 	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
