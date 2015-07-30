@@ -230,7 +230,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e54fcd0e436d65c85de6c6b935983e363cdc9f6c",
+      "rev": "cf5851d73cb1ad21bb81edb938818f1511fbbc68",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -313,7 +313,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "57baf8147fd2fa168278d6c10b2b3a425f7e6172",
+          "rev": "1319803bdce948ee1696909d9303d86420ab4d2a",
           "targets": [
             "Complex",
             "Modelica",
