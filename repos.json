@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "396164fa708cc7c7e64da55ac0b3cba23939f790",
+      "rev": "dbcdce46af84937f8742312186c4ce6f01138dc9",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -468,7 +468,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "789e375baba10aed759683dcfbf5980068301e6a",
+      "rev": "5f3cb392de4042643e83256593281f4b35c184a0",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
