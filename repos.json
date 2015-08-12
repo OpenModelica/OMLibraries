@@ -682,6 +682,14 @@
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
+      "dest": "WindPowerPlants",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "d6efd5681ab47019eb8e747b78c47585ce09e8cd",
+      "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
+    },
+    {
       "dest": "XogenyTest",
       "options": {
         "gitbranch": "master"
