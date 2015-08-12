@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4235a89aad2876122911e1330d4c782353b6fc77",
+      "rev": "b64b71ccdee5e9d5d444bfac608c5456f3fb1eda",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b5000d3225de3deb8316b836f5f3afd23b9f7c84",
+      "rev": "1554726d328893aaa806a5b248e2e524f3509617",
       "targets": [
         "Buildings latest"
       ],
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dbcdce46af84937f8742312186c4ce6f01138dc9",
+      "rev": "d37133d2d708c82c3dcfec12a5c54923f21eb1ab",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -394,7 +394,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "db912ba7e1317b8f6a776ccf9a19f69c77a9c477",
+      "rev": "4826514da2684601e2edd3661e799cdfa86eccde",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -710,7 +710,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5329adb26ede38cdabcd90a79d6f924ade8d7d06",
+      "rev": "0daf255b32069ec085ea98290fe3cf2021efd86f",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
