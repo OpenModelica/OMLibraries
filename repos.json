@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b64b71ccdee5e9d5d444bfac608c5456f3fb1eda",
+      "rev": "3f21d2e5b2e968362d61a3e2c5d64c814135cfc9",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1554726d328893aaa806a5b248e2e524f3509617",
+      "rev": "9f5cc936ed4c745cb2927f81739c815ac790b236",
       "targets": [
         "Buildings latest"
       ],
@@ -313,7 +313,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "1319803bdce948ee1696909d9303d86420ab4d2a",
+          "rev": "4e9a2c87f74f3f8916397dd80c8489719e9b235e",
           "targets": [
             "Complex",
             "Modelica",
@@ -332,7 +332,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "49137f09ff7eb2dfde3c687966ce6e8fda7cea8a",
+          "rev": "69b7989d46f77be1cfe8db9e2ce80e0aee492805",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -394,7 +394,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4826514da2684601e2edd3661e799cdfa86eccde",
+      "rev": "83e610da82d08296b84dd3da22dffe5adca63fea",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -710,7 +710,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0daf255b32069ec085ea98290fe3cf2021efd86f",
+      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
