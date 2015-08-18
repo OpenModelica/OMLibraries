@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3f21d2e5b2e968362d61a3e2c5d64c814135cfc9",
+      "rev": "5f493db26b6c0d04649853cf987f0b3c4f7c558f",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "607bb4db7ab1abd8adc4a20460fb468e059e7c3d",
+      "rev": "01dce55f2c105081aa81f967007b2c4be32f1159",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -321,7 +321,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "4e9a2c87f74f3f8916397dd80c8489719e9b235e",
+          "rev": "b2102217f6804a26f94f9df3a4d353f60ae81aff",
           "targets": [
             "Complex",
             "Modelica",
@@ -340,7 +340,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "69b7989d46f77be1cfe8db9e2ce80e0aee492805",
+          "rev": "49d982b254fb8fc5ee78ff57db765098afcae33e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -386,7 +386,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "09d5bff823a09a6d6fb52d322a2abf03ad588160",
+      "rev": "511dd2c15491a318c91021ccc7f321ae90526429",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "83e610da82d08296b84dd3da22dffe5adca63fea",
+      "rev": "146a8bfe0f7497e3a9a83e6234399d415b39266f",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d6efd5681ab47019eb8e747b78c47585ce09e8cd",
+      "rev": "2fd881d7558624c19c225edb8961d34a971d32cc",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -726,7 +726,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
+      "rev": "e6c0aeb183051a544031a5f206c3d30dd0599f81",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
