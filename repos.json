@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "01dce55f2c105081aa81f967007b2c4be32f1159",
+      "rev": "f3347cb484fa6e18faaaeab6823ba9ff3a50e061",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d37133d2d708c82c3dcfec12a5c54923f21eb1ab",
+      "rev": "c6e3c2108536cd7ea47122e27c012a0b9d05c612",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
