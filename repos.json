@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "5f493db26b6c0d04649853cf987f0b3c4f7c558f",
+      "rev": "d7749e32d25e7105ae76828f51c1294dbcd56b75",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9f5cc936ed4c745cb2927f81739c815ac790b236",
+      "rev": "10e2e7b13397683ce668e2cbc0fbf6d0350f66dd",
       "targets": [
         "Buildings latest"
       ],
@@ -658,7 +658,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e012268625dd1645fe5570cf31d64129d83a8192",
+      "rev": "0b94bfc825b9ddb76070d8774e403e9f73f62efb",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
@@ -726,7 +726,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e6c0aeb183051a544031a5f206c3d30dd0599f81",
+      "rev": "ce8d30a3d6e927eea83b9e8277d22bd8bd31869b",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
