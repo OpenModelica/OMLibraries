@@ -386,7 +386,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "511dd2c15491a318c91021ccc7f321ae90526429",
+      "rev": "26910b076ad5a49b9b013eecddc9c17df25c87ff",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2fd881d7558624c19c225edb8961d34a971d32cc",
+      "rev": "2c82e5328b85ed5b20ea58c4ddbfd840156377a8",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
