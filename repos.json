@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4a118b55af67c6804fa101aab3f227f86d6f0bb",
+      "rev": "bf2dc90e2820eb88e11640fe06ed4d3dbe612414",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2c82e5328b85ed5b20ea58c4ddbfd840156377a8",
+      "rev": "171c07596aa9a27ec16f6a97749ef5b94d0685b2",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
