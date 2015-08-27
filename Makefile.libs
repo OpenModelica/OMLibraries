@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150826_190242.core
-ALL_TARGET=$(BUILD_DIR)/20150826_190242.all
+CORE_TARGET=$(BUILD_DIR)/20150827_190233.core
+ALL_TARGET=$(BUILD_DIR)/20150827_190233.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -482,12 +482,12 @@ Physiolibrary:
 	echo '20150610-194618~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
-	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'd998a1b27355e83d2ff4849d71281a919a3234aa'
+	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'e985e5c4ccd24aec3ac4e0f0d1203b75999b0b28'
 	test ! -d 'build//PlanarMechanics 1.4.0 Development Version'
 	cp -a 'git/PlanarMechanics/PlanarMechanics' "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.license"
-	echo '20150505-172733~git~master' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.last_change"
+	echo '20150827-100218~git~master' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.last_change"
 PowerFlow:
 	# Building svn/PowerFlow
 	./checkout-svn.sh 'svn/PowerFlow' 'https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk' '3174'
@@ -506,12 +506,12 @@ PowerSystems:
 	echo '0.4.0' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
 PowerSystems-latest:
 	# Building git/PowerSystems-latest
-	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' '3abd48aa53bbcd3f3e2ddfa2371680febf8baf48'
+	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' '9a4ed9f052b8f72b356cbb15097ac752199ea39f'
 	test ! -d 'build//PowerSystems latest'
 	cp -a 'git/PowerSystems-latest/PowerSystems' "$(BUILD_DIR)/PowerSystems latest"
 	echo '' > "$(BUILD_DIR)/PowerSystems latest.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems latest.license"
-	echo '20150314-134748~git~master' > "$(BUILD_DIR)/PowerSystems latest.last_change"
+	echo '20150827-100916~git~master' > "$(BUILD_DIR)/PowerSystems latest.last_change"
 PraxisSimulationstechnik:
 	# Building git/PraxisSimulationstechnik
 	./checkout-git.sh 'git/PraxisSimulationstechnik' 'https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git' 'master' 'f7db177786f84033f3a50b7474988b190a1dfb46'
@@ -594,18 +594,18 @@ SiemensPower:
 	echo '2.2-20150519-090124~git~master' > "$(BUILD_DIR)/SiemensPower 2.2.last_change"
 Spot:
 	# Building git/Spot
-	./checkout-git.sh 'git/Spot' 'https://github.com/modelica-3rdparty/Spot.git' 'master' '2f74417f1681570900a1ed373dcbe4b42634ec7b'
+	./checkout-git.sh 'git/Spot' 'https://github.com/modelica-3rdparty/Spot.git' 'master' 'c89bc3ed50d53e4002b12f3cc1700fc97f355a35'
 	test ! -d 'build//Spot 0.706.1'
 	cp -a 'git/Spot/Spot' "$(BUILD_DIR)/Spot 0.706.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Spot 0.706.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Spot 0.706.1.license"
-	echo '0.706.1-20140409-130654~git~master' > "$(BUILD_DIR)/Spot 0.706.1.last_change"
+	echo '0.706.1-20150827-100322~git~master' > "$(BUILD_DIR)/Spot 0.706.1.last_change"
 	test ! -d 'build//SpotExamples 0.706.1'
 	cp -a 'git/Spot/SpotExamples' "$(BUILD_DIR)/SpotExamples 0.706.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/SpotExamples 0.706.1.uses"
 	echo 'Spot 0.706.1' >> "$(BUILD_DIR)/SpotExamples 0.706.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/SpotExamples 0.706.1.license"
-	echo '0.706.1-20140409-130654~git~master' > "$(BUILD_DIR)/SpotExamples 0.706.1.last_change"
+	echo '0.706.1-20150827-100322~git~master' > "$(BUILD_DIR)/SpotExamples 0.706.1.last_change"
 SystemDynamics:
 	# Building git/SystemDynamics
 	./checkout-git.sh 'git/SystemDynamics' 'https://github.com/modelica-3rdparty/SystemDynamics.git' 'master' 'c58a26dc3e62a50e64fd336dc4aa499b2d5ad314'

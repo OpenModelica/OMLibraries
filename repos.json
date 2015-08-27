@@ -524,7 +524,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d998a1b27355e83d2ff4849d71281a919a3234aa",
+      "rev": "e985e5c4ccd24aec3ac4e0f0d1203b75999b0b28",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -545,7 +545,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3abd48aa53bbcd3f3e2ddfa2371680febf8baf48",
+      "rev": "9a4ed9f052b8f72b356cbb15097ac752199ea39f",
       "targets": [
         "PowerSystems latest"
       ],
@@ -640,7 +640,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2f74417f1681570900a1ed373dcbe4b42634ec7b",
+      "rev": "c89bc3ed50d53e4002b12f3cc1700fc97f355a35",
       "url": "https://github.com/modelica-3rdparty/Spot.git"
     },
     {
