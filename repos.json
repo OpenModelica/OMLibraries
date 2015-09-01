@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bf2dc90e2820eb88e11640fe06ed4d3dbe612414",
+      "rev": "c2ec046c23acf424ce9ab17c9f7902cb578698da",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4479ab6fd2e051f101e2748c48fd7dacff207044",
+      "rev": "f09d608e0b34c687a437dd2b09dab8a98eefd322",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "146a8bfe0f7497e3a9a83e6234399d415b39266f",
+      "rev": "dcd2461ea8ff6609e005745961172cf8118b1fa1",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "49d59060f6e5b4cb68560c6d7467e84ea4318056",
+      "rev": "0a149aea9d3aae7fb51acafd139a6a160c05a0ac",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "171c07596aa9a27ec16f6a97749ef5b94d0685b2",
+      "rev": "415b8df1e061227d1d97e2e7585feba299e5af50",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
