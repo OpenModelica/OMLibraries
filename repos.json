@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d7749e32d25e7105ae76828f51c1294dbcd56b75",
+      "rev": "ba624d5b91fe410c55a6b7255f09fcc3d636c5bc",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c2ec046c23acf424ce9ab17c9f7902cb578698da",
+      "rev": "07a45d4138c6a6696bc59c81391579b76e266cf0",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
