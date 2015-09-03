@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150902_190242.core
-ALL_TARGET=$(BUILD_DIR)/20150902_190242.all
+CORE_TARGET=$(BUILD_DIR)/20150903_190259.core
+ALL_TARGET=$(BUILD_DIR)/20150903_190259.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -23,12 +23,12 @@ ADMSL:
 	rm -rf "$(BUILD_DIR)/ADMSL/.git"*
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'ba624d5b91fe410c55a6b7255f09fcc3d636c5bc'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'd3ebc9893bac43e7d0c690ef88193ba8a9365dfd'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20150902-082039~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20150903-094636~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
@@ -64,12 +64,12 @@ BrineProp:
 	echo '0.4.1-20150305-213856~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '10e2e7b13397683ce668e2cbc0fbf6d0350f66dd'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'c39a692e4ea593bcf1620afbdf7d5d9ac300f6aa'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo '' > "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20150819-170358~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20150903-094948~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Buildings-release:
 	# Building git/Buildings-release
 	./checkout-git.sh 'git/Buildings-release' 'https://github.com/lbl-srg/modelica-buildings.git' 'release' 'f20748d49750e70d3d03a308435889b76e5e4158'
@@ -121,12 +121,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'f09d608e0b34c687a437dd2b09dab8a98eefd322'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '9314d02f3aadda08d57005b68c60c1437038fbab'
 	test ! -d 'build//ExternData 1.0.4-dev'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.0.4-dev"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.0.4-dev.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.0.4-dev.license"
-	echo '20150831-222427~git~master' > "$(BUILD_DIR)/ExternData 1.0.4-dev.last_change"
+	echo '20150902-125745~git~master' > "$(BUILD_DIR)/ExternData 1.0.4-dev.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -162,12 +162,12 @@ FaultTriggering:
 	echo '0.5.0-20140627-110908~git~master' > "$(BUILD_DIR)/FaultTriggering 0.5.0.last_change"
 FractionalOrder:
 	# Building git/FractionalOrder
-	./checkout-git.sh 'git/FractionalOrder' 'https://github.com/DLR-SR/FractionalOrder.git' 'master' 'c5208b3d169db141f7a570a383240f905336aed1'
+	./checkout-git.sh 'git/FractionalOrder' 'https://github.com/DLR-SR/FractionalOrder.git' 'master' 'b80f5c4bac35ab72053da9f8db2500457db9bc93'
 	test ! -f 'build//FractionalOrder.mo'
 	cp -a 'git/FractionalOrder/FractionalOrder.mo' "$(BUILD_DIR)/FractionalOrder.mo"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/FractionalOrder.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/FractionalOrder.license"
-	echo '20150728-120429~git~master' > "$(BUILD_DIR)/FractionalOrder.last_change"
+	echo '20150903-110601~git~master' > "$(BUILD_DIR)/FractionalOrder.last_change"
 FuzzyControl:
 	# Building git/FuzzyControl
 	./checkout-git.sh 'git/FuzzyControl' 'https://github.com/modelica-3rdparty/FuzzyControl.git' 'master' '19ff67ff129a440482cc85f216f287b05ea6ec0d'
@@ -352,12 +352,12 @@ ModelicaAdditions:
 	echo '1.5' > "$(BUILD_DIR)/ModelicaAdditions 1.5.last_change"
 ModelicaBook:
 	# Building git/ModelicaBook
-	./checkout-git.sh 'git/ModelicaBook' 'https://github.com/xogeny/ModelicaBook.git' 'master' 'c780e2c3c0c6c24c45b896800ec55dd80c64f7ee'
+	./checkout-git.sh 'git/ModelicaBook' 'https://github.com/xogeny/ModelicaBook.git' 'master' 'ab23bc608855f5e7f98a078a88b21a0f043356ae'
 	test ! -d 'build//ModelicaByExample'
 	cp -a 'git/ModelicaBook/ModelicaByExample' "$(BUILD_DIR)/ModelicaByExample"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ModelicaByExample.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaByExample.license"
-	echo '20150829-081711~git~master' > "$(BUILD_DIR)/ModelicaByExample.last_change"
+	echo '20150903-082237~git~master' > "$(BUILD_DIR)/ModelicaByExample.last_change"
 ModelicaCompliance:
 	# Building git/ModelicaCompliance
 	./checkout-git.sh 'git/ModelicaCompliance' 'https://github.com/modelica-compliance/compliance.git' 'master' 'ca5092c14bb7af4507a10700ee49181a3a3ee199'
@@ -442,12 +442,12 @@ NeuralNetwork:
 	echo 'Windows-1252' > "$(BUILD_DIR)/NeuralNetwork 1.0/package.encoding"
 Noise:
 	# Building git/Noise
-	./checkout-git.sh 'git/Noise' 'https://github.com/DLR-SR/Noise.git' 'master' '5f3cb392de4042643e83256593281f4b35c184a0'
+	./checkout-git.sh 'git/Noise' 'https://github.com/DLR-SR/Noise.git' 'master' '6fcc9e93e5ec4b3fa927124ec48f3628157806ba'
 	test ! -d 'build//Modelica_Noise 1.0 Beta.1'
 	cp -a 'git/Noise/Modelica_Noise 1.0 Beta.1' "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.license"
-	echo '20150805-095324~git~master' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.last_change"
+	echo '20150903-173159~git~master' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.last_change"
 ObjectStab:
 	# Building git/ObjectStab
 	./checkout-git.sh 'git/ObjectStab' 'https://github.com/modelica-3rdparty/ObjectStab.git' 'master' '2a723e0b223af50f4ffdd62f8ac901e0f87b9323'
@@ -474,20 +474,20 @@ PNlib:
 	echo '1.1-44-g44c7d27' > "$(BUILD_DIR)/PNlib 1.1.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
-	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '0a149aea9d3aae7fb51acafd139a6a160c05a0ac'
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'fbc9920ebe1682e82914d32db59c68b9cb7f83a4'
 	test ! -d 'build//Physiolibrary 2.3.1alpha'
 	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1alpha"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.license"
-	echo '20150901-183935~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
+	echo '20150902-235739~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
-	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'e985e5c4ccd24aec3ac4e0f0d1203b75999b0b28'
+	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' '1ed5bf8508722d58c86b6eb236cc7dcac7e50308'
 	test ! -d 'build//PlanarMechanics 1.4.0 Development Version'
 	cp -a 'git/PlanarMechanics/PlanarMechanics' "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.license"
-	echo '20150827-100218~git~master' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.last_change"
+	echo '20150903-173450~git~master' > "$(BUILD_DIR)/PlanarMechanics 1.4.0 Development Version.last_change"
 PowerFlow:
 	# Building svn/PowerFlow
 	./checkout-svn.sh 'svn/PowerFlow' 'https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk' '3174'

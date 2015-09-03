@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "ba624d5b91fe410c55a6b7255f09fcc3d636c5bc",
+      "rev": "d3ebc9893bac43e7d0c690ef88193ba8a9365dfd",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "10e2e7b13397683ce668e2cbc0fbf6d0350f66dd",
+      "rev": "c39a692e4ea593bcf1620afbdf7d5d9ac300f6aa",
       "targets": [
         "Buildings latest"
       ],
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f09d608e0b34c687a437dd2b09dab8a98eefd322",
+      "rev": "9314d02f3aadda08d57005b68c60c1437038fbab",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -221,7 +221,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c5208b3d169db141f7a570a383240f905336aed1",
+      "rev": "b80f5c4bac35ab72053da9f8db2500457db9bc93",
       "url": "https://github.com/DLR-SR/FractionalOrder.git"
     },
     {
@@ -386,7 +386,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c780e2c3c0c6c24c45b896800ec55dd80c64f7ee",
+      "rev": "ab23bc608855f5e7f98a078a88b21a0f043356ae",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -484,7 +484,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5f3cb392de4042643e83256593281f4b35c184a0",
+      "rev": "6fcc9e93e5ec4b3fa927124ec48f3628157806ba",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0a149aea9d3aae7fb51acafd139a6a160c05a0ac",
+      "rev": "fbc9920ebe1682e82914d32db59c68b9cb7f83a4",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -524,7 +524,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e985e5c4ccd24aec3ac4e0f0d1203b75999b0b28",
+      "rev": "1ed5bf8508722d58c86b6eb236cc7dcac7e50308",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
