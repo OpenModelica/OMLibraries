@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dcd2461ea8ff6609e005745961172cf8118b1fa1",
+      "rev": "26404f759e52fd6f84624ba8e4ba540df3bb43ed",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "18916fdc485285baab12481701b53d4eb606a3f1",
+      "rev": "04d1617f71cadad1c36fce951fc2986488aadd5f",
       "targets": [
         "self"
       ],
@@ -500,7 +500,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d3173d1f06f7d14c9d7c41769f143617ff03a3ad",
+      "rev": "3485cf4ae0449f1a76af737b7705879f8f08c14f",
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
@@ -524,7 +524,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1ed5bf8508722d58c86b6eb236cc7dcac7e50308",
+      "rev": "cb60ab083996e94d6eeec2f5a70801aae5d5c07c",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
