@@ -68,7 +68,6 @@ modelica3d-internal:
 	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
 	mkdir -p "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Resources/Include"
 	cp "$(MODELICA3D_DIR)/lib/modbus/src/c/modbus.h" "$(MODELICA3D_DIR)/lib/modcount/src/c/modcount.h" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Resources/Include/"
-	echo "deb:libmodelica3d" >> "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.uses"
 	echo ok > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.ok"
 	echo "https://github.com/OpenModelica/modelica3d.git" > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.url"
 modelica3d-binary:

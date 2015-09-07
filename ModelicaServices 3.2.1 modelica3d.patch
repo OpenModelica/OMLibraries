@@ -1,5 +1,5 @@
 --- build/ModelicaServices 3.2.1/package.mo	2013-04-06 15:52:11.689485500 +0100
-+++ build/ModelicaServices 3.2.1 modelica3d/package.mo	2013-04-06 15:52:11.713485502 +0100
++++ build/ModelicaServices 3.2.1 modelica3d/package.mo	2013-04-06 15:52:11.713485503 +0100
 @@ -1,5 +1,5 @@
  within ;
 -package ModelicaServices "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
