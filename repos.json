@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2938380c0eea53073cfe6b3c85d77e4b95098249",
+      "rev": "9e29f16ba6702d550d0520366e17e2841324afa6",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fbc9920ebe1682e82914d32db59c68b9cb7f83a4",
+      "rev": "34ed0753148e2c5bd45092f5a7ede56ab07c015d",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
