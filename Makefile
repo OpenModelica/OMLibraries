@@ -30,6 +30,7 @@ python-update: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
 	$(MAKE) all-work
+	$(MAKE) modelica3d-internal
 	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
 	$(MAKE) uses
 all-work: config.done Makefile.numjobs
@@ -50,6 +51,8 @@ Makefile.numjobs:
 
 MODELICA3D_DIR=git/Modelica3D
 modelica3d: MSL
+	$(MAKE) modelica3d-internal
+modelica3d-internal:
 	@echo Much more work is needed for Modelica3D. For now the native builds are part of the omc packages
 	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/"
 	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modbus"
