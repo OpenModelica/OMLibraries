@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150908_190247.core
-ALL_TARGET=$(BUILD_DIR)/20150908_190247.all
+CORE_TARGET=$(BUILD_DIR)/20150909_190241.core
+ALL_TARGET=$(BUILD_DIR)/20150909_190241.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -394,12 +394,12 @@ Modelica_EnergyStorages:
 	echo '3.2.1-20150806-142323~git~master' > "$(BUILD_DIR)/Modelica_EnergyStorages 3.2.1.last_change"
 Modelica_LinearSystems2:
 	# Building git/Modelica_LinearSystems2
-	./checkout-git.sh 'git/Modelica_LinearSystems2' 'https://github.com/modelica/Modelica_LinearSystems2.git' 'master' 'f0357ccc50cf549447f5f6d682af37ae59ab5ebc'
+	./checkout-git.sh 'git/Modelica_LinearSystems2' 'https://github.com/modelica/Modelica_LinearSystems2.git' 'master' '9fe6243b69ea464252523f0a5fab8a1a54e68628'
 	test ! -d 'build//Modelica_LinearSystems2 2.3.3'
 	cp -a 'git/Modelica_LinearSystems2' "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3.license"
-	echo '2.3.3-20150908-163718~git~master' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3.last_change"
+	echo '2.3.3-20150909-161943~git~master' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3.last_change"
 	rm -rf "$(BUILD_DIR)/Modelica_LinearSystems2 2.3.3/.git"*
 Modelica_StateGraph2:
 	# Building svn/Modelica_StateGraph2
@@ -413,12 +413,12 @@ Modelica_StateGraph2:
 	echo 'Windows-1252' > "$(BUILD_DIR)/Modelica_StateGraph2 2.0.2/package.encoding"
 Modelica_Synchronous:
 	# Building git/Modelica_Synchronous
-	./checkout-git.sh 'git/Modelica_Synchronous' 'https://github.com/modelica/Modelica_Synchronous.git' 'master' 'd0f5ee57bc7b639738e88026674a87343b33dbe1'
+	./checkout-git.sh 'git/Modelica_Synchronous' 'https://github.com/modelica/Modelica_Synchronous.git' 'master' '0eba962681a5dbd82473fae54ac72acaf0ec7955'
 	test ! -d 'build//Modelica_Synchronous 0.92'
 	cp -a 'git/Modelica_Synchronous' "$(BUILD_DIR)/Modelica_Synchronous 0.92"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_Synchronous 0.92.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.license"
-	echo '0.92-20150417-075447~git~master' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.last_change"
+	echo '0.92-20150909-164537~git~master' > "$(BUILD_DIR)/Modelica_Synchronous 0.92.last_change"
 	rm -rf "$(BUILD_DIR)/Modelica_Synchronous 0.92/.git"*
 MotorcycleDynamics:
 	# Building git/MotorcycleDynamics
