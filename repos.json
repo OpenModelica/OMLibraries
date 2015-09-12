@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "be7d5a46ed7996a5c3ec2115eb3a3886065d7f8a",
+      "rev": "41e2b697c4798c62ba0e72e5d640edce57fef8b0",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -246,7 +246,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8ebac550d913f6d2b3af4d1aea5044e72c7eb6b0",
+      "rev": "ae8b0397ea8207bc4327bea1e81ac09c6d4bcea9",
       "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "34ed0753148e2c5bd45092f5a7ede56ab07c015d",
+      "rev": "b242a6dc37ed8f4ab7a459898f6753c87efae257",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -607,7 +607,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "22e1874ef9ad46156617817c67a4fb1238621bf5",
+      "rev": "a0681972ccd56cf83305ce4e3fc4340ff3c17b36",
       "url": "https://github.com/modelica-3rdparty/Servomechanisms.git"
     },
     {

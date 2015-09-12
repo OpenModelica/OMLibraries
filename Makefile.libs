@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150911_190305.core
-ALL_TARGET=$(BUILD_DIR)/20150911_190305.all
+CORE_TARGET=$(BUILD_DIR)/20150912_190235.core
+ALL_TARGET=$(BUILD_DIR)/20150912_190235.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -121,12 +121,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'be7d5a46ed7996a5c3ec2115eb3a3886065d7f8a'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '41e2b697c4798c62ba0e72e5d640edce57fef8b0'
 	test ! -d 'build//ExternData 1.0.4'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.0.4"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.0.4.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.0.4.license"
-	echo '1.0.4-1-gbe7d5a4' > "$(BUILD_DIR)/ExternData 1.0.4.last_change"
+	echo '1.0.4-4-g41e2b69' > "$(BUILD_DIR)/ExternData 1.0.4.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -186,12 +186,12 @@ HelmholtzMedia:
 	echo '20150729-161928~git~master' > "$(BUILD_DIR)/HelmholtzMedia.last_change"
 IdealizedContact:
 	# Building git/IdealizedContact
-	./checkout-git.sh 'git/IdealizedContact' 'https://github.com/modelica-3rdparty/IdealizedContact.git' 'master' '8ebac550d913f6d2b3af4d1aea5044e72c7eb6b0'
+	./checkout-git.sh 'git/IdealizedContact' 'https://github.com/modelica-3rdparty/IdealizedContact.git' 'master' 'ae8b0397ea8207bc4327bea1e81ac09c6d4bcea9'
 	test ! -d 'build//IdealizedContact 0.2.0'
 	cp -a 'git/IdealizedContact/IdealizedContact' "$(BUILD_DIR)/IdealizedContact 0.2.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/IdealizedContact 0.2.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/IdealizedContact 0.2.0.license"
-	echo '0.2.0-20150312-135655~git~master' > "$(BUILD_DIR)/IdealizedContact 0.2.0.last_change"
+	echo '0.2.0-20150910-122235~git~master' > "$(BUILD_DIR)/IdealizedContact 0.2.0.last_change"
 IndustrialControlSystems:
 	# Building git/IndustrialControlSystems
 	./checkout-git.sh 'git/IndustrialControlSystems' 'https://github.com/modelica-3rdparty/IndustrialControlSystems.git' 'master' '6a2414307d5998c6d081efe803c2b575a532b3ba'
@@ -474,12 +474,12 @@ PNlib:
 	echo '1.1-44-g44c7d27' > "$(BUILD_DIR)/PNlib 1.1.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
-	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '34ed0753148e2c5bd45092f5a7ede56ab07c015d'
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'b242a6dc37ed8f4ab7a459898f6753c87efae257'
 	test ! -d 'build//Physiolibrary 2.3.1alpha'
 	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1alpha"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.license"
-	echo '20150906-222905~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
+	echo '20150912-142814~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
 	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'cb60ab083996e94d6eeec2f5a70801aae5d5c07c'
@@ -564,12 +564,12 @@ ScalableTestSuite:
 	echo '1.0.0-9-gc631990' > "$(BUILD_DIR)/ScalableTestSuite 1.0.0.last_change"
 Servomechanisms:
 	# Building git/Servomechanisms
-	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' '22e1874ef9ad46156617817c67a4fb1238621bf5'
+	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' 'a0681972ccd56cf83305ce4e3fc4340ff3c17b36'
 	test ! -d 'build//Servomechanisms 1.0'
 	cp -a 'git/Servomechanisms/Servomechanisms 1.0' "$(BUILD_DIR)/Servomechanisms 1.0"
 	echo '' > "$(BUILD_DIR)/Servomechanisms 1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Servomechanisms 1.0.license"
-	echo '1.0-20140129-215129~git~master' > "$(BUILD_DIR)/Servomechanisms 1.0.last_change"
+	echo '1.0-20150911-115859~git~master' > "$(BUILD_DIR)/Servomechanisms 1.0.last_change"
 SiemensPower:
 	# Building git/SiemensPower
 	./checkout-git.sh 'git/SiemensPower' 'https://openmodelica.org/git/SiemensPower.git' 'omctest' '73a3bfc6d2ddd72165bb0f3e7e9df48b643a5ed0'
