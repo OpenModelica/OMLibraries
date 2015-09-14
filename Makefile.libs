@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150913_190238.core
-ALL_TARGET=$(BUILD_DIR)/20150913_190238.all
+CORE_TARGET=$(BUILD_DIR)/20150914_190233.core
+ALL_TARGET=$(BUILD_DIR)/20150914_190233.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -81,12 +81,12 @@ Buildings-release:
 	echo '2.1.0-20150713-145316~git~release' > "$(BUILD_DIR)/Buildings 2.1.0.last_change"
 Chemical:
 	# Building git/Chemical
-	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '9e29f16ba6702d550d0520366e17e2841324afa6'
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'd3105c1b22065eed3ea7d0e9b279b9603e69bd33'
 	test ! -d 'build//Chemical 1.1.0'
 	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0.license"
-	echo '1.1.0-gamma-14-g9e29f16' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
+	echo '1.1.0-2-gd3105c1' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
 ComplexLib:
 	# Building git/ComplexLib
 	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
@@ -377,13 +377,13 @@ ModelicaDEVS:
 	echo '1.0' > "$(BUILD_DIR)/ModelicaDEVS 1.last_change"
 Modelica_DeviceDrivers:
 	# Building git/Modelica_DeviceDrivers
-	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'd4b00ebf6f3ddac676f5108e3621515d9c1e75cb'
-	test ! -d 'build//Modelica_DeviceDrivers 1.4.1'
-	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.1"
-	echo 'Modelica_Synchronous 0.92' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.1.uses"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.1.license"
-	echo '1.4.1-7-gd4b00eb' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.1.last_change"
+	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' '856d1d4c4d5157df9d3c40b147faf1640961f010'
+	test ! -d 'build//Modelica_DeviceDrivers 1.4.2'
+	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.2"
+	echo 'Modelica_Synchronous 0.92' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.2.uses"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.2.license"
+	echo '1.4.2-2-g856d1d4' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.2.last_change"
 Modelica_EnergyStorages:
 	# Building git/Modelica_EnergyStorages
 	./checkout-git.sh 'git/Modelica_EnergyStorages' 'https://github.com/modelica/Modelica_EnergyStorages.git' 'master' 'd41d9329f3f8f847a3bedf0ce7dff19c0ab0b83b'
@@ -474,12 +474,12 @@ PNlib:
 	echo '1.1-44-g44c7d27' > "$(BUILD_DIR)/PNlib 1.1.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
-	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '3901de7ffa3986576198dd93e18a7f05749e4f57'
-	test ! -d 'build//Physiolibrary 2.3.1alpha'
-	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1alpha"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.license"
-	echo '20150913-155731~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1alpha.last_change"
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'dff17f7c3b137c83ee0b59ce07ebd8705a841112'
+	test ! -d 'build//Physiolibrary 2.3.1'
+	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1.license"
+	echo '2.3.1-20150914-000347~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.1.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
 	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'cb60ab083996e94d6eeec2f5a70801aae5d5c07c'
@@ -545,15 +545,15 @@ QSSFluidFlow:
 	echo 'Windows-1252' > "$(BUILD_DIR)/QSSFluidFlow 1.0/package.encoding"
 RealTimeCoordinationLibrary:
 	# Building git/RealTimeCoordinationLibrary
-	./checkout-git.sh 'git/RealTimeCoordinationLibrary' 'https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git' 'master' '655ac1a22aa6deb04ea8e3869dd0aa9fb9540754'
-	test ! -d 'build//RealTimeCoordinationLibrary 1.0.2'
-	cp -a 'git/RealTimeCoordinationLibrary' "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2"
-	echo 'Modelica 3.2' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.uses"
-	echo 'Modelica_StateGraph2 2.0.1' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.license"
-	echo '1.0.2-25-g655ac1a' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2.last_change"
-	rm -rf "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/.git"*
-	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.2/package.encoding"
+	./checkout-git.sh 'git/RealTimeCoordinationLibrary' 'https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git' 'master' '58e571ef3c9710359e333796534a1ff27a5b0613'
+	test ! -d 'build//RealTimeCoordinationLibrary 1.0.4'
+	cp -a 'git/RealTimeCoordinationLibrary' "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.uses"
+	echo 'Modelica_StateGraph2 2.0.2' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.license"
+	echo '1.0.4-20150914-141121~git~master' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.last_change"
+	rm -rf "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/.git"*
+	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/package.encoding"
 ScalableTestSuite:
 	# Building git/ScalableTestSuite
 	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/modelica-3rdparty/ScalableTestSuite.git' 'master' 'c6319908d45ac97ffb10e96cd42654bce36ffb97'

@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9e29f16ba6702d550d0520366e17e2841324afa6",
+      "rev": "d3105c1b22065eed3ea7d0e9b279b9603e69bd33",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d4b00ebf6f3ddac676f5108e3621515d9c1e75cb",
+      "rev": "856d1d4c4d5157df9d3c40b147faf1640961f010",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3901de7ffa3986576198dd93e18a7f05749e4f57",
+      "rev": "dff17f7c3b137c83ee0b59ce07ebd8705a841112",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -588,7 +588,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "655ac1a22aa6deb04ea8e3869dd0aa9fb9540754",
+      "rev": "58e571ef3c9710359e333796534a1ff27a5b0613",
       "targets": [
         "self"
       ],
