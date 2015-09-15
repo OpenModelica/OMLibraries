@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "856d1d4c4d5157df9d3c40b147faf1640961f010",
+      "rev": "d4cb00d85ee6ba2d758852e80f74593c77c3dd63",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -516,7 +516,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dff17f7c3b137c83ee0b59ce07ebd8705a841112",
+      "rev": "7597498ffe49fea2723bafdc8a0f275c0dcecb83",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
