@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ff9eba2a0b3b62fc41a3776b84cdc90be28520ed",
+      "rev": "0f21b0cf90783c12310115612da03d13aa564e32",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -588,7 +588,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "58e571ef3c9710359e333796534a1ff27a5b0613",
+      "rev": "e78eec6d477cf865e14e7b2637f03644b19486b2",
       "targets": [
         "self"
       ],
