@@ -588,7 +588,7 @@
         "encoding": "Windows-1252",
         "gitbranch": "master"
       },
-      "rev": "e78eec6d477cf865e14e7b2637f03644b19486b2",
+      "rev": "beecba874e7c41e222b04ff7225991a6762f996d",
       "targets": [
         "self"
       ],
@@ -694,7 +694,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "90ff44ac791ba5ed98444c8597efbd2a2af01cad",
+      "rev": "800cd6464c34e772e07c968a2369b4ba7173f85a",
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
@@ -726,7 +726,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ce8d30a3d6e927eea83b9e8277d22bd8bd31869b",
+      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {

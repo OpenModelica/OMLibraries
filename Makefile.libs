@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150917_190234.core
-ALL_TARGET=$(BUILD_DIR)/20150917_190234.all
+CORE_TARGET=$(BUILD_DIR)/20150918_190220.core
+ALL_TARGET=$(BUILD_DIR)/20150918_190220.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -545,13 +545,13 @@ QSSFluidFlow:
 	echo 'Windows-1252' > "$(BUILD_DIR)/QSSFluidFlow 1.0/package.encoding"
 RealTimeCoordinationLibrary:
 	# Building git/RealTimeCoordinationLibrary
-	./checkout-git.sh 'git/RealTimeCoordinationLibrary' 'https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git' 'master' 'e78eec6d477cf865e14e7b2637f03644b19486b2'
+	./checkout-git.sh 'git/RealTimeCoordinationLibrary' 'https://github.com/modelica-3rdparty/RealTimeCoordinationLibrary.git' 'master' 'beecba874e7c41e222b04ff7225991a6762f996d'
 	test ! -d 'build//RealTimeCoordinationLibrary 1.0.4'
 	cp -a 'git/RealTimeCoordinationLibrary' "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.uses"
 	echo 'Modelica_StateGraph2 2.0.2' >> "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.license"
-	echo '1.0.4-20150917-102330~git~master' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.last_change"
+	echo '1.0.4-20150918-084607~git~master' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4.last_change"
 	rm -rf "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/.git"*
 	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/package.encoding"
 ScalableTestSuite:
@@ -647,12 +647,12 @@ VehicleInterfaces:
 	echo '1.2.2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
 WasteWater:
 	# Building git/WasteWater
-	./checkout-git.sh 'git/WasteWater' 'https://github.com/modelica-3rdparty/WasteWater.git' 'master' '90ff44ac791ba5ed98444c8597efbd2a2af01cad'
+	./checkout-git.sh 'git/WasteWater' 'https://github.com/modelica-3rdparty/WasteWater.git' 'master' '800cd6464c34e772e07c968a2369b4ba7173f85a'
 	test ! -d 'build//WasteWater 2.1.0'
 	cp -a 'git/WasteWater/WasteWater' "$(BUILD_DIR)/WasteWater 2.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/WasteWater 2.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/WasteWater 2.1.0.license"
-	echo '2.1.0-8-g90ff44a' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
+	echo '2.1.0-10-g800cd64' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
 WindPowerPlants:
 	# Building git/WindPowerPlants
 	./checkout-git.sh 'git/WindPowerPlants' 'https://github.com/modelica-3rdparty/WindPowerPlants.git' 'master' '415b8df1e061227d1d97e2e7585feba299e5af50'
@@ -680,12 +680,12 @@ msgpack-modelica:
 	echo '0.1-11-g6ce2ca6' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
 netCDF-DataReader:
 	# Building git/netCDF-DataReader
-	./checkout-git.sh 'git/netCDF-DataReader' 'https://github.com/modelica-3rdparty/netCDF-DataReader.git' 'master' 'ce8d30a3d6e927eea83b9e8277d22bd8bd31869b'
+	./checkout-git.sh 'git/netCDF-DataReader' 'https://github.com/modelica-3rdparty/netCDF-DataReader.git' 'master' 'ba8632522139a51432e1990541aefe78071a27ed'
 	test ! -d 'build//NcDataReader2 2.4.0'
 	cp -a 'git/netCDF-DataReader/NcDataReader2' "$(BUILD_DIR)/NcDataReader2 2.4.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/NcDataReader2 2.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/NcDataReader2 2.4.0.license"
-	echo '2.4.0-7-gce8d30a' > "$(BUILD_DIR)/NcDataReader2 2.4.0.last_change"
+	echo '2.4.0-8-gba86325' > "$(BUILD_DIR)/NcDataReader2 2.4.0.last_change"
 open-bldc-modelica:
 	# Building git/open-bldc-modelica
 	./checkout-git.sh 'git/open-bldc-modelica' 'https://github.com/joewa/open-bldc-modelica.git' 'master' '7817cd703b88fc1f433269d32c31e75eb50a21c6'
