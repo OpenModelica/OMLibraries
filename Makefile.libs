@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20150918_190220.core
-ALL_TARGET=$(BUILD_DIR)/20150918_190220.all
+CORE_TARGET=$(BUILD_DIR)/20150919_190225.core
+ALL_TARGET=$(BUILD_DIR)/20150919_190225.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -121,12 +121,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '41e2b697c4798c62ba0e72e5d640edce57fef8b0'
-	test ! -d 'build//ExternData 1.0.4'
-	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.0.4"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.0.4.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.0.4.license"
-	echo '1.0.4-4-g41e2b69' > "$(BUILD_DIR)/ExternData 1.0.4.last_change"
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '676a52a0b1193402b9820540c130d7bfc970a175'
+	test ! -d 'build//ExternData 1.1.0'
+	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.1.0"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.1.0.license"
+	echo '1.1.0' > "$(BUILD_DIR)/ExternData 1.1.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
