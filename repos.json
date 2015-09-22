@@ -386,7 +386,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ab23bc608855f5e7f98a078a88b21a0f043356ae",
+      "rev": "6898a9fafef3128d6a172d336d4fb433136375d8",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -524,7 +524,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cb60ab083996e94d6eeec2f5a70801aae5d5c07c",
+      "rev": "f736745751756ff171c7983854afbb3595fe55d5",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
