@@ -140,7 +140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d3105c1b22065eed3ea7d0e9b279b9603e69bd33",
+      "rev": "f0fdf324be5adc1ceba398efe5fb47cd12a63f42",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -340,7 +340,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6d7c188587dfea249f40f5d2b707ced3aa3a0f85",
+          "rev": "52800ce74ee6a440ea5b70b25e11536f7416fcec",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -492,7 +492,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2a723e0b223af50f4ffdd62f8ac901e0f87b9323",
+      "rev": "14a178c837390a0411613f85b11372503ee067ea",
       "url": "https://github.com/modelica-3rdparty/ObjectStab.git"
     },
     {
