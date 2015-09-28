@@ -321,7 +321,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "828f8d17728ffac8e5728ff253d609e782c1308f",
+          "rev": "e5c021ae8554d9521930ec7d862ec33491ac78c9",
           "targets": [
             "Complex",
             "Modelica",
@@ -340,7 +340,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "91655f32f984ef965406fe54b3590be62afe4dae",
+          "rev": "410b89b65cef9849850447d464dd698d6886f5ec",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "415b8df1e061227d1d97e2e7585feba299e5af50",
+      "rev": "308f2c9ec02c766e3ad78f6f691ec64396e6f947",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
