@@ -1,7 +1,6 @@
 {
   "bad-uses": [
     "DataFiles 1.0",
-    "FastBuildings_SinglePackage 0.0",
     "ModelManagement 1.1.1"
   ],
   "github-ignore": [
@@ -38,7 +37,6 @@
     "https://api.github.com/users/modelica/repos?type=owner&per_page=100"
   ],
   "provided": {
-    "Buildings 0.12.0": "Buildings 2.1.0",
     "Complex 1.0": "Complex 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
@@ -208,7 +206,7 @@
         "gitbranch": "master"
       },
       "rev": "1f5cfebc2f42c13e272bff639ffa3449d5740bf7",
-      "url": "https://github.com/modelica-3rdparty/FastBuildings.git"
+      "url": "https://github.com/open-ideas/FastBuildings.git"
     },
     {
       "dest": "FaultTriggering",
