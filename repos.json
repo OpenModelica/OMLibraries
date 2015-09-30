@@ -1,6 +1,7 @@
 {
   "bad-uses": [
     "DataFiles 1.0",
+    "FastBuildings_SinglePackage 0.0",
     "ModelManagement 1.1.1"
   ],
   "github-ignore": [
