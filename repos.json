@@ -108,7 +108,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
+      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -117,7 +117,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c39a692e4ea593bcf1620afbdf7d5d9ac300f6aa",
+      "rev": "7a9571a9e4356c7f57158f128df33706be1dfced",
       "targets": [
         "Buildings latest"
       ],
@@ -180,7 +180,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "676a52a0b1193402b9820540c130d7bfc970a175",
+      "rev": "d82f15e9760e4acd054cf2490a58fe0afca3a682",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -321,7 +321,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "7568680db1929d1a909adb19766499e508efb4b1",
+          "rev": "b28e9c017830198f26b19336642f26bb0f61a0f9",
           "targets": [
             "Complex",
             "Modelica",
@@ -340,7 +340,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "410b89b65cef9849850447d464dd698d6886f5ec",
+          "rev": "fd08fd2017bd588e670d244cd65ff2eef915321c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -386,7 +386,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6898a9fafef3128d6a172d336d4fb433136375d8",
+      "rev": "6c93c22dad2ebd9f9be14c05d6b31734a5c35004",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -410,7 +410,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cd4223fae54363dc29a26951a9cef0d1a16e6507",
+      "rev": "6675dc661cc8b6302ca1cc4faecbf4e62f5e6d1f",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -599,7 +599,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c6319908d45ac97ffb10e96cd42654bce36ffb97",
+      "rev": "b521537622d1f796ef8836f2de2e54d2138ca2d1",
       "url": "https://github.com/modelica-3rdparty/ScalableTestSuite.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "308f2c9ec02c766e3ad78f6f691ec64396e6f947",
+      "rev": "58e4352dd564cc7c4871fdc9d629ea6cc71bb20d",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -718,7 +718,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dd491fa0570ebca3570475cfa430633478a362d7",
+      "rev": "91a2e341f9a6f4ec0971ffb68e35ebc720a31186",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
@@ -726,7 +726,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
+      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
