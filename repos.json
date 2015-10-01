@@ -109,7 +109,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
+      "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -181,7 +181,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d82f15e9760e4acd054cf2490a58fe0afca3a682",
+      "rev": "66ff771c941bc0225c2e70cd1ac692f4b7c41f1d",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -600,7 +600,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b521537622d1f796ef8836f2de2e54d2138ca2d1",
+      "rev": "bc954b318a478c1ccb88a2955ba6dd05891f2514",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -703,7 +703,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "58e4352dd564cc7c4871fdc9d629ea6cc71bb20d",
+      "rev": "434c208b0b36877a4a76d119af01dcb176eeb982",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -727,7 +727,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
+      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
