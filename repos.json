@@ -25,6 +25,7 @@
     "https://github.com/modelica-3rdparty/PlanarMechanics",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/ConPNlib",
+    "https://github.com/modelica-3rdparty/ScalableTestSuite",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
@@ -600,7 +601,7 @@
         "gitbranch": "master"
       },
       "rev": "b521537622d1f796ef8836f2de2e54d2138ca2d1",
-      "url": "https://github.com/modelica-3rdparty/ScalableTestSuite.git"
+      "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
       "dest": "Servomechanisms",
