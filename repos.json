@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "fe96a8ebe5ecae6fa8925dad26d8e78170bd59d5",
+      "rev": "64be4462e5c31849e2e5605c4701e9b02dd02a46",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -121,7 +121,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "7a9571a9e4356c7f57158f128df33706be1dfced",
+      "rev": "158972fc56296c0b1d30c29d5f78f1baaff37c3b",
       "targets": [
         "Buildings latest"
       ],
@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f0fdf324be5adc1ceba398efe5fb47cd12a63f42",
+      "rev": "890e6fb47dabdc292d74e1f169244a3f4c11da4e",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "66ff771c941bc0225c2e70cd1ac692f4b7c41f1d",
+      "rev": "19cbb9b32db0c30c929f3bc7d126506558653348",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b28e9c017830198f26b19336642f26bb0f61a0f9",
+          "rev": "8bd8d4bc4e942669930b3d538f9ff2e99531f5dc",
           "targets": [
             "Complex",
             "Modelica",
@@ -569,7 +569,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "f7db177786f84033f3a50b7474988b190a1dfb46",
+      "rev": "7446be67ec1c931b1d43fb51721b23b495916c1f",
       "targets": [
         "PraxisSimulationstechnik"
       ],
