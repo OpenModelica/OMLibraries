@@ -15,9 +15,11 @@
     "https://github.com/modelica-3rdparty/BioChem",
     "https://github.com/modelica-3rdparty/Buildings",
     "https://github.com/modelica-3rdparty/FCSys",
+    "https://github.com/modelica-3rdparty/FastBuildings",
     "https://github.com/modelica-3rdparty/FuelCellLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
+    "https://github.com/modelica-3rdparty/MultiPhaseMixtureMedia",
     "https://github.com/modelica-3rdparty/Noise",
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
@@ -31,7 +33,8 @@
     "https://github.com/modelica-3rdparty/ThermoBondLib",
     "https://github.com/modelica-3rdparty/Thermocycle-library",
     "https://github.com/modelica-3rdparty/Verif",
-    "https://github.com/modelica-3rdparty/WheelsAndTires"
+    "https://github.com/modelica-3rdparty/WheelsAndTires",
+    "https://github.com/modelica-3rdparty/XogenyTest"
   ],
   "github-repos": [
     "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100",
@@ -462,6 +465,14 @@
       },
       "rev": "2be2667f9936d88ffb9b8a8246c5af9ccb0b307f",
       "url": "https://github.com/modelica-3rdparty/MotorcycleDynamics.git"
+    },
+    {
+      "dest": "MultiPhaseMixtureMedia",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9b5e4eb84635451f22366b8e3d16d799a9a97d7c",
+      "url": "https://github.com/jwindahlModelon/MultiPhaseMixtureMedia.git"
     },
     {
       "dest": "NCLib",
