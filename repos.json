@@ -121,7 +121,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "158972fc56296c0b1d30c29d5f78f1baaff37c3b",
+      "rev": "ddd2fc0f0a0e377bf74aaf654184323e405d623b",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "19cbb9b32db0c30c929f3bc7d126506558653348",
+      "rev": "347efec7597476de399d4d6347d62b96d3329ce4",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -471,7 +471,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9b5e4eb84635451f22366b8e3d16d799a9a97d7c",
+      "rev": "6295721f061e1b42c7a3642c6badc9d267faff5e",
       "url": "https://github.com/jwindahlModelon/MultiPhaseMixtureMedia.git"
     },
     {
