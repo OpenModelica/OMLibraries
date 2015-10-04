@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6675dc661cc8b6302ca1cc4faecbf4e62f5e6d1f",
+      "rev": "5f0ef16e63095906082c415176c47e76463df89b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c28eb1d0961b826585896deb572fd47a30581409",
+      "rev": "e093b4f7969dfa333a6b1885d7edd09cd2ca182a",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -611,7 +611,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bc954b318a478c1ccb88a2955ba6dd05891f2514",
+      "rev": "79e6949dc57ff2216f2813808eb731002b8c741d",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -730,7 +730,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "91a2e341f9a6f4ec0971ffb68e35ebc720a31186",
+      "rev": "f0427ce2bd63895dd983a800a37828c4b29e9612",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
