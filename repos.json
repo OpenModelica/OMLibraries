@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f329842ea17b12b9602015d45743d032aecdb5a3",
+          "rev": "b8bdf95a26cdb6c8b1941233cb3cd931759513d3",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "412be4526852e9b1ce7dbed91df34a98653eee13",
+      "rev": "c4b93901700d11fcf2c158c47d2d5e245b7b2619",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -746,7 +746,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "baffe560d378ef31e3d341ed46610015377a0ba6",
+      "rev": "35d99c49b61305e56176c1516a207cc15b91799a",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
