@@ -225,7 +225,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b80f5c4bac35ab72053da9f8db2500457db9bc93",
+      "rev": "99918820e346c362c3ad52d782c8215e5deeac4c",
       "url": "https://github.com/DLR-SR/FractionalOrder.git"
     },
     {
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b8bdf95a26cdb6c8b1941233cb3cd931759513d3",
+          "rev": "5b2e2c2598047d2bc2ce7a8a38ff843885e5f101",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4b93901700d11fcf2c158c47d2d5e245b7b2619",
+      "rev": "c5cf41c853bf2bbd31c08b32552e3e74f2e40f8a",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -471,7 +471,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6295721f061e1b42c7a3642c6badc9d267faff5e",
+      "rev": "b82e39f9ec44757503d46ecf5dc39d1fac598ed6",
       "url": "https://github.com/jwindahlModelon/MultiPhaseMixtureMedia.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7cb5b32608b84e2253ac0ba8838b5c1ecc2478c3",
+      "rev": "0b4998d5b0a6ae216f3f84a8b95fbc0078d4590d",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -528,7 +528,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7597498ffe49fea2723bafdc8a0f275c0dcecb83",
+      "rev": "c1d846a56ac2c518aa80cbda92cad8c226bc1e8f",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -611,7 +611,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "79e6949dc57ff2216f2813808eb731002b8c741d",
+      "rev": "41f5edea79a10a9d660a66f6d1faf20fdb8c3e42",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -714,7 +714,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "434c208b0b36877a4a76d119af01dcb176eeb982",
+      "rev": "00055b19f2ebf20ef2affcfa6eff51403b60f4bf",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -746,7 +746,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "35d99c49b61305e56176c1516a207cc15b91799a",
+      "rev": "3136d22235b0ed8f2a9a6315a844bf7022af3841",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
