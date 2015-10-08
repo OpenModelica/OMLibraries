@@ -121,7 +121,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "ddd2fc0f0a0e377bf74aaf654184323e405d623b",
+      "rev": "af5fbe0e777ccc43f431d677753a1e0b0ba599ec",
       "targets": [
         "Buildings latest"
       ],
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "5b2e2c2598047d2bc2ce7a8a38ff843885e5f101",
+          "rev": "59296b1d3b5644c46db5e068cb3a81c9563e5764",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c5cf41c853bf2bbd31c08b32552e3e74f2e40f8a",
+      "rev": "603c3852edeeb7d666caeaa26ff5f03d041a371f",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0b4998d5b0a6ae216f3f84a8b95fbc0078d4590d",
+      "rev": "0252f92fc3e67cec87a3dc9d5fb28cf0158274ba",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
