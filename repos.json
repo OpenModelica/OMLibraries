@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "347efec7597476de399d4d6347d62b96d3329ce4",
+      "rev": "ed8e567e11735c48c62b0b6b5d4d48ef17d803fe",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "603c3852edeeb7d666caeaa26ff5f03d041a371f",
+      "rev": "af74456ec9f56ab329ef8c4b68d591b81c359ad7",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0252f92fc3e67cec87a3dc9d5fb28cf0158274ba",
+      "rev": "fa37ee89251beac16dbdb0e216a294efd0c93bb0",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "44c7d277980b7a88b449b72edec0a56416b40fa9",
+      "rev": "12d51bb25eb9055b4d9f9fff2085ef6d101e8dff",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -611,7 +611,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "41f5edea79a10a9d660a66f6d1faf20fdb8c3e42",
+      "rev": "689704d47de52eebf93213cf9dd3d4fd884777d8",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {

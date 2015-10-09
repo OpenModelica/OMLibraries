@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20151008_190251.core
-ALL_TARGET=$(BUILD_DIR)/20151008_190251.all
+CORE_TARGET=$(BUILD_DIR)/20151009_151534.core
+ALL_TARGET=$(BUILD_DIR)/20151009_151534.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -121,12 +121,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '347efec7597476de399d4d6347d62b96d3329ce4'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'ed8e567e11735c48c62b0b6b5d4d48ef17d803fe'
 	test ! -d 'build//ExternData 1.1.0'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 1.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 1.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 1.1.0.license"
-	echo '1.1.0-5-g347efec' > "$(BUILD_DIR)/ExternData 1.1.0.last_change"
+	echo '1.1.0-6-ged8e567' > "$(BUILD_DIR)/ExternData 1.1.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -377,13 +377,13 @@ ModelicaDEVS:
 	echo '1.0' > "$(BUILD_DIR)/ModelicaDEVS 1.last_change"
 Modelica_DeviceDrivers:
 	# Building git/Modelica_DeviceDrivers
-	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' '603c3852edeeb7d666caeaa26ff5f03d041a371f'
+	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'af74456ec9f56ab329ef8c4b68d591b81c359ad7'
 	test ! -d 'build//Modelica_DeviceDrivers 1.4.3'
 	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3"
 	echo 'Modelica_Synchronous 0.92' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.uses"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.license"
-	echo '1.4.3-8-g603c385' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.last_change"
+	echo '1.4.3-11-gaf74456' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.last_change"
 Modelica_EnergyStorages:
 	# Building git/Modelica_EnergyStorages
 	./checkout-git.sh 'git/Modelica_EnergyStorages' 'https://github.com/modelica/Modelica_EnergyStorages.git' 'master' 'd41d9329f3f8f847a3bedf0ce7dff19c0ab0b83b'
@@ -445,12 +445,12 @@ NeuralNetwork:
 	echo 'Windows-1252' > "$(BUILD_DIR)/NeuralNetwork 1.0/package.encoding"
 Noise:
 	# Building git/Noise
-	./checkout-git.sh 'git/Noise' 'https://github.com/DLR-SR/Noise.git' 'master' '0252f92fc3e67cec87a3dc9d5fb28cf0158274ba'
+	./checkout-git.sh 'git/Noise' 'https://github.com/DLR-SR/Noise.git' 'master' 'fa37ee89251beac16dbdb0e216a294efd0c93bb0'
 	test ! -d 'build//Modelica_Noise 1.0 Beta.1'
 	cp -a 'git/Noise/Modelica_Noise 1.0 Beta.1' "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.license"
-	echo '20151008-113213~git~master' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.last_change"
+	echo '20151009-093916~git~master' > "$(BUILD_DIR)/Modelica_Noise 1.0 Beta.1.last_change"
 ObjectStab:
 	# Building git/ObjectStab
 	./checkout-git.sh 'git/ObjectStab' 'https://github.com/modelica-3rdparty/ObjectStab.git' 'master' '14a178c837390a0411613f85b11372503ee067ea'
@@ -469,12 +469,12 @@ OpenHydraulics:
 	echo '1.0.1-23-g3485cf4' > "$(BUILD_DIR)/OpenHydraulics 1.0.last_change"
 PNlib:
 	# Building git/PNlib
-	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' '44c7d277980b7a88b449b72edec0a56416b40fa9'
+	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' '12d51bb25eb9055b4d9f9fff2085ef6d101e8dff'
 	test ! -d 'build//PNlib 1.1'
 	cp -a 'git/PNlib/PNlib' "$(BUILD_DIR)/PNlib 1.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/PNlib 1.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PNlib 1.1.license"
-	echo '1.1-44-g44c7d27' > "$(BUILD_DIR)/PNlib 1.1.last_change"
+	echo '1.1-45-g12d51bb' > "$(BUILD_DIR)/PNlib 1.1.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
 	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'c1d846a56ac2c518aa80cbda92cad8c226bc1e8f'
@@ -559,12 +559,12 @@ RealTimeCoordinationLibrary:
 	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/package.encoding"
 ScalableTestSuite:
 	# Building git/ScalableTestSuite
-	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/casella/ScalableTestSuite.git' 'master' '41f5edea79a10a9d660a66f6d1faf20fdb8c3e42'
-	test ! -d 'build//ScalableTestSuite 1.2.0'
-	cp -a 'git/ScalableTestSuite/ScalableTestSuite' "$(BUILD_DIR)/ScalableTestSuite 1.2.0"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ScalableTestSuite 1.2.0.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ScalableTestSuite 1.2.0.license"
-	echo '1.2.0-2-g41f5ede' > "$(BUILD_DIR)/ScalableTestSuite 1.2.0.last_change"
+	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/casella/ScalableTestSuite.git' 'master' '689704d47de52eebf93213cf9dd3d4fd884777d8'
+	test ! -d 'build//ScalableTestSuite 1.3.0'
+	cp -a 'git/ScalableTestSuite/ScalableTestSuite' "$(BUILD_DIR)/ScalableTestSuite 1.3.0"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ScalableTestSuite 1.3.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ScalableTestSuite 1.3.0.license"
+	echo '1.3.0' > "$(BUILD_DIR)/ScalableTestSuite 1.3.0.last_change"
 Servomechanisms:
 	# Building git/Servomechanisms
 	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' 'a0681972ccd56cf83305ce4e3fc4340ff3c17b36'
