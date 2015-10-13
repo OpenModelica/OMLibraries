@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed8e567e11735c48c62b0b6b5d4d48ef17d803fe",
+      "rev": "848c1cd182f393c6252a70432608d8215a184fcd",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "8bd8d4bc4e942669930b3d538f9ff2e99531f5dc",
+          "rev": "c8d3c24839ee3ea630fbe0452c2e1e2765cdbc79",
           "targets": [
             "Complex",
             "Modelica",
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "59296b1d3b5644c46db5e068cb3a81c9563e5764",
+          "rev": "bf5ddc8172d92d681febeea08c5e8f710cb56de5",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -398,7 +398,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ca5092c14bb7af4507a10700ee49181a3a3ee199",
+      "rev": "a5555721f9f6ecf68eba5c9ab7e031a2ae4bfeea",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "af74456ec9f56ab329ef8c4b68d591b81c359ad7",
+      "rev": "59d7fc2cbc4ddab4984114584f40ef4d7f2af5ca",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa37ee89251beac16dbdb0e216a294efd0c93bb0",
+      "rev": "93beeb184e287209fc89171b0cfd8a346822da46",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f18ff575e1f0058cd648bf000cd59602552a29a2",
+      "rev": "82d985d4a7a00003f10e01643f87f5940e8297be",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -528,7 +528,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c1d846a56ac2c518aa80cbda92cad8c226bc1e8f",
+      "rev": "3833a44753b62b8f980a92a962b03f44e67bbe74",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
