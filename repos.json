@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "848c1cd182f393c6252a70432608d8215a184fcd",
+      "rev": "f067ec87e17cba589962c84a618987cde5ce7d64",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c8d3c24839ee3ea630fbe0452c2e1e2765cdbc79",
+          "rev": "4a10d67f0a0c19a39a22a5ac418c1e02079300a1",
           "targets": [
             "Complex",
             "Modelica",
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bf5ddc8172d92d681febeea08c5e8f710cb56de5",
+          "rev": "31049731927dd1f99e8f095894860761b799cb61",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -398,7 +398,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5555721f9f6ecf68eba5c9ab7e031a2ae4bfeea",
+      "rev": "c3e3e3611c620cde3b72472a76d62c419ce54b5b",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "59d7fc2cbc4ddab4984114584f40ef4d7f2af5ca",
+      "rev": "4125642805a12aa0d2e9627d493467b73f051f9e",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -496,7 +496,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "93beeb184e287209fc89171b0cfd8a346822da46",
+      "rev": "8c0fbab0f1d62f6e3db517719a0dc78a2e52cd45",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
