@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "4a10d67f0a0c19a39a22a5ac418c1e02079300a1",
+          "rev": "fd9fbe6d278bea0cf6bd8bfdfc9c807ad1469574",
           "targets": [
             "Complex",
             "Modelica",
@@ -414,7 +414,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4125642805a12aa0d2e9627d493467b73f051f9e",
+      "rev": "c406cf5e9288adaaa2d7429c42b64cdafc19dd87",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "82d985d4a7a00003f10e01643f87f5940e8297be",
+      "rev": "20daa9c0bcbce0d46dbda6b4c630c6f6c96eb034",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -746,7 +746,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3136d22235b0ed8f2a9a6315a844bf7022af3841",
+      "rev": "473db872c0d59ad9ae9172e5382faf4564ebb516",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     }
   ]
