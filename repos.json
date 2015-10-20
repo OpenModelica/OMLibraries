@@ -160,7 +160,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bbf6e9711665d55e5a8cf2f7235fa013c2315104",
+      "rev": "7296806f4d0c352222a585c4dc515a5d978c888b",
       "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d13c10a3a2903c430e2608f60c2dab479269a868",
+          "rev": "0d88d022aebe0368751ba8b8b700460fe9b70dfd",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "20daa9c0bcbce0d46dbda6b4c630c6f6c96eb034",
+      "rev": "34fc3fe9b8b2695085597e29148ec32949af7091",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
