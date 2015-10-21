@@ -112,7 +112,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7ce01d8b614521348869eaf9d046f16fded091d2",
+      "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "fd9fbe6d278bea0cf6bd8bfdfc9c807ad1469574",
+          "rev": "45738263db00b4f83f6fb64182dc91eaf850540e",
           "targets": [
             "Complex",
             "Modelica",
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "0d88d022aebe0368751ba8b8b700460fe9b70dfd",
+          "rev": "b089f4f58365b77e4d39d7b20efa230a8fbc97a2",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -390,7 +390,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4d1686a3b8df934724f26ea2f58b120696ce69a",
+      "rev": "92d2b8404bb154a8314b6ebb2c3920ac9be755cf",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "34fc3fe9b8b2695085597e29148ec32949af7091",
+      "rev": "d973c5c64c926bd9a4417b6bf4c8131b467dce9a",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
