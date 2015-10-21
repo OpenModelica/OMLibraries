@@ -152,7 +152,7 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	diff -u .remote/nightly-library-files nightly-library-files || true
 	diff -u .remote/nightly-library-sources nightly-library-sources || true
 upload: config.done .remote/control-files .remote/pool .remote/release-command
-	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || scp debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
+	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || rsync --ignore-existing debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
 	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
 	`cat .remote/release-command`
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
