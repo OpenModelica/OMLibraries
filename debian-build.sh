@@ -10,7 +10,7 @@ mkdir -p debian-build
 . ./build-common.sh
 DEPENDS=`for f in $DEPENDS; do echo -n $f,; done`
 
-if grep -q "$FULLNAME-1_all.deb" .remote/nightly-library-files; then
+if grep -q "$FULLNAME-1_all.deb" .remote/nightly-library-files || test -f "`cat .remote/pool`"; then
   echo "$FULLNAME-1_all.deb already built - skipping"
   exit 0
 elif test -f "build/$NAME.nopackage"; then
