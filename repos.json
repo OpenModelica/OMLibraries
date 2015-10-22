@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7af358524f04dc484262de95a0ed7cd1c29b0687",
+      "rev": "1603683a01e7eb29637a5db6a058522247c923cf",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b089f4f58365b77e4d39d7b20efa230a8fbc97a2",
+          "rev": "554328ca9afae80cb491ac3a8c98884d7fd22109",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d973c5c64c926bd9a4417b6bf4c8131b467dce9a",
+      "rev": "aa35b47c314c099d74aaa92e331cb7216bef76a5",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
