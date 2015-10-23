@@ -160,7 +160,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7296806f4d0c352222a585c4dc515a5d978c888b",
+      "rev": "1981f6978742d46a07c02dd4130544175529b44c",
       "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1603683a01e7eb29637a5db6a058522247c923cf",
+      "rev": "91b844edcd5c8f2687fc99c265e84075e4f86ef7",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "554328ca9afae80cb491ac3a8c98884d7fd22109",
+          "rev": "7d4f6f5fedfc13446bbe3c1c685a389bf79379fa",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -390,7 +390,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "92d2b8404bb154a8314b6ebb2c3920ac9be755cf",
+      "rev": "f8eb9798376dcda1609947b8813c012320ea1ed6",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -520,7 +520,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aa35b47c314c099d74aaa92e331cb7216bef76a5",
+      "rev": "e6288f9b9dd2d132615ed202ee45fb9861d93410",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -611,7 +611,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "689704d47de52eebf93213cf9dd3d4fd884777d8",
+      "rev": "3d24abf79806cd0073e610e8d1e960060365d144",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -730,7 +730,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f0427ce2bd63895dd983a800a37828c4b29e9612",
+      "rev": "518bc3479f02fb17bded0af6c55f0f093f5d921c",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
