@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20151023_190254.core
-ALL_TARGET=$(BUILD_DIR)/20151023_190254.all
+CORE_TARGET=$(BUILD_DIR)/20151024_190235.core
+ALL_TARGET=$(BUILD_DIR)/20151024_190235.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -97,12 +97,12 @@ ComplexLib:
 	echo '20080518-080000~git~master' > "$(BUILD_DIR)/ComplexLib.last_change"
 ConPNlib:
 	# Building git/ConPNlib
-	./checkout-git.sh 'git/ConPNlib' 'https://github.com/lochel/ConPNlib.git' 'master' '1981f6978742d46a07c02dd4130544175529b44c'
+	./checkout-git.sh 'git/ConPNlib' 'https://github.com/lochel/ConPNlib.git' 'master' '167f028139249e67aef92f03f381e2b012e90c19'
 	test ! -d 'build//ConPNlib'
 	cp -a 'git/ConPNlib/ConPNlib' "$(BUILD_DIR)/ConPNlib"
 	echo '' > "$(BUILD_DIR)/ConPNlib.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ConPNlib.license"
-	echo '20151023-184744~git~master' > "$(BUILD_DIR)/ConPNlib.last_change"
+	echo '20151024-123515~git~master' > "$(BUILD_DIR)/ConPNlib.last_change"
 DESLib:
 	# Building git/DESLib
 	./checkout-git.sh 'git/DESLib' 'https://github.com/modelica-3rdparty/DESLib.git' 'release' '7a473d8d16b118c3ea05761c6f43b17fd9838e4e'
