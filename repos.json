@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "64be4462e5c31849e2e5605c4701e9b02dd02a46",
+      "rev": "1cfcc95e5d5da0dc3a719cff1e6417d60e4d6529",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -160,7 +160,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "167f028139249e67aef92f03f381e2b012e90c19",
+      "rev": "f635b8b4144eb46ff6711b1566c34405df58cda1",
       "url": "https://github.com/lochel/ConPNlib.git"
     },
     {
@@ -325,7 +325,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "45738263db00b4f83f6fb64182dc91eaf850540e",
+          "rev": "d860c93022fa8a0926dc808169fd3ed8f8e29709",
           "targets": [
             "Complex",
             "Modelica",
@@ -344,7 +344,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "7d4f6f5fedfc13446bbe3c1c685a389bf79379fa",
+          "rev": "cceddd8a02c5e7d29a8a0c478031bbd09fa1647c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
