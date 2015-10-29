@@ -24,6 +24,7 @@
     "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
     "https://github.com/modelica-3rdparty/Physiolibrary.git",
+    "https://github.com/modelica-3rdparty/Physiomodel.git",
     "https://github.com/modelica-3rdparty/PlanarMechanics",
     "https://github.com/modelica-3rdparty/PNlib",
     "https://github.com/modelica-3rdparty/ConPNlib",
@@ -530,6 +531,14 @@
       },
       "rev": "3833a44753b62b8f980a92a962b03f44e67bbe74",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
+    },
+    {
+      "dest": "Physiomodel",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "b54087ae8868486c7bf4c64458f737899f4d2ba9",
+      "url": "https://github.com/physiology/Physiomodel"
     },
     {
       "dest": "PlanarMechanics",
