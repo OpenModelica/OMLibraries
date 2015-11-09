@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1cfcc95e5d5da0dc3a719cff1e6417d60e4d6529",
+      "rev": "4813b19dac0f8c433cb99328fff5b23664ccefb0",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -113,7 +113,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fed013cdeec0fb9552964376b575a8e3635539ab",
+      "rev": "0c5553829e7c6b28c918cbac29fe855e9695b162",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -122,7 +122,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "af5fbe0e777ccc43f431d677753a1e0b0ba599ec",
+      "rev": "f27fe41fe50dc154e7f66558971228a154f3d85a",
       "targets": [
         "Buildings latest"
       ],
@@ -185,7 +185,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "98391f7035d4525cf08eab851cf522a243976bad",
+      "rev": "7176c413d6989b0b422c8d89e50824671ff54f10",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -326,7 +326,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d860c93022fa8a0926dc808169fd3ed8f8e29709",
+          "rev": "4bf14d5356f74ceb282b4316938522947e0e1a3b",
           "targets": [
             "Complex",
             "Modelica",
@@ -345,7 +345,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f26bc2984f13731ca2c27e8eac348c80225768fa",
+          "rev": "e421db2569fe2d0305b2ce5dd476adcafc69ce36",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c406cf5e9288adaaa2d7429c42b64cdafc19dd87",
+      "rev": "224396c933944822daf0be87b4ae296cb11a3cc6",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -707,7 +707,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "800cd6464c34e772e07c968a2369b4ba7173f85a",
+      "rev": "0c5eecaadf82cd9e3a6a4ffa6241903e38fd1946",
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
