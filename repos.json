@@ -533,14 +533,6 @@
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
-      "dest": "Physiomodel",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "b54087ae8868486c7bf4c64458f737899f4d2ba9",
-      "url": "https://github.com/physiology/Physiomodel.git"
-    },
-    {
       "dest": "PlanarMechanics",
       "options": {
         "gitbranch": "master"
