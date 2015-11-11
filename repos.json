@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4813b19dac0f8c433cb99328fff5b23664ccefb0",
+      "rev": "adca82dfc92b86ee87f26e087706af75493b8bbb",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -113,7 +113,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0c5553829e7c6b28c918cbac29fe855e9695b162",
+      "rev": "81306710c6c593bc0f0d2497790e19ba811391b9",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -185,7 +185,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "67d54236deb20af3446fbf3b2c79217e9a14cd12",
+      "rev": "5aad146b94cc0524f9d9a7cc176e8e104e495009",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -243,7 +243,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cf5851d73cb1ad21bb81edb938818f1511fbbc68",
+      "rev": "4b728444579317f614b4a4c025b327dec8296030",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {

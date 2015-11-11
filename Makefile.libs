@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20151110_190229.core
-ALL_TARGET=$(BUILD_DIR)/20151110_190229.all
+CORE_TARGET=$(BUILD_DIR)/20151111_190301.core
+ALL_TARGET=$(BUILD_DIR)/20151111_190301.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -23,12 +23,12 @@ ADMSL:
 	rm -rf "$(BUILD_DIR)/ADMSL/.git"*
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '4813b19dac0f8c433cb99328fff5b23664ccefb0'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'adca82dfc92b86ee87f26e087706af75493b8bbb'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20151105-110120~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20151111-105601~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
@@ -56,12 +56,12 @@ BondLib:
 	echo 'Windows-1252' > "$(BUILD_DIR)/BondLib 2.3/package.encoding"
 BrineProp:
 	# Building git/BrineProp
-	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' '0c5553829e7c6b28c918cbac29fe855e9695b162'
+	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' '81306710c6c593bc0f0d2497790e19ba811391b9'
 	test ! -d 'build//BrineProp 0.4.1'
 	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.4.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/BrineProp 0.4.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.4.1.license"
-	echo '0.4.1-20151028-203237~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
+	echo '0.4.1-20151110-192559~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 Buildings:
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'f27fe41fe50dc154e7f66558971228a154f3d85a'
@@ -121,12 +121,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '67d54236deb20af3446fbf3b2c79217e9a14cd12'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '5aad146b94cc0524f9d9a7cc176e8e104e495009'
 	test ! -d 'build//ExternData 2.0.0-dev'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.0.0-dev"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 2.0.0-dev.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.0.0-dev.license"
-	echo '20151109-100218~git~master' > "$(BUILD_DIR)/ExternData 2.0.0-dev.last_change"
+	echo '20151110-154326~git~master' > "$(BUILD_DIR)/ExternData 2.0.0-dev.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -178,12 +178,12 @@ FuzzyControl:
 	echo '20021101-080000~git~master' > "$(BUILD_DIR)/FuzzyControl.last_change"
 HelmholtzMedia:
 	# Building git/HelmholtzMedia
-	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' 'cf5851d73cb1ad21bb81edb938818f1511fbbc68'
+	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' '4b728444579317f614b4a4c025b327dec8296030'
 	test ! -d 'build//HelmholtzMedia'
 	cp -a 'git/HelmholtzMedia/HelmholtzMedia' "$(BUILD_DIR)/HelmholtzMedia"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/HelmholtzMedia.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/HelmholtzMedia.license"
-	echo '20150729-161928~git~master' > "$(BUILD_DIR)/HelmholtzMedia.last_change"
+	echo '20151110-095244~git~master' > "$(BUILD_DIR)/HelmholtzMedia.last_change"
 IdealizedContact:
 	# Building git/IdealizedContact
 	./checkout-git.sh 'git/IdealizedContact' 'https://github.com/modelica-3rdparty/IdealizedContact.git' 'master' 'ae8b0397ea8207bc4327bea1e81ac09c6d4bcea9'
