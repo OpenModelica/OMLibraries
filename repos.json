@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "adca82dfc92b86ee87f26e087706af75493b8bbb",
+      "rev": "4b6ad9c6fe69b70d491b790c9cf13895a887a554",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -145,7 +145,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "890e6fb47dabdc292d74e1f169244a3f4c11da4e",
+      "rev": "ec34f39547d76b559837f29ce7c7adac89bd16ad",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -345,7 +345,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e421db2569fe2d0305b2ce5dd476adcafc69ce36",
+          "rev": "f79f0f9e5060b71c374db01f2c4df21936a67d28",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -391,7 +391,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f8eb9798376dcda1609947b8813c012320ea1ed6",
+      "rev": "c97f74d16790b6cf21643fbb91b366adbe4acec1",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -612,7 +612,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3d24abf79806cd0073e610e8d1e960060365d144",
+      "rev": "b3494fc5a6463059217e37ef733dd2f91d14b60b",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
