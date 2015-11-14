@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4b6ad9c6fe69b70d491b790c9cf13895a887a554",
+      "rev": "c2d145e1c18df13b226eff1dab9f8924939dee44",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -122,7 +122,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "9489e3889a20717b40aef722e9331bf8b5b117de",
+      "rev": "ebd6a066213fc608b0d3c6608d30fdaaf1377051",
       "targets": [
         "Buildings latest"
       ],
