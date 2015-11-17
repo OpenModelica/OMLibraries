@@ -1,7 +1,7 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/Modelica trunk/Blocks/Sources.mo"
 --- git/MSL/Modelica/Blocks/Sources.mo	2015-05-06 23:05:39.055855898 +0200
 +++ build/Modelica trunk/Blocks/Sources.mo	2015-05-06 23:05:39.647876189 +0200
-@@ -2335,7 +2335,7 @@
+@@ -2315,7 +2315,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
        input Real tableAvailable
@@ -10,7 +10,7 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTimeTable_getValue(tableID, icol, timeIn, nextTimeEvent, pre_nextTimeEvent)
          annotation (Library={"ModelicaStandardTables"});
-@@ -2354,7 +2354,7 @@
+@@ -2334,7 +2334,7 @@
        discrete input Modelica.SIunits.Time nextTimeEvent;
        discrete input Modelica.SIunits.Time pre_nextTimeEvent;
        input Real tableAvailable
