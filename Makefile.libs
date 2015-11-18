@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL Annex60 BioChem BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20151117_190420.core
-ALL_TARGET=$(BUILD_DIR)/20151117_190420.all
+CORE_TARGET=$(BUILD_DIR)/20151118_190443.core
+ALL_TARGET=$(BUILD_DIR)/20151118_190443.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL Annex60 BondGraph BondLib BrineProp Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest msgpack-modelica netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -64,12 +64,12 @@ BrineProp:
 	echo '0.4.1-20151110-192559~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '5037f196122418208283c6e156ac028230f872d7'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '0d828b9f6636c5ad9041df19d25d4c0fccf6008b'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo '' > "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20151116-143059~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20151117-112633~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Buildings-release:
 	# Building git/Buildings-release
 	./checkout-git.sh 'git/Buildings-release' 'https://github.com/lbl-srg/modelica-buildings.git' 'release' 'f20748d49750e70d3d03a308435889b76e5e4158'
@@ -154,12 +154,12 @@ FastBuildings:
 	echo '0.0-20150111-223732~git~master' > "$(BUILD_DIR)/FastBuildings 0.0.last_change"
 FaultTriggering:
 	# Building git/FaultTriggering
-	./checkout-git.sh 'git/FaultTriggering' 'https://github.com/modelica-3rdparty/FaultTriggering.git' 'master' '10c226b7e5b2af901b356ac437c90d6616a6e9a4'
-	test ! -d 'build//FaultTriggering 0.5.0'
-	cp -a 'git/FaultTriggering/FaultTriggering' "$(BUILD_DIR)/FaultTriggering 0.5.0"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/FaultTriggering 0.5.0.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/FaultTriggering 0.5.0.license"
-	echo '0.5.0-20140627-110908~git~master' > "$(BUILD_DIR)/FaultTriggering 0.5.0.last_change"
+	./checkout-git.sh 'git/FaultTriggering' 'https://github.com/modelica-3rdparty/FaultTriggering.git' 'master' 'f329e8348bd7a58263dea189f540ec3b3430c44c'
+	test ! -d 'build//FaultTriggering 0.6.4'
+	cp -a 'git/FaultTriggering/FaultTriggering' "$(BUILD_DIR)/FaultTriggering 0.6.4"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/FaultTriggering 0.6.4.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FaultTriggering 0.6.4.license"
+	echo '0.6.4-20151117-144952~git~master' > "$(BUILD_DIR)/FaultTriggering 0.6.4.last_change"
 FractionalOrder:
 	# Building git/FractionalOrder
 	./checkout-git.sh 'git/FractionalOrder' 'https://github.com/DLR-SR/FractionalOrder.git' 'master' '99918820e346c362c3ad52d782c8215e5deeac4c'

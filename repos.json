@@ -122,7 +122,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "5037f196122418208283c6e156ac028230f872d7",
+      "rev": "0d828b9f6636c5ad9041df19d25d4c0fccf6008b",
       "targets": [
         "Buildings latest"
       ],
@@ -218,7 +218,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "10c226b7e5b2af901b356ac437c90d6616a6e9a4",
+      "rev": "f329e8348bd7a58263dea189f540ec3b3430c44c",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
