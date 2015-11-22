@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "f105b7977fad6fe88c0cc9e454fb86240c11387a",
+      "rev": "6ca69c3587b045e64d4607da670ac79e8ceeea90",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -185,7 +185,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6b689ec0116817fd359e2f17e13be9176190e8e0",
+      "rev": "c15d7f6351910e637888ad994b93a55b99f747e2",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
