@@ -122,7 +122,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0e3a632421f674c09ccacd9b60f138c44617e858",
+      "rev": "5865b034df368edda9d24e1b366dc135978c5670",
       "targets": [
         "Buildings latest"
       ],
@@ -185,7 +185,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b6a5b3c54691427376122dc0785929c114cb77ba",
+      "rev": "672b02f3b9d5982304e58550b8b8ea5ffade9b2b",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -345,7 +345,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "1edf4a3bf35c0eed1555b2a206e5a62f28dba364",
+          "rev": "ffd0c93df64cada2edf0eccc521ff184d693a095",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -612,7 +612,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1622201fb9c4b74f4ced0c7e62f096dd2e690113",
+      "rev": "411fba9aa53556aee2c9b249d928ff1700d8af40",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
