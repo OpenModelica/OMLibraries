@@ -297,18 +297,6 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build
 +tempInterpol1_der
  tempInterpol2
 +tempInterpol2_der
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Media/Water/IF97_Utilities.mo "build/Modelica trunk/Media/Water/IF97_Utilities.mo"
---- git/MSL/Modelica/Media/Water/IF97_Utilities.mo	2015-05-06 23:05:39.091857132 +0200
-+++ build/Modelica trunk/Media/Water/IF97_Utilities.mo	2015-05-06 23:05:39.655876463 +0200
-@@ -7159,7 +7159,7 @@
-        else region;
-     aux.R := BaseIF97.data.RH2O;
-     aux.p := p;
--    aux.T := T;
-+    aux.T := T; /* OpenModelica patch */ aux.dpT := 0.0; aux.pt := 0.0; aux.pd := 0.0; aux.x := 0.0; aux.rho := 0.0; aux.vt := 0.0; aux.vp := 0.0; aux.cp := 0.0; /* end OpenModelica patch */
-     if (aux.region == 1) then
-       g := BaseIF97.Basic.g1(p, T);
-       aux.h := aux.R*aux.T*g.tau*g.gtau;
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
 --- git/MSL/Modelica/package.mo	2015-05-06 23:05:39.119858092 +0200
 +++ build/Modelica trunk/package.mo	2015-05-06 23:05:39.659876600 +0200
