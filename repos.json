@@ -345,7 +345,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "970f3df8e5874bc70d2c79aa9ca7320a0d5e8b71",
+          "rev": "ef86d196d5fd0b72ca323caa83d01feac7638c59",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -653,7 +653,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c89bc3ed50d53e4002b12f3cc1700fc97f355a35",
+      "rev": "b5c084ca0cbb13ba137ac2c449240410cecfaaf1",
       "url": "https://github.com/modelica-3rdparty/Spot.git"
     },
     {
