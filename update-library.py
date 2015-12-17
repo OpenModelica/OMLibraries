@@ -4,6 +4,7 @@ import os
 import requests
 import sys
 import simplejson
+import re
 from optparse import OptionParser
 from collections import defaultdict
 import subprocess
@@ -98,14 +99,21 @@ def findPrefix(pre,strs):
 
 def checkGithub(ghs,urls):
   res = []
+  access_token = ""
   for gh in ghs:
-    r = requests.get(gh)
+    r = requests.get(gh+"&"+access_token)
     if(r.ok):
       for repo in simplejson.loads(r.text or r.content):
-        if not findPrefix(repo['svn_url'],urls):
-          res.append(repo)
+        if sum(not (re.search("/%s([.]git)?$" % repo['name'], url) is None) for url in urls):
+          continue
+        if repo['fork']:
+          r = requests.get(repo['url']+"?"+access_token)
+          if not r.ok:
+            raise Exception("GitHub request failed: "+repo['url'])
+          repo = simplejson.loads(r.text or r.content)
+        res.append(repo)
     else:
-      raise "GitHub request failed"
+      raise Exception("GitHub request failed %s" % gh)
   return res
 
 def checkLatest(repo):

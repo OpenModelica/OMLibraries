@@ -9,33 +9,19 @@
     "https://github.com/modelica/Modelica_LinearSystems2",
     "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_Synchronous",
-    "https://github.com/modelica-3rdparty/open-bldc-modelica.git",
     "https://github.com/modelica-3rdparty/AixLib",
     "https://github.com/modelica-3rdparty/ATplus",
-    "https://github.com/modelica-3rdparty/BioChem",
-    "https://github.com/modelica-3rdparty/Buildings",
-    "https://github.com/modelica-3rdparty/FCSys",
-    "https://github.com/modelica-3rdparty/FastBuildings",
+    "https://github.com/modelica-3rdparty/Buildings.git",
     "https://github.com/modelica-3rdparty/FuelCellLib",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
-    "https://github.com/modelica-3rdparty/MultiPhaseMixtureMedia",
-    "https://github.com/modelica-3rdparty/Noise",
-    "https://github.com/modelica-3rdparty/OpenHydraulics",
     "https://github.com/modelica-3rdparty/PDELib",
-    "https://github.com/modelica-3rdparty/Physiolibrary.git",
-    "https://github.com/modelica-3rdparty/Physiomodel.git",
-    "https://github.com/modelica-3rdparty/PlanarMechanics",
-    "https://github.com/modelica-3rdparty/PNlib",
-    "https://github.com/modelica-3rdparty/ConPNlib",
-    "https://github.com/modelica-3rdparty/ScalableTestSuite",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
     "https://github.com/modelica-3rdparty/Thermocycle-library",
     "https://github.com/modelica-3rdparty/Verif",
-    "https://github.com/modelica-3rdparty/WheelsAndTires",
-    "https://github.com/modelica-3rdparty/XogenyTest"
+    "https://github.com/modelica-3rdparty/WheelsAndTires"
   ],
   "github-repos": [
     "https://api.github.com/users/modelica-3rdParty/repos?type=owner&per_page=100",
@@ -70,6 +56,14 @@
         "self"
       ],
       "url": "https://github.com/modelica-3rdparty/ADMSL.git"
+    },
+    {
+      "dest": "AdvancedNoise",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "23a0ed42abb7a12aaf9da75c96d8d3f06c4b06e6",
+      "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
       "dest": "Annex60",
@@ -115,6 +109,14 @@
       },
       "rev": "81306710c6c593bc0f0d2497790e19ba811391b9",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
+    },
+    {
+      "dest": "BuildingSystems",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "2bc91cb9239ffebcd816c6979b177a01dc677edd",
+      "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
       "dest": "Buildings",
@@ -364,6 +366,14 @@
       },
       "rev": "ab15d4cae19b5e4a1148d1d4b2a05c50864599ba",
       "url": "https://github.com/jjpotterkowski/ManualTracking.git"
+    },
+    {
+      "dest": "Modelica-MVEM",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9130686e32ec4c58055b99e1058b802c0e80a5ad",
+      "url": "https://github.com/modelica-3rdparty/Modelica-MVEM.git"
     },
     {
       "core": true,
@@ -727,6 +737,22 @@
       "url": "https://github.com/xogeny/XogenyTest.git"
     },
     {
+      "dest": "ipsl",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "7477685d78413b43fe75a2c81506faebfff82986",
+      "url": "https://github.com/modelica-3rdparty/ipsl.git"
+    },
+    {
+      "dest": "modelica-flight",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "f3ae1c3ebe1b33921654a0e0d59d6e65f0bcfe84",
+      "url": "https://github.com/modelica-3rdparty/modelica-flight.git"
+    },
+    {
       "dest": "msgpack-modelica",
       "options": {
         "gitbranch": "master"
@@ -749,6 +775,14 @@
       },
       "rev": "473db872c0d59ad9ae9172e5382faf4564ebb516",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
+    },
+    {
+      "dest": "openfdm",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "382562b4b3a499472017977e52e62b6ac2f88baa",
+      "url": "https://github.com/modelica-3rdparty/openfdm.git"
     }
   ]
 }
