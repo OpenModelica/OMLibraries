@@ -115,7 +115,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2bc91cb9239ffebcd816c6979b177a01dc677edd",
+      "rev": "115e9ccd6fdd6665341ee3491934236aa3798080",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -124,7 +124,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "27a9a2357354ed6643fec0259d33c080344834f4",
+      "rev": "d85fc83f4d73f95c8d58a9415c23b9d9ffc44e42",
       "targets": [
         "Buildings latest"
       ],
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "0ca840e42b4ac4f313351359ac31dd8dbcde5b79",
+          "rev": "d0a273d375c4e8f5fec30adf24fd801d8dc5e0e5",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
