@@ -124,7 +124,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d85fc83f4d73f95c8d58a9415c23b9d9ffc44e42",
+      "rev": "934fb7a110fed3a0ebc4888ebf5d64eb4677e2ea",
       "targets": [
         "Buildings latest"
       ],
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "68aba5dbe60c3f6e780968fa5361658e6dc6d676",
+      "rev": "8e5708d47fb6f496cd9a9b5b953692ec4ddef294",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "91434cdab57279f90833e49da1463bbf8746dd7b",
+          "rev": "9600ba22f7f0ff207117dd33299e8d3c301ed01c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8468e27e2fcfa651db790df7cb7ac3ab7207499e",
+      "rev": "96b599a588ad15590c69f1746673b3333482b3b6",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
