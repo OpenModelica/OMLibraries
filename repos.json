@@ -147,7 +147,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "93eeef720a8d4c7a7a83b998cfab33bebd3e2232",
+      "rev": "1e0c6943e8042229409b40c768acbe16c9783829",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8e5708d47fb6f496cd9a9b5b953692ec4ddef294",
+      "rev": "0710b395cb43edca2f791c332c9e6c59d911db89",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9600ba22f7f0ff207117dd33299e8d3c301ed01c",
+          "rev": "2655c9333424a97d5a66758df81814f1d9e452ff",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
