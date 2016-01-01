@@ -115,7 +115,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d9c778f6c6a4feb8cbeb4c2ef3356456aad56d4e",
+      "rev": "65d65f9eb9e502b3365d87ff5068859771f93b64",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "96b599a588ad15590c69f1746673b3333482b3b6",
+      "rev": "0d9616b22ff9275b75eb2b0fc085928a4085b3cc",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
