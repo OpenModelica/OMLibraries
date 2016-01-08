@@ -115,7 +115,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "28438d6fbfc2b6d2b02f96c06dcaff8d5194a78d",
+      "rev": "fd916f1b50ea39333ac6722e58f84fe2c8ff6884",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -124,7 +124,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c985aed537fff81b5d40850723c2637ab55facb5",
+      "rev": "5b12bc92483ff23e192b37d3722d90031b30ee32",
       "targets": [
         "Buildings latest"
       ],
@@ -725,7 +725,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00055b19f2ebf20ef2affcfa6eff51403b60f4bf",
+      "rev": "2f3fb07d2f9a769198380259ce5f1ee539728bcd",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
