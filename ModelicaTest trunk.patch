@@ -8,10 +8,10 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/Mod
 -       version="3.2.2",
 +       version="trunk",
         versionBuild=0,
-        versionDate="2013-08-14",
-        dateModified = "2013-08-14 08:44:41Z",
+        versionDate="2016-03-11",
+        dateModified = "2016-03-11 08:44:41Z",
         revisionId="$Id::                                       $",
--       uses(Modelica(version="3.2.1")),
+-       uses(Modelica(version="3.2.2")),
 +       uses(Modelica(version="trunk")),
      Documentation(info="<html>
  <p>
