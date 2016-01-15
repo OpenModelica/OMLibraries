@@ -681,7 +681,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1592a2f902d4070369cf0c24cc3ceb7be0e518d5",
+      "rev": "3e9b4cc577ee2689ed6a0d40f031a2ad6456b10d",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1a604753047522df1c3dc0d63d60f6480a2348d2",
+      "rev": "fe45f32890c1e5138d3104b840f86b4951b9fcc1",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
