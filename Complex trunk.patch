@@ -4,10 +4,10 @@
    end 'String';
  
  annotation (Protection(access=Access.hide),
--version="3.2.1",
--versionBuild=2,
+-version="3.2.2",
+-versionBuild=0,
 +version="trunk",
 +versionBuild=0,
- versionDate="2013-08-14",
- dateModified = "2013-08-14 08:44:41Z",
- revisionId="$Id:: Complex.mo 6931 2013-08-14 11:38:51Z #$",
+ versionDate="2016-01-15",
+ dateModified = "2016-01-15 08:44:41Z",
+ revisionId="$Id::                                       $",
