@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160119_095218.core
-ALL_TARGET=$(BUILD_DIR)/20160119_095218.all
+CORE_TARGET=$(BUILD_DIR)/20160119_113550.core
+ALL_TARGET=$(BUILD_DIR)/20160119_113550.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -73,12 +73,12 @@ BrineProp:
 	echo '0.4.1-20151110-192559~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 BuildingSystems:
 	# Building git/BuildingSystems
-	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' 'e470650e046b186b51603ca03ae59aea9dc2b299'
+	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' '87fde9a2568ed3d2fdd7660206e7cb60b5fa44dd'
 	test ! -d 'build//BuildingSystems 0.1'
 	cp -a 'git/BuildingSystems/BuildingSystems' "$(BUILD_DIR)/BuildingSystems 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/BuildingSystems 0.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BuildingSystems 0.1.license"
-	echo '0.1-20160117-170930~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
+	echo '0.1-20160118-214054~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
 Buildings:
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '1131a0e0cfc9891627489ce2df99e75a9ef7f9ee'
@@ -589,7 +589,7 @@ ScalableTestSuite:
 	cp -a 'git/ScalableTestSuite/ScalableTestSuite' "$(BUILD_DIR)/ScalableTestSuite 1.4.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ScalableTestSuite 1.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ScalableTestSuite 1.4.0.license"
-	echo '1.4.0' > "$(BUILD_DIR)/ScalableTestSuite 1.4.0.last_change"
+	echo '1.4.0-10-g411fba9' > "$(BUILD_DIR)/ScalableTestSuite 1.4.0.last_change"
 Servomechanisms:
 	# Building git/Servomechanisms
 	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' 'a0681972ccd56cf83305ce4e3fc4340ff3c17b36'
