@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "68d070f1f7d4c03c009cde43595449c20ae1b54b",
+          "rev": "722073f482b64c258865b6a8a0d425a943c1ac03",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fb97742e0fcf2bf29c8563a1dda1f1d5ab8620ed",
+      "rev": "fa0c6f31134178813ed8f0ca90d7652a50026fe0",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
