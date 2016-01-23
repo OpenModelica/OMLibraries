@@ -124,7 +124,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "2113124b443d97b5e382958d61d117cf0c157023",
+      "rev": "b68771cb6983dddeca086d1cafd1fe9919b3b7f8",
       "targets": [
         "Buildings latest"
       ],
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "02efeba0f2c456002867c93c53fb9b35737f6fbb",
+          "rev": "47ef2e27bbba60010bc593039c15b69a689a6a53",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa0c6f31134178813ed8f0ca90d7652a50026fe0",
+      "rev": "26d9e45de43a86e28954ebd9b93f0049145eb1a4",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
