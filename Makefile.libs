@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160125_190301.core
-ALL_TARGET=$(BUILD_DIR)/20160125_190301.all
+CORE_TARGET=$(BUILD_DIR)/20160126_190252.core
+ALL_TARGET=$(BUILD_DIR)/20160126_190252.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Buildings-release Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -32,12 +32,12 @@ AdvancedNoise:
 	echo '0.9.0-33-g23a0ed4' > "$(BUILD_DIR)/AdvancedNoise 0.9.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '3ed18daf20b0226db939b7585076b39dd8024622'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'c278c84d2ff197b7637b4ad7ce2e860ddb4a20b7'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20160108-113438~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20160126-165552~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
@@ -311,13 +311,13 @@ MSL:
 	echo '3.2.1-20151119-144332~git~maint-3.2.1' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ObsoleteModelica3.breaks"
 	# Building git/MSL
-	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'master' '569e857cfe6a251efe7bce3e4d3b03f060c458ad'
+	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'master' '99173e0c7e34ef4b8835e2455f4191f93aab9896'
 	test ! -f 'build//Complex trunk.mo'
 	cp -a 'git/MSL/Complex.mo' "$(BUILD_DIR)/Complex trunk.mo"
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'Complex trunk.patch'
 	echo '' > "$(BUILD_DIR)/Complex trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Complex trunk.license"
-	echo '20160125-112852~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
+	echo '20160125-200744~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex trunk.breaks"
 	test ! -d 'build//Modelica trunk'
 	cp -a 'git/MSL/Modelica' "$(BUILD_DIR)/Modelica trunk"
@@ -326,27 +326,27 @@ MSL:
 	echo 'Complex trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'ModelicaServices trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica trunk.license"
-	echo '20160125-112852~git~master-om1' > "$(BUILD_DIR)/Modelica trunk.last_change"
+	echo '20160125-200744~git~master-om1' > "$(BUILD_DIR)/Modelica trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica trunk.breaks"
 	test ! -d 'build//ModelicaReference trunk'
 	cp -a 'git/MSL/ModelicaReference' "$(BUILD_DIR)/ModelicaReference trunk"
 	echo '' > "$(BUILD_DIR)/ModelicaReference trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference trunk.license"
-	echo '20160125-112852~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
+	echo '20160125-200744~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference trunk.breaks"
 	test ! -d 'build//ModelicaServices trunk'
 	cp -a 'git/MSL/ModelicaServices' "$(BUILD_DIR)/ModelicaServices trunk"
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices trunk.patch'
 	echo > "$(BUILD_DIR)/ModelicaServices trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices trunk.license"
-	echo '20160125-112852~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
+	echo '20160125-200744~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices trunk.breaks"
 	test ! -d 'build//ModelicaTest trunk'
 	cp -a 'git/MSL/ModelicaTest' "$(BUILD_DIR)/ModelicaTest trunk"
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20160125-112852~git~master-om6' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20160125-200744~git~master-om6' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 ManualTracking:
 	# Building git/ManualTracking
@@ -402,13 +402,13 @@ ModelicaDEVS:
 	echo '1.0' > "$(BUILD_DIR)/ModelicaDEVS 1.last_change"
 Modelica_DeviceDrivers:
 	# Building git/Modelica_DeviceDrivers
-	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' '84ea6d189d3c0870544f2510903963fb241ecb56'
+	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'da9a3f1f695bd3a73fec58f227117a65cf4b8b60'
 	test ! -d 'build//Modelica_DeviceDrivers 1.4.3'
 	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3"
 	echo 'Modelica_Synchronous 0.92' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.uses"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.license"
-	echo '1.4.3-30-g84ea6d1' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.last_change"
+	echo '1.4.3-31-gda9a3f1' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.4.3.last_change"
 Modelica_EnergyStorages:
 	# Building git/Modelica_EnergyStorages
 	./checkout-git.sh 'git/Modelica_EnergyStorages' 'https://github.com/modelica/Modelica_EnergyStorages.git' 'master' 'd41d9329f3f8f847a3bedf0ce7dff19c0ab0b83b'
