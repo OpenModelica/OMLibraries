@@ -107,7 +107,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "81306710c6c593bc0f0d2497790e19ba811391b9",
+      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -147,7 +147,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cbe29c2bc519d6e4a1bc7bd6430088713fe796f8",
+      "rev": "9927a4dfb22e7173473ecbb4469ec76c1ed6061b",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "48b09fb04ee03c31d9762ee9d5f69561839e3662",
+      "rev": "fea28016c9253a71f4b662398f4a78bc3d24b445",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b5b3ec547532a45bfb7dc04b425f3baeb528ac69",
+          "rev": "5df066e0dffac2f5d45d6e9fe9c7c5a384b26c92",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -765,7 +765,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
+      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
