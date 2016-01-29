@@ -71,7 +71,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c278c84d2ff197b7637b4ad7ce2e860ddb4a20b7",
+      "rev": "5c2c2286f639a9aa247f2f91370bf8c066571985",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -107,7 +107,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
+      "rev": "81306710c6c593bc0f0d2497790e19ba811391b9",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -147,7 +147,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9927a4dfb22e7173473ecbb4469ec76c1ed6061b",
+      "rev": "cbe29c2bc519d6e4a1bc7bd6430088713fe796f8",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fea28016c9253a71f4b662398f4a78bc3d24b445",
+      "rev": "48b09fb04ee03c31d9762ee9d5f69561839e3662",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "5df066e0dffac2f5d45d6e9fe9c7c5a384b26c92",
+          "rev": "95896032cff5e5cb0b980c07d0f80f9aa9fd94e0",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "89c52661a42094c7426fce2e57ac9d6e0850596b",
+      "rev": "341bfdf4ca9fe378b93870c81bbcebf0e3fa671e",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
@@ -765,7 +765,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
+      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
