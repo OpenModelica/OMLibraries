@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e0b187227fcd7ba8799dfe0ffac37fb12d8c0aaf",
+          "rev": "5ecf888466f1c04e428a270fb151b3ac9197a733",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -425,7 +425,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "da9a3f1f695bd3a73fec58f227117a65cf4b8b60",
+      "rev": "3f3119032caaaa600fedcd1ab7ae411c813f99b5",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
