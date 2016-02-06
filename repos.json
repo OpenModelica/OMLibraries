@@ -401,7 +401,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e618103e96b0f0f1ae1b837d1670429fe43e108b",
+      "rev": "b53d4a035fd2f4bff02512168e09ea74b16a0c6c",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -531,7 +531,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa5bd42c9caab7342f56f57e2497c6fdcf25f817",
+      "rev": "1827de392a4de07c5518a26aad87decfeadf0608",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "09cff37e1c6a285458425c6750afcd6f613129e7",
+      "rev": "53965055b572d0474dd702d34f1b87c20578b3c9",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
