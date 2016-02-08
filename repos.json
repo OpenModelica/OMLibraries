@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d7ce2a8b8698ffb70361f640fb2a932ccf6a0d93",
+          "rev": "ac510b5a3533002c7e666344c72aa7322b8f1960",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -531,7 +531,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1827de392a4de07c5518a26aad87decfeadf0608",
+      "rev": "97b58985f219eaa3770715b91daaaedfb5be21dd",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -622,7 +622,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "411fba9aa53556aee2c9b249d928ff1700d8af40",
+      "rev": "fc7e0e88d14ab714f442ad92889bd04e065d7eb4",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
