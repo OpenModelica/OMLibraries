@@ -401,7 +401,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b53d4a035fd2f4bff02512168e09ea74b16a0c6c",
+      "rev": "8abfc7af13a9fdea09d433f01fb34d887d396ca1",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53965055b572d0474dd702d34f1b87c20578b3c9",
+      "rev": "87aa2bb7c5dbdbd45bb3e3021c437e88278b6505",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
