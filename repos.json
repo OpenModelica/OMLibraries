@@ -124,7 +124,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "8fa9bbf76dcb62ca2e8437d8e854ca544be2b0a7",
+      "rev": "f63d029637d304582c2b3b31e0465d0b3f1ba5b8",
       "targets": [
         "Buildings latest"
       ],
@@ -347,7 +347,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "44a73415a24c9ed42e4cca7339b4625da17b7cc0",
+          "rev": "ec707653e7a61acebeb26c70f8e7b5ade7624d83",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -531,7 +531,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "72692d2cc5375fbe106e25d11b74fb57a47e8ed6",
+      "rev": "1b6677a28e7e70eb97964e7f32fc879af0f8f623",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "eeaca7829f0967da8bdae858dafd7262edc4a742",
+      "rev": "fe0982e1f82b09cc3864162138273d67d65a8095",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
