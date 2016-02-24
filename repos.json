@@ -737,6 +737,14 @@
       "url": "https://github.com/xogeny/XogenyTest.git"
     },
     {
+      "dest": "buildsyspro",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "3e651665bb1e19333ff68aed807a585c79ddcdd9",
+      "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
+    },
+    {
       "dest": "ipsl",
       "options": {
         "gitbranch": "master"
