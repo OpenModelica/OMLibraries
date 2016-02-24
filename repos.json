@@ -72,7 +72,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "7e517c5e0ddd550e36d1a780b8801908b631f7b5",
+      "rev": "2feabf50de74fb8ac4f0b8eaa3efdfb551477db7",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4615ea63d8a042afd7b241e300d63750df1d7fb6",
+      "rev": "03d7483b5f32f1118abdbd35b7a7f62593651bc6",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -125,7 +125,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "fdc63ec05f67dd6908273deda8fea886e7e56aec",
+      "rev": "5cfa14c225f3d3792e3d31ccb50b008afd8ee6b8",
       "targets": [
         "Buildings latest"
       ],
@@ -329,7 +329,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "2b94a4333d77952d7c27bbd215159bdfb2d3cf27",
+          "rev": "c09c9a4bd43943ca761d4089d4a070d1bc71bd12",
           "targets": [
             "Complex",
             "Modelica",
@@ -442,7 +442,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "77347681398fab466f30be5a419ddcaaeb495ec1",
+      "rev": "a5b6b6af38494d6b220d04c7a76172d5811fd8a5",
       "targets": [
         "self"
       ],
@@ -464,7 +464,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0a25589a0677ce848099968dfb13e3fc43b0b3d8",
+      "rev": "749d63f13c4036449dc443bdca3f9eda16c4158e",
       "targets": [
         "self"
       ],
@@ -750,7 +750,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b6a6964df76bd81ae314aa2b6ac2c912c969f499",
+      "rev": "458df44067441de3a3a361799edf8a958a4bbb26",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
