@@ -1,6 +1,8 @@
 {
   "bad-uses": [
     "DataFiles 1.0",
+    "DEVLib 1",
+    "DEVSLib 2.2",
     "ModelManagement 1.1.1"
   ],
   "github-ignore": [
@@ -348,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bbff65bebc5f9dc3eb5dc9bf58bb3c4d030eb52b",
+          "rev": "0bd87bda026257a11c512d0648a09cdd36dea45f",
           "targets": [
             "Complex trunk",
             "Modelica trunk",

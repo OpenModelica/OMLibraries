@@ -41,7 +41,7 @@ def updateCommand(r, customBuild=None):
 def makeFileReplayCommand(r):
   return ("git" if r['url'].endswith(".git") else "svn") + "/" + r['dest'] + ".cmd"
 def update():
-  open("bad-uses.sh", "w").write("#!/bin/sh\nsed -i %s \"$1\"" % " ".join(["-e '/%s/d' " % use for use in jsondata['bad-uses']]))
+  open("bad-uses.sh", "w").write("#!/bin/sh\nsed -i %s \"$1\"\n" % " ".join(["-e '/%s/d' " % use for use in jsondata['bad-uses']]))
 
   from joblib import Parallel, delayed
   provides = defaultdict(list)

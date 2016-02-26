@@ -17,6 +17,7 @@ getErrorString();
 
 echo(false);tablesFile:=getSourceFile(Modelica.Blocks.Tables);fileStrTables:=readFile(tablesFile);echo(true);
 // Patch the damned tableAvailable hack
+/*
 for str in {
   "Modelica.Blocks.Tables.Internal.getTable1DValue",
   "Modelica.Blocks.Tables.Internal.getTable1DValueDer",
@@ -49,6 +50,7 @@ for str in {
   end if;
   print(str+" success\n");
 end for;
+*/
 
 getErrorString();
 writeFile(tablesFile, fileStrTables);getErrorString();
