@@ -1,16 +1,18 @@
---- svn/MSL trunk/ModelicaServices/package.mo	2013-11-09 15:11:23.609016400 +0100
-+++ build/ModelicaServices trunk/package.mo	2013-11-09 15:50:14.308742738 +0100
-@@ -1,7 +1,7 @@
+diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
+--- git/MSL/ModelicaServices/package.mo	2016-02-26 10:29:45.370896424 +0100
++++ build/ModelicaServices trunk/package.mo	2016-02-26 16:30:33.733745007 +0100
+@@ -1,7 +1,8 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
++
 +package ModelicaServices "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
  extends Modelica.Icons.Package;
 -constant String target="Default"
-+constant String target="OpenModelica"
++constant String target= "OpenModelica"
    "Target of this ModelicaServices implementation";
  
  
-@@ -693,7 +693,7 @@
+@@ -622,7 +623,7 @@
      extends
        Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
      algorithm
@@ -19,22 +21,34 @@
  
      annotation (Documentation(info="<html>
  <p>
-@@ -713,7 +713,7 @@
+@@ -642,7 +643,7 @@
      "Smallest number such that small and -small are representable on the machine";
    final constant Real inf=1.e+60
      "Biggest Real number such that inf and -inf are representable on the machine";
 -  final constant Integer Integer_inf=2147483647
-+  final constant Integer Integer_inf=OpenModelica.Internal.Architecture.integerMax()
++  final constant Integer Integer_inf= "OpenModelica.Internal.Architecture.integerMax()"
      "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
    annotation (Documentation(info="<html>
  <p>
-@@ -752,7 +752,7 @@
+@@ -681,12 +682,12 @@
  annotation (
    Protection(access=Access.hide),
    preferredView="info",
 -  version="3.2.2",
-+  version="trunk",
++  version= "trunk",
    versionBuild=0,
    versionDate="2016-01-15",
    dateModified = "2016-01-15 08:44:41Z",
-
+   revisionId="$Id::                                       $",
+-  uses(Modelica(version="3.2.2")),
++  uses(Modelica(version= "trunk")),
+   conversion(
+     noneFromVersion="1.0",
+     noneFromVersion="1.1",
+@@ -743,4 +744,4 @@
+ </p>
+ 
+ </html>"));
+-end ModelicaServices;
++end ModelicaServices;
+\ No newline at end of file

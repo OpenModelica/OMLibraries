@@ -1,18 +1,31 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
---- git/MSL/ModelicaTest/package.mo	2015-05-06 13:10:32.283072507 +0200
-+++ build/ModelicaTest trunk/package.mo	2015-05-06 13:11:19.007308844 +0200
-@@ -44,12 +44,12 @@
+--- git/MSL/ModelicaTest/package.mo	2016-02-26 10:29:45.390897132 +0100
++++ build/ModelicaTest trunk/package.mo	2016-02-26 16:30:33.393733295 +0100
+@@ -1,4 +1,5 @@
+ within ;
++
+ package ModelicaTest "Library to test components of package Modelica - Version 3.2.2"
+ extends Modelica.Icons.Package;
+ 
+@@ -51,12 +52,12 @@
  
  
    annotation (preferredView="info",
 -       version="3.2.2",
-+       version="trunk",
++       version= "trunk",
         versionBuild=0,
         versionDate="2016-03-11",
         dateModified = "2016-03-11 08:44:41Z",
         revisionId="$Id::                                       $",
 -       uses(Modelica(version="3.2.2")),
-+       uses(Modelica(version="trunk")),
++       uses(Modelica(version= "trunk")),
      Documentation(info="<html>
  <p>
  This library provides models and functions to test components of
+@@ -97,4 +98,4 @@
+           smooth=Smooth.None,
+           fillColor={75,138,73},
+           fillPattern=FillPattern.Solid)}));
+-end ModelicaTest;
++end ModelicaTest;
+\ No newline at end of file

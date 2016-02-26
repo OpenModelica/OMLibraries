@@ -1,0 +1,147 @@
+tmpScript:="Modelica.trunk.tmp.mos";
+
+if 0<>system("patch -d build/ -f -p1 < 'Modelica trunk.manual.patch'") or
+   0<>system("patch -d build/ -f -p1 < 'ModelicaServices trunk.manual.patch'") then
+  exit(1);
+end if;
+
+for pack in {"Complex","Modelica","ModelicaServices","ModelicaTest"} loop
+  suffix := if pack=="Complex" then ".mo" else "/package.mo";
+  if not loadFile("build/"+pack+" trunk"+suffix) then
+  print("Failed to load "+pack+" trunk\n");
+    print(getErrorString());
+    exit(1);
+  end if;
+end for;
+getErrorString();
+
+echo(false);tablesFile:=getSourceFile(Modelica.Blocks.Tables);fileStrTables:=readFile(tablesFile);echo(true);
+// Patch the damned tableAvailable hack
+for str in {
+  "Modelica.Blocks.Tables.Internal.getTable1DValue",
+  "Modelica.Blocks.Tables.Internal.getTable1DValueDer",
+  "Modelica.Blocks.Tables.Internal.getTable1DValueNoDer",
+  "Modelica.Blocks.Tables.Internal.getTable2DValue",
+  "Modelica.Blocks.Tables.Internal.getTable2DValueDer",
+  "Modelica.Blocks.Tables.Internal.getTable2DValueNoDer",
+  "Modelica.Blocks.Tables.Internal.getTimeTableValue",
+  "Modelica.Blocks.Tables.Internal.getTimeTableValueDer",
+  "Modelica.Blocks.Tables.Internal.getTimeTableValueNoDer",
+  "Modelica.Blocks.Tables.Internal.getTimeTableTmin",
+  "Modelica.Blocks.Tables.Internal.getTimeTableTmax",
+  "Modelica.Blocks.Tables.Internal.getNextTimeEvent"
+  } loop
+  cmd := "updateComponent(tableAvailable, Real, "+str+", annotate=__OpenModelica_UnusedVariable(true));\n";
+  writeFile(tmpScript, cmd);
+  print("Running "+cmd);
+  res := runScript(tmpScript);
+  if "true\n"<>res then
+    print("Failed to run script: " + cmd + "\n");
+    print("Got result: "+res);
+    exit(1);
+  end if;
+  listing := listFile(Modelica.Blocks.Tables);
+  fileStrTables := diffModelicaFileListings(fileStrTables, listing, OpenModelica.Scripting.DiffFormat.plain);
+  err := getErrorString();
+  if "" <> err then
+    print(err);
+    exit(1);
+  end if;
+  print(str+" success\n");
+end for;
+
+getErrorString();
+writeFile(tablesFile, fileStrTables);getErrorString();
+
+echo(false);mathFile:=getSourceFile(Modelica.Math);mathFileStr:=readFile(mathFile);echo(true);
+getErrorString();
+
+/*
+if not addClassAnnotation(Modelica.Math.tempInterpol1, $annotation(derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der)) then
+  print("tempInterpol1 annotation failed\n");
+  exit(1);
+end if;
+mathFileStr := diffModelicaFileListings(mathFileStr, listFile(Modelica.Math), OpenModelica.Scripting.DiffFormat.plain);
+err := getErrorString();
+if "" <> err then
+  print(err);
+  exit(1);
+end if;
+if not addClassAnnotation(Modelica.Math.tempInterpol2, $annotation(derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der)) then
+  print("tempInterpol1 annotation failed\n");
+  exit(1);
+end if;
+mathFileStr := diffModelicaFileListings(mathFileStr, listFile(Modelica.Math), OpenModelica.Scripting.DiffFormat.plain);
+err := getErrorString();
+if "" <> err then
+  print(err);
+  exit(1);
+end if;
+writeFile("new.Math.mo", mathFileStr);getErrorString();
+*/
+
+// Set version=trunk and all uses-annotations also=trunk
+for clStr in {"Modelica","ModelicaServices","Complex","ModelicaTest"} loop
+  print("Start version="+clStr+"\n");
+  writeFile(tmpScript, "cl := $TypeName("+clStr+");");
+  runScript(tmpScript);
+  packageFile:=getSourceFile(cl);
+  fileStrPackage:=readFile(packageFile);
+  if not addClassAnnotation(cl, annotate=version("trunk")) then
+    print("addClassAnnotation failed\n");
+    print(getErrorString());
+    exit(1);
+  end if;
+  listing := listFile(cl);
+  fileStrPackage := diffModelicaFileListings(fileStrPackage, listing, OpenModelica.Scripting.DiffFormat.plain);
+  usesMat := getUses(cl);
+
+  if size(usesMat,1)>0 then
+    usesArr := usesMat[:,1];
+    first := true;
+    strAddClassAnnotation := "OpenModelica.Scripting.addClassAnnotation("+clStr+", $annotation(uses(";
+    for x in usesArr loop
+      strAddClassAnnotation := strAddClassAnnotation + (if first then "" else ", ") + x + "(version=\"trunk\")";
+      first := false;
+    end for;
+    strAddClassAnnotation := strAddClassAnnotation + ")));";
+  end if;
+  writeFile(tmpScript, strAddClassAnnotation);
+  res:=runScript(tmpScript);
+  if "true\n"<>res then
+    print("Failed to run script: " + strAddClassAnnotation + "\n");
+    print("Got result: "+res);
+    exit(1);
+  end if;
+
+  listing := listFile(cl);
+  fileStrPackage := diffModelicaFileListings(fileStrPackage, listing, OpenModelica.Scripting.DiffFormat.plain);
+
+  writeFile(packageFile, fileStrPackage);getErrorString();
+end for;
+
+echo(false);
+servicesFile:=getSourceFile(ModelicaServices);
+servicesFileStr:=readFile(servicesFile);
+setClassComment(ModelicaServices, "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation");
+servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
+setComponentModifierValue(ModelicaServices, target, $Code(="OpenModelica"));
+servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
+setComponentModifierValue(ModelicaServices.Machine, Integer_inf, $Code(="OpenModelica.Internal.Architecture.integerMax()"));
+servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
+err := getErrorString();
+if err<>"" then
+  print(err);
+  exit(1);
+end if;
+echo(true);
+writeFile(servicesFile, servicesFileStr);
+
+if
+   0<>system("make 'Modelica trunk.patch'") or
+   0<>system("make 'ModelicaServices trunk.patch'") or
+   0<>system("make 'ModelicaTest trunk.patch'") or
+   0<>system("make 'Complex trunk.patch'")
+then
+  exit(1);
+end if;

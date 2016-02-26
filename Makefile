@@ -6,7 +6,7 @@ RPATH_QMAKE=
 CMAKE_RPATH = CC="$(CC)" CXX="$(CXX)" CFLAGS="$(CFLAGS)" CXXFLAGS="$(CXXFLAGS)" CPPFLAGS="$(CPPFLAGS)" LDFLAGS="$(RPATH_QMAKE)" cmake
 
 default: core
-.PHONY: macports Modelica\ 3.2.1.patch Modelica\ 1.6.patch Modelica\ trunk.patch ModelicaTest\ trunk.patch
+.PHONY: macports Modelica\ 3.2.1.patch Modelica\ 1.6.patch Modelica\ trunk.patch Complex\ trunk.patch ModelicaTest\ trunk.patch ModelicaServices\ trunk.patch
 
 include Makefile.libs
 
@@ -176,6 +176,16 @@ Modelica\ trunk.patch:
 	mv "$@.tmp" "$@"
 ModelicaTest\ trunk.patch:
 	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaTest" "build/ModelicaTest trunk" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"
+ModelicaServices\ trunk.patch:
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaServices" "build/ModelicaServices trunk" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"
+Complex\ trunk.patch:
+	-diff -u "git/MSL/Complex.mo" "build/Complex trunk.mo" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"

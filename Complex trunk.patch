@@ -1,13 +1,27 @@
---- svn/MSL trunk/Complex.mo	2013-11-09 15:11:23.605016263 +0100
-+++ build/Complex trunk.mo	2013-11-09 15:43:43.395390587 +0100
-@@ -236,8 +236,8 @@
-   end 'String';
+--- git/MSL/Complex.mo	2016-02-26 10:29:45.194890182 +0100
++++ build/Complex trunk.mo	2016-02-26 16:30:33.205726818 +0100
+@@ -1,5 +1,7 @@
+ within ;
++
+ operator record Complex "Complex number with overloaded operators"
++
+ //record Complex "Complex number with overloaded operators"
+   replaceable Real re "Real part of complex number" annotation(Dialog);
+   replaceable Real im "Imaginary part of complex number" annotation(Dialog);
+@@ -249,7 +251,7 @@
+ 
  
  annotation (Protection(access=Access.hide),
 -version="3.2.2",
--versionBuild=0,
-+version="trunk",
-+versionBuild=0,
++version= "trunk",
+ versionBuild=0,
  versionDate="2016-01-15",
  dateModified = "2016-01-15 08:44:41Z",
- revisionId="$Id::                                       $",
+@@ -270,5 +272,4 @@
+           lineColor={255,255,255},
+           extent={{-90,-50},{90,50}},
+           textString="C")}));
+-
+-end Complex;
++end Complex;
+\ No newline at end of file
