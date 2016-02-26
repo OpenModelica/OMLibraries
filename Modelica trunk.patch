@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2016-02-26 17:04:36.403997960 +0100
-+++ build/Modelica trunk/Math/package.mo	2016-02-26 17:12:51.773383321 +0100
+--- git/MSL/Modelica/Math/package.mo	2016-02-26 20:18:40.149202542 +0100
++++ build/Modelica trunk/Math/package.mo	2016-02-26 20:20:38.765328207 +0100
 @@ -13173,9 +13173,67 @@
  
    annotation (Documentation(info="<html>
@@ -147,8 +147,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2016-02-26 17:04:36.403997960 +0100
-+++ build/Modelica trunk/Math/package.order	2016-02-26 17:12:51.773383321 +0100
+--- git/MSL/Modelica/Math/package.order	2016-02-26 20:18:40.149202542 +0100
++++ build/Modelica trunk/Math/package.order	2016-02-26 20:20:38.765328207 +0100
 @@ -28,4 +28,6 @@
  baseIcon1
  baseIcon2
@@ -157,8 +157,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/MSL/Modelica/package.mo	2016-02-26 17:04:36.516001816 +0100
-+++ build/Modelica trunk/package.mo	2016-02-26 17:12:55.097500279 +0100
+--- git/MSL/Modelica/package.mo	2016-02-26 20:18:40.241205742 +0100
++++ build/Modelica trunk/package.mo	2016-02-26 20:20:42.217448269 +0100
 @@ -1,4 +1,5 @@
  within ;
 +

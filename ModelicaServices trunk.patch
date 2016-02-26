@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/MSL/ModelicaServices/package.mo	2016-02-26 17:04:36.516001816 +0100
-+++ build/ModelicaServices trunk/package.mo	2016-02-26 17:12:56.409546442 +0100
+--- git/MSL/ModelicaServices/package.mo	2016-02-26 20:18:40.241205742 +0100
++++ build/ModelicaServices trunk/package.mo	2016-02-26 20:20:43.593496126 +0100
 @@ -1,7 +1,8 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -26,7 +26,7 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build
    final constant Real inf=1.e+60
      "Biggest Real number such that inf and -inf are representable on the machine";
 -  final constant Integer Integer_inf=2147483647
-+  final constant Integer Integer_inf= "OpenModelica.Internal.Architecture.integerMax()"
++  final constant Integer Integer_inf=OpenModelica.Internal.Architecture.integerMax()
      "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
    annotation (Documentation(info="<html>
  <p>
