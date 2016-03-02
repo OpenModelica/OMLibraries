@@ -74,7 +74,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "2feabf50de74fb8ac4f0b8eaa3efdfb551477db7",
+      "rev": "8f3b815851f503ce1deb4e45a8d67254b7155640",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -110,7 +110,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "81306710c6c593bc0f0d2497790e19ba811391b9",
+      "rev": "a80d8240b032913e4ef97317170e723064cb4a22",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -127,7 +127,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d0841740172f2812891be5693a9cc4450e1327b8",
+      "rev": "d7faad487ff295a9193208161b52e24121828994",
       "targets": [
         "Buildings latest"
       ],
@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "07375930d4b4a4d5524fd0b416320c5a11d3de71",
+          "rev": "f897237f1294b64231efd6ed77c6c4a5f25e2dc6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -752,7 +752,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "458df44067441de3a3a361799edf8a958a4bbb26",
+      "rev": "d52b85f23f61d4c4d0f6c749dbefa76255beead7",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
