@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f897237f1294b64231efd6ed77c6c4a5f25e2dc6",
+          "rev": "2660626d40f981c6b121a215a4750972e5f775ce",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -404,7 +404,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8a64024b612633bc690a81f6bdbaa6cf7b917e7e",
+      "rev": "a6e2e20f47c5884a01ef807af8fed9e6acae8af1",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -466,7 +466,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53dbad93a21af6e5e66a46d4178d11ac9583528a",
+      "rev": "f3bca7c37e86938bdde9ef109a4f209cf1f823c3",
       "targets": [
         "self"
       ],
@@ -752,7 +752,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d52b85f23f61d4c4d0f6c749dbefa76255beead7",
+      "rev": "dcf792ce3aa70f54a9b580c45e36136d2352409b",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
