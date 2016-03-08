@@ -3,7 +3,8 @@
     "DataFiles 1.0",
     "DEVLib 1",
     "DEVSLib 2.2",
-    "ModelManagement 1.1.1"
+    "ModelManagement 1.1.1",
+    "ModeleObsoletes 2015.12"
   ],
   "github-ignore": [
     "https://github.com/modelica/Modelica",
@@ -744,7 +745,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3e651665bb1e19333ff68aed807a585c79ddcdd9",
+      "rev": "2b2b5b4ceed901606ed0a4aa3d8ad8944177d80c",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
