@@ -128,7 +128,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d7faad487ff295a9193208161b52e24121828994",
+      "rev": "85139b88480f12651301c3ceb7f0669c2fde2004",
       "targets": [
         "Buildings latest"
       ],
@@ -351,7 +351,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d8e5ce4407da8f683a160fe654da230d3ce5de3a",
+          "rev": "a1ffb1cd96c9ba4b2882f24ca47bb8a0b657b9a9",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -429,7 +429,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3f3119032caaaa600fedcd1ab7ae411c813f99b5",
+      "rev": "c800c3b1f7d38c036d3b3ef8966b55182ca2be5b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -745,7 +745,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2b2b5b4ceed901606ed0a4aa3d8ad8944177d80c",
+      "rev": "73520fb86431bb465d1c1d261b6b3e1ac59867d8",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
