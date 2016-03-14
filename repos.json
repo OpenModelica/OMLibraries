@@ -275,6 +275,15 @@
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/InstantaneousSymmetricalComponents"
     },
     {
+      "dest": "KeyWordIO",
+      "options": {
+        "gitbranch": "master",
+        "license": "modelica1.1"
+      },
+      "rev": "eb1241e7992d82461613e574edf0999c52795e05",
+      "url": "https://github.com/christiankral/KeyWordIO.git"
+    },
+    {
       "dest": "LinearMPC",
       "options": {
         "gitbranch": "master"
