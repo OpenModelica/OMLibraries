@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "8f3b815851f503ce1deb4e45a8d67254b7155640",
+      "rev": "12746b333238ab220e6ffaab87173b730fd82a1e",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "77bd3d04057045eb6daae10a77443a806718a25b",
+      "rev": "59fba0fb3431a299de242b19be46d6aca7966a2c",
       "targets": [
         "Buildings latest"
       ],
@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cbe29c2bc519d6e4a1bc7bd6430088713fe796f8",
+      "rev": "c972a40d1c3910c7b685715464da5b4b32f3a776",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -192,7 +192,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "48b09fb04ee03c31d9762ee9d5f69561839e3662",
+      "rev": "09e0e93da00a53ba506677643a119ff8e0a7d6ea",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -281,7 +281,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "eb1241e7992d82461613e574edf0999c52795e05",
+      "rev": "0eb0f769b31806e03aad1bb875a4f8d7a9b7b87d",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "882a4a1b17ae1f5f95b1282070cebc7594055e23",
+      "rev": "91a882ea4068c5290854583df5fa448653cfb8c9",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -439,7 +439,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2665d97550901d284311b65d5ba72ac1291159aa",
+      "rev": "3873d5de06bd538ee7e2db4a85e7394729c56d8c",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -455,7 +455,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5b6b6af38494d6b220d04c7a76172d5811fd8a5",
+      "rev": "5d40dc3a19934672217bce300aa1da442d09e151",
       "targets": [
         "self"
       ],
@@ -466,7 +466,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 8121,
+      "rev": 9206,
       "targets": [
         "self"
       ],
@@ -477,7 +477,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f3bca7c37e86938bdde9ef109a4f209cf1f823c3",
+      "rev": "c0db5e1e06e921e3d13dd38a28ec49e5fe7905c1",
       "targets": [
         "self"
       ],
@@ -739,7 +739,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53fc64a1b2c55cbc72535cf94db9df9a2027324d",
+      "rev": "853dfaf72e88229743ebc005cc2f4981132b05b9",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -763,7 +763,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dcf792ce3aa70f54a9b580c45e36136d2352409b",
+      "rev": "62e9a9250deca077231838dd49d93ed7f0b2d097",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
