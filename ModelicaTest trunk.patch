@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
---- git/MSL/ModelicaTest/package.mo	2016-02-26 20:18:40.253206159 +0100
-+++ build/ModelicaTest trunk/package.mo	2016-02-26 20:20:43.189482076 +0100
+--- git/MSL/ModelicaTest/package.mo	2016-03-14 17:01:05.593070380 +0100
++++ build/ModelicaTest trunk/package.mo	2016-03-14 17:14:40.857696941 +0100
 @@ -1,4 +1,5 @@
  within ;
 +
@@ -22,8 +22,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/Mod
      Documentation(info="<html>
  <p>
  This library provides models and functions to test components of
-@@ -97,4 +98,4 @@
-           smooth=Smooth.None,
+@@ -96,4 +97,4 @@
+           lineColor={75,138,73},
            fillColor={75,138,73},
            fillPattern=FillPattern.Solid)}));
 -end ModelicaTest;
