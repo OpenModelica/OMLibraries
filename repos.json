@@ -67,7 +67,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "23a0ed42abb7a12aaf9da75c96d8d3f06c4b06e6",
+      "rev": "183a0d3680d031fea34f8337e5d04c8f7aa55d93",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "12746b333238ab220e6ffaab87173b730fd82a1e",
+      "rev": "b2431cc6606a090f19dc3a209b549bc8cdb4e1e6",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "59fba0fb3431a299de242b19be46d6aca7966a2c",
+      "rev": "1154be6886f453ab59a85e73603419fc1dbd75f8",
       "targets": [
         "Buildings latest"
       ],
@@ -192,7 +192,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "09e0e93da00a53ba506677643a119ff8e0a7d6ea",
+      "rev": "49cb15ce08d8a333f4d47637c941d31608c76fed",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -439,7 +439,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3873d5de06bd538ee7e2db4a85e7394729c56d8c",
+      "rev": "dde9722da9ba64ad8a42257fe251ea11560e9657",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
