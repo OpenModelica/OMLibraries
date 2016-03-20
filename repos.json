@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d28fc9b3b1c2c85f1b72a195dcff1dc3f24303be",
+      "rev": "70009b4d4557b5aa48e4bbb9ed69585c07d699e6",
       "targets": [
         "Buildings latest"
       ],
@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ceaa90983009ad001e29c34de40acc4081f9d9d7",
+      "rev": "b1f080423156876ab5882d7629e12b89c942a77b",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -439,7 +439,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e79a285db78128cec2e586eb44ea5cb27b2f1eb8",
+      "rev": "43fc4195b4ca598e0fe5d63e5ec53256d82ef211",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -739,7 +739,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "853dfaf72e88229743ebc005cc2f4981132b05b9",
+      "rev": "a7f4936d203327fa546841d3f9f7ee6643a231de",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
