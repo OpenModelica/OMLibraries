@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "70009b4d4557b5aa48e4bbb9ed69585c07d699e6",
+      "rev": "8d9bcd0db95a8410bb98f1ae5ada9334f893aa35",
       "targets": [
         "Buildings latest"
       ],
@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cf825c55d87b6a7cf1be94fdfee1987eca5d3e74",
+      "rev": "678ad385dc06417737e62c93ae0bdc57950d9f49",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -763,7 +763,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4f996dbbb5b65846f5b8e1b095bdebe6e5133c8d",
+      "rev": "b19facb0cddb9a300297f3d12c065eae896a6d05",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
