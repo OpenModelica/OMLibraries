@@ -120,7 +120,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00eaf905f3ce40a55f91661b98762a93703a98ab",
+      "rev": "dc6b7ccb43b0f619a648071ea0202a16a9f40b3c",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "8d9bcd0db95a8410bb98f1ae5ada9334f893aa35",
+      "rev": "0041b37fdc1a92116a279b606b925ef35c520ffa",
       "targets": [
         "Buildings latest"
       ],
@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "678ad385dc06417737e62c93ae0bdc57950d9f49",
+      "rev": "cd9557b961c98e9e9c7697e8fe437aefc80e02c4",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -755,7 +755,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "73520fb86431bb465d1c1d261b6b3e1ac59867d8",
+      "rev": "7535c8a3b2376ec0ee5a73f933b80894896a3f3a",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
