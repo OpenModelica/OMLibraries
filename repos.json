@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0041b37fdc1a92116a279b606b925ef35c520ffa",
+      "rev": "150d7d105a766c6d5ff0fc3d8c4eea8381e384a0",
       "targets": [
         "Buildings latest"
       ],
@@ -636,7 +636,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fc7e0e88d14ab714f442ad92889bd04e065d7eb4",
+      "rev": "9d4d944b8b03c51558f3b11e66f2c5f438a4cb38",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
