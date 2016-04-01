@@ -136,18 +136,6 @@
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
     },
     {
-      "dest": "Buildings-release",
-      "options": {
-        "gitbranch": "release",
-        "license": "buildings"
-      },
-      "rev": "f94e8a243c6bf122e5043295d6f71ab0ae72cd35",
-      "targets": [
-        "Buildings"
-      ],
-      "url": "https://github.com/lbl-srg/modelica-buildings.git"
-    },
-    {
       "dest": "Chemical",
       "options": {
         "gitbranch": "master"
