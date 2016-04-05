@@ -330,7 +330,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b1ba21c2f3c315a040f6664eb7b477ecebff2e42",
+          "rev": "34f3f0d2f05091444bdb71626ca0f69f0aa0e593",
           "targets": [
             "Complex",
             "Modelica",
@@ -570,7 +570,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d2cbe745819bdfb4af9a7df9a31b9ce5afab0d90",
+      "rev": "1ddf36cdc3b5d9a2ac0c7fb6902bc8a113e8a8d2",
       "targets": [
         "PowerSystems latest"
       ],
@@ -751,7 +751,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b2538a91de2dcd56269bb0582cfe9b9ac960ae62",
+      "rev": "353ac0c9e28233409fb084a07ae76f4068571e95",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
