@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2016-03-19 08:20:47.272644677 +0100
-+++ build/Modelica trunk/Math/package.mo	2016-03-19 08:24:19.832185380 +0100
+--- git/MSL/Modelica/Math/package.mo	2016-04-06 07:57:06.389524152 +0200
++++ build/Modelica trunk/Math/package.mo	2016-04-06 07:59:25.578463333 +0200
 @@ -13173,9 +13173,67 @@
  
    annotation (Documentation(info="<html>
@@ -147,8 +147,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2016-03-19 08:20:47.272644677 +0100
-+++ build/Modelica trunk/Math/package.order	2016-03-19 08:24:19.832185380 +0100
+--- git/MSL/Modelica/Math/package.order	2016-04-06 07:57:06.389524152 +0200
++++ build/Modelica trunk/Math/package.order	2016-04-06 07:59:25.578463333 +0200
 @@ -28,4 +28,6 @@
  baseIcon1
  baseIcon2
@@ -157,30 +157,30 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/MSL/Modelica/package.mo	2016-03-19 08:20:48.604691934 +0100
-+++ build/Modelica trunk/package.mo	2016-03-19 08:24:22.288272508 +0100
+--- git/MSL/Modelica/package.mo	2016-04-06 07:57:06.501528125 +0200
++++ build/Modelica trunk/package.mo	2016-04-06 07:59:34.958796176 +0200
 @@ -1,4 +1,5 @@
  within ;
 +
- package Modelica "Modelica Standard Library - Version 3.2.2"
+ package Modelica "Modelica Standard Library - Version 3.x.x"
  extends Modelica.Icons.Package;
  
-@@ -8095,12 +8096,12 @@
+@@ -8116,12 +8117,12 @@
  
  annotation (
  preferredView="info",
--version="3.2.2",
+-version="3.x.x",
 +version= "trunk",
- versionBuild=2,
- versionDate="2016-03-16",
- dateModified = "2016-03-16 08:44:41Z",
+ versionBuild=0,
+ versionDate="2016-04-03",
+ dateModified = "2016-04-03 08:44:41Z",
  revisionId="$Id::                                       $",
 -uses(Complex(version="3.2.2"), ModelicaServices(version="3.2.2")),
 +uses(Complex(version= "trunk"), ModelicaServices(version= "trunk")),
  conversion(
   noneFromVersion="3.2.1",
   noneFromVersion="3.2",
-@@ -8183,4 +8184,4 @@
+@@ -8204,4 +8205,4 @@
  <b>Modelica&reg;</b> is a registered trademark of the Modelica Association.
  </p>
  </html>"));
