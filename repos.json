@@ -120,7 +120,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dc6b7ccb43b0f619a648071ea0202a16a9f40b3c",
+      "rev": "580c116980bea3a64df4b10de954606c18932968",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -427,7 +427,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "43fc4195b4ca598e0fe5d63e5ec53256d82ef211",
+      "rev": "cab465461b16c4878e35d495ad17ba86ac5db3be",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
