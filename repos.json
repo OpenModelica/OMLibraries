@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "83f0b4186e0e7be5a0b22e3765dff088f1e9bfc9",
+      "rev": "fe6d2bd0fb7560cc2650b834274d946f258bb230",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -120,7 +120,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "580c116980bea3a64df4b10de954606c18932968",
+      "rev": "baa8056707694719fd97b0f181b54b9eb53621e0",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -129,7 +129,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "3232a9784b643e8dbdf4df3aeca4a7c2d53ca278",
+      "rev": "2678f7049316319c8ef7ad041ff6cbdc939b0174",
       "targets": [
         "Buildings latest"
       ],
@@ -349,7 +349,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d3838822205f0cbe4eaf4e94000d441b56c7d424",
+          "rev": "f00fcfabcd29a019b53d01caad1157803677c57b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -427,7 +427,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8de040a387328fd7e4dc0992b1f5264d13219507",
+      "rev": "b08cc4ca091facbc1f5d960903c53711bcd92ff8",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -743,7 +743,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7535c8a3b2376ec0ee5a73f933b80894896a3f3a",
+      "rev": "dedd0c4d4af4ddfce74b4dc250a0adcbeb88484d",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
