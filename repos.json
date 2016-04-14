@@ -76,7 +76,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "fe6d2bd0fb7560cc2650b834274d946f258bb230",
+      "rev": "c3a83d69817ab4499dcde31171a606cc160e6ad6",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -120,7 +120,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "baa8056707694719fd97b0f181b54b9eb53621e0",
+      "rev": "5137f6745adc13f28ee31308d358428605f04238",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -349,7 +349,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3bb99275cbc6b58a24cc3338f2dea63e2529ea60",
+          "rev": "075686b59ef08954290085cf2e1151413d0edf43",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -403,7 +403,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c1065d6931f38b21824ba352ce46cc51b4df6635",
+      "rev": "c4f7cd29ab2c8d40fe9489fad8dbc82114cf70e2",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -427,7 +427,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b08cc4ca091facbc1f5d960903c53711bcd92ff8",
+      "rev": "79ba8750b9e84bc70fe015eb74fa4f21b09ee0d3",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
