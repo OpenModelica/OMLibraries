@@ -99,6 +99,12 @@ end if;
 echo(true);
 writeFile(servicesFile, servicesFileStr);
 
+if 0<>system("jq '.repos[] | select(.dest == \"MSL\") | .multitarget[] | select(.options.gitbranch == \"maint/3.2.2\") | .rev' repos.json > " + tmpScript) then
+  exit(1);
+end if;
+if 0<>system("cd git/MSL && git checkout " + readFile(tmpScript)) then
+  exit(1);
+end if;
 if
    0<>system("make 'Modelica 3.2.2.patch'") or
    0<>system("make 'ModelicaServices 3.2.2.patch'")
