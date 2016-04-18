@@ -189,3 +189,13 @@ Complex\ trunk.patch:
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
+Modelica\ 3.2.2.patch:
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica 3.2.2" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"
+ModelicaServices\ 3.2.2.patch:
+	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaServices" "build/ModelicaServices 3.2.2" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"

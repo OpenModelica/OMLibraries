@@ -334,9 +334,26 @@
           "targets": [
             "Complex",
             "Modelica",
+            "ModelicaServices",
+            "ModelicaTest"
+          ]
+        },
+        {
+          "options": {
+            "gitbranch": "maint/3.2.2",
+            "intertrac": "m:",
+            "no-dependencies": "ModelicaServices",
+            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "9e26230ed31414896ab5bc37b54bee5dead80889",
+          "targets": [
+            "Complex",
+            "Modelica",
             "ModelicaReference none",
             "ModelicaServices",
             "ModelicaTest",
+            "ModelicaTestOverdetermined",
             "ObsoleteModelica3"
           ]
         },
