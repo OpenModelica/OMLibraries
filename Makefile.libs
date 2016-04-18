@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160418_092059.core
-ALL_TARGET=$(BUILD_DIR)/20160418_092059.all
+CORE_TARGET=$(BUILD_DIR)/20160417_190311.core
+ALL_TARGET=$(BUILD_DIR)/20160417_190311.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QCalc QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -284,6 +284,12 @@ MSL:
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.2.1.license"
 	echo '3.2.1-20160405-075407~git~maint-3.2.1-om1' > "$(BUILD_DIR)/Modelica 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica 3.2.1.breaks"
+	test ! -d 'build//ModelicaReference'
+	cp -a 'git/MSL/ModelicaReference' "$(BUILD_DIR)/ModelicaReference"
+	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference.license"
+	echo '20160405-075407~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaReference.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference.breaks"
 	test ! -d 'build//ModelicaServices 3.2.1'
 	cp -a 'git/MSL/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 3.2.1"
 	patch -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices 3.2.1.patch'
@@ -297,45 +303,12 @@ MSL:
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest 3.2.1.license"
 	echo '3.2.1-20160405-075407~git~maint-3.2.1' > "$(BUILD_DIR)/ModelicaTest 3.2.1.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest 3.2.1.breaks"
-	# Building git/MSL
-	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'maint/3.2.2' '61c02b119ee5d5c2dd64b1c1ff1cee54cfb375c4'
-	test ! -f 'build//Complex 3.2.2.mo'
-	cp -a 'git/MSL/Complex.mo' "$(BUILD_DIR)/Complex 3.2.2.mo"
-	echo '' > "$(BUILD_DIR)/Complex 3.2.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Complex 3.2.2.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2-om1' > "$(BUILD_DIR)/Complex 3.2.2.last_change"
-	test ! -d 'build//Modelica 3.2.2'
-	cp -a 'git/MSL/Modelica' "$(BUILD_DIR)/Modelica 3.2.2"
-	rm -rf "$(BUILD_DIR)/Modelica 3.2.2/Resources/Library"
-	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/Modelica 3.2.2.uses"
-	echo 'ModelicaServices 3.2.2' >> "$(BUILD_DIR)/Modelica 3.2.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.2.2.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2-om1' > "$(BUILD_DIR)/Modelica 3.2.2.last_change"
-	test ! -d 'build//ModelicaReference'
-	cp -a 'git/MSL/ModelicaReference' "$(BUILD_DIR)/ModelicaReference"
-	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference.license"
-	echo '20160413-064253~git~maint-3.2.2' > "$(BUILD_DIR)/ModelicaReference.last_change"
-	test ! -d 'build//ModelicaServices 3.2.2'
-	cp -a 'git/MSL/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 3.2.2"
-	echo > "$(BUILD_DIR)/ModelicaServices 3.2.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices 3.2.2.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2-om1' > "$(BUILD_DIR)/ModelicaServices 3.2.2.last_change"
-	test ! -d 'build//ModelicaTest 3.2.2'
-	cp -a 'git/MSL/ModelicaTest' "$(BUILD_DIR)/ModelicaTest 3.2.2"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ModelicaTest 3.2.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest 3.2.2.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2' > "$(BUILD_DIR)/ModelicaTest 3.2.2.last_change"
-	test ! -f 'build//ModelicaTestOverdetermined 3.2.2.mo'
-	cp -a 'git/MSL/ModelicaTestOverdetermined.mo' "$(BUILD_DIR)/ModelicaTestOverdetermined 3.2.2.mo"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ModelicaTestOverdetermined 3.2.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTestOverdetermined 3.2.2.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2' > "$(BUILD_DIR)/ModelicaTestOverdetermined 3.2.2.last_change"
 	test ! -f 'build//ObsoleteModelica3.mo'
 	cp -a 'git/MSL/ObsoleteModelica3.mo' "$(BUILD_DIR)/ObsoleteModelica3.mo"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ObsoleteModelica3.uses"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ObsoleteModelica3.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ObsoleteModelica3.license"
-	echo '3.2.2-20160413-064253~git~maint-3.2.2' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
+	echo '3.2.1-20160405-075407~git~maint-3.2.1' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
+	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ObsoleteModelica3.breaks"
 	# Building git/MSL
 	./checkout-git.sh 'git/MSL' 'https://github.com/modelica/Modelica.git' 'master' '075686b59ef08954290085cf2e1151413d0edf43'
 	test ! -f 'build//Complex trunk.mo'
@@ -731,7 +704,7 @@ buildsyspro:
 	cp -a 'git/buildsyspro/BuildSysPro' "$(BUILD_DIR)/BuildSysPro 2015.12b"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/BuildSysPro 2015.12b.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BuildSysPro 2015.12b.license"
-	echo '2015.12b' > "$(BUILD_DIR)/BuildSysPro 2015.12b.last_change"
+	echo '2015.12b-5-gdedd0c4' > "$(BUILD_DIR)/BuildSysPro 2015.12b.last_change"
 ipsl:
 	# Building git/ipsl
 	./checkout-git.sh 'git/ipsl' 'https://github.com/modelica-3rdparty/ipsl.git' 'master' '4e6211901361e9bf8e7d43601afb448860e8aba1'
