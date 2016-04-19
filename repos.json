@@ -550,7 +550,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4d67c6cc5cd4651f49e06868e212d34028b198c0",
+      "rev": "4f5eff355eb29b7fa95996fbdd493135037fe7d1",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -768,7 +768,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4e6211901361e9bf8e7d43601afb448860e8aba1",
+      "rev": "5f95c37657c18ebac81204e342d54218866844d8",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
