@@ -19,6 +19,7 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/PDELib",
+    "https://github.com/modelica-3rdparty/QCalc.git",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo",
     "https://github.com/modelica-3rdparty/ThermoBondLib",
@@ -604,14 +605,6 @@
         "PraxisSimulationstechnik"
       ],
       "url": "https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git"
-    },
-    {
-      "dest": "QCalc",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "af6c34dda691a9bdf7ca1de10650974b2d5cecf5",
-      "url": "https://github.com/modelica-3rdparty/QCalc.git"
     },
     {
       "dest": "QSSFluidFlow",
