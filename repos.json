@@ -77,7 +77,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d548d374509963a45d396c94bab8f89efa479748",
+      "rev": "53984ab719402ad2886926c801e344fac12e03ee",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -130,7 +130,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "dfd54bf78c1190ed67162255cef5570337356771",
+      "rev": "2a44ac74057e096eb265a7a13a3abbd1f780e364",
       "targets": [
         "Buildings latest"
       ],
@@ -551,7 +551,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "beef48b091fe0d4340cf5fd69d41fcf93c01c303",
+      "rev": "d3fd414d8b0a13fca35f49c6f018de882dec1137",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -567,7 +567,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f736745751756ff171c7983854afbb3595fe55d5",
+      "rev": "fc2288dbc991e66e2cd36d988f912f5ffa9e221c",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -588,7 +588,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1ddf36cdc3b5d9a2ac0c7fb6902bc8a113e8a8d2",
+      "rev": "3d425c32f068c1685cb3bb9529564a7d3ae7e261",
       "targets": [
         "PowerSystems latest"
       ],
