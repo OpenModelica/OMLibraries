@@ -180,6 +180,7 @@ if __name__ == '__main__':
   (options, args) = parser.parse_args()
   n_jobs = options.n_jobs
   if options.check_latest:
+    update()
     from joblib import Parallel, delayed
     res = Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
     # res = [checkLatest(repo) for repo in repos]
