@@ -4,7 +4,10 @@
     "DEVLib 1",
     "DEVSLib 2.2",
     "ModelManagement 1.1.1",
-    "ModeleObsoletes 2015.12"
+    "ModeleObsoletes 2015.12",
+    "DESLib 1",
+    "DESLib73 1",
+    "Interactive 2"
   ],
   "github-ignore": [
     "https://github.com/modelica/Modelica",
@@ -214,7 +217,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "404de57cbd8c647208ec2e76fa8b6f80681c1a9f",
+      "rev": "cd15c85940f5a3b8d0dc3b53ae4bd9b47f2273c6",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -367,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "075686b59ef08954290085cf2e1151413d0edf43",
+          "rev": "ff36ec8e9b7dd72296c9f94b056929e22be2e28c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -421,7 +424,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4f7cd29ab2c8d40fe9489fad8dbc82114cf70e2",
+      "rev": "4c8fd5f60c2a1e63a1afa017c0ad9a2aaee4fc63",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -551,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "15593d165ee316218b1870aac4e98ed38035d663",
+      "rev": "d481c2735a5813553e11f1f5ea46a72096a5cf85",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -567,7 +570,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fc2288dbc991e66e2cd36d988f912f5ffa9e221c",
+      "rev": "7fe90b5d70814e6f090be35d80a23fab2b787316",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -665,7 +668,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "2bd9e367baaa8d44946897c3c3a32a4050ad2a2a"
+          "rev": "88e758037da4a8ca1b21b468409b15417a27d992"
         }
       ],
       "url": "https://openmodelica.org/git/SiemensPower.git"
@@ -753,7 +756,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dedd0c4d4af4ddfce74b4dc250a0adcbeb88484d",
+      "rev": "195d69dbef4bcf6643c03c46d0937c32b898593f",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
