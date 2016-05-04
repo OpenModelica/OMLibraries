@@ -71,7 +71,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "183a0d3680d031fea34f8337e5d04c8f7aa55d93",
+      "rev": "84c1c67170016a536efa2a9cbb97d63d7ae76c66",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -217,7 +217,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cd15c85940f5a3b8d0dc3b53ae4bd9b47f2273c6",
+      "rev": "f895f723b7e8b5fec37953420a887f5d06acf27f",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -448,7 +448,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "79ba8750b9e84bc70fe015eb74fa4f21b09ee0d3",
+      "rev": "1b9459b5d1decff3900f3af1528aaa869641a599",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -530,7 +530,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5ea42e79582c5e9a94b19c2aea7fb6aad7cbaafb",
+      "rev": "7c01756cc1904a8f32e95c19fcd904ebc9683f66",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
