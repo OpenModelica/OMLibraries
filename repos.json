@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a80d8240b032913e4ef97317170e723064cb4a22",
+      "rev": "2b835989d0aa78c153b8621ee185d683084d08dc",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e34b9c3fe774487075abc0fa210d0110da61ead9",
+      "rev": "20504ff5352b17f577fd1035a7c2ebe1501eb415",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -424,7 +424,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4e365f245520d435f0d5fb1c55ace3392fb29ab3",
+      "rev": "cb110a95bbd0797f8f608b74fe2a4f37d3668c7b",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
