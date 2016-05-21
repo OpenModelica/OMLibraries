@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2b835989d0aa78c153b8621ee185d683084d08dc",
+      "rev": "33445cb3f938700205dc6178c08de064f8ca8b4d",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "61c02b119ee5d5c2dd64b1c1ff1cee54cfb375c4",
+          "rev": "bf41d47b4c170d45cf542a83a585167fbe00c03d",
           "targets": [
             "Complex",
             "Modelica",
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "16cb0039a3d6d723fc4942a44308c5bcffc9c01a",
+          "rev": "a7f7cffe2dec9d3bacb0a9c8da8afa19819d4fc7",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -424,7 +424,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cb110a95bbd0797f8f608b74fe2a4f37d3668c7b",
+      "rev": "6dc33b9015373c53706608aaea4a45388bdb472f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
