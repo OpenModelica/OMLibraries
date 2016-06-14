@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160613_190407.core
-ALL_TARGET=$(BUILD_DIR)/20160613_190407.all
+CORE_TARGET=$(BUILD_DIR)/20160614_190401.core
+ALL_TARGET=$(BUILD_DIR)/20160614_190401.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -64,12 +64,12 @@ BondLib:
 	echo 'Windows-1252' > "$(BUILD_DIR)/BondLib 2.3/package.encoding"
 BrineProp:
 	# Building git/BrineProp
-	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' '0e6861f15f16e17ac6450105435a960ab297a1aa'
-	test ! -d 'build//BrineProp 0.3.1'
-	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.3.1"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/BrineProp 0.3.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.3.1.license"
-	echo '0.3.1-15-g0e6861f' > "$(BUILD_DIR)/BrineProp 0.3.1.last_change"
+	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' 'cf7639da6d155cc1dd97db81c6915874672a46ab'
+	test ! -d 'build//BrineProp 0.4.1'
+	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.4.1"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/BrineProp 0.4.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.4.1.license"
+	echo '0.4.1-20160603-002007~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 BuildingSystems:
 	# Building git/BuildingSystems
 	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' '73d72589e5c92b5e1551676173102bfca2181b46'
@@ -88,12 +88,12 @@ Buildings:
 	echo '20160610-112032~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Chemical:
 	# Building git/Chemical
-	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '9927a4dfb22e7173473ecbb4469ec76c1ed6061b'
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'c972a40d1c3910c7b685715464da5b4b32f3a776'
 	test ! -d 'build//Chemical 1.1.0'
 	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Chemical 1.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.1.0.license"
-	echo '1.1.0-7-g9927a4d' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
+	echo '1.1.0-18-gc972a40' > "$(BUILD_DIR)/Chemical 1.1.0.last_change"
 ComplexLib:
 	# Building git/ComplexLib
 	./checkout-git.sh 'git/ComplexLib' 'https://github.com/modelica-3rdparty/ComplexLib.git' 'master' '0b78942ee4fa95ae71347a0d552dd869fdf4c708'
@@ -128,12 +128,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'fea28016c9253a71f4b662398f4a78bc3d24b445'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '1d9427ad82a602e36ff41e90f3105460a2e2fe72'
 	test ! -d 'build//ExternData 2.0.0-dev'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.0.0-dev"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 2.0.0-dev.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.0.0-dev.license"
-	echo '20151030-090523~git~master' > "$(BUILD_DIR)/ExternData 2.0.0-dev.last_change"
+	echo '20160329-152612~git~master' > "$(BUILD_DIR)/ExternData 2.0.0-dev.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -746,12 +746,12 @@ msgpack-modelica:
 	echo '0.1-37-g518bc34' > "$(BUILD_DIR)/MessagePack 0.1.last_change"
 netCDF-DataReader:
 	# Building git/netCDF-DataReader
-	./checkout-git.sh 'git/netCDF-DataReader' 'https://github.com/modelica-3rdparty/netCDF-DataReader.git' 'master' 'd08cc3471e85b4f50b04e2e41b1886825af83eaf'
+	./checkout-git.sh 'git/netCDF-DataReader' 'https://github.com/modelica-3rdparty/netCDF-DataReader.git' 'master' 'ba8632522139a51432e1990541aefe78071a27ed'
 	test ! -d 'build//NcDataReader2 2.4.0'
 	cp -a 'git/netCDF-DataReader/NcDataReader2' "$(BUILD_DIR)/NcDataReader2 2.4.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/NcDataReader2 2.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/NcDataReader2 2.4.0.license"
-	echo '2.4.0' > "$(BUILD_DIR)/NcDataReader2 2.4.0.last_change"
+	echo '2.4.0-8-gba86325' > "$(BUILD_DIR)/NcDataReader2 2.4.0.last_change"
 open-bldc-modelica:
 	# Building git/open-bldc-modelica
 	./checkout-git.sh 'git/open-bldc-modelica' 'https://github.com/joewa/open-bldc-modelica.git' 'master' '473db872c0d59ad9ae9172e5382faf4564ebb516'
