@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1d9427ad82a602e36ff41e90f3105460a2e2fe72",
+      "rev": "4079fb3d35b415e391d39cbaf1f01b04a2846fa8",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -764,7 +764,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5f95c37657c18ebac81204e342d54218866844d8",
+      "rev": "f8329e438743d6c71cbef06645915ee80eece2e8",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
