@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e70f6afc3b0c5583ddeed40e40293b4b806e0077",
+      "rev": "24362c67b0d8b55fd04659ea766ec820b3933b08",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b3e7606e5d1dc221662e8ee11b1bab058ae00c04",
+      "rev": "c1cdd1ac1f309ba2598df6c17b233d451d025372",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "21abed5599854332656d1dd81cfaac093f103580",
+      "rev": "6facd28263784f772dcbf8bc08aa20a505c04e7d",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
