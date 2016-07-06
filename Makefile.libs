@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160704_190405.core
-ALL_TARGET=$(BUILD_DIR)/20160704_190405.all
+CORE_TARGET=$(BUILD_DIR)/20160706_190343.core
+ALL_TARGET=$(BUILD_DIR)/20160706_190343.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -561,12 +561,12 @@ PowerSystems:
 	echo '0.4.0' > "$(BUILD_DIR)/PowerSystems 0.4.0.last_change"
 PowerSystems-latest:
 	# Building git/PowerSystems-latest
-	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' 'ee6019ef77dfa2d35c6d48c3cbb06b8ed9775252'
+	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' 'fde7aa2e790f5bd4aea3cdd6bb18c989456df78a'
 	test ! -d 'build//PowerSystems latest'
 	cp -a 'git/PowerSystems-latest/PowerSystems' "$(BUILD_DIR)/PowerSystems latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PowerSystems latest.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems latest.license"
-	echo '20160611-173349~git~master' > "$(BUILD_DIR)/PowerSystems latest.last_change"
+	echo '20160705-203729~git~master' > "$(BUILD_DIR)/PowerSystems latest.last_change"
 PraxisSimulationstechnik:
 	# Building git/PraxisSimulationstechnik
 	./checkout-git.sh 'git/PraxisSimulationstechnik' 'https://github.com/modelica-3rdparty/PraxisSimulationstechnik.git' 'master' '7446be67ec1c931b1d43fb51721b23b495916c1f'
@@ -696,13 +696,13 @@ WasteWater:
 	echo '2.1.0-20151102-100529~git~master' > "$(BUILD_DIR)/WasteWater 2.1.0.last_change"
 WindPowerPlants:
 	# Building git/WindPowerPlants
-	./checkout-git.sh 'git/WindPowerPlants' 'https://github.com/modelica-3rdparty/WindPowerPlants.git' 'master' 'a7f4936d203327fa546841d3f9f7ee6643a231de'
+	./checkout-git.sh 'git/WindPowerPlants' 'https://github.com/modelica-3rdparty/WindPowerPlants.git' 'master' '62b92fca2e5f5f88113d70dcd12ecc5adda14f91'
 	test ! -d 'build//WindPowerPlants 1.0.0trunk'
 	cp -a 'git/WindPowerPlants/WindPowerPlants' "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk.uses"
 	echo 'Complex 3.2.1' >> "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk.license"
-	echo '20160319-113822~git~master' > "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk.last_change"
+	echo '20160705-212022~git~master' > "$(BUILD_DIR)/WindPowerPlants 1.0.0trunk.last_change"
 XogenyTest:
 	# Building git/XogenyTest
 	./checkout-git.sh 'git/XogenyTest' 'https://github.com/xogeny/XogenyTest.git' 'master' '9b98981e8ff0f440dd319d1a806e1fd2f0ab3436'
