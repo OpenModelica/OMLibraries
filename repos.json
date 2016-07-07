@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "58fb6780960629c5fc548e6846d8fd27710afe1d",
+      "rev": "244e75eaa0c1c7cc26bbd3612c5b3e9bd331a64c",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "4ae6fed3f1420af0d77c463231d22e23c099da74",
+          "rev": "4dbfa8ca067c5765bf118809be6da506a8cf3886",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -448,7 +448,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3287756cd329c3ccad96e909abf1fbc73ae56614",
+      "rev": "3cbafa6f948833748b1101986877ec91ebca638d",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -764,7 +764,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0a6297bca4bc8adfae4e9aef4e8946733e7ae847",
+      "rev": "4818f74d49cb327488129521ed17da43a8ea905f",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
