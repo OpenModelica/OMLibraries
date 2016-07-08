@@ -764,7 +764,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4818f74d49cb327488129521ed17da43a8ea905f",
+      "rev": "8c3f4aa7eb12bfa529399b1d1a306b15e3f4868d",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
@@ -788,7 +788,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ba8632522139a51432e1990541aefe78071a27ed",
+      "rev": "26ba1cc4e3124c1446f2a91072d2863c3022a834",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
