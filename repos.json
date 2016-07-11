@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "edb3b81cc3b0ddc45f4020f2ae22ae731c50affb",
+      "rev": "09fb58f4eab2946e41212d41236ae3a254863b05",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -432,7 +432,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c3e3e3611c620cde3b72472a76d62c419ce54b5b",
+      "rev": "1bbf34217b557d550d2520cbb10fff091fa32d95",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
