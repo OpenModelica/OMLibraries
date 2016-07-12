@@ -740,7 +740,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "62b92fca2e5f5f88113d70dcd12ecc5adda14f91",
+      "rev": "0f5e01a339b21e9dfe80f2c68b2986696abf87a4",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -756,7 +756,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d9d9e658bd1db7342aa8c11eac0ee97b929bccad",
+      "rev": "d96f906615d6ca6391f59494b54c45b00ca94d83",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
