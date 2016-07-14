@@ -448,7 +448,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3cbafa6f948833748b1101986877ec91ebca638d",
+      "rev": "7e25e26376b7997693cac9410876cd9cb9202917",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -591,7 +591,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fde7aa2e790f5bd4aea3cdd6bb18c989456df78a",
+      "rev": "61ba3296af8b2ebdcb86adff0c222291a6a820d7",
       "targets": [
         "PowerSystems latest"
       ],
