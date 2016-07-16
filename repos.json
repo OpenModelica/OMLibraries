@@ -217,7 +217,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f895f723b7e8b5fec37953420a887f5d06acf27f",
+      "rev": "8afa12d5fa32b4e887ba7abb4536ab7bdc65b9fa",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -764,7 +764,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8c3f4aa7eb12bfa529399b1d1a306b15e3f4868d",
+      "rev": "3c2ca94839781003246b66a40767c9def911c78b",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
