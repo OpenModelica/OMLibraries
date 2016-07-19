@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "24362c67b0d8b55fd04659ea766ec820b3933b08",
+      "rev": "71b68621d309acab12996284425f3a0e7a356d55",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -591,7 +591,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ea7ef52eaa558f202473ccdb39ee5fafc022fc6a",
+      "rev": "402611ba92d1865519543835020ae6380948cf47",
       "targets": [
         "PowerSystems latest"
       ],
