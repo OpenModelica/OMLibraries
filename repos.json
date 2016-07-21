@@ -591,7 +591,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "402611ba92d1865519543835020ae6380948cf47",
+      "rev": "8d38b4eb006e1312b7174631cf17fc34d1d04bc4",
       "targets": [
         "PowerSystems latest"
       ],
@@ -756,7 +756,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d96f906615d6ca6391f59494b54c45b00ca94d83",
+      "rev": "95314bc1cbaabe122cdd1f198c8f4fa430906508",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
