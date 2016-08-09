@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "34fda8e0ae667ff546879260231c64e77d706df0",
+      "rev": "ded928dd64c93facb1a8f5f1bb5d1b9b3932e5a7",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "244e75eaa0c1c7cc26bbd3612c5b3e9bd331a64c",
+      "rev": "66b3dd250b14e98825d15b8c0bf527f435f56dad",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -273,7 +273,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "b3ca76f084d17febebf406921fc3b5a7fff104c6",
+      "rev": "ce173c8b221ed8576eacbba6279aa9630d729de0",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
