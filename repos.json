@@ -448,7 +448,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7e25e26376b7997693cac9410876cd9cb9202917",
+      "rev": "07cd869e18bfee05ee8ed31bfed775355ce064bf",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -637,7 +637,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d5af317560290b71e59bab200fd0b1b71d033e60",
+      "rev": "14b6c119dc29da78e6cd09e1cdb5c3207a25962e",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
