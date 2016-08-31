@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC MSL ManualTracking Modelica-MVEM Modelica3D ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20160830_190429.core
-ALL_TARGET=$(BUILD_DIR)/20160830_190429.all
+CORE_TARGET=$(BUILD_DIR)/20160831_190438.core
+ALL_TARGET=$(BUILD_DIR)/20160831_190438.all
 CORE_LIBS=BioChem MSL Modelica3D SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -31,12 +31,12 @@ AdvancedNoise:
 	echo '1.0.0-2-g059af68' > "$(BUILD_DIR)/AdvancedNoise 1.0.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'cdcf9815a682a64111b30a283a4f91d80f0804ad'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'f7e8c7a170e274e70e5f38d1dd86a22572994148'
 	test ! -d 'build//Annex60 0.1'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 0.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Annex60 0.1.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 0.1.license"
-	echo '0.1-20160810-073708~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
+	echo '0.1-20160831-083559~git~master' > "$(BUILD_DIR)/Annex60 0.1.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
@@ -80,12 +80,12 @@ BuildingSystems:
 	echo '0.1-20160724-104053~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'b95513f4e40244f5ae3319f32aa3ed01d4b61155'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '29a24dd5089ee679d7a5c52d022fdec6a29df304'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20160830-082828~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20160831-095616~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Chemical:
 	# Building git/Chemical
 	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'c972a40d1c3910c7b685715464da5b4b32f3a776'
