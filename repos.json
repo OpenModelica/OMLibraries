@@ -554,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ca81aa33526cbb16700617606b025204a5d808e2",
+      "rev": "3ac01e57add0a8d4c0595ba3430860678f1550c3",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -591,7 +591,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "caf755539f850c060c20bda1d5495660dce9002e",
+      "rev": "2236a587f43920be79d4e5cfdf1f6524d5a5ab6b",
       "targets": [
         "PowerSystems latest"
       ],
