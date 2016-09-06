@@ -554,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3ac01e57add0a8d4c0595ba3430860678f1550c3",
+      "rev": "07cda56711233e768dac1ab12877a0d647101a74",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -713,7 +713,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "90a790749338454322cabc774a1451666102b00f"
+          "rev": "26a17ffd7d6cbc8a7f92fb909e83e830c0bd9d1b"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
