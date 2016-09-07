@@ -1,6 +1,43 @@
+diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Blocks/Sources.mo "build/Modelica 3.2.2/Blocks/Sources.mo"
+--- git/MSL/Modelica/Blocks/Sources.mo	2016-09-07 11:52:05.958876641 +0200
++++ build/Modelica 3.2.2/Blocks/Sources.mo	2016-09-07 12:03:15.767931597 +0200
+@@ -1,4 +1,5 @@
+ within Modelica.Blocks;
++
+ package Sources
+   "Library of signal source blocks generating Real and Boolean signals"
+   import Modelica.Blocks.Interfaces;
+@@ -2373,18 +2374,18 @@
+         annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
+     end getTableTimeTmax;
+ 
++
+     function getNextTimeEvent
+       "Return next time event value of 1-dim. table where first column is time"
+       extends Modelica.Icons.Function;
+       input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
+       input Modelica.SIunits.Time timeIn;
+       input Real tableAvailable
+-        "Dummy input to ensure correct sorting of function calls";
++        "Dummy input to ensure correct sorting of function calls" annotation(__OpenModelica_UnusedVariable = true);
+       output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
+       external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
+         annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
+     end getNextTimeEvent;
+-
+   initial algorithm
+     if tableOnFile then
+       tableOnFileRead := readTableData(tableID, false, verboseRead);
+@@ -3597,4 +3598,4 @@
+        of Dieter Moormann and Hilding Elmqvist.</li>
+ </ul>
+ </html>"));
+-end Sources;
++end Sources;
+\ No newline at end of file
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica 3.2.2/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2016-04-18 09:38:00.147091140 +0200
-+++ build/Modelica 3.2.2/Math/package.mo	2016-04-18 09:52:26.711031884 +0200
+--- git/MSL/Modelica/Math/package.mo	2016-09-07 11:52:11.254905149 +0200
++++ build/Modelica 3.2.2/Math/package.mo	2016-09-07 12:03:14.079919551 +0200
 @@ -13173,9 +13173,67 @@
  
    annotation (Documentation(info="<html>
@@ -147,8 +184,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica 3.2.2/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2016-04-18 09:38:00.147091140 +0200
-+++ build/Modelica 3.2.2/Math/package.order	2016-04-18 09:52:26.711031884 +0200
+--- git/MSL/Modelica/Math/package.order	2016-09-07 11:52:11.254905149 +0200
++++ build/Modelica 3.2.2/Math/package.order	2016-09-07 12:03:14.079919551 +0200
 @@ -28,4 +28,6 @@
  baseIcon1
  baseIcon2

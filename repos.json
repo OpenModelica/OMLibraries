@@ -347,7 +347,7 @@
             "gitbranch": "maint/3.2.2",
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices",
-            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
+            "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
           "rev": "e9284fe207bacfa4a844515ad0a550f0cfeded32",

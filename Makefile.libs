@@ -310,7 +310,7 @@ MSL:
 	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/Modelica 3.2.2.uses"
 	echo 'ModelicaServices 3.2.2' >> "$(BUILD_DIR)/Modelica 3.2.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica 3.2.2.license"
-	echo '3.2.2-20160621-130930~git~maint-3.2.2-om1' > "$(BUILD_DIR)/Modelica 3.2.2.last_change"
+	echo '3.2.2-20160621-130930~git~maint-3.2.2-om2' > "$(BUILD_DIR)/Modelica 3.2.2.last_change"
 	test ! -d 'build//ModelicaReference'
 	cp -a 'git/MSL/ModelicaReference' "$(BUILD_DIR)/ModelicaReference"
 	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
