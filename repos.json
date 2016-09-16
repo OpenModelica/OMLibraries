@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "0b8047cd7e7a90298d21ba93ac78bf1775d32fe8",
+      "rev": "bc65bcc9e969f3fec75806a2d28116d722a1c855",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "71fb9c898168aff6c11a658c57d40bfb2e3b0382",
+          "rev": "26c93cf66d8d9f047d686d33e87918dbb4fbd08b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -554,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9f8f0dff05e8ee90856bef528c9764975da4fd7a",
+      "rev": "1ad4bf0407992b1a2e5cdaf914cc8ae14a683c3f",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -570,7 +570,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "51ce745b714cb6ed7db0734b97907407779f0455",
+      "rev": "a116dc8ec9340b61aea21443cbcd209c182e0bbe",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
