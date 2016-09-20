@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "bc65bcc9e969f3fec75806a2d28116d722a1c855",
+      "rev": "d1bf1742cf2de9b8a2278bf76820a435a94fc6ad",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "38c4918a5f41bec58cc70e020763a5819d434508",
+          "rev": "78ad2e46d4fc10ee6c7e8860425120222664553e",
           "targets": [
             "Complex",
             "Modelica",
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "5c138dcf97895edf7c9a7b1d17bc16b4b6e6771f",
+          "rev": "16a6b708ac9371aa31930e0eee8ce405c5f4ca1c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -591,7 +591,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00955269bf8226c783883d8d73d69d70ce8bc54c",
+      "rev": "483762f34c2943d30403dba767b72418d160a773",
       "targets": [
         "PowerSystems latest"
       ],
