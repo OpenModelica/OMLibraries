@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "d1bf1742cf2de9b8a2278bf76820a435a94fc6ad",
+      "rev": "b9f4bb2d78579f326ac872b7912beec7b5c3ae95",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0e6861f15f16e17ac6450105435a960ab297a1aa",
+      "rev": "cf7639da6d155cc1dd97db81c6915874672a46ab",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4761f68de4f1fa1aa1f384ba11e66aac196a1893",
+      "rev": "ab7b0adc069d0c889c4fb04c0de1aa4836667012",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "768e9f90fb2b8ad7733dcd764f49f85e7c4c7f0c",
+      "rev": "66236f6e5f09e2cb4c4076a54c380a681f204018",
       "targets": [
         "Buildings latest"
       ],
@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9927a4dfb22e7173473ecbb4469ec76c1ed6061b",
+      "rev": "c972a40d1c3910c7b685715464da5b4b32f3a776",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fea28016c9253a71f4b662398f4a78bc3d24b445",
+      "rev": "66b3dd250b14e98825d15b8c0bf527f435f56dad",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "78ad2e46d4fc10ee6c7e8860425120222664553e",
+          "rev": "60bf3d460b099f227c736cb5398437d00fcbff7a",
           "targets": [
             "Complex",
             "Modelica",
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "16a6b708ac9371aa31930e0eee8ce405c5f4ca1c",
+          "rev": "ac8105d6c3f2b94c8993d68aca384058236c9e50",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -424,7 +424,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6dc33b9015373c53706608aaea4a45388bdb472f",
+      "rev": "14cdef8edbabd4fa177c12e0dd85399ce332ef4d",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -637,7 +637,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "87cf8704bd979bb5504f4b1b983531b13a58363e",
+      "rev": "eafef88cdddbfefd5a62e51f25a06daef58c6015",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -696,7 +696,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3e9b4cc577ee2689ed6a0d40f031a2ad6456b10d",
+      "rev": "d14a9195578fdfef8772ca79714dd6e2cf890874",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
@@ -788,7 +788,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
+      "rev": "26ba1cc4e3124c1446f2a91072d2863c3022a834",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
