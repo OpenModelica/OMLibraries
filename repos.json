@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b9f4bb2d78579f326ac872b7912beec7b5c3ae95",
+      "rev": "49478257a91e86f72872b5cfcf4741be0df43f06",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -554,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "240114aa3893e39ee384edb70043c4f9c88b2859",
+      "rev": "292eb86a242dfd95ee0952c8de17b285796a6d35",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
