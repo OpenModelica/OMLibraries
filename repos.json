@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "60bf3d460b099f227c736cb5398437d00fcbff7a",
+          "rev": "e3175038356f996ed35d2302eb3875dd5c3c3237",
           "targets": [
             "Complex",
             "Modelica",
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ac8105d6c3f2b94c8993d68aca384058236c9e50",
+          "rev": "d24a9143513c5a54f53d59a9da8d53d0ce48b2c2",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -696,7 +696,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d14a9195578fdfef8772ca79714dd6e2cf890874",
+      "rev": "f6d090874282226b9db81059ff826b8ce9b0d7aa",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
