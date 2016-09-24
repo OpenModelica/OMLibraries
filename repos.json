@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "49478257a91e86f72872b5cfcf4741be0df43f06",
+      "rev": "88c58b055010d0c1ad733b98310510dee0187f28",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ab7b0adc069d0c889c4fb04c0de1aa4836667012",
+      "rev": "73c1326437691002d6976d0140a2a15f431def08",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -554,7 +554,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "292eb86a242dfd95ee0952c8de17b285796a6d35",
+      "rev": "7a55997fc70939e4437d68632ab35e16c5337734",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
