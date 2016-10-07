@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "963e44737273c8f7c52f4703f3d9186f41f5d9cb",
+      "rev": "ab651e965c7707a8599de1f1aeb13f564a3900ef",
       "targets": [
         "Buildings latest"
       ],
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "4761f88e2f0c20d2487aafaf44ed28716be311ee",
+          "rev": "4315ea61838826b6fb982b0c72c19e58b3b89fa1",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
