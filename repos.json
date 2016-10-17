@@ -399,18 +399,6 @@
       "url": "https://github.com/modelica-3rdparty/Modelica-MVEM.git"
     },
     {
-      "core": true,
-      "dest": "Modelica3D",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "daf5669b03ad33fc6999671d1c0e7521134a282b",
-      "targets": [
-        "none"
-      ],
-      "url": "https://github.com/OpenModelica/modelica3d.git"
-    },
-    {
       "dest": "ModelicaAdditions",
       "options": {
         "gitbranch": "release",

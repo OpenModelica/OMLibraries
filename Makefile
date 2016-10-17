@@ -1,6 +1,6 @@
 BUILD_DIR=build/
 OMC=omc
-SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "Modelica3D" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
+SVN_DIRS="MSL 3.2.1" "MSL 3.1" "MSL 2.2.2" "MSL 1.6" "Biochem" "NewTables" "Modelica_EmbeddedSystems" "ADGenKinetics" "BondGraph" "Buildings" "IndustrialControlSystems" "LinearMPC" "OpenHydraulics" "RealTimeCoordinationLibrary" "PowerFlow" "EEnStorage" "InstantaneousSymmetricalComponents"
 host_short=no
 RPATH_QMAKE=
 CMAKE_RPATH = CC="$(CC)" CXX="$(CXX)" CFLAGS="$(CFLAGS)" CXXFLAGS="$(CXXFLAGS)" CPPFLAGS="$(CPPFLAGS)" LDFLAGS="$(RPATH_QMAKE)" cmake
@@ -14,23 +14,20 @@ core: $(CORE_TARGET)
 $(CORE_TARGET):
 	rm -rf $(BUILD_DIR) build
 	mkdir -p $(BUILD_DIR)
-	$(MAKE) $(CORE_LIBS) modelica3d
-	test -z "$(MODELICA3D_TARGET)" || $(MAKE) modelica3d-binary
+	$(MAKE) $(CORE_LIBS)
 	touch $@
 
 all: $(ALL_TARGET)
 $(ALL_TARGET):
 	rm -rf $(BUILD_DIR) build
 	mkdir -p $(BUILD_DIR)
-	$(MAKE) $(ALL_LIBS) modelica3d
-	test -z "$(MODELICA3D_TARGET)" || $(MAKE) modelica3d-binary
+	$(MAKE) $(ALL_LIBS)
 	touch $@
 
 python-update: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
 	$(MAKE) all-work
-	$(MAKE) modelica3d-internal
 	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
 	$(MAKE) uses
 all-work: config.done Makefile.numjobs
@@ -48,45 +45,6 @@ config.done: Makefile
 Makefile.numjobs:
 	@echo 7 > $@
 	@echo "*** Setting number of jobs to 5. 1 makes things too slow and 5 threads. Set $@ if you want to change it ***"
-
-MODELICA3D_DIR=git/Modelica3D
-modelica3d: MSL
-	$(MAKE) modelica3d-internal
-modelica3d-internal:
-	@echo Much more work is needed for Modelica3D. For now the native builds are part of the omc packages
-	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/"
-	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modbus"
-	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modcount"
-	install -m755 -d "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Modelica3D"
-	install -p -m644 "$(MODELICA3D_DIR)/lib/modbus/src/modelica/modbus/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modbus/package.mo"
-	install -p -m644 "$(MODELICA3D_DIR)/lib/mod3d/src/modelica/Modelica3D 3.2.1/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Modelica3D/package.mo"
-	install -p -m644 "$(MODELICA3D_DIR)/lib/modcount/src/modelica/modcount/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/modcount/package.mo"
-	install -p -m644 "$(BUILD_DIR)/ModelicaServices 3.2.1/package.mo" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/package.mo"
-	patch "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/package.mo" -p1 < "ModelicaServices 3.2.1 modelica3d.patch"
-	find "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d" -name "*.orig" -exec rm -f "{}" ";"
-	echo `cat "$(BUILD_DIR)/ModelicaServices 3.2.1.last_change"`-m3d`cd "$(MODELICA3D_DIR)" ; git rev-list HEAD --count`-om3d`git rev-list HEAD --count "ModelicaServices 3.2.1 modelica3d.patch" Makefile`-p1 > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.last_change"
-	cp "$(BUILD_DIR)/ModelicaServices 3.2.1.license" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.license"
-	mkdir -p "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Resources/Include"
-	cp "$(MODELICA3D_DIR)/lib/modbus/src/c/modbus.h" "$(MODELICA3D_DIR)/lib/modcount/src/c/modcount.h" "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d/Resources/Include/"
-	echo ok > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.ok"
-	echo "https://github.com/OpenModelica/modelica3d.git" > "$(BUILD_DIR)/ModelicaServices 3.2.1 modelica3d.url"
-modelica3d-binary:
-	@test ! "$(host_short)" = "no" || (echo You need to pass host_short in order to run the modelica3d target; false)
-	@test ! -z "$(RPATH_QMAKE)" || (echo You need to pass RPATH_QMAKE in order to run the modelica3d target; false)
-	@test ! -z "$(SHREXT)" || (echo You need to pass SHREXT in order to run the modelica3d target; false)
-	cd "$(MODELICA3D_DIR)" && mkdir -p build
-	test -z "$(MODELICA3D_TARGET)" || mkdir -p "$(BUILD_DIR)/../$(host_short)/"
-	cd "$(MODELICA3D_DIR)/build" && $(CMAKE_RPATH) -DCMAKE_VERBOSE_MAKEFILE:Bool=ON -DCMAKE_COLOR_MAKEFILE:Bool=OFF -DOSG_BACKEND=1 -DUSE_OMC=0 $(BOOST_INCLUDE) ..
-	$(MAKE) -C "$(MODELICA3D_DIR)/build"
-	cp -p "$(MODELICA3D_DIR)/build/backends/osg-gtk/libm3d-osg-gtk$(SHREXT)" "$(MODELICA3D_DIR)/build/lib/proc3d/libproc3d$(SHREXT)" "$(BUILD_DIR)/../$(host_short)"
-	test ! `uname` = Darwin || install_name_tool -id @rpath/libproc3d.dylib "$(BUILD_DIR)/../$(host_short)/libproc3d.dylib"
-	test ! `uname` = Darwin || install_name_tool -id @rpath/libm3d-osg-gtk.dylib "$(BUILD_DIR)/../$(host_short)/libm3d-osg-gtk.dylib"
-	test ! `uname` = Darwin || install_name_tool -change "`pwd`/$(MODELICA3D_DIR)/build/lib/proc3d/libproc3d.dylib" "@rpath/libproc3d.dylib" "$(BUILD_DIR)/../$(host_short)/libm3d-osg-gtk.dylib"
-	cp -p "$(MODELICA3D_DIR)/build/lib/modcount/libmodcount.a" "$(MODELICA3D_DIR)/build/lib/modbus/libmodbus.a" "$(BUILD_DIR)/../$(host_short)/omc/"
-	mkdir -p "$(BUILD_DIR)/../omlibrary-modelica3d/blender2.59" "$(BUILD_DIR)/../omlibrary-modelica3d/osg-gtk/"
-	cp -p "$(MODELICA3D_DIR)/examples/multibody/src/modelica/"*.mo "$(BUILD_DIR)/../omlibrary-modelica3d/"
-	cp -p "$(MODELICA3D_DIR)/backends/blender2.59/dbus-server.py" "$(BUILD_DIR)/../omlibrary-modelica3d/blender2.59/"
-	cp -p "$(MODELICA3D_DIR)/backends/osg-gtk/python/dbus-server.py" "$(BUILD_DIR)/../omlibrary-modelica3d/osg-gtk/"
 
 test: config.done Makefile.numjobs
 	rm -f error.log test-valid.*.mos
