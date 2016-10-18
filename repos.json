@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "dd4409afd5ee9ea92393b305d56e715235da2c76",
+      "rev": "29001f55b2031c9377213d2455ea9265f96f5ec2",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cf7639da6d155cc1dd97db81c6915874672a46ab",
+      "rev": "608a491061009a08a9614f7ebeaf61be9268b2b9",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e1deb0a37cbb82988e62af643a00aa53689435ff",
+      "rev": "03745e0db1e382a3db554477566e71df69d2846d",
       "targets": [
         "Buildings latest"
       ],
@@ -436,7 +436,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "07cd869e18bfee05ee8ed31bfed775355ce064bf",
+      "rev": "05858fe0def6b4826b100c7eadea29b6b1f10d84",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
