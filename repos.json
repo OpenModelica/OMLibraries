@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "66b3dd250b14e98825d15b8c0bf527f435f56dad",
+      "rev": "f73d2c03914d28fc81a0720391b312b8b3d31c29",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -412,7 +412,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "86c024b164b1a3dc65bc84f96efdb7a37ebeee3d",
+      "rev": "db697cfac9db7d9964fb0bc835f7e75b3a8e5e08",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
