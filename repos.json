@@ -432,7 +432,8 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS.git"
     },
     {
-      "dest": "Modelica_DeviceDrivers",
+     "core": true,
+     "dest": "Modelica_DeviceDrivers",
       "options": {
         "gitbranch": "master"
       },
