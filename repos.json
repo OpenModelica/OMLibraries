@@ -412,7 +412,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "db697cfac9db7d9964fb0bc835f7e75b3a8e5e08",
+      "rev": "53f0cc4a26e7d64efb544c0165737e0e6dbf8ce6",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -432,8 +432,8 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS.git"
     },
     {
-     "core": true,
-     "dest": "Modelica_DeviceDrivers",
+      "core": true,
+      "dest": "Modelica_DeviceDrivers",
       "options": {
         "gitbranch": "master"
       },
