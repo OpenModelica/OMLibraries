@@ -71,7 +71,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "059af6836648277ac791f5bc8b0b7664af287486",
+      "rev": "204449ad6e6dceb1e807f73dbd6ba631b71f935b",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -412,7 +412,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53f0cc4a26e7d64efb544c0165737e0e6dbf8ce6",
+      "rev": "e43a57e6d294bad08519d9694572ee674ddadd07",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a54e89728d708ebfb948e621b087c46c44547e1a",
+      "rev": "917430ea6c107eb697eadc7a24c1123e18de366c",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
