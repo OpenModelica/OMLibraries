@@ -71,7 +71,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "204449ad6e6dceb1e807f73dbd6ba631b71f935b",
+      "rev": "831c527fabfbb44e2870ad7274d27b709c8ea091",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "bdc4d5379c9d2c81ded4b6e340c27a374580c4a2",
+      "rev": "c0f9ad31306c5f827bff17e3dc5f9b2a4f55ee09",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -580,7 +580,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a8037d65faa7ebc84d81a9e4fc62d78ab0678303",
+      "rev": "5ed869fb3ac9672c756cd0411f7f9998c67a27c8",
       "targets": [
         "PowerSystems latest"
       ],
