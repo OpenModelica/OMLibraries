@@ -471,6 +471,7 @@
       "url": "https://svn.modelica.org/projects/Modelica_EmbeddedSystems/trunk/Modelica_StateGraph2"
     },
     {
+      "core": true,
       "dest": "Modelica_Synchronous",
       "options": {
         "gitbranch": "master"
