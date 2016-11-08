@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "07e5b0f64168a56e18f3f0958f62d9131bc1b5de",
+      "rev": "f46b72d7de68e5d934a8fc210bce7a70a9051d47",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "bdf4836b8aeecef0e0d9bff219d89ee0f90f78d3",
+      "rev": "026461d99829fa978d42f81084d9ffc7439814b4",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "178d073438bde3160769aa0ca56d39565cdfe7a0",
+      "rev": "f4932a27b616b788b3f968b020d4bd8112e5d561",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -259,7 +259,7 @@
         "gitbranch": "master",
         "patchlevel": "om1"
       },
-      "rev": "6a2414307d5998c6d081efe803c2b575a532b3ba",
+      "rev": "b499204e85f38ca92c6d349b94269f5ff40ca66a",
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems.git"
     },
     {
