@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a57d23265ac7162cbecd40d8ca370b25af5be675",
+      "rev": "fa12c532b1a936f7b15c8e995a73c69c09a42bbc",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "026461d99829fa978d42f81084d9ffc7439814b4",
+      "rev": "4b1a32910e0299c1c85ff83bcacbb9e34185a0fd",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6dc1685ce19ab614e2f26deb3b8207ef7cc5d193",
+      "rev": "62e47ea449fdebd00092b436f3010f5688ac000b",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -242,7 +242,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4b728444579317f614b4a4c025b327dec8296030",
+      "rev": "3ed8f98af41977e91f498381a68e4853e65424c0",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -334,7 +334,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "dfed1107f7253d55edd2364ae4389bf905289bbb",
+          "rev": "e903713c2e895ae10d1ebb8d00913609506d1d7d",
           "targets": [
             "Complex",
             "Modelica",
@@ -350,7 +350,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c47b9abfe525df6611179630817dd9efa594c281",
+          "rev": "e392ee8df98b6a33b06367d8b919d2f9426437b3",
           "targets": [
             "Complex",
             "Modelica",
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b507636855bbf8289bbd2b05e3397c4b1aa740e3",
+          "rev": "dc4f6d3e2a0f27b72f7146e72b9cdaaddc08d3a4",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -544,7 +544,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2d16ad48a903170f12f446deeb99562a19e56e7f",
+      "rev": "d31cb8fec9374dd3c527adfc7fa290a9a23131b4",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
