@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "2d51b81512b5547b9e010b7a508fb23a2454576b",
+      "rev": "0fdc3807811472ecc4d5ae5fa7ac99830c56d1dd",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d02c139f4dcee337a8fe12ec0d9cfd0240cac413",
+      "rev": "7ae4ab47d38bade540e09143b025c8791a5ae967",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "68ed2f0b7d100edefcd3974e099f1757377bb995",
+      "rev": "f8c686eb9f242db32785b3f72689c9a832edf5bd",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -544,7 +544,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c5c44f3e6d782e289ede7fd04a4bfe0f0355c67d",
+      "rev": "30c223af6193a8f3d5bfd27cd9f17376be81c471",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
