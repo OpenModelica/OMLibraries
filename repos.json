@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "2a5224bd6755f2e77181a144254b582cf7bcc696",
+      "rev": "4a444c536db7b0c43e27e0b3af5758a8a295c167",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "608a491061009a08a9614f7ebeaf61be9268b2b9",
+      "rev": "06a70159c4d7f0bec3a2083f3c2a4ac362a4255a",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "627183f612dafa71bfaebe7428123b1e20081f18",
+      "rev": "0806627b5d43b539cf896c5eda6537a471ef966f",
       "targets": [
         "Buildings latest"
       ],
@@ -395,7 +395,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9130686e32ec4c58055b99e1058b802c0e80a5ad",
+      "rev": "57c7aa394d70bffe6106afb2703b92bc532a05d1",
       "url": "https://github.com/modelica-3rdparty/Modelica-MVEM.git"
     },
     {
@@ -686,7 +686,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f6d090874282226b9db81059ff826b8ce9b0d7aa",
+      "rev": "98c4fed658601b983d8e55d7016b5c144cefa241",
       "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
     },
     {
