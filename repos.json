@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "41f09a0d4d10dd661ce86da704315dfa9c3c4ba2",
+      "rev": "2e6ce8a68cb3fdcc5adab2cac5495a3d3fd3f2d1",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -116,7 +116,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "06a70159c4d7f0bec3a2083f3c2a4ac362a4255a",
+      "rev": "76422f703e700f95f4fc5aa6cbef17148c4b4b99",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -124,7 +124,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa12c532b1a936f7b15c8e995a73c69c09a42bbc",
+      "rev": "e7ef658732bc39e2f3f9197c3cccca14e7b285f1",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "1eac374e2ef5bb60cdd9d7e121d5cb3f14f1efc1",
+      "rev": "27290f9a0b428387d05db2b45f5a9c03b48d949c",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7ae4ab47d38bade540e09143b025c8791a5ae967",
+      "rev": "1d3fe1171b85d306c7ae44b39281dabff9960b96",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -746,7 +746,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8e2c5a61dbb8f5e4504d4d9311767297b03f6daf",
+      "rev": "8c4bc709afcc02c5cc1d3edab0b3f12c8200d684",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
