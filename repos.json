@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "62ae89374d43ca90b390d9561f0d9f149ef265db",
+          "rev": "c2552be5c85afe396aabed6689efe522b7f0963d",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -552,7 +552,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3833a44753b62b8f980a92a962b03f44e67bbe74",
+      "rev": "5fdd28fe28c35fe40ad4b4d804330dee05d75a98",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
