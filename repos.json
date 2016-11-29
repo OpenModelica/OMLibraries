@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "e8eaf9dd0d70f0f79d5da95744b19ef2ef1c384a",
+      "rev": "d07911d5404d540395bf0abb8749a52c3b5f5909",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4b4733191e4aa5d46c08334008ace19856be9710",
+      "rev": "11e1d4dac66951702d67e19c53583271caf14603",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "63e42a8c13e910d853fb0f30c79b342fcebb1e38",
+      "rev": "dcbc1af7b48fe70f178718cb973585c0eb09a606",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "0741ccded64b8fa5261ea8fbc0395cb97eb62a75",
+          "rev": "7af441321392db1777e639ce8e6a3629ba658648",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4bbc3a964fc24e5b6fa019d9097bbd28660a9956",
+      "rev": "d1784c9497034ba9a335f1c5186bcfe4fea51dac",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -754,7 +754,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53d8b0cc9491fb5d4affdcfe8ce5b586e392ab38",
+      "rev": "7cd9e00461483adca63589fd8dece6682d1e5d94",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
