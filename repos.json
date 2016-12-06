@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a3165c03e01965524e7674d9ce2d2c8ebf711a81",
+      "rev": "4dfe63f578a3aa32374ea86fba163a5d5eb9a21b",
       "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
     },
     {
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a8be8df22c9ac033d4d8ed17cd0962ab955ec152",
+      "rev": "55b7fa64e824703430a6a100f608df2ef17ca57b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -581,7 +581,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "efda665ae538400929e0207a09672e0fa171d3b3",
+      "rev": "5e99d0224f5c375d3ec3b13dbec630bd7d5a8157",
       "targets": [
         "PowerSystems latest"
       ],
