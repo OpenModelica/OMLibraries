@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "11e1d4dac66951702d67e19c53583271caf14603",
+      "rev": "93b65064cbb4f605b93d8239ae2d8559edf425e7",
       "targets": [
         "Buildings latest"
       ],
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "535e7efbf4ca804acf23b47dc90d227df491320b",
+      "rev": "a3165c03e01965524e7674d9ce2d2c8ebf711a81",
       "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "7af441321392db1777e639ce8e6a3629ba658648",
+          "rev": "24594a1cb125e0069359741c6c18197ca768f5c8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d1784c9497034ba9a335f1c5186bcfe4fea51dac",
+      "rev": "a8be8df22c9ac033d4d8ed17cd0962ab955ec152",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -544,7 +544,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "30c223af6193a8f3d5bfd27cd9f17376be81c471",
+      "rev": "da62d3b460b5ca916f540076485e58ac2e2331e9",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -754,7 +754,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7cd9e00461483adca63589fd8dece6682d1e5d94",
+      "rev": "c4729dd9422bfe132b0f6d521823d402e4113e44",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
