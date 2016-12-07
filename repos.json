@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b7e3e29788579f0db190ed35b7f146f500f59efa",
+      "rev": "a75ed2e005a21bf8965bc16be02383748786891b",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "93b65064cbb4f605b93d8239ae2d8559edf425e7",
+      "rev": "5b127fa5c565a911d4f98fe778ac50cb8faec6a8",
       "targets": [
         "Buildings latest"
       ],
@@ -281,7 +281,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4dfe63f578a3aa32374ea86fba163a5d5eb9a21b",
+      "rev": "c16ad1c1970ea581c51158cca0647e165dc4c3b9",
       "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
     },
     {
