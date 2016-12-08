@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "a75ed2e005a21bf8965bc16be02383748786891b",
+      "rev": "8541f0c71029546aaafd19544df3d5c1ffd6f91d",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -437,7 +437,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "55b7fa64e824703430a6a100f608df2ef17ca57b",
+      "rev": "d09a241eba7c3163ece3a085b6ee486e87ab0661",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -778,7 +778,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "26ba1cc4e3124c1446f2a91072d2863c3022a834",
+      "rev": "e819e0ca82d01882a4fb95db37d837086e58dfb2",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
