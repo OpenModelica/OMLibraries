@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c9a0eea0c8f54538c1a7e8b781eace0ac161f3f1",
+      "rev": "05b7a785bec385b278f91718bee3916e59e81042",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "47caffb531955977f74da1f480c184617138f852",
+      "rev": "f84866d61cb606547e6fde4d1d9864bb99ed54bf",
       "targets": [
         "Buildings latest"
       ],
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "24594a1cb125e0069359741c6c18197ca768f5c8",
+          "rev": "4c59e5244dfe0e029d56595e145296185e2d6614",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -754,7 +754,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4729dd9422bfe132b0f6d521823d402e4113e44",
+      "rev": "9763c45a6aa089c454e170e8c10c843a450cba3b",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
