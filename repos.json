@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "b8d5457f27f8b97aba5086d260879e04b795b19c",
+      "rev": "672bb48e53408907da1e54e622773508927dc454",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "03e4208b012533297cdef1cdbf1e89969ecb8fb2",
+      "rev": "942b0391a2508856391373214861f32a896cbca1",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -273,7 +273,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "ce173c8b221ed8576eacbba6279aa9630d729de0",
+      "rev": "29ba05b5d9acd97c1b9c84dc8086b15ba6769250",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "801c129cc3800a1e6c27de35eafa59b82fa28932",
+          "rev": "3e7e3cfc1f044641930ae07a2ad0da7149711ee3",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -420,7 +420,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1bbf34217b557d550d2520cbb10fff091fa32d95",
+      "rev": "ce29802168c6ceb5d4c267677accf491eb4ced53",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
