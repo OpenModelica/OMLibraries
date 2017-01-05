@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC MSL ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170104_190521.core
-ALL_TARGET=$(BUILD_DIR)/20170104_190521.all
+CORE_TARGET=$(BUILD_DIR)/20170105_190713.core
+ALL_TARGET=$(BUILD_DIR)/20170105_190713.all
 CORE_LIBS=BioChem MSL Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -80,12 +80,12 @@ BuildingSystems:
 	echo '0.1-20161218-165400~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '672bb48e53408907da1e54e622773508927dc454'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'a3a65620a7a395822a01a5202da3754292810ecc'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20170103-165331~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20170104-164304~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Chemical:
 	# Building git/Chemical
 	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'c972a40d1c3910c7b685715464da5b4b32f3a776'
@@ -128,12 +128,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '942b0391a2508856391373214861f32a896cbca1'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '22fee3b161408c941fb9c0c8a7250a982e2e7f5d'
 	test ! -d 'build//ExternData 2.1.0'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternData 2.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.1.0.license"
-	echo '2.1.0-10-g942b039' > "$(BUILD_DIR)/ExternData 2.1.0.last_change"
+	echo '2.1.0-14-g22fee3b' > "$(BUILD_DIR)/ExternData 2.1.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
@@ -218,12 +218,12 @@ InstantaneousSymmetricalComponents:
 	echo '7978' > "$(BUILD_DIR)/InstantaneousSymmetricalComponents.last_change"
 KeyWordIO:
 	# Building git/KeyWordIO
-	./checkout-git.sh 'git/KeyWordIO' 'https://github.com/christiankral/KeyWordIO.git' 'master' '29ba05b5d9acd97c1b9c84dc8086b15ba6769250'
-	test ! -d 'build//KeyWordIO 0.X.X'
-	cp -a 'git/KeyWordIO/KeyWordIO' "$(BUILD_DIR)/KeyWordIO 0.X.X"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/KeyWordIO 0.X.X.uses"
-	echo 'modelica1.1' > "$(BUILD_DIR)/KeyWordIO 0.X.X.license"
-	echo '20170104-170644~git~master' > "$(BUILD_DIR)/KeyWordIO 0.X.X.last_change"
+	./checkout-git.sh 'git/KeyWordIO' 'https://github.com/christiankral/KeyWordIO.git' 'master' '12abe9d5e84010d08c979759a90e7dcb12a6beeb'
+	test ! -d 'build//KeyWordIO 0.6.0'
+	cp -a 'git/KeyWordIO/KeyWordIO' "$(BUILD_DIR)/KeyWordIO 0.6.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/KeyWordIO 0.6.0.uses"
+	echo 'modelica1.1' > "$(BUILD_DIR)/KeyWordIO 0.6.0.license"
+	echo '0.6.0' > "$(BUILD_DIR)/KeyWordIO 0.6.0.last_change"
 LinearMPC:
 	# Building git/LinearMPC
 	./checkout-git.sh 'git/LinearMPC' 'https://github.com/modelica-3rdparty/LinearMPC.git' 'master' 'c16ad1c1970ea581c51158cca0647e165dc4c3b9'
