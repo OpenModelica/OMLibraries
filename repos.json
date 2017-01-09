@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "fb3cb554055b0baa5aae1994fc5ab53074425542",
+      "rev": "380d501b55043ee8976405d6adddc0c964484758",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -259,7 +259,7 @@
         "gitbranch": "master",
         "patchlevel": "om1"
       },
-      "rev": "b499204e85f38ca92c6d349b94269f5ff40ca66a",
+      "rev": "68954e9bbe4664abad74ecd9209284143aefc58a",
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems.git"
     },
     {
@@ -370,7 +370,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3e7e3cfc1f044641930ae07a2ad0da7149711ee3",
+          "rev": "b06570309e3282cae06a14d73fb33360d035fa1e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
