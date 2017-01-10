@@ -133,7 +133,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "c3abae9e42c14bda5a68a50600450880578ca043",
+      "rev": "223ee9a4e42ed8ad90f8882a40dba09cb5bed706",
       "targets": [
         "Buildings latest"
       ],
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f2773ff6f258d453ee40206fcd4d7a3bf4917644",
+      "rev": "eacb53a0f67fac8dc5c2a442ea34a169652d8ed2",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -544,7 +544,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "31b35436ea75179f16aa40e617f0d9010a03032f",
+      "rev": "b65947ab5587e1a3b87cd88a71f90818adaa5eaf",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
