@@ -461,9 +461,6 @@
     },
     {
       "dest": "Modelica_StateGraph2",
-      "options": {
-        "encoding": "Windows-1252"
-      },
       "rev": 9594,
       "targets": [
         "self"
