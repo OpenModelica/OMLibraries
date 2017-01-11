@@ -181,6 +181,7 @@ if __name__ == '__main__':
   n_jobs = options.n_jobs
   if options.check_latest:
     update()
+    os.system("rm -r build/")
     from joblib import Parallel, delayed
     res = Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
     # res = [checkLatest(repo) for repo in repos]
