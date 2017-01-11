@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "eacb53a0f67fac8dc5c2a442ea34a169652d8ed2",
+      "rev": "2787c9faff1cbc38815c8f3b628821e2658c9acf",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -464,7 +464,7 @@
       "options": {
         "encoding": "Windows-1252"
       },
-      "rev": 9206,
+      "rev": 9594,
       "targets": [
         "self"
       ],
