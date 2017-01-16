@@ -80,7 +80,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "380d501b55043ee8976405d6adddc0c964484758",
+      "rev": "2b082a8475c6b71c59c06adf88fe9886e4d78e1a",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -184,7 +184,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2787c9faff1cbc38815c8f3b628821e2658c9acf",
+      "rev": "703e868214f27dce9d0404d4b9218ef9e14dcaea",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -217,7 +217,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8afa12d5fa32b4e887ba7abb4536ab7bdc65b9fa",
+      "rev": "1081ec9c0b11a08784ff996a543d508665f621bb",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -283,6 +283,14 @@
       },
       "rev": "c16ad1c1970ea581c51158cca0647e165dc4c3b9",
       "url": "https://github.com/modelica-3rdparty/LinearMPC.git"
+    },
+    {
+      "dest": "ManualTracking",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "ab15d4cae19b5e4a1148d1d4b2a05c50864599ba",
+      "url": "https://github.com/jjpotterkowski/ManualTracking.git"
     },
     {
       "core": true,
@@ -370,7 +378,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b06570309e3282cae06a14d73fb33360d035fa1e",
+          "rev": "f3e7bd3773abda1aee5aec41cf10f6177eedfe1e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -381,14 +389,6 @@
         }
       ],
       "url": "https://github.com/modelica/Modelica.git"
-    },
-    {
-      "dest": "ManualTracking",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "ab15d4cae19b5e4a1148d1d4b2a05c50864599ba",
-      "url": "https://github.com/jjpotterkowski/ManualTracking.git"
     },
     {
       "dest": "Modelica-MVEM",
@@ -557,7 +557,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a116dc8ec9340b61aea21443cbcd209c182e0bbe",
+      "rev": "6b0bac7eeb73633fb94c115e11ebf9f9ef7845d2",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -578,7 +578,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5e99d0224f5c375d3ec3b13dbec630bd7d5a8157",
+      "rev": "72a27590ac935e40429655d3aa4992fda0c5c78f",
       "targets": [
         "PowerSystems latest"
       ],
