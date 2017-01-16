@@ -286,11 +286,11 @@
     },
     {
       "core": true,
-      "dest": "MSL",
+      "dest": "Modelica",
       "multitarget": [
         {
           "options": {
-            "gittag": "release",
+            "gittag": "v1.6",
             "intertrac": "m:",
             "license": "modelica1.1",
             "patchlevel": "Modelica:-om1",
@@ -298,7 +298,7 @@
           },
           "rev": "v1.6",
           "targets": [
-            "Modelica 1.6"
+            "self"
           ]
         },
         {
