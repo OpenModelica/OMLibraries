@@ -15,10 +15,12 @@
     "https://github.com/modelica/Modelica_LinearSystems2",
     "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_Synchronous",
+    "https://github.com/modelica-3rdparty/fmi-standard.org",
     "https://github.com/modelica-3rdparty/AixLib",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/Buildings.git",
     "https://github.com/modelica-3rdparty/FuelCellLib",
+    "https://github.com/modelica-3rdparty/IDEAS.git",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/PDELib",
@@ -196,6 +198,14 @@
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
+      "dest": "ExternalMemoryLib",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "6488d5815bda23c665123baa916789e283e16d2c",
+      "url": "https://github.com/modelica-3rdparty/ExternalMemoryLib.git"
+    },
+    {
       "dest": "FCSys",
       "options": {
         "gitbranch": "master",
@@ -219,6 +229,14 @@
       },
       "rev": "1081ec9c0b11a08784ff996a543d508665f621bb",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
+    },
+    {
+      "dest": "FeedDriveLibrary",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "b25dd3ef582872ac6ed5f5e15cbac9e9a6df194a",
+      "url": "https://github.com/modelica-3rdparty/FeedDriveLibrary.git"
     },
     {
       "dest": "FractionalOrder",
@@ -432,6 +450,14 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDEVS.git"
     },
     {
+      "dest": "ModelicaDFR",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "37a441934d05330cf3d13e9ec551954d27eca84c",
+      "url": "https://github.com/modelica-3rdparty/ModelicaDFR.git"
+    },
+    {
       "core": true,
       "dest": "Modelica_DeviceDrivers",
       "options": {
@@ -545,12 +571,36 @@
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
+      "dest": "PVSystems",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "50788c27ff5cbec5fe1654430c51996cb574c7ac",
+      "url": "https://github.com/modelica-3rdparty/PVSystems.git"
+    },
+    {
+      "dest": "PhotoVoltaics",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "b753226785b6b255fb45cf6079eabe06c05f1833",
+      "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
+    },
+    {
       "dest": "Physiolibrary",
       "options": {
         "gitbranch": "master"
       },
       "rev": "5fdd28fe28c35fe40ad4b4d804330dee05d75a98",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
+    },
+    {
+      "dest": "Physiomodel",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "60411dff2cd92c76537c5e0c613048ff20f07ccb",
+      "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
       "dest": "PlanarMechanics",
