@@ -37,6 +37,7 @@
     "https://api.github.com/users/modelica/repos?type=owner&per_page=100"
   ],
   "provided": {
+    "Buildings 4.0": "Buildings latest",
     "Complex 1.0": "Complex 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
