@@ -1,8 +1,8 @@
-.PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170119_190343.core
-ALL_TARGET=$(BUILD_DIR)/20170119_190343.all
+.PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
+CORE_TARGET=$(BUILD_DIR)/20170125_070421.core
+ALL_TARGET=$(BUILD_DIR)/20170125_070421.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro WasteWater
-OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia FCSys FastBuildings FaultTriggering FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib Physiolibrary PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
+OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 ADGenKinetics:
 	# Building git/ADGenKinetics
@@ -31,12 +31,12 @@ AdvancedNoise:
 	echo '1.0.0-4-g831c527' > "$(BUILD_DIR)/AdvancedNoise 1.0.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '4e716ab8b9d95f1c8034b54642424b6ac3c2789c'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' 'e8b465d4e2ad9300774c6943e22205b102e15ec9'
 	test ! -d 'build//Annex60 1.0.0'
 	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 1.0.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Annex60 1.0.0.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Annex60 1.0.0.license"
-	echo '1.0.0-15-g4e716ab' > "$(BUILD_DIR)/Annex60 1.0.0.last_change"
+	echo '1.0.0-23-ge8b465d' > "$(BUILD_DIR)/Annex60 1.0.0.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
@@ -72,20 +72,20 @@ BrineProp:
 	echo '0.4.1-20161121-171219~git~master' > "$(BUILD_DIR)/BrineProp 0.4.1.last_change"
 BuildingSystems:
 	# Building git/BuildingSystems
-	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' '345050a4b4971ac0608eb9c600af06c9f89a9c8c'
+	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' 'a9a787aec0e0c2741e3629e1ade8570228d3c664'
 	test ! -d 'build//BuildingSystems 0.1'
 	cp -a 'git/BuildingSystems/BuildingSystems' "$(BUILD_DIR)/BuildingSystems 0.1"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/BuildingSystems 0.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BuildingSystems 0.1.license"
-	echo '0.1-20170117-104652~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
+	echo '0.1-20170122-193411~git~master' > "$(BUILD_DIR)/BuildingSystems 0.1.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'a298e997dc1b35a7ca46815283091dcad12c4d38'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '86634ed7b5927408855deea6ed697ea3f66f859a'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20170118-145617~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20170123-144042~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 Chemical:
 	# Building git/Chemical
 	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'c972a40d1c3910c7b685715464da5b4b32f3a776'
@@ -128,15 +128,23 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'fbe302b16f20e2db79adde7af941315a62f93a49'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '664178d4158ac501fd2cc9ba812b9dc249236916'
 	test ! -d 'build//ExternData 2.2.0'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.2.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ExternData 2.2.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.2.0.license"
-	echo '2.2.0-20170116-092535~git~master' > "$(BUILD_DIR)/ExternData 2.2.0.last_change"
+	echo '2.2.0-20170119-232348~git~master' > "$(BUILD_DIR)/ExternData 2.2.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '1b77869b31dc3509defeccb1236db4b05d2f6f5b'
+ExternalMemoryLib:
+	# Building git/ExternalMemoryLib
+	./checkout-git.sh 'git/ExternalMemoryLib' 'https://github.com/modelica-3rdparty/ExternalMemoryLib.git' 'master' '6488d5815bda23c665123baa916789e283e16d2c'
+	test ! -f 'build//ExternalMemoryLib.mo'
+	cp -a 'git/ExternalMemoryLib/ExternalMemoryLib.mo' "$(BUILD_DIR)/ExternalMemoryLib.mo"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ExternalMemoryLib.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExternalMemoryLib.license"
+	echo '20160809-140026~git~master' > "$(BUILD_DIR)/ExternalMemoryLib.last_change"
 FCSys:
 	# Building git/FCSys
 	./checkout-git.sh 'git/FCSys' 'https://github.com/kdavies4/FCSys.git' 'master' 'cb4b17f34313b9d8f2d4223d5365684b4dc1ab65'
@@ -167,6 +175,14 @@ FaultTriggering:
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/FaultTriggering 0.6.6.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/FaultTriggering 0.6.6.license"
 	echo '0.6.6-3-g1081ec9' > "$(BUILD_DIR)/FaultTriggering 0.6.6.last_change"
+FeedDriveLibrary:
+	# Building git/FeedDriveLibrary
+	./checkout-git.sh 'git/FeedDriveLibrary' 'https://github.com/modelica-3rdparty/FeedDriveLibrary.git' 'master' 'b25dd3ef582872ac6ed5f5e15cbac9e9a6df194a'
+	test ! -f 'build//FeedDriveLibrary.mo'
+	cp -a 'git/FeedDriveLibrary/FeedDriveLibrary.mo' "$(BUILD_DIR)/FeedDriveLibrary.mo"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/FeedDriveLibrary.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/FeedDriveLibrary.license"
+	echo '20161016-160335~git~master' > "$(BUILD_DIR)/FeedDriveLibrary.last_change"
 FractionalOrder:
 	# Building git/FractionalOrder
 	./checkout-git.sh 'git/FractionalOrder' 'https://github.com/DLR-SR/FractionalOrder.git' 'master' '99918820e346c362c3ad52d782c8215e5deeac4c'
@@ -425,6 +441,14 @@ ModelicaDEVS:
 	echo 'ModelicaDEVS 1' >> "$(BUILD_DIR)/ModelicaDEVS 1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaDEVS 1.license"
 	echo '1.0' > "$(BUILD_DIR)/ModelicaDEVS 1.last_change"
+ModelicaDFR:
+	# Building git/ModelicaDFR
+	./checkout-git.sh 'git/ModelicaDFR' 'https://github.com/modelica-3rdparty/ModelicaDFR.git' 'master' '37a441934d05330cf3d13e9ec551954d27eca84c'
+	test ! -f 'build//Nuclear.mo'
+	cp -a 'git/ModelicaDFR/Nuclear.mo' "$(BUILD_DIR)/Nuclear.mo"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Nuclear.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Nuclear.license"
+	echo '20160806-130022~git~master' > "$(BUILD_DIR)/Nuclear.last_change"
 Modelica_DeviceDrivers:
 	# Building git/Modelica_DeviceDrivers
 	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'fca1aab49bb5e751b4d2853680f627058e0fd07f'
@@ -518,12 +542,35 @@ OpenHydraulics:
 	echo '1.0.1-23-g3485cf4' > "$(BUILD_DIR)/OpenHydraulics 1.0.last_change"
 PNlib:
 	# Building git/PNlib
-	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' 'b65947ab5587e1a3b87cd88a71f90818adaa5eaf'
+	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' '4c799dec09992baeacb01e23b63ded55a93b2321'
 	test ! -d 'build//PNlib 2.0'
 	cp -a 'git/PNlib/PNlib' "$(BUILD_DIR)/PNlib 2.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PNlib 2.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PNlib 2.0.license"
-	echo '2.0-2-gb65947a' > "$(BUILD_DIR)/PNlib 2.0.last_change"
+	echo '2.0-3-g4c799de' > "$(BUILD_DIR)/PNlib 2.0.last_change"
+PVSystems:
+	# Building git/PVSystems
+	./checkout-git.sh 'git/PVSystems' 'https://github.com/modelica-3rdparty/PVSystems.git' 'master' '50788c27ff5cbec5fe1654430c51996cb574c7ac'
+	test ! -d 'build//PVSystems 0.5.1'
+	cp -a 'git/PVSystems/PVSystems' "$(BUILD_DIR)/PVSystems 0.5.1"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PVSystems 0.5.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PVSystems 0.5.1.license"
+	echo '0.5.1-20161219-183237~git~master' > "$(BUILD_DIR)/PVSystems 0.5.1.last_change"
+PhotoVoltaics:
+	# Building git/PhotoVoltaics
+	./checkout-git.sh 'git/PhotoVoltaics' 'https://github.com/modelica-3rdparty/PhotoVoltaics.git' 'master' 'd1c8ef8120498fe84a5c915d86e97e6ad6942fa0'
+	test ! -f 'build//PhotoVoltaics 0.X.X.mo'
+	cp -a 'git/PhotoVoltaics/PhotoVoltaics.mo' "$(BUILD_DIR)/PhotoVoltaics 0.X.X.mo"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics 0.X.X.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics 0.X.X.license"
+	echo '20170121-182410~git~master' > "$(BUILD_DIR)/PhotoVoltaics 0.X.X.last_change"
+	test ! -f 'build//PhotoVoltaics_TGM 0.X.X.mo'
+	cp -a 'git/PhotoVoltaics/PhotoVoltaics_TGM.mo' "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.mo"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
+	echo 'Buildings 4.0.0' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
+	echo 'PhotoVoltaics 0.X.X' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.license"
+	echo '20170121-182410~git~master' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
 	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '5fdd28fe28c35fe40ad4b4d804330dee05d75a98'
@@ -532,6 +579,15 @@ Physiolibrary:
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1.license"
 	echo '2.3.1-7-g5fdd28f' > "$(BUILD_DIR)/Physiolibrary 2.3.1.last_change"
+Physiomodel:
+	# Building git/Physiomodel
+	./checkout-git.sh 'git/Physiomodel' 'https://github.com/modelica-3rdparty/Physiomodel.git' 'master' '60411dff2cd92c76537c5e0c613048ff20f07ccb'
+	test ! -d 'build//Physiomodel 1.0.0'
+	cp -a 'git/Physiomodel/Physiomodel' "$(BUILD_DIR)/Physiomodel 1.0.0"
+	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiomodel 1.0.0.uses"
+	echo 'Physiolibrary 2.3.1' >> "$(BUILD_DIR)/Physiomodel 1.0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Physiomodel 1.0.0.license"
+	echo '1.0.0-4-g60411df' > "$(BUILD_DIR)/Physiomodel 1.0.0.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
 	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' '6b0bac7eeb73633fb94c115e11ebf9f9ef7845d2'

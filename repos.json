@@ -83,7 +83,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "4e716ab8b9d95f1c8034b54642424b6ac3c2789c",
+      "rev": "e8b465d4e2ad9300774c6943e22205b102e15ec9",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -127,7 +127,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "345050a4b4971ac0608eb9c600af06c9f89a9c8c",
+      "rev": "a9a787aec0e0c2741e3629e1ade8570228d3c664",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -136,7 +136,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "a298e997dc1b35a7ca46815283091dcad12c4d38",
+      "rev": "86634ed7b5927408855deea6ed697ea3f66f859a",
       "targets": [
         "Buildings latest"
       ],
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fbe302b16f20e2db79adde7af941315a62f93a49",
+      "rev": "664178d4158ac501fd2cc9ba812b9dc249236916",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -568,7 +568,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b65947ab5587e1a3b87cd88a71f90818adaa5eaf",
+      "rev": "4c799dec09992baeacb01e23b63ded55a93b2321",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -584,7 +584,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b753226785b6b255fb45cf6079eabe06c05f1833",
+      "rev": "d1c8ef8120498fe84a5c915d86e97e6ad6942fa0",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
