@@ -127,7 +127,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a9a787aec0e0c2741e3629e1ade8570228d3c664",
+      "rev": "62636ba114741c2ae800030d80ee2aa5b398614e",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -136,7 +136,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "86634ed7b5927408855deea6ed697ea3f66f859a",
+      "rev": "5508b2f8b723bb12ee4aba9bfc84d6df89a69ce3",
       "targets": [
         "Buildings latest"
       ],
@@ -187,7 +187,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "664178d4158ac501fd2cc9ba812b9dc249236916",
+      "rev": "0f393a79d326e942d0ba443f51102a744d980c23",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -834,7 +834,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "473db872c0d59ad9ae9172e5382faf4564ebb516",
+      "rev": "594be99fbc3310a4dd044a374592ebc673fc7d30",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     },
     {
