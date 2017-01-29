@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170128_190431.core
-ALL_TARGET=$(BUILD_DIR)/20170128_190431.all
+CORE_TARGET=$(BUILD_DIR)/20170129_190510.core
+ALL_TARGET=$(BUILD_DIR)/20170129_190510.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_EnergyStorages Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -558,19 +558,20 @@ PVSystems:
 	echo '0.5.1-20161219-183237~git~master' > "$(BUILD_DIR)/PVSystems 0.5.1.last_change"
 PhotoVoltaics:
 	# Building git/PhotoVoltaics
-	./checkout-git.sh 'git/PhotoVoltaics' 'https://github.com/modelica-3rdparty/PhotoVoltaics.git' 'master' 'd1c8ef8120498fe84a5c915d86e97e6ad6942fa0'
+	./checkout-git.sh 'git/PhotoVoltaics' 'https://github.com/modelica-3rdparty/PhotoVoltaics.git' 'master' '09be97045ff38a2ae1e82fb9d5bf2d0d50e01bfe'
 	test ! -f 'build//PhotoVoltaics 0.X.X.mo'
 	cp -a 'git/PhotoVoltaics/PhotoVoltaics.mo' "$(BUILD_DIR)/PhotoVoltaics 0.X.X.mo"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics 0.X.X.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics 0.X.X.license"
-	echo '20170121-182410~git~master' > "$(BUILD_DIR)/PhotoVoltaics 0.X.X.last_change"
+	echo '20170128-180121~git~master' > "$(BUILD_DIR)/PhotoVoltaics 0.X.X.last_change"
 	test ! -f 'build//PhotoVoltaics_TGM 0.X.X.mo'
 	cp -a 'git/PhotoVoltaics/PhotoVoltaics_TGM.mo' "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.mo"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
 	echo 'Buildings 4.0.0' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
 	echo 'PhotoVoltaics 0.X.X' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
+	echo 'PhotoVoltaics_TGM 0.X.X' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.license"
-	echo '20170121-182410~git~master' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.last_change"
+	echo '20170128-180121~git~master' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.X.X.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
 	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '5fdd28fe28c35fe40ad4b4d804330dee05d75a98'
