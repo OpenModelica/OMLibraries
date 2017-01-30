@@ -377,7 +377,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bc087033557fa1a948aecaec8a61e422dd5c354b",
+          "rev": "d3674a7803987e8d3eb49f31a2ae6e17de56bb4a",
           "targets": [
             "Complex",
             "Modelica",
@@ -397,7 +397,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ee15dfd7881d214cc01de9bfe4ecc87f73cce641",
+          "rev": "3a98854d84d198ff363d075338e59e03f95e55a6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -584,7 +584,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "09be97045ff38a2ae1e82fb9d5bf2d0d50e01bfe",
+      "rev": "766e51c33f1a15a3d0bbe172b08b0e811766f65e",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
