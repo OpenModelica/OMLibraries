@@ -175,6 +175,14 @@
       "url": "https://github.com/modelica-3rdparty/DESLib.git"
     },
     {
+      "dest": "ElectricalEnergyStorage",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "aba5c9821f412b56398a82a93de945a1d963fe03",
+      "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
+    },
+    {
       "dest": "ExtendedPetriNets",
       "options": {
         "gitbranch": "release"
@@ -377,7 +385,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "aafff1537297712afb1ffc2af3f174eb97124971",
+          "rev": "0bff3f04e93fd2fd7a39b6f4394e4fb7188ba48f",
           "targets": [
             "Complex",
             "Modelica",
@@ -397,7 +405,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9733ae99f085007156d89bb1b3c270765ce135d7",
+          "rev": "e00bbeec5ab23c5f2d3744bd256e3a2638518648",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -466,14 +474,6 @@
       },
       "rev": "fca1aab49bb5e751b4d2853680f627058e0fd07f",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
-    },
-    {
-      "dest": "ElectricalEnergyStorage",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "d41d9329f3f8f847a3bedf0ce7dff19c0ab0b83b",
-      "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
     },
     {
       "dest": "Modelica_LinearSystems2",
@@ -794,7 +794,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8c4bc709afcc02c5cc1d3edab0b3f12c8200d684",
+      "rev": "889299a84cb7ebada5085d31e4ba460a8b4575a4",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
@@ -802,7 +802,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "02908322a996f95b7fb0502644e567f855c0e817",
+      "rev": "d0892f14f1c0f95a3f9c062eb82634bc5bac54a6",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
