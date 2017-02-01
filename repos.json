@@ -468,12 +468,12 @@
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
-      "dest": "Modelica_EnergyStorages",
+      "dest": "ElectricalEnergyStorage",
       "options": {
         "gitbranch": "master"
       },
       "rev": "d41d9329f3f8f847a3bedf0ce7dff19c0ab0b83b",
-      "url": "https://github.com/modelica/Modelica_EnergyStorages.git"
+      "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
     },
     {
       "dest": "Modelica_LinearSystems2",
