@@ -774,6 +774,14 @@
       "url": "https://github.com/modelica-3rdparty/WasteWater.git"
     },
     {
+      "dest": "Wavelet",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "0efd31402f62014dc8f4774e043b45428f390156",
+      "url": "https://github.com/modelica-3rdparty/Wavelet.git"
+    },
+    {
       "dest": "WindPowerPlants",
       "options": {
         "gitbranch": "master"
