@@ -132,13 +132,65 @@
     },
     {
       "dest": "Buildings",
-      "options": {
-        "gitbranch": "master",
-        "license": "buildings"
-      },
-      "rev": "dcd405cf8fbaa32af62cea014409e3eaa453a0bb",
-      "targets": [
-        "Buildings latest"
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "master",
+            "license": "buildings"
+          },
+          "rev": "dcd405cf8fbaa32af62cea014409e3eaa453a0bb",
+          "targets": [
+            "Buildings latest"
+          ]
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v1.4_build1",
+            "license": "buildings"
+          },
+          "rev": "v1.4_build1"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v1.5+build.3",
+            "license": "buildings"
+          },
+          "rev": "v1.5+build.3"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v1.6+build.1",
+            "license": "buildings"
+          },
+          "rev": "v1.6+build.1"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v2.0.0",
+            "license": "buildings"
+          },
+          "rev": "v2.0.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v2.1.0",
+            "license": "buildings"
+          },
+          "rev": "v2.1.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v3.0.0",
+            "license": "buildings"
+          },
+          "rev": "v3.0.0"
+        }
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
     },
