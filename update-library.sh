@@ -281,7 +281,7 @@ for f in $LIBS "$@"; do
         CHANGED="$VER-$CHANGED~git~$GITBRANCH"
       fi
     fi
-    CHANGED=`echo $CHANGED | tr -d : | tr " /" "--" | sed s,^v,,`
+    CHANGED=`echo $CHANGED | tr -d : | tr " /_" "---" | sed s,^v,,`
     CHANGED="$CHANGED$PATCHREV"
     echo "$CHANGED" > "$BUILD/$NAME.last_change"
     echo "echo '$CHANGED' > \"\$(BUILD_DIR)/$NAME.last_change\"" >> "$CMD_REPLAY"
