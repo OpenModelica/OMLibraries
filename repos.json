@@ -231,7 +231,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aba5c9821f412b56398a82a93de945a1d963fe03",
+      "rev": "096db4d2411f02e0e4e07823c09ea05437e778e6",
       "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
     },
     {
@@ -437,7 +437,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "47185bee392470a82a99d61d46703bda6500fffd",
+          "rev": "e76f154c00eace106ec06d5099a5b38d56cce4ee",
           "targets": [
             "Complex",
             "Modelica",
@@ -457,7 +457,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "cfc6e75add93eb1636464447945c67d8b63d7a9c",
+          "rev": "0b9fb5ed15d69fdbe14e3a1f0afb4c912c4266e8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
