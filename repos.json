@@ -616,6 +616,14 @@
       "url": "https://github.com/cparedis/OpenHydraulics.git"
     },
     {
+      "dest": "OpenIPSL",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "cea33e393730230eaf112a892d29852f0b884f72",
+      "url": "https://github.com/SmarTS-Lab/OpenIPSL"
+    },
+    {
       "dest": "PNlib",
       "options": {
         "gitbranch": "master"
