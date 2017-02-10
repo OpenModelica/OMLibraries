@@ -621,7 +621,7 @@
         "gitbranch": "master"
       },
       "rev": "cea33e393730230eaf112a892d29852f0b884f72",
-      "url": "https://github.com/SmarTS-Lab/OpenIPSL"
+      "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
       "dest": "PNlib",
