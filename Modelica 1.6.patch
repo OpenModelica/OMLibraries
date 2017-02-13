@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Constants.mo "build/Modelica 1.6/Constants.mo"
 --- git/Modelica/Constants.mo	2017-01-16 06:45:42.997295218 +0100
-+++ "build/Modelica 1.6/Constants.mo"	2017-01-16 06:48:16.970554196 +0100
++++ build/Modelica 1.6/Constants.mo	2017-01-16 06:48:16.970554196 +0100
 @@ -20,7 +20,7 @@
      "Smallest number such that small and -small are representable on the machine";
    constant Real inf=1.e+60 
@@ -12,7 +12,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Constants.mo "build/Modelica 
    // Constants of nature
 diff -u -x .svn -x .git -x Library -r git/Modelica/SIunits.mo "build/Modelica 1.6/SIunits.mo"
 --- git/Modelica/SIunits.mo	2017-01-16 06:45:43.005295491 +0100
-+++ "build/Modelica 1.6/SIunits.mo"	2017-01-16 06:54:40.007635683 +0100
++++ build/Modelica 1.6/SIunits.mo	2017-01-16 06:54:40.007635683 +0100
 @@ -58,7 +58,7 @@
              style(color=0))));
      end NonSIunits;
@@ -120,7 +120,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/SIunits.mo "build/Modelica 1.
            extent=[82, -7; 22, -67],
 diff -u -x .svn -x .git -x Library -r git/Modelica/Thermal/HeatTransfer.mo "build/Modelica 1.6/Thermal/HeatTransfer.mo"
 --- git/Modelica/Thermal/HeatTransfer.mo	2017-01-16 06:45:43.005295491 +0100
-+++ "build/Modelica 1.6/Thermal/HeatTransfer.mo"	2017-01-16 06:51:44.341636502 +0100
++++ build/Modelica 1.6/Thermal/HeatTransfer.mo	2017-01-16 06:51:44.341636502 +0100
 @@ -1403,7 +1403,7 @@
      
      extends Modelica.Icons.Library;
