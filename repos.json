@@ -532,10 +532,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5d40dc3a19934672217bce300aa1da442d09e151",
-      "targets": [
-        "self"
-      ],
+      "rev": "2f91e4cd951f4a91bb74182a6497ca7800ae9e32",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -552,10 +549,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f89211f590c8c52619053bb1b0f03424f98f1a2d",
-      "targets": [
-        "self"
-      ],
+      "rev": "5be4f21670c06c6fd0caa376bbd3f42f90076565",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
