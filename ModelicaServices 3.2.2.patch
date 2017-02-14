@@ -1,10 +1,9 @@
-diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build/ModelicaServices 3.2.2/package.mo"
---- git/MSL/ModelicaServices/package.mo	2016-09-07 11:52:06.070877244 +0200
-+++ build/ModelicaServices 3.2.2/package.mo	2016-09-07 12:03:16.079933823 +0200
-@@ -1,7 +1,8 @@
+diff -u -w -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices 3.2.2/package.mo"
+--- git/Modelica/ModelicaServices/package.mo	2017-02-14 11:21:12.099978704 +0100
++++ build/ModelicaServices 3.2.2/package.mo	2017-02-14 11:54:20.155720396 +0100
+@@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
-+
 +package ModelicaServices "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
  extends Modelica.Icons.Package;
 -constant String target="Default"
@@ -12,7 +11,7 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build
    "Target of this ModelicaServices implementation";
  
  
-@@ -622,7 +623,7 @@
+@@ -622,7 +622,7 @@
      extends
        Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
      algorithm
@@ -21,7 +20,7 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build
  
      annotation (Documentation(info="<html>
  <p>
-@@ -642,7 +643,7 @@
+@@ -642,7 +642,7 @@
      "Smallest number such that small and -small are representable on the machine";
    final constant Real inf=1.e+60
      "Biggest Real number such that inf and -inf are representable on the machine";
@@ -30,10 +29,3 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaServices/package.mo "build
      "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
    annotation (Documentation(info="<html>
  <p>
-@@ -743,4 +744,4 @@
- </p>
- 
- </html>"));
--end ModelicaServices;
-+end ModelicaServices;
-\ No newline at end of file

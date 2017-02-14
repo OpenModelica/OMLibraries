@@ -1,3 +1,4 @@
+setModelicaPath("");
 tmpScript:="Modelica.3.2.2.tmp.mos";
 
 if 0<>system("patch -d build/ -f -p1 < 'Modelica 3.2.2.manual.patch'") or
@@ -15,8 +16,45 @@ for pack in {"Modelica","ModelicaServices"} loop
 end for;
 getErrorString();
 
-echo(false);tablesFile:=getSourceFile(Modelica.Blocks.Sources);fileStrTables:=readFile(tablesFile);echo(true);
+getSourceFile(Modelica);
+getSourceFile(ModelicaServices);
+echo(false);
+tablesFile:=getSourceFile(Modelica.Blocks.Tables);fileStrTables:=readFile(tablesFile);print(tablesFile);
+echo(true);
 // Patch the damned tableAvailable hack
+for str in {
+  "Modelica.Blocks.Tables.CombiTable1D.getTableValue",
+  "Modelica.Blocks.Tables.CombiTable1D.getDerTableValue",
+  "Modelica.Blocks.Tables.CombiTable1D.getTableValueNoDer",
+  "Modelica.Blocks.Tables.CombiTable1Ds.getTableValue",
+  "Modelica.Blocks.Tables.CombiTable1Ds.getDerTableValue",
+  "Modelica.Blocks.Tables.CombiTable1Ds.getTableValueNoDer",
+  "Modelica.Blocks.Tables.CombiTable2D.getTableValue",
+  "Modelica.Blocks.Tables.CombiTable2D.getDerTableValue",
+  "Modelica.Blocks.Tables.CombiTable2D.getTableValueNoDer"
+  } loop
+  cmd := "updateComponent(tableAvailable, Real, "+str+", annotate=__OpenModelica_UnusedVariable(true));\n";
+  writeFile(tmpScript, cmd);
+  print("Running "+cmd);
+  res := runScript(tmpScript);
+  if "true\n"<>res then
+    print("Failed to run script: " + cmd + "\n");
+    print("Got result: "+res);
+    exit(1);
+  end if;
+  listing := listFile(Modelica.Blocks.Tables);
+  fileStrTables := diffModelicaFileListings(fileStrTables, listing, OpenModelica.Scripting.DiffFormat.plain);
+  err := getErrorString();
+  if "" <> err then
+    print(err);
+    exit(1);
+  end if;
+  print(str+" success\n");
+end for;
+writeFile(tablesFile, fileStrTables);getErrorString();
+getErrorString();
+// Patch the damned tableAvailable hack
+tablesFile:=getSourceFile(Modelica.Blocks.Sources);fileStrTables:=readFile(tablesFile);print(tablesFile);
 for str in {
   "Modelica.Blocks.Sources.CombiTimeTable.getNextTimeEvent"
   } loop
@@ -38,9 +76,10 @@ for str in {
   end if;
   print(str+" success\n");
 end for;
-
-getErrorString();
 writeFile(tablesFile, fileStrTables);getErrorString();
+getErrorString();
+
+writeFile(sourcesFile, fileStrSources);getErrorString();
 
 echo(false);mathFile:=getSourceFile(Modelica.Math);mathFileStr:=readFile(mathFile);echo(true);
 getErrorString();
@@ -71,6 +110,7 @@ writeFile("new.Math.mo", mathFileStr);getErrorString();
 
 echo(false);
 servicesFile:=getSourceFile(ModelicaServices);
+print(servicesFile);
 servicesFileStr:=readFile(servicesFile);
 setClassComment(ModelicaServices, "ModelicaServices (OpenModelica implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation");
 servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
@@ -89,7 +129,7 @@ writeFile(servicesFile, servicesFileStr);
 if 0<>system("jq '.repos[] | select(.dest == \"MSL\") | .multitarget[] | select(.options.gitbranch == \"maint/3.2.2\") | .rev' repos.json > " + tmpScript) then
   exit(1);
 end if;
-if 0<>system("cd git/MSL && git checkout " + readFile(tmpScript)) then
+if 0<>system("cd git/Modelica && git checkout " + readFile(tmpScript)) then
   exit(1);
 end if;
 if

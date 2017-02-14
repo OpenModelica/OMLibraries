@@ -118,42 +118,42 @@ upload: config.done .remote/control-files .remote/pool .remote/release-command
 	./check-debian.sh
 
 Modelica\ 3.2.1.patch:
-	-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica build/Modelica\ 3.2.1 > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica build/Modelica\ 3.2.1 > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 Modelica\ 1.6.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica 1.6" "build/Modelica 1.6" > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/Modelica 1.6" "build/Modelica 1.6" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 Modelica\ trunk.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica trunk" > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/Modelica" "build/Modelica trunk" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 ModelicaTest\ trunk.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaTest" "build/ModelicaTest trunk" > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/ModelicaTest" "build/ModelicaTest trunk" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 ModelicaServices\ trunk.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaServices" "build/ModelicaServices trunk" > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/ModelicaServices" "build/ModelicaServices trunk" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 Complex\ trunk.patch:
-	-diff -u "git/MSL/Complex.mo" "build/Complex trunk.mo" > "$@.tmp"
+	-diff -u "git/Modelica/Complex.mo" "build/Complex trunk.mo" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 Modelica\ 3.2.2.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/Modelica" "build/Modelica 3.2.2" > "$@.tmp"
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/Modelica" "build/Modelica 3.2.2" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
 ModelicaServices\ 3.2.2.patch:
-	-diff -u -x .svn -x .git -x Library -r "git/MSL/ModelicaServices" "build/ModelicaServices 3.2.2" > "$@.tmp"
+	-diff -u -w -x .svn -x .git -x Library -r "git/Modelica/ModelicaServices" "build/ModelicaServices 3.2.2" > "$@.tmp"
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
