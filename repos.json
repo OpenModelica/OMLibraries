@@ -478,6 +478,14 @@
       "url": "https://github.com/modelica-3rdparty/Modelica-MVEM.git"
     },
     {
+      "dest": "ModelicaADS",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "71b9c8d814d6c1031ef3e7b9d31d09369f2ee83a",
+      "url": "https://github.com/modelica-3rdparty/ModelicaADS.git"
+    },
+    {
       "dest": "ModelicaAdditions",
       "options": {
         "gitbranch": "release",
@@ -789,7 +797,7 @@
         "gitbranch": "master"
       },
       "rev": "2c0f80b9b5400448d420a53df379c3779fcb019a",
-      "url": "https://github.com/modelica-3rdparty/ThermoPower.git"
+      "url": "https://github.com/casella/ThermoPower.git"
     },
     {
       "core": true,
