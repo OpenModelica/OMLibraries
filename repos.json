@@ -16,10 +16,10 @@
     "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_Synchronous",
     "https://github.com/modelica-3rdparty/fmi-standard.org",
-    "https://github.com/modelica-3rdparty/AixLib",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/Buildings.git",
     "https://github.com/modelica-3rdparty/FuelCellLib",
+    "https://github.com/modelica-3rdparty/Icons.git",
     "https://github.com/modelica-3rdparty/IDEAS.git",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
@@ -37,6 +37,7 @@
     "https://api.github.com/users/modelica/repos?type=owner&per_page=100"
   ],
   "provided": {
+    "AixLib 0.3.0": "AixLib 0.4.0",
     "Buildings 4.0.0": "Buildings latest",
     "Complex 1.0": "Complex 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
@@ -76,6 +77,14 @@
       },
       "rev": "831c527fabfbb44e2870ad7274d27b709c8ea091",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
+    },
+    {
+      "dest": "AixLib",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "f14f7fc1707ba1619e87164cc49a19eb11f72fd4",
+      "url": "https://github.com/modelica-3rdparty/AixLib.git"
     },
     {
       "dest": "Annex60",

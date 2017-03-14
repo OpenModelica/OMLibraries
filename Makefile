@@ -27,6 +27,7 @@ $(ALL_TARGET):
 python-update: Makefile.numjobs config.done
 	rm -rf $(BUILD_DIR) build
 	rm -f *.uses
+	ls -d git/*/ | parallel --no-notice 'cd {} && git fetch --tags'
 	$(MAKE) all-work
 	@# Could run uses and test at the same time, but this way we get nicer error-messages and a faster error if the uses fail (they are a lot faster than test)
 	$(MAKE) uses
