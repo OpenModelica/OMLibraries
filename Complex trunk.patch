@@ -1,14 +1,6 @@
---- git/MSL/Complex.mo	2016-04-06 07:57:06.357523016 +0200
-+++ build/Complex trunk.mo	2016-04-06 07:59:36.786861040 +0200
-@@ -1,5 +1,7 @@
- within ;
-+
- operator record Complex "Complex number with overloaded operators"
-+
- //record Complex "Complex number with overloaded operators"
-   replaceable Real re "Real part of complex number" annotation(Dialog);
-   replaceable Real im "Imaginary part of complex number" annotation(Dialog);
-@@ -249,7 +251,7 @@
+--- git/Modelica/Complex.mo	2017-03-22 15:43:07.784969308 +0100
++++ build/Complex trunk.mo	2017-03-22 21:34:18.245907178 +0100
+@@ -249,7 +249,7 @@
  
  
  annotation (Protection(access=Access.hide),
@@ -17,11 +9,3 @@
  versionBuild=0,
  versionDate="2016-01-15",
  dateModified = "2016-01-15 08:44:41Z",
-@@ -270,5 +272,4 @@
-           lineColor={255,255,255},
-           extent={{-90,-50},{90,50}},
-           textString="C")}));
--
--end Complex;
-+end Complex;
-\ No newline at end of file

@@ -1,7 +1,7 @@
 tmpScript:="Modelica.trunk.tmp.mos";
 
-if 0<>system("patch -d build/ -f -p1 < 'Modelica trunk.manual.patch'") or
-   0<>system("patch -d build/ -f -p1 < 'ModelicaServices trunk.manual.patch'") then
+if 0<>system("patch --ignore-whitespace -d build/ -f -p1 < 'Modelica trunk.manual.patch'") or
+   0<>system("patch --ignore-whitespace -d build/ -f -p1 < 'ModelicaServices trunk.manual.patch'") then
   exit(1);
 end if;
 

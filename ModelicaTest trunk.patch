@@ -1,13 +1,7 @@
-diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
---- git/MSL/ModelicaTest/package.mo	2016-04-06 07:57:06.513528551 +0200
-+++ build/ModelicaTest trunk/package.mo	2016-04-06 07:59:37.114872680 +0200
-@@ -1,4 +1,5 @@
- within ;
-+
- package ModelicaTest "Library to test components of package Modelica - Version 3.2.2"
- extends Modelica.Icons.Package;
- 
-@@ -51,12 +52,12 @@
+diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
+--- git/Modelica/ModelicaTest/package.mo	2017-03-22 15:43:07.912973677 +0100
++++ build/ModelicaTest trunk/package.mo	2017-03-22 21:34:18.629920263 +0100
+@@ -51,12 +51,12 @@
  
  
    annotation (preferredView="info",
@@ -22,10 +16,3 @@ diff -u -x .svn -x .git -x Library -r git/MSL/ModelicaTest/package.mo "build/Mod
      Documentation(info="<html>
  <p>
  This library provides models and functions to test components of
-@@ -96,4 +97,4 @@
-           lineColor={75,138,73},
-           fillColor={75,138,73},
-           fillPattern=FillPattern.Solid)}));
--end ModelicaTest;
-+end ModelicaTest;
-\ No newline at end of file

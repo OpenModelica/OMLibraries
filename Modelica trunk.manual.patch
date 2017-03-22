@@ -1,5 +1,5 @@
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2015-05-06 23:05:39.079856721 +0200
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
+--- git/Modelica/Modelica/Math/package.mo	2015-05-06 23:05:39.079856721 +0200
 +++ build/Modelica trunk/Math/package.mo	2015-05-06 23:05:39.655876463 +0200
 @@ -13162,9 +13162,67 @@
  
@@ -146,8 +146,8 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2015-05-06 23:05:25.499391283 +0200
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
+--- git/Modelica/Modelica/Math/package.order	2015-05-06 23:05:25.499391283 +0200
 +++ build/Modelica trunk/Math/package.order	2015-05-06 23:05:39.655876463 +0200
 @@ -24,4 +24,6 @@
  baseIcon1

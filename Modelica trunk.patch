@@ -1,7 +1,7 @@
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/MSL/Modelica/Math/package.mo	2016-04-06 07:57:06.389524152 +0200
-+++ build/Modelica trunk/Math/package.mo	2016-04-06 07:59:25.578463333 +0200
-@@ -13173,9 +13173,67 @@
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
+--- git/Modelica/Modelica/Math/package.mo	2017-03-22 15:43:28.145664263 +0100
++++ build/Modelica trunk/Math/package.mo	2017-03-22 21:34:13.385741572 +0100
+@@ -13225,9 +13225,67 @@
  
    annotation (Documentation(info="<html>
  
@@ -70,7 +70,7 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -13235,9 +13293,74 @@
+@@ -13287,9 +13345,74 @@
  
    annotation (Documentation(info="<html>
  
@@ -146,26 +146,20 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.mo "build/Mo
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/MSL/Modelica/Math/package.order	2016-04-06 07:57:06.389524152 +0200
-+++ build/Modelica trunk/Math/package.order	2016-04-06 07:59:25.578463333 +0200
-@@ -28,4 +28,6 @@
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
+--- git/Modelica/Modelica/Math/package.order	2017-03-22 15:43:28.145664263 +0100
++++ build/Modelica trunk/Math/package.order	2017-03-22 21:34:13.385741572 +0100
+@@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
  tempInterpol1
 +tempInterpol1_der
  tempInterpol2
 +tempInterpol2_der
-diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/MSL/Modelica/package.mo	2016-04-06 07:57:06.501528125 +0200
-+++ build/Modelica trunk/package.mo	2016-04-06 07:59:34.958796176 +0200
-@@ -1,4 +1,5 @@
- within ;
-+
- package Modelica "Modelica Standard Library - Version 3.x.x"
- extends Modelica.Icons.Package;
- 
-@@ -8116,12 +8117,12 @@
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
+--- git/Modelica/Modelica/package.mo	2017-03-22 21:19:51.128246087 +0100
++++ build/Modelica trunk/package.mo	2017-03-22 21:34:17.033865878 +0100
+@@ -8085,12 +8085,12 @@
  
  annotation (
  preferredView="info",
@@ -180,10 +174,3 @@ diff -u -x .svn -x .git -x Library -r git/MSL/Modelica/package.mo "build/Modelic
  conversion(
   noneFromVersion="3.2.1",
   noneFromVersion="3.2",
-@@ -8204,4 +8205,4 @@
- <b>Modelica&reg;</b> is a registered trademark of the Modelica Association.
- </p>
- </html>"));
--end Modelica;
-+end Modelica;
-\ No newline at end of file
