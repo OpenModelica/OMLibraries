@@ -358,7 +358,7 @@
     {
       "dest": "KeyWordIO",
       "options": {
-        "gitbranch": "master",
+        "gitbranch": "release",
         "license": "modelica1.1"
       },
       "rev": "12abe9d5e84010d08c979759a90e7dcb12a6beeb",
@@ -653,7 +653,7 @@
     {
       "dest": "PhotoVoltaics",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "release"
       },
       "rev": "766e51c33f1a15a3d0bbe172b08b0e811766f65e",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
@@ -855,7 +855,7 @@
     {
       "dest": "WindPowerPlants",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "release"
       },
       "rev": "3d476f94b7aa090992645a6d0c7cc22b667a6f80",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
