@@ -236,6 +236,14 @@
       "url": "https://github.com/modelica-3rdparty/DESLib.git"
     },
     {
+      "dest" : "ElectroMechanicalDrives",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "233b4da553f873b1061c2d377b34fd59446d1f45",
+      "url" : "https://github.com/christiankral/ElectroMechanicalDrives.git"
+    },
+    {
       "dest": "ElectricalEnergyStorage",
       "options": {
         "gitbranch": "master"
