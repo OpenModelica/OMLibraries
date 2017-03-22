@@ -1,6 +1,6 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170322_155022.core
-ALL_TARGET=$(BUILD_DIR)/20170322_155022.all
+CORE_TARGET=$(BUILD_DIR)/20170322_163429.core
+ALL_TARGET=$(BUILD_DIR)/20170322_163429.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
@@ -40,12 +40,19 @@ AixLib:
 	echo '0.4.0-2-gf14f7fc' > "$(BUILD_DIR)/AixLib 0.4.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/iea-annex60/modelica-annex60.git' 'master' '95fdba1cdf7f8cd7a9c5364e0bfcafdd8122f9fe'
-	test ! -d 'build//IBPSA 1.0.0'
-	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA 1.0.0"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA 1.0.0.uses"
-	echo 'buildings' > "$(BUILD_DIR)/IBPSA 1.0.0.license"
-	echo '1.0.0-85-g95fdba1' > "$(BUILD_DIR)/IBPSA 1.0.0.last_change"
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '95fdba1cdf7f8cd7a9c5364e0bfcafdd8122f9fe'
+	test ! -d 'build//IBPSA latest'
+	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA latest.uses"
+	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
+	echo '20170321-065853~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	# Building git/Annex60
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
+	test ! -d 'build//Annex60 1.0.0'
+	cp -a 'git/Annex60/Annex60' "$(BUILD_DIR)/Annex60 1.0.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Annex60 1.0.0.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Annex60 1.0.0.license"
+	echo '1.0.0' > "$(BUILD_DIR)/Annex60 1.0.0.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'master' 'b5f3cb999f3cfad2bbb6fb429b496f61ecf2f628'
