@@ -92,7 +92,7 @@
         "gitbranch": "master",
         "license": "buildings"
       },
-      "rev": "f3675bfe79866728f28f89afe3104f0090a1c5fd",
+      "rev": "95fdba1cdf7f8cd7a9c5364e0bfcafdd8122f9fe",
       "url": "https://github.com/iea-annex60/modelica-annex60.git"
     },
     {
@@ -136,7 +136,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3e1284cea0c01ea8db3c15ceaff3a25c7985ff9c",
+      "rev": "aced15834631e506856f1eaba387a0c0d8ebe494",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "dcd405cf8fbaa32af62cea014409e3eaa453a0bb",
+          "rev": "a26da49d8ea13c2eec1a3cae0d09f6abc4eb271f",
           "targets": [
             "Buildings latest"
           ]
@@ -236,20 +236,20 @@
       "url": "https://github.com/modelica-3rdparty/DESLib.git"
     },
     {
-      "dest" : "ElectroMechanicalDrives",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "233b4da553f873b1061c2d377b34fd59446d1f45",
-      "url" : "https://github.com/christiankral/ElectroMechanicalDrives.git"
-    },
-    {
       "dest": "ElectricalEnergyStorage",
       "options": {
         "gitbranch": "master"
       },
       "rev": "096db4d2411f02e0e4e07823c09ea05437e778e6",
       "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
+    },
+    {
+      "dest": "ElectroMechanicalDrives",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "233b4da553f873b1061c2d377b34fd59446d1f45",
+      "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
       "dest": "ExtendedPetriNets",
@@ -264,7 +264,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed4329efc2e759a6688d43ea5c4f8c26100478a7",
+      "rev": "34b479f49cd6266fbfff547f732e2567d41325c3",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -369,7 +369,7 @@
         "gitbranch": "release",
         "license": "modelica1.1"
       },
-      "rev": "12abe9d5e84010d08c979759a90e7dcb12a6beeb",
+      "rev": "ea87269baca6f8ef19898ec6bc76ea8555e2f657",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "333612f79ab0ab32659d599e02f8a92cca98e633",
+      "rev": "917e2414db3c88ea84a76fb79a491e6853b0e300",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -647,7 +647,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "36fbc3e78de812ce67fba20ae77c458c2a4b9398",
+      "rev": "ef32d0ae7da3625e9f23bf3418d02e51b62b85cf",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -663,7 +663,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "766e51c33f1a15a3d0bbe172b08b0e811766f65e",
+      "rev": "631fe60a39eccc0bc85944cafe35046817b5401b",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
@@ -813,7 +813,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2c0f80b9b5400448d420a53df379c3779fcb019a",
+      "rev": "ed5333ee40874a4aac74f79aba57ce6c37daadb4",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
@@ -889,7 +889,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2b54ca6513a2cc43a376d991b613286f62f84a10",
+      "rev": "129fb0b265ced21117467dde995165c105db1a00",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
@@ -913,7 +913,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e819e0ca82d01882a4fb95db37d837086e58dfb2",
+      "rev": "3d9272aac40bafd92e713ae798f83c6a28880629",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
