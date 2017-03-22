@@ -88,12 +88,27 @@
     },
     {
       "dest": "Annex60",
-      "options": {
-        "gitbranch": "master",
-        "license": "buildings"
-      },
-      "rev": "95fdba1cdf7f8cd7a9c5364e0bfcafdd8122f9fe",
-      "url": "https://github.com/iea-annex60/modelica-annex60.git"
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "master",
+            "license": "buildings"
+          },
+          "rev": "a26da49d8ea13c2eec1a3cae0d09f6abc4eb271f",
+          "targets": [
+            "IBPSA latest"
+          ]
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v1.0.0",
+            "license": "buildings"
+          },
+          "rev": "v1.0.0"
+        }
+      ],
+      "url": "https://github.com/ibpsa/modelica.git"
     },
     {
       "core": true,
