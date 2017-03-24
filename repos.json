@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ac24f5d474210d11bacc88497de1425acf07b71a",
+          "rev": "0855281ccb3074d4bbdc9df0e0a77c2b30d929ca",
           "targets": [
             "IBPSA latest"
           ]
@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aced15834631e506856f1eaba387a0c0d8ebe494",
+      "rev": "fd0d22e2ed220145860d1a46ac160e49e4d0cdc8",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "34b479f49cd6266fbfff547f732e2567d41325c3",
+      "rev": "87213a55f3136d732bd9aa643fdd1360a5c90c73",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fca1aab49bb5e751b4d2853680f627058e0fd07f",
+      "rev": "622f4addaaf48161a299f7d0af4f5f329b91ac24",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -904,7 +904,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "129fb0b265ced21117467dde995165c105db1a00",
+      "rev": "76e9042744557d54c3842cce5125adba39a15096",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
@@ -928,7 +928,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3d9272aac40bafd92e713ae798f83c6a28880629",
+      "rev": "126b0590c87e35d011c5ec4e8cc6ecbf48818ac6",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
