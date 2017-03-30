@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "7c3b400ad5e4b96396a8b89aea0b1298d65368ff",
+          "rev": "d913573fc82c0938cfd3cc99f6939087494f37c3",
           "targets": [
             "Buildings latest"
           ]
@@ -662,7 +662,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9209ffaa3f0589057034416b897812a84d0fa8e0",
+      "rev": "4d51e02fb16f51a774f21ad1e33944af267c7bd2",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -896,7 +896,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bb6bac20471b84472ca528cba473f3f527c24544",
+      "rev": "e2a4c59f9f30117716a6805b21e52b9f814cd381",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
@@ -904,7 +904,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "76e9042744557d54c3842cce5125adba39a15096",
+      "rev": "8252e43a256110667098c25bd6647b62c7e45dd3",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
