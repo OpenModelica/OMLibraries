@@ -110,13 +110,18 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	./check-debian.sh
 	diff -u .remote/nightly-library-files nightly-library-files || true
 	diff -u .remote/nightly-library-sources nightly-library-sources || true
-upload: config.done .remote/control-files .remote/pool .remote/release-command
+rpm: config.done Makefile.numjob .remote/rpmpool .remote/pool
+	rm -rf rpm-build
+	mkdir -p rpm-build
+	@# Can't run rpm-build in parallel because alien can't be run in parallel
+	cat .remote/nightly-library-files | xargs -n 1 sh -c './rpm-build.sh "$$1"' sh
+upload: config.done .remote/control-files .remote/pool
 	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || rsync --ignore-existing debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
-	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
-	`cat .remote/release-command`
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
 	./check-debian.sh
+upload-rpm: .remote/rpmpool
+	diff -u .remote/rpm-nightly-library-files nightly-library-files || (! stat -t rpm-build/*.rpm >/dev/null 2>&1) || rsync --ignore-existing rpm-build/*.rpm "`cat .remote/rpm-pool`"
 
 Modelica\ 3.2.1.patch:
 	-diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica build/Modelica\ 3.2.1 > "$@.tmp"

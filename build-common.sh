@@ -10,7 +10,9 @@ if test -f "build/$NAME.mo"; then
 fi
 DEBNAME=`./debian-name.sh "$LIB" $VERSION`
 DEBREV=`cat "build/$NAME.last_change"`
+RPMREV=`echo $DEBREV | tr '-' '~'`
 FULLNAME="${DEBNAME}_${DEBREV}"
+FULLRPMNAME="${DEBNAME}_${FULLNAME}"
 DIR="debian-build/$FULLNAME"
 DEBIAN="$DIR/debian/"
 DEPENDS=`test -f "build/$NAME.depends" && cat "build/$NAME.depends"`
