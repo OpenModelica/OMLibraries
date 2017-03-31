@@ -110,7 +110,7 @@ debian: config.done Makefile.numjobs .remote/control-files .remote/pool
 	./check-debian.sh
 	diff -u .remote/nightly-library-files nightly-library-files || true
 	diff -u .remote/nightly-library-sources nightly-library-sources || true
-rpm: config.done Makefile.numjob .remote/rpmpool .remote/pool
+rpm: config.done .remote/rpmpool .remote/pool
 	rm -rf rpm-build
 	mkdir -p rpm-build
 	@# Can't run rpm-build in parallel because alien can't be run in parallel
