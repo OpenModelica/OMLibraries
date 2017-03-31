@@ -121,7 +121,7 @@ upload: config.done .remote/control-files .remote/pool
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
 	./check-debian.sh
 upload-rpm: .remote/rpmpool
-	diff -u .remote/rpm-nightly-library-files nightly-library-files || (! stat -t rpm-build/*.rpm >/dev/null 2>&1) || rsync --ignore-existing rpm-build/*.rpm "`cat .remote/rpm-pool`"
+	(! stat -t rpm-build/*.rpm >/dev/null 2>&1) || rsync --ignore-existing rpm-build/*.rpm "`cat .remote/rpmpool`"
 
 Modelica\ 3.2.1.patch:
 	-diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica build/Modelica\ 3.2.1 > "$@.tmp"
