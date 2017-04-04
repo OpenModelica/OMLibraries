@@ -88,6 +88,7 @@ def update():
     fout.write("\nCORE_LIBS=" + " ".join(core_lib))
     fout.write("\nOTHER_LIBS=" + " ".join(other_lib))
     fout.write("\nALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)\n")
+    fout.write("\nTIMESTAMP=%s\n" % stamp)
     fout.writelines(lines)
   return 0
 

@@ -115,6 +115,7 @@ rpm: config.done .remote/rpmpool .remote/pool
 	mkdir -p rpm-build
 	@# Can't run rpm-build in parallel because alien can't be run in parallel
 	cat .remote/nightly-library-files | xargs -n 1 sh -c './rpm-build.sh "$$1"' sh
+	./rpm-build-virtual.sh $(TIMESTAMP)
 upload: config.done .remote/control-files .remote/pool
 	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || rsync --ignore-existing debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
 	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
