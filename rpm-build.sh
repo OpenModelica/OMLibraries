@@ -44,7 +44,7 @@ if test "$COLLECTION" = 1; then
   mkdir -p omlib-all
 else
   echo "Build RPM package $FULLRPMNAME using alien"
-  rsync `cat .remote/pool`/$1 ./ || exit 1
+  rsync `cat ../.remote/pool`/$1 ./ || exit 1
   sudo alien -g -k --to-rpm $1 || exit 1
   REQUIRES="`dpkg -I $1 | grep "^ *Depends:" | cut -d: -f2`"
   echo $REQUIRES
