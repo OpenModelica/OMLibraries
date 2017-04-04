@@ -34,7 +34,12 @@ cp .rpmmacros ~/.rpmmacros || exit 1
 
 cd rpm-build || exit 1
 sudo alien -g -k --to-rpm $1 || exit 1
-sed -e 's#%dir "/"##' -e 's#%dir "/usr/"##' -e 's#%dir "/usr/lib/"##' -e 's#%dir "/usr/share/"##' -e 's#%dir "/usr/share/doc/"##' "`pwd`/$DIRECTORY/"*.spec > tmp.spec || exit 1
+REQUIRES="`dpkg -I $1 | grep "^ *Depends:" | cut -d: -f2`"
+echo $REQUIRES
+if test ! -z "$REQUIRES"; then
+  REQUIRES="Requires: $REQUIRES"
+fi
+sed -e 's#%dir "/"##' -e 's#%dir "/usr/"##' -e 's#%dir "/usr/lib/"##' -e 's#%dir "/usr/share/"##' -e 's#%dir "/usr/share/doc/"##' -e "s#Group: Converted/math#$REQUIRES#" "`pwd`/$DIRECTORY/"*.spec > tmp.spec || exit 1
 sudo rpmbuild --buildroot="`pwd`/$DIRECTORY/" -bb --target noarch tmp.spec
 mv ../"$FULLRPMNAME" . || exit 1
 if ! test -f "$FULLRPMNAME"; then
