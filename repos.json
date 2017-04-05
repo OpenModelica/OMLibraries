@@ -489,7 +489,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d23413c2625bfc44c86a9a5a27192a1bb79c6767",
+          "rev": "6fde76a60fedbc529b360b75fbe014c992b7406a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -654,7 +654,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "eb1351df66c8f1ed8b640ea90f4aa1e3120500dd",
+      "rev": "fe5f15848cf637781f93ec14d9db5b3582f225a4",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
