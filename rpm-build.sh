@@ -47,11 +47,14 @@ else
   rsync `cat ../.remote/pool`/$1 ./ || exit 1
   sudo alien -g -k --to-rpm $1 || exit 1
   REQUIRES="`dpkg -I $1 | grep "^ *Depends:" | cut -d: -f2`"
-  echo $REQUIRES
   if test ! -z "$REQUIRES"; then
     REQUIRES="Requires: $REQUIRES"
   fi
-  sed -e 's#%dir "/"##' -e 's#%dir "/usr/"##' -e 's#%dir "/usr/lib/"##' -e 's#%dir "/usr/share/"##' -e 's#%dir "/usr/share/doc/"##' -e  "s#Group: Converted/math#$REQUIRES#" "`pwd`/$DIRECTORY/"*.spec > tmp.spec || exit 1
+  PROVIDES="`dpkg -I $1 | grep "^ *Provides:" | cut -d: -f2`"
+  if test ! -z "$PROVIDES"; then
+    PROVIDES="Provides: $PROVIDES"
+  fi
+  sed -e 's#%dir "/"##' -e 's#%dir "/usr/"##' -e 's#%dir "/usr/lib/"##' -e 's#%dir "/usr/share/"##' -e 's#%dir "/usr/share/doc/"##' -e  "s#Group: Converted/math#$REQUIRES#" -e "s#Distribution: Debian#$PROVIDES#" "`pwd`/$DIRECTORY/"*.spec > tmp.spec || exit 1
 fi
 sudo rpmbuild --buildroot="`pwd`/$DIRECTORY/" --define "_rpmdir ../" --define "_rpmfilename %%{NAME}-%%{VERSION}-%%{RELEASE}.%%{ARCH}.rpm" -bb --target noarch tmp.spec
 mv ../"$FULLRPMNAME" . || exit 1
