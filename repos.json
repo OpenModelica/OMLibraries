@@ -83,7 +83,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f14f7fc1707ba1619e87164cc49a19eb11f72fd4",
+      "rev": "0ef46ccc50ca8b09c107e515d86f073659981f91",
       "url": "https://github.com/modelica-3rdparty/AixLib.git"
     },
     {
@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4e97686d75fd2d7053938f7f4f30b02cbc108133",
+          "rev": "3baf959c818442f7b2fa63fbd33ec42a5e721b02",
           "targets": [
             "IBPSA latest"
           ]
@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "285afa695e000a500e1beb8d5b2bd5f4a91a3778",
+      "rev": "4f0ae093926fd6c6529cf0bf8cc66cecb398ebbf",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "7bbec3e6b357ee01d3c543c3f5feca1afab6d1a7",
+          "rev": "94741ee924de99a846feec8bed978eca5977cc53",
           "targets": [
             "Buildings latest"
           ]
@@ -489,7 +489,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6fde76a60fedbc529b360b75fbe014c992b7406a",
+          "rev": "e2e1dbc7b11b0604afd927ccb451e5064a937c4d",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
