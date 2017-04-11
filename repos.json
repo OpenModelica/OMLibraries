@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9000b94c3d26253a8d8c65dc8ccb3733b214b6c1",
+          "rev": "dd0846a2ef0f02fa1da504249c35d0c25805c491",
           "targets": [
             "IBPSA latest"
           ]
@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "57550acadbbe5ebacb1dc2fbc1db8dfe1ae438a7",
+      "rev": "8f436421e95166ff8c92a8c290bdd637360a616b",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "94741ee924de99a846feec8bed978eca5977cc53",
+          "rev": "a58e1ce32664eb726da131b079f7f53b76935fb0",
           "targets": [
             "Buildings latest"
           ]
@@ -489,7 +489,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "424292039b88331a5e71c87cef29263951e0d8ee",
+          "rev": "7faed4057abc3a736df60d5f421ec83fa91a34f0",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -539,7 +539,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ce29802168c6ceb5d4c267677accf491eb4ced53",
+      "rev": "0869f6401c913e604d20463db0caeff28afbee80",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -654,7 +654,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fe5f15848cf637781f93ec14d9db5b3582f225a4",
+      "rev": "b9cf585ecc4a8400ff2ebd8c708eaecd4ac975dd",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -912,7 +912,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04ac901f05fb33ff2be9901d1ed76ddcf777e234",
+      "rev": "d9be0a925bdfea0b179395898e64022421893e42",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
