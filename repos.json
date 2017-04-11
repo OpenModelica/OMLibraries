@@ -806,6 +806,14 @@
       "url": "https://openmodelica.org/git/SiemensPower.git"
     },
     {
+      "dest": "SolarTherm",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "03850a4eced9094e9d649e9da11451848bf07b36",
+      "url": "https://github.com/SolarTherm/SolarTherm.git"
+    },
+    {
       "dest": "Spot",
       "options": {
         "gitbranch": "master"
