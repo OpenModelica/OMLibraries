@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fd6b4e3c3a38d1f01d1c4a4def3d67f50c0d97cb",
+          "rev": "dcd25c540d782de68cc5488e0aff381715bd26b2",
           "targets": [
             "IBPSA latest"
           ]
@@ -320,7 +320,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1081ec9c0b11a08784ff996a543d508665f621bb",
+      "rev": "7f992b1ab5fe91f1c95407fa0bf9589786405d3a",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -912,7 +912,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d9be0a925bdfea0b179395898e64022421893e42",
+      "rev": "a4dcd5b88f2355d81d66d81be9137b51f3a67b90",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
