@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "840c6e288421225d240845406d285f27a02723ce",
+          "rev": "4ce7c97d11c5125eea99ced3b6c82a803b5565f1",
           "targets": [
             "IBPSA latest"
           ]
@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3a2c3be7fbac0834e4810785772631684017d8d3",
+      "rev": "8037e7e4ae98e618c2d37125c42d5ebd7079e191",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "06244c7a3a8a3fd1f957cc5169e6bcb5c01f3cd7",
+          "rev": "453597ade5df62044a61684ed001b2616bb1853e",
           "targets": [
             "Buildings latest"
           ]
@@ -662,7 +662,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7c52093e080e084a64c3d49a08f1fb2f794209d4",
+      "rev": "dfdd500f4551d928950710b867e8ae65fccd3b6a",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
