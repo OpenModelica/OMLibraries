@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7faed21ba69fb268a5b851c27423dfd72071d721",
+      "rev": "ed4aeac8b9fc3e3f011c63c6b14b553b8ca3de00",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -936,7 +936,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "126b0590c87e35d011c5ec4e8cc6ecbf48818ac6",
+      "rev": "84cd413e22ab393baf76226120deaa8f1d8181bd",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
