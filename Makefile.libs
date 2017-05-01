@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170429_190529.core
-ALL_TARGET=$(BUILD_DIR)/20170429_190529.all
+CORE_TARGET=$(BUILD_DIR)/20170501_190506.core
+ALL_TARGET=$(BUILD_DIR)/20170501_190506.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170429_190529
+TIMESTAMP=20170501_190506
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -645,19 +645,19 @@ PVSystems:
 	echo '0.6.1' > "$(BUILD_DIR)/PVSystems 0.6.1.last_change"
 PhotoVoltaics:
 	# Building git/PhotoVoltaics
-	./checkout-git.sh 'git/PhotoVoltaics' 'https://github.com/modelica-3rdparty/PhotoVoltaics.git' 'release' 'adf475e3c76dcabcff027a7f2d79bdb127505fe4'
-	test ! -d 'build//PhotoVoltaics 0.6.1'
-	cp -a 'git/PhotoVoltaics/PhotoVoltaics' "$(BUILD_DIR)/PhotoVoltaics 0.6.1"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics 0.6.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics 0.6.1.license"
-	echo '0.6.1-20170327-084344~git~release' > "$(BUILD_DIR)/PhotoVoltaics 0.6.1.last_change"
-	test ! -d 'build//PhotoVoltaics_TGM 0.6.1'
-	cp -a 'git/PhotoVoltaics/PhotoVoltaics_TGM' "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1.uses"
-	echo 'Buildings 3.0.0' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1.uses"
-	echo 'PhotoVoltaics 0.6.1' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1.license"
-	echo '0.6.1-20170327-084344~git~release' > "$(BUILD_DIR)/PhotoVoltaics_TGM 0.6.1.last_change"
+	./checkout-git.sh 'git/PhotoVoltaics' 'https://github.com/modelica-3rdparty/PhotoVoltaics.git' 'release' '0907c07d2b5e235257e3ce210d72e93e96198777'
+	test ! -d 'build//PhotoVoltaics 1.0.0'
+	cp -a 'git/PhotoVoltaics/PhotoVoltaics' "$(BUILD_DIR)/PhotoVoltaics 1.0.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics 1.0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics 1.0.0.license"
+	echo '1.0.0-20170430-212213~git~release' > "$(BUILD_DIR)/PhotoVoltaics 1.0.0.last_change"
+	test ! -d 'build//PhotoVoltaics_TGM 1.0.0'
+	cp -a 'git/PhotoVoltaics/PhotoVoltaics_TGM' "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0.uses"
+	echo 'Buildings 3.0.0' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0.uses"
+	echo 'PhotoVoltaics 1.0.0' >> "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0.license"
+	echo '1.0.0-20170430-212213~git~release' > "$(BUILD_DIR)/PhotoVoltaics_TGM 1.0.0.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
 	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '5fdd28fe28c35fe40ad4b4d804330dee05d75a98'
