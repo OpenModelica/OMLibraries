@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "8429bb733131561f072d9e680abd8bfa5a9f9359",
+          "rev": "623bef056be6c385386c0d018299da5bb46c00cd",
           "targets": [
             "IBPSA latest"
           ]
@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6667a49353fc3934dc578b7e61abe28785b13eee",
+      "rev": "70bb37c12ce7e65fe20cfc322f1d9a1430fcf2ec",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "906863d1b1495c10c0b59a37d162e7b844d4a2f6",
+          "rev": "322577702410c4b960d76eb4a3a9d815b18609c3",
           "targets": [
             "Buildings latest"
           ]
@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed4aeac8b9fc3e3f011c63c6b14b553b8ca3de00",
+      "rev": "c0721e64cf00dfbe91563275594ff60a38c2d281",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "622f4addaaf48161a299f7d0af4f5f329b91ac24",
+      "rev": "99c5c1062913aa794f683c558537c624738b8839",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
