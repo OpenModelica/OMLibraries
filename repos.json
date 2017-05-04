@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "623bef056be6c385386c0d018299da5bb46c00cd",
+          "rev": "8ce516b3494198027d5cff558c238434cb23085e",
           "targets": [
             "IBPSA latest"
           ]
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "322577702410c4b960d76eb4a3a9d815b18609c3",
+          "rev": "78fb51b41cf255371480d7f8d7d40c72ab899830",
           "targets": [
             "Buildings latest"
           ]
@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c0721e64cf00dfbe91563275594ff60a38c2d281",
+      "rev": "330a0f6bfae8f1490ae0420494cb66e2e78d8e16",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "99c5c1062913aa794f683c558537c624738b8839",
+      "rev": "4879ef924ddab65f7b1172ee2f18cc8329e0d8a6",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
