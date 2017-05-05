@@ -868,6 +868,18 @@
     },
     {
       "core": true,
+      "dest": "VVDRlib",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "8679a51a2d70e77b86b00792796ff656163e944b",
+      "targets": [
+        "self"
+      ],
+      "url": "https://github.com/lenaRB/VVDRlib.git"
+    },
+    {
+      "core": true,
       "dest": "WasteWater",
       "options": {
         "gitbranch": "master"
