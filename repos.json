@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "330a0f6bfae8f1490ae0420494cb66e2e78d8e16",
+      "rev": "4211785cb4989306b6d8ae2816495ee1ed5901af",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -654,7 +654,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9eac3f79e705b05fc9d1870e639d4b644b1aedc9",
+      "rev": "d7e59d51dbbbec6bfa9f37bf2e6dbd58e8431eb6",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -859,14 +859,6 @@
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
     },
     {
-      "dest": "VehicleInterfaces",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "ad956a35643d53e207ee126d67ea1f3f38337a39",
-      "url": "https://github.com/modelica/VehicleInterfaces.git"
-    },
-    {
       "core": true,
       "dest": "VVDRlib",
       "options": {
@@ -877,6 +869,14 @@
         "self"
       ],
       "url": "https://github.com/lenaRB/VVDRlib.git"
+    },
+    {
+      "dest": "VehicleInterfaces",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "ad956a35643d53e207ee126d67ea1f3f38337a39",
+      "url": "https://github.com/modelica/VehicleInterfaces.git"
     },
     {
       "core": true,
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "768eb5c324c3ac7dbd9a875b07651c7c81d36fd6",
+      "rev": "e400a887f7ccfbeeb73383d22a496db0da4fb46d",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
