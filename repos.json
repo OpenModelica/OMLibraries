@@ -143,7 +143,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c2f241142ab76af46bb44d330e9cc8d61674ad45",
+      "rev": "e688248f471e3680b9290fa5b448897304fc7d00",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a2326fff9e0c2f71299f94ffba0fa8ec5e1efd90",
+          "rev": "b64a1d953c9fcc5e00670d6cc15b7071d7d980c2",
           "targets": [
             "Buildings latest"
           ]
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "71a114ae7b57c59a488bcdb8e0d3b9d847afda0e",
+      "rev": "972418c1b21aae2ff88f75e6718ea3a7c0a0a728",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
