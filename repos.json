@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "b64a1d953c9fcc5e00670d6cc15b7071d7d980c2",
+          "rev": "cd726a39e9e29570a922eb9df2962aa7c639a7ba",
           "targets": [
             "Buildings latest"
           ]
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c51d4eaa798f4fb0ca11690361afe5ab76f394b4",
+      "rev": "bb2b854a5971e993ee244375d8c6f3ae43e79722",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -662,7 +662,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dfdd500f4551d928950710b867e8ae65fccd3b6a",
+      "rev": "1813b07df6705d9f4cccb5eb3535972bcb2c79d2",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
