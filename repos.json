@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "70bb37c12ce7e65fe20cfc322f1d9a1430fcf2ec",
+      "rev": "cf3f8917dd71e670d88c554f572fc5ebbf9b8a9a",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -662,7 +662,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1813b07df6705d9f4cccb5eb3535972bcb2c79d2",
+      "rev": "6f7e8aa95f5d629ebd8b434d52e667316a80b671",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
