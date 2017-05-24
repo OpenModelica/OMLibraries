@@ -353,7 +353,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3ed8f98af41977e91f498381a68e4853e65424c0",
+      "rev": "5fb9237ea220d4b63a45dc21b26a256c101d6cc9",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -564,7 +564,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bb2b854a5971e993ee244375d8c6f3ae43e79722",
+      "rev": "ed8bf71273792d7215c643cb64614d5bf8a05a33",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -810,7 +810,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "03850a4eced9094e9d649e9da11451848bf07b36",
+      "rev": "1a13558681ddc70882ba2fa46f4d1313ded16b42",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
@@ -853,7 +853,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "335e4311b89f743177a508e36b852efb2acc3aff"
+          "rev": "e9c71435b4c7901b180522060e22f9706d02a0b1"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
