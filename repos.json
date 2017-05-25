@@ -279,7 +279,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4211785cb4989306b6d8ae2816495ee1ed5901af",
+      "rev": "06f8a432efaa0d867030a89e17c23237cf24164a",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -810,7 +810,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1a13558681ddc70882ba2fa46f4d1313ded16b42",
+      "rev": "c6ba014d410c67f9320af7cc287375258dea8c15",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
