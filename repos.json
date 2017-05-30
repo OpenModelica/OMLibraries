@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "bb1eae3919826d719b6b1b16016cab06f679c37d",
+          "rev": "135763d11b6259c27bba4f3f072255a12711e057",
           "targets": [
             "IBPSA latest"
           ]
@@ -539,7 +539,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0869f6401c913e604d20463db0caeff28afbee80",
+      "rev": "3a4cc755a305f0f14268c26574b6c558fa98e65b",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -853,7 +853,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "0ef9db7d586b919d05f834b27ff224c99ed14b92"
+          "rev": "8f81e234f87251325d0f199c46506178c8ba68c9"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e400a887f7ccfbeeb73383d22a496db0da4fb46d",
+      "rev": "7409b5eafd2b14618c46c52f77a4b4c8c95d25ab",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {

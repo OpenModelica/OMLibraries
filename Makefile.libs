@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170529_190547.core
-ALL_TARGET=$(BUILD_DIR)/20170529_190547.all
+CORE_TARGET=$(BUILD_DIR)/20170530_190553.core
+ALL_TARGET=$(BUILD_DIR)/20170530_190553.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170529_190547
+TIMESTAMP=20170530_190553
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -42,12 +42,12 @@ AixLib:
 	echo '0.4.0-6-g4b7047c' > "$(BUILD_DIR)/AixLib 0.4.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' 'bb1eae3919826d719b6b1b16016cab06f679c37d'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '135763d11b6259c27bba4f3f072255a12711e057'
 	test ! -d 'build//IBPSA latest'
 	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
-	echo '20170513-172045~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	echo '20170530-083038~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
 	# Building git/Annex60
 	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//Annex60 1.0.0'
@@ -514,12 +514,12 @@ ModelicaBook:
 	echo '20170507-170637~git~master' > "$(BUILD_DIR)/ModelicaByExample.last_change"
 ModelicaCompliance:
 	# Building git/ModelicaCompliance
-	./checkout-git.sh 'git/ModelicaCompliance' 'https://github.com/modelica-compliance/compliance.git' 'master' '0869f6401c913e604d20463db0caeff28afbee80'
+	./checkout-git.sh 'git/ModelicaCompliance' 'https://github.com/modelica-compliance/compliance.git' 'master' '3a4cc755a305f0f14268c26574b6c558fa98e65b'
 	test ! -d 'build//ModelicaCompliance 3.2'
 	cp -a 'git/ModelicaCompliance/ModelicaCompliance' "$(BUILD_DIR)/ModelicaCompliance 3.2"
 	echo '' > "$(BUILD_DIR)/ModelicaCompliance 3.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaCompliance 3.2.license"
-	echo '3.2-20170411-102838~git~master' > "$(BUILD_DIR)/ModelicaCompliance 3.2.last_change"
+	echo '3.2-20170104-145558~git~master' > "$(BUILD_DIR)/ModelicaCompliance 3.2.last_change"
 ModelicaDEVS:
 	# Building git/ModelicaDEVS
 	./checkout-git.sh 'git/ModelicaDEVS' 'https://github.com/modelica-3rdparty/ModelicaDEVS.git' 'master' 'a987aa9552fbbe71b2ee2e8c28958f9d213087ae'
@@ -820,12 +820,12 @@ ThermoSysPro:
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.0.license"
 	echo '3.0+OSR-21-gd4f9c3e' > "$(BUILD_DIR)/ThermoSysPro 3.0.last_change"
 	# Building git/ThermoSysPro
-	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '0ef9db7d586b919d05f834b27ff224c99ed14b92'
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '8f81e234f87251325d0f199c46506178c8ba68c9'
 	test ! -d 'build//ThermoSysPro 3.1'
 	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ThermoSysPro 3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
-	echo '3.1+OSR-12-g0ef9db7' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
+	echo '3.1+OSR-13-g8f81e23' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
 VVDRlib:
 	# Building git/VVDRlib
 	./checkout-git.sh 'git/VVDRlib' 'https://github.com/lenaRB/VVDRlib.git' 'master' '8679a51a2d70e77b86b00792796ff656163e944b'
@@ -887,13 +887,13 @@ buildsyspro:
 	echo '2.1.0-5-ge2a4c59' > "$(BUILD_DIR)/BuildSysPro 2.1.0.last_change"
 ipsl:
 	# Building git/ipsl
-	./checkout-git.sh 'git/ipsl' 'https://github.com/modelica-3rdparty/ipsl.git' 'master' 'e400a887f7ccfbeeb73383d22a496db0da4fb46d'
+	./checkout-git.sh 'git/ipsl' 'https://github.com/modelica-3rdparty/ipsl.git' 'master' '7409b5eafd2b14618c46c52f77a4b4c8c95d25ab'
 	test ! -d 'build//iPSL 1.1.0'
 	cp -a 'git/ipsl/iPSL' "$(BUILD_DIR)/iPSL 1.1.0"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/iPSL 1.1.0.uses"
 	echo 'Complex 3.2.1' >> "$(BUILD_DIR)/iPSL 1.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/iPSL 1.1.0.license"
-	echo '1.1.0-35-ge400a88' > "$(BUILD_DIR)/iPSL 1.1.0.last_change"
+	echo '1.1.0-37-g7409b5e' > "$(BUILD_DIR)/iPSL 1.1.0.last_change"
 modelica-flight:
 	# Building git/modelica-flight
 	./checkout-git.sh 'git/modelica-flight' 'https://github.com/modelica-3rdparty/modelica-flight.git' 'master' 'f3ae1c3ebe1b33921654a0e0d59d6e65f0bcfe84'
