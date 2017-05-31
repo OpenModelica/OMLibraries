@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "7285b74a57523e4da8fcc86704e289cd64248c05",
+          "rev": "8156b373be57879b3ba30333156d6aa919d837b2",
           "targets": [
             "Buildings latest"
           ]
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7409b5eafd2b14618c46c52f77a4b4c8c95d25ab",
+      "rev": "e0e3ea079a0398a3b0b094baaa3736350faa525b",
       "url": "https://github.com/modelica-3rdparty/ipsl.git"
     },
     {
