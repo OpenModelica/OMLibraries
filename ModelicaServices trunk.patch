@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2017-03-22 21:19:51.132246226 +0100
-+++ build/ModelicaServices trunk/package.mo	2017-03-22 21:34:19.405946706 +0100
+--- git/Modelica/ModelicaServices/package.mo	2017-06-02 02:03:39.873857655 +0200
++++ build/ModelicaServices trunk/package.mo	2017-06-02 02:12:25.795122576 +0200
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -11,7 +11,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
      "Target of this ModelicaServices implementation";
  
    package UsersGuide "User's Guide"
-@@ -587,7 +587,7 @@
+@@ -595,7 +595,7 @@
        extends
          Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
        algorithm
@@ -20,16 +20,16 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
  
        annotation (Documentation(info="<html>
  <p>
-@@ -606,7 +606,7 @@
+@@ -613,7 +613,7 @@
        "Smallest number such that small and -small are representable on the machine";
-     final constant Real inf=1.e+60
+     final constant Real inf=1e60
        "Biggest Real number such that inf and -inf are representable on the machine";
 -    final constant Integer Integer_inf=2147483647
 +    final constant Integer Integer_inf=OpenModelica.Internal.Architecture.integerMax()
        "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
      annotation (Documentation(info="<html>
  <p>
-@@ -643,12 +643,12 @@
+@@ -663,12 +663,12 @@
    annotation (
      Protection(access=Access.hide),
      preferredView="info",
@@ -39,7 +39,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
      versionDate="2016-01-15",
      dateModified = "2016-01-15 08:44:41Z",
      revisionId="$Id::                                       $",
--    uses(Modelica(version="3.2.2")),
+-    uses(Modelica(version="3.x.x")),
 +    uses(Modelica(version= "trunk")),
      conversion(
        noneFromVersion="1.0",
