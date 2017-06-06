@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "922ff91a425a2f2dcb80b17f4a1ad14957794871",
+          "rev": "70b725397881689c768660c17e5490c455b799a4",
           "targets": [
             "IBPSA latest"
           ]
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "bad96d1cc9bc7b9a9c236bd45f6eb2b7538190dc",
+          "rev": "2882c0469e67d12d3dfac60104c59c8e9731b562",
           "targets": [
             "Buildings latest"
           ]
@@ -836,7 +836,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed5333ee40874a4aac74f79aba57ce6c37daadb4",
+      "rev": "67caae92b3ae82cc8d5cf2bffb4a2fda32460a64",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
