@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0ebfbc4489cf5ced6ceb40e6694beb8b6d61745f",
+          "rev": "baa0b2d1829dcc3690cc5fed63880e1e19e5c2ca",
           "targets": [
             "IBPSA latest"
           ]
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2882c0469e67d12d3dfac60104c59c8e9731b562",
+          "rev": "929e7bea7a8a9dd1e29a1e87d8ecc589cfaee0c9",
           "targets": [
             "Buildings latest"
           ]
@@ -539,7 +539,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3a4cc755a305f0f14268c26574b6c558fa98e65b",
+      "rev": "cef864038c133fe99f8b7ec4046dbd1a7f900afc",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -662,7 +662,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6f71923713034d8acc7681804dd461fd9cdae1d1",
+      "rev": "96f5abd1f416279ec1c44cfcc1993ff107b72613",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
