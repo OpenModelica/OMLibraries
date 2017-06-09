@@ -888,10 +888,24 @@
     },
     {
       "dest": "VehicleInterfaces",
-      "options": {
-        "gitbranch": "release"
-      },
-      "rev": "ad956a35643d53e207ee126d67ea1f3f38337a39",
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "release"
+          },
+          "rev": "ad956a35643d53e207ee126d67ea1f3f38337a39"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v1.2.4"
+          },
+          "rev": "v1.2.4",
+          "targets": [
+            "VehicleInterfaces 1.2.4"
+          ]
+        }
+      ],
       "url": "https://github.com/modelica/VehicleInterfaces.git"
     },
     {
