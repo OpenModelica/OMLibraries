@@ -251,6 +251,22 @@
       "url": "https://github.com/modelica-3rdparty/DESLib.git"
     },
     {
+      "dest": "DriveControl",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "a69896c570905abb039b8a0e91e4724f88449448",
+      "url": "https://github.com/AHaumer/DriveControl.git"
+    },
+    {
+      "dest": "EMOTH",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "cd2fa75952bf6bd8ec8d6c7fecf6580f66ee357d",
+      "url": "https://github.com/AHaumer/EMOTH.git"
+    },
+    {
       "dest": "ElectricalEnergyStorage",
       "options": {
         "gitbranch": "master"
