@@ -1,11 +1,11 @@
-.PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170608_190532.core
-ALL_TARGET=$(BUILD_DIR)/20170608_190532.all
+.PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
+CORE_TARGET=$(BUILD_DIR)/20170609_190556.core
+ALL_TARGET=$(BUILD_DIR)/20170609_190556.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
-OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
+OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170608_190532
+TIMESTAMP=20170609_190556
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -98,12 +98,12 @@ BuildingSystems:
 	echo '2.0.0-beta2-1-g2987cc5' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '929e7bea7a8a9dd1e29a1e87d8ecc589cfaee0c9'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '33f3dca73044725c68b133d26d41f0d4c922261c'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20170608-112820~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20170608-202818~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v1.4_build1' 'v1.4_build1'
 	test ! -d 'build//Buildings 1.4'
@@ -181,6 +181,23 @@ DESLib:
 	echo 'Modelica 2.2.1' >> "$(BUILD_DIR)/DESLib 1.6.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/DESLib 1.6.1.license"
 	echo '1.6.1' > "$(BUILD_DIR)/DESLib 1.6.1.last_change"
+DriveControl:
+	# Building git/DriveControl
+	./checkout-git.sh 'git/DriveControl' 'https://github.com/AHaumer/DriveControl.git' 'release' 'a69896c570905abb039b8a0e91e4724f88449448'
+	test ! -d 'build//DriveControl 3.1.0'
+	cp -a 'git/DriveControl/DriveControl' "$(BUILD_DIR)/DriveControl 3.1.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/DriveControl 3.1.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/DriveControl 3.1.0.license"
+	echo '3.1.0-20170606-215718~git~release' > "$(BUILD_DIR)/DriveControl 3.1.0.last_change"
+EMOTH:
+	# Building git/EMOTH
+	./checkout-git.sh 'git/EMOTH' 'https://github.com/AHaumer/EMOTH.git' 'release' 'cd2fa75952bf6bd8ec8d6c7fecf6580f66ee357d'
+	test ! -d 'build//EMOTH 1.0.0'
+	cp -a 'git/EMOTH/EMOTH' "$(BUILD_DIR)/EMOTH 1.0.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/EMOTH 1.0.0.uses"
+	echo 'VehicleInterfaces 1.2.4' >> "$(BUILD_DIR)/EMOTH 1.0.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/EMOTH 1.0.0.license"
+	echo '1.0.0-20170605-102128~git~release' > "$(BUILD_DIR)/EMOTH 1.0.0.last_change"
 ElectricalEnergyStorage:
 	# Building git/ElectricalEnergyStorage
 	./checkout-git.sh 'git/ElectricalEnergyStorage' 'https://github.com/modelica/ElectricalEnergyStorage.git' 'master' '096db4d2411f02e0e4e07823c09ea05437e778e6'
@@ -820,12 +837,12 @@ ThermoSysPro:
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.0.license"
 	echo '3.0+OSR-21-gd4f9c3e' > "$(BUILD_DIR)/ThermoSysPro 3.0.last_change"
 	# Building git/ThermoSysPro
-	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '5c180eb2d615825d1744c786e8292dddd522f2c4'
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '79171b749ffe068c06d06aa551245911ef0ff01c'
 	test ! -d 'build//ThermoSysPro 3.1'
 	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ThermoSysPro 3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
-	echo '3.1+OSR-15-g5c180eb' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
+	echo '3.1+OSR-16-g79171b7' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
 VVDRlib:
 	# Building git/VVDRlib
 	./checkout-git.sh 'git/VVDRlib' 'https://github.com/lenaRB/VVDRlib.git' 'master' '8679a51a2d70e77b86b00792796ff656163e944b'
@@ -843,6 +860,13 @@ VehicleInterfaces:
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/VehicleInterfaces 1.2.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.license"
 	echo '1.2.2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.2.last_change"
+	# Building git/VehicleInterfaces
+	./checkout-git.sh 'git/VehicleInterfaces' 'https://github.com/modelica/VehicleInterfaces.git' 'v1.2.4' 'v1.2.4'
+	test ! -d 'build//VehicleInterfaces 1.2.4'
+	cp -a 'git/VehicleInterfaces/VehicleInterfaces' "$(BUILD_DIR)/VehicleInterfaces 1.2.4"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/VehicleInterfaces 1.2.4.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/VehicleInterfaces 1.2.4.license"
+	echo '1.2.4' > "$(BUILD_DIR)/VehicleInterfaces 1.2.4.last_change"
 WasteWater:
 	# Building git/WasteWater
 	./checkout-git.sh 'git/WasteWater' 'https://github.com/modelica-3rdparty/WasteWater.git' 'master' '0c5eecaadf82cd9e3a6a4ffa6241903e38fd1946'
