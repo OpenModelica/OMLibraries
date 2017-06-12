@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "33f3dca73044725c68b133d26d41f0d4c922261c",
+          "rev": "9fdea4af611e34caa3f6965eb6e9d99295ca914a",
           "targets": [
             "Buildings latest"
           ]
@@ -869,7 +869,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "79171b749ffe068c06d06aa551245911ef0ff01c"
+          "rev": "db81ae1b5a6a85f6c6c7693244cafa6087e18ff5"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
