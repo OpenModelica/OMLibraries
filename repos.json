@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "98792c397dfbc59354c1634865682bf9f9722b0b",
+          "rev": "0ca0b82409cea742788a057c4d6c9c5fbd4387de",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -678,7 +678,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "96f5abd1f416279ec1c44cfcc1993ff107b72613",
+      "rev": "bfd27d64ee03089ac8d7d5fbb9d06c4565304204",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -852,7 +852,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "67caae92b3ae82cc8d5cf2bffb4a2fda32460a64",
+      "rev": "7962d065076b77c792146038ef90c20d918f48a8",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
