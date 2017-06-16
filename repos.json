@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9fdea4af611e34caa3f6965eb6e9d99295ca914a",
+          "rev": "1bc8a4c75a927c98a37fd25ffdd2d4ccdda419bc",
           "targets": [
             "Buildings latest"
           ]
@@ -555,7 +555,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2ec3ec02b504a2083017c6dc5ae62fc70ca58a96",
+      "rev": "71a8401326d77c1d371e885bcfbbdff33318f7f8",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
