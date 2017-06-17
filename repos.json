@@ -75,7 +75,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "831c527fabfbb44e2870ad7274d27b709c8ea091",
+      "rev": "aa4437859104f9ecaf345576617a4205d5658142",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1bc8a4c75a927c98a37fd25ffdd2d4ccdda419bc",
+          "rev": "b63119727894997e8c2449b7c41f68ad1b73ea05",
           "targets": [
             "Buildings latest"
           ]
@@ -295,7 +295,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "06f8a432efaa0d867030a89e17c23237cf24164a",
+      "rev": "3f80e9110cded201f17efcbe4b5482470cd2281a",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -369,7 +369,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5fb9237ea220d4b63a45dc21b26a256c101d6cc9",
+      "rev": "77a7ceaca0a32e0cd4767f1dc585ab9316065841",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
