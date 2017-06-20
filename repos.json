@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "b63119727894997e8c2449b7c41f68ad1b73ea05",
+          "rev": "2595b9bc43dbf203018d80cf2d42054a019037d1",
           "targets": [
             "Buildings latest"
           ]
@@ -295,7 +295,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e9b1782b51817e0f4f63c4c310784e71c81d6857",
+      "rev": "c295eb8fa6a111b11d7dd2c3ba4ce7789ed05459",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "88dfbe302100fa03dcd5a93315d7005ec203f5b9",
+          "rev": "43b7d4230d9f62366225937f166a2ec18d51a129",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -555,7 +555,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "71a8401326d77c1d371e885bcfbbdff33318f7f8",
+      "rev": "3f255047fa1811036ce7d8529e2e2484e3717143",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -694,7 +694,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "0907c07d2b5e235257e3ce210d72e93e96198777",
+      "rev": "87162fe1250338a9c1685b780eb46dc363e196a1",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
