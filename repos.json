@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4232304680cde4701056e6af5d65a783104d4a6a",
+          "rev": "33353ae6eedee96b2f9d8fd12bc54901356e5f9b",
           "targets": [
             "Buildings latest"
           ]
@@ -555,7 +555,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3f255047fa1811036ce7d8529e2e2484e3717143",
+      "rev": "f2f2acbdf1c64e487e4b4ab85069f6172ac39d6b",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
@@ -686,7 +686,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cc9fabdbcf81d0b37661bcf7de4f02f15f4fe478",
+      "rev": "a4dde95bfe0bd225eb38b0e8d9f7751bc6bfb997",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
