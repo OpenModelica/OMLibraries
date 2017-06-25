@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170623_190517.core
-ALL_TARGET=$(BUILD_DIR)/20170623_190517.all
+CORE_TARGET=$(BUILD_DIR)/20170625_190455.core
+ALL_TARGET=$(BUILD_DIR)/20170625_190455.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170623_190517
+TIMESTAMP=20170625_190455
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -191,13 +191,13 @@ DriveControl:
 	echo '3.1.0-20170606-215718~git~release' > "$(BUILD_DIR)/DriveControl 3.1.0.last_change"
 EMOTH:
 	# Building git/EMOTH
-	./checkout-git.sh 'git/EMOTH' 'https://github.com/AHaumer/EMOTH.git' 'release' 'cd2fa75952bf6bd8ec8d6c7fecf6580f66ee357d'
-	test ! -d 'build//EMOTH 1.0.0'
-	cp -a 'git/EMOTH/EMOTH' "$(BUILD_DIR)/EMOTH 1.0.0"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/EMOTH 1.0.0.uses"
-	echo 'VehicleInterfaces 1.2.4' >> "$(BUILD_DIR)/EMOTH 1.0.0.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/EMOTH 1.0.0.license"
-	echo '1.0.0-20170605-102128~git~release' > "$(BUILD_DIR)/EMOTH 1.0.0.last_change"
+	./checkout-git.sh 'git/EMOTH' 'https://github.com/AHaumer/EMOTH.git' 'release' '1eb033eeb36f5d545749387d91016d09265b1b0d'
+	test ! -d 'build//EMOTH 1.3.0'
+	cp -a 'git/EMOTH/EMOTH' "$(BUILD_DIR)/EMOTH 1.3.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/EMOTH 1.3.0.uses"
+	echo 'VehicleInterfaces 1.2.4' >> "$(BUILD_DIR)/EMOTH 1.3.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/EMOTH 1.3.0.license"
+	echo '1.3.0-20170625-182705~git~release' > "$(BUILD_DIR)/EMOTH 1.3.0.last_change"
 ElectricalEnergyStorage:
 	# Building git/ElectricalEnergyStorage
 	./checkout-git.sh 'git/ElectricalEnergyStorage' 'https://github.com/modelica/ElectricalEnergyStorage.git' 'master' '096db4d2411f02e0e4e07823c09ea05437e778e6'
