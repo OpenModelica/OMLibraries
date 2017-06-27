@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "baa0b2d1829dcc3690cc5fed63880e1e19e5c2ca",
+          "rev": "2c41c9f579c942be0d0b559a49a2528a4cab6303",
           "targets": [
             "IBPSA latest"
           ]
@@ -263,7 +263,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "1eb033eeb36f5d545749387d91016d09265b1b0d",
+      "rev": "fa890c8c2781f0c0b2f8efe955ed8a27875dd9ac",
       "url": "https://github.com/AHaumer/EMOTH.git"
     },
     {
