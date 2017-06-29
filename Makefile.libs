@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170628_190534.core
-ALL_TARGET=$(BUILD_DIR)/20170628_190534.all
+CORE_TARGET=$(BUILD_DIR)/20170629_190518.core
+ALL_TARGET=$(BUILD_DIR)/20170629_190518.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170628_190534
+TIMESTAMP=20170629_190518
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -42,12 +42,12 @@ AixLib:
 	echo '0.4.0-6-g4b7047c' > "$(BUILD_DIR)/AixLib 0.4.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '2c41c9f579c942be0d0b559a49a2528a4cab6303'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '92668b6202edc443ede731774b867a2b9f7d053a'
 	test ! -d 'build//IBPSA latest'
 	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
-	echo '20170627-164354~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	echo '20170628-161623~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
 	# Building git/Annex60
 	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//Annex60 1.0.0'
