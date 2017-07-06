@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "92668b6202edc443ede731774b867a2b9f7d053a",
+          "rev": "6c5d28d82bec9f95bedbae074abcb7292742d4d9",
           "targets": [
             "IBPSA latest"
           ]
@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9120c58d49809f40343ed68dfaddaa8e11800378",
+          "rev": "135e7b0b7be994433870b21d39ef2d061f455e5d",
           "targets": [
             "Buildings latest"
           ]
@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "40351c7f985c7998d4c2715fdb84a7089f8fd50b",
+          "rev": "c3d2266578d11051d1c90b3a080e93e4b9f691c5",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -670,7 +670,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1e839da3f4c6768ddc46e244bc4eb22518ac4825",
+      "rev": "1fae5830bec32fa8b9520c1b2611c3ed5400fe20",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -946,7 +946,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e2a4c59f9f30117716a6805b21e52b9f814cd381",
+      "rev": "9a800dcbf2d5c491cf52b5adc11c776e2e155961",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
