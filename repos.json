@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c3d2266578d11051d1c90b3a080e93e4b9f691c5",
+          "rev": "c8318163033f924c6471ab554dbb01cab1cf5007",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -670,7 +670,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1fae5830bec32fa8b9520c1b2611c3ed5400fe20",
+      "rev": "2d1c30466dd8566e9693f8dde9c514640b65eafd",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -686,7 +686,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1b3c6a290132537a611fca657e30245a7aa4b2a0",
+      "rev": "21b556da2f842984d6f79e590b295b65e813b016",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
