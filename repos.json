@@ -162,7 +162,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "135e7b0b7be994433870b21d39ef2d061f455e5d",
+          "rev": "85101121ff506b61df65fb5ec052a361545d7f97",
           "targets": [
             "Buildings latest"
           ]
@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c8318163033f924c6471ab554dbb01cab1cf5007",
+          "rev": "b9fcf35b2dbecef1a652507e2feaaed758a95abc",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -686,7 +686,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "21b556da2f842984d6f79e590b295b65e813b016",
+      "rev": "5177612d9336337a1f13cd35cf08f34b987a0299",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
