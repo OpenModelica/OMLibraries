@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "af34f211adf4a7866b7d626f393cfe020c0f46d1",
+      "rev": "8d4fe88d2cf5df70ff560d70429bc81dcf0c3662",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -588,7 +588,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2f91e4cd951f4a91bb74182a6497ca7800ae9e32",
+      "rev": "d809a45dede7018d08df114de4533df3e6f32d4b",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -670,7 +670,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2d1c30466dd8566e9693f8dde9c514640b65eafd",
+      "rev": "0870f8a902b03b91703c6824475d591082eca3ed",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
