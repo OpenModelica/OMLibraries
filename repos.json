@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8d4fe88d2cf5df70ff560d70429bc81dcf0c3662",
+      "rev": "a8dfc8ce7f616e3a606cd07a34332259bdf658dd",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -605,7 +605,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5be4f21670c06c6fd0caa376bbd3f42f90076565",
+      "rev": "33f6429847f9e91bfbb3ba1bf0cb5bd4cdf0c9e2",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
