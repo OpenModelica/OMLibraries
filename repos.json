@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b9fcf35b2dbecef1a652507e2feaaed758a95abc",
+          "rev": "75f10e4493a929e04bd31c2466b3f7f6393fc113",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -678,7 +678,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bfd27d64ee03089ac8d7d5fbb9d06c4565304204",
+      "rev": "7e2f181b6df176ad12996bf147b6da996dd10273",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -718,7 +718,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6b0bac7eeb73633fb94c115e11ebf9f9ef7845d2",
+      "rev": "1cee40b099569ea8655c6c38eebf47d90fa800c4",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
