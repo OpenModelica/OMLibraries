@@ -588,7 +588,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d809a45dede7018d08df114de4533df3e6f32d4b",
+      "rev": "ae9d82604f5a0241e0f066c8673c1b228c3abbf1",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -646,7 +646,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7c01756cc1904a8f32e95c19fcd904ebc9683f66",
+      "rev": "e90fbfec8ca3ab9d3869dce9092fa73c46163902",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
