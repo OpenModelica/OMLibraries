@@ -678,7 +678,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7e2f181b6df176ad12996bf147b6da996dd10273",
+      "rev": "1b0c2d746b70b9f6150c3c4d9456bc672a2d3020",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -718,7 +718,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1cee40b099569ea8655c6c38eebf47d90fa800c4",
+      "rev": "998e2a4e897c37d9f56e0be0282421f468ccf456",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -852,7 +852,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7962d065076b77c792146038ef90c20d918f48a8",
+      "rev": "b796c137eee18962b3c3d70d403c4198bbf5d280",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
