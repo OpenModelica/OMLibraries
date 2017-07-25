@@ -369,7 +369,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "77a7ceaca0a32e0cd4767f1dc585ab9316065841",
+      "rev": "24687ffd28037e7a95ae801748a6cd7438ab9ae7",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -702,7 +702,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5fdd28fe28c35fe40ad4b4d804330dee05d75a98",
+      "rev": "f7adf011569a5452b5e2d832560624c003e0d515",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -710,7 +710,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "60411dff2cd92c76537c5e0c613048ff20f07ccb",
+      "rev": "3eab65c9aa77ecf55324dc986b78784981d4b1b8",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {

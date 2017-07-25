@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20170724_190533.core
-ALL_TARGET=$(BUILD_DIR)/20170724_190533.all
+CORE_TARGET=$(BUILD_DIR)/20170725_190532.core
+ALL_TARGET=$(BUILD_DIR)/20170725_190532.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20170724_190533
+TIMESTAMP=20170725_190532
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -298,12 +298,12 @@ FuzzyControl:
 	echo '20021101-080000~git~master' > "$(BUILD_DIR)/FuzzyControl.last_change"
 HelmholtzMedia:
 	# Building git/HelmholtzMedia
-	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' '77a7ceaca0a32e0cd4767f1dc585ab9316065841'
+	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' '24687ffd28037e7a95ae801748a6cd7438ab9ae7'
 	test ! -d 'build//HelmholtzMedia'
 	cp -a 'git/HelmholtzMedia/HelmholtzMedia' "$(BUILD_DIR)/HelmholtzMedia"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/HelmholtzMedia.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/HelmholtzMedia.license"
-	echo '20170616-204226~git~master' > "$(BUILD_DIR)/HelmholtzMedia.last_change"
+	echo '20170724-203448~git~master' > "$(BUILD_DIR)/HelmholtzMedia.last_change"
 IdealizedContact:
 	# Building git/IdealizedContact
 	./checkout-git.sh 'git/IdealizedContact' 'https://github.com/modelica-3rdparty/IdealizedContact.git' 'master' 'ae8b0397ea8207bc4327bea1e81ac09c6d4bcea9'
@@ -678,21 +678,21 @@ PhotoVoltaics:
 	echo '1.1.0' > "$(BUILD_DIR)/PhotoVoltaics_TGM 1.1.0.last_change"
 Physiolibrary:
 	# Building git/Physiolibrary
-	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' '5fdd28fe28c35fe40ad4b4d804330dee05d75a98'
-	test ! -d 'build//Physiolibrary 2.3.1'
-	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.1"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiolibrary 2.3.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.1.license"
-	echo '2.3.1-7-g5fdd28f' > "$(BUILD_DIR)/Physiolibrary 2.3.1.last_change"
+	./checkout-git.sh 'git/Physiolibrary' 'https://github.com/MarekMatejak/Physiolibrary.git' 'master' 'f7adf011569a5452b5e2d832560624c003e0d515'
+	test ! -d 'build//Physiolibrary 2.3.2'
+	cp -a 'git/Physiolibrary/Physiolibrary' "$(BUILD_DIR)/Physiolibrary 2.3.2"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Physiolibrary 2.3.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Physiolibrary 2.3.2.license"
+	echo '2.3.2-20170725-025833~git~master' > "$(BUILD_DIR)/Physiolibrary 2.3.2.last_change"
 Physiomodel:
 	# Building git/Physiomodel
-	./checkout-git.sh 'git/Physiomodel' 'https://github.com/modelica-3rdparty/Physiomodel.git' 'master' '60411dff2cd92c76537c5e0c613048ff20f07ccb'
-	test ! -d 'build//Physiomodel 1.0.0'
-	cp -a 'git/Physiomodel/Physiomodel' "$(BUILD_DIR)/Physiomodel 1.0.0"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/Physiomodel 1.0.0.uses"
-	echo 'Physiolibrary 2.3.1' >> "$(BUILD_DIR)/Physiomodel 1.0.0.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/Physiomodel 1.0.0.license"
-	echo '1.0.0-4-g60411df' > "$(BUILD_DIR)/Physiomodel 1.0.0.last_change"
+	./checkout-git.sh 'git/Physiomodel' 'https://github.com/modelica-3rdparty/Physiomodel.git' 'master' '3eab65c9aa77ecf55324dc986b78784981d4b1b8'
+	test ! -d 'build//Physiomodel 1.0.1'
+	cp -a 'git/Physiomodel/Physiomodel' "$(BUILD_DIR)/Physiomodel 1.0.1"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Physiomodel 1.0.1.uses"
+	echo 'Physiolibrary 2.3.2' >> "$(BUILD_DIR)/Physiomodel 1.0.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/Physiomodel 1.0.1.license"
+	echo '1.0.1-20170725-030602~git~master' > "$(BUILD_DIR)/Physiomodel 1.0.1.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
 	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' '998e2a4e897c37d9f56e0be0282421f468ccf456'
