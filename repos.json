@@ -369,7 +369,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "24687ffd28037e7a95ae801748a6cd7438ab9ae7",
+      "rev": "753273b48975d76f6827bbd1ad69066f10f5c3bd",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -852,7 +852,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4859a33bfcdd491736870bb4d554f7d8d8a9d34c",
+      "rev": "a52048e1bf3959213316953870485580337011ee",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
