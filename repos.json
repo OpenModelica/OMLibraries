@@ -94,7 +94,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6c5d28d82bec9f95bedbae074abcb7292742d4d9",
+          "rev": "ff26ba2e76d68ff01f1445708f5d09613b8ebc20",
           "targets": [
             "IBPSA latest"
           ]
@@ -505,7 +505,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "75f10e4493a929e04bd31c2466b3f7f6393fc113",
+          "rev": "0bbfd88ff9463616794c1273a9474acfe6d75a80",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -605,7 +605,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "33f6429847f9e91bfbb3ba1bf0cb5bd4cdf0c9e2",
+      "rev": "21f042067692e857f5ce6877f49ecaf93e210ba4",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
@@ -852,7 +852,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b401856bb5c352e3f419c67284cfa6298d8d220",
+      "rev": "e3a0753a0d007ab9bccf99ca403f17fd80a9159e",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
