@@ -224,7 +224,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c972a40d1c3910c7b685715464da5b4b32f3a776",
+      "rev": "ac5adb752c8ae7dec0f6c81d174b72a43a01659f",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed24314ef907d0786694af3c8276ef528b12765e",
+      "rev": "9eb7f983142ac3f56fa685fb63a10c32e73b8b29",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "dcc02ba3e6229415f3d87ee8522768fd4342513f",
+          "rev": "23e8ed7a922840b37b66ce3975260b9e31d8f395",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -581,7 +581,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "762f85e351beacecaaa60d4376341fa2044d38dd",
+      "rev": "39a0934d63f98c714a42bf32a87e443932a51922",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -671,7 +671,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0870f8a902b03b91703c6824475d591082eca3ed",
+      "rev": "7b80fe466301c3099984e4132542a85a97d3d4a1",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -679,7 +679,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1b0c2d746b70b9f6150c3c4d9456bc672a2d3020",
+      "rev": "87fcef37344882a3de4e9a3a8a06fa4fb2753e6b",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -703,7 +703,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f7adf011569a5452b5e2d832560624c003e0d515",
+      "rev": "cd70c7358734a8c00a38c39ddd1799818b999bbd",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -711,7 +711,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3eab65c9aa77ecf55324dc986b78784981d4b1b8",
+      "rev": "1978083b841a74cd593c46b0b19f12716cf3974e",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
