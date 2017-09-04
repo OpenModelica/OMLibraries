@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ff26ba2e76d68ff01f1445708f5d09613b8ebc20",
+          "rev": "0385d6db8d349d6e1037e531d949438760cd79e5",
           "targets": [
             "IBPSA latest"
           ]
@@ -581,7 +581,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "39a0934d63f98c714a42bf32a87e443932a51922",
+      "rev": "e0529b9af9ce7a00bebcae995842cfdbf20424a2",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -687,7 +687,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dcf5f5434cd4ac1faf897c896afc0cf00162a7f7",
+      "rev": "ed9faf56125c30a2d41dcefda5a5954e73dbed84",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
@@ -853,7 +853,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e3a0753a0d007ab9bccf99ca403f17fd80a9159e",
+      "rev": "6e5ec1ca91a7f76a6355d677d40da10c6a29eba0",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
