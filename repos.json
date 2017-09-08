@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bcca28341c1eec9c05f1a489ba6c040db8a04942",
+          "rev": "6b9b804f1d48b8e9d6e3c7bfce00d7f2a3d5e438",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -687,7 +687,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ed9faf56125c30a2d41dcefda5a5954e73dbed84",
+      "rev": "0bea7fdbd1b7414d1c6e755b0610bcf517c1e424",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
