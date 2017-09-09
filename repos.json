@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "94e1d4d0e84315148fddfd2a49d67675c6f997c3",
+          "rev": "2628301f7463c20408683448688bf2bfcde5d1f5",
           "targets": [
             "Buildings latest"
           ]
@@ -687,7 +687,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0bea7fdbd1b7414d1c6e755b0610bcf517c1e424",
+      "rev": "80b7b6000df32e82df21c6b0b1060f3fd52c18e4",
       "url": "https://github.com/modelica-3rdparty/PVSystems.git"
     },
     {
