@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0385d6db8d349d6e1037e531d949438760cd79e5",
+          "rev": "5d1cb7353563fbe10e9debf924b2c41f0348a629",
           "targets": [
             "IBPSA latest"
           ]
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0afc542414e6963575968f536afc220edb0a328e",
+          "rev": "24e7b2a51dd1a1107989948cc949c619f0a269d2",
           "targets": [
             "Buildings latest"
           ]
@@ -581,7 +581,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e0529b9af9ce7a00bebcae995842cfdbf20424a2",
+      "rev": "929466dd0c1532b0a9873315a6ee44a2e9bcafcd",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
