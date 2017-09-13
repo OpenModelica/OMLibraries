@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ecab0cf44477f1398503f7706313c0dc3e0bbf1c",
+          "rev": "0f67f6cc069a14c18fd56f5b2e9d722dd3baf89f",
           "targets": [
             "Buildings latest"
           ]
@@ -581,7 +581,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "929466dd0c1532b0a9873315a6ee44a2e9bcafcd",
+      "rev": "8a762b54bd061fad0caaa96accadc94bd5229d51",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -987,7 +987,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "594be99fbc3310a4dd044a374592ebc673fc7d30",
+      "rev": "58a83b5b36f267613de4676c95163489b1ddc2e7",
       "url": "https://github.com/joewa/open-bldc-modelica.git"
     },
     {
