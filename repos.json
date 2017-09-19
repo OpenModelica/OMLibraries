@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "5d1cb7353563fbe10e9debf924b2c41f0348a629",
+          "rev": "8de67d88d66eb919d746999972de175a99bc590a",
           "targets": [
             "IBPSA latest"
           ]
@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6b9b804f1d48b8e9d6e3c7bfce00d7f2a3d5e438",
+          "rev": "a34e782feb9f2d727cfc14e4104920a8edceea95",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -589,7 +589,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ae9d82604f5a0241e0f066c8673c1b228c3abbf1",
+      "rev": "7b8d292b0ab989cd177f685f8d649c0b300f9694",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -606,7 +606,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "21f042067692e857f5ce6877f49ecaf93e210ba4",
+      "rev": "13313650df323bfcb0e58b6cd27253d2c954bf05",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
