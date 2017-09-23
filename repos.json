@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "8de67d88d66eb919d746999972de175a99bc590a",
+          "rev": "2415478d57448e3df1e047a2549fe89a29838399",
           "targets": [
             "IBPSA latest"
           ]
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6015fb2e8f6074a5c81beb00a8263c815fea668f",
+          "rev": "dd6f50744bd3fe4677232da3cc5f7b49527d46a8",
           "targets": [
             "Buildings latest"
           ]
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "75639726b0c8e9289e51d0cacad86dae2f8b4b7e",
+      "rev": "8eb697b9eeeea37df70576744ac31cfa794bf85a",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "071d4156d7b2a01b86ea972097787a451dad92e2",
+          "rev": "b3a922e0df40b1c89dc155e99da51a0d7b161532",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
