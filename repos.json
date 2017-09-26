@@ -84,7 +84,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5638eb0f7762fb74eb674d46d067cf1051017bcc",
+      "rev": "d062c185c2bf4fbd2a515a6f317648a57debec8d",
       "url": "https://github.com/modelica-3rdparty/AixLib.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e544a6523b73504ff3554a940d6090b3641ba470",
+          "rev": "ff485aaec4b758afcba9c26c22732107cbd77622",
           "targets": [
             "Buildings latest"
           ]
@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b83543b04ea0ad5aa15d39715ceeceb644c92c76",
+          "rev": "8839ea80e37df4a52c09f80dc88e16dcd2af5e79",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
