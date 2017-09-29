@@ -199,8 +199,8 @@ for f in $LIBS "$@"; do
     fi
   done
   if test -f "$NAME.patch"; then
-    echo "patch -d \"\$(BUILD_DIR)/\" -f -p1 < '$NAME.patch'" >> "$CMD_REPLAY"
-    if ! patch -d "$BUILD/" -f -p1 < "$NAME.patch"; then
+    echo "patch -l -d \"\$(BUILD_DIR)/\" -f -p1 < '$NAME.patch'" >> "$CMD_REPLAY"
+    if ! patch -l -d "$BUILD/" -f -p1 < "$NAME.patch"; then
       echo "Failed to apply $NAME.patch"
       exit 1
     fi

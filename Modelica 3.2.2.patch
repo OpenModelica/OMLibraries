@@ -1,19 +1,19 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Sources.mo "build/Modelica 3.2.2/Blocks/Sources.mo"
---- git/Modelica/Modelica/Blocks/Sources.mo	2017-02-14 11:24:40.825292502 +0100
-+++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-02-14 11:54:19.623717345 +0100
+--- git/Modelica/Modelica/Blocks/Sources.mo	2017-09-29 12:53:15.571125727 +0200
++++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-09-29 13:22:28.091101493 +0200
 @@ -2379,7 +2379,8 @@
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
-       input Modelica.SIunits.Time timeIn;
+       input Real timeIn;
        input Real tableAvailable
 -        "Dummy input to ensure correct sorting of function calls";
 +        "Dummy input to ensure correct sorting of function calls" annotation(
 +        __OpenModelica_UnusedVariable = true);
-       output Modelica.SIunits.Time nextTimeEvent "Next time event in table";
+       output Real nextTimeEvent "Next time event in table";
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "build/Modelica 3.2.2/Blocks/Tables.mo"
---- git/Modelica/Modelica/Blocks/Tables.mo	2017-02-14 11:21:11.991978011 +0100
-+++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-02-14 11:54:18.503710922 +0100
+--- git/Modelica/Modelica/Blocks/Tables.mo	2017-09-29 12:53:15.571125727 +0200
++++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-09-29 13:22:27.167101506 +0200
 @@ -59,7 +59,8 @@
        input Integer icol;
        input Real u;
@@ -44,7 +44,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        input Real der_u;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
-@@ -361,7 +364,8 @@
+@@ -376,7 +379,8 @@
        input Integer icol;
        input Real u;
        input Real tableAvailable
@@ -54,7 +54,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
-@@ -375,7 +379,8 @@
+@@ -390,7 +394,8 @@
        input Integer icol;
        input Real u;
        input Real tableAvailable
@@ -64,7 +64,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable1D_getValue(tableID, icol, u)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
-@@ -388,7 +393,8 @@
+@@ -403,7 +408,8 @@
        input Integer icol;
        input Real u;
        input Real tableAvailable
@@ -74,7 +74,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        input Real der_u;
        output Real der_y;
        external"C" der_y = ModelicaStandardTables_CombiTable1D_getDerValue(tableID, icol, u, der_u)
-@@ -658,7 +664,8 @@
+@@ -688,7 +694,8 @@
        input Real u1;
        input Real u2;
        input Real tableAvailable
@@ -84,7 +84,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
-@@ -672,7 +679,8 @@
+@@ -702,7 +709,8 @@
        input Real u1;
        input Real u2;
        input Real tableAvailable
@@ -94,7 +94,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        output Real y;
        external"C" y = ModelicaStandardTables_CombiTable2D_getValue(tableID, u1, u2)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
-@@ -685,7 +693,8 @@
+@@ -715,7 +723,8 @@
        input Real u1;
        input Real u2;
        input Real tableAvailable
@@ -105,8 +105,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        input Real der_u2;
        output Real der_y;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica 3.2.2/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2017-02-14 11:24:40.833292552 +0100
-+++ build/Modelica 3.2.2/Math/package.mo	2017-02-14 11:54:14.883690159 +0100
+--- git/Modelica/Modelica/Math/package.mo	2017-09-29 12:53:15.611125727 +0200
++++ build/Modelica 3.2.2/Math/package.mo	2017-09-29 13:22:24.495101543 +0200
 @@ -13225,9 +13225,67 @@
  
    annotation (Documentation(info="<html>
@@ -253,11 +253,11 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica 3.2.2/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2017-02-14 11:24:40.833292552 +0100
-+++ build/Modelica 3.2.2/Math/package.order	2017-02-14 11:54:14.883690159 +0100
-@@ -28,4 +28,6 @@
- baseIcon1
+--- git/Modelica/Modelica/Math/package.order	2017-09-29 12:53:15.611125727 +0200
++++ build/Modelica 3.2.2/Math/package.order	2017-09-29 13:22:24.495101543 +0200
+@@ -29,4 +29,6 @@
  baseIcon2
+ wrapAngle
  tempInterpol1
 +tempInterpol1_der
  tempInterpol2

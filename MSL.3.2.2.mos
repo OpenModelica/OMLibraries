@@ -1,8 +1,8 @@
 setModelicaPath("");
 tmpScript:="Modelica.3.2.2.tmp.mos";
 
-if 0<>system("patch -d build/ -f -p1 < 'Modelica 3.2.2.manual.patch'") or
-   0<>system("patch -d build/ -f -p1 < 'ModelicaServices 3.2.2.manual.patch'") then
+if 0<>system("patch -l -d build/ -f -p1 < 'Modelica 3.2.2.manual.patch'") or
+   0<>system("patch -l -d build/ -f -p1 < 'ModelicaServices 3.2.2.manual.patch'") then
   exit(1);
 end if;
 
