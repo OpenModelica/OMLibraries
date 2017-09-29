@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e688248f471e3680b9290fa5b448897304fc7d00",
+      "rev": "a9ee3acaf7f91d427ebe23b8242f9e5b538ec582",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "58bbeafa2f50eefa15b2574ce24f4adbd12b2a53",
+          "rev": "8b474189490cee25f371c46caafd88b0957a9d72",
           "targets": [
             "Buildings latest"
           ]
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ce5bd5b5aaffb7d62b9ef1a9db7feeefb7a27c18",
+      "rev": "d1dd4cb1e53c52ac96507d9b24d5cdf5ae4c58c0",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
