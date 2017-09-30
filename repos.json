@@ -280,7 +280,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "73108e42baefbf7517680fbae80ff473e945b17a",
+      "rev": "c65af37a106c6264bdb795fbf5f3507c186e9073",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d1dd4cb1e53c52ac96507d9b24d5cdf5ae4c58c0",
+      "rev": "4a580777abd551f47c511f3562caa211905d5baf",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -486,7 +486,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a6924f4f4d10a83330b380232a86f3e4edcfa70c",
+          "rev": "b2e80699505f512d988d2b7d2df6cb23e674be96",
           "targets": [
             "Complex",
             "Modelica",
@@ -506,7 +506,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "630b9e43737fe38cff1c89c2a4169496a35cc61f",
+          "rev": "45dbd758d8a34ae50d15365c67f4552db2e37df9",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
