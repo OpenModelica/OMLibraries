@@ -512,7 +512,7 @@
             "patch-files": [
               "Complex trunk.patch",
               "Modelica trunk.patch",
-              "ModelicaServices trunk.patch"
+              "ModelicaServices trunk.patch",
               "ModelicaTest trunk.patch"
             ],
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
