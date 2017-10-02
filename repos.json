@@ -480,9 +480,14 @@
         },
         {
           "options": {
+            "generate-patch-mos": "MSL.3.2.2.mos",
             "gitbranch": "maint/3.2.2",
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices",
+            "patch-files": [
+              "Modelica 3.2.2.patch",
+              "ModelicaServices 3.2.2.patch"
+            ],
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
@@ -500,9 +505,16 @@
         {
           "options": {
             "breaks": "omlibrary-msl32,omlibrary-reference",
+            "generate-patch-mos": "MSL.trunk.mos",
             "gitbranch": "master",
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices",
+            "patch-files": [
+              "Complex trunk.patch",
+              "Modelica trunk.patch",
+              "ModelicaServices trunk.patch"
+              "ModelicaTest trunk.patch"
+            ],
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },

@@ -62,6 +62,14 @@ case $OPT in
   REMOVE_FILES="$1"
   shift
   ;;
+--patch-files)
+  # Used by update-library.py
+  shift
+  ;;
+--generate-patch-mos)
+  # Used by update-library.py
+  shift
+  ;;
 --automatic-updates)
   # Skip this; used in the python script
   shift

@@ -129,14 +129,49 @@ def checkLatest(repo):
       newrev = subprocess.check_output('git ls-remote "%s" | grep \'refs/heads/%s$\' | cut -f1' % (repo['url'],branch), shell=True).strip()
       if oldrev != newrev:
         r['rev'] = newrev
-        if 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
-          r['rev'] = oldrev
+        if "generate-patch-mos" in options:
+          for f in options["patch-files"]:
+            if os.path.exists(f+".bak"):
+              os.unlink(f+".bak")
+            if os.path.exists(f):
+              os.rename(f, f+".bak")
+        updateOK = False
+        print(repo)
+        if 0 != os.system(updateCommand(repo)):
           msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
         elif options.get('automatic-updates') == 'no':
-          r['rev'] = oldrev
           msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
         else:
-          msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
+          if "generate-patch-mos" in options:
+            if 0 == os.system("%s %s" % (parser_options.omc,options["generate-patch-mos"])):
+              updateOK = True
+              for f in options["patch-files"]:
+                if not os.path.exists(f):
+                  updateOK = False
+                  msg = "%s branch %s failed to generate new patch %s for %s." % (repo['url'],branch,f,newrev)
+              if updateOK == False:
+                pass
+              elif 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
+                msg = "%s branch %s failed to run new patches for %s." % (repo['url'],branch,newrev)
+                updateOK = False
+            else:
+              msg = "%s branch %s failed to create new patches for %s." % (repo['url'],branch,newrev)
+              print(os.getcwd())
+          else:
+            updateOK = True
+          if updateOK:
+            msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
+
+        if not updateOK:
+          r['rev'] = oldrev
+        if "generate-patch-mos" in options:
+          for f in options["patch-files"]:
+            if os.path.exists(f+".bak"):
+              if updateOK:
+                os.unlink(f+".bak")
+              else:
+                os.rename(f+".bak",f)
+
         logmsg = ''
         if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
           commiturl = repo['url'][:-4]
@@ -179,6 +214,7 @@ if __name__ == '__main__':
   parser.add_option("--build-dir", help="directory to put libraries", dest="build", type="string", default="build/")
   parser.add_option("--omc", help="path to the omc executable", dest="omc", type="string", default="omc")
   (options, args) = parser.parse_args()
+  parser_options = options
   n_jobs = options.n_jobs
   if options.check_latest:
     update()
