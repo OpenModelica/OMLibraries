@@ -40,6 +40,16 @@ def updateCommand(r, customBuild=None):
   return cmd
 def makeFileReplayCommand(r):
   return ("git" if r['url'].endswith(".git") else "svn") + "/" + r['dest'] + ".cmd"
+
+def silentSystemOrException(cmd):
+  try:
+    subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+  except subprocess.CalledProcessError as e:
+    print("*** Failed %s: %s" % (e.cmd, e.output))
+    return True
+  return False
+
+
 def update():
   open("bad-uses.sh", "w").write("#!/bin/sh\nsed -i %s \"$1\"\n" % " ".join(["-e '/%s/d' " % use for use in jsondata['bad-uses']]))
 
@@ -59,19 +69,15 @@ def update():
     os.remove('error.log')
   except OSError:
     pass
-  res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
+  cmdFailed = max(Parallel(n_jobs=n_jobs)(delayed(silentSystemOrException)(cmd) for cmd in commands))
+  if cmdFailed:
+    return 1
 
   commands = ['cd "git/%s" && git fetch "%s" && git fetch --tags "%s"' % (r['dest'],r['url'],r['url']) for r in repos if r['url'].endswith('.git')]
-  for cmd in commands: print(cmd)
-  res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
+  cmdFailed = max(Parallel(n_jobs=n_jobs)(delayed(silentSystemOrException)(cmd) for cmd in commands))
 
-  exit = 0
-  for (i,cmd) in zip(res,commands):
-    if i != 0:
-      print('*** Failed: %s' % cmd)
-      exit = 1
-  if exit != 0:
-    return exit
+  if cmdFailed:
+    return 1
   core_lib=[]
   other_lib=[]
   lines=[]
