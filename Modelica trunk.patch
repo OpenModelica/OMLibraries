@@ -1,7 +1,7 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2017-06-02 02:03:39.841857822 +0200
-+++ build/Modelica trunk/Math/package.mo	2017-06-02 02:12:23.019137010 +0200
-@@ -13221,9 +13221,67 @@
+--- git/Modelica/Modelica/Math/package.mo	2017-10-03 07:30:50.784229438 +0200
++++ build/Modelica trunk/Math/package.mo	2017-10-03 07:30:58.548212049 +0200
+@@ -13215,9 +13215,67 @@
  
    annotation (Documentation(info="<html>
  
@@ -70,7 +70,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -13283,9 +13341,74 @@
+@@ -13277,9 +13335,74 @@
  
    annotation (Documentation(info="<html>
  
@@ -147,8 +147,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2017-06-02 02:02:41.462161500 +0200
-+++ build/Modelica trunk/Math/package.order	2017-06-02 02:12:23.019137010 +0200
+--- git/Modelica/Modelica/Math/package.order	2017-10-03 07:30:50.788229429 +0200
++++ build/Modelica trunk/Math/package.order	2017-10-03 07:30:58.548212049 +0200
 @@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
@@ -157,9 +157,9 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2017-06-02 02:03:39.873857655 +0200
-+++ build/Modelica trunk/package.mo	2017-06-02 02:12:24.715128191 +0200
-@@ -8216,12 +8216,12 @@
+--- git/Modelica/Modelica/package.mo	2017-10-03 07:30:50.876229231 +0200
++++ build/Modelica trunk/package.mo	2017-10-03 07:31:01.160206218 +0200
+@@ -8251,12 +8251,12 @@
  
  annotation (
  preferredView="info",
