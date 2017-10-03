@@ -60,6 +60,11 @@ def update():
   except OSError:
     pass
   res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
+
+  commands = ['cd "git/%s" && git fetch "%s" && git fetch --tags "%s"' % (r['dest'],r['url'],r['url']) for r in repos if r['url'].endswith('.git')]
+  for cmd in commands: print(cmd)
+  res = Parallel(n_jobs=n_jobs)(delayed(os.system)(cmd) for cmd in commands)
+
   exit = 0
   for (i,cmd) in zip(res,commands):
     if i != 0:
