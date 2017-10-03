@@ -54,7 +54,7 @@ end for;
 writeFile(tablesFile, fileStrTables);getErrorString();
 getErrorString();
 // Patch the damned tableAvailable hack
-tablesFile:=getSourceFile(Modelica.Blocks.Sources);fileStrTables:=readFile(tablesFile);print(tablesFile);
+tablesFile:=getSourceFile(Modelica.Blocks.Sources);fileStrTables:=readFile(tablesFile); // print(tablesFile);
 for str in {
   "Modelica.Blocks.Sources.CombiTimeTable.getNextTimeEvent"
   } loop
@@ -79,9 +79,9 @@ end for;
 writeFile(tablesFile, fileStrTables);getErrorString();
 getErrorString();
 
-writeFile(sourcesFile, fileStrSources);getErrorString();
-
-echo(false);fundamentalWaveFile := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
+echo(false);
+fundamentalWaveFile := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
+fileStrFundamentalWave := readFile(fundamentalWaveFile);
 addClassAnnotation(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_YD, __OpenModelica_simulationFlags(nls = "newton"));
 listing := listFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
 fileStrFundamentalWave := diffModelicaFileListings(fileStrFundamentalWave, listing, OpenModelica.Scripting.DiffFormat.plain);

@@ -43,7 +43,7 @@ def makeFileReplayCommand(r):
 
 def silentSystemOrException(cmd):
   try:
-    subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+    subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
   except subprocess.CalledProcessError as e:
     print("*** Failed %s: %s" % (e.cmd, e.output))
     return True
@@ -183,6 +183,8 @@ def checkLatest(repo):
             if updateOK:
               os.unlink(f+".bak")
             else:
+              if os.path.exists(f):
+                os.rename(f, f+".failed")
               os.rename(f+".bak",f)
 
       logmsg = ''
