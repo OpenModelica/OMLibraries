@@ -83,6 +83,7 @@ echo(false);
 fundamentalWaveFile := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
 fileStrFundamentalWave := readFile(fundamentalWaveFile);
 addClassAnnotation(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_YD, __OpenModelica_simulationFlags(nls = "newton"));
+addClassAnnotation(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_Transformer, __OpenModelica_simulationFlags(nls = "newton"));
 listing := listFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
 fileStrFundamentalWave := diffModelicaFileListings(fileStrFundamentalWave, listing, OpenModelica.Scripting.DiffFormat.plain);
 writeFile(fundamentalWaveFile, fileStrFundamentalWave);getErrorString();
