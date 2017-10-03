@@ -11,9 +11,9 @@ import subprocess
 import datetime
 
 def targets(r):
-  if not 'targets' in r:
-    return "all"
-  return ' '.join(['"%s"' % t for t in r['targets']])
+  if r.get('targets'):
+    return ' '.join(['"%s"' % t for t in r['targets']])
+  return "all"
 def opts(r):
   if 'options' not in r:
     return ""
@@ -127,60 +127,62 @@ def checkLatest(repo):
       branch = options.get('gitbranch') or 'release'
       oldrev = r['rev']
       newrev = subprocess.check_output('git ls-remote "%s" | grep \'refs/heads/%s$\' | cut -f1' % (repo['url'],branch), shell=True).strip()
-      if oldrev != newrev:
-        r['rev'] = newrev
+      if oldrev == newrev:
+        continue
+      repo_no_multi = {'url':repo['url'], 'dest':repo['dest'], 'rev':r['rev'], 'options':options, 'targets':r.get('targets') or []}
+      r['rev'] = newrev
+      if "generate-patch-mos" in options:
+        for f in options["patch-files"]:
+          if os.path.exists(f+".bak"):
+            os.unlink(f+".bak")
+          if os.path.exists(f):
+            os.rename(f, f+".bak")
+      updateOK = False
+      print(updateCommand(repo_no_multi))
+      if 0 != os.system(updateCommand(repo_no_multi)):
+        msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
+      elif options.get('automatic-updates') == 'no':
+        msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
+      else:
         if "generate-patch-mos" in options:
-          for f in options["patch-files"]:
-            if os.path.exists(f+".bak"):
-              os.unlink(f+".bak")
-            if os.path.exists(f):
-              os.rename(f, f+".bak")
-        updateOK = False
-        print(repo)
-        if 0 != os.system(updateCommand(repo)):
-          msg = '%s branch %s has FAILING head - latest is %s' % (repo['url'],branch,newrev)
-        elif options.get('automatic-updates') == 'no':
-          msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
-        else:
-          if "generate-patch-mos" in options:
-            if 0 == os.system("%s %s" % (parser_options.omc,options["generate-patch-mos"])):
-              updateOK = True
-              for f in options["patch-files"]:
-                if not os.path.exists(f):
-                  updateOK = False
-                  msg = "%s branch %s failed to generate new patch %s for %s." % (repo['url'],branch,f,newrev)
-              if updateOK == False:
-                pass
-              elif 0 != os.system(updateCommand(repo, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
-                msg = "%s branch %s failed to run new patches for %s." % (repo['url'],branch,newrev)
-                updateOK = False
-            else:
-              msg = "%s branch %s failed to create new patches for %s." % (repo['url'],branch,newrev)
-              print(os.getcwd())
-          else:
+          if 0 == os.system("%s %s" % (parser_options.omc,options["generate-patch-mos"])):
             updateOK = True
-          if updateOK:
-            msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
-
-        if not updateOK:
-          r['rev'] = oldrev
-        if "generate-patch-mos" in options:
-          for f in options["patch-files"]:
-            if os.path.exists(f+".bak"):
-              if updateOK:
-                os.unlink(f+".bak")
-              else:
-                os.rename(f+".bak",f)
-
-        logmsg = ''
-        if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
-          commiturl = repo['url'][:-4]
-          cmd = 'cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/commit/\\1 \\1],"' % (repo['dest'],oldrev,newrev,commiturl)
-          logmsg = subprocess.check_output(cmd, shell=True).strip()
+            for f in options["patch-files"]:
+              if not os.path.exists(f):
+                updateOK = False
+                msg = "%s branch %s failed to generate new patch %s for %s." % (repo['url'],branch,f,newrev)
+            if updateOK == False:
+              pass
+            elif 0 != os.system(updateCommand(repo_no_multi, customBuild=".customBuild/%s/%s" % (repo['dest'],r['rev']))):
+              msg = "%s branch %s failed to run new patches for %s." % (repo['url'],branch,newrev)
+              updateOK = False
+          else:
+            msg = "%s branch %s failed to create new patches for %s." % (repo['url'],branch,newrev)
+            print(os.getcwd())
         else:
-          logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
-        logmsg = logmsg.decode('utf-8','ignore')
-        msg = msg + "\n  " + logmsg + "\n"
+          updateOK = True
+        if updateOK:
+          msg = '%s branch %s updated to %s.' % (repo['url'],branch,newrev)
+
+      if not updateOK:
+        r['rev'] = oldrev
+      if "generate-patch-mos" in options:
+        for f in options["patch-files"]:
+          if os.path.exists(f+".bak"):
+            if updateOK:
+              os.unlink(f+".bak")
+            else:
+              os.rename(f+".bak",f)
+
+      logmsg = ''
+      if repo['url'].startswith('https://github.com/') and repo['url'].endswith('.git'):
+        commiturl = repo['url'][:-4]
+        cmd = 'cd "git/%s" && git fetch "%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s,^ *\\([a-z0-9]*\\),  * [%s/commit/\\1 \\1],"' % (repo['dest'],repo['url'],oldrev,newrev,commiturl)
+        logmsg = subprocess.check_output(cmd, shell=True).strip()
+      else:
+        logmsg = subprocess.check_output('cd "git/%s" && git log %s..%s -n 15 --pretty=oneline --abbrev-commit | sed "s/^ */  * /"' % (repo['dest'],oldrev,newrev), shell=True).strip()
+      logmsg = logmsg.decode('utf-8','ignore')
+      msg = msg + "\n  " + logmsg + "\n"
   else:
     options = repo.get('options') or {}
     intertrac = options.get('intertrac') or ''

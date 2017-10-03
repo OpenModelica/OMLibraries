@@ -61,8 +61,8 @@ clean:
 
 check-latest: config.done Makefile.numjobs
 	@echo "Looking for more recent versions of packages"
-	rm -rf $(BUILD_DIR) build .customBuild
-	mkdir -p $(BUILD_DIR)
+	rm -rf build .customBuild
+	mkdir -p build
 	./update-library.py -n `cat Makefile.numjobs` --check-latest
 	rm -rf .customBuild
 add-missing: config.done Makefile.numjobs
