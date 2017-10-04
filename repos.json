@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1f6464f91fe37876282e4864c77e530ba5c78ca3",
+          "rev": "d68953725647a22be63a8e982504d4fa5b515980",
           "targets": [
             "Buildings latest"
           ]
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "380339bcfe7f83cd80566403281ab7cf44b35d60",
+          "rev": "8369f380169a5b7c7489971e00e1b8c3cca57f09",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -618,7 +618,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "13313650df323bfcb0e58b6cd27253d2c954bf05",
+      "rev": "36e6b79aa3532d9a6c94f8e703d32971c600b6fa",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c9c927bc48f7c3f5d5593d659a1ace816d39c499",
+      "rev": "695b83749c6ef687708fc62ac95141b3ce459b93",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
