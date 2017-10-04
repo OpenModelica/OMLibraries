@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d68953725647a22be63a8e982504d4fa5b515980",
+          "rev": "6bf8335569f0992065257a46e5acb672bce00fdd",
           "targets": [
             "Buildings latest"
           ]
@@ -491,7 +491,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "652cc726293bd671ba961b88f4e4bc00f651385f",
+          "rev": "2541ab49bc91d666100e1a61d29a1463f302f3b1",
           "targets": [
             "Complex",
             "Modelica",
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "8369f380169a5b7c7489971e00e1b8c3cca57f09",
+          "rev": "ce9864f2cff98976ed10d2695d642efc1e31dc3d",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6a8ad8668f6dc2aec368a2ad27f7a74647ced81d",
+      "rev": "6200232d0597d93f66dd2d81155a0bf893ec79e8",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -798,7 +798,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "23d97af534479f1096ca9f4cac19588095ea510a",
+      "rev": "4f423c42e1a930593d7b9b0621372303d5a0c035",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
