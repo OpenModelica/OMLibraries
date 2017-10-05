@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "276623f20351804765d73491a865b01ccddc9d86",
+      "rev": "c339aa8d550f3f05bd6c88208fc618b8a9324623",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -798,7 +798,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4f423c42e1a930593d7b9b0621372303d5a0c035",
+      "rev": "b3e38ad984eb0537a56a9cbf25cbd1d8e09f8a90",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
