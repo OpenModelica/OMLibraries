@@ -401,7 +401,7 @@
         "gitbranch": "release",
         "license": "modelica1.1"
       },
-      "rev": "ea87269baca6f8ef19898ec6bc76ea8555e2f657",
+      "rev": "c8feef60e8a999a8a05fc56733968cac920b0bd1",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
@@ -491,7 +491,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "2541ab49bc91d666100e1a61d29a1463f302f3b1",
+          "rev": "ce7d0efacc80870d8e9092af3590427b33bc5abd",
           "targets": [
             "Complex",
             "Modelica",
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "41a7007700e1bed9b9db712e5f921f4dc2c44569",
+          "rev": "197e51958ef0a8d4e6cd87530c870dac6ab1a905",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -865,7 +865,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b8589f336a20d24fd0bcf7eee67d5bf675f6853",
+      "rev": "463829ab451f1c5d0693d168bde96481a6e9e979",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
