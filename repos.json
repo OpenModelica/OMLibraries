@@ -280,7 +280,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "d8ab2b0f466046b76b2742aae6ea76af144fbfdb",
+      "rev": "f4dacb0804997770a5cbdbd52d4eb90e3367ff75",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -798,7 +798,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b3e38ad984eb0537a56a9cbf25cbd1d8e09f8a90",
+      "rev": "c0967ae2e232435112e040cf7598d4d3b6b4dca5",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
