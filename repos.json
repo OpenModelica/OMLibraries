@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2415478d57448e3df1e047a2549fe89a29838399",
+          "rev": "e82a2c3ebc6e49a835315dbd48ad1807764c2fcf",
           "targets": [
             "IBPSA latest"
           ]
@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c612158da56cfc61242df15b505e542077b09bfe",
+      "rev": "d2cce93d9cc048f4987a40520472b82704cd6eb1",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "8199b789ff780dbbc42f92a746b5943e0a23010e",
+          "rev": "1bf19ed290f59a091d202412bdc85641798b01a7",
           "targets": [
             "Buildings latest"
           ]
@@ -370,7 +370,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "753273b48975d76f6827bbd1ad69066f10f5c3bd",
+      "rev": "ef9da579ef7025e092195bbd7d59b875058f289a",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -491,7 +491,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6707f4739ae550a6d5511e7dd142f44f59e36691",
+          "rev": "4e3cff810a5acbcecc76b724e86bc966862b5c30",
           "targets": [
             "Complex",
             "Modelica",
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a75db8e7adcbd2e5761b9a2df76d3ae8aef8fd1f",
+          "rev": "819633f6dcd62fb4be1be59e2cbf2b0c3d9b9d4b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
