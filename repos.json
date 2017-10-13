@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d2cce93d9cc048f4987a40520472b82704cd6eb1",
+      "rev": "07ab5b74202a22dc75b9f0da5fdc7901e07ba3e8",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -280,7 +280,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "f4dacb0804997770a5cbdbd52d4eb90e3367ff75",
+      "rev": "aafe8118f53e4931e6613da4929605de514084e8",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "59a08b01343a159bf620e9b72d2e1dd59b023a95",
+          "rev": "f28a8b208c697187707759f51db2baa31cf2ac60",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c339aa8d550f3f05bd6c88208fc618b8a9324623",
+      "rev": "2d149cee560f9427c2750f1077326f947dad7c66",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -798,7 +798,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c0967ae2e232435112e040cf7598d4d3b6b4dca5",
+      "rev": "6ed667c5b5ed20e701f997acdfc1e0b941e6116e",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
