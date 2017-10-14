@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "07ab5b74202a22dc75b9f0da5fdc7901e07ba3e8",
+      "rev": "cbb5ece169accd74993b042981a4316d65976b6a",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "baece90686d73904e19d758daabb46e9214680e4",
+      "rev": "3a9dba1ae5af6f11c4bdd1652c471a828fe65ef0",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f28a8b208c697187707759f51db2baa31cf2ac60",
+          "rev": "9d5bc998bbe08a153fd622622400e744704a4257",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
