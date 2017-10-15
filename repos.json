@@ -280,7 +280,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "aafe8118f53e4931e6613da4929605de514084e8",
+      "rev": "5622905cefccbf78998af8caf1589316c394fea8",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -491,7 +491,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "4e3cff810a5acbcecc76b724e86bc966862b5c30",
+          "rev": "c72477cc4c19c40d70e77fc2bed1df3169ec3749",
           "targets": [
             "Complex",
             "Modelica",
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9d5bc998bbe08a153fd622622400e744704a4257",
+          "rev": "961941838051171c1bd3e35f6aa303396b34e307",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
