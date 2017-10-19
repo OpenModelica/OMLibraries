@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fc6c68962ba5042d93c089569a6117ef768def1f",
+      "rev": "0361fc68c98284669256360db5aea337f3411dd4",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "280b309d424b2ad0e23d754d7e345aec2aa44c85",
+          "rev": "008043e3e87d295b10673ffd9bb17ad2cc2359fd",
           "targets": [
             "Buildings latest"
           ]
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fd19346f93c591b97b90b19540aae8bbe4f1c296",
+      "rev": "9bdff533487a7dd57160f93b7e85ff44758e9548",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2d149cee560f9427c2750f1077326f947dad7c66",
+      "rev": "574d069689f9205dee5ccf102e119d92d487a1df",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
