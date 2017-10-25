@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3c94c5ec2eedf99510e4d0a684faed3f10a090d0",
+          "rev": "3a4b52dc5df458e88aa893c77c18fb4edd0cab7b",
           "targets": [
             "Buildings latest"
           ]
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "32b9496cc6f099611acad35263bf48685e1abced",
+      "rev": "6f43d7a77abdbda7c6d51e8588f590da34378c55",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
