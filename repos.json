@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4088c2eeb130ccd9e1050346d30932b867bfa3f4",
+      "rev": "67a91f393f8027b10374df4e0cd00c6e23a97c75",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -798,7 +798,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00f4884e086f27d60a0399159902c716b76ef4d3",
+      "rev": "9ebf3e5fbf6332ce66fd3c4baba253df5fd7cdb4",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
