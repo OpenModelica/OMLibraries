@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Sources.mo "build/Modelica 3.2.2/Blocks/Sources.mo"
---- git/Modelica/Modelica/Blocks/Sources.mo	2017-10-28 19:04:24.959101739 +0200
-+++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-10-28 19:04:42.491239872 +0200
+--- git/Modelica/Modelica/Blocks/Sources.mo	2017-10-29 19:04:16.102168169 +0100
++++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-10-29 19:04:31.954333587 +0100
 @@ -2379,7 +2379,8 @@
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Real timeIn;
@@ -12,8 +12,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Sources.mo "b
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "build/Modelica 3.2.2/Blocks/Tables.mo"
---- git/Modelica/Modelica/Blocks/Tables.mo	2017-10-28 19:04:24.959101739 +0200
-+++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-10-28 19:04:41.063228707 +0200
+--- git/Modelica/Modelica/Blocks/Tables.mo	2017-10-29 19:04:16.102168169 +0100
++++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-10-29 19:04:30.858322236 +0100
 @@ -59,7 +59,8 @@
        input Integer icol;
        input Real u;
@@ -105,9 +105,9 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        input Real der_u2;
        output Real der_y;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-10-28 19:04:25.015102184 +0200
-+++ build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo	2017-10-28 19:04:47.583279566 +0200
-@@ -1126,7 +1126,8 @@
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-10-29 19:04:16.150168674 +0100
++++ build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo	2017-10-29 19:04:36.638381951 +0100
+@@ -1132,7 +1132,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -117,7 +117,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
          end IMC_YD;
  
          model IMC_Transformer "Induction machine with squirrel cage starting with transformer"
-@@ -1407,7 +1408,8 @@
+@@ -1415,7 +1416,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -128,8 +128,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Inverter
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica 3.2.2/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2017-10-28 19:04:25.019102215 +0200
-+++ build/Modelica 3.2.2/Math/package.mo	2017-10-28 19:04:36.691194428 +0200
+--- git/Modelica/Modelica/Math/package.mo	2017-10-29 19:04:16.154168717 +0100
++++ build/Modelica 3.2.2/Math/package.mo	2017-10-29 19:04:26.846280578 +0100
 @@ -13225,9 +13225,67 @@
  
    annotation (Documentation(info="<html>
@@ -276,8 +276,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica 3.2.2/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2017-10-28 19:04:25.019102215 +0200
-+++ build/Modelica 3.2.2/Math/package.order	2017-10-28 19:04:36.691194428 +0200
+--- git/Modelica/Modelica/Math/package.order	2017-10-29 19:04:16.154168717 +0100
++++ build/Modelica 3.2.2/Math/package.order	2017-10-29 19:04:26.846280578 +0100
 @@ -29,4 +29,6 @@
  baseIcon2
  wrapAngle
