@@ -458,8 +458,7 @@
           "rev": "af2a3e1597d648d6826665c89cf9eaf5c2a632bc",
           "targets": [
             "Modelica",
-            "ModelicaServices",
-            "ModelicaTest"
+            "ModelicaServices"
           ]
         },
         {
