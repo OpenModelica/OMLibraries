@@ -117,7 +117,7 @@ rpm: config.done .remote/rpmpool .remote/pool
 	cat .remote/nightly-library-files | xargs -n 1 sh -c './rpm-build.sh "$$1"' sh
 	./rpm-build.sh $(TIMESTAMP)
 upload: config.done .remote/control-files .remote/pool
-	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || rsync --ignore-existing debian-build/*.deb debian-build/*.tar.gz debian-build/*.dsc "`cat .remote/pool`"
+	diff -u .remote/nightly-library-files nightly-library-files || (! stat -t debian-build/*.deb >/dev/null 2>&1) || rsync --ignore-existing debian-build/*.deb debian-build/*.tar.gz debian-build/*.tar.xz debian-build/*.dsc "`cat .remote/pool`"
 	scp nightly-library-files nightly-library-sources "`cat .remote/control-files`"
 	scp "`cat .remote/control-files`/nightly-library-files" .remote/nightly-library-files
 	scp "`cat .remote/control-files`/nightly-library-sources" .remote/nightly-library-sources
