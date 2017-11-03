@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "141245b5fb8e98be525d33cd18e49a71287b24f0",
+          "rev": "9fb92877e18a40109cce9cc0775a3f7839026ada",
           "targets": [
             "IBPSA latest"
           ]
@@ -144,7 +144,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a9ee3acaf7f91d427ebe23b8242f9e5b538ec582",
+      "rev": "5790ca8e543ea8f612d5f7b0e199421ededb3486",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "67a91f393f8027b10374df4e0cd00c6e23a97c75",
+      "rev": "1c11e7366188577f8d71e126f1e87f7be0bd7937",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e1845b978d4ebca7051cfad5cb9223914544114f",
+          "rev": "0f8030e958447e16a65938579225886bcfdf841a",
           "targets": [
             "Buildings latest"
           ]
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "74519deeb878b7e8eb6652acc3763904a3dae9ce",
+          "rev": "f7f20c26061dc9896afb40ffbd1ab3d12fe8e359",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1c1deeb37c2ea195cb555dede7afb14c79d0ee5f",
+      "rev": "1f533af3481e999e6180a99fc3cc46a9ea78e7c3",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
