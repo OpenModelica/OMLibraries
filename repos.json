@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9fb92877e18a40109cce9cc0775a3f7839026ada",
+          "rev": "f58e63e1e281f2886d127f649ce1853b9678bfa2",
           "targets": [
             "IBPSA latest"
           ]
@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1c11e7366188577f8d71e126f1e87f7be0bd7937",
+      "rev": "acaa48771f27d0038d3e4fd4b88a4f46f8130c53",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0f8030e958447e16a65938579225886bcfdf841a",
+          "rev": "d56c3f616a2c9d8326ec7cbbecb60904b8d86493",
           "targets": [
             "Buildings latest"
           ]
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6200232d0597d93f66dd2d81155a0bf893ec79e8",
+      "rev": "bc929fcde85f4309df1931b405e4fe5734a55de2",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
