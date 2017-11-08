@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "acaa48771f27d0038d3e4fd4b88a4f46f8130c53",
+      "rev": "e6b19ad3476b0020ec1cc92ac168faaa456da6db",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f3fabf848b7fdb843b3f718ff1d2c480a0c7b067",
+          "rev": "a9628337aa44f0c3c174fe9dc5180049eafda74f",
           "targets": [
             "Buildings latest"
           ]
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9bdff533487a7dd57160f93b7e85ff44758e9548",
+      "rev": "571e40d5d263a4bccef133383d2c0aa83d2c15b8",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d6a935c254250a914c6bae0690014cd8bf0b10fb",
+          "rev": "662500cc6ccb3dc91e68a24f4a389586c0cb6f5e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "76616cde8c40a18661d836e2dcb44bf34a998885",
+      "rev": "0ee212797f77b675b67c196cf98695cd05ec41fb",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
