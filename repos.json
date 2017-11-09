@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a9628337aa44f0c3c174fe9dc5180049eafda74f",
+          "rev": "a0d3021b5c28feafafd71e33b3978e6968fa066e",
           "targets": [
             "Buildings latest"
           ]
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "662500cc6ccb3dc91e68a24f4a389586c0cb6f5e",
+          "rev": "8d55e1b2ec5006835542181cf171d572e5eb61a8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0ee212797f77b675b67c196cf98695cd05ec41fb",
+      "rev": "d3146a0d7cfaf98cc1d2b54dd990ba36b31aba85",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1f533af3481e999e6180a99fc3cc46a9ea78e7c3",
+      "rev": "4b97ac8de5992289ad6327e3bd6dca4cdb985393",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -865,7 +865,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04cebd491139aac70e642b5f8d022a71373d9cd4",
+      "rev": "1ff2bef51dab185fad9a2a20686a9f40cc8c7c2a",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
