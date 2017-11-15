@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "dfff3e908dbaf91b44d10fd924ef643263a8f6ec",
+          "rev": "32c9f326e5d8eddafef597fb03093bcda62c3c35",
           "targets": [
             "Buildings latest"
           ]
@@ -387,7 +387,7 @@
         "gitbranch": "master",
         "patchlevel": "om1"
       },
-      "rev": "68954e9bbe4664abad74ecd9209284143aefc58a",
+      "rev": "c4a2a9a1974bd6dca68774e841fee2ce926e1dd2",
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems.git"
     },
     {
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "84c4203cd4da6cfbce6ca74b971bf8c2dc1260f5",
+      "rev": "d58df24bb55064ca45937d560b12fba65b0844b0",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
