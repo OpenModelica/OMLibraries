@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ad56980fa0b8c4890770723f22544ee1a975c489",
+      "rev": "6ccf2436935a7df1827d24f8fca932e87498e9ed",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "32c9f326e5d8eddafef597fb03093bcda62c3c35",
+          "rev": "5a6db5cc3a2ed3213fd1a686f9dd063e6c604932",
           "targets": [
             "Buildings latest"
           ]
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9aa23afb0994f98ad1bad9161a30c65d7d6e4455",
+          "rev": "f1628f6a8b9362f65d65abfd0c16a149ecf66dce",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d58df24bb55064ca45937d560b12fba65b0844b0",
+      "rev": "83df0168fa4c12f949c287b9013ca22379b84fa6",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -865,7 +865,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1ff2bef51dab185fad9a2a20686a9f40cc8c7c2a",
+      "rev": "442f5fc0765f01e5a1120a5d45debcd0bea28829",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
