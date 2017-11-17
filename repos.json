@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "5a6db5cc3a2ed3213fd1a686f9dd063e6c604932",
+          "rev": "704eda89fb5c9978d3ec5879254c6cc397e245ae",
           "targets": [
             "Buildings latest"
           ]
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "83df0168fa4c12f949c287b9013ca22379b84fa6",
+      "rev": "ebd36096254b36ab36da5653ce47e320e6f549a4",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -618,7 +618,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d619f54d0283e9fb28ba51768d978169afab30bc",
+      "rev": "844900dcabc522de73182463ed3c5f8b94aff4cb",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
