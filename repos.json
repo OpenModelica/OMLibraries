@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6ccf2436935a7df1827d24f8fca932e87498e9ed",
+      "rev": "9d6a61e41252fb9a8325cb3f1f724f702835dff3",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -280,7 +280,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "5622905cefccbf78998af8caf1589316c394fea8",
+      "rev": "88fda2ce27ac7b2e238f2b708b7f1c52254acd33",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "738a1d694cea40b98f36a86d69e0964636467eed",
+      "rev": "faf08e2e468d6ab8fc3b7714587f580f6d9666a9",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -691,7 +691,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "87fcef37344882a3de4e9a3a8a06fa4fb2753e6b",
+      "rev": "fb0bb36dfb4e8ae738423ee4e4d8905d88da0c1e",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
