@@ -84,7 +84,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d062c185c2bf4fbd2a515a6f317648a57debec8d",
+      "rev": "071e2bfd2e5791f0d586cddfa669b7f363a44784",
       "url": "https://github.com/modelica-3rdparty/AixLib.git"
     },
     {
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f1628f6a8b9362f65d65abfd0c16a149ecf66dce",
+          "rev": "307e16c7a87e4fc203914e1d30a2ba32c9996e9c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "faf08e2e468d6ab8fc3b7714587f580f6d9666a9",
+      "rev": "c58baab7268dca9a502b9e5df327c129d8caef0f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
