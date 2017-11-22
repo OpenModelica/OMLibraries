@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f58e63e1e281f2886d127f649ce1853b9678bfa2",
+          "rev": "7127d27a79fe605cdd312ae6d42abb34b42245a2",
           "targets": [
             "IBPSA latest"
           ]
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6546b7ce4c41fcf33335bd031ad89565b2c05d13",
+          "rev": "894b079ac99c690ee60f84c95ccdf2839394c6de",
           "targets": [
             "Buildings latest"
           ]
@@ -296,7 +296,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a9f11638da1babd0598c03ad268167ddb695295f",
+      "rev": "0ec4cf9b85c80190f432e8054ce277eb7c0dae78",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
