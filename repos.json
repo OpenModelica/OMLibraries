@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "894b079ac99c690ee60f84c95ccdf2839394c6de",
+          "rev": "85600385ebd24b8196981bdb991a726e5884fcbd",
           "targets": [
             "Buildings latest"
           ]
@@ -304,7 +304,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0af664ad7f693ff24e96f4581384bb95746924d5",
+      "rev": "159518edd538b64e28cd70983a9cc47730323cc4",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c58baab7268dca9a502b9e5df327c129d8caef0f",
+      "rev": "c70a6190b1448dd16f21a5e3d9b927bb401ac425",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
