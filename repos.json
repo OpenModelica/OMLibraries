@@ -152,7 +152,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9d6a61e41252fb9a8325cb3f1f724f702835dff3",
+      "rev": "277bd8133133dd32069dbe68d5e275b8494eb602",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "307e16c7a87e4fc203914e1d30a2ba32c9996e9c",
+          "rev": "bcca23ec045c0a1a7c1c142b9d17ed3b51c1545c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "440fbf68c3d7dde3b5104c04fc29bc38985bbca5",
+      "rev": "61cc9cb719e0bbf712a87e943bb30798fb1db5a1",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
