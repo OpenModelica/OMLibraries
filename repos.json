@@ -95,7 +95,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "7127d27a79fe605cdd312ae6d42abb34b42245a2",
+          "rev": "077af427b5c750e35799b0a1e678ab57449f81cb",
           "targets": [
             "IBPSA latest"
           ]
@@ -163,7 +163,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "85600385ebd24b8196981bdb991a726e5884fcbd",
+          "rev": "65514f9ede9384843e19283a04385f258fab23ce",
           "targets": [
             "Buildings latest"
           ]
@@ -518,7 +518,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bcca23ec045c0a1a7c1c142b9d17ed3b51c1545c",
+          "rev": "457c3383823f564e0d3f3d3216c8aed7d0785532",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -560,7 +560,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "61cc9cb719e0bbf712a87e943bb30798fb1db5a1",
+      "rev": "8c5a7db0d76309a846943899366d80b0ed0575af",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -683,7 +683,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4b97ac8de5992289ad6327e3bd6dca4cdb985393",
+      "rev": "2e9e6d1e9448ead117ac483ee1c3b592de2e17ca",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
