@@ -1,7 +1,7 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-10 19:04:59.683995535 +0100
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-10 19:05:14.444013800 +0100
-@@ -1131,7 +1131,8 @@
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-11 19:03:31.983263284 +0100
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-11 19:04:25.826684126 +0100
+@@ -1133,7 +1133,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -11,7 +11,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
          end IMC_YD;
  
          model IMC_Transformer "Induction machine with squirrel cage starting with transformer"
-@@ -1414,7 +1415,8 @@
+@@ -1416,7 +1417,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -22,8 +22,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Inverter
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2017-12-10 19:04:59.687995540 +0100
-+++ build/Modelica trunk/Math/package.mo	2017-12-10 19:05:07.004004562 +0100
+--- git/Modelica/Modelica/Math/package.mo	2017-12-11 19:03:31.991263192 +0100
++++ build/Modelica trunk/Math/package.mo	2017-12-11 19:04:18.186762116 +0100
 @@ -13215,9 +13215,67 @@
  
    annotation (Documentation(info="<html>
@@ -170,8 +170,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2017-12-10 19:04:59.687995540 +0100
-+++ build/Modelica trunk/Math/package.order	2017-12-10 19:05:07.004004562 +0100
+--- git/Modelica/Modelica/Math/package.order	2017-12-11 19:03:31.991263192 +0100
++++ build/Modelica trunk/Math/package.order	2017-12-11 19:04:18.186762116 +0100
 @@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
@@ -180,8 +180,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2017-12-10 19:04:59.771995643 +0100
-+++ build/Modelica trunk/package.mo	2017-12-10 19:05:15.264014822 +0100
+--- git/Modelica/Modelica/package.mo	2017-12-11 19:03:32.087262097 +0100
++++ build/Modelica trunk/package.mo	2017-12-11 19:04:27.002672238 +0100
 @@ -8251,12 +8251,12 @@
  
  annotation (
