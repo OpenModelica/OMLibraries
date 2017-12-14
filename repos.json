@@ -519,7 +519,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b7713aa8fed64e9edcf5bf4311e574176f3bad2c",
+          "rev": "c72fe9481999a4e29f1dad8d7a5bb9b707963aa1",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -602,7 +602,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b8d292b0ab989cd177f685f8d649c0b300f9694",
+      "rev": "165795f8d23137e726188db21bc1229129ba5e30",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
