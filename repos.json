@@ -164,7 +164,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f9edc25f09731dd7d035f6e30e3848be68717ca6",
+          "rev": "8fc31582ce967bdb9eb36626b887a7431b478d9c",
           "targets": [
             "Buildings latest"
           ]
@@ -297,7 +297,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5ec408f52d1e5a692ee938d8e26bc915aa1925c",
+      "rev": "598145412ff8020c4efb0c604c753d44750cda4e",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -866,7 +866,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "442f5fc0765f01e5a1120a5d45debcd0bea28829",
+      "rev": "fa66859a7b25c49944c72dd70ae4500f4d340d8c",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
