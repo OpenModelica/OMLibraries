@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Sources.mo "build/Modelica 3.2.2/Blocks/Sources.mo"
---- git/Modelica/Modelica/Blocks/Sources.mo	2017-12-30 19:04:26.035997327 +0100
-+++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-12-30 19:04:43.248105319 +0100
+--- git/Modelica/Modelica/Blocks/Sources.mo	2017-12-31 19:04:24.990613502 +0100
++++ build/Modelica 3.2.2/Blocks/Sources.mo	2017-12-31 19:04:44.466714311 +0100
 @@ -2379,7 +2379,8 @@
        input Modelica.Blocks.Types.ExternalCombiTimeTable tableID;
        input Real timeIn;
@@ -12,8 +12,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Sources.mo "b
        external"C" nextTimeEvent = ModelicaStandardTables_CombiTimeTable_nextTimeEvent(tableID, timeIn)
          annotation (Library={"ModelicaStandardTables", "ModelicaMatIO", "zlib"});
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "build/Modelica 3.2.2/Blocks/Tables.mo"
---- git/Modelica/Modelica/Blocks/Tables.mo	2017-12-30 19:04:26.035997327 +0100
-+++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-12-30 19:04:42.324099541 +0100
+--- git/Modelica/Modelica/Blocks/Tables.mo	2017-12-31 19:04:24.990613502 +0100
++++ build/Modelica 3.2.2/Blocks/Tables.mo	2017-12-31 19:04:43.102707283 +0100
 @@ -59,7 +59,8 @@
        input Integer icol;
        input Real u;
@@ -105,8 +105,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Blocks/Tables.mo "bu
        input Real der_u2;
        output Real der_y;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-30 19:04:26.083997629 +0100
-+++ build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-30 19:04:47.912134443 +0100
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-31 19:04:25.042613772 +0100
++++ build/Modelica 3.2.2/Magnetic/QuasiStatic/FundamentalWave.mo	2017-12-31 19:04:49.482740114 +0100
 @@ -1133,7 +1133,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
@@ -128,8 +128,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Inverter
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica 3.2.2/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2017-12-30 19:04:26.087997654 +0100
-+++ build/Modelica 3.2.2/Math/package.mo	2017-12-30 19:04:37.724070748 +0100
+--- git/Modelica/Modelica/Math/package.mo	2017-12-31 19:04:25.046613794 +0100
++++ build/Modelica 3.2.2/Math/package.mo	2017-12-31 19:04:38.574683918 +0100
 @@ -13225,9 +13225,67 @@
  
    annotation (Documentation(info="<html>
@@ -276,8 +276,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica 3.2.2/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2017-12-30 19:04:26.087997654 +0100
-+++ build/Modelica 3.2.2/Math/package.order	2017-12-30 19:04:37.724070748 +0100
+--- git/Modelica/Modelica/Math/package.order	2017-12-31 19:04:25.046613794 +0100
++++ build/Modelica 3.2.2/Math/package.order	2017-12-31 19:04:38.574683918 +0100
 @@ -29,4 +29,6 @@
  baseIcon2
  wrapAngle

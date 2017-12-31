@@ -492,7 +492,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "28cf3e3250e6523baad6ccc0f73ef195501cf087",
+          "rev": "db89e60206646c9a9d89a314c0fc1b012c903671",
           "targets": [
             "Complex",
             "Modelica",
@@ -519,7 +519,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3f943afe8bc45f3ef8d2707a7bfebc502a622d22",
+          "rev": "c028495430bba90c2700c58c0e3f21af25737a11",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
