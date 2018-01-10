@@ -50,6 +50,7 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.3",
     "Modelica_StateGraph2 2.0.2": "Modelica_StateGraph2 2.0.3",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
+    "PhotoVoltaics X.X.X": "PhotoVoltaics 1.1.1",
     "Physiolibrary 2.3.2": "Physiolibrary 2.3.2-beta"
   },
   "repos": [
