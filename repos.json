@@ -493,7 +493,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3c6c5ac96e2825e81a3c3d51d8f25587c496eff2",
+          "rev": "b43ec3a87bc77a4e6898c084f3bd93c2b5945e6a",
           "targets": [
             "Complex",
             "Modelica",
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ce7e9d12ed557d11df116f5f6b8846577d367296",
+          "rev": "9d760cddbe93b1c2cf159f9db85fad954507bdf4",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -709,7 +709,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "ece5e550877294d1d886c3864b78c4a00eaf15da",
+      "rev": "ebfea2527a76b29e9b67bf85c22e0c7a6081d9c5",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
@@ -945,7 +945,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "07f03628710966dda0ba0ea90547968b92d9d9da",
+      "rev": "e85cf7af06d0a4140de6ce8e9ed1dbd97e87bb8a",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
