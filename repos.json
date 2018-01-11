@@ -226,7 +226,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ac5adb752c8ae7dec0f6c81d174b72a43a01659f",
+      "rev": "dd9375a3a90dec99bbd45217d7323dfb7d4ca68c",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a56e5ba8e7158cb105cf7199e93421ceef59bf16",
+          "rev": "f9fdb3b865d4bb26adf99060f96f852d978a1c16",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
