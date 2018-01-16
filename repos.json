@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5bf52731965b9bdac539689deeb4c0e2f0489a51",
+      "rev": "b1e9b9f94bbcd601a9433e1313662e0b6245458e",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -282,7 +282,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "88fda2ce27ac7b2e238f2b708b7f1c52254acd33",
+      "rev": "07fbf861902c5aa015cf3d25902a1a8d4ef16ba8",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bd7cf51b522fee417c09cddedffab75db469ee1c",
+          "rev": "cf964a06a7665927c64392c95b95dfd5e4caa5f9",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
