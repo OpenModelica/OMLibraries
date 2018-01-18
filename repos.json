@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "818e8c5e77195ceb92b226221c0894dbb5d3f08a",
+          "rev": "bc9c606c3b8b83304b24f31a984c432da120d1a9",
           "targets": [
             "Buildings latest"
           ]
@@ -298,7 +298,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0b4e8f920e09c7c59e318f77b3efdc6d2ce96ccb",
+      "rev": "00fc4ea4d44ec5404b903437ae01e8679efbed16",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3fe8775fdc3ca4eeec4d5dfdba8d89a98acb017b",
+          "rev": "8307658bb5c035901e45e8284a42e142fb14b606",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -562,7 +562,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bebf2b22a0a6f2d40cf31efc0f4db98b3d0f1f4f",
+      "rev": "d17d4dae19ebe9a2e9d6ed3f3dc7b22847fe623d",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
