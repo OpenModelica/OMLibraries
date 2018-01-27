@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b1e9b9f94bbcd601a9433e1313662e0b6245458e",
+      "rev": "8577853811db9e384707f345409b0c2c76222309",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "bc9c606c3b8b83304b24f31a984c432da120d1a9",
+          "rev": "5b79ba7b99b2a6c9db161f574425bf5f37bd0d5e",
           "targets": [
             "Buildings latest"
           ]
@@ -298,7 +298,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00fc4ea4d44ec5404b903437ae01e8679efbed16",
+      "rev": "d43f227d0c3de11b572b81c8efc4539d3fedb870",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "8307658bb5c035901e45e8284a42e142fb14b606",
+          "rev": "262df09e68c4db8a8375a673c7ac258a47e2c60b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -562,7 +562,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d17d4dae19ebe9a2e9d6ed3f3dc7b22847fe623d",
+      "rev": "da972f2e97836282988b34642e25b9ecd76a360f",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -841,7 +841,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dd3d95daaa5003af8176691d2078d94b40803cce",
+      "rev": "9fd3302ed9d4228d4e05f56f665f8ebb4a11724f",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
