@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2018-01-27 07:32:24.421594384 +0100
-+++ build/ModelicaServices trunk/package.mo	2018-01-27 07:33:29.021635853 +0100
+--- git/Modelica/ModelicaServices/package.mo	2018-01-28 19:05:13.830898298 +0100
++++ build/ModelicaServices trunk/package.mo	2018-01-28 19:05:30.650961767 +0100
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -11,7 +11,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
      "Target of this ModelicaServices implementation";
  
    package UsersGuide "User's Guide"
-@@ -595,7 +595,7 @@
+@@ -144,7 +144,7 @@
        extends
          Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
        algorithm
@@ -20,7 +20,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
  
        annotation (Documentation(info="<html>
  <p>
-@@ -613,7 +613,7 @@
+@@ -162,7 +162,7 @@
        "Smallest number such that small and -small are representable on the machine";
      final constant Real inf=1e60
        "Biggest Real number such that inf and -inf are representable on the machine";
@@ -29,7 +29,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
        "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
      annotation (Documentation(info="<html>
  <p>
-@@ -663,12 +663,12 @@
+@@ -212,12 +212,12 @@
    annotation (
      Protection(access=Access.hide),
      preferredView="info",
