@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2018-01-28 19:05:13.830898298 +0100
-+++ build/ModelicaServices trunk/package.mo	2018-01-28 19:05:30.650961767 +0100
+--- git/Modelica/ModelicaServices/package.mo	2018-01-29 19:07:19.890790052 +0100
++++ build/ModelicaServices trunk/package.mo	2018-01-29 19:07:38.698629141 +0100
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
