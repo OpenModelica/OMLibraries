@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8577853811db9e384707f345409b0c2c76222309",
+      "rev": "776fbc48ee2be3f8b90380e98e391be56a66dafa",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -226,7 +226,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dd9375a3a90dec99bbd45217d7323dfb7d4ca68c",
+      "rev": "cf6e58dadc8451f1c45a67103fff0c67bc4c49f7",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a906e1804416c6f2b5ef49ceacce45e7675f127c",
+          "rev": "2daf67e60bf2038b85f6bea664578e251e54e5da",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
