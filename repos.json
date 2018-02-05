@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f8e3f9eaa6d0a355ed93e1b0d4892d40aba1f042",
+          "rev": "56d290d8aa76a2e0d07072bfc17c5914b91fc096",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -754,7 +754,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c6ab50fed9e51dcff6554c2836fc7d7f67b94706",
+      "rev": "821fbe2c2153ff1f6d2480162d00944b7c2aeb0d",
       "targets": [
         "PowerSystems latest"
       ],
