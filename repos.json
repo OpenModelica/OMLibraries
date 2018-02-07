@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4dd8d1a85408d6b8ef83c8ed3f3d5742c9ad3798",
+      "rev": "ded83e791d1f78de6671d33ec486fa245c0d0782",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -685,7 +685,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2e9e6d1e9448ead117ac483ee1c3b592de2e17ca",
+      "rev": "fe2dbb43072b845e02eaa97a43b7cfc51dff4f73",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
