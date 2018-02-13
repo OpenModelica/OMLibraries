@@ -520,7 +520,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "48cd960aca8352622bf8fa1b939462dc1703c96a",
+          "rev": "4eafac60a2492b7cbde7d195eaf236200e5027a8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -961,7 +961,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9a800dcbf2d5c491cf52b5adc11c776e2e155961",
+      "rev": "4ec41c353553c713e5c5d2c0eb647b8c1ce10619",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
