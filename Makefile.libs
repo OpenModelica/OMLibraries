@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20180306_115038.core
-ALL_TARGET=$(BUILD_DIR)/20180306_115038.all
+CORE_TARGET=$(BUILD_DIR)/20180306_132439.core
+ALL_TARGET=$(BUILD_DIR)/20180306_132439.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20180306_115038
+TIMESTAMP=20180306_132439
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '42428db6e84bcde28543a3bba9bccee581309bb1'
@@ -152,6 +152,20 @@ Buildings:
 	echo 'Modelica_StateGraph2 2.0.2' >> "$(BUILD_DIR)/Buildings 3.0.0.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings 3.0.0.license"
 	echo '3.0.0' > "$(BUILD_DIR)/Buildings 3.0.0.last_change"
+	# Building git/Buildings
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v4.0.0' 'v4.0.0'
+	test ! -d 'build//Buildings 4.0.0'
+	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings 4.0.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings 4.0.0.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Buildings 4.0.0.license"
+	echo '4.0.0' > "$(BUILD_DIR)/Buildings 4.0.0.last_change"
+	# Building git/Buildings
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v5.0.1' 'v5.0.1'
+	test ! -d 'build//Buildings 5.0.1'
+	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings 5.0.1"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings 5.0.1.uses"
+	echo 'buildings' > "$(BUILD_DIR)/Buildings 5.0.1.license"
+	echo '5.0.1' > "$(BUILD_DIR)/Buildings 5.0.1.last_change"
 Chemical:
 	# Building git/Chemical
 	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' 'd828c32e72b30849292ca6f485e6ee8e8c55a9dd'
@@ -812,12 +826,12 @@ SolarTherm:
 	echo 'modelica2' > "$(BUILD_DIR)/SolarTherm.license"
 	echo '20180119-175437~git~master' > "$(BUILD_DIR)/SolarTherm.last_change"
 	# Building git/SolarTherm
-	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'alberto-merge' '39df6f61a5ee7fcabd882c35479643f5c9949dec'
+	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'alberto-merge' '2cc23484edae71a8b14743d14f06b1d170ea8a7c'
 	test ! -d 'build//SolarTherm alberto-merge'
 	cp -a 'git/SolarTherm/SolarTherm' "$(BUILD_DIR)/SolarTherm alberto-merge"
 	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/SolarTherm alberto-merge.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/SolarTherm alberto-merge.license"
-	echo '20180306-193639~git~alberto-merge' > "$(BUILD_DIR)/SolarTherm alberto-merge.last_change"
+	echo '20180306-230032~git~alberto-merge' > "$(BUILD_DIR)/SolarTherm alberto-merge.last_change"
 Spot:
 	# Building git/Spot
 	./checkout-git.sh 'git/Spot' 'https://github.com/modelica-3rdparty/Spot.git' 'master' 'b5c084ca0cbb13ba137ac2c449240410cecfaaf1'
