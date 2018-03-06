@@ -368,6 +368,14 @@
       "url": "https://github.com/modelica-3rdparty/FuzzyControl.git"
     },
     {
+      "dest": "HanserModelica",
+      "options": {
+        "gitbranch": "release"
+      },
+      "rev": "ffbb49b5b0317b0543f7c7c07c07e16a0cc07003",
+      "url": "https://github.com/christiankral/HanserModelica.git"
+    },
+    {
       "dest": "HelmholtzMedia",
       "options": {
         "gitbranch": "master"
