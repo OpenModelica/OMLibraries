@@ -217,6 +217,22 @@
             "license": "buildings"
           },
           "rev": "v3.0.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v4.0.0",
+            "license": "buildings"
+          },
+          "rev": "v4.0.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v5.0.1",
+            "license": "buildings"
+          },
+          "rev": "v5.0.1"
         }
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
