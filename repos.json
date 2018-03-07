@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5e45fe56084258e77e817fd8221e65cfa9d4a117",
+      "rev": "a5be66b3bff344a51540123813e76f2a23f24ff7",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "2cc23484edae71a8b14743d14f06b1d170ea8a7c",
+          "rev": "6b6a5d7ab05c8c585979e13d75e4cdd0708c9cb4",
           "targets": [
             "SolarTherm alberto-merge"
           ]
