@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4c7fde435669c8f51bf7818c6971a0fc174a33e0",
+          "rev": "66ee09c66c18dce7174ef49fdaf9d85c090a3e7b",
           "targets": [
             "Buildings latest"
           ]
@@ -314,7 +314,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "92a2eb5c93edb281bffc675eaac47a3be5ceee5e",
+      "rev": "eb585309e727f840f3b0b00aa1473c7244857f7c",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "56603f6baace449dd37da09017c24e4af696bf01",
+          "rev": "441f046d03032e9ccc78c919df2a2276d91ee04d",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "e3a25cde764edcd83f041323a7d2bbea6f6995a0",
+          "rev": "8ef7737471949d59b4700364263a61ba3c465c6e",
           "targets": [
             "SolarTherm alberto-merge"
           ]
