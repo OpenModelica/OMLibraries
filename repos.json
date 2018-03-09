@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "441f046d03032e9ccc78c919df2a2276d91ee04d",
+          "rev": "8bbdc01385ee680bb4be055cae161a0d756be6a8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -717,7 +717,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8f1c93af39001b4f972d87aaea23da612465c1d4",
+      "rev": "7a664725a745476d0bf451ede22d90591dbf6fa6",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "8ef7737471949d59b4700364263a61ba3c465c6e",
+          "rev": "458aa7408cc8e587e68d1ffa897f9ec8ddd7a41f",
           "targets": [
             "SolarTherm alberto-merge"
           ]
