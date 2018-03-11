@@ -388,7 +388,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "ffbb49b5b0317b0543f7c7c07c07e16a0cc07003",
+      "rev": "bf32be1826b8c857e54ffc23b990b592c16ab061",
       "url": "https://github.com/christiankral/HanserModelica.git"
     },
     {
@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a6540f84ec439e5356f5e1142922dc566e77a70b",
+          "rev": "a5a15eca57d5648c0a28aafd444989439a49b022",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
