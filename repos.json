@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a5a15eca57d5648c0a28aafd444989439a49b022",
+          "rev": "05bd8a0c64fd06550e0b3e396a7fa9380154a31c",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1030,7 +1030,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "84cd413e22ab393baf76226120deaa8f1d8181bd",
+      "rev": "929927c6acddcd6b466c7b5ecdceb47717e449dd",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
