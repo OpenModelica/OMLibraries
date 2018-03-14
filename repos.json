@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5be66b3bff344a51540123813e76f2a23f24ff7",
+      "rev": "a2d14949e333838374954daf238b0b8c5c3fa1a5",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "458aa7408cc8e587e68d1ffa897f9ec8ddd7a41f",
+          "rev": "cf3746d15590a99fe3f3f7ca5dfb49ba530ef10c",
           "targets": [
             "SolarTherm alberto-merge"
           ]
@@ -1030,7 +1030,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "df851719da39de48c827188a26e165e1fb0f033f",
+      "rev": "fb34fc5bc836622d50b0ce2b5d05af39bb96c73d",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
