@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "cf3746d15590a99fe3f3f7ca5dfb49ba530ef10c",
+          "rev": "9c646cb3465b190644facaebf8dc3266e91f3846",
           "targets": [
             "SolarTherm alberto-merge"
           ]
