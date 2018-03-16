@@ -517,7 +517,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9f23c3aac9eebeac4c95c6813211982952a7c135",
+          "rev": "efd11375c5550f92210d8637bc8d73b3d7d36831",
           "targets": [
             "Complex",
             "Modelica",
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "9c646cb3465b190644facaebf8dc3266e91f3846",
+          "rev": "6e1c19ea9f0ff640d2dc7c2fcaeceb101c4474a3",
           "targets": [
             "SolarTherm alberto-merge"
           ]
