@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "42428db6e84bcde28543a3bba9bccee581309bb1",
+      "rev": "4243f80468af6aa1b5e9f0f8d37b8c321218834a",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -873,7 +873,7 @@
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "38082dcab09253e1b24592b5600939df1b1015f7",
+          "rev": "7abaf8de6d84d0dc4a4ad962a4bb111a4fd8790a",
           "targets": [
             "SolarTherm alberto-merge"
           ]
