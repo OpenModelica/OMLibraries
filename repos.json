@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "161d900182ff920c45e036a1563543eb636e1d90",
+          "rev": "84f164315bd47f27aff16796bdf46f3190046911",
           "targets": [
             "Buildings latest"
           ]
@@ -867,13 +867,13 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "9fd3302ed9d4228d4e05f56f665f8ebb4a11724f"
+          "rev": "22f0aac51191cd40a2675c92fe3b3b924f6464ec"
         },
         {
           "options": {
             "gitbranch": "alberto-merge"
           },
-          "rev": "99a3e6770813e50da7c2994ee90d1974ea6ed37b",
+          "rev": "7c1ddcd95378793b10e3727607c53be24f9f94fd",
           "targets": [
             "SolarTherm alberto-merge"
           ]
