@@ -97,7 +97,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "58aacb9308c8efac87cd7be94483e19bd918309d",
+          "rev": "5ff1882996be3125199c18740ac9ff8491fa254e",
           "targets": [
             "IBPSA latest"
           ]
@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "73f3e6014529a88ce945834783c0be9b9fd9a246",
+          "rev": "a6fd1cd5f6ee1fde75cbfb728fde99f4a6f2b3f2",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a0681972ccd56cf83305ce4e3fc4340ff3c17b36",
+      "rev": "304cd4904889d2183b56f9a0254bf82001e368e6",
       "url": "https://github.com/modelica-3rdparty/Servomechanisms.git"
     },
     {
@@ -867,7 +867,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "22f0aac51191cd40a2675c92fe3b3b924f6464ec"
+          "rev": "70ed8d5e43c4682859f613d2df731ce5f3abf888"
         },
         {
           "options": {
