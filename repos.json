@@ -97,7 +97,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "5ff1882996be3125199c18740ac9ff8491fa254e",
+          "rev": "edd9dd08a156aa6ed9dcb3066239baecae72ab40",
           "targets": [
             "IBPSA latest"
           ]
@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b9d5d9e9cf7e46fcc01dd953c6136129828b0146",
+      "rev": "00f798afcce6f7e135638c1e392bc2674c8a8bba",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "84f164315bd47f27aff16796bdf46f3190046911",
+          "rev": "1581ceab6bfbafbea904711290ffe7b20cd527ee",
           "targets": [
             "Buildings latest"
           ]
@@ -314,7 +314,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "eb585309e727f840f3b0b00aa1473c7244857f7c",
+      "rev": "b27c9837cc25780763b3fb4ffa10fcb2169156a4",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a6fd1cd5f6ee1fde75cbfb728fde99f4a6f2b3f2",
+          "rev": "307b186b488d78026def98ea2aca02ccb864f964",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -824,7 +824,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0619c17c82679ee0aad8062ad7d40890c606ad81",
+      "rev": "87059c2383add5405548ac3b07498e470fb23b1f",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -867,7 +867,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "70ed8d5e43c4682859f613d2df731ce5f3abf888"
+          "rev": "9b10d5793266899f30922687a35a6a1a2d8d90f1"
         },
         {
           "options": {
