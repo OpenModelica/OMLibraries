@@ -355,7 +355,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7f992b1ab5fe91f1c95407fa0bf9589786405d3a",
+      "rev": "e7be353e11e72a7644315cd3d39d72a12ee858a7",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -709,7 +709,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fe2dbb43072b845e02eaa97a43b7cfc51dff4f73",
+      "rev": "d735ecaba9e2f4c87d54fc32cd796fe17e98fa36",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -867,7 +867,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "341465c8a8e9a21b4a6f0ac4ec7cb629fc92fc2f"
+          "rev": "e0e34cc9adde0b67796e74efe1caa6b4b0e98157"
         },
         {
           "options": {
