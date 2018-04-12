@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-11 19:03:17.094369323 +0200
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-11 19:04:29.749042605 +0200
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-12 19:03:28.693205221 +0200
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-12 19:04:34.081610004 +0200
 @@ -1128,7 +1128,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
@@ -22,8 +22,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Inverter
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2018-04-11 19:03:17.102369167 +0200
-+++ build/Modelica trunk/Math/package.mo	2018-04-11 19:04:22.425168303 +0200
+--- git/Modelica/Modelica/Math/package.mo	2018-04-12 19:03:28.701205270 +0200
++++ build/Modelica trunk/Math/package.mo	2018-04-12 19:04:26.229560846 +0200
 @@ -13216,9 +13216,67 @@
  
    annotation (Documentation(info="<html>
@@ -170,8 +170,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2018-04-11 19:03:17.102369167 +0200
-+++ build/Modelica trunk/Math/package.order	2018-04-11 19:04:22.425168303 +0200
+--- git/Modelica/Modelica/Math/package.order	2018-04-12 19:03:28.701205270 +0200
++++ build/Modelica trunk/Math/package.order	2018-04-12 19:04:26.229560846 +0200
 @@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
@@ -180,8 +180,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2018-04-11 19:03:17.210367059 +0200
-+++ build/Modelica trunk/package.mo	2018-04-11 19:04:30.861023671 +0200
+--- git/Modelica/Modelica/package.mo	2018-04-12 19:03:28.809205929 +0200
++++ build/Modelica trunk/package.mo	2018-04-12 19:04:35.269617454 +0200
 @@ -7858,12 +7858,12 @@
  
  annotation (
