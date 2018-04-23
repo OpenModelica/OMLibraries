@@ -97,7 +97,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "b683cf0f80ffaf99feb27034020c58083ee20f2c",
+          "rev": "fe76af98abfb974ede12c1274048211da2ed0a1d",
           "targets": [
             "IBPSA latest"
           ]
@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "56243d87efc704b835998527a8b9f1890b42a9bc",
+      "rev": "f05002df93ef2733c6b4869a068ade8cbf9e0627",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "90bae0186b5ad731a080f5f75d881499fa59e9ef",
+          "rev": "ebfb64009a67fcee5cd8482111ebb5967b8c866c",
           "targets": [
             "Buildings latest"
           ]
@@ -314,7 +314,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6ea6341b29871afaa818e61f76bd5fe2be6f2ac9",
+      "rev": "761bcd1d1dcdebe60c4ae56e714569ded11a90be",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -355,7 +355,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e7be353e11e72a7644315cd3d39d72a12ee858a7",
+      "rev": "251892e06eb33189dc11dd254ea067041fc8150b",
       "url": "https://github.com/modelica-3rdparty/FaultTriggering.git"
     },
     {
@@ -544,7 +544,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d49317d3271070e8ce225f3970699f0755be5c99",
+          "rev": "80e8c9bdbeda7f03794fa7d626989cd19887f56e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -867,7 +867,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "5bde0a59e5bd22dc402b3c55c251b0365695865a"
+          "rev": "cd764f33b4b8bc162422366b660d79597b090ce8"
         },
         {
           "options": {
@@ -1030,7 +1030,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fb34fc5bc836622d50b0ce2b5d05af39bb96c73d",
+      "rev": "3698d29f2452b3dbf1b70566821caf1c43d476c7",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
