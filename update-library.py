@@ -156,7 +156,9 @@ def checkLatest(repo):
         msg = '%s branch %s has working head %s. It was pinned to the old revision and will not be updated.' % (repo['url'],branch,newrev)
       else:
         if "generate-patch-mos" in options:
-          if 0 == os.system("%s %s" % (parser_options.omc,options["generate-patch-mos"])):
+          cmd = "%s %s" % (parser_options.omc,options["generate-patch-mos"])
+          print("Running command %s" % cmd)
+          if 0 == os.system(cmd):
             updateOK = True
             for f in options["patch-files"]:
               if not os.path.exists(f):

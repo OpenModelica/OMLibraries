@@ -50,6 +50,7 @@ end if;
 writeFile("new.Math.mo", mathFileStr);getErrorString();
 */
 
+print("Update version strings...\n");
 // Set version=trunk and all uses-annotations also=trunk
 for clStr in {"Modelica","ModelicaServices","Complex","ModelicaTest"} loop
   print("Start version="+clStr+"\n");
@@ -88,6 +89,7 @@ for clStr in {"Modelica","ModelicaServices","Complex","ModelicaTest"} loop
   fileStrPackage := diffModelicaFileListings(fileStrPackage, listing, OpenModelica.Scripting.DiffFormat.plain);
 
   writeFile(packageFile, fileStrPackage);getErrorString();
+  print("Write version updates for: " + packageFile + "\n");
 end for;
 
 echo(false);
