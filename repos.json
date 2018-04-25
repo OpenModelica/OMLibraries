@@ -154,7 +154,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f05002df93ef2733c6b4869a068ade8cbf9e0627",
+      "rev": "9a2df353586e6dce553921c7fe554270c4ba09bb",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -436,7 +436,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "71c498a74bf3dc59475861aa3e8964e48989e41e",
+      "rev": "8a30a0fcb1def7f4ae79b5c385a2f40f8d4f0d59",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -553,7 +553,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "79081ba8f80b6ff08add4ab6941cd6c99d3cb8a0",
+          "rev": "33d0293580b95c47e2880bde94023c71ed02edbc",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1039,7 +1039,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3698d29f2452b3dbf1b70566821caf1c43d476c7",
+      "rev": "df829f45bfb0a5cf3e44ee967bef5767f02b7515",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
