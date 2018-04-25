@@ -431,6 +431,15 @@
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
+      "dest": "LibRAS",
+      "options": {
+        "gitbranch": "master",
+        "license": "gpl3"
+      },
+      "rev": "71c498a74bf3dc59475861aa3e8964e48989e41e",
+      "url": "https://github.com/FishSim/LibRAS.git"
+    },
+    {
       "dest": "LinearMPC",
       "options": {
         "gitbranch": "master"
