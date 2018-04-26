@@ -1,11 +1,11 @@
---- git/Modelica/Complex.mo	2018-04-25 15:29:27.849065349 +0200
-+++ build/Complex trunk.mo	2018-04-25 15:29:41.253129442 +0200
+--- git/Modelica/Complex.mo	2018-04-26 08:28:07.287425710 +0200
++++ build/Complex trunk.mo	2018-04-26 08:31:36.816793646 +0200
 @@ -236,7 +236,7 @@
  
  
- annotation (Protection(access=Access.hide),
--version="3.2.2",
+ annotation (
+-version="3.2.3",
 +version= "trunk",
- versionBuild=0,
- versionDate="2016-01-15",
- dateModified = "2016-01-15 08:44:41Z",
+ versionBuild=1,
+ versionDate="2018-08-01",
+ dateModified = "2018-04-20 12:00:00Z",

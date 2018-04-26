@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2018-04-25 15:29:28.073066414 +0200
-+++ build/ModelicaServices trunk/package.mo	2018-04-25 15:29:42.141133710 +0200
+--- git/Modelica/ModelicaServices/package.mo	2018-04-26 08:28:07.423426630 +0200
++++ build/ModelicaServices trunk/package.mo	2018-04-26 08:31:37.464797747 +0200
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -29,17 +29,17 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
        "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
      annotation (Documentation(info="<html>
  <p>
-@@ -212,12 +212,12 @@
+@@ -211,12 +211,12 @@
+ 
    annotation (
-     Protection(access=Access.hide),
      preferredView="info",
--    version="3.2.2",
+-    version="3.2.3",
 +    version= "trunk",
-     versionBuild=0,
-     versionDate="2016-01-15",
-     dateModified = "2016-01-15 08:44:41Z",
+     versionBuild=1,
+     versionDate="2018-08-01",
+     dateModified = "2018-04-20 12:00:00Z",
      revisionId="$Id::                                       $",
--    uses(Modelica(version="3.x.x")),
+-    uses(Modelica(version="3.2.3")),
 +    uses(Modelica(version= "trunk")),
      conversion(
        noneFromVersion="1.0",
