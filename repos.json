@@ -1037,9 +1037,10 @@
     {
       "dest": "netCDF-DataReader",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "master",
+        "license": "lgpl2.1+"
       },
-      "rev": "df829f45bfb0a5cf3e44ee967bef5767f02b7515",
+      "rev": "bbd2d629452c027adb45f7746edfe627cae20c22",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
