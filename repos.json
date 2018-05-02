@@ -97,7 +97,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fe76af98abfb974ede12c1274048211da2ed0a1d",
+          "rev": "f52c704b000dd484b13c89afe6e929e671c5bacd",
           "targets": [
             "IBPSA latest"
           ]
@@ -165,7 +165,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ebfb64009a67fcee5cd8482111ebb5967b8c866c",
+          "rev": "5d195561eea63509a5773ea8b3553bdf431bae18",
           "targets": [
             "Buildings latest"
           ]
@@ -436,7 +436,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "8a30a0fcb1def7f4ae79b5c385a2f40f8d4f0d59",
+      "rev": "0f640c0b82780c647aaeec1e08164b055017b4ff",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -913,7 +913,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa66859a7b25c49944c72dd70ae4500f4d340d8c",
+      "rev": "a1fe3a99665d149c15e4d7971498aba7c32a994c",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
