@@ -5,9 +5,11 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  
    annotation (Documentation(info="<html>
  
--</html>"));
+-</html>"),
+-  obsolete = "Obsolete function");
 +</html>"),
-+derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
++  obsolete = "Obsolete function",
++  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
  end tempInterpol1;
  
 +function tempInterpol1_der
@@ -74,9 +76,11 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  
    annotation (Documentation(info="<html>
  
--</html>"));
+-</html>"),
+-  obsolete = "Obsolete function");
 +</html>"),
-+derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
++  obsolete = "Obsolete function",
++  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
  end tempInterpol2;
  
 +function tempInterpol2_der
