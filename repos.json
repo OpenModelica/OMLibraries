@@ -526,7 +526,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b20d6833ae6a3ed10f5c215d96eab7f126dcb92e",
+          "rev": "05ca3c80e0ea1558e7be92c053904311972ce5c9",
           "targets": [
             "Complex",
             "Modelica",
