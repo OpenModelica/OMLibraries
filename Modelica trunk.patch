@@ -1,7 +1,7 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-26 08:28:07.335426035 +0200
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2018-04-26 08:31:35.604785976 +0200
-@@ -1128,7 +1128,8 @@
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2018-06-11 14:42:38.298176198 +0200
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2018-06-11 15:00:54.541142150 +0200
+@@ -1123,7 +1123,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -11,7 +11,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
          end IMC_YD;
  
          model IMC_Transformer "Induction machine with squirrel cage starting with transformer"
-@@ -1409,7 +1410,8 @@
+@@ -1392,7 +1393,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
                            textStyle={TextStyle.Bold},
@@ -20,17 +20,17 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
 +  __OpenModelica_simulationFlags(nls = "newton"));
          end IMC_Transformer;
  
-         model IMC_Inverter
+         model IMC_Conveyor "Induction machine with squirrel cage and inverter driving a conveyor"
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2018-04-26 08:28:07.339426062 +0200
-+++ build/Modelica trunk/Math/package.mo	2018-04-26 08:31:29.956750199 +0200
-@@ -13216,9 +13216,67 @@
- 
+--- git/Modelica/Modelica/Math/package.mo	2018-06-11 14:42:38.302176220 +0200
++++ build/Modelica trunk/Math/package.mo	2018-06-11 15:00:46.777090251 +0200
+@@ -13219,9 +13219,67 @@
    annotation (Documentation(info="<html>
  
--</html>"));
-+</html>"),
-+derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
+ </html>"),
+-  obsolete = "Obsolete function");
++  obsolete = "Obsolete function",
++  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
  end tempInterpol1;
  
 +function tempInterpol1_der
@@ -40,14 +40,14 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +  input Integer icol "column of table to be interpolated";
 +  input Real du;
 +  output Real dy "interpolated input value (icol column of table)";
-+  protected 
++  protected
 +  Integer i;
 +  Integer n "number of rows of table";
 +  Real u1;
 +  Real u2;
 +  Real y1;
 +  Real y2;
-+algorithm 
++algorithm
 +  n := size(table, 1);
 +
 +  if n <= 1 then
@@ -83,7 +83,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +    assert(u2 > u1, "Table index must be increasing");
 +    // Interpolate
 +    dy := (y2 - y1)/(u2 - u1);
-+ 
++
 +  end if;
 +
 +  annotation (Documentation(info="<html>
@@ -93,13 +93,13 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -13278,9 +13336,74 @@
- 
+@@ -13282,9 +13340,72 @@
    annotation (Documentation(info="<html>
  
--</html>"));
-+</html>"),
-+derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
+ </html>"),
+-  obsolete = "Obsolete function");
++  obsolete = "Obsolete function",
++  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
  end tempInterpol2;
  
 +function tempInterpol2_der
@@ -164,14 +164,12 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +</html>")
 +);
 +end tempInterpol2_der;
-+
-+
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica trunk/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2018-04-26 08:28:07.339426062 +0200
-+++ build/Modelica trunk/Math/package.order	2018-04-26 08:31:29.956750199 +0200
+--- git/Modelica/Modelica/Math/package.order	2018-06-11 14:42:38.302176220 +0200
++++ build/Modelica trunk/Math/package.order	2018-06-11 15:00:46.781090279 +0200
 @@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
@@ -180,9 +178,9 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "
  tempInterpol2
 +tempInterpol2_der
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2018-04-26 08:28:07.419426602 +0200
-+++ build/Modelica trunk/package.mo	2018-04-26 08:31:36.192789697 +0200
-@@ -7899,12 +7899,12 @@
+--- git/Modelica/Modelica/package.mo	2018-06-11 14:42:38.402176790 +0200
++++ build/Modelica trunk/package.mo	2018-06-11 15:00:55.545148862 +0200
+@@ -8056,12 +8056,12 @@
  
  annotation (
  preferredView="info",
@@ -191,7 +189,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Mo
  versionBuild=1,
  versionDate="2018-08-01",
  dateModified = "2018-08-01 12:00:00Z",
- revisionId="$Id::                                       $",
+ revisionId="$Format:%h %ci$",
 -uses(Complex(version="3.2.3"), ModelicaServices(version="3.2.3")),
 +uses(Complex(version= "trunk"), ModelicaServices(version= "trunk")),
  conversion(

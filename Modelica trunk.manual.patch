@@ -1,13 +1,10 @@
-diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica trunk/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2015-05-06 23:05:39.079856721 +0200
-+++ build/Modelica trunk/Math/package.mo	2015-05-06 23:05:39.655876463 +0200
-@@ -13162,9 +13162,67 @@
- 
+--- git/Modelica/Modelica/Math/package.mo	2018-06-11 14:42:38.302176220 +0200
++++ "build/Modelica trunk/Math/package.mo"	2018-06-11 14:57:59.763978115 +0200
+@@ -13219,9 +13219,67 @@
    annotation (Documentation(info="<html>
  
--</html>"),
+ </html>"),
 -  obsolete = "Obsolete function");
-+</html>"),
 +  obsolete = "Obsolete function",
 +  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol1_der);
  end tempInterpol1;
@@ -19,14 +16,14 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +  input Integer icol "column of table to be interpolated";
 +  input Real du;
 +  output Real dy "interpolated input value (icol column of table)";
-+  protected 
++  protected
 +  Integer i;
 +  Integer n "number of rows of table";
 +  Real u1;
 +  Real u2;
 +  Real y1;
 +  Real y2;
-+algorithm 
++algorithm
 +  n := size(table, 1);
 +
 +  if n <= 1 then
@@ -62,7 +59,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +    assert(u2 > u1, "Table index must be increasing");
 +    // Interpolate
 +    dy := (y2 - y1)/(u2 - u1);
-+ 
++
 +  end if;
 +
 +  annotation (Documentation(info="<html>
@@ -72,13 +69,11 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  
  function tempInterpol2
    "Temporary function for vectorized linear interpolation (will be removed)"
-@@ -13224,9 +13282,74 @@
- 
+@@ -13282,9 +13340,72 @@
    annotation (Documentation(info="<html>
  
--</html>"),
+ </html>"),
 -  obsolete = "Obsolete function");
-+</html>"),
 +  obsolete = "Obsolete function",
 +  derivative(zeroDerivative=table,zeroDerivative=icol)=tempInterpol2_der);
  end tempInterpol2;
@@ -145,8 +140,6 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
 +</html>")
 +);
 +end tempInterpol2_der;
-+
-+
  
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},

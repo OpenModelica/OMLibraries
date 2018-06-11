@@ -10,6 +10,8 @@ from collections import defaultdict
 import subprocess
 import datetime
 
+_ = lambda *args: args
+
 def targets(r):
   if r.get('targets'):
     return ' '.join(['"%s"' % t for t in r['targets']])
@@ -128,7 +130,9 @@ def checkGithub(ghs,urls):
       raise Exception("GitHub request failed %s" % gh)
   return res
 
-def checkLatest(repo):
+def checkLatest(repo, args):
+  if args and repo["dest"] not in args:
+    return (None,repo)
   msg = None
   if repo['url'].endswith('git'):
     for r in repo['multitarget'] if repo.get('multitarget') else [repo]:
@@ -234,10 +238,10 @@ if __name__ == '__main__':
   parser_options = options
   n_jobs = options.n_jobs
   if options.check_latest:
-    update()
+    # update()
     os.system("rm -r build/")
     from joblib import Parallel, delayed
-    res = Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo) for repo in repos)
+    res = Parallel(n_jobs=n_jobs)(delayed(checkLatest)(repo, args) for repo in repos)
     # res = [checkLatest(repo) for repo in repos]
     (msgs,repos) = zip(*list(res))
     os.system("rm -f test-valid*.mos")

@@ -1,8 +1,8 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
---- git/Modelica/ModelicaTest/package.mo	2018-04-26 08:28:07.431426684 +0200
-+++ build/ModelicaTest trunk/package.mo	2018-04-26 08:31:37.064795215 +0200
-@@ -51,12 +51,12 @@
- 
+--- git/Modelica/ModelicaTest/package.mo	2018-06-11 14:42:38.414176859 +0200
++++ build/ModelicaTest trunk/package.mo	2018-06-11 15:00:57.237160175 +0200
+@@ -49,12 +49,12 @@
+ end testAllFunctions;
  
    annotation (preferredView="info",
 -       version="3.2.3",
@@ -10,7 +10,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaTest/package.mo "buil
         versionBuild=1,
         versionDate="2018-08-01",
         dateModified = "2018-04-20 12:00:00Z",
-        revisionId="$Id::                                       $",
+        revisionId="$Format:%h %ci$",
 -       uses(Modelica(version="3.2.3")),
 +       uses(Modelica(version= "trunk")),
      Documentation(info="<html>
