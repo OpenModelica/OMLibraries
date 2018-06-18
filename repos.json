@@ -83,10 +83,21 @@
     },
     {
       "dest": "AixLib",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "31bd07b8de6feaa68f2aa2cc66308212bb9ee9c2",
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "master"
+          },
+          "rev": "31bd07b8de6feaa68f2aa2cc66308212bb9ee9c2"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v0.4.0"
+          },
+          "rev": "v0.4.0"
+        }
+      ],
       "url": "https://github.com/modelica-3rdparty/AixLib.git"
     },
     {

@@ -279,7 +279,7 @@ for f in $LIBS "$@"; do
   else
     # CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2 | tr -d : | tr " " -`
     if test ! -z "$VER"; then
-      CHANGED=`cd "$DEST" && git describe --match "v$VER*" 2>/dev/null || git describe --tags --match "v$VER*" 2>/dev/null`
+      CHANGED=`cd "$DEST" && git describe --abbrev=7 --match "v$VER*" 2>/dev/null || git describe --abbrev=7 --tags --match "v$VER*" 2>/dev/null`
     fi
     if test -z "$CHANGED"; then
       CHANGED=`cd "$DEST" && git show -s --format="%ad" --date="iso" "$REVISION" | tr -d -- - | cut "-d " -f1-2`
