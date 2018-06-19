@@ -108,7 +108,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e3102ddbdf39e94a35b1ffc7f831213a2fb21979",
+          "rev": "23a4ad9d92ef44be33ce1f3f751dc832795a5545",
           "targets": [
             "IBPSA latest"
           ]
@@ -176,7 +176,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "514a5e2b883e840906bbfc99e69470c689bdf4bd",
+          "rev": "dfe8c4f9e162812a833c887c2a0c9f50dfa02ac2",
           "targets": [
             "Buildings latest"
           ]
@@ -325,7 +325,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "404d00eae412edf3fc90c7dad4b7c1522415df57",
+      "rev": "8afa868617be6e3238f094760b84fe8f2875ee08",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -564,7 +564,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a30460edbd4cdf5bc5d9afdfbe7f029a9a8aa648",
+          "rev": "6f5b87df0a10fe3f2bd2e87fc8263e1e20d5add8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -729,7 +729,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53ec5bb0725d4bb007b76cdbda4131d15ea1f75e",
+      "rev": "de811927d6a9854322d3d90ec1d103371042e9c6",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
