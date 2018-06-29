@@ -176,7 +176,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0a9af44b115c761551aca32395f91f65a34b322e",
+          "rev": "cda37fe1db6ccdc566ef2b1eb7aac79a50e3f37b",
           "targets": [
             "Buildings latest"
           ]
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a1fe3a99665d149c15e4d7971498aba7c32a994c",
+      "rev": "400f91d06d5295fb6dcd24bc48ded3b37571e0f3",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
@@ -1018,7 +1018,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4ec41c353553c713e5c5d2c0eb647b8c1ce10619",
+      "rev": "a676f0aa710c93f0b4150ed1109c96bc561c26c9",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
