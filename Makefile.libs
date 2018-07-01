@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20180630_161048.core
-ALL_TARGET=$(BUILD_DIR)/20180630_161048.all
+CORE_TARGET=$(BUILD_DIR)/20180701_190726.core
+ALL_TARGET=$(BUILD_DIR)/20180701_190726.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20180630_161048
+TIMESTAMP=20180701_190726
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '4243f80468af6aa1b5e9f0f8d37b8c321218834a'
@@ -323,13 +323,13 @@ FuzzyControl:
 	echo '20021101-080000~git~master' > "$(BUILD_DIR)/FuzzyControl.last_change"
 HanserModelica:
 	# Building git/HanserModelica
-	./checkout-git.sh 'git/HanserModelica' 'https://github.com/christiankral/HanserModelica.git' 'release' 'bf32be1826b8c857e54ffc23b990b592c16ab061'
-	test ! -d 'build//HanserModelica 0.9.1'
-	cp -a 'git/HanserModelica/HanserModelica' "$(BUILD_DIR)/HanserModelica 0.9.1"
-	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/HanserModelica 0.9.1.uses"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/HanserModelica 0.9.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/HanserModelica 0.9.1.license"
-	echo '0.9.1' > "$(BUILD_DIR)/HanserModelica 0.9.1.last_change"
+	./checkout-git.sh 'git/HanserModelica' 'https://github.com/christiankral/HanserModelica.git' 'release' '271dbea7fc93b192984ecca3e920598d7d266e94'
+	test ! -d 'build//HanserModelica 0.10.0'
+	cp -a 'git/HanserModelica/HanserModelica' "$(BUILD_DIR)/HanserModelica 0.10.0"
+	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/HanserModelica 0.10.0.uses"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/HanserModelica 0.10.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/HanserModelica 0.10.0.license"
+	echo '0.10.0-20180701-161345~git~release' > "$(BUILD_DIR)/HanserModelica 0.10.0.last_change"
 HelmholtzMedia:
 	# Building git/HelmholtzMedia
 	./checkout-git.sh 'git/HelmholtzMedia' 'https://github.com/modelica-3rdparty/HelmholtzMedia.git' 'master' '26cf4772fdc31fe01f93f876b5d2f7bdfdd62b4c'
@@ -798,12 +798,12 @@ RealTimeCoordinationLibrary:
 	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/package.encoding"
 ScalableTestSuite:
 	# Building git/ScalableTestSuite
-	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/casella/ScalableTestSuite.git' 'master' 'd480997d6ed2ab859e10a18f7d570142b054ba77'
+	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/casella/ScalableTestSuite.git' 'master' 'a16c1095306af1e5fa5859c9a3700434900f8c08'
 	test ! -d 'build//ScalableTestSuite 1.11.2'
 	cp -a 'git/ScalableTestSuite/ScalableTestSuite' "$(BUILD_DIR)/ScalableTestSuite 1.11.2"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ScalableTestSuite 1.11.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ScalableTestSuite 1.11.2.license"
-	echo '1.11.2-20180630-134728~git~master' > "$(BUILD_DIR)/ScalableTestSuite 1.11.2.last_change"
+	echo '1.11.2-2-ga16c109' > "$(BUILD_DIR)/ScalableTestSuite 1.11.2.last_change"
 Servomechanisms:
 	# Building git/Servomechanisms
 	./checkout-git.sh 'git/Servomechanisms' 'https://github.com/modelica-3rdparty/Servomechanisms.git' 'master' 'cde41bf7c9bce48f779a9b9c2bcdff3597d05fe4'
@@ -836,17 +836,17 @@ SiemensPower:
 	echo '2.2-20160429-215511~git~master' > "$(BUILD_DIR)/SiemensPower 2.2.last_change"
 SolarTherm:
 	# Building git/SolarTherm
-	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' '1a274f011d17ca58f62e8619b6267d0e1505fea4'
+	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' 'eed41cad6e449eed42beaa4622f53010012c8433'
 	test ! -d 'build//SolarTherm 0.2'
 	cp -a 'git/SolarTherm/SolarTherm' "$(BUILD_DIR)/SolarTherm 0.2"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/SolarTherm 0.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/SolarTherm 0.2.license"
-	echo '0.2-20180622-163903~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
+	echo '0.2-20180702-002516~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
 	test ! -d 'build//examples'
 	cp -a 'git/SolarTherm/examples' "$(BUILD_DIR)/examples"
 	echo 'SolarTherm 0.2' >> "$(BUILD_DIR)/examples.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/examples.license"
-	echo '0.2-20180622-163903~git~master' > "$(BUILD_DIR)/examples.last_change"
+	echo '0.2-20180702-002516~git~master' > "$(BUILD_DIR)/examples.last_change"
 	# Building git/SolarTherm
 	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'alberto-merge' '7c1ddcd95378793b10e3727607c53be24f9f94fd'
 	test ! -d 'build//SolarTherm alberto-merge'

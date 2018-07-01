@@ -399,7 +399,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "bf32be1826b8c857e54ffc23b990b592c16ab061",
+      "rev": "271dbea7fc93b192984ecca3e920598d7d266e94",
       "url": "https://github.com/christiankral/HanserModelica.git"
     },
     {
@@ -844,7 +844,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d480997d6ed2ab859e10a18f7d570142b054ba77",
+      "rev": "a16c1095306af1e5fa5859c9a3700434900f8c08",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
@@ -887,7 +887,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "1a274f011d17ca58f62e8619b6267d0e1505fea4"
+          "rev": "eed41cad6e449eed42beaa4622f53010012c8433"
         },
         {
           "options": {
