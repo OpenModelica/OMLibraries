@@ -399,7 +399,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "271dbea7fc93b192984ecca3e920598d7d266e94",
+      "rev": "9ade2ffb60b3432dba429409d0ff94e8e0e6273a",
       "url": "https://github.com/christiankral/HanserModelica.git"
     },
     {
@@ -407,7 +407,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "db5b2ff750c5505bc020843b75abd4b2d6547fb5",
+      "rev": "57bd3a7c52d1e605fba6a2be0271a2cfff724c08",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "09bca7f0fb1b0689918b65f50dff44ef2c30a72e",
+      "rev": "f7996e0c6ba83788d9b12680b4bb1cc8573f5202",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -664,7 +664,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "844900dcabc522de73182463ed3c5f8b94aff4cb",
+      "rev": "bc984e34b6853878c03bf45ac97fa68ef6c385c8",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
