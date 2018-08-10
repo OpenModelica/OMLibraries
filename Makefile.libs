@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20180807_190608.core
-ALL_TARGET=$(BUILD_DIR)/20180807_190608.all
+CORE_TARGET=$(BUILD_DIR)/20180810_134726.core
+ALL_TARGET=$(BUILD_DIR)/20180810_134726.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20180807_190608
+TIMESTAMP=20180810_134726
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '4243f80468af6aa1b5e9f0f8d37b8c321218834a'
@@ -33,17 +33,17 @@ AdvancedNoise:
 	echo '1.0.0-5-gaa44378' > "$(BUILD_DIR)/AdvancedNoise 1.0.0.last_change"
 AixLib:
 	# Building git/AixLib
-	./checkout-git.sh 'git/AixLib' 'https://github.com/modelica-3rdparty/AixLib.git' 'master' 'a7d0d31d97b04d540e5cb773674dc42091285528'
-	test ! -d 'build//AixLib 0.5.2'
-	cp -a 'git/AixLib/AixLib' "$(BUILD_DIR)/AixLib 0.5.2"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/AixLib 0.5.2.uses"
-	echo 'Modelica_DeviceDrivers 1.4.4' >> "$(BUILD_DIR)/AixLib 0.5.2.uses"
-	echo 'Modelica_Synchronous 0.92.1' >> "$(BUILD_DIR)/AixLib 0.5.2.uses"
-	echo 'NcDataReader2 2.4.0' >> "$(BUILD_DIR)/AixLib 0.5.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/AixLib 0.5.2.license"
-	echo '0.5.2-11-ga7d0d31' > "$(BUILD_DIR)/AixLib 0.5.2.last_change"
+	./checkout-git.sh 'git/AixLib' 'https://github.com/RWTH-EBC/AixLib.git' 'master' 'a4b2a05dcf0f6db46341851ef3ea4957cfcb2e8c'
+	test ! -d 'build//AixLib 0.6.0'
+	cp -a 'git/AixLib/AixLib' "$(BUILD_DIR)/AixLib 0.6.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/AixLib 0.6.0.uses"
+	echo 'Modelica_DeviceDrivers 1.4.4' >> "$(BUILD_DIR)/AixLib 0.6.0.uses"
+	echo 'Modelica_Synchronous 0.92.1' >> "$(BUILD_DIR)/AixLib 0.6.0.uses"
+	echo 'NcDataReader2 2.4.0' >> "$(BUILD_DIR)/AixLib 0.6.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/AixLib 0.6.0.license"
+	echo '0.6.0-20180810-133917~git~master' > "$(BUILD_DIR)/AixLib 0.6.0.last_change"
 	# Building git/AixLib
-	./checkout-git.sh 'git/AixLib' 'https://github.com/modelica-3rdparty/AixLib.git' 'v0.4.0' 'v0.4.0'
+	./checkout-git.sh 'git/AixLib' 'https://github.com/RWTH-EBC/AixLib.git' 'v0.4.0' 'v0.4.0'
 	test ! -d 'build//AixLib 0.4.0'
 	cp -a 'git/AixLib/AixLib' "$(BUILD_DIR)/AixLib 0.4.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/AixLib 0.4.0.uses"
@@ -249,12 +249,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '486e62d5b558dc273c63803ace811af2655fd318'
-	test ! -d 'build//ExternData 2.3.4'
-	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.3.4"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ExternData 2.3.4.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.3.4.license"
-	echo '2.3.4-9-g486e62d' > "$(BUILD_DIR)/ExternData 2.3.4.last_change"
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' '7ee48ec6a0781dc26bcc75013580bdb02cab5bfb'
+	test ! -d 'build//ExternData 2.4.0'
+	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.4.0"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ExternData 2.4.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.4.0.license"
+	echo '2.4.0-20180809-142514~git~master' > "$(BUILD_DIR)/ExternData 2.4.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '159518edd538b64e28cd70983a9cc47730323cc4'
@@ -537,7 +537,7 @@ Modelica:
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20180807-125651~git~master-om127' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20180807-125651~git~master-om128' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 Modelica-MVEM:
 	# Building git/Modelica-MVEM

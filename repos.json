@@ -88,7 +88,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "a7d0d31d97b04d540e5cb773674dc42091285528"
+          "rev": "a4b2a05dcf0f6db46341851ef3ea4957cfcb2e8c"
         },
         {
           "options": {
@@ -325,7 +325,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "486e62d5b558dc273c63803ace811af2655fd318",
+      "rev": "7ee48ec6a0781dc26bcc75013580bdb02cab5bfb",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
