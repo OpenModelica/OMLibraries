@@ -664,7 +664,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bc984e34b6853878c03bf45ac97fa68ef6c385c8",
+      "rev": "6a9b3145042a76638380834eb2a74fa74d8f30d6",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
@@ -887,7 +887,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "b2baddbb40447adb2bbee95b459964d8e7a8c0d8"
+          "rev": "4cb3a39fa17d7aebe3adc1a7043e3da3ae0f3cd9"
         },
         {
           "options": {
