@@ -447,7 +447,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "0f640c0b82780c647aaeec1e08164b055017b4ff",
+      "rev": "4c447c3a57a0d967b092a28981afeea670182051",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "400f91d06d5295fb6dcd24bc48ded3b37571e0f3",
+      "rev": "15d5f550da1d643dbd9c11881ea6001b5414af82",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
