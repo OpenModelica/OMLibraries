@@ -325,7 +325,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8676322ebb271e4e5a686dea3b36ae10cbc372ae",
+      "rev": "280ffbbecc0c23abd1ece10a781bdcfdcf9e436f",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -564,7 +564,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "1ac449cb2992809eb0585ba3fe2b3af4582fb8f4",
+          "rev": "fac5977433f51a04436dd556e90f944e120a5133",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3aae2d4dd69503d325233bafaf75230b3a679f17",
+      "rev": "12b7abbca0f37c68b99696910ed9104c5a9f8158",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
