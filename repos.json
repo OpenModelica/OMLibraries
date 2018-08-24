@@ -165,7 +165,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f62098c5f37688ea3bd506867cf43274e29dae05",
+      "rev": "9efe57809bd69af8a43b1e6f088cddabac934c66",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -564,7 +564,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "fac5977433f51a04436dd556e90f944e120a5133",
+          "rev": "b737dc8511d27e7e4868f244f818ddc6110dcf9e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "65233897004f2da0b73c13d5d802f9f45f49f257",
+      "rev": "6ca4c4eb443d86d4315343a485fe3824e317ab81",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -777,7 +777,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "998e2a4e897c37d9f56e0be0282421f468ccf456",
+      "rev": "1eabe53ef3333ae873e31fb27e64929307d7b5e2",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
