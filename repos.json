@@ -564,7 +564,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "188e12b45332d7b64a75cacb45f13f90ec1ecf98",
+          "rev": "58a7ea5f472988dd309e9a93456a3eb6bb33cee0",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fe366bcaf87e7ed17555908f49ad9cf9bd85495a",
+      "rev": "d8e5d7d0fef3c3d39380cc6629e4991b03da7005",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1051,7 +1051,7 @@
         "gitbranch": "master",
         "license": "lgpl2.1+"
       },
-      "rev": "bbd2d629452c027adb45f7746edfe627cae20c22",
+      "rev": "a6f087ed791402f36219245e54c3079dc8a23e58",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
