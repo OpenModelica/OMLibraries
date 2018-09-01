@@ -78,7 +78,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "624fd3b83eeea6f9083946cbe3fabbccc78867cf",
+      "rev": "481bb910a51fdfdd90fe4f1dc366f16349034618",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -108,7 +108,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "12b8b7a2b557105f1894afaf50b2439f0d972e26",
+          "rev": "c73d4b4cf3b97c0572670c29de3ff7120d1890c6",
           "targets": [
             "IBPSA latest"
           ]
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c9dba64cda7dfac20e2dd639f7ad52be2c6a567a",
+      "rev": "ee2bb48a655982be2bf75899577ae941bb1b0742",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
