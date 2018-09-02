@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4db30e57b5e9dc814971604471ad865586151c58",
+      "rev": "1b988c000dc8b8f86fcfbc011938949e5bdc6467",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1042,7 +1042,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4c1828463dd21dabbf29d963c6f1cf153aaa9028",
+      "rev": "b05a11b13a8e59110006ad661fc7288255b1e3ea",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
