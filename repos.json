@@ -108,7 +108,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c73d4b4cf3b97c0572670c29de3ff7120d1890c6",
+          "rev": "2853c48e129bd672d3f1ca12b137f4686dbe9a94",
           "targets": [
             "IBPSA latest"
           ]
