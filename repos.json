@@ -108,7 +108,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2853c48e129bd672d3f1ca12b137f4686dbe9a94",
+          "rev": "41ebe41498f1b01da3c4e25979e9064740839dfa",
           "targets": [
             "IBPSA latest"
           ]
@@ -165,7 +165,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b9eb871b78995617adb72e802d2184ada1b80ca6",
+      "rev": "b58641b1c36fa2724fdcf5c3de39dcd27e6e1824",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -176,7 +176,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "956e007391c6b585fc09af1382ad871a970a53ad",
+          "rev": "b3476983aa5ee14d856d70aa788633c57fcc968e",
           "targets": [
             "Buildings latest"
           ]
@@ -589,7 +589,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "23dd913a224207656a4708d432517c929ca9eed1",
+      "rev": "56eb724769bf9296c89fc91ea9274c6b477d76fa",
       "url": "https://github.com/modelica-3rdparty/ModelicaADS.git"
     },
     {
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1b988c000dc8b8f86fcfbc011938949e5bdc6467",
+      "rev": "80702c56943771731bdbd23607fbeb587c5d14e0",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -777,7 +777,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1eabe53ef3333ae873e31fb27e64929307d7b5e2",
+      "rev": "213491da8327cce8efa248625c63e3b268c645a1",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
