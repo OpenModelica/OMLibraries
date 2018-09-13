@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4243f80468af6aa1b5e9f0f8d37b8c321218834a",
+      "rev": "ca992732e341804591a1a715eadf53c85dd3107f",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -309,7 +309,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "561a2c002f83b5c62d2706696421374fefae2c03",
+      "rev": "ce43041a7f278625df7c92b404edfae25c7dbe0a",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -777,7 +777,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "213491da8327cce8efa248625c63e3b268c645a1",
+      "rev": "c0c24dffb6bc8bfffb5077fa1a08dbfc47cab8b4",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
