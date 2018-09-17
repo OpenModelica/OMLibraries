@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ca992732e341804591a1a715eadf53c85dd3107f",
+      "rev": "868f0c9bc87a7cfaa4618712b8d3fa448355a442",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -680,7 +680,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b82e39f9ec44757503d46ecf5dc39d1fac598ed6",
+      "rev": "0bda0c58af6384f8e0edf7aa7520afb369af3e38",
       "url": "https://github.com/jwindahlModelon/MultiPhaseMixtureMedia.git"
     },
     {
