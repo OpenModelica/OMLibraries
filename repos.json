@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "868f0c9bc87a7cfaa4618712b8d3fa448355a442",
+      "rev": "9908ee4dafff3ae0cb931c6ca8c02a0fea1d1c20",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -705,7 +705,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e90fbfec8ca3ab9d3869dce9092fa73c46163902",
+      "rev": "891468c5c25c39f49c785bbdb853a386a4d0e889",
       "url": "https://github.com/DLR-SR/Noise.git"
     },
     {
