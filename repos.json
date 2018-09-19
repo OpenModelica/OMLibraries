@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9908ee4dafff3ae0cb931c6ca8c02a0fea1d1c20",
+      "rev": "8949972c0f799a2e2d1f3a20d20c9c4ef7b3aea9",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -78,7 +78,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "481bb910a51fdfdd90fe4f1dc366f16349034618",
+      "rev": "991033c7d54636c8ee21d29ce1089c42d785ca52",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -924,7 +924,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "41c22d955b00d18ef3529e50090b57f66f991069",
+      "rev": "8fc9e03a52a94270b97a66ecbb59f09748ca0b1b",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
