@@ -180,15 +180,15 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
 --- git/Modelica/Modelica/package.mo	2018-09-24 19:10:18.462451463 +0200
 +++ build/Modelica trunk/package.mo	2018-09-25 19:03:24.410592965 +0200
-@@ -8308,12 +8308,12 @@
+@@ -8313,12 +8313,12 @@
  
  annotation (
  preferredView="info",
 -version="3.2.3",
 +version= "trunk",
  versionBuild=1,
- versionDate="2018-08-01",
- dateModified = "2018-08-01 12:00:00Z",
+ versionDate="2018-09-26",
+ dateModified = "2018-09-26 12:00:00Z",
  revisionId="$Format:%h %ci$",
 -uses(Complex(version="3.2.3"), ModelicaServices(version="3.2.3")),
 +uses(Complex(version= "trunk"), ModelicaServices(version= "trunk")),
