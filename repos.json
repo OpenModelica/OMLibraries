@@ -59,7 +59,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8949972c0f799a2e2d1f3a20d20c9c4ef7b3aea9",
+      "rev": "151a0799df3e51940c3677a82f6d111d54864d28",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -108,7 +108,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "02f3f53d0a644de3a614e04b10751044e635c996",
+          "rev": "1ac463c1025c68c50887bb4e2f21520bf0129c5f",
           "targets": [
             "IBPSA latest"
           ]
@@ -165,7 +165,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0012bae8b063a52d9b0cd78976cf1891b643ec5c",
+      "rev": "a7d449daaba5ac8972ddb1097d56010b066cc8b4",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -176,7 +176,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6c54c2e48be3f343349884002ebe2b811c7fb92c",
+          "rev": "52c469666ad13887db4cb83efe46a13418de037a",
           "targets": [
             "Buildings latest"
           ]
@@ -639,7 +639,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f4bd76ab1c595239561d61b7cc0b220fd29c4a4d",
+      "rev": "057b97983fd7a8d987e98fcbf549a79342cff93b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
