@@ -165,7 +165,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a7d449daaba5ac8972ddb1097d56010b066cc8b4",
+      "rev": "4f183b6d255e40d498b10f1c4c5b15a6e58cd717",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -309,7 +309,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "ce43041a7f278625df7c92b404edfae25c7dbe0a",
+      "rev": "f41991f30765ee94faf1ebb317dd3b1e9b136d25",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
