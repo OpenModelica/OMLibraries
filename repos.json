@@ -39,6 +39,9 @@
   "provided": {
     "AixLib 0.3.0": "AixLib 0.4.0",
     "Buildings 4.0.0": "Buildings latest",
+	"Buildings 5.1.0": "Buildings latest",
+	"Buildings 5.0.1": "Buildings latest",
+	"Buildings 5.1.0": "Buildings latest",
     "Complex 1.0": "Complex 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
