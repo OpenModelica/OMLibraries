@@ -39,9 +39,8 @@
   "provided": {
     "AixLib 0.3.0": "AixLib 0.4.0",
     "Buildings 4.0.0": "Buildings latest",
-	"Buildings 5.1.0": "Buildings latest",
-	"Buildings 5.0.1": "Buildings latest",
-	"Buildings 5.1.0": "Buildings latest",
+    "Buildings 5.0.1": "Buildings latest",
+    "Buildings 5.1.0": "Buildings latest",
     "Complex 1.0": "Complex 3.2.1",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
@@ -168,7 +167,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4f183b6d255e40d498b10f1c4c5b15a6e58cd717",
+      "rev": "e5d8652f33828e07967fb9ef66335acce2e82b8d",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -756,7 +755,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "ebfea2527a76b29e9b67bf85c22e0c7a6081d9c5",
+      "rev": "ae21995c5783116b9d3947264fe88881e0e68eaf",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
