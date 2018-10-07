@@ -1,5 +1,5 @@
---- git/Modelica/Complex.mo	2018-09-24 19:10:18.278452405 +0200
-+++ build/Complex trunk.mo	2018-09-25 19:03:25.238592757 +0200
+--- git/Modelica/Complex.mo	2018-10-04 22:39:35.417837506 +0200
++++ build/Complex trunk.mo	2018-10-07 13:33:43.240662117 +0200
 @@ -236,7 +236,7 @@
  
  
@@ -7,5 +7,5 @@
 -version="3.2.3",
 +version= "trunk",
  versionBuild=1,
- versionDate="2018-08-01",
- dateModified = "2018-04-20 12:00:00Z",
+ versionDate="2018-09-26",
+ dateModified = "2018-09-26 12:00:00Z",

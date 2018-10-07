@@ -61,7 +61,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "151a0799df3e51940c3677a82f6d111d54864d28",
+      "rev": "1e46de8710f9f2578c4d25745a553ab433517ecb",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -167,7 +167,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e5d8652f33828e07967fb9ef66335acce2e82b8d",
+      "rev": "4614d24dd72a85a46fdcdb9064059bb433c5cb12",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -566,7 +566,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "467a0b68f7f3fb455cda84583d6f6b20db9f45a8",
+          "rev": "ea753500d9082ec4543c8b199546b6f323a8954a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -641,7 +641,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "057b97983fd7a8d987e98fcbf549a79342cff93b",
+      "rev": "21d76500d20f6eed336b2c8e57f58ae15f5198dc",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -763,7 +763,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b3b874b79f131e433a3a55675b40890d5b19f3e2",
+      "rev": "e3d2828145089dcdd543b332d670259899de80b1",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
