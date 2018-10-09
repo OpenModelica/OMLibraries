@@ -61,7 +61,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1e46de8710f9f2578c4d25745a553ab433517ecb",
+      "rev": "b27eba1b8497d6bdcb1b36eeaa01242bf403dbf5",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -110,7 +110,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1ac463c1025c68c50887bb4e2f21520bf0129c5f",
+          "rev": "5eba90342d5b35203a64a364ebc294426774e6b9",
           "targets": [
             "IBPSA latest"
           ]
@@ -167,7 +167,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4614d24dd72a85a46fdcdb9064059bb433c5cb12",
+      "rev": "07f94e86211255de9b896ae5f6c9eb13179eeaca",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -178,7 +178,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "52c469666ad13887db4cb83efe46a13418de037a",
+          "rev": "eb0e7185b27af0f1bfceb3edadfb868fc2ce32a5",
           "targets": [
             "Buildings latest"
           ]
@@ -566,7 +566,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ea753500d9082ec4543c8b199546b6f323a8954a",
+          "rev": "5fae40d5e9af4b3f90d678d8abb81943e88ae7b9",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -771,7 +771,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1978083b841a74cd593c46b0b19f12716cf3974e",
+      "rev": "64ff4336c0320cb8a5ac4482fbdc96e0d4794da9",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
