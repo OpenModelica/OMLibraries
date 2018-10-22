@@ -52,8 +52,8 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.3",
     "Modelica_StateGraph2 2.0.2": "Modelica_StateGraph2 2.0.3",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
+    "PhotoVoltaics 1.3.0": "PhotoVoltaics 1.3.1",
     "PhotoVoltaics X.X.X": "PhotoVoltaics 1.1.1",
-	"PhotoVoltaics 1.3.0": "PhotoVoltaics 1.3.1",
     "Physiolibrary 2.3.2": "Physiolibrary 2.3.2-beta"
   },
   "repos": [
@@ -62,7 +62,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b27eba1b8497d6bdcb1b36eeaa01242bf403dbf5",
+      "rev": "e7f29b39fe23c92cc01714f66114734ee449a73a",
       "url": "https://github.com/modelica-3rdparty/ADGenKinetics.git"
     },
     {
@@ -91,7 +91,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "a4b2a05dcf0f6db46341851ef3ea4957cfcb2e8c"
+          "rev": "3b8d971a4b6b44e96e863aad75894e71dab089b8"
         },
         {
           "options": {
@@ -160,7 +160,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5790ca8e543ea8f612d5f7b0e199421ededb3486",
+      "rev": "954ae654fe7a84177e6220465ed8af5d39628823",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -168,7 +168,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f743f4a94e93b07600fe5a92863a0f525e556c57",
+      "rev": "96f5a94a4aff1cf3d6fe90d17e11928869a5e2e7",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -179,7 +179,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "eb0e7185b27af0f1bfceb3edadfb868fc2ce32a5",
+          "rev": "bc727fd06e349f0084b7b0b93b722cb73d791515",
           "targets": [
             "Buildings latest"
           ]
@@ -450,7 +450,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "4c447c3a57a0d967b092a28981afeea670182051",
+      "rev": "c108bf54790022c1bbf35ff9894de0d5a1c425ae",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -567,7 +567,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "5fae40d5e9af4b3f90d678d8abb81943e88ae7b9",
+          "rev": "d1486049243bc164df193eb93910f555477378a6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -642,7 +642,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "21d76500d20f6eed336b2c8e57f58ae15f5198dc",
+      "rev": "b6a7699c6124a144d3a6125c011901165b71eea4",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -756,7 +756,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "ae21995c5783116b9d3947264fe88881e0e68eaf",
+      "rev": "2a14e123b46e30424bc72489a95489681731baf6",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
@@ -780,7 +780,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c0c24dffb6bc8bfffb5077fa1a08dbfc47cab8b4",
+      "rev": "0cec8e63cc75168e19e634f22ea445a57e3b117d",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -801,7 +801,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "821fbe2c2153ff1f6d2480162d00944b7c2aeb0d",
+      "rev": "f741846ee31cc9001e78fb3aecdc7152a04bb7b5",
       "targets": [
         "PowerSystems latest"
       ],
@@ -927,7 +927,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0f7d5c8b9aec7d3e97ddc9ec53f26cd58f70c05c",
+      "rev": "96bb442f2166af4b99521ed55c4ad34c5a33513c",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
@@ -1005,7 +1005,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "e85cf7af06d0a4140de6ce8e9ed1dbd97e87bb8a",
+      "rev": "5f97dc877e13fc91773a893827f6bc074a9f5a83",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
     },
     {
@@ -1013,7 +1013,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9b98981e8ff0f440dd319d1a806e1fd2f0ab3436",
+      "rev": "4410a3224e1803565d57ff323c3bef5a4bfd6b4d",
       "url": "https://github.com/xogeny/XogenyTest.git"
     },
     {
