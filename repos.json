@@ -168,7 +168,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "69facbe4eadc80fc2b963519076ba6724f75a261",
+      "rev": "d278a0423336c212e9336107f596a27ab82d846f",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -935,7 +935,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bdd5177e2641c78ad7d91436715334fe4c7d9a6d",
+      "rev": "16e3d58622773bc4537a48e007a92fa9fea6287c",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
@@ -1029,7 +1029,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d1571025dcc3d11ecf2c8102feaa7ee5766b7e4f",
+      "rev": "04f8c9ac6aed1569ab2c78b40c07485e51381a56",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {

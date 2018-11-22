@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20181121_190522.core
-ALL_TARGET=$(BUILD_DIR)/20181121_190522.all
+CORE_TARGET=$(BUILD_DIR)/20181122_190826.core
+ALL_TARGET=$(BUILD_DIR)/20181122_190826.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20181121_190522
+TIMESTAMP=20181122_190826
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -100,13 +100,13 @@ BrineProp:
 	echo '0.5.5-15-g954ae65' > "$(BUILD_DIR)/BrineProp 0.5.5.last_change"
 BuildingSystems:
 	# Building git/BuildingSystems
-	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' '69facbe4eadc80fc2b963519076ba6724f75a261'
+	./checkout-git.sh 'git/BuildingSystems' 'https://github.com/modelica-3rdparty/BuildingSystems.git' 'master' 'd278a0423336c212e9336107f596a27ab82d846f'
 	test ! -d 'build//BuildingSystems 2.0.0-beta'
 	cp -a 'git/BuildingSystems/BuildingSystems' "$(BUILD_DIR)/BuildingSystems 2.0.0-beta"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.uses"
 	echo 'NcDataReader2 2.4.0' >> "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.license"
-	echo '2.0.0-beta2-258-g69facbe' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
+	echo '2.0.0-beta2-262-gd278a04' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
 Buildings:
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '697bdd8d13bb3c926554182c1d152ebcf2517a3f'
@@ -885,12 +885,12 @@ SystemDynamics:
 	echo '2.1-9-gb034761' > "$(BUILD_DIR)/SystemDynamics 2.1.last_change"
 ThermoPower:
 	# Building git/ThermoPower
-	./checkout-git.sh 'git/ThermoPower' 'https://github.com/casella/ThermoPower.git' 'master' 'bdd5177e2641c78ad7d91436715334fe4c7d9a6d'
+	./checkout-git.sh 'git/ThermoPower' 'https://github.com/casella/ThermoPower.git' 'master' '16e3d58622773bc4537a48e007a92fa9fea6287c'
 	test ! -d 'build//ThermoPower 3.1'
 	cp -a 'git/ThermoPower/ThermoPower' "$(BUILD_DIR)/ThermoPower 3.1"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ThermoPower 3.1.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoPower 3.1.license"
-	echo '3.1-20181120-121627~git~master' > "$(BUILD_DIR)/ThermoPower 3.1.last_change"
+	echo '3.1-20181121-235539~git~master' > "$(BUILD_DIR)/ThermoPower 3.1.last_change"
 ThermoSysPro:
 	# Building git/ThermoSysPro
 	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'maint/3.0' 'd4f9c3ed35f7520f82439eb6e9f4057ae0f82b73'
@@ -966,12 +966,12 @@ XogenyTest:
 	echo '1.1-20181019-075951~git~master' > "$(BUILD_DIR)/XogenyTest 1.1.last_change"
 buildsyspro:
 	# Building git/buildsyspro
-	./checkout-git.sh 'git/buildsyspro' 'https://github.com/modelica-3rdparty/buildsyspro.git' 'master' 'd1571025dcc3d11ecf2c8102feaa7ee5766b7e4f'
+	./checkout-git.sh 'git/buildsyspro' 'https://github.com/modelica-3rdparty/buildsyspro.git' 'master' '04f8c9ac6aed1569ab2c78b40c07485e51381a56'
 	test ! -d 'build//BuildSysPro 3.2.0'
 	cp -a 'git/buildsyspro/BuildSysPro' "$(BUILD_DIR)/BuildSysPro 3.2.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/BuildSysPro 3.2.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BuildSysPro 3.2.0.license"
-	echo '3.2.0' > "$(BUILD_DIR)/BuildSysPro 3.2.0.last_change"
+	echo '3.2.0-1-g04f8c9a' > "$(BUILD_DIR)/BuildSysPro 3.2.0.last_change"
 ipsl:
 	# Building git/ipsl
 	./checkout-git.sh 'git/ipsl' 'https://github.com/modelica-3rdparty/ipsl.git' 'master' 'e0e3ea079a0398a3b0b094baaa3736350faa525b'
