@@ -548,7 +548,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "3627d3d9e1d359e21ee639949a6dcb4b290700d6",
+          "rev": "d992c34ed978241214b4c079fb8ee6cc9e33d909",
           "targets": [
             "Complex",
             "Modelica",
@@ -863,7 +863,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cde41bf7c9bce48f779a9b9c2bcdff3597d05fe4",
+      "rev": "3bf82ba5d3f31b4a0ae05f99ae690037358e153e",
       "url": "https://github.com/modelica-3rdparty/Servomechanisms.git"
     },
     {
