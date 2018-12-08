@@ -179,7 +179,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "697bdd8d13bb3c926554182c1d152ebcf2517a3f",
+          "rev": "6f43ccee834b2b5ab95cd5a3d41d03228cd7f3fc",
           "targets": [
             "Buildings latest"
           ]
@@ -1029,7 +1029,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04f8c9ac6aed1569ab2c78b40c07485e51381a56",
+      "rev": "232d51c4fe28ce79cc12b58167ebaf98c2b74010",
       "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
