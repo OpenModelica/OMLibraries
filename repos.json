@@ -617,7 +617,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2deb43ea10c16f697da602b72c5908d68360ea5f",
+      "rev": "c9dd82ca8919aacb379573857af6a9e27f228485",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -935,7 +935,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b674fd1ca573d4ff34874f01ecb38b13abc1665e",
+      "rev": "0942fe6706cbdd578f727c5c172b5291798e5bcb",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
