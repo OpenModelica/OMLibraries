@@ -930,6 +930,14 @@
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
+      "dest": "ThermalSeparation",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "5cbd08f13350b7994a9fe8788618996aa30ea17d",
+      "url": "https://github.com/adrpo/ThermalSeparation.git"
+    },
+    {
       "core": true,
       "dest": "ThermoPower",
       "options": {
