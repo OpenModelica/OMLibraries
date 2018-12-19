@@ -49,6 +49,7 @@
     "Modelica 3.2.1": "Modelica 3.2.2",
     "ModelicaServices 3.2": "ModelicaServices 3.2.1",
     "Modelica_DeviceDrivers 1.4.4": "Modelica_DeviceDrivers 1.5.0",
+    "Modelica_LinearSystems2 2.3.2": "Modelica_LinearSystems2 2.3.4",
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.3",
     "Modelica_StateGraph2 2.0.2": "Modelica_StateGraph2 2.0.3",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
