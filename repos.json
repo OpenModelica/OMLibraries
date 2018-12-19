@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "91c19b8318a4737858d60238e754278072a5c0d4",
+          "rev": "45d5551383f84edc10b5e3d59e98107cdd6bacab",
           "targets": [
             "Buildings latest"
           ]
@@ -337,7 +337,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ac0f7bb14ecbf203c8a2daaf113b0c6a027d0638",
+      "rev": "486e62d5b558dc273c63803ace811af2655fd318",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -944,7 +944,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0942fe6706cbdd578f727c5c172b5291798e5bcb",
+      "rev": "66fa9aa2fca229efebf06c0d00c2fcc8db92bb00",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
@@ -1071,7 +1071,7 @@
         "gitbranch": "master",
         "license": "lgpl2.1+"
       },
-      "rev": "a6f087ed791402f36219245e54c3079dc8a23e58",
+      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
