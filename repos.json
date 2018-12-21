@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c1dfc20296558fa4eeb11cb07e8be75ffc579588",
+          "rev": "0ade182a9605036d7c432a696d440ae22cee507f",
           "targets": [
             "Buildings latest"
           ]
@@ -337,7 +337,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "486e62d5b558dc273c63803ace811af2655fd318",
+      "rev": "029332e35bb3330ccbcc243d5a61b0cad23cba22",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -1071,7 +1071,7 @@
         "gitbranch": "master",
         "license": "lgpl2.1+"
       },
-      "rev": "d08cc3471e85b4f50b04e2e41b1886825af83eaf",
+      "rev": "70c4ce79213c7facda1abf6d520094eb64a99e9c",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
