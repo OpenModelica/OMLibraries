@@ -112,7 +112,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "efebc9a8748b9c9a080035d498c0256a720a3394",
+          "rev": "7be59280198649cd0873b1db9deaa2d0a68bad13",
           "targets": [
             "IBPSA latest"
           ]
@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "916b7866d25c3dbf1e24900e5b84e254b83468f0",
+          "rev": "62df03d90829375422074ab8cf4523b19b399a0d",
           "targets": [
             "Buildings latest"
           ]
@@ -935,7 +935,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dfc92e343d139a56ff767d77bbb37b257d784e27",
+      "rev": "3536342e4f6dcf98fb11f3452f749c8621bf31a1",
       "url": "https://github.com/adrpo/ThermalSeparation.git"
     },
     {
