@@ -935,8 +935,8 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d7863f613a38bde081de38b47e392ce38f7b53f4",
-      "url": "https://github.com/adrpo/ThermalSeparation.git"
+      "rev": "2043770dccde09f0ccf3dadbfe0b8344271d1c6c",
+      "url": "https://github.com/thom-marx/ThermalSeparation"
     },
     {
       "core": true,
