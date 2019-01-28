@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "427ab5d4f8d24a955eb3a704dee46cf15f81f46e",
+          "rev": "6a99c93413fb13cb5149bbb76507974a6e635218",
           "targets": [
             "Buildings latest"
           ]
@@ -741,7 +741,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "de811927d6a9854322d3d90ec1d103371042e9c6",
+      "rev": "fdcedb6544946c4eec9d5463b93b44cf79a4148a",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -935,7 +935,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2043770dccde09f0ccf3dadbfe0b8344271d1c6c",
+      "rev": "8933bad16aeb716c9bf0a54db70349c90955ea80",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
