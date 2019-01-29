@@ -553,11 +553,32 @@
           "targets": [
             "Complex",
             "Modelica",
-            "ModelicaReference none",
             "ModelicaServices",
             "ModelicaTest",
             "ModelicaTestOverdetermined",
             "ObsoleteModelica3"
+          ]
+        },
+        {
+          "options": {
+            "generate-patch-mos": "MSL.3.2.3.mos",
+            "gitbranch": "maint/3.2.3",
+            "intertrac": "m:",
+            "no-dependencies": "ModelicaServices",
+            "patch-files": [
+              "Modelica 3.2.3.patch",
+              "ModelicaServices 3.2.3.patch"
+            ],
+            "patchlevel": "Modelica:-om2,ModelicaServices:-om1",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "51471b386c07b8b9d21f5cba4728214e561b8159",
+          "targets": [
+            "Complex",
+            "Modelica",
+            "ModelicaReference none",
+            "ModelicaServices",
+            "ModelicaTest"
           ]
         },
         {

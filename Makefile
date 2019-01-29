@@ -165,3 +165,13 @@ ModelicaServices\ 3.2.2.patch:
 	sed -i /^Only.in/d "$@.tmp"
 	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
 	mv "$@.tmp" "$@"
+Modelica\ 3.2.3.patch:
+	-diff -u -x .svn -x .git -x Library -r "git/Modelica/Modelica" "build/Modelica 3.2.3" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"
+ModelicaServices\ 3.2.3.patch:
+	-diff -u -w -x .svn -x .git -x Library -r "git/Modelica/ModelicaServices" "build/ModelicaServices 3.2.3" > "$@.tmp"
+	sed -i /^Only.in/d "$@.tmp"
+	sed -i 's/^\([+-][+-][+-]\) "\([^"]*\)"/\1 \2/' "$@.tmp"
+	mv "$@.tmp" "$@"
