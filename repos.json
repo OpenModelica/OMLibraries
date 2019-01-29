@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6a99c93413fb13cb5149bbb76507974a6e635218",
+          "rev": "1abb88c61fe34126dccb04f33ab9ced2e77ede31",
           "targets": [
             "Buildings latest"
           ]
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "3eaa5eab5980b5192f6da783e1afcdc5c6656d42"
+          "rev": "e034936adaced32ee5a5c6f8ae1e0f82d5a5dec3"
         },
         {
           "options": {
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8933bad16aeb716c9bf0a54db70349c90955ea80",
+      "rev": "757ae824b14eff2416071376c823868d5fe03c81",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
