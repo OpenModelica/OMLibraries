@@ -321,7 +321,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "f41991f30765ee94faf1ebb317dd3b1e9b136d25",
+      "rev": "d7e80711b153a2395a32186c04e6b5633dbbf97d",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -965,7 +965,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04bcd8aafb2622cc242e205c2e69cf4949e967cf",
+      "rev": "fc86de5f2d13d9f6faf13cbd915eda936edaea70",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
