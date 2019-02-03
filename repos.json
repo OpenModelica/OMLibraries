@@ -169,7 +169,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3554ba5d73ee64f0c713a56f7d9cdf1d1841ece5",
+      "rev": "016ba5153083d4043f28888d2ec4a1c6afb6caab",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "e8f098240ce58629fd83ae5255bac088bdeac944"
+          "rev": "87bbf62773ae28515cc508e258e021a4a3b424e3"
         },
         {
           "options": {
