@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3682a98a65f6cf4ce4326e1c213f0a374cf37a65",
+          "rev": "eb731e286eebc4dfa132c21399ba532fa18e57a7",
           "targets": [
             "Buildings latest"
           ]
@@ -459,7 +459,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "c108bf54790022c1bbf35ff9894de0d5a1c425ae",
+      "rev": "863828efb2b8f5b0a1bcbb55d82e3754da62ca7f",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -762,7 +762,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fdcedb6544946c4eec9d5463b93b44cf79a4148a",
+      "rev": "ef26ed41d9d0d8b2c1b90f34d7af2fd5f311ae23",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -823,7 +823,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "44ecf8d170c5ce80281b306e706058329e706966",
+      "rev": "df65a5460f811f7053b69f2abd864482d461d379",
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "87bbf62773ae28515cc508e258e021a4a3b424e3"
+          "rev": "a441d87a18d30d8f81af01da158f8fce09c33622"
         },
         {
           "options": {
