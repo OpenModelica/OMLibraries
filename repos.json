@@ -112,7 +112,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "440f867fada532dcf3b368b580ab0cc47038b95d",
+          "rev": "961f8a755100eb6e4e3bad7df73ad45009d6dfc3",
           "targets": [
             "IBPSA latest"
           ]
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "a441d87a18d30d8f81af01da158f8fce09c33622"
+          "rev": "09eb03144d12d7d3a10c2e394c88d4bcc42cd67e"
         },
         {
           "options": {
