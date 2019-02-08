@@ -762,7 +762,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ef26ed41d9d0d8b2c1b90f34d7af2fd5f311ae23",
+      "rev": "451fe90b5bb7f9214b707f88b2e124178367bbd3",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "09eb03144d12d7d3a10c2e394c88d4bcc42cd67e"
+          "rev": "5b323b608d0b73011ed58cdaebffc9db1f6eb573"
         },
         {
           "options": {
