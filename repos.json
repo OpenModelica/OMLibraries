@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "eb731e286eebc4dfa132c21399ba532fa18e57a7",
+          "rev": "928e6ddfab8e79ce68604d498c16ea61dfa3fb02",
           "targets": [
             "Buildings latest"
           ]
@@ -337,7 +337,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ded87dbaa4a4c3e18d47c14b91e7de14b56676d3",
+      "rev": "4b6431897e624460ab8ccbdb1ccc028c5239275b",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -597,7 +597,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "1231493ffdeec1797cbfb6df1a64a526b38493f3",
+          "rev": "aed8e268520bee1e6587dce80a69d5ecb4b28392",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "b0ee2869972eb6d4b9a8ef02d79002c6c1b7f342"
+          "rev": "55c1fba433d1d1180b471be86339f32d55965519"
         },
         {
           "options": {
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "35f19e66f0fe22d06271427686d7af2fb17f3d89",
+      "rev": "ec9d28ca17d77414fb8022519a4c7cf745bd1c9f",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
