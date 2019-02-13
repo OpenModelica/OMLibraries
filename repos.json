@@ -112,7 +112,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "961f8a755100eb6e4e3bad7df73ad45009d6dfc3",
+          "rev": "2e07f402ba8c5ce2e881924960b9334d3bd6ce60",
           "targets": [
             "IBPSA latest"
           ]
@@ -321,7 +321,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "d7e80711b153a2395a32186c04e6b5633dbbf97d",
+      "rev": "362dbdca4d664460a085ce32d25d758db6dce21a",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -459,7 +459,7 @@
         "gitbranch": "master",
         "license": "gpl3"
       },
-      "rev": "863828efb2b8f5b0a1bcbb55d82e3754da62ca7f",
+      "rev": "fca9de50a484a2213f3ca1b39e275c237c471688",
       "url": "https://github.com/FishSim/LibRAS.git"
     },
     {
@@ -597,7 +597,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "aed8e268520bee1e6587dce80a69d5ecb4b28392",
+          "rev": "72fb0914c56e8ca06377a90f0f5ac8be6eafec2e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -672,7 +672,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b67ae702999cc113d547e0749a1613a0cf75d756",
+      "rev": "8a15ef3f327afa44e8460ecb3182890c4094be6d",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -762,7 +762,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "451fe90b5bb7f9214b707f88b2e124178367bbd3",
+      "rev": "3a0a153266aaa8d0d6aa332ad137c6493c707b0c",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "55c1fba433d1d1180b471be86339f32d55965519"
+          "rev": "0f4d2fd4942c53d06a531f6783c289b762facc67"
         },
         {
           "options": {
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ec9d28ca17d77414fb8022519a4c7cf745bd1c9f",
+      "rev": "fe65117d500bf63cffc7cd253e7248988d611356",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {

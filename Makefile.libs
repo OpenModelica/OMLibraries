@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20190212_190800.core
-ALL_TARGET=$(BUILD_DIR)/20190212_190800.all
+CORE_TARGET=$(BUILD_DIR)/20190213_190709.core
+ALL_TARGET=$(BUILD_DIR)/20190213_190709.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190212_190800
+TIMESTAMP=20190213_190709
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -52,12 +52,12 @@ AixLib:
 	echo '0.4.0' > "$(BUILD_DIR)/AixLib 0.4.0.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '961f8a755100eb6e4e3bad7df73ad45009d6dfc3'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '2e07f402ba8c5ce2e881924960b9334d3bd6ce60'
 	test ! -d 'build//IBPSA latest'
 	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
-	echo '20190206-075034~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	echo '20190212-115554~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
 	# Building git/Annex60
 	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//Annex60 1.0.0'
@@ -240,12 +240,12 @@ ElectricalEnergyStorage:
 	echo '3.2.2-20170208-125627~git~master' > "$(BUILD_DIR)/ElectricalEnergyStorage 3.2.2.last_change"
 ElectroMechanicalDrives:
 	# Building git/ElectroMechanicalDrives
-	./checkout-git.sh 'git/ElectroMechanicalDrives' 'https://github.com/christiankral/ElectroMechanicalDrives.git' 'release' 'd7e80711b153a2395a32186c04e6b5633dbbf97d'
-	test ! -d 'build//ElectroMechanicalDrives 2.0.2'
-	cp -a 'git/ElectroMechanicalDrives/ElectroMechanicalDrives' "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.2"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.2.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.2.license"
-	echo '2.0.2-20190201-141232~git~release' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.2.last_change"
+	./checkout-git.sh 'git/ElectroMechanicalDrives' 'https://github.com/christiankral/ElectroMechanicalDrives.git' 'release' '362dbdca4d664460a085ce32d25d758db6dce21a'
+	test ! -d 'build//ElectroMechanicalDrives 2.0.3'
+	cp -a 'git/ElectroMechanicalDrives/ElectroMechanicalDrives' "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.3"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.3.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.3.license"
+	echo '2.0.3-20190213-121820~git~release' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.0.3.last_change"
 ExtendedPetriNets:
 	# Building git/ExtendedPetriNets
 	./checkout-git.sh 'git/ExtendedPetriNets' 'https://github.com/modelica-3rdparty/ExtendedPetriNets.git' 'release' '2f4eac0651c1ab0ed56b75ec61424e0ef15181d3'
@@ -380,12 +380,12 @@ KeyWordIO:
 	echo '0.8.0' > "$(BUILD_DIR)/KeyWordIO 0.8.0.last_change"
 LibRAS:
 	# Building git/LibRAS
-	./checkout-git.sh 'git/LibRAS' 'https://github.com/FishSim/LibRAS.git' 'master' '863828efb2b8f5b0a1bcbb55d82e3754da62ca7f'
+	./checkout-git.sh 'git/LibRAS' 'https://github.com/FishSim/LibRAS.git' 'master' 'fca9de50a484a2213f3ca1b39e275c237c471688'
 	test ! -d 'build//LibRAS'
 	cp -a 'git/LibRAS/LibRAS' "$(BUILD_DIR)/LibRAS"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/LibRAS.uses"
 	echo 'gpl3' > "$(BUILD_DIR)/LibRAS.license"
-	echo '20190204-144909~git~master' > "$(BUILD_DIR)/LibRAS.last_change"
+	echo '20190213-093248~git~master' > "$(BUILD_DIR)/LibRAS.last_change"
 LinearMPC:
 	# Building git/LinearMPC
 	./checkout-git.sh 'git/LinearMPC' 'https://github.com/modelica-3rdparty/LinearMPC.git' 'master' 'c16ad1c1970ea581c51158cca0647e165dc4c3b9'
@@ -533,13 +533,13 @@ Modelica:
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest 3.2.3.license"
 	echo '3.2.3-rc.2-5-g51471b3' > "$(BUILD_DIR)/ModelicaTest 3.2.3.last_change"
 	# Building git/Modelica
-	./checkout-git.sh 'git/Modelica' 'https://github.com/modelica/Modelica.git' 'master' 'aed8e268520bee1e6587dce80a69d5ecb4b28392'
+	./checkout-git.sh 'git/Modelica' 'https://github.com/modelica/Modelica.git' 'master' '72fb0914c56e8ca06377a90f0f5ac8be6eafec2e'
 	test ! -f 'build//Complex trunk.mo'
 	cp -a 'git/Modelica/Complex.mo' "$(BUILD_DIR)/Complex trunk.mo"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'Complex trunk.patch'
 	echo '' > "$(BUILD_DIR)/Complex trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Complex trunk.license"
-	echo '20190212-094215~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
+	echo '20190213-135220~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex trunk.breaks"
 	test ! -d 'build//Modelica trunk'
 	cp -a 'git/Modelica/Modelica' "$(BUILD_DIR)/Modelica trunk"
@@ -548,27 +548,27 @@ Modelica:
 	echo 'Complex trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'ModelicaServices trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica trunk.license"
-	echo '20190212-094215~git~master-om2' > "$(BUILD_DIR)/Modelica trunk.last_change"
+	echo '20190213-135220~git~master-om2' > "$(BUILD_DIR)/Modelica trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica trunk.breaks"
 	test ! -d 'build//ModelicaReference trunk'
 	cp -a 'git/Modelica/ModelicaReference' "$(BUILD_DIR)/ModelicaReference trunk"
 	echo '' > "$(BUILD_DIR)/ModelicaReference trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaReference trunk.license"
-	echo '20190212-094215~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
+	echo '20190213-135220~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference trunk.breaks"
 	test ! -d 'build//ModelicaServices trunk'
 	cp -a 'git/Modelica/ModelicaServices' "$(BUILD_DIR)/ModelicaServices trunk"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices trunk.patch'
 	echo > "$(BUILD_DIR)/ModelicaServices trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaServices trunk.license"
-	echo '20190212-094215~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
+	echo '20190213-135220~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices trunk.breaks"
 	test ! -d 'build//ModelicaTest trunk'
 	cp -a 'git/Modelica/ModelicaTest' "$(BUILD_DIR)/ModelicaTest trunk"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20190212-094215~git~master-om161' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20190213-135220~git~master-om162' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 Modelica-MVEM:
 	# Building git/Modelica-MVEM
@@ -630,13 +630,13 @@ ModelicaDFR:
 	echo '20160806-130022~git~master' > "$(BUILD_DIR)/Nuclear.last_change"
 Modelica_DeviceDrivers:
 	# Building git/Modelica_DeviceDrivers
-	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' 'b67ae702999cc113d547e0749a1613a0cf75d756'
+	./checkout-git.sh 'git/Modelica_DeviceDrivers' 'https://github.com/modelica/Modelica_DeviceDrivers.git' 'master' '8a15ef3f327afa44e8460ecb3182890c4094be6d'
 	test ! -d 'build//Modelica_DeviceDrivers 1.6.0'
 	cp -a 'git/Modelica_DeviceDrivers/Modelica_DeviceDrivers' "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0"
 	echo 'Modelica_Synchronous 0.92.1' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0.uses"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0.license"
-	echo '1.6.0-17-gb67ae70' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0.last_change"
+	echo '1.6.0-19-g8a15ef3' > "$(BUILD_DIR)/Modelica_DeviceDrivers 1.6.0.last_change"
 Modelica_LinearSystems2:
 	# Building git/Modelica_LinearSystems2
 	./checkout-git.sh 'git/Modelica_LinearSystems2' 'https://github.com/modelica/Modelica_LinearSystems2.git' 'master' '165795f8d23137e726188db21bc1229129ba5e30'
@@ -712,13 +712,13 @@ OpenHydraulics:
 	echo '1.0.1-23-g3485cf4' > "$(BUILD_DIR)/OpenHydraulics 1.0.last_change"
 OpenIPSL:
 	# Building git/OpenIPSL
-	./checkout-git.sh 'git/OpenIPSL' 'https://github.com/SmarTS-Lab/OpenIPSL.git' 'master' '451fe90b5bb7f9214b707f88b2e124178367bbd3'
+	./checkout-git.sh 'git/OpenIPSL' 'https://github.com/SmarTS-Lab/OpenIPSL.git' 'master' '3a0a153266aaa8d0d6aa332ad137c6493c707b0c'
 	test ! -d 'build//OpenIPSL 2.0.0-dev'
 	cp -a 'git/OpenIPSL/OpenIPSL' "$(BUILD_DIR)/OpenIPSL 2.0.0-dev"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.uses"
 	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.license"
-	echo '20190207-171226~git~master' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.last_change"
+	echo '20190213-080807~git~master' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.last_change"
 PNlib:
 	# Building git/PNlib
 	./checkout-git.sh 'git/PNlib' 'https://github.com/lochel/PNlib.git' 'master' '7a664725a745476d0bf451ede22d90591dbf6fa6'
@@ -867,17 +867,17 @@ SiemensPower:
 	echo '2.2-20160429-215511~git~master' > "$(BUILD_DIR)/SiemensPower 2.2.last_change"
 SolarTherm:
 	# Building git/SolarTherm
-	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' '55c1fba433d1d1180b471be86339f32d55965519'
+	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' '0f4d2fd4942c53d06a531f6783c289b762facc67'
 	test ! -d 'build//SolarTherm 0.2'
 	cp -a 'git/SolarTherm/SolarTherm' "$(BUILD_DIR)/SolarTherm 0.2"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/SolarTherm 0.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/SolarTherm 0.2.license"
-	echo '0.2-20190212-170940~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
+	echo '0.2-20190211-143302~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
 	test ! -d 'build//examples'
 	cp -a 'git/SolarTherm/examples' "$(BUILD_DIR)/examples"
 	echo 'SolarTherm 0.2' >> "$(BUILD_DIR)/examples.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/examples.license"
-	echo '0.2-20190212-170940~git~master' > "$(BUILD_DIR)/examples.last_change"
+	echo '0.2-20190211-143302~git~master' > "$(BUILD_DIR)/examples.last_change"
 	# Building git/SolarTherm
 	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'alberto-merge' '7c1ddcd95378793b10e3727607c53be24f9f94fd'
 	test ! -d 'build//SolarTherm alberto-merge'
@@ -909,12 +909,12 @@ SystemDynamics:
 	echo '2.1-9-gb034761' > "$(BUILD_DIR)/SystemDynamics 2.1.last_change"
 ThermalSeparation:
 	# Building git/ThermalSeparation
-	./checkout-git.sh 'git/ThermalSeparation' 'https://github.com/thom-marx/ThermalSeparation.git' 'master' 'ec9d28ca17d77414fb8022519a4c7cf745bd1c9f'
+	./checkout-git.sh 'git/ThermalSeparation' 'https://github.com/thom-marx/ThermalSeparation.git' 'master' 'fe65117d500bf63cffc7cd253e7248988d611356'
 	test ! -d 'build//ThermalSeparation 0.2'
 	cp -a 'git/ThermalSeparation/ThermalSeparation' "$(BUILD_DIR)/ThermalSeparation 0.2"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ThermalSeparation 0.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermalSeparation 0.2.license"
-	echo '0.2-20190212-095345~git~master' > "$(BUILD_DIR)/ThermalSeparation 0.2.last_change"
+	echo '0.2-20190213-152733~git~master' > "$(BUILD_DIR)/ThermalSeparation 0.2.last_change"
 ThermoPower:
 	# Building git/ThermoPower
 	./checkout-git.sh 'git/ThermoPower' 'https://github.com/casella/ThermoPower.git' 'master' 'fc86de5f2d13d9f6faf13cbd915eda936edaea70'
