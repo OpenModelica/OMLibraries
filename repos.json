@@ -597,7 +597,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "72fb0914c56e8ca06377a90f0f5ac8be6eafec2e",
+          "rev": "9e546f083835f26318a122bb7dd049bbb9de5547",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fe65117d500bf63cffc7cd253e7248988d611356",
+      "rev": "1753ad9600ba65df4a56030598c2386223b4ca76",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
