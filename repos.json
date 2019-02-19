@@ -762,7 +762,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3a0a153266aaa8d0d6aa332ad137c6493c707b0c",
+      "rev": "9a397fb9829faa3a6cb150db82af0d748cd4f99a",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1753ad9600ba65df4a56030598c2386223b4ca76",
+      "rev": "85a5eaa6e299b21f3f045c85ea8d26496a3522ef",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
