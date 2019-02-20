@@ -169,7 +169,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "016ba5153083d4043f28888d2ec4a1c6afb6caab",
+      "rev": "bc808357e2e674af69df2c324969d04c5e3c0f57",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "8d5819ec0370d95c7ff14c18acf8fc538e6fff98",
+          "rev": "26d949c4fbffd7f6c11a1aca9472810f46156332",
           "targets": [
             "Buildings latest"
           ]
@@ -597,7 +597,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9e546f083835f26318a122bb7dd049bbb9de5547",
+          "rev": "295ff75afd1b9f27798323725299777122011afc",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -762,7 +762,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9a397fb9829faa3a6cb150db82af0d748cd4f99a",
+      "rev": "0a6897fec88b7f68f0bf7b1c8ba793df296ebe9f",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "0f4d2fd4942c53d06a531f6783c289b762facc67"
+          "rev": "4ec4fc8becfe9e436a0e9d9ee2065eb7fc92f875"
         },
         {
           "options": {
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "85a5eaa6e299b21f3f045c85ea8d26496a3522ef",
+      "rev": "a0464f0157b70bb7e73a032d29ca4df074b3fe9f",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
@@ -965,7 +965,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fc86de5f2d13d9f6faf13cbd915eda936edaea70",
+      "rev": "760a936229795a56503e49f55d70a0e827a14afd",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
