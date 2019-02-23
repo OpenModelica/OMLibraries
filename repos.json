@@ -169,7 +169,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9a1a8ffc92f92c8d6bbac9267cb1927237dcb728",
+      "rev": "56ccd43d1a8de8e2f6dfaed3a2cef9e3edf27b7f",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -597,7 +597,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "295ff75afd1b9f27798323725299777122011afc",
+          "rev": "bd596440288b1542ec9b02e0cf7f94c5f042e0e8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -965,7 +965,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "760a936229795a56503e49f55d70a0e827a14afd",
+      "rev": "05e56eb8006e0e1c8862083486b9a38ac65a91c0",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
