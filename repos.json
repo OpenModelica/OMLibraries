@@ -786,7 +786,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "2a14e123b46e30424bc72489a95489681731baf6",
+      "rev": "7b63d0cade63b636c36fd9b244c13c08fa24c82f",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
@@ -920,7 +920,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "4ec4fc8becfe9e436a0e9d9ee2065eb7fc92f875"
+          "rev": "6356b2bb7ae8812853f4b086b3b50af84ee8344f"
         },
         {
           "options": {
