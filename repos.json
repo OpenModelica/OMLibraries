@@ -112,7 +112,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2d6a5a6ff80984310e47cc364913541e4fdb62c2",
+          "rev": "86a8fab4539a091799c2fd8bee72c8f04c93505f",
           "targets": [
             "IBPSA latest"
           ]
@@ -180,7 +180,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "5dc7a46ac9cd58881346b6d873a0026aa9f47c61",
+          "rev": "cb8a81a65321ece15622bee4647b6a633b2ead71",
           "targets": [
             "Buildings latest"
           ]
@@ -321,7 +321,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "362dbdca4d664460a085ce32d25d758db6dce21a",
+      "rev": "4ec0c244c85b72d52ef8a91b0ccac96e4f7c9493",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -450,7 +450,7 @@
         "gitbranch": "release",
         "license": "modelica1.1"
       },
-      "rev": "c8feef60e8a999a8a05fc56733968cac920b0bd1",
+      "rev": "74eeea2df4c54ace14f6eeb13106cdb290f0c5b0",
       "url": "https://github.com/christiankral/KeyWordIO.git"
     },
     {
@@ -572,7 +572,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "776b560e017df3541e24d541697ca2f6c70fe849",
+          "rev": "ab2d460a297a3a34e7c429a3cb9f36a02afa4f89",
           "targets": [
             "Complex",
             "Modelica",
