@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BioChem BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SiemensPower SolarTherm Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
-CORE_TARGET=$(BUILD_DIR)/20190309_190813.core
-ALL_TARGET=$(BUILD_DIR)/20190309_190813.all
+CORE_TARGET=$(BUILD_DIR)/20190310_190618.core
+ALL_TARGET=$(BUILD_DIR)/20190310_190618.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib Annex60 BondGraph BondLib BrineProp BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR Modelica_LinearSystems2 Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest buildsyspro ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190309_190813
+TIMESTAMP=20190310_190618
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -245,7 +245,7 @@ ElectroMechanicalDrives:
 	cp -a 'git/ElectroMechanicalDrives/ElectroMechanicalDrives' "$(BUILD_DIR)/ElectroMechanicalDrives 2.1.0"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/ElectroMechanicalDrives 2.1.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.1.0.license"
-	echo '2.1.0-20190309-162222~git~release' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.1.0.last_change"
+	echo '2.1.0' > "$(BUILD_DIR)/ElectroMechanicalDrives 2.1.0.last_change"
 ExtendedPetriNets:
 	# Building git/ExtendedPetriNets
 	./checkout-git.sh 'git/ExtendedPetriNets' 'https://github.com/modelica-3rdparty/ExtendedPetriNets.git' 'release' '2f4eac0651c1ab0ed56b75ec61424e0ef15181d3'
@@ -377,7 +377,7 @@ KeyWordIO:
 	cp -a 'git/KeyWordIO/KeyWordIO' "$(BUILD_DIR)/KeyWordIO 0.9.0"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/KeyWordIO 0.9.0.uses"
 	echo 'modelica1.1' > "$(BUILD_DIR)/KeyWordIO 0.9.0.license"
-	echo '0.9.0-20190309-181859~git~release' > "$(BUILD_DIR)/KeyWordIO 0.9.0.last_change"
+	echo '0.9.0' > "$(BUILD_DIR)/KeyWordIO 0.9.0.last_change"
 LibRAS:
 	# Building git/LibRAS
 	./checkout-git.sh 'git/LibRAS' 'https://github.com/FishSim/LibRAS.git' 'master' 'fca9de50a484a2213f3ca1b39e275c237c471688'
@@ -790,7 +790,7 @@ PowerSystems:
 	./checkout-git.sh 'git/PowerSystems' 'https://github.com/modelica/PowerSystems.git' 'release' 'df65a5460f811f7053b69f2abd864482d461d379'
 	test ! -d 'build//PowerSystems 1.0.0'
 	cp -a 'git/PowerSystems/PowerSystems 1.0.0' "$(BUILD_DIR)/PowerSystems 1.0.0"
-	echo '' > "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 1.0.0.license"
 	echo '1.0.0-4-gdf65a54' > "$(BUILD_DIR)/PowerSystems 1.0.0.last_change"
 PowerSystems-latest:
@@ -983,13 +983,13 @@ Wavelet:
 	echo '20140312-120000~git~master' > "$(BUILD_DIR)/Wavelet.last_change"
 WindPowerPlants:
 	# Building git/WindPowerPlants
-	./checkout-git.sh 'git/WindPowerPlants' 'https://github.com/modelica-3rdparty/WindPowerPlants.git' 'release' '5f97dc877e13fc91773a893827f6bc074a9f5a83'
-	test ! -d 'build//WindPowerPlants 1.1.1'
-	cp -a 'git/WindPowerPlants/WindPowerPlants' "$(BUILD_DIR)/WindPowerPlants 1.1.1"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/WindPowerPlants 1.1.1.uses"
-	echo 'Complex 3.2.2' >> "$(BUILD_DIR)/WindPowerPlants 1.1.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/WindPowerPlants 1.1.1.license"
-	echo '1.1.1' > "$(BUILD_DIR)/WindPowerPlants 1.1.1.last_change"
+	./checkout-git.sh 'git/WindPowerPlants' 'https://github.com/modelica-3rdparty/WindPowerPlants.git' 'release' '16ed423ec48fe159d0838fcb1cf42980ece278a5'
+	test ! -d 'build//WindPowerPlants 1.2.0'
+	cp -a 'git/WindPowerPlants/WindPowerPlants' "$(BUILD_DIR)/WindPowerPlants 1.2.0"
+	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/WindPowerPlants 1.2.0.uses"
+	echo 'Complex 3.2.3' >> "$(BUILD_DIR)/WindPowerPlants 1.2.0.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/WindPowerPlants 1.2.0.license"
+	echo '1.2.0-20190309-160413~git~release' > "$(BUILD_DIR)/WindPowerPlants 1.2.0.last_change"
 XogenyTest:
 	# Building git/XogenyTest
 	./checkout-git.sh 'git/XogenyTest' 'https://github.com/xogeny/XogenyTest.git' 'master' '4410a3224e1803565d57ff323c3bef5a4bfd6b4d'
