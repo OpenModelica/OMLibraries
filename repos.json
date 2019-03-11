@@ -672,7 +672,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8a15ef3f327afa44e8460ecb3182890c4094be6d",
+      "rev": "5575f1e5b0887c7df440b15345493b6eb7e024f1",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -786,7 +786,7 @@
       "options": {
         "gitbranch": "release"
       },
-      "rev": "2a87c1b24e02a39fc8905e91577774a304d4f471",
+      "rev": "1413f797702f0850a249c761142acd16bfb73b48",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
     },
     {
