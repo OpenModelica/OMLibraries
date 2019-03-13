@@ -448,7 +448,7 @@
       "dest": "KeyWordIO",
       "options": {
         "gitbranch": "release",
-        "license": "modelica1.1"
+        "license": "bsd3"
       },
       "rev": "74eeea2df4c54ace14f6eeb13106cdb290f0c5b0",
       "url": "https://github.com/christiankral/KeyWordIO.git"
@@ -564,6 +564,7 @@
             "generate-patch-mos": "MSL.3.2.3.mos",
             "gitbranch": "maint/3.2.3",
             "intertrac": "m:",
+            "license": "bsd3",
             "no-dependencies": "ModelicaServices",
             "patch-files": [
               "Modelica 3.2.3.patch",
@@ -587,6 +588,7 @@
             "generate-patch-mos": "MSL.trunk.mos",
             "gitbranch": "master",
             "intertrac": "m:",
+            "license": "bsd3",
             "no-dependencies": "ModelicaServices",
             "patch-files": [
               "Complex trunk.patch",
