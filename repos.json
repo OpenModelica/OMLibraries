@@ -295,7 +295,8 @@
     {
       "dest": "DriveControl",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "b7233fd97a92867bb4ec2c3647c7f7e888398644",
       "url": "https://github.com/AHaumer/DriveControl.git"
@@ -303,7 +304,8 @@
     {
       "dest": "EMOTH",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "fa890c8c2781f0c0b2f8efe955ed8a27875dd9ac",
       "url": "https://github.com/AHaumer/EMOTH.git"
@@ -319,7 +321,8 @@
     {
       "dest": "ElectroMechanicalDrives",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "4ec0c244c85b72d52ef8a91b0ccac96e4f7c9493",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
@@ -409,7 +412,8 @@
     {
       "dest": "HanserModelica",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "dd9848bebf3ae3b2e7e4bf14c209ca547c08357f",
       "url": "https://github.com/christiankral/HanserModelica.git"
@@ -786,7 +790,8 @@
     {
       "dest": "PhotoVoltaics",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "1413f797702f0850a249c761142acd16bfb73b48",
       "url": "https://github.com/modelica-3rdparty/PhotoVoltaics.git"
@@ -1043,7 +1048,8 @@
     {
       "dest": "WindPowerPlants",
       "options": {
-        "gitbranch": "release"
+        "gitbranch": "release",
+        "license": "bsd3"
       },
       "rev": "16ed423ec48fe159d0838fcb1cf42980ece278a5",
       "url": "https://github.com/modelica-3rdparty/WindPowerPlants.git"
