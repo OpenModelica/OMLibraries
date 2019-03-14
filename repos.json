@@ -678,7 +678,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3348d35c824c7584c601a7a6c9670a81ad02ce72",
+      "rev": "3d688dd68bff3063573a89d856927af6cee5742d",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -768,7 +768,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aca96d7d71a2b48c0882a55170ed41d39cf56757",
+      "rev": "caed9e43a4dc7751ac6c04023ada1ddd92fe5fb0",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
