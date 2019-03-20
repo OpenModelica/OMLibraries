@@ -169,7 +169,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "aba8ce2a46aef488716fab385c022e2d5bae3f71",
+      "rev": "6d171589842c63c14f1a3d61ea08eab645e70b31",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -577,7 +577,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "21327c6982edae7f50341f00019a55ff982130ad",
+          "rev": "8f65f621a388379e9de663fc15990bfc9ee9b540",
           "targets": [
             "Complex",
             "Modelica",
@@ -603,7 +603,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "ec70d1f10887371f11f14cb1abb696b60ee8cd6f",
+          "rev": "af2daeb330129f997a551ec80f4f8abdb45c6d32",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -678,7 +678,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ea08ffc23c1daf0a8ba5ff67c85fadf610bbec10",
+      "rev": "b8ca0cd8c4a2153e77642f7e57b6da5fb432ed5b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
