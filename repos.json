@@ -53,7 +53,7 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.3",
     "Modelica_StateGraph2 2.0.2": "Modelica_StateGraph2 2.0.3",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.92",
-	"NcDataReader2 2.4.0" : "NcDataReader2 2.5.0",
+    "NcDataReader2 2.4.0": "NcDataReader2 2.5.0",
     "PhotoVoltaics 1.3.0": "PhotoVoltaics 1.3.1",
     "PhotoVoltaics X.X.X": "PhotoVoltaics 1.1.1",
     "Physiolibrary 2.3.2": "Physiolibrary 2.3.2-beta"
@@ -181,7 +181,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0e33442dbb580e5f0f45ee0462a41666a332fb7b",
+          "rev": "ef889c19e5e83d9e065d84bd315a567ae0ba71b6",
           "targets": [
             "Buildings latest"
           ]
@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4b6431897e624460ab8ccbdb1ccc028c5239275b",
+      "rev": "3ebfc8115a306d9e75ece30732b87c6fc602d78d",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -604,7 +604,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9dca8f27b0ea0c5156f39e50aeb43816c0c2ca8a",
+          "rev": "efdbd782c95ec6d37a43704f74c646c79ce3e474",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -679,7 +679,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ce3b5b1190ef120421562075ce1e8c326dc5182d",
+      "rev": "c23345f0c944e6f7d7d56b91c52839371c8198b5",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -818,7 +818,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0cec8e63cc75168e19e634f22ea445a57e3b117d",
+      "rev": "9d1d51c6d1119be73367401e3dd28a492749452e",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -928,7 +928,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "68229de9be4ede10fc9860a945b0ca7e320905ec"
+          "rev": "6a3e14c2f4081651e38264c14ce7ffd5e19ebe99"
         },
         {
           "options": {
@@ -1101,7 +1101,7 @@
         "gitbranch": "master",
         "license": "lgpl2.1+"
       },
-      "rev": "59efa2d4695b7b9794516ea74d7640ae2612fcbe",
+      "rev": "706ffafcc5a33f52217b4198f74242072e198803",
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
