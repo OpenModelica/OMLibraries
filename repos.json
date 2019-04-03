@@ -551,10 +551,10 @@
               "Modelica 3.2.2.patch",
               "ModelicaServices 3.2.2.patch"
             ],
-            "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om1",
+            "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "d992c34ed978241214b4c079fb8ee6cc9e33d909",
+          "rev": "3627d3d9e1d359e21ee639949a6dcb4b290700d6",
           "targets": [
             "Complex",
             "Modelica",
@@ -575,10 +575,10 @@
               "Modelica 3.2.3.patch",
               "ModelicaServices 3.2.3.patch"
             ],
-            "patchlevel": "Modelica:-om2,ModelicaServices:-om1",
+            "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "8f65f621a388379e9de663fc15990bfc9ee9b540",
+          "rev": "21327c6982edae7f50341f00019a55ff982130ad",
           "targets": [
             "Complex",
             "Modelica",
@@ -601,10 +601,10 @@
               "ModelicaServices trunk.patch",
               "ModelicaTest trunk.patch"
             ],
-            "patchlevel": "Complex:-om1,Modelica:-om2,ModelicaServices:-om1",
+            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "32a91d014167ed68be2c234d871102c3f8129bc0",
+          "rev": "efdbd782c95ec6d37a43704f74c646c79ce3e474",
           "targets": [
             "Complex trunk",
             "Modelica trunk",

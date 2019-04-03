@@ -35,6 +35,8 @@ setComponentModifierValue(ModelicaServices, target, $Code(="OpenModelica"));
 servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
 setComponentModifierValue(ModelicaServices.Machine, Integer_inf, $Code(=OpenModelica.Internal.Architecture.integerMax()));
 servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
+addClassAnnotation(ModelicaServices.ExternalReferences.loadResource, annotate=__OpenModelica_EarlyInline(true));
+servicesFileStr := diffModelicaFileListings(servicesFileStr, listFile(ModelicaServices), OpenModelica.Scripting.DiffFormat.plain);
 err := getErrorString();
 if err<>"" then
   print(err);
