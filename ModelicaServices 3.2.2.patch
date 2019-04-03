@@ -1,6 +1,6 @@
 diff -u -w -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices 3.2.2/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2018-12-07 09:55:32.637470067 +0100
-+++ build/ModelicaServices 3.2.2/package.mo	2018-12-07 09:56:01.141525178 +0100
+--- git/Modelica/ModelicaServices/package.mo	2019-04-03 15:41:40.718812019 +0200
++++ build/ModelicaServices 3.2.2/package.mo	2019-04-03 15:42:12.138775843 +0200
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -11,7 +11,7 @@ diff -u -w -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.m
      "Target of this ModelicaServices implementation";
  
    package UsersGuide "User's Guide"
-@@ -587,7 +587,7 @@
+@@ -587,14 +587,15 @@
        extends
          Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
        algorithm
@@ -20,7 +20,16 @@ diff -u -w -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.m
  
        annotation (Documentation(info="<html>
  <p>
-@@ -606,7 +606,7 @@
+ The interface of this model is documented at
+ <a href=\"modelica://Modelica.Utilities.Files.loadResource\">Modelica.Utilities.Files.loadResource</a>.
+ </p>
+-</html>"));
++</html>"),
++        __OpenModelica_EarlyInline = true);
+     end loadResource;
+   end ExternalReferences;
+ 
+@@ -606,7 +607,7 @@
        "Smallest number such that small and -small are representable on the machine";
      final constant Real inf=1.e+60
        "Biggest Real number such that inf and -inf are representable on the machine";

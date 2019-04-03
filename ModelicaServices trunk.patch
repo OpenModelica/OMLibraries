@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "build/ModelicaServices trunk/package.mo"
---- git/Modelica/ModelicaServices/package.mo	2019-04-01 19:02:22.106072119 +0200
-+++ build/ModelicaServices trunk/package.mo	2019-04-01 19:02:44.342171786 +0200
+--- git/Modelica/ModelicaServices/package.mo	2019-04-03 15:43:14.938728172 +0200
++++ build/ModelicaServices trunk/package.mo	2019-04-03 15:43:36.430718853 +0200
 @@ -1,7 +1,7 @@
  within ;
 -package ModelicaServices "ModelicaServices (Default implementation) - Models and functions used in the Modelica Standard Library requiring a tool specific implementation"
@@ -11,16 +11,26 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
      "Target of this ModelicaServices implementation";
  
    package UsersGuide "User's Guide"
-@@ -144,7 +144,7 @@
+@@ -144,14 +144,15 @@
        extends
          Modelica.Utilities.Internal.PartialModelicaServices.ExternalReferences.PartialLoadResource;
        algorithm
 -      fileReference := Modelica.Utilities.Files.fullPathName(uri);
 +      fileReference:=OpenModelica.Scripting.uriToFilename(uri);
  
-       annotation (Documentation(info="<html>
+-      annotation (Documentation(info="<html>
++      annotation (Documentation(info = "<html>
  <p>
-@@ -162,7 +162,7 @@
+ The interface of this model is documented at
+ <a href=\"modelica://Modelica.Utilities.Files.loadResource\">Modelica.Utilities.Files.loadResource</a>.
+ </p>
+-</html>"));
++</html>"),
++        __OpenModelica_EarlyInline = true);
+     end loadResource;
+   end ExternalReferences;
+ 
+@@ -162,7 +163,7 @@
        "Smallest number such that small and -small are representable on the machine";
      final constant Real inf=1e60
        "Biggest Real number such that inf and -inf are representable on the machine";
@@ -29,7 +39,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
        "Biggest Integer number such that Integer_inf and -Integer_inf are representable on the machine";
      annotation (Documentation(info="<html>
  <p>
-@@ -211,12 +211,12 @@
+@@ -211,12 +212,12 @@
  
    annotation (
      preferredView="info",
