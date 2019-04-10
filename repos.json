@@ -53,8 +53,8 @@
     "Modelica_StateGraph2 2.0.1": "Modelica_StateGraph2 2.0.3",
     "Modelica_StateGraph2 2.0.2": "Modelica_StateGraph2 2.0.3",
     "Modelica_Synchronous 0.91": "Modelica_Synchronous 0.93.0",
-	"Modelica_Synchronous 0.92": "Modelica_Synchronous 0.93.0",
-	"Modelica_Synchronous 0.92.1": "Modelica_Synchronous 0.93.0",
+    "Modelica_Synchronous 0.92": "Modelica_Synchronous 0.93.0",
+    "Modelica_Synchronous 0.92.1": "Modelica_Synchronous 0.93.0",
     "NcDataReader2 2.4.0": "NcDataReader2 2.5.0",
     "PhotoVoltaics 1.3.0": "PhotoVoltaics 1.3.1",
     "PhotoVoltaics X.X.X": "PhotoVoltaics 1.1.1",
@@ -183,7 +183,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "327be9f990a9851f9f3dc6b8db803c7c7c3b39a2",
+          "rev": "c94ea1da2e5656ac62cd8565d2730b8897206690",
           "targets": [
             "Buildings latest"
           ]
@@ -606,7 +606,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b020379257b4a0ba139ffe788df7ab885b88a0c8",
+          "rev": "2f07053657a77f1ba01d002c4f87daee6ef591b6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -681,7 +681,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b55a2d467829bc2a5ff4786879ea5644e915e61d",
+      "rev": "94ceb120d009c65cdb7826fcee54e41f99c5f082",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -706,7 +706,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6a9b3145042a76638380834eb2a74fa74d8f30d6",
+      "rev": "9133245076394c4055bdc283eb13973905bb734e",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
@@ -812,7 +812,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "40d8ae7386643db2ffb9f3305f9e00928652f399",
+      "rev": "6092af36da3799eb9800a1af203186e76450df76",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
