@@ -115,7 +115,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "cc3c78b069155a8fa153d291cde978f05f391cf2",
+          "rev": "02610f525fd6c47db55c580bc5fc4eafe3a3ae20",
           "targets": [
             "IBPSA latest"
           ]
@@ -183,7 +183,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c94ea1da2e5656ac62cd8565d2730b8897206690",
+          "rev": "b7f3fc1c337dc89e4579b41bdd27a4f9f569a917",
           "targets": [
             "Buildings latest"
           ]
@@ -689,7 +689,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "165795f8d23137e726188db21bc1229129ba5e30",
+      "rev": "5485b6524c0ae9d8d9ecc48aef1db29d03714e6f",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -812,7 +812,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6092af36da3799eb9800a1af203186e76450df76",
+      "rev": "890978578e68fb21114a61abaa5d270e026544cd",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
