@@ -183,7 +183,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "42a7fd9e12557e675bf6eacbc0a9d9c0d12b9203",
+          "rev": "90fef2cf362e8ccac8906c3074876fa72f85908c",
           "targets": [
             "Buildings latest"
           ]
