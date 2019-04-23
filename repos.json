@@ -115,7 +115,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "439adb760b2751a66c743b279cfbc1eede3aa66f",
+          "rev": "7abc8dbf4738e231bbcf788cddac32679808fdec",
           "targets": [
             "IBPSA latest"
           ]
@@ -183,7 +183,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "90fef2cf362e8ccac8906c3074876fa72f85908c",
+          "rev": "ff8785815539d2259fa9040c0dc43b1ae6487c81",
           "targets": [
             "Buildings latest"
           ]
@@ -1094,7 +1094,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "594179d1625947e7da82e6f92a7cb61c6bb9859f",
+      "rev": "68979f222007b0e1326a164cf76c81d51ed18a37",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
