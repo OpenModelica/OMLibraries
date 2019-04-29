@@ -706,7 +706,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9133245076394c4055bdc283eb13973905bb734e",
+      "rev": "b408862455902e8be9b93e6082a4c05ecce068fa",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
@@ -1094,7 +1094,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "68979f222007b0e1326a164cf76c81d51ed18a37",
+      "rev": "49636e0f59ea14684384b90a12e065774de8b97b",
       "url": "https://github.com/modelica-3rdparty/msgpack-modelica.git"
     },
     {
