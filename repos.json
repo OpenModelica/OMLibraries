@@ -115,7 +115,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e73fa43e5ac3bf4c0e0970c6ce3adda3381f514d",
+          "rev": "62d5ece57a1726bee41322e96c969d6d12aba795",
           "targets": [
             "IBPSA latest"
           ]
@@ -183,7 +183,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9b4a03918815cb93e0774e376ffd959d1684daef",
+          "rev": "a26ac5032b429b607d8f8d210d655912614e3f3a",
           "targets": [
             "Buildings latest"
           ]
@@ -426,7 +426,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "31a5ae702a25a9411c44976e2787a37a439d5edb",
+      "rev": "c6ab773995eb0a059509169d77ff49e13bc7e306",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -606,7 +606,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9457a17e78a639d22b32cea47edc7fe14d75b1e5",
+          "rev": "30e08efd288786e34a2adabd64e50a38a5ac7490",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -681,7 +681,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "94ceb120d009c65cdb7826fcee54e41f99c5f082",
+      "rev": "e4d9e528ad1c385cfd531c5dc7feeaa711939a6b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
