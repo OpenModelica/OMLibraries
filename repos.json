@@ -85,7 +85,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7036d6f8a372147b1298502df9c12e1d1d70876f",
+      "rev": "9cbbfe02dd6743b00b5e6cd72f643aaf64aa4b75",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -681,7 +681,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b09a2194b9ba1639d59ce8b02fb7b27bc9f7af22",
+      "rev": "595b91310a29c04a3e0d33003ab7931ed7a91b07",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
