@@ -37,6 +37,7 @@
     "https://api.github.com/users/modelica/repos?type=owner&per_page=100"
   ],
   "provided": {
+    "AdvancedNoise 1.0.0": "AdvancedNoise 1.0.1",
     "AixLib 0.3.0": "AixLib 0.4.0",
     "Buildings 4.0.0": "Buildings latest",
     "Buildings 5.0.1": "Buildings latest",
