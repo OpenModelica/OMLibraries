@@ -86,7 +86,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "437fce7fa8c5ac3abb11ff9dcfb0c6f413a73a29",
+      "rev": "3d5ee54b4086e5c29e7276a7b92d40a3237aed8c",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -328,7 +328,7 @@
         "gitbranch": "release",
         "license": "bsd3"
       },
-      "rev": "4ec0c244c85b72d52ef8a91b0ccac96e4f7c9493",
+      "rev": "6655a15c297e810505c59b0f412fbdca5f1a0497",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -976,7 +976,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "05e56eb8006e0e1c8862083486b9a38ac65a91c0",
+      "rev": "ff1369f148f92daa210002da7d361bdb61e6fdaa",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
