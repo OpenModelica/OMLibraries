@@ -116,7 +116,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "62d5ece57a1726bee41322e96c969d6d12aba795",
+          "rev": "74d7b50a77f0049914c023d10f742202ad4a02d9",
           "targets": [
             "IBPSA latest"
           ]
@@ -607,7 +607,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e504ea5f749f72ebea208510654807486e708056",
+          "rev": "133ef88ee4f1a9fd2cc9b38d9ddf1356113676b8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -707,7 +707,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5aa86a254f256f5f0d39ac46743f6fc97bab16aa",
+      "rev": "516186cfab7243eec0ead75bd505be509fa217f6",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
