@@ -9,7 +9,7 @@ if test -f "build/$NAME.mo"; then
   EXT=".mo"
 fi
 DEBNAME=`./debian-name.sh "$LIB" $VERSION`
-DEBREV=`cat "build/$NAME.last_change"`
+DEBREV=`cat "build/$NAME.last_change" | tr '-' '~'`
 RPMREV=`echo $DEBREV | tr '-' '~'`
 FULLNAME="${DEBNAME}_${DEBREV}"
 FULLRPMNAME="${DEBNAME}_${FULLNAME}"
