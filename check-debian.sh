@@ -9,7 +9,7 @@ for f in build/*.last_change; do
   fi
   LIB=`echo $f | sed s/.last_change// | sed s,build/,,`
   NAME=`./debian-name.sh $LIB`
-  REV=`cat "$f"`
+  REV=`cat "$f" | tr '-' '~'`
   SRC=`echo ${NAME}_$REV-1.dsc`
   DEB=`echo ${NAME}_$REV-1_all.deb`
   if grep -q "$DEB" ".remote/nightly-library-files" && grep -q "$SRC" ".remote/nightly-library-sources"; then
