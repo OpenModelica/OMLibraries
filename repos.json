@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1a6d3a768cf43f43b4e434997653734f85f722d8",
+          "rev": "5b3b0b6507acff8946b065b561100cf59f196932",
           "targets": [
             "Buildings latest"
           ]
@@ -823,7 +823,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "516186cfab7243eec0ead75bd505be509fa217f6",
+      "rev": "b4364eda7d010ad65fe959ab02d05737c7ad50e4",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
