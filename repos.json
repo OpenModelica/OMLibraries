@@ -563,7 +563,10 @@
         "gitbranch": "master"
       },
       "rev": "734d0d9e062e7f168948c0806deadc0c0191d8ea",
-      "url": "https://github.com/modelica-3rdparty/MoMoUrEnSySi.git"
+      "url": "https://github.com/modelica-3rdparty/MoMoUrEnSySi.git",
+      "targets": [
+        "self"
+      ]
     },
     {
       "dest": "ModPowerSystems",
