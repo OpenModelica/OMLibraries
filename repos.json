@@ -1,13 +1,16 @@
 {
   "bad-uses": [
+    "conversion default",
     "DataFiles 1.0",
     "DEVLib 1",
     "DEVSLib 2.2",
+    "DymolaCommands 1.1",
     "ModelManagement 1.1.1",
     "ModeleObsoletes 2015.12",
     "DESLib 1",
     "DESLib73 1",
-    "Interactive 2"
+    "Interactive 2",
+    "UserInteraction 0.64"
   ],
   "github-ignore": [
     "https://github.com/modelica/Modelica",
@@ -16,11 +19,13 @@
     "https://github.com/modelica/Modelica_StateGraph2",
     "https://github.com/modelica/Modelica_Synchronous",
     "https://github.com/modelica-3rdparty/fmi-standard.org",
+    "https://github.com/modelica-3rdparty/buildsyspro.git",
     "https://github.com/modelica-3rdparty/ATplus",
     "https://github.com/modelica-3rdparty/Buildings.git",
     "https://github.com/modelica-3rdparty/FuelCellLib",
     "https://github.com/modelica-3rdparty/Icons.git",
     "https://github.com/modelica-3rdparty/IDEAS.git",
+    "https://github.com/modelica-3rdparty/MoMoUrEnSySi",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/PDELib",
@@ -189,7 +194,7 @@
         "gitbranch": "master"
       },
       "rev": "232d51c4fe28ce79cc12b58167ebaf98c2b74010",
-      "url": "https://github.com/modelica-3rdparty/BuildSysPro.git"
+      "url": "https://github.com/EDF-TREE/BuildSysPro.git"
     },
     {
       "dest": "BuildingControlLib",
@@ -556,17 +561,6 @@
       },
       "rev": "ab15d4cae19b5e4a1148d1d4b2a05c50864599ba",
       "url": "https://github.com/jjpotterkowski/ManualTracking.git"
-    },
-    {
-      "dest": "MoMoUrEnSySi",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "734d0d9e062e7f168948c0806deadc0c0191d8ea",
-      "url": "https://github.com/modelica-3rdparty/MoMoUrEnSySi.git",
-      "targets": [
-        "self"
-      ]
     },
     {
       "dest": "ModPowerSystems",
@@ -1211,14 +1205,6 @@
       },
       "rev": "4410a3224e1803565d57ff323c3bef5a4bfd6b4d",
       "url": "https://github.com/xogeny/XogenyTest.git"
-    },
-    {
-      "dest": "buildsyspro",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "232d51c4fe28ce79cc12b58167ebaf98c2b74010",
-      "url": "https://github.com/modelica-3rdparty/buildsyspro.git"
     },
     {
       "dest": "ipsl",
