@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1a62197b7d9320908a0139ec62e092e46d023650",
+          "rev": "d5f867efe54c473fd41fc2088e1740b4e3a87833",
           "targets": [
             "IBPSA latest"
           ]
@@ -665,7 +665,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "2556186408a4626efd9132759f74f03ef4d019f4",
+          "rev": "20597c8921bd3fab3cf94b0ae1e1369f69354d87",
           "targets": [
             "Complex",
             "Modelica",
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6aa5f8389058527a314c10fca5a310f3a8f69951",
+          "rev": "691dbe9eeeb22799012d95d1c4886f8d7c7b2145",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -757,7 +757,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5c13f92f061d2184167538e9c9d8d2efdd1423fa",
+      "rev": "2fdef23219aba8417d624004356387a96c949df4",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
