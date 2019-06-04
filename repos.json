@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "edac8941b492ec05cfe392712148a5f5fe0b2877",
+          "rev": "90dfe1dcd311b4f5cb5868d0603b09854f6171f9",
           "targets": [
             "IBPSA latest"
           ]
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "691dbe9eeeb22799012d95d1c4886f8d7c7b2145",
+          "rev": "077804168bd2dfbd5fd05737bfac24c2a9cf73d9",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -749,7 +749,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6044b756548cfb60fd011983b2ab7587fa252089",
+      "rev": "70ab87d5bca056765fe11297f258f7a0915db49b",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -1227,7 +1227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "edac8941b492ec05cfe392712148a5f5fe0b2877",
+      "rev": "cd16ca8b4865ded3ab03595ef76b988da4255087",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
