@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight modelica-ibpsa msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20190610_190645.core
-ALL_TARGET=$(BUILD_DIR)/20190610_190645.all
+CORE_TARGET=$(BUILD_DIR)/20190611_190657.core
+ALL_TARGET=$(BUILD_DIR)/20190611_190657.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight modelica-ibpsa msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190610_190645
+TIMESTAMP=20190611_190657
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -60,12 +60,12 @@ AlgebraTestSuite:
 	echo '20180128-224601~git~master' > "$(BUILD_DIR)/AlgebraTestSuite.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' '973e0d0fe7e20ae331a9626e36cb9fcd0ef41d55'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' 'e0e3ea0c27ab9974422a209b7105f9200ce644bd'
 	test ! -d 'build//IBPSA latest'
 	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
-	echo '20190605-112428~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	echo '20190610-102455~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
 	# Building git/Annex60
 	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//Annex60 1.0.0'
@@ -144,12 +144,12 @@ BuildingSystems:
 	echo '2.0.0-beta2-288-g35278e2' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '0ce4fc5bf68b547149cf741aa0eeb284246deaf9'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'fb51e57eb8e1f73e8c4455b1d05fb054ad1fa45f'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20190610-074533~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20190611-080317~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v1.4_build1' 'v1.4_build1'
 	test ! -d 'build//Buildings 1.4'
@@ -957,17 +957,17 @@ RealTimeCoordinationLibrary:
 	echo 'Windows-1252' > "$(BUILD_DIR)/RealTimeCoordinationLibrary 1.0.4/package.encoding"
 SMEHV:
 	# Building git/SMEHV
-	./checkout-git.sh 'git/SMEHV' 'https://github.com/modelica-3rdparty/SMEHV.git' 'master' '67b1d962024a3e394e3e2fef624d1f9611862e43'
+	./checkout-git.sh 'git/SMEHV' 'https://github.com/modelica-3rdparty/SMEHV.git' 'master' '75f652b11ba0e6743a8461d888668414b1619514'
 	test ! -f 'build//wbEHPTLib.mo'
 	cp -a 'git/SMEHV/wbEHPTLib.mo' "$(BUILD_DIR)/wbEHPTLib.mo"
 	echo '' > "$(BUILD_DIR)/wbEHPTLib.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/wbEHPTLib.license"
-	echo '20190410-191531~git~master' > "$(BUILD_DIR)/wbEHPTLib.last_change"
+	echo '20190610-183055~git~master' > "$(BUILD_DIR)/wbEHPTLib.last_change"
 	test ! -f 'build//wbEHVpkg.mo'
 	cp -a 'git/SMEHV/wbEHVpkg.mo' "$(BUILD_DIR)/wbEHVpkg.mo"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/wbEHVpkg.uses"
+	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/wbEHVpkg.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/wbEHVpkg.license"
-	echo '20190410-191531~git~master' > "$(BUILD_DIR)/wbEHVpkg.last_change"
+	echo '20190610-183055~git~master' > "$(BUILD_DIR)/wbEHVpkg.last_change"
 ScalableTestSuite:
 	# Building git/ScalableTestSuite
 	./checkout-git.sh 'git/ScalableTestSuite' 'https://github.com/casella/ScalableTestSuite.git' 'master' 'd21658efc9238d5b19f556601a8a40bce2306944'
@@ -1164,12 +1164,12 @@ modelica-flight:
 	echo '20150119-093303~git~master' > "$(BUILD_DIR)/Flight.last_change"
 modelica-ibpsa:
 	# Building git/modelica-ibpsa
-	./checkout-git.sh 'git/modelica-ibpsa' 'https://github.com/modelica-3rdparty/modelica-ibpsa.git' 'master' '973e0d0fe7e20ae331a9626e36cb9fcd0ef41d55'
+	./checkout-git.sh 'git/modelica-ibpsa' 'https://github.com/modelica-3rdparty/modelica-ibpsa.git' 'master' 'e0e3ea0c27ab9974422a209b7105f9200ce644bd'
 	test ! -d 'build//IBPSA 3.0.0'
 	cp -a 'git/modelica-ibpsa/IBPSA' "$(BUILD_DIR)/IBPSA 3.0.0"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/IBPSA 3.0.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/IBPSA 3.0.0.license"
-	echo '3.0.0-351-g973e0d0' > "$(BUILD_DIR)/IBPSA 3.0.0.last_change"
+	echo '3.0.0-354-ge0e3ea0' > "$(BUILD_DIR)/IBPSA 3.0.0.last_change"
 msgpack-modelica:
 	# Building git/msgpack-modelica
 	./checkout-git.sh 'git/msgpack-modelica' 'https://github.com/modelica-3rdparty/msgpack-modelica.git' 'master' '49636e0f59ea14684384b90a12e065774de8b97b'

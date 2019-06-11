@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "973e0d0fe7e20ae331a9626e36cb9fcd0ef41d55",
+          "rev": "e0e3ea0c27ab9974422a209b7105f9200ce644bd",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0ce4fc5bf68b547149cf741aa0eeb284246deaf9",
+          "rev": "fb51e57eb8e1f73e8c4455b1d05fb054ad1fa45f",
           "targets": [
             "Buildings latest"
           ]
@@ -1012,7 +1012,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "67b1d962024a3e394e3e2fef624d1f9611862e43",
+      "rev": "75f652b11ba0e6743a8461d888668414b1619514",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
     },
     {
@@ -1227,7 +1227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "973e0d0fe7e20ae331a9626e36cb9fcd0ef41d55",
+      "rev": "e0e3ea0c27ab9974422a209b7105f9200ce644bd",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
