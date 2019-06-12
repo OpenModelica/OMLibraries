@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e0e3ea0c27ab9974422a209b7105f9200ce644bd",
+          "rev": "18f6d4ec7cf512d2711efca1adf9ba9bb2e6ffb3",
           "targets": [
             "IBPSA latest"
           ]
@@ -665,7 +665,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "c3573a68ff42ed78d43cb1ef744fbd00b23961ae",
+          "rev": "ee4f553ab55f18ed305946606e76e50e266d0855",
           "targets": [
             "Complex",
             "Modelica",
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "077804168bd2dfbd5fd05737bfac24c2a9cf73d9",
+          "rev": "e2dafbe029f7171130f46800077251834a40e716",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1227,7 +1227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e0e3ea0c27ab9974422a209b7105f9200ce644bd",
+      "rev": "18f6d4ec7cf512d2711efca1adf9ba9bb2e6ffb3",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
