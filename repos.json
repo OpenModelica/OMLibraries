@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "18f6d4ec7cf512d2711efca1adf9ba9bb2e6ffb3",
+          "rev": "04260030ec3e9e082abf934bfa39527919c97611",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fb51e57eb8e1f73e8c4455b1d05fb054ad1fa45f",
+          "rev": "fc1a5f6259f3e4c6204760e3388bd0d6071cde35",
           "targets": [
             "Buildings latest"
           ]
@@ -1227,7 +1227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "18f6d4ec7cf512d2711efca1adf9ba9bb2e6ffb3",
+      "rev": "80cfc3ab17b9f8be472d47cc495bdc184cee36ab",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
