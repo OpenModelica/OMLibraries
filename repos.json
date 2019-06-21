@@ -371,7 +371,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "096db4d2411f02e0e4e07823c09ea05437e778e6",
+      "rev": "12dff2e530cde3bbb65ed47bea662faf358d41ab",
       "url": "https://github.com/modelica/ElectricalEnergyStorage.git"
     },
     {
@@ -1063,7 +1063,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "5a9b86e944c724ab432f66a5495fd817fd691704"
+          "rev": "e62a5f24fa4256a814d83827bef4f5add5a0856b"
         },
         {
           "options": {
