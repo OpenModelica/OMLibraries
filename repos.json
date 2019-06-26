@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "25f54304beae1b0d3c27cd11a1212d576062e420",
+          "rev": "4e4c6898bf647d33109c21cbebc3ea034dca5b9c",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "aaff025d893ed0487bd8f0802bbee24ede27fa88",
+          "rev": "e9065c9276b205bbf79d3abf3ee3de806bf7e40b",
           "targets": [
             "Buildings latest"
           ]
@@ -790,7 +790,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4b373b08453a3b9ea1484bb7412bdc1ccab06317",
+      "rev": "dfeb6ba5f00be20b2beed9e1b18fb20e7914c824",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1063,7 +1063,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "e62a5f24fa4256a814d83827bef4f5add5a0856b"
+          "rev": "eb6362e06a7f6ef7a80fc3cccd3c9b337aca5d70"
         },
         {
           "options": {
@@ -1227,7 +1227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "25f54304beae1b0d3c27cd11a1212d576062e420",
+      "rev": "9a60f762ee7cfef500a604d6ca8a0b3743c22ca8",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
