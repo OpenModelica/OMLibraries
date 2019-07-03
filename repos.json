@@ -380,7 +380,7 @@
         "gitbranch": "release",
         "license": "bsd3"
       },
-      "rev": "6655a15c297e810505c59b0f412fbdca5f1a0497",
+      "rev": "6adf07109289eeb5994ce7cfa6966cf6aab49670",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -665,7 +665,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "702eeaa7dc38f8aadf8732316fc3f764d4dc24e5",
+          "rev": "82196e71ec233239f3fe6704b85dde74244cd2dc",
           "targets": [
             "Complex",
             "Modelica",
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d6ac84c85f7cf8b137017cdb7660aa5699062d13",
+          "rev": "f048d28c3c2f810576aa64a9cc0384a4f6ec1fd3",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -749,7 +749,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "70ab87d5bca056765fe11297f258f7a0915db49b",
+      "rev": "52ff3032cb97e9fc0b56e743813cacb89ff54eab",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -888,7 +888,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "626deddae95e5a0bbb6d2364dc0395b0fee84d5d",
+      "rev": "9eac7c2838e36f8cb58498e14239edcdb9990a9e",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
@@ -1059,7 +1059,7 @@
     {
       "dest": "SolarTherm",
       "options": {
-            "gitbranch": "master"
+        "gitbranch": "master"
       },
       "rev": "5192d29d4caae205b6d929954b85e1d760059fd2",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
@@ -1094,7 +1094,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a0464f0157b70bb7e73a032d29ca4df074b3fe9f",
+      "rev": "770322afcc72ad745768ae371bc9e9dad1a79edc",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
