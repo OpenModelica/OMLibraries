@@ -1058,23 +1058,10 @@
     },
     {
       "dest": "SolarTherm",
-      "multitarget": [
-        {
-          "options": {
+      "options": {
             "gitbranch": "master"
-          },
-          "rev": "528c69a3619c10424e5552feddcb8b7593c812ef"
-        },
-        {
-          "options": {
-            "gitbranch": "alberto-merge"
-          },
-          "rev": "7c1ddcd95378793b10e3727607c53be24f9f94fd",
-          "targets": [
-            "SolarTherm alberto-merge"
-          ]
-        }
-      ],
+      },
+      "rev": "5192d29d4caae205b6d929954b85e1d760059fd2"
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
