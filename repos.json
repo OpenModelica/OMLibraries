@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f048d28c3c2f810576aa64a9cc0384a4f6ec1fd3",
+          "rev": "d7b22ce18aafd12a4892cf33cd07e25805c89a03",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -781,7 +781,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d6f4add1ec83a170a9a62fa57e49b4ab043ca67f",
+      "rev": "49f5407835c4502d0653b34b3230b1f5be41b53f",
       "url": "https://github.com/modelica-3rdparty/ModelicaTutorials.git"
     },
     {
