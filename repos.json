@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d7b22ce18aafd12a4892cf33cd07e25805c89a03",
+          "rev": "f6aa34903d00003d8fde89d0991d26c66ffa910a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1061,7 +1061,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5192d29d4caae205b6d929954b85e1d760059fd2",
+      "rev": "9b4978735a9ab5dffdc87713cbdd71afba79d453",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
