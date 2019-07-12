@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "368f6f20eb287b1fd104d6566889c8cb5ba2d4b7",
+          "rev": "94d47fc1fd01dfa4e4bac3bc33095663e12c03f4",
           "targets": [
             "Buildings latest"
           ]
@@ -945,7 +945,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c57e20b66def2d9ea3a350c6dae7dd142b3279bc",
+      "rev": "7746e6bc4371b7914bf0648fb12fb929e01cecdb",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
