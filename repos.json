@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4e4c6898bf647d33109c21cbebc3ea034dca5b9c",
+          "rev": "661a214fb263d581e01d180091b3ff49bf34371f",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "94d47fc1fd01dfa4e4bac3bc33095663e12c03f4",
+          "rev": "6c1f7a053384df6278ae7eaa6041c9235123640d",
           "targets": [
             "Buildings latest"
           ]
@@ -486,7 +486,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ea3960bbd0f07bcf9b37c99684e2b11af517f636",
+      "rev": "8ccaea69184b9dd678ecdf237355acc655258589",
       "url": "https://github.com/modelica-3rdparty/Greenhouses-Library.git"
     },
     {
@@ -665,7 +665,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "82196e71ec233239f3fe6704b85dde74244cd2dc",
+          "rev": "ec74c1f6fb41676f62621fdf380a71fce9e6f7bb",
           "targets": [
             "Complex",
             "Modelica",
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "147231d92de0d457e2a1f7962652e9f24e9a0661",
+          "rev": "5a7f4c17bad430b9c5791a99d87825cdd00818ea",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1214,7 +1214,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4e4c6898bf647d33109c21cbebc3ea034dca5b9c",
+      "rev": "661a214fb263d581e01d180091b3ff49bf34371f",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
