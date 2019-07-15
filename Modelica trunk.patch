@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-13 19:15:02.554773121 +0200
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-14 19:02:52.338154301 +0200
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-15 19:03:33.860825939 +0200
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-15 19:03:53.440900439 +0200
 @@ -1123,7 +1123,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
@@ -22,8 +22,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Conveyor "Induction machine with squirrel cage and inverter driving a conveyor"
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2019-07-13 19:15:02.594773377 +0200
-+++ build/Modelica trunk/package.mo	2019-07-14 19:02:53.238160862 +0200
+--- git/Modelica/Modelica/package.mo	2019-07-15 19:03:33.896826076 +0200
++++ build/Modelica trunk/package.mo	2019-07-15 19:03:54.604904878 +0200
 @@ -8506,12 +8506,12 @@
  
  annotation (
