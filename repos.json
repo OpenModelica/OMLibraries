@@ -128,7 +128,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e6ee1e6b180299815ff807d8517fafb192c26da5",
+          "rev": "d135c6b60e512f1fd1870619085e9670df6b9fbe",
           "targets": [
             "IBPSA latest"
           ]
@@ -691,7 +691,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "44c4de9ded4c834fa5a6b6c72eeabc4199624fbe",
+          "rev": "43020b65a1ea5fb636f6443f5e0bcf036d31dcbf",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -945,7 +945,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7746e6bc4371b7914bf0648fb12fb929e01cecdb",
+      "rev": "266b2b9bb50b5c67b119ae7f0bc70ac501b2c31e",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -1214,7 +1214,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e6ee1e6b180299815ff807d8517fafb192c26da5",
+      "rev": "d135c6b60e512f1fd1870619085e9670df6b9fbe",
       "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
