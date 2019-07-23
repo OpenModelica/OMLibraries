@@ -25,6 +25,7 @@
     "https://github.com/modelica-3rdparty/FuelCellLib",
     "https://github.com/modelica-3rdparty/Icons.git",
     "https://github.com/modelica-3rdparty/IDEAS.git",
+    "https://github.com/modelica-3rdparty/modelica-ibpsa.git",
     "https://github.com/modelica-3rdparty/MoMoUrEnSySi",
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
@@ -140,6 +141,14 @@
             "license": "buildings"
           },
           "rev": "v1.0.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v3.0.0",
+            "license": "buildings"
+          },
+          "rev": "v3.0.0"
         }
       ],
       "url": "https://github.com/ibpsa/modelica.git"
@@ -296,6 +305,14 @@
             "license": "buildings"
           },
           "rev": "v5.1.0"
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v6.0.0",
+            "license": "buildings"
+          },
+          "rev": "v6.0.0"
         }
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
@@ -1208,14 +1225,6 @@
       },
       "rev": "f3ae1c3ebe1b33921654a0e0d59d6e65f0bcfe84",
       "url": "https://github.com/modelica-3rdparty/modelica-flight.git"
-    },
-    {
-      "dest": "modelica-ibpsa",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "32a21a1f2cd5a232f7b4ee53a5979d86edc0d25c",
-      "url": "https://github.com/modelica-3rdparty/modelica-ibpsa.git"
     },
     {
       "dest": "msgpack-modelica",
