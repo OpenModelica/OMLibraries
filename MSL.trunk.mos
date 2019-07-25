@@ -14,13 +14,18 @@ for pack in {"Complex","Modelica","ModelicaServices","ModelicaTest"} loop
 end for;
 getErrorString();
 
-fundamentalWaveFile := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
-fileStrFundamentalWave := readFile(fundamentalWaveFile);
+fundamentalWaveFile1 := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_YD);
+fileStrFundamentalWave1 := readFile(fundamentalWaveFile1);
+fundamentalWaveFile2 := getSourceFile(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_Transformer);
+fileStrFundamentalWave2 := readFile(fundamentalWaveFile2);
 addClassAnnotation(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_YD, __OpenModelica_simulationFlags(nls = "newton"));
 addClassAnnotation(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_Transformer, __OpenModelica_simulationFlags(nls = "newton"));
-listing := listFile(Modelica.Magnetic.QuasiStatic.FundamentalWave);
-fileStrFundamentalWave := diffModelicaFileListings(fileStrFundamentalWave, listing, OpenModelica.Scripting.DiffFormat.plain);
-writeFile(fundamentalWaveFile, fileStrFundamentalWave);getErrorString();
+listing1 := listFile(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_YD);
+fileStrFundamentalWave1 := diffModelicaFileListings(fileStrFundamentalWave1, listing1, OpenModelica.Scripting.DiffFormat.plain);
+writeFile(fundamentalWaveFile1, fileStrFundamentalWave1);getErrorString();
+listing2 := listFile(Modelica.Magnetic.QuasiStatic.FundamentalWave.Examples.BasicMachines.InductionMachines.IMC_Transformer);
+fileStrFundamentalWave2 := diffModelicaFileListings(fileStrFundamentalWave2, listing2, OpenModelica.Scripting.DiffFormat.plain);
+writeFile(fundamentalWaveFile2, fileStrFundamentalWave2);getErrorString();
 
 echo(false);mathFile:=getSourceFile(Modelica.Math);mathFileStr:=readFile(mathFile);echo(true);
 getErrorString();
