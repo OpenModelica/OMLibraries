@@ -1,26 +1,3 @@
-diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-18 19:14:04.438046140 +0200
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave.mo	2019-07-19 19:03:02.767961070 +0200
-@@ -1123,7 +1123,8 @@
-                           fillColor={255,255,170},
-                           fillPattern=FillPattern.Solid,
-                           textStyle={TextStyle.Bold},
--                          textString="%m phase transient")}));
-+                          textString="%m phase transient")}),
-+  __OpenModelica_simulationFlags(nls = "newton"));
-         end IMC_YD;
- 
-         model IMC_Transformer "Induction machine with squirrel cage starting with transformer"
-@@ -1392,7 +1393,8 @@
-                           fillColor={255,255,170},
-                           fillPattern=FillPattern.Solid,
-                           textStyle={TextStyle.Bold},
--                  textString="%m phase transient")}));
-+                  textString="%m phase transient")}),
-+  __OpenModelica_simulationFlags(nls = "newton"));
-         end IMC_Transformer;
- 
-         model IMC_Conveyor "Induction machine with squirrel cage and inverter driving a conveyor"
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
 --- git/Modelica/Modelica/package.mo	2019-07-18 19:14:04.478046474 +0200
 +++ build/Modelica trunk/package.mo	2019-07-19 19:03:04.331975670 +0200
