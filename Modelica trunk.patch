@@ -1,6 +1,28 @@
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo"
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2019-07-26 19:02:58.937066551 +0200
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2019-07-26 19:03:15.329138830 +0200
+@@ -270,5 +270,6 @@
+                   fillColor={255,255,170},
+                   fillPattern=FillPattern.Solid,
+                   textStyle={TextStyle.Bold},
+-          textString="%m phase transient")}));
++          textString="%m phase transient")}),
++  __OpenModelica_simulationFlags(nls = "newton"));
+ end IMC_Transformer;
+diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo"
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2019-07-26 19:02:58.937066551 +0200
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2019-07-26 19:03:15.197138248 +0200
+@@ -199,5 +199,6 @@
+                   fillColor={255,255,170},
+                   fillPattern=FillPattern.Solid,
+                   textStyle={TextStyle.Bold},
+-                  textString="%m phase transient")}));
++                  textString="%m phase transient")}),
++  __OpenModelica_simulationFlags(nls = "newton"));
+ end IMC_YD;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2019-07-18 19:14:04.478046474 +0200
-+++ build/Modelica trunk/package.mo	2019-07-19 19:03:04.331975670 +0200
+--- git/Modelica/Modelica/package.mo	2019-07-26 19:03:00.433073133 +0200
++++ build/Modelica trunk/package.mo	2019-07-26 19:03:16.209142720 +0200
 @@ -8507,12 +8507,12 @@
  
  annotation (
