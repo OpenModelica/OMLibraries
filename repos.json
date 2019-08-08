@@ -203,7 +203,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "232d51c4fe28ce79cc12b58167ebaf98c2b74010",
+      "rev": "db8f2fcefc4c8b13b3d99ef11f0dc45df10bd533",
       "url": "https://github.com/EDF-TREE/BuildSysPro.git"
     },
     {
@@ -709,7 +709,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f10e96212b9a936302f224b8573c931f4ed21570",
+          "rev": "5d8cc82ee5b90245ede907eab774e68ca9c55635",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
