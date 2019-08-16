@@ -10,7 +10,8 @@
     "DESLib 1",
     "DESLib73 1",
     "Interactive 2",
-    "UserInteraction 0.64"
+    "UserInteraction 0.64",
+    "SDF 0.4.1"
   ],
   "github-ignore": [
     "https://github.com/modelica/Modelica",
