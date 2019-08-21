@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "857fb52b2179572feb964aa6aa77aea5a976e6cb",
+          "rev": "b5956e8952f6d570b5b0c3d156a4f6d3ae3473a2",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "35278e2695bf22bc864c58b2a6a1e88a15c78843",
+      "rev": "f7729a6b9eebe65ddda54365ad927e7d48e657be",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
