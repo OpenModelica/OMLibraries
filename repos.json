@@ -220,7 +220,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f7729a6b9eebe65ddda54365ad927e7d48e657be",
+      "rev": "727f7e1d1301ba7c5189c80a1655d2faa95d7722",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c642fdda5b6a73ba139c0f5836b97f97d45a2f29",
+          "rev": "9af2e8ce9446e141e29f7c18241c84c45f95248a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -956,7 +956,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "890978578e68fb21114a61abaa5d270e026544cd",
+      "rev": "24b8cf389fa777667d0b1ad11999188d826ebf86",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
