@@ -895,6 +895,14 @@
       "url": "https://github.com/modelica-3rdparty/ObjectStab.git"
     },
     {
+      "dest": "OpenHPL",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "074852a2b27ecd432320eeb92eb07b71a05ce03d",
+      "url": "https://github.com/simulatino/OpenHPL.git"
+    },
+    {
       "dest": "OpenHydraulics",
       "options": {
         "gitbranch": "master"
