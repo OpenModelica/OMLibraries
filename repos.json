@@ -364,7 +364,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b6f108a33e24123d9a419be243a199375b7206e3",
+      "rev": "1564d1a533aa4f8b07260cfcb05e1531ed38048c",
       "url": "https://github.com/modelica-3rdparty/DisHeatLib.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "2ba2387c04f2b505ed91a02ac13f8dcdabade46d",
+          "rev": "a71912de5b523fb52a310fea5522ad38d134ed77",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
