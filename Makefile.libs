@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20190913_190724.core
-ALL_TARGET=$(BUILD_DIR)/20190913_190724.all
+CORE_TARGET=$(BUILD_DIR)/20190915_190720.core
+ALL_TARGET=$(BUILD_DIR)/20190915_190720.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190913_190724
+TIMESTAMP=20190915_190720
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -322,12 +322,12 @@ ExtendedPetriNets:
 	echo '1.0-20020411-080000~git~release' > "$(BUILD_DIR)/ExtendedPetriNets 1.0.last_change"
 ExternData:
 	# Building git/ExternData
-	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'cfbe913f404bb93eea93b54f250b19fc72b4469f'
+	./checkout-git.sh 'git/ExternData' 'https://github.com/modelica-3rdparty/ExternData.git' 'master' 'f8477b14024e449590f7e44d9d3cf25a71c4f618'
 	test ! -d 'build//ExternData 2.5.0'
 	cp -a 'git/ExternData/ExternData' "$(BUILD_DIR)/ExternData 2.5.0"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/ExternData 2.5.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ExternData 2.5.0.license"
-	echo '2.5.0-2-gcfbe913' > "$(BUILD_DIR)/ExternData 2.5.0.last_change"
+	echo '2.5.0-3-gf8477b1' > "$(BUILD_DIR)/ExternData 2.5.0.last_change"
 ExternalMedia:
 	# Building git/ExternalMedia
 	./checkout-git.sh 'git/ExternalMedia' 'https://github.com/modelica/ExternalMedia.git' 'master' '159518edd538b64e28cd70983a9cc47730323cc4'
