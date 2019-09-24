@@ -364,7 +364,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b8ef0c67539f54af4698e6f11f49635edae41a63",
+      "rev": "fb414b8a8fd8dc4cd0d9dbe656534eba869e0e0a",
       "url": "https://github.com/modelica-3rdparty/DisHeatLib.git"
     },
     {
@@ -1088,7 +1088,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "149b28f46f99e8706fe9bea3df6b4151ff8c22cf",
+      "rev": "40c38036e01c4963d6ebeab996e2e6d26490e62b",
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
