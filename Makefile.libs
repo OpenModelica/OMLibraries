@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20190924_190704.core
-ALL_TARGET=$(BUILD_DIR)/20190924_190704.all
+CORE_TARGET=$(BUILD_DIR)/20190925_190709.core
+ALL_TARGET=$(BUILD_DIR)/20190925_190709.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190924_190704
+TIMESTAMP=20190925_190709
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -838,13 +838,13 @@ ObjectStab:
 	echo '20150923-145139~git~master' > "$(BUILD_DIR)/ObjectStab 1.1 Dev.last_change"
 OpenHPL:
 	# Building git/OpenHPL
-	./checkout-git.sh 'git/OpenHPL' 'https://github.com/simulatino/OpenHPL.git' 'master' '074852a2b27ecd432320eeb92eb07b71a05ce03d'
-	test ! -d 'build//OpenHPL 1.0.1'
-	cp -a 'git/OpenHPL/OpenHPL' "$(BUILD_DIR)/OpenHPL 1.0.1"
-	echo 'OpenIPSL 2.0.0-dev' >> "$(BUILD_DIR)/OpenHPL 1.0.1.uses"
-	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/OpenHPL 1.0.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/OpenHPL 1.0.1.license"
-	echo '1.0.1' > "$(BUILD_DIR)/OpenHPL 1.0.1.last_change"
+	./checkout-git.sh 'git/OpenHPL' 'https://github.com/simulatino/OpenHPL.git' 'master' '0fda8c87ced2773cd1438d5f64772040bafd6000'
+	test ! -d 'build//OpenHPL 1.0.2'
+	cp -a 'git/OpenHPL/OpenHPL' "$(BUILD_DIR)/OpenHPL 1.0.2"
+	echo 'OpenIPSL 2.0.0-dev' >> "$(BUILD_DIR)/OpenHPL 1.0.2.uses"
+	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/OpenHPL 1.0.2.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/OpenHPL 1.0.2.license"
+	echo '1.0.2-20190925-092706~git~master' > "$(BUILD_DIR)/OpenHPL 1.0.2.last_change"
 OpenHydraulics:
 	# Building git/OpenHydraulics
 	./checkout-git.sh 'git/OpenHydraulics' 'https://github.com/cparedis/OpenHydraulics.git' 'master' '3485cf4ae0449f1a76af737b7705879f8f08c14f'
@@ -855,13 +855,13 @@ OpenHydraulics:
 	echo '1.0.1-23-g3485cf4' > "$(BUILD_DIR)/OpenHydraulics 1.0.last_change"
 OpenIPSL:
 	# Building git/OpenIPSL
-	./checkout-git.sh 'git/OpenIPSL' 'https://github.com/SmarTS-Lab/OpenIPSL.git' 'master' '516225b53c5072c83567475864c6e29f7d3beda6'
+	./checkout-git.sh 'git/OpenIPSL' 'https://github.com/SmarTS-Lab/OpenIPSL.git' 'master' '17835dab41733e6eb9fbdb00757912152f0e809b'
 	test ! -d 'build//OpenIPSL 2.0.0-dev'
 	cp -a 'git/OpenIPSL/OpenIPSL' "$(BUILD_DIR)/OpenIPSL 2.0.0-dev"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.uses"
 	echo 'Complex 3.2.3' >> "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.license"
-	echo '20190825-134907~git~master' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.last_change"
+	echo '20190925-094233~git~master' > "$(BUILD_DIR)/OpenIPSL 2.0.0-dev.last_change"
 Optimisers:
 	# Building git/Optimisers
 	./checkout-git.sh 'git/Optimisers' 'https://github.com/modelica-3rdparty/Optimisers.git' 'master' 'e33c69edaad6dad8029167b0ca00533964a6fe37'

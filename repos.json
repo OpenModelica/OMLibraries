@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "074852a2b27ecd432320eeb92eb07b71a05ce03d",
+      "rev": "0fda8c87ced2773cd1438d5f64772040bafd6000",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
@@ -915,7 +915,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "516225b53c5072c83567475864c6e29f7d3beda6",
+      "rev": "17835dab41733e6eb9fbdb00757912152f0e809b",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
