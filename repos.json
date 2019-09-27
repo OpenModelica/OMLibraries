@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fd84f4f4c96d1cdb4790011caf3e56904a15065b",
+          "rev": "cb7dd877cfb313e2642ff229a3a69f5c74ae803a",
           "targets": [
             "IBPSA latest"
           ]
@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ca7eeb78358f96ea119b7600071e86592e73154b",
+          "rev": "46242f5974e48f17d538eb30237722899f774395",
           "targets": [
             "Buildings latest"
           ]
@@ -364,7 +364,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fb414b8a8fd8dc4cd0d9dbe656534eba869e0e0a",
+      "rev": "7202e772564ff72d5e0023d265969d49fce26616",
       "url": "https://github.com/modelica-3rdparty/DisHeatLib.git"
     },
     {
@@ -684,7 +684,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "8642c8de8b65ad90905a680932a2cab2b369cf43",
+          "rev": "4216a631d95f077978e79ba3613a4ebaed93baf0",
           "targets": [
             "Complex",
             "Modelica",
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "b9ea389fd03ad2d1dfe4eb6e58829185f9d8aa79",
+          "rev": "8df745272857c8de82cc33d118cc40a034e67756",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -776,7 +776,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2fdef23219aba8417d624004356387a96c949df4",
+      "rev": "d384a77a31913a19de8bea3117d1297900ca87ed",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
