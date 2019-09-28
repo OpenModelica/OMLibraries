@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20190927_190926.core
-ALL_TARGET=$(BUILD_DIR)/20190927_190926.all
+CORE_TARGET=$(BUILD_DIR)/20190928_190801.core
+ALL_TARGET=$(BUILD_DIR)/20190928_190801.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20190927_190926
+TIMESTAMP=20190928_190801
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -151,12 +151,12 @@ BuildingSystems:
 	echo '2.0.0-beta2-314-gf79ba46' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '46242f5974e48f17d538eb30237722899f774395'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '99b52a7472e8961ba62d2aaf356fd3c3ce3dd52d'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20190926-223123~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20190927-120438~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v1.4_build1' 'v1.4_build1'
 	test ! -d 'build//Buildings 1.4'
@@ -272,13 +272,13 @@ DeployStructLib:
 	echo '20181120-071839~git~master' > "$(BUILD_DIR)/DeployStructLib.last_change"
 DisHeatLib:
 	# Building git/DisHeatLib
-	./checkout-git.sh 'git/DisHeatLib' 'https://github.com/modelica-3rdparty/DisHeatLib.git' 'master' '7202e772564ff72d5e0023d265969d49fce26616'
+	./checkout-git.sh 'git/DisHeatLib' 'https://github.com/modelica-3rdparty/DisHeatLib.git' 'master' '40986891079003a1f9bbc88e4ecd491737f46dfe'
 	test ! -d 'build//DisHeatLib 1.2'
 	cp -a 'git/DisHeatLib/DisHeatLib' "$(BUILD_DIR)/DisHeatLib 1.2"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/DisHeatLib 1.2.uses"
 	echo 'IBPSA 3.0.0' >> "$(BUILD_DIR)/DisHeatLib 1.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/DisHeatLib 1.2.license"
-	echo '1.2-20190926-161508~git~master' > "$(BUILD_DIR)/DisHeatLib 1.2.last_change"
+	echo '1.2-20190927-153427~git~master' > "$(BUILD_DIR)/DisHeatLib 1.2.last_change"
 DriveControl:
 	# Building git/DriveControl
 	./checkout-git.sh 'git/DriveControl' 'https://github.com/AHaumer/DriveControl.git' 'release' 'b7233fd97a92867bb4ec2c3647c7f7e888398644'
@@ -669,7 +669,7 @@ Modelica:
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20190927-161430~git~master-om233' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20190927-161430~git~master-om234' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 Modelica-Arduino:
 	# Building git/Modelica-Arduino
