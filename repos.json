@@ -220,7 +220,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f79ba468a1141f42f5d915baf9a6d7ec3aa5c94f",
+      "rev": "223f60142ec5d3f7badc82a0c8ec17874017f63d",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0fda8c87ced2773cd1438d5f64772040bafd6000",
+      "rev": "c5e2e3368873471ebc4331c05aa7ce47cd0913a9",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
