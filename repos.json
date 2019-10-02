@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "8df745272857c8de82cc33d118cc40a034e67756",
+          "rev": "fb25ccdddb70211ecabc1230e28776efc5c1c46e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -776,7 +776,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d384a77a31913a19de8bea3117d1297900ca87ed",
+      "rev": "8a91e75d8a26acc4de30fc0e5d5e9db83c970bd6",
       "url": "https://github.com/modelica-compliance/compliance.git"
     },
     {
