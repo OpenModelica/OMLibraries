@@ -415,7 +415,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f8477b14024e449590f7e44d9d3cf25a71c4f618",
+      "rev": "3c06c380dac6189f11b88fb6c5f05d160e747965",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "fb25ccdddb70211ecabc1230e28776efc5c1c46e",
+          "rev": "3481e4ed37b1c350b37661594a1036d38b156672",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
