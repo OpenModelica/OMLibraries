@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c3ccdb133c0c8cb1fec2f5dde4fcd2b93cf1b5e4",
+          "rev": "465b55ac6b384bb96934357f5c866fe9d61e3b56",
           "targets": [
             "Buildings latest"
           ]
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bcb34fff451b70a69352eb6092dcc2d1e72e2771",
+          "rev": "c21d07314b2694945add5da1c8baff592f1dd03f",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -931,7 +931,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7a664725a745476d0bf451ede22d90591dbf6fa6",
+      "rev": "73e4e462a40459c1bc1a226145c1135e22a6f88d",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
