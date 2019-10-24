@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "35c899f05138c9d992517e550ba2513aa32fd6df",
+          "rev": "07096cfb701385c958c4061b4afa81adc9fa2ebb",
           "targets": [
             "IBPSA latest"
           ]
@@ -931,7 +931,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "73e4e462a40459c1bc1a226145c1135e22a6f88d",
+      "rev": "a4c5354523423ab90405ebecd61ff39ebcfbf882",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
