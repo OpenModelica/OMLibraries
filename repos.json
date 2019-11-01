@@ -356,7 +356,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fea6603a42bea038f69f8184c3beeace5071fdce",
+      "rev": "776e5ee4505441333b822dba91e620710fd075de",
       "url": "https://github.com/modelica-3rdparty/DeployStructLib.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e7df1c53fb74d3da7fd2de0f41652d491d8ed3ee",
+          "rev": "f31590992dd569ddd54b5dfc4137e72df3dd1d6e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -809,7 +809,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fedfb709c0f90046eacb86c74c3dc6898a8236b2",
+      "rev": "0f9673507a4694a729b9be6abcfd49db8373da7b",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -915,7 +915,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "17835dab41733e6eb9fbdb00757912152f0e809b",
+      "rev": "954216a05f910313d044d25a5b775b861e6cbd52",
       "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
     },
     {
