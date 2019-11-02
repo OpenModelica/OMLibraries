@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "75829435cd1769c8f77752a1f077aba577a3d196",
+          "rev": "95133a29d02da020bc75a9f4e8decd847df97fd7",
           "targets": [
             "Buildings latest"
           ]
@@ -356,7 +356,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "776e5ee4505441333b822dba91e620710fd075de",
+      "rev": "ef1faa77179742cc7d2b7694aa49d85380481585",
       "url": "https://github.com/modelica-3rdparty/DeployStructLib.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f31590992dd569ddd54b5dfc4137e72df3dd1d6e",
+          "rev": "0e35d63da8359e855f87f0fc00e32ff9939e4bec",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
