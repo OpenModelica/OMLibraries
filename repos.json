@@ -586,7 +586,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0f580942b2f15f36e1e33744eca26faff0cd985e",
+      "rev": "60955424cacbc20644d29f60faa6f476101c4a51",
       "url": "https://github.com/modelica-3rdparty/ModPowerSystems.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "f7a45808a8ee87d759b9ac03f5cf192e74584897",
+          "rev": "0edf0e91b74457b1a4ac6e9da434aa942eeb19ae",
           "targets": [
             "Complex trunk",
             "Modelica trunk",

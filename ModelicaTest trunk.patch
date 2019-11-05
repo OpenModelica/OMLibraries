@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaTest/package.mo "build/ModelicaTest trunk/package.mo"
---- git/Modelica/ModelicaTest/package.mo	2019-11-04 19:03:15.664459721 +0100
-+++ build/ModelicaTest trunk/package.mo	2019-11-04 19:03:36.248283011 +0100
+--- git/Modelica/ModelicaTest/package.mo	2019-11-04 19:14:53.830529611 +0100
++++ build/ModelicaTest trunk/package.mo	2019-11-05 19:04:09.123685575 +0100
 @@ -49,12 +49,12 @@
  end testAllFunctions;
  
