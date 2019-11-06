@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo "build/Modelica 3.2.3/Magnetic/QuasiStatic/FundamentalWave.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2019-10-31 19:03:09.687672925 +0100
-+++ build/Modelica 3.2.3/Magnetic/QuasiStatic/FundamentalWave.mo	2019-10-31 19:03:35.047984015 +0100
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave.mo	2019-11-06 19:06:45.945315711 +0100
++++ build/Modelica 3.2.3/Magnetic/QuasiStatic/FundamentalWave.mo	2019-11-06 19:07:14.649583923 +0100
 @@ -1123,7 +1123,8 @@
                            fillColor={255,255,170},
                            fillPattern=FillPattern.Solid,
@@ -22,8 +22,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
  
          model IMC_Conveyor "Induction machine with squirrel cage and inverter driving a conveyor"
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "build/Modelica 3.2.3/Math/package.mo"
---- git/Modelica/Modelica/Math/package.mo	2019-10-31 19:03:09.703673123 +0100
-+++ build/Modelica 3.2.3/Math/package.mo	2019-10-31 19:03:25.247864606 +0100
+--- git/Modelica/Modelica/Math/package.mo	2019-11-06 19:06:45.961315861 +0100
++++ build/Modelica 3.2.3/Math/package.mo	2019-11-06 19:07:04.841492626 +0100
 @@ -13220,9 +13220,67 @@
    annotation (Documentation(info="<html>
  
@@ -168,8 +168,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.mo "bui
  annotation (Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},
            {100,100}}), graphics={Line(points={{-80,0},{-68.7,34.2},{-61.5,53.1},
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Math/package.order "build/Modelica 3.2.3/Math/package.order"
---- git/Modelica/Modelica/Math/package.order	2019-10-31 19:03:09.703673123 +0100
-+++ build/Modelica 3.2.3/Math/package.order	2019-10-31 19:03:25.251864655 +0100
+--- git/Modelica/Modelica/Math/package.order	2019-11-06 19:06:45.961315861 +0100
++++ build/Modelica 3.2.3/Math/package.order	2019-11-06 19:07:04.841492626 +0100
 @@ -29,4 +29,6 @@
  baseIcon1
  baseIcon2
