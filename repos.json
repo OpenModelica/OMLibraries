@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "bdbbb9cc44cd404088f3afba8671f7568e556487",
+          "rev": "e17ca51ba6d873d43ea4013c5b69d72b95614aa6",
           "targets": [
             "IBPSA latest"
           ]
@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "334822c37e4ae81015adb71b434e45b9db6be192",
+          "rev": "c44ce87aec3be4d9ce75fa4cd55ecf8cb73d7df9",
           "targets": [
             "Buildings latest"
           ]
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "9e6a58d04cdd12aa8260b6d17dfb4b23f3d3d132",
+          "rev": "da79eff9211438bc6a6d0013eea57eefcab4f431",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6cbf8a63777fc5726d4c36689676cb4a86b52f0b",
+      "rev": "8775d338c265dff9c8efc38c691fd8ad1d00258d",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
@@ -1147,7 +1147,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "db81ae1b5a6a85f6c6c7693244cafa6087e18ff5"
+          "rev": "1835d4ed32c3a7c5b3565c795e0d1244f451a6fd"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"

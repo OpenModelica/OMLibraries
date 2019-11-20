@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20191119_190831.core
-ALL_TARGET=$(BUILD_DIR)/20191119_190831.all
+CORE_TARGET=$(BUILD_DIR)/20191120_140113.core
+ALL_TARGET=$(BUILD_DIR)/20191120_140113.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20191119_190831
+TIMESTAMP=20191120_140113
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -60,12 +60,12 @@ AlgebraTestSuite:
 	echo '20180128-224601~git~master' > "$(BUILD_DIR)/AlgebraTestSuite.last_change"
 Annex60:
 	# Building git/Annex60
-	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' 'bdbbb9cc44cd404088f3afba8671f7568e556487'
+	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'master' 'e17ca51ba6d873d43ea4013c5b69d72b95614aa6'
 	test ! -d 'build//IBPSA latest'
 	cp -a 'git/Annex60/IBPSA' "$(BUILD_DIR)/IBPSA latest"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/IBPSA latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/IBPSA latest.license"
-	echo '20191118-104646~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
+	echo '20191119-113843~git~master' > "$(BUILD_DIR)/IBPSA latest.last_change"
 	# Building git/Annex60
 	./checkout-git.sh 'git/Annex60' 'https://github.com/ibpsa/modelica.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//Annex60 1.0.0'
@@ -151,12 +151,12 @@ BuildingSystems:
 	echo '2.0.0-beta2-320-g4488a55' > "$(BUILD_DIR)/BuildingSystems 2.0.0-beta.last_change"
 Buildings:
 	# Building git/Buildings
-	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' '334822c37e4ae81015adb71b434e45b9db6be192'
+	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'master' 'c44ce87aec3be4d9ce75fa4cd55ecf8cb73d7df9'
 	test ! -d 'build//Buildings latest'
 	cp -a 'git/Buildings/Buildings' "$(BUILD_DIR)/Buildings latest"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/Buildings latest.uses"
 	echo 'buildings' > "$(BUILD_DIR)/Buildings latest.license"
-	echo '20191118-161415~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
+	echo '20191119-113810~git~master' > "$(BUILD_DIR)/Buildings latest.last_change"
 	# Building git/Buildings
 	./checkout-git.sh 'git/Buildings' 'https://github.com/lbl-srg/modelica-buildings.git' 'v1.4_build1' 'v1.4_build1'
 	test ! -d 'build//Buildings 1.4'
@@ -635,13 +635,13 @@ Modelica:
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest 3.2.3.license"
 	echo '3.2.3+build.3-17-g5673c87' > "$(BUILD_DIR)/ModelicaTest 3.2.3.last_change"
 	# Building git/Modelica
-	./checkout-git.sh 'git/Modelica' 'https://github.com/modelica/Modelica.git' 'master' '9e6a58d04cdd12aa8260b6d17dfb4b23f3d3d132'
+	./checkout-git.sh 'git/Modelica' 'https://github.com/modelica/Modelica.git' 'master' 'da79eff9211438bc6a6d0013eea57eefcab4f431'
 	test ! -f 'build//Complex trunk.mo'
 	cp -a 'git/Modelica/Complex.mo' "$(BUILD_DIR)/Complex trunk.mo"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'Complex trunk.patch'
 	echo '' > "$(BUILD_DIR)/Complex trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/Complex trunk.license"
-	echo '20191119-105442~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
+	echo '20191119-230248~git~master-om1' > "$(BUILD_DIR)/Complex trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Complex trunk.breaks"
 	test ! -d 'build//Modelica trunk'
 	cp -a 'git/Modelica/Modelica' "$(BUILD_DIR)/Modelica trunk"
@@ -650,27 +650,27 @@ Modelica:
 	echo 'Complex trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'ModelicaServices trunk' >> "$(BUILD_DIR)/Modelica trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/Modelica trunk.license"
-	echo '20191119-105442~git~master-om1' > "$(BUILD_DIR)/Modelica trunk.last_change"
+	echo '20191119-230248~git~master-om1' > "$(BUILD_DIR)/Modelica trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/Modelica trunk.breaks"
 	test ! -d 'build//ModelicaReference trunk'
 	cp -a 'git/Modelica/ModelicaReference' "$(BUILD_DIR)/ModelicaReference trunk"
 	echo '' > "$(BUILD_DIR)/ModelicaReference trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaReference trunk.license"
-	echo '20191119-105442~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
+	echo '20191119-230248~git~master' > "$(BUILD_DIR)/ModelicaReference trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaReference trunk.breaks"
 	test ! -d 'build//ModelicaServices trunk'
 	cp -a 'git/Modelica/ModelicaServices' "$(BUILD_DIR)/ModelicaServices trunk"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaServices trunk.patch'
 	echo > "$(BUILD_DIR)/ModelicaServices trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaServices trunk.license"
-	echo '20191119-105442~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
+	echo '20191119-230248~git~master-om1' > "$(BUILD_DIR)/ModelicaServices trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaServices trunk.breaks"
 	test ! -d 'build//ModelicaTest trunk'
 	cp -a 'git/Modelica/ModelicaTest' "$(BUILD_DIR)/ModelicaTest trunk"
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20191119-105442~git~master-om258' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20191119-230248~git~master-om259' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 Modelica-Arduino:
 	# Building git/Modelica-Arduino
@@ -839,13 +839,13 @@ ObjectStab:
 	echo '20150923-145139~git~master' > "$(BUILD_DIR)/ObjectStab 1.1 Dev.last_change"
 OpenHPL:
 	# Building git/OpenHPL
-	./checkout-git.sh 'git/OpenHPL' 'https://github.com/simulatino/OpenHPL.git' 'master' '6cbf8a63777fc5726d4c36689676cb4a86b52f0b'
+	./checkout-git.sh 'git/OpenHPL' 'https://github.com/simulatino/OpenHPL.git' 'master' '8775d338c265dff9c8efc38c691fd8ad1d00258d'
 	test ! -d 'build//OpenHPL 1.0.2'
 	cp -a 'git/OpenHPL/OpenHPL' "$(BUILD_DIR)/OpenHPL 1.0.2"
 	echo 'OpenIPSL 2.0.0-dev' >> "$(BUILD_DIR)/OpenHPL 1.0.2.uses"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/OpenHPL 1.0.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/OpenHPL 1.0.2.license"
-	echo '1.0.2-7-g6cbf8a6' > "$(BUILD_DIR)/OpenHPL 1.0.2.last_change"
+	echo '1.0.2-14-g8775d33' > "$(BUILD_DIR)/OpenHPL 1.0.2.last_change"
 OpenHydraulics:
 	# Building git/OpenHydraulics
 	./checkout-git.sh 'git/OpenHydraulics' 'https://github.com/cparedis/OpenHydraulics.git' 'master' '3485cf4ae0449f1a76af737b7705879f8f08c14f'
@@ -1104,12 +1104,22 @@ ThermoSysPro:
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.0.license"
 	echo '3.0+OSR-21-gd4f9c3e' > "$(BUILD_DIR)/ThermoSysPro 3.0.last_change"
 	# Building git/ThermoSysPro
-	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' 'db81ae1b5a6a85f6c6c7693244cafa6087e18ff5'
-	test ! -d 'build//ThermoSysPro 3.1'
-	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.1"
-	echo 'Modelica 3.2.1' >> "$(BUILD_DIR)/ThermoSysPro 3.1.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
-	echo '3.1+OSR-18-gdb81ae1' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '1835d4ed32c3a7c5b3565c795e0d1244f451a6fd'
+	test ! -f 'build//TestDerivative.mo'
+	cp -a 'git/ThermoSysPro/TestDerivative.mo' "$(BUILD_DIR)/TestDerivative.mo"
+	echo 'Modelica 3.2' >> "$(BUILD_DIR)/TestDerivative.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/TestDerivative.license"
+	echo '20191120-144830~git~master' > "$(BUILD_DIR)/TestDerivative.last_change"
+	test ! -f 'build//ThermoSysProLogo.mo'
+	cp -a 'git/ThermoSysPro/ThermoSysProLogo.mo' "$(BUILD_DIR)/ThermoSysProLogo.mo"
+	echo '' > "$(BUILD_DIR)/ThermoSysProLogo.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysProLogo.license"
+	echo '20191120-144830~git~master' > "$(BUILD_DIR)/ThermoSysProLogo.last_change"
+	test ! -d 'build//ThermoSysPro 4.1'
+	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 4.1"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ThermoSysPro 4.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 4.1.license"
+	echo '4.1-20191120-144830~git~master' > "$(BUILD_DIR)/ThermoSysPro 4.1.last_change"
 VVDRlib:
 	# Building git/VVDRlib
 	./checkout-git.sh 'git/VVDRlib' 'https://github.com/lenaRB/VVDRlib.git' 'master' 'eae4981674642eddffc7f2aa3690320fcaddee0e'
