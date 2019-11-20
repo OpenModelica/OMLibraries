@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8775d338c265dff9c8efc38c691fd8ad1d00258d",
+      "rev": "6082b6c12d9c2c18130528ed9086598520fa7d6c",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
@@ -1147,7 +1147,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "fcf31f1d15d3d62a1dcd630c8ab504bfddc04e5f"
+          "rev": "9fc20ecf9867ccd726cd6432dc9e9de72110716b"
         }
       ],
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
