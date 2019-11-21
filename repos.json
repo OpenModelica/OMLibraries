@@ -528,10 +528,10 @@
     {
       "dest": "IdealizedContact",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "maintenance"
       },
       "rev": "ae8b0397ea8207bc4327bea1e81ac09c6d4bcea9",
-      "url": "https://github.com/modelica-3rdparty/IdealizedContact.git"
+      "url": "https://github.com/tbeu/IdealizedContact.git"
     },
     {
       "dest": "IndustrialControlSystems",
