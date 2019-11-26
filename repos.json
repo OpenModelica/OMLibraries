@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "da79eff9211438bc6a6d0013eea57eefcab4f431",
+          "rev": "e0783d8e081c038575f65d59a6389056c97bd6ad",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "966d73a884f066c0db066af7ecbdce5dd9eeda2b",
+      "rev": "bc88a3c96422843b92b5c6c8b963bf740f44b807",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
