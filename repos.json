@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c44ce87aec3be4d9ce75fa4cd55ecf8cb73d7df9",
+          "rev": "940031ca15a74aa3cce6ffa095c9fdf212592a4d",
           "targets": [
             "Buildings latest"
           ]
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e151a86161412f786457056a90514cb52592206b",
+      "rev": "fd4318a097d6933efa8d453f8328590b3b2e1bdd",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
