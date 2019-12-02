@@ -1089,6 +1089,9 @@
         "gitbranch": "master"
       },
       "rev": "40c38036e01c4963d6ebeab996e2e6d26490e62b",
+      "targets": [
+        "SolarTherm"
+      ],
       "url": "https://github.com/SolarTherm/SolarTherm.git"
     },
     {
