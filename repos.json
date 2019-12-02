@@ -684,7 +684,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "5673c87ef4f20870c96394a66cd5ab3e828dfa3e",
+          "rev": "28db1ee735cfe931c548e79554f6e8ae4081e54a",
           "targets": [
             "Complex",
             "Modelica",
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e0783d8e081c038575f65d59a6389056c97bd6ad",
+          "rev": "ab27b20aa6c59be89d1667a46f688bf6ad27dcfb",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fd4318a097d6933efa8d453f8328590b3b2e1bdd",
+      "rev": "a4847c9eea793b9328d824d7163a17f3f4f14189",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
@@ -1039,7 +1039,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "75f652b11ba0e6743a8461d888668414b1619514",
+      "rev": "3dfce9d386555bc7cd924d424775a6909a1e7d2e",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
     },
     {
@@ -1088,7 +1088,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "40c38036e01c4963d6ebeab996e2e6d26490e62b",
+      "rev": "37194bb821bcc058d51d3895e9721d3c8da06eee",
       "targets": [
         "SolarTherm"
       ],
