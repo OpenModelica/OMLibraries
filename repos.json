@@ -1142,7 +1142,7 @@
       "multitarget": [
         {
           "options": {
-            "gitbranch": "maint/3.0"
+            "gitbranch": "maint/3.1"
           },
           "rev": "d4f9c3ed35f7520f82439eb6e9f4057ae0f82b73"
         },
