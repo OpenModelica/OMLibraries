@@ -809,7 +809,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0f9673507a4694a729b9be6abcfd49db8373da7b",
+      "rev": "18b8396aa245f491bb94a251ff7b91689fc4c8ad",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -817,7 +817,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5485b6524c0ae9d8d9ecc48aef1db29d03714e6f",
+      "rev": "865dac345eff6c52c596068fa39d8d4de1bf0b2e",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
