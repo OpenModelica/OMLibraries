@@ -522,7 +522,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "79ed7302092fce65e3f35f556953c71a4f07d3c3",
+      "rev": "aec4c4c1dd9ee0020f12d1006ded755f2dd1d0ec",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -684,7 +684,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "28db1ee735cfe931c548e79554f6e8ae4081e54a",
+          "rev": "7b586560eb37dbdf1828dc3da97b70f1a280302c",
           "targets": [
             "Complex",
             "Modelica",
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "e531f9a959e3bc02a021c49ed65839622fbdbb6f",
+          "rev": "531f5d2876db137719e3d7115d1049b2b4dcc3b3",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a4847c9eea793b9328d824d7163a17f3f4f14189",
+      "rev": "1dd2dc99ac84bcb55a3e9eb7635e4b5f1b2dbd4e",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
