@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e17ca51ba6d873d43ea4013c5b69d72b95614aa6",
+          "rev": "bed7475793922a8bfb68c9eaeb2c692c18da8c52",
           "targets": [
             "IBPSA latest"
           ]
@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "940031ca15a74aa3cce6ffa095c9fdf212592a4d",
+          "rev": "72de13e95876dc2d6f5dade2ce5c13bb252c263d",
           "targets": [
             "Buildings latest"
           ]
@@ -539,7 +539,7 @@
         "gitbranch": "master",
         "patchlevel": "om1"
       },
-      "rev": "c4a2a9a1974bd6dca68774e841fee2ce926e1dd2",
+      "rev": "d2d882d78be9af6c9b95a349879d4380dd820593",
       "url": "https://github.com/modelica-3rdparty/IndustrialControlSystems.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "531f5d2876db137719e3d7115d1049b2b4dcc3b3",
+          "rev": "8972a6b7e5b14716898b6e4ec71016bd412392e8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
