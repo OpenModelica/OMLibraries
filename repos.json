@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f03a645ed5f95412c96a970d429dca1a2c00f119",
+          "rev": "5edd658772906879b07eb129ef191e927c94ce1b",
           "targets": [
             "IBPSA latest"
           ]
@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "72de13e95876dc2d6f5dade2ce5c13bb252c263d",
+          "rev": "0106ffbedd7317520f3622afccd2841fa8cb5ab0",
           "targets": [
             "Buildings latest"
           ]
@@ -324,7 +324,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b8e10c50f845fc6819bf36caa5bb1a33bf87cb9",
+      "rev": "900aa7323129b8d8993b49316bd44a8d47481911",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "cd54933965844efb7642cc40d2030fb28890530e",
+          "rev": "847e1294c2f69c968f13be63844076f1e2839bef",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1dd2dc99ac84bcb55a3e9eb7635e4b5f1b2dbd4e",
+      "rev": "bc54703b95d001ac44882d03a407cf7819b3d3c6",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
