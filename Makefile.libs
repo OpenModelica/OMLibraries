@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20191211_190935.core
-ALL_TARGET=$(BUILD_DIR)/20191211_190935.all
+CORE_TARGET=$(BUILD_DIR)/20191212_000847.core
+ALL_TARGET=$(BUILD_DIR)/20191212_000847.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHPL OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20191211_190935
+TIMESTAMP=20191212_000847
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -670,7 +670,7 @@ Modelica:
 	patch -l -d "$(BUILD_DIR)/" -f -p1 < 'ModelicaTest trunk.patch'
 	echo 'Modelica trunk' >> "$(BUILD_DIR)/ModelicaTest trunk.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest trunk.license"
-	echo '20191211-171846~git~master-om269' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
+	echo '20191211-171846~git~master-om270' > "$(BUILD_DIR)/ModelicaTest trunk.last_change"
 	echo 'omlibrary-msl32,omlibrary-reference' > "$(BUILD_DIR)/ModelicaTest trunk.breaks"
 Modelica-Arduino:
 	# Building git/Modelica-Arduino
@@ -1099,22 +1099,22 @@ ThermoSysPro:
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.1.license"
 	echo '3.1+OSR-18-gdb81ae1' > "$(BUILD_DIR)/ThermoSysPro 3.1.last_change"
 	# Building git/ThermoSysPro
-	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' 'fbda78d1ab99b32b598771f9e2e94968ba1e3968'
+	./checkout-git.sh 'git/ThermoSysPro' 'https://openmodelica.org/git/ThermoSysPro.git' 'master' '5cef9acb4dedf8af6f4638a4448f08a544ebd30b'
 	test ! -f 'build//TestDerivative.mo'
 	cp -a 'git/ThermoSysPro/TestDerivative.mo' "$(BUILD_DIR)/TestDerivative.mo"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/TestDerivative.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/TestDerivative.license"
-	echo '20191203-173653~git~master' > "$(BUILD_DIR)/TestDerivative.last_change"
+	echo '20191212-010403~git~master' > "$(BUILD_DIR)/TestDerivative.last_change"
 	test ! -f 'build//ThermoSysProLogo.mo'
 	cp -a 'git/ThermoSysPro/ThermoSysProLogo.mo' "$(BUILD_DIR)/ThermoSysProLogo.mo"
 	echo '' > "$(BUILD_DIR)/ThermoSysProLogo.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysProLogo.license"
-	echo '20191203-173653~git~master' > "$(BUILD_DIR)/ThermoSysProLogo.last_change"
+	echo '20191212-010403~git~master' > "$(BUILD_DIR)/ThermoSysProLogo.last_change"
 	test ! -d 'build//ThermoSysPro 3.2'
 	cp -a 'git/ThermoSysPro/ThermoSysPro' "$(BUILD_DIR)/ThermoSysPro 3.2"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/ThermoSysPro 3.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/ThermoSysPro 3.2.license"
-	echo '3.2-20191203-173653~git~master' > "$(BUILD_DIR)/ThermoSysPro 3.2.last_change"
+	echo '3.2-20191212-010403~git~master' > "$(BUILD_DIR)/ThermoSysPro 3.2.last_change"
 VVDRlib:
 	# Building git/VVDRlib
 	./checkout-git.sh 'git/VVDRlib' 'https://github.com/lenaRB/VVDRlib.git' 'master' 'eae4981674642eddffc7f2aa3690320fcaddee0e'
