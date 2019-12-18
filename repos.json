@@ -324,7 +324,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a5e9817fdf6e70e9f78406f08c02fe992fa6c6d9",
+      "rev": "de6d5b7e2aa77ac1fe9a6375adfaa452701c3370",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "73d7af84d0977df7a4c9d6602130a45888ec0ff5",
+          "rev": "e44060099a77210346d09ffc4a832dd61375cab5",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1133,7 +1133,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f52b6fc551a6b33e0455abff444b6aa6e257ce9a",
+      "rev": "7fabeae578a6214f13e1684a04423bafcd1c72ed",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
