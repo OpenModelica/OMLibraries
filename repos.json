@@ -131,7 +131,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d15c52dc8364db2ef0fd3df82eaba3ed8e07bd83",
+          "rev": "994884e8a37121859d941297f90306782d013269",
           "targets": [
             "IBPSA latest"
           ]
@@ -220,7 +220,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "45912351d89d34f0906bf2e86f0590008cce16a2",
+      "rev": "4003fe22df11c1301bb9451d40421ad22aed66c2",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -231,7 +231,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ea1421568d86f36e1bce0b263a27259c1611e147",
+          "rev": "5c9c25f632624e63437ab4a623a0a01b6eab7710",
           "targets": [
             "Buildings latest"
           ]
@@ -710,7 +710,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bc63ff1552c5911f00964217eb2c99667acc48e6",
+          "rev": "d6b0767046127d3277a366766e1da0b0445ae525",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -899,7 +899,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bc54703b95d001ac44882d03a407cf7819b3d3c6",
+      "rev": "2e97eeb0f54b09efd65ba579b84cca66a1d921cc",
       "url": "https://github.com/simulatino/OpenHPL.git"
     },
     {
