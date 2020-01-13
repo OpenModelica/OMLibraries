@@ -711,7 +711,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a34f57ce270dc840acd391417908d707a167b473",
+          "rev": "8db30838a6b85ce0c410b94f0ec1aa3203cbb86a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -810,7 +810,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1497d13fd0ee4391230f09a8ad5d313a92ba53a7",
+      "rev": "ab424f6cb464fc516b9c0e12a81a4075b038c837",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1117,7 +1117,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "b0347610cb57ecec6756e78cb51ab5e94eb7b176",
+      "rev": "cc0300732ee25bf7f6052aedf83df5cddfbb1108",
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
