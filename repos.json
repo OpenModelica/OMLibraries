@@ -105,7 +105,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "92da5dfaa3cb4354de458b941fc45ca0d0e41cc1"
+          "rev": "2fcea03717fc40b42f3a72e35bfa9e9533a8ea11"
         },
         {
           "options": {
@@ -133,7 +133,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fa84b2970bd852821fbbccd4dce65d6a0416c338",
+          "rev": "139acd1e7bdd57788ae34fe464660df99578b4e2",
           "targets": [
             "IBPSA latest"
           ]
@@ -686,7 +686,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "1e613c3679563ee5490e7df8efe392be3ad5d014",
+          "rev": "eca9edd1f53c5573810d1008d917a163ecee5365",
           "targets": [
             "Complex",
             "Modelica",
@@ -712,7 +712,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "81ef5326885ef103e6f59e91e08e33cf628fc1f1",
+          "rev": "1d9bdc55edfd0de5d8543466cb768db986c2a27e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1090,7 +1090,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2c14fd34356520abac14a7de01718d00a030af44",
+      "rev": "cb10861a73033f4ef16031fc6bddac3c6d8cc59b",
       "targets": [
         "SolarTherm"
       ],
