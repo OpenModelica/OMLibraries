@@ -233,7 +233,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1547741569a081ec144b07709626758333e29075",
+          "rev": "f8e34e66ddb06980d1cbba43f4c8ee224e5df50e",
           "targets": [
             "Buildings latest"
           ]
@@ -1041,7 +1041,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3dfce9d386555bc7cd924d424775a6909a1e7d2e",
+      "rev": "7fccc70aaa56233bb3f3e006900000bebcb25eb2",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
     },
     {
