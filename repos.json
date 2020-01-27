@@ -712,7 +712,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "c793b86ea825dee44b42c6716ab22fbb083cf297",
+          "rev": "08ae73c5dd0b55e58b503e5fe5bf5a4dd21ad3b8",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1090,7 +1090,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9daeb6b9a1e29cd3b9c72cc40a3da69a0a945464",
+      "rev": "95b55a336c5e9a619be61357a924e26ed9f7e7ed",
       "targets": [
         "SolarTherm"
       ],
