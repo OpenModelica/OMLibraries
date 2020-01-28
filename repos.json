@@ -712,7 +712,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "08ae73c5dd0b55e58b503e5fe5bf5a4dd21ad3b8",
+          "rev": "b4f549c6118275699abc412bb8cc1a8193a0f273",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1135,7 +1135,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7fabeae578a6214f13e1684a04423bafcd1c72ed",
+      "rev": "e4680bc2cb1c31db890e9e53e9c410bddf86a425",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {

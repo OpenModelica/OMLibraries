@@ -1,6 +1,6 @@
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2020-01-26 19:12:46.649907746 +0100
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2020-01-27 19:03:36.537921252 +0100
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2020-01-27 19:13:04.754573673 +0100
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_Transformer.mo	2020-01-28 12:34:44.352933100 +0100
 @@ -270,5 +270,6 @@
                    fillColor={255,255,170},
                    fillPattern=FillPattern.Solid,
@@ -10,8 +10,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
 +  __OpenModelica_simulationFlags(nls = "newton"));
  end IMC_Transformer;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo "build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo"
---- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2020-01-26 19:12:46.649907746 +0100
-+++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2020-01-27 19:03:36.437920348 +0100
+--- git/Modelica/Modelica/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2020-01-27 19:13:04.754573673 +0100
++++ build/Modelica trunk/Magnetic/QuasiStatic/FundamentalWave/Examples/BasicMachines/InductionMachines/IMC_YD.mo	2020-01-28 12:34:44.256932919 +0100
 @@ -199,5 +199,6 @@
                    fillColor={255,255,170},
                    fillPattern=FillPattern.Solid,
@@ -21,8 +21,8 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/Magnetic/QuasiStatic
 +  __OpenModelica_simulationFlags(nls = "newton"));
  end IMC_YD;
 diff -u -x .svn -x .git -x Library -r git/Modelica/Modelica/package.mo "build/Modelica trunk/package.mo"
---- git/Modelica/Modelica/package.mo	2020-01-26 19:12:46.821909192 +0100
-+++ build/Modelica trunk/package.mo	2020-01-27 19:03:37.445929474 +0100
+--- git/Modelica/Modelica/package.mo	2020-01-27 19:13:04.926574978 +0100
++++ build/Modelica trunk/package.mo	2020-01-28 12:34:45.268934837 +0100
 @@ -8616,12 +8616,12 @@
  
  annotation (
