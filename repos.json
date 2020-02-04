@@ -937,6 +937,14 @@
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
+      "dest": "PowerGrids",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "1ceb4dcfca6321d367898f392e43e665c687a4f1",
+      "url": "https://github.com/PowerGrids/PowerGrids.git"
+    },
+    {
       "dest": "PVSystems",
       "options": {
         "gitbranch": "master"
