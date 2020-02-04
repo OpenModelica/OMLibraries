@@ -49,7 +49,7 @@ diff -u -x .svn -x .git -x Library -r git/Modelica/ModelicaServices/package.mo "
      versionDate="2020-02-03",
      dateModified = "2020-02-03 19:00:00Z",
      revisionId="$Format:%h %ci$",
--    uses(Modelica(version="4.0.0-dev")),
+-    uses(Modelica(version="4.0.0")),
 +    uses(Modelica(version= "trunk")),
      conversion(
        noneFromVersion="1.0",
