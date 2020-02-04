@@ -233,7 +233,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "6517f85a6fee4b220f0706969a31db1f4169b0df",
+          "rev": "30a4d23ea9766409e65592c9d5a9cff418194a78",
           "targets": [
             "Buildings latest"
           ]
@@ -937,14 +937,6 @@
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
-      "dest": "PowerGrids",
-      "options": {
-        "gitbranch": "master"
-      },
-      "rev": "1ceb4dcfca6321d367898f392e43e665c687a4f1",
-      "url": "https://github.com/PowerGrids/PowerGrids.git"
-    },
-    {
       "dest": "PVSystems",
       "options": {
         "gitbranch": "master"
@@ -989,6 +981,14 @@
       "dest": "PowerFlow",
       "rev": 3174,
       "url": "https://svn.modelica.org/projects/Modelica_ElectricalSystems/Modelica_PowerFlow/trunk"
+    },
+    {
+      "dest": "PowerGrids",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "1ceb4dcfca6321d367898f392e43e665c687a4f1",
+      "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
       "dest": "PowerSystems",
