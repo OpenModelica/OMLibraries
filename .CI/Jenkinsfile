@@ -1,0 +1,50 @@
+pipeline {
+  agent none
+  options {
+    newContainerPerStage()
+  }
+  environment {
+    LC_ALL = 'C.UTF-8'
+  }
+  stages {
+    stage('Make commit') {
+      agent {
+        label 'linux'
+      }
+      steps {
+        script {
+          def buildNumber = env.BUILD_NUMBER as int
+          if (buildNumber > 1) milestone(buildNumber - 1)
+          milestone(buildNumber)
+        }
+        sh 'git clean -fdx'
+        sh '(test -d OpenModelica && cd OpenModelica && git pull) || git clone --depth 1 https://github.com/OpenModelica/OpenModelica.git'
+        sh 'cd OpenModelica && git reset --hard origin/master && git clean -fdx'
+        sh 'cd OpenModelica && git submodule init'
+        sh 'cd OpenModelica && git submodule update libraries'
+        sh "cd OpenModelica/libraries && git remote -v | grep OMLibraries"
+        sh "cd OpenModelica/libraries && git fetch && git reset --hard ${GIT_COMMIT} && git clean -fdx"
+        sh 'cd OpenModelica && echo Updated libraries > commit.log'
+        sh 'cd OpenModelica && git submodule summary >> commit.log'
+        sh 'git config --global user.email openmodelica@ida.liu.se'
+        sh 'git config --global user.name hudson'
+        sh '''
+        cd OpenModelica
+        REPO=libraries
+        HASH=`git ls-tree origin/master $REPO | cut -d" " -f3 | cut -f1`
+        (cd libraries && git shortlog -sne "$HASH..HEAD") > author-log
+        if test 1 = "`cut -f2 author-log | uniq | wc -l`"; then
+          COMMITTER_EMAIL=`cut -f2 author-log | uniq`
+          git commit -a -F commit.log --author="$COMMITTER_EMAIL"
+        else
+          git commit -a -F commit.log
+        fi
+        '''
+        sshagent (credentials: ['Hudson-SSH-Key']) {
+          sh 'ssh-keyscan github.com >> ~/.ssh/known_hosts'
+          sh('cd OpenModelica && git push --force git@github.com:OpenModelica/OpenModelica.git HEAD:omlib-staging')
+        }
+      }
+    }
+  }
+}
