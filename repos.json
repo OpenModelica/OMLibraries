@@ -233,7 +233,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "94753569449042719c3612eddd2437d7e5ec2f73",
+          "rev": "f93cd6f0e5f41bcdb168dcc2266ae726482a7d2c",
           "targets": [
             "Buildings latest"
           ]
@@ -686,7 +686,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "8dadba869893b336d798c3291af55c7f70f30005",
+          "rev": "f22f8ae40f450b84b8fd5658df10865aa85e75d0",
           "targets": [
             "Complex",
             "Modelica",
@@ -974,7 +974,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7da431404374729d486ba13456ebee6e16fab90c",
+      "rev": "6499374d194a78e27a50c758f74b84a84b8f4b33",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -987,7 +987,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cb3e3f49e5108d3509c259514cc93ad8fb8de39e",
+      "rev": "9745a59e2eb51121bafb80e130a30be094efd40f",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
@@ -1098,7 +1098,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "95b55a336c5e9a619be61357a924e26ed9f7e7ed",
+      "rev": "ff834c3c8a4605e219992ab4f754870b06f6df48",
       "targets": [
         "SolarTherm"
       ],
