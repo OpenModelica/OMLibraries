@@ -23,7 +23,7 @@ pipeline {
         sh 'cd OpenModelica && git submodule init'
         sh 'cd OpenModelica && git submodule update libraries'
         sh "cd OpenModelica/libraries && git remote -v | grep OMLibraries"
-        sh "cd OpenModelica/libraries && git fetch && git reset --hard ${GIT_COMMIT} && git clean -fdx"
+        sh "cd OpenModelica/libraries && git fetch && git reset --hard \"${env.GIT_COMMIT}\" && git clean -fdx"
         sh 'cd OpenModelica && echo Updated libraries > commit.log'
         sh 'cd OpenModelica && git submodule summary >> commit.log'
         sh 'git config --global user.email openmodelica@ida.liu.se'
@@ -42,7 +42,7 @@ pipeline {
         '''
         sshagent (credentials: ['Hudson-SSH-Key']) {
           sh 'ssh-keyscan github.com >> ~/.ssh/known_hosts'
-          sh('cd OpenModelica && git push --force git@github.com:OpenModelica/OpenModelica.git HEAD:omlib-staging')
+          sh('test ! "master" = "${env.GITBRANCH}" || (cd OpenModelica && git push --force git@github.com:OpenModelica/OpenModelica.git HEAD:omlib-staging)')
         }
       }
     }
