@@ -31,6 +31,7 @@
     "https://github.com/modelica-3rdparty/MotorcycleLib",
     "https://github.com/modelica-3rdparty/MultiBondLib",
     "https://github.com/modelica-3rdparty/PDELib",
+    "https://github.com/simulatino/OpenHPL.git",
     "https://github.com/modelica-3rdparty/QCalc.git",
     "https://github.com/modelica-3rdparty/SPICELib",
     "https://github.com/modelica-3rdparty/TechThermo",
@@ -896,7 +897,7 @@
       "rev": "14a178c837390a0411613f85b11372503ee067ea",
       "url": "https://github.com/modelica-3rdparty/ObjectStab.git"
     },
-    
+
     {
       "dest": "OpenHydraulics",
       "options": {
