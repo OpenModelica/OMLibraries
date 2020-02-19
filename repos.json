@@ -909,9 +909,9 @@
     {
       "dest": "OpenIPSL",
       "options": {
-        "gitbranch": "v1.5.0"
+        "gittag": "v1.5.0"
       },
-      "rev": "954216a05f910313d044d25a5b775b861e6cbd52",
+      "rev": "v1.5.0",
       "url": "https://github.com/OpenIPSL/OpenIPSL.git"
     },
     {
