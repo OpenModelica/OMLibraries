@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "dafe2f4d49658dc61c0f349ed5bed922f9a10301",
+          "rev": "383f1af8fe911bb014383b365f82b0c843628799",
           "targets": [
             "Buildings latest"
           ]
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "682503575085acfda92b487f39897d44bde5d37a",
+          "rev": "d61ab9f21e5f6b1f38577a8e6532a31b5aaa56b2",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -897,7 +897,6 @@
       "rev": "14a178c837390a0411613f85b11372503ee067ea",
       "url": "https://github.com/modelica-3rdparty/ObjectStab.git"
     },
-
     {
       "dest": "OpenHydraulics",
       "options": {
