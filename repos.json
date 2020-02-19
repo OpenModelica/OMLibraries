@@ -909,10 +909,10 @@
     {
       "dest": "OpenIPSL",
       "options": {
-        "gitbranch": "master"
+        "gitbranch": "v1.5.0"
       },
       "rev": "954216a05f910313d044d25a5b775b861e6cbd52",
-      "url": "https://github.com/SmarTS-Lab/OpenIPSL.git"
+      "url": "https://github.com/OpenIPSL/OpenIPSL.git"
     },
     {
       "dest": "Optimisers",
