@@ -134,7 +134,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3274b4e34f0dcbd01fcb3e4ba05e9c646d8d8bb0",
+          "rev": "3626fa866358883d8a58fdc1f89f4a8d11f96218",
           "targets": [
             "IBPSA latest"
           ]
@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "383f1af8fe911bb014383b365f82b0c843628799",
+          "rev": "8696d2e04691c81c5bab7ad4aca7e37815c3c5ed",
           "targets": [
             "Buildings latest"
           ]
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "d61ab9f21e5f6b1f38577a8e6532a31b5aaa56b2",
+          "rev": "82fd58b777380c6d6963ba990cdbcc3ffba0aa60",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -967,7 +967,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6499374d194a78e27a50c758f74b84a84b8f4b33",
+      "rev": "0ac7593745d8647add36387d94bdb70e0c9755b1",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -1050,7 +1050,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d21658efc9238d5b19f556601a8a40bce2306944",
+      "rev": "3b8a887714691a53b7b77535c82747ed0a5e4bcd",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
