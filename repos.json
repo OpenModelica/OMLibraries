@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4d1a60f2272f0f137cdf8c2b81d88dc7692e7f29",
+          "rev": "7a735ce8fa14a096ed56c94b7fcdf4c4a55a0ccc",
           "targets": [
             "Buildings latest"
           ]
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6b32dbbceae2154d2e13d90ca7a5260772351526",
+          "rev": "3dfe8836cbacdd4a1fd9ea4b383259bfd6657c3e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -812,7 +812,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ab424f6cb464fc516b9c0e12a81a4075b038c837",
+      "rev": "8683b41a3f9361aa9e9f63c892ad5ec376b41c51",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -845,7 +845,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b4364eda7d010ad65fe959ab02d05737c7ad50e4",
+      "rev": "3067ff22e997e54c2c7307d42f1876e31e354f01",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
