@@ -6,6 +6,5 @@
  annotation (
 -version="4.0.0",
 +version= "trunk",
- versionBuild=1,
  versionDate="2020-02-12",
  dateModified = "2020-02-12 19:00:00Z",
