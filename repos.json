@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "812ba5c88d62a09f540b703f5ac30dc538d82a5b",
+          "rev": "beaa518c6586308eba39b6aab649d529e457befa",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1050,7 +1050,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3b8a887714691a53b7b77535c82747ed0a5e4bcd",
+      "rev": "6890d260ad3d6a84f7fdad387e2cb7a9326eb0e0",
       "url": "https://github.com/casella/ScalableTestSuite.git"
     },
     {
