@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a4ca7bb44b087f679cc9017c0051493380af1952",
+          "rev": "e96bf736eb6e1ad875205de2229b750736fa0c47",
           "targets": [
             "Buildings latest"
           ]
@@ -589,7 +589,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "60955424cacbc20644d29f60faa6f476101c4a51",
+      "rev": "4b0b1b96455faf116a15d0388c5f18df88459129",
       "url": "https://github.com/modelica-3rdparty/ModPowerSystems.git"
     },
     {
