@@ -41,6 +41,7 @@ pipeline {
         fi
         '''
         sshagent (credentials: ['Hudson-SSH-Key']) {
+          sh 'echo GIT_BRANCH: ${env.GIT_BRANCH}'
           sh 'ssh-keyscan github.com >> ~/.ssh/known_hosts'
           sh('test ! "master" = "${env.GIT_BRANCH}" || (cd OpenModelica && git push --force git@github.com:OpenModelica/OpenModelica.git HEAD:omlib-staging)')
         }
