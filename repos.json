@@ -223,7 +223,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "82bcdf366f66cc66604927d84a49790d68736c22",
+      "rev": "13aa5f2e6fc09dc4a92cea4f2155ecc07a6efac1",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -687,7 +687,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "2822513dbe0473749c5235496a4e9fc26c6ba3fa",
+          "rev": "a156ab0f75b8dd6fd4ecb4cac5fab8fc4a952421",
           "targets": [
             "Complex",
             "Modelica",
@@ -1119,7 +1119,7 @@
         "gitbranch": "master",
         "license": "modelica1.1"
       },
-      "rev": "cc0300732ee25bf7f6052aedf83df5cddfbb1108",
+      "rev": "2f6bd9382c5aac2aff9148cd9113a418767734b6",
       "url": "https://github.com/modelica-3rdparty/SystemDynamics.git"
     },
     {
