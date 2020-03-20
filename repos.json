@@ -106,7 +106,7 @@
           "options": {
             "gitbranch": "master"
           },
-          "rev": "4b95e64fb6c616b3670977abf718758ccc316ef0"
+          "rev": "9d9c8d54faaf20ee298cf298c63464d0fe026dc2"
         },
         {
           "options": {
@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "948e297d1032cb3bb14dbe5083fb1db72b61822a",
+          "rev": "d54e7a56314ce350569b86a3980ec69e74871289",
           "targets": [
             "Buildings latest"
           ]
