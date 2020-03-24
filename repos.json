@@ -589,7 +589,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4b0b1b96455faf116a15d0388c5f18df88459129",
+      "rev": "8cb37bc412eacb7dad810a933e497845d789c009",
       "url": "https://github.com/modelica-3rdparty/ModPowerSystems.git"
     },
     {
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "412d17023bd7613ef226a611271f5001cbb54e78",
+          "rev": "57a5349ed2f94b0b915d8400ccb4efedab6b7609",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1042,7 +1042,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7fccc70aaa56233bb3f3e006900000bebcb25eb2",
+      "rev": "e90514747ce9ae6ba09c2f64908f192105d4ad3a",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
     },
     {
