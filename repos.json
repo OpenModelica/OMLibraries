@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d54e7a56314ce350569b86a3980ec69e74871289",
+          "rev": "f3fdce98daddd424ef8974cf21dda1f4a8b6d59b",
           "targets": [
             "Buildings latest"
           ]
@@ -589,7 +589,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "8cb37bc412eacb7dad810a933e497845d789c009",
+      "rev": "df3afce27d5e935c4111f392275744a655abe216",
       "url": "https://github.com/modelica-3rdparty/ModPowerSystems.git"
     },
     {
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "57a5349ed2f94b0b915d8400ccb4efedab6b7609",
+          "rev": "e518e58498aaad7dadd25a81b313c13615c67e3e",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -812,7 +812,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "307c85f4d58329cea980c09ce6a379c85ea13326",
+      "rev": "fd1bd1265915cd0991e189994cefc74dcd43c8b7",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
