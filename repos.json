@@ -207,7 +207,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a4220644286eb79ce32f9e52453963a8cef082d1",
+      "rev": "b28fae1a1dda7377469f07ca7dce0d602ea69ad6",
       "url": "https://github.com/EDF-TREE/BuildSysPro.git"
     },
     {
@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f3fdce98daddd424ef8974cf21dda1f4a8b6d59b",
+          "rev": "1a55c0972127461a4d16b61ea007c449aa852139",
           "targets": [
             "Buildings latest"
           ]
