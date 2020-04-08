@@ -223,7 +223,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "13aa5f2e6fc09dc4a92cea4f2155ecc07a6efac1",
+      "rev": "a71f3c6c19bbf39084df72e4e67435d0ffbecedf",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "75dbba50ba631a90e8ba2e679c017ea205ae9807",
+          "rev": "3e46c2e64ce263bee8439d254a53d150af47ae55",
           "targets": [
             "Buildings latest"
           ]
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "7b0253071a017fc08ad323676a27f3c1f2dc2bc0",
+          "rev": "09dbb73cac4d7544bd30b3e3242a907d96bf5dca",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1091,7 +1091,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ff834c3c8a4605e219992ab4f754870b06f6df48",
+      "rev": "0101c3ad79c3c314404e9a3dce24d6c9910b13c1",
       "targets": [
         "SolarTherm"
       ],
