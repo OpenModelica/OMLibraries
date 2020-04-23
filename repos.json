@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ab31d0d4d38145f4ca96c8074d7d71cb61690380",
+          "rev": "99c3c0367122b3aef695cbc64b435500bbaa92c0",
           "targets": [
             "Buildings latest"
           ]
@@ -367,7 +367,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "40986891079003a1f9bbc88e4ecd491737f46dfe",
+      "rev": "e525d93b42ab303d700f796c374342464ff8a8c5",
       "url": "https://github.com/modelica-3rdparty/DisHeatLib.git"
     },
     {
