@@ -1,5 +1,5 @@
---- git/Modelica/Complex.mo	2020-04-13 19:15:03.583387161 +0200
-+++ build/Complex trunk.mo	2020-04-14 19:04:10.038416964 +0200
+--- git/Modelica/Complex.mo	2020-05-11 19:03:25.923399831 +0200
++++ build/Complex trunk.mo	2020-05-11 19:03:48.919603720 +0200
 @@ -235,7 +235,7 @@
    end 'String';
  

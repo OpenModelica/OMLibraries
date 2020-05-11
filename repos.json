@@ -134,7 +134,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "775ac39b7db0fa2e09abf1a2e0475b98024f60c1",
+          "rev": "20348095e407933816a90d5beff307ac1d491887",
           "targets": [
             "IBPSA latest"
           ]
@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "aea913ce1afaedf406db73257a3117bbe93451d2",
+          "rev": "4546fad35a6495ae9be31e62dd05ea08e8364d48",
           "targets": [
             "Buildings latest"
           ]
@@ -418,7 +418,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cffbb4d59913bb08e7b47fab35cf4305f7424b7a",
+      "rev": "3f8544c7365a535f12c41846b74d84c28ac1f826",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "bd753330af5fc4220707e0d06c6d136342eedeee",
+          "rev": "eec2d503ff55ef379a2a472be8719aaf3751162a",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -845,7 +845,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3067ff22e997e54c2c7307d42f1876e31e354f01",
+      "rev": "c8350276bfd945086962cf4150ba941b9c57ed13",
       "url": "https://github.com/modelica/Modelica_Synchronous.git"
     },
     {
