@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "4546fad35a6495ae9be31e62dd05ea08e8364d48",
+          "rev": "d6c2deaf7814b1bb462f2655f5de421dcccd7e32",
           "targets": [
             "Buildings latest"
           ]
@@ -687,7 +687,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "7ac06a5137182ace80712ae42ba803f87572f170",
+          "rev": "fa6757d403e342778459c5d37e4f48b987702718",
           "targets": [
             "Complex",
             "Modelica",
@@ -967,7 +967,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0ac7593745d8647add36387d94bdb70e0c9755b1",
+      "rev": "60fc28345055caa1c482fc9042053d40b201b7cd",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
@@ -1091,7 +1091,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "458e0072720ef11eb87e218bc8d6adcde14564c2",
+      "rev": "be48e4985ae0ed68942292ed13a16b3d3ddd8319",
       "targets": [
         "SolarTherm"
       ],
