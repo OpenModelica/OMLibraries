@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d6c2deaf7814b1bb462f2655f5de421dcccd7e32",
+          "rev": "ff9a945880fce092a6f3fb0636740744949312b9",
           "targets": [
             "Buildings latest"
           ]
@@ -525,7 +525,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "af097f2931c5e2e36b4fb422bf62cda9432837af",
+      "rev": "7b867a59b0556b443b2ad463bf3d21d9e1d5537d",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -713,7 +713,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "a56ac29079a9da329aeb248d04135419a608cff4",
+          "rev": "1dd53117cde44b3b20fc35079b79f7ba34af0d5f",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1091,7 +1091,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "be48e4985ae0ed68942292ed13a16b3d3ddd8319",
+      "rev": "ef6f29aac66b8b0cde64360baa5c6c6d0b9da678",
       "targets": [
         "SolarTherm"
       ],
