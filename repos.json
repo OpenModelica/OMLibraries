@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ff9a945880fce092a6f3fb0636740744949312b9",
+          "rev": "cf182fa78772bcab945d419712326619f98a043e",
           "targets": [
             "Buildings latest"
           ]
@@ -418,7 +418,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3f8544c7365a535f12c41846b74d84c28ac1f826",
+      "rev": "eef5ae7cf997c51cec143695eabe18a8eb2ffe83",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -1091,7 +1091,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ef6f29aac66b8b0cde64360baa5c6c6d0b9da678",
+      "rev": "1cc0818ae124572de95936132d228ed1b46ae6d5",
       "targets": [
         "SolarTherm"
       ],
