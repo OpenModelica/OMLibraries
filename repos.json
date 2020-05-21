@@ -234,7 +234,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a31228ee424e954ac59d4a12e26a21d732c11c30",
+          "rev": "2b8a2badb0bfd45165847414b00c04f4e2a65e91",
           "targets": [
             "Buildings latest"
           ]
@@ -1091,7 +1091,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1cc0818ae124572de95936132d228ed1b46ae6d5",
+      "rev": "df14f3f8a744592ef6df8160519b2707fb52e0c3",
       "targets": [
         "SolarTherm"
       ],
