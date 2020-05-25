@@ -864,3 +864,15 @@ diff -u -x .svn -r svn/MSL 3.1/Modelica/Media/Water/package.order build/Modelica
  simpleWaterConstants
  ConstantPropertyLiquidWater
  IdealSteam
+diff -u -x .svn -r svn/MSL 3.1/Modelica/Mechanics/Translational.mo build/Modelica 3.1/Mechanics/Translational.mo
+--- svn/MSL 3.1/Modelica/Mechanics/Translational.mo	2013-10-03 15:46:05.949016869 +0200
++++ build/Modelica 3.1/Mechanics/Translational.mo	2013-10-03 15:49:03.061763578 +0200
+@@ -1586,5 +1586,5 @@
+         Modelica.Mechanics.Translational.Interfaces.PartialCompliantWithRelativeStates;
+       parameter Real c(final unit="N/m", final min=0, start=1)
+         "Spring constant";
+-      parameter Real d(final unit="N/ (m/s)", final min=0, start=1)
++      parameter Real d(final unit="N/(m/s)", final min=0, start=1)
+         "Damping constant";
+       parameter Modelica.SIunits.Position s_rel0=0 "Unstretched spring length";
+       parameter Real n(final min=1) = 1
