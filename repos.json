@@ -588,9 +588,9 @@
       "dest": "MEV",
       "options": {
         "gitbranch": "master",
-        "gittag": "v1.0.0"
+        "gittag": "v1.0.1"
       },
-      "rev": "v1.0.0",
+      "rev": "v1.0.1",
       "url": "https://github.com/looms-polimi/MEV.git"
     },
     {
