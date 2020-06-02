@@ -134,7 +134,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2351f5a291951f7aa9a0646a6094e98ebdb3651d",
+          "rev": "a3647ab2c15dd05183c74e2dc1b780099b0cfaab",
           "targets": [
             "IBPSA latest"
           ]
@@ -997,7 +997,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4303b5f9d0cd46587805cefcb2c1e8a59b60f707",
+      "rev": "bbb56c6261f5df95342e63b8c480d4dc57f07623",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
