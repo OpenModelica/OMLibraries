@@ -173,7 +173,7 @@
         "gitbranch": "master",
         "license": "mpl2"
       },
-      "rev": "dbf4fb876ac74a0af17922112003f14c3aa6c52e",
+      "rev": "3fea742a8b9286ce65b1d04679b1b523b993144f",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -1108,7 +1108,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "df14f3f8a744592ef6df8160519b2707fb52e0c3",
+      "rev": "6cd89df205cbb32a60588a8494ab6dc56a5afb11",
       "targets": [
         "SolarTherm"
       ],
