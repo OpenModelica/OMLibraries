@@ -705,7 +705,7 @@
             "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
-          "rev": "c717338bd786177aeec1efb32fc3aacfe2ea7774",
+          "rev": "f0e7c0d4aa6244d579e175283873ada421c89458",
           "targets": [
             "Complex",
             "Modelica",
@@ -731,7 +731,7 @@
             "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
-          "rev": "6626538a236a34a390655b55d5e8c906bfe31772",
+          "rev": "9d996f3a5f4b278a12c0c87f82c5d2e744640381",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -830,7 +830,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a4ae655b52892bb1fb49d70b490f7274583dc24c",
+      "rev": "934be6a3a3f7f2a09f69afa4be26cbd6e60d07cf",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -998,7 +998,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "bbb56c6261f5df95342e63b8c480d4dc57f07623",
+      "rev": "fd0859acb6e5f0430e561e7ab70cadd84117c934",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
@@ -1060,7 +1060,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b041b17cd78ee8871f65caffccc290e52f07f487",
+      "rev": "1a08480d778cf54934bc3ec080a838f28eb7f388",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
     },
     {
