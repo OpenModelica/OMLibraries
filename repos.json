@@ -55,6 +55,7 @@
     "Modelica 3.0": "Modelica 3.2.1",
     "Modelica 3.2": "Modelica 3.2.1",
     "Modelica 3.2.1": "Modelica 3.2.2",
+    "Modelica 4.0.0": "Modelica trunk",
     "ModelicaServices 3.2": "ModelicaServices 3.2.1",
     "Modelica_DeviceDrivers 1.4.4": "Modelica_DeviceDrivers 1.5.0",
     "Modelica_DeviceDrivers 1.7.0": "Modelica_DeviceDrivers 1.8.0",
