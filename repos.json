@@ -633,7 +633,7 @@
             "intertrac": "m:",
             "license": "modelica1.1"
           },
-          "rev": "d442bcd461b8db9873e33b6141bdbd37bcff9de8"
+          "rev": "8b7bcac13161a52955ac5a5a92b77b705f8e19f2"
         },
         {
           "options": {
@@ -642,7 +642,7 @@
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices"
           },
-          "rev": "af2a3e1597d648d6826665c89cf9eaf5c2a632bc",
+          "rev": "c1feaafc23b4a122d20966109d76efd4f8853c58",
           "targets": [
             "Modelica",
             "ModelicaServices"
@@ -656,7 +656,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "60cb4e48077fa22cc97d02e767baa83ec78aadf9",
+          "rev": "06af0578789283267a4089fffd8f2fb302e0405a",
           "targets": [
             "Complex",
             "Modelica",
@@ -671,7 +671,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "d992c34ed978241214b4c079fb8ee6cc9e33d909",
+          "rev": "9578058eff7a3a3d953a37d190a9bafa4e77092e",
           "targets": [
             "Complex",
             "Modelica",
@@ -689,7 +689,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "f0e7c0d4aa6244d579e175283873ada421c89458",
+          "rev": "fad7348c3ee4dae4cf0d762e3153c1336f4e0878",
           "targets": [
             "Complex",
             "Modelica",
@@ -707,7 +707,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "9d996f3a5f4b278a12c0c87f82c5d2e744640381",
+          "rev": "8610e9f942a658f573fc467fcf1328b8c3477771",
           "targets": [
             "Complex",
             "Modelica",
@@ -806,7 +806,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "934be6a3a3f7f2a09f69afa4be26cbd6e60d07cf",
+      "rev": "93758633945f9d376cea071bb14ac20664cadbd2",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1085,7 +1085,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6cd89df205cbb32a60588a8494ab6dc56a5afb11",
+      "rev": "b8f67768df40166f71d6bd4cf390d6a033af22b4",
       "targets": [
         "SolarTherm"
       ],
