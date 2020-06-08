@@ -618,7 +618,7 @@
           "options": {
             "gittag": "OM/v1.6",
             "intertrac": "m:",
-            "license": "modelica1.1"
+            "license": "modelica1.1",
             "std": "1.x"
           },
           "rev": "v1.6",
