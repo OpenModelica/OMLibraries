@@ -616,10 +616,9 @@
       "multitarget": [
         {
           "options": {
-            "gittag": "v1.6",
+            "gittag": "OM/v1.6",
             "intertrac": "m:",
-            "license": "modelica1.1",
-            "patchlevel": "Modelica:-om1",
+            "license": "modelica1.1"
             "std": "1.x"
           },
           "rev": "v1.6",
@@ -630,20 +629,18 @@
         {
           "options": {
             "breaks": "omlibrary-msl222",
-            "gitbranch": "maint/2.2.2",
+            "gitbranch": "OM/maint/2.2.2",
             "intertrac": "m:",
-            "license": "modelica1.1",
-            "patchlevel": "Modelica:-om1"
+            "license": "modelica1.1"
           },
           "rev": "d442bcd461b8db9873e33b6141bdbd37bcff9de8"
         },
         {
           "options": {
             "breaks": "omlibrary-msl31",
-            "gitbranch": "maint/3.1",
+            "gitbranch": "OM/maint/3.1",
             "intertrac": "m:",
-            "no-dependencies": "ModelicaServices",
-            "patchlevel": "Modelica:-om1,ModelicaServices:-om1"
+            "no-dependencies": "ModelicaServices"
           },
           "rev": "af2a3e1597d648d6826665c89cf9eaf5c2a632bc",
           "targets": [
@@ -654,10 +651,9 @@
         {
           "options": {
             "breaks": "omlibrary-msl32,omlibrary-reference",
-            "gitbranch": "maint/3.2.1",
+            "gitbranch": "OM/maint/3.2.1",
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices",
-            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
           "rev": "60cb4e48077fa22cc97d02e767baa83ec78aadf9",
@@ -670,15 +666,9 @@
         },
         {
           "options": {
-            "generate-patch-mos": "MSL.3.2.2.mos",
-            "gitbranch": "maint/3.2.2",
+            "gitbranch": "OM/maint/3.2.2",
             "intertrac": "m:",
             "no-dependencies": "ModelicaServices",
-            "patch-files": [
-              "Modelica 3.2.2.patch",
-              "ModelicaServices 3.2.2.patch"
-            ],
-            "patchlevel": "Complex:-om1,Modelica:-om3,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
           "rev": "d992c34ed978241214b4c079fb8ee6cc9e33d909",
@@ -693,16 +683,10 @@
         },
         {
           "options": {
-            "generate-patch-mos": "MSL.3.2.3.mos",
-            "gitbranch": "maint/3.2.3",
+            "gitbranch": "OM/maint/3.2.3",
             "intertrac": "m:",
             "license": "bsd3",
             "no-dependencies": "ModelicaServices",
-            "patch-files": [
-              "Modelica 3.2.3.patch",
-              "ModelicaServices 3.2.3.patch"
-            ],
-            "patchlevel": "Modelica:-om2,ModelicaServices:-om2",
             "remove-files": "Resources/Library"
           },
           "rev": "f0e7c0d4aa6244d579e175283873ada421c89458",
@@ -717,18 +701,10 @@
         {
           "options": {
             "breaks": "omlibrary-msl32,omlibrary-reference",
-            "generate-patch-mos": "MSL.trunk.mos",
-            "gitbranch": "master",
+            "gitbranch": "OM/master",
             "intertrac": "m:",
             "license": "bsd3",
             "no-dependencies": "ModelicaServices",
-            "patch-files": [
-              "Complex trunk.patch",
-              "Modelica trunk.patch",
-              "ModelicaServices trunk.patch",
-              "ModelicaTest trunk.patch"
-            ],
-            "patchlevel": "Complex:-om1,Modelica:-om1,ModelicaServices:-om1",
             "remove-files": "Resources/Library"
           },
           "rev": "9d996f3a5f4b278a12c0c87f82c5d2e744640381",
@@ -741,7 +717,7 @@
           ]
         }
       ],
-      "url": "https://github.com/modelica/Modelica.git"
+      "url": "https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git"
     },
     {
       "dest": "Modelica-Arduino",
