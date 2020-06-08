@@ -709,11 +709,11 @@
           },
           "rev": "9d996f3a5f4b278a12c0c87f82c5d2e744640381",
           "targets": [
-            "Complex trunk",
-            "Modelica trunk",
-            "ModelicaReference trunk",
-            "ModelicaServices trunk",
-            "ModelicaTest trunk"
+            "Complex",
+            "Modelica",
+            "ModelicaReference",
+            "ModelicaServices",
+            "ModelicaTest"
           ]
         }
       ],
