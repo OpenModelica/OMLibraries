@@ -135,7 +135,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a3647ab2c15dd05183c74e2dc1b780099b0cfaab",
+          "rev": "3ec71e501715857e2a6432ebee8fd5b15aa60251",
           "targets": [
             "IBPSA latest"
           ]
@@ -235,7 +235,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "16c29a79e955721f73682b38cf4fafae1ea7412f",
+          "rev": "1cac663196da688492007ffd564d2b3066002242",
           "targets": [
             "Buildings latest"
           ]
@@ -427,7 +427,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "eef5ae7cf997c51cec143695eabe18a8eb2ffe83",
+      "rev": "15fcdf23eedb2177154fd911feb9db2b10aff86c",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -814,7 +814,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "326106fff155317abc234775cd18b61c9a6b8878",
+      "rev": "ff593b59b65e4f8d982d703b01975d2766a383b6",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
