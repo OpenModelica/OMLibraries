@@ -135,7 +135,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3ec71e501715857e2a6432ebee8fd5b15aa60251",
+          "rev": "e06b164a0dbb6734563c45f0a993986ae5a37709",
           "targets": [
             "IBPSA latest"
           ]
@@ -174,7 +174,7 @@
         "gitbranch": "master",
         "license": "mpl2"
       },
-      "rev": "3fea742a8b9286ce65b1d04679b1b523b993144f",
+      "rev": "850f2c486310e31fbb3ccec0e1f80e28b284c93a",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -235,7 +235,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1cac663196da688492007ffd564d2b3066002242",
+          "rev": "cce4e7ad338e12799e590a3e49b938ce455153c0",
           "targets": [
             "Buildings latest"
           ]
@@ -427,7 +427,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "15fcdf23eedb2177154fd911feb9db2b10aff86c",
+      "rev": "9c1427378c677f193a937dfb9cf19ea32dabd359",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -814,7 +814,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ff593b59b65e4f8d982d703b01975d2766a383b6",
+      "rev": "ee42237b0c1218e56576529ef4ada0c4876ada5e",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
