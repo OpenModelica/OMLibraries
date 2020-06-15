@@ -816,7 +816,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ee42237b0c1218e56576529ef4ada0c4876ada5e",
+      "rev": "1a9735b7d6f2ea00c98ad46447fe10f6f5fcd359",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -1087,7 +1087,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "6a7362de984bcf2290dc7675c6bfd88864d93f62",
+      "rev": "9070496454c6bc5c13778ba5c4c550d0ce02fd81",
       "targets": [
         "SolarTherm"
       ],
