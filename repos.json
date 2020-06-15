@@ -50,6 +50,7 @@
     "Buildings 5.0.1": "Buildings latest",
     "Buildings 5.1.0": "Buildings latest",
     "Complex 1.0": "Complex 3.2.1",
+    "Complex 4.0.0": "Complex trunk",
     "Modelica 2.2": "Modelica 2.2.2",
     "Modelica 2.2.1": "Modelica 2.2.2",
     "Modelica 3.0": "Modelica 3.2.1",
@@ -57,6 +58,7 @@
     "Modelica 3.2.1": "Modelica 3.2.2",
     "Modelica 4.0.0": "Modelica trunk",
     "ModelicaServices 3.2": "ModelicaServices 3.2.1",
+    "ModelicaServices 4.0.0": "ModelicaServices trunk",
     "Modelica_DeviceDrivers 1.4.4": "Modelica_DeviceDrivers 1.5.0",
     "Modelica_DeviceDrivers 1.7.0": "Modelica_DeviceDrivers 1.8.0",
     "Modelica_DeviceDrivers 1.7.1": "Modelica_DeviceDrivers 1.8.0",
@@ -709,11 +711,11 @@
           },
           "rev": "8610e9f942a658f573fc467fcf1328b8c3477771",
           "targets": [
-            "Complex",
-            "Modelica",
+            "Complex trunk",
+            "Modelica trunk",
             "ModelicaReference",
-            "ModelicaServices",
-            "ModelicaTest"
+            "ModelicaServices trunk",
+            "ModelicaTest trunk"
           ]
         }
       ],
