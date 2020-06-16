@@ -702,8 +702,25 @@
         },
         {
           "options": {
+            "gitbranch": "OM/maint/4.0.x",
+            "intertrac": "m:",
+            "license": "bsd3",
+            "no-dependencies": "ModelicaServices",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "161e58d9ac92cae1495135d6a81cc5d64fd38ce7",
+          "targets": [
+            "Complex",
+            "Modelica",
+            "ModelicaReference none",
+            "ModelicaServices",
+            "ModelicaTest"
+          ]
+        },
+        {
+          "options": {
             "breaks": "omlibrary-msl32,omlibrary-reference",
-            "gitbranch": "OM/master",
+            "gitbranch": "OM/trunk",
             "intertrac": "m:",
             "license": "bsd3",
             "no-dependencies": "ModelicaServices",
