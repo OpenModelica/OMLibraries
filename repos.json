@@ -679,7 +679,6 @@
             "Modelica",
             "ModelicaServices",
             "ModelicaTest",
-            "ModelicaTestOverdetermined",
             "ObsoleteModelica3"
           ]
         },
@@ -695,7 +694,6 @@
           "targets": [
             "Complex",
             "Modelica",
-            "ModelicaReference none",
             "ModelicaServices",
             "ModelicaTest"
           ]
@@ -714,7 +712,8 @@
             "Modelica",
             "ModelicaReference none",
             "ModelicaServices",
-            "ModelicaTest"
+            "ModelicaTest",
+            "ObsoleteModelica4"
           ]
         },
         {
@@ -730,9 +729,9 @@
           "targets": [
             "Complex trunk",
             "Modelica trunk",
-            "ModelicaReference",
             "ModelicaServices trunk",
-            "ModelicaTest trunk"
+            "ModelicaTest trunk",
+            "ModelicaTestOverdetermined trunk"
           ]
         }
       ],
