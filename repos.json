@@ -706,7 +706,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "161e58d9ac92cae1495135d6a81cc5d64fd38ce7",
+          "rev": "9fdd1955f38b78c2cf0690ebb785940ed5bf40e0",
           "targets": [
             "Complex",
             "Modelica",
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "8610e9f942a658f573fc467fcf1328b8c3477771",
+          "rev": "2cd2b70b9306c017e77602bc28e355d761ae3958",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1a9735b7d6f2ea00c98ad46447fe10f6f5fcd359",
+      "rev": "ed0021ce46b1ee6cab37bd9babdbe33154985fed",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -1103,7 +1103,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9070496454c6bc5c13778ba5c4c550d0ce02fd81",
+      "rev": "1506665d8c889b7998d026ed4b7b36c5624b302c",
       "targets": [
         "SolarTherm"
       ],
