@@ -618,12 +618,12 @@
       "multitarget": [
         {
           "options": {
-            "gittag": "OM/v1.6",
+            "gitbranch": "OM/v1.6",
             "intertrac": "m:",
             "license": "modelica1.1",
             "std": "1.x"
           },
-          "rev": "v1.6",
+          "rev": "1bfcc032b342cc448dabcfe193483047a868efff",
           "targets": [
             "self"
           ]
