@@ -783,7 +783,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "346eae6d73a02fd4dd1c30ad4f6fdf0ab0964962",
+      "rev": "6a23eb9d5aa8c1187a67ab833d20e265798a329b",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b3de1e10b1426555566c62c77b93fd8101a85a06",
+      "rev": "cebabc5b5d55603558621adcc9c0eb30165a5f74",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
