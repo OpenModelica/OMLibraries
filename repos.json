@@ -466,6 +466,14 @@
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
+      "dest": "ModelicaCompliance",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "8a91e75d8a26acc4de30fc0e5d5e9db83c970bd6",
+      "url": "https://github.com/modelica-compliance/compliance.git"
+    },
+    {
       "dest": "ModelicaDFR",
       "options": {
         "gitbranch": "master"
