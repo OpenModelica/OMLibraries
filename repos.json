@@ -421,7 +421,7 @@
         "ModelicaServices",
         "ModelicaTest",
         "ObsoleteModelica3",
-        "ModelicaReference"
+        "ModelicaReference none"
       ],
       "url": "https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git"
     },
