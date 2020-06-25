@@ -1,11 +1,11 @@
 .PHONY: AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BioChem BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_Synchronous MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20200624_053123.core
-ALL_TARGET=$(BUILD_DIR)/20200624_053123.all
+CORE_TARGET=$(BUILD_DIR)/20200625_100053.core
+ALL_TARGET=$(BUILD_DIR)/20200625_100053.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_LinearSystems2 Modelica_Requirements MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation VehicleInterfaces WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20200624_053123
+TIMESTAMP=20200625_100053
 AdvancedNoise:
 	# Building git/AdvancedNoise
 	./checkout-git.sh 'git/AdvancedNoise' 'https://github.com/modelica-3rdparty/AdvancedNoise.git' 'master' '3d5ee54b4086e5c29e7276a7b92d40a3237aed8c'
@@ -345,11 +345,11 @@ Modelica:
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/ObsoleteModelica3 3.2.3.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ObsoleteModelica3 3.2.3.license"
 	echo '3.2.3-20200605-114010~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ObsoleteModelica3 3.2.3.last_change"
-	test ! -d 'build//ModelicaReference 3.2.3'
-	cp -a 'git/Modelica/ModelicaReference' "$(BUILD_DIR)/ModelicaReference 3.2.3"
-	echo '' > "$(BUILD_DIR)/ModelicaReference 3.2.3.uses"
-	echo 'bsd3' > "$(BUILD_DIR)/ModelicaReference 3.2.3.license"
-	echo '3.2.3-20200605-114010~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaReference 3.2.3.last_change"
+	test ! -d 'build//ModelicaReference'
+	cp -a 'git/Modelica/ModelicaReference' "$(BUILD_DIR)/ModelicaReference"
+	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/ModelicaReference.license"
+	echo '20200605-114010~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaReference.last_change"
 Modelica-Arduino:
 	# Building git/Modelica-Arduino
 	./checkout-git.sh 'git/Modelica-Arduino' 'https://github.com/modelica-3rdparty/Modelica-Arduino.git' 'v0.1.0' 'v0.1.0'
