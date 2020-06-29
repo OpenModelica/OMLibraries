@@ -237,7 +237,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2f0d4431bb3d9c5e7b0f260652a7899d44b4efef",
+          "rev": "0ef82efb2a6f737c3f2c04ba66095941c532927f",
           "targets": [
             "Buildings latest"
           ]
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "2cd2b70b9306c017e77602bc28e355d761ae3958",
+          "rev": "6954d663c443e6f3140a077051635473f8f820f6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cebabc5b5d55603558621adcc9c0eb30165a5f74",
+      "rev": "e3188ac7eb4fd9e7b33ae1fb82e6cc3465cbce26",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
