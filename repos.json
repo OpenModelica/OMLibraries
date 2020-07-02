@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "6954d663c443e6f3140a077051635473f8f820f6",
+          "rev": "7fdb25fa40bf69b0305cdecde4bc1ed088b59605",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e3188ac7eb4fd9e7b33ae1fb82e6cc3465cbce26",
+      "rev": "16113a2d9166fbb7c0360c1df65e7986a6cfcc54",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
