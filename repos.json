@@ -690,7 +690,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "fad7348c3ee4dae4cf0d762e3153c1336f4e0878",
+          "rev": "a3abb8038a32463cb6f1794e5fcdb1fc6065113f",
           "targets": [
             "Complex",
             "Modelica",
@@ -706,7 +706,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "9fdd1955f38b78c2cf0690ebb785940ed5bf40e0",
+          "rev": "6c0c18aa4dce895869cbb9e454d7a46af21da0fd",
           "targets": [
             "Complex",
             "Modelica",
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "7fdb25fa40bf69b0305cdecde4bc1ed088b59605",
+          "rev": "c02914a8a186d5ce244cc8322acefe38c286e720",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -992,7 +992,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b9b950475c5840c9f7aa76ef67e82e0250d24506",
+      "rev": "893d2108076f06fc44d763e5e545746326021f95",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
