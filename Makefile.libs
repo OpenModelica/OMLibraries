@@ -1,11 +1,11 @@
 .PHONY: ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BioChem BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC MEV ManualTracking ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 Modelica_Synchronous MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerGrids PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SiemensPower SolarTherm Soltermica Spot SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
-CORE_TARGET=$(BUILD_DIR)/20200706_192613.core
-ALL_TARGET=$(BUILD_DIR)/20200706_192613.all
+CORE_TARGET=$(BUILD_DIR)/20200708_192532.core
+ALL_TARGET=$(BUILD_DIR)/20200708_192532.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous SiemensPower ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=ADGenKinetics ADMSL AdvancedNoise AixLib AlgebraTestSuite Annex60 ApproxSpline BondGraph BondLib BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical ComplexLib ConPNlib DESLib DeployStructLib DisHeatLib DriveControl EMOTH ElectricalEnergyStorage ElectroMechanicalDrives ExtendedPetriNets ExternData ExternalMedia ExternalMemoryLib FCSys FMITest FailureModes FastBuildings FaultTriggering FeedDriveLibrary FractionalOrder FuzzyControl Greenhouses-Library HanserModelica HelmholtzMedia IdealizedContact IndustrialControlSystems InstantaneousSymmetricalComponents KeyWordIO LibRAS LinearMPC MEV ManualTracking ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaAdditions ModelicaBook ModelicaCompliance ModelicaDEVS ModelicaDFR ModelicaTutorials Modelica_LinearSystems2 Modelica_Requirements Modelica_StateGraph2 MotorcycleDynamics MultiPhaseMixtureMedia NCLib NeuralNetwork Noise ObjectStab OpenHydraulics OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerFlow PowerGrids PowerSystems PowerSystems-latest PraxisSimulationstechnik QSSFluidFlow RealTimeCoordinationLibrary SMEHV ScalableTestSuite Servomechanisms SolarTherm Soltermica Spot SystemDynamics ThermalSeparation VehicleInterfaces Wavelet WindPowerPlants XogenyTest ipsl modelica-flight msgpack-modelica netCDF-DataReader open-bldc-modelica openfdm pow_el
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20200706_192613
+TIMESTAMP=20200708_192532
 ADGenKinetics:
 	# Building git/ADGenKinetics
 	./checkout-git.sh 'git/ADGenKinetics' 'https://github.com/modelica-3rdparty/ADGenKinetics.git' 'master' '9bdfd968c5b85609956aa9929be8a6b8027b22cf'
@@ -115,12 +115,12 @@ BondLib:
 	echo 'Windows-1252' > "$(BUILD_DIR)/BondLib 2.3/package.encoding"
 BrineProp:
 	# Building git/BrineProp
-	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' '954ae654fe7a84177e6220465ed8af5d39628823'
-	test ! -d 'build//BrineProp 0.5.5'
-	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.5.5"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/BrineProp 0.5.5.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.5.5.license"
-	echo '0.5.5-15-g954ae65' > "$(BUILD_DIR)/BrineProp 0.5.5.last_change"
+	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' 'dc7132c714db67ecc7082b9e9f7f39bdb7f71633'
+	test ! -d 'build//BrineProp 0.5.6'
+	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.5.6"
+	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/BrineProp 0.5.6.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.5.6.license"
+	echo '0.5.6-20200707-155816~git~master' > "$(BUILD_DIR)/BrineProp 0.5.6.last_change"
 BuildSysPro:
 	# Building git/BuildSysPro
 	./checkout-git.sh 'git/BuildSysPro' 'https://github.com/EDF-TREE/BuildSysPro.git' 'master' 'b28fae1a1dda7377469f07ca7dce0d602ea69ad6'
@@ -606,28 +606,28 @@ Modelica:
 	echo 'modelica2' > "$(BUILD_DIR)/ObsoleteModelica3.license"
 	echo '3.2.2-20200423-103635~git~OM-maint-3.2.2' > "$(BUILD_DIR)/ObsoleteModelica3.last_change"
 	# Building git/Modelica
-	./checkout-git.sh 'git/Modelica' 'https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git' 'OM/maint/3.2.3' 'a3abb8038a32463cb6f1794e5fcdb1fc6065113f'
+	./checkout-git.sh 'git/Modelica' 'https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git' 'OM/maint/3.2.3' '0bb22933f585a849b71083df34310001a9d79438'
 	test ! -f 'build//Complex 3.2.3.mo'
 	cp -a 'git/Modelica/Complex.mo' "$(BUILD_DIR)/Complex 3.2.3.mo"
 	echo '' > "$(BUILD_DIR)/Complex 3.2.3.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/Complex 3.2.3.license"
-	echo '3.2.3-20200705-234045~git~OM-maint-3.2.3' > "$(BUILD_DIR)/Complex 3.2.3.last_change"
+	echo '3.2.3-20200707-234011~git~OM-maint-3.2.3' > "$(BUILD_DIR)/Complex 3.2.3.last_change"
 	test ! -d 'build//Modelica 3.2.3'
 	cp -a 'git/Modelica/Modelica' "$(BUILD_DIR)/Modelica 3.2.3"
 	echo 'Complex 3.2.3' >> "$(BUILD_DIR)/Modelica 3.2.3.uses"
 	echo 'ModelicaServices 3.2.3' >> "$(BUILD_DIR)/Modelica 3.2.3.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/Modelica 3.2.3.license"
-	echo '3.2.3-20200705-234045~git~OM-maint-3.2.3' > "$(BUILD_DIR)/Modelica 3.2.3.last_change"
+	echo '3.2.3-20200707-234011~git~OM-maint-3.2.3' > "$(BUILD_DIR)/Modelica 3.2.3.last_change"
 	test ! -d 'build//ModelicaServices 3.2.3'
 	cp -a 'git/Modelica/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 3.2.3"
 	echo > "$(BUILD_DIR)/ModelicaServices 3.2.3.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaServices 3.2.3.license"
-	echo '3.2.3-20200705-234045~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaServices 3.2.3.last_change"
+	echo '3.2.3-20200707-234011~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaServices 3.2.3.last_change"
 	test ! -d 'build//ModelicaTest 3.2.3'
 	cp -a 'git/Modelica/ModelicaTest' "$(BUILD_DIR)/ModelicaTest 3.2.3"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/ModelicaTest 3.2.3.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest 3.2.3.license"
-	echo '3.2.3-20200705-234045~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaTest 3.2.3.last_change"
+	echo '3.2.3-20200707-234011~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaTest 3.2.3.last_change"
 	# Building git/Modelica
 	./checkout-git.sh 'git/Modelica' 'https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git' 'OM/maint/4.0.x' '6c0c18aa4dce895869cbb9e454d7a46af21da0fd'
 	test ! -f 'build//Complex 4.0.0.mo'
@@ -787,12 +787,12 @@ Modelica_DeviceDrivers:
 	echo '2.0.0' > "$(BUILD_DIR)/Modelica_DeviceDrivers 2.0.0.last_change"
 Modelica_LinearSystems2:
 	# Building git/Modelica_LinearSystems2
-	./checkout-git.sh 'git/Modelica_LinearSystems2' 'https://github.com/modelica/Modelica_LinearSystems2.git' 'master' '16113a2d9166fbb7c0360c1df65e7986a6cfcc54'
+	./checkout-git.sh 'git/Modelica_LinearSystems2' 'https://github.com/modelica/Modelica_LinearSystems2.git' 'master' '7966b5f9a4654ac9882e2604f475e091795cc9b8'
 	test ! -d 'build//Modelica_LinearSystems2 2.4.0'
 	cp -a 'git/Modelica_LinearSystems2/Modelica_LinearSystems2' "$(BUILD_DIR)/Modelica_LinearSystems2 2.4.0"
 	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/Modelica_LinearSystems2 2.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.4.0.license"
-	echo '2.4.0-3-g16113a2' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.4.0.last_change"
+	echo '2.4.0-28-g7966b5f' > "$(BUILD_DIR)/Modelica_LinearSystems2 2.4.0.last_change"
 Modelica_Requirements:
 	# Building git/Modelica_Requirements
 	./checkout-git.sh 'git/Modelica_Requirements' 'https://github.com/modelica-3rdparty/Modelica_Requirements.git' 'master' 'a427b5cb7997e9036c577d219e6b8a5d0c28389a'

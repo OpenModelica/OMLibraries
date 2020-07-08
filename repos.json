@@ -202,7 +202,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "954ae654fe7a84177e6220465ed8af5d39628823",
+      "rev": "dc7132c714db67ecc7082b9e9f7f39bdb7f71633",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -690,7 +690,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "a3abb8038a32463cb6f1794e5fcdb1fc6065113f",
+          "rev": "0bb22933f585a849b71083df34310001a9d79438",
           "targets": [
             "Complex",
             "Modelica",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "16113a2d9166fbb7c0360c1df65e7986a6cfcc54",
+      "rev": "7966b5f9a4654ac9882e2604f475e091795cc9b8",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
