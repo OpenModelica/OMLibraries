@@ -413,7 +413,7 @@
         "gitbranch": "release",
         "license": "bsd3"
       },
-      "rev": "5d5e2018438cebdf4629792fbf6b34b5ec6de5af",
+      "rev": "e26cab7ab24baa6c17dccc22e1ffa09464a59711",
       "url": "https://github.com/christiankral/ElectroMechanicalDrives.git"
     },
     {
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "c02914a8a186d5ce244cc8322acefe38c286e720",
+          "rev": "5c2cbc21e4d26bab71b218e71a6453a157cbf885",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7966b5f9a4654ac9882e2604f475e091795cc9b8",
+      "rev": "3fd261a4021770c8205370586530d2521d5c13e6",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
