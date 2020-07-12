@@ -690,7 +690,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "0bb22933f585a849b71083df34310001a9d79438",
+          "rev": "52b8895e1e616c9d14e63118a82278a50473f688",
           "targets": [
             "Complex",
             "Modelica",
@@ -706,7 +706,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "6c0c18aa4dce895869cbb9e454d7a46af21da0fd",
+          "rev": "28ac04fc4a49c7a257215d24758d1f2ce28ec8d4",
           "targets": [
             "Complex",
             "Modelica",
