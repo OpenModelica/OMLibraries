@@ -832,7 +832,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3fd261a4021770c8205370586530d2521d5c13e6",
+      "rev": "03111e6838a25d4f5d3e7d78f1f9a3f9b5c5d66f",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -992,7 +992,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "78f4c7c79caa53a9ece35587a78f3553af9f8204",
+      "rev": "97d9111d2b1f5a16adfbaa6a589c09c5d74af919",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
