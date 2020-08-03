@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "3f5bf7e69040241c27a23dec04bf4c505cd301f1",
+          "rev": "2bdb589578ddb33d6477dbeb00aa5be9e2face77",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
