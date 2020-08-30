@@ -5,7 +5,7 @@
     "DEVLib 1",
     "DEVSLib 2.",
     "DymolaCommands 1.1",
-	"DymolaCommands 1.8",
+    "DymolaCommands 1.8",
     "ModelManagement 1.1.1",
     "ModeleObsoletes 2015.12",
     "DESLib 1",
@@ -138,7 +138,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e36816a2ef366162e7aba37d0a16319cd5e16db7",
+          "rev": "683de85e7b72022885457204e618076c337d742c",
           "targets": [
             "IBPSA latest"
           ]
@@ -227,7 +227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "52f64da91518996f65f2481783f164e2967038df",
+      "rev": "76ea850f8e8179de27600f1e3b16062105cf1672",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -238,7 +238,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "7d61ada14232c3bd4b94a9ae586a5a594ccd575a",
+          "rev": "c094d276c9e76f730b865b7a76fd783ebad0f278",
           "targets": [
             "Buildings latest"
           ]
@@ -529,7 +529,7 @@
         "gitbranch": "release",
         "license": "bsd3"
       },
-      "rev": "2713613502a20766404998fb8135e151dbf575fa",
+      "rev": "f2181bfcd51e943deb6a3b23b166df638f483990",
       "url": "https://github.com/christiankral/HanserModelica.git"
     },
     {
@@ -707,7 +707,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "28ac04fc4a49c7a257215d24758d1f2ce28ec8d4",
+          "rev": "5dbbc0ad0a8f9b244392a85aa502288386220539",
           "targets": [
             "Complex",
             "Modelica",
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "c19da2e8c2f80eca6781258f48788c24b620bb0d",
+          "rev": "4c275f9eacaf042fd442845667a75ef5c0888858",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -833,7 +833,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "754ad5fd7d901477d5c1e1a88a3fc8be2b89186e",
+      "rev": "af29739264858cacb1bad79a383333c9bddb038f",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -964,7 +964,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "49f2c3c723f91e78998f358c13bf8a558802c11c",
+      "rev": "fdce733fa9896091259adfcc9627327a355ab099",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -1104,7 +1104,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c107f32940592416dd49b01ebf93b374317c029b",
+      "rev": "04766a8eb39a8e8315fb55d7ec9e0e9050b16983",
       "targets": [
         "SolarTherm"
       ],
@@ -1140,7 +1140,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "770322afcc72ad745768ae371bc9e9dad1a79edc",
+      "rev": "ffa0495ba829ecab105be4bfb3b7652625ec9c03",
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
