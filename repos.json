@@ -415,7 +415,7 @@
         "no-dependencies": "ModelicaServices",
         "remove-files": "Resources/Library"
       },
-      "rev": "52b8895e1e616c9d14e63118a82278a50473f688",
+      "rev": "f0aae8e0f215543a48412c86b1182ce289afb863",
       "targets": [
         "Complex",
         "Modelica",
