@@ -138,7 +138,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a636da7b8f523f5d2be114e1ff798cdcd1f4ec0a",
+          "rev": "ff8ec1e2cccd08c5cacfe223a87d407d9ad868f5",
           "targets": [
             "IBPSA latest"
           ]
@@ -238,7 +238,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "361377912475de87b01babfeb66a9331f32e7d44",
+          "rev": "61cfd3362684e4052319b4c40c6d0660561c6980",
           "targets": [
             "Buildings latest"
           ]
@@ -1104,7 +1104,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04766a8eb39a8e8315fb55d7ec9e0e9050b16983",
+      "rev": "0dc31516f857ebf0e0ac49c7934887d9bfbcbed1",
       "targets": [
         "SolarTherm"
       ],
