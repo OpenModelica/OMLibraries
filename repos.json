@@ -649,7 +649,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04766a8eb39a8e8315fb55d7ec9e0e9050b16983",
+      "rev": "0dc31516f857ebf0e0ac49c7934887d9bfbcbed1",
       "targets": [
         "SolarTherm"
       ],
