@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "662c0eaafffc8c3e3c5f3f1008641d1cf51e14e3",
+          "rev": "c5e258e13c793858aae605866098901d4281ea95",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -825,7 +825,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "65ba8c307b7815daad3e29c02f88a14351b33b26",
+      "rev": "7b1e0f1185ae4f50d39cf4af4f0c481d38910ab1",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1104,7 +1104,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b97a61f03eca36a9c8fe64be64e7bbb05c22ba3",
+      "rev": "63542db3c15debd920240dafa3adcd961c662df3",
       "targets": [
         "SolarTherm"
       ],
