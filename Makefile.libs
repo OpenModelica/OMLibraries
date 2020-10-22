@@ -1,11 +1,11 @@
 .PHONY: AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BioChem BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_Synchronous MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20201021_190947.core
-ALL_TARGET=$(BUILD_DIR)/20201021_190947.all
+CORE_TARGET=$(BUILD_DIR)/20201022_190553.core
+ALL_TARGET=$(BUILD_DIR)/20201022_190553.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_LinearSystems2 Modelica_Requirements MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation VehicleInterfaces WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20201021_190947
+TIMESTAMP=20201022_190553
 AdvancedNoise:
 	# Building git/AdvancedNoise
 	./checkout-git.sh 'git/AdvancedNoise' 'https://github.com/modelica-3rdparty/AdvancedNoise.git' 'master' '3d5ee54b4086e5c29e7276a7b92d40a3237aed8c'
@@ -67,12 +67,12 @@ BondGraph:
 	echo '20131202-150206~git~master' > "$(BUILD_DIR)/BondGraph.last_change"
 BrineProp:
 	# Building git/BrineProp
-	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' 'dc7132c714db67ecc7082b9e9f7f39bdb7f71633'
+	./checkout-git.sh 'git/BrineProp' 'https://github.com/modelica-3rdparty/BrineProp.git' 'master' '4e6a1e5981ccf1156240d3e6ac32ef7b659816e5'
 	test ! -d 'build//BrineProp 0.5.6'
 	cp -a 'git/BrineProp/BrineProp' "$(BUILD_DIR)/BrineProp 0.5.6"
 	echo 'Modelica 3.2.3' >> "$(BUILD_DIR)/BrineProp 0.5.6.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/BrineProp 0.5.6.license"
-	echo '0.5.6-20200707-155816~git~master' > "$(BUILD_DIR)/BrineProp 0.5.6.last_change"
+	echo '0.5.6-20201022-003347~git~master' > "$(BUILD_DIR)/BrineProp 0.5.6.last_change"
 BuildSysPro:
 	# Building git/BuildSysPro
 	./checkout-git.sh 'git/BuildSysPro' 'https://github.com/EDF-TREE/BuildSysPro.git' 'v3.3.0' 'v3.3.0'
@@ -578,12 +578,12 @@ Servomechanisms:
 	echo '1.0-20181206-130737~git~master' > "$(BUILD_DIR)/Servomechanisms 1.0.last_change"
 SolarTherm:
 	# Building git/SolarTherm
-	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' '63542db3c15debd920240dafa3adcd961c662df3'
+	./checkout-git.sh 'git/SolarTherm' 'https://github.com/SolarTherm/SolarTherm.git' 'master' '620fbef9870e85c20475652a803f62093f07bb19'
 	test ! -d 'build//SolarTherm 0.2'
 	cp -a 'git/SolarTherm/SolarTherm' "$(BUILD_DIR)/SolarTherm 0.2"
 	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/SolarTherm 0.2.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/SolarTherm 0.2.license"
-	echo '0.2-20201021-124512~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
+	echo '0.2-20201022-025131~git~master' > "$(BUILD_DIR)/SolarTherm 0.2.last_change"
 Soltermica:
 	# Building git/Soltermica
 	./checkout-git.sh 'git/Soltermica' 'https://github.com/modelica-3rdparty/Soltermica.git' 'master' '9f7224bd89335f95dffe1ccdaa094df5a3279fdf'

@@ -149,7 +149,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dc7132c714db67ecc7082b9e9f7f39bdb7f71633",
+      "rev": "4e6a1e5981ccf1156240d3e6ac32ef7b659816e5",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -649,7 +649,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "63542db3c15debd920240dafa3adcd961c662df3",
+      "rev": "620fbef9870e85c20475652a803f62093f07bb19",
       "targets": [
         "SolarTherm"
       ],
