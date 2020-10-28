@@ -203,7 +203,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4e6a1e5981ccf1156240d3e6ac32ef7b659816e5",
+      "rev": "72ce188ca7b13fd163dad2178487ba9bbe84701b",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -227,7 +227,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d459c314d6b760132601df94acdf40f3425ba05f",
+      "rev": "267331f44b5bcc8b221eb3e6fc188142b957bdac",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -238,7 +238,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "45833064b7552d09b6d29273a1a296be4c38d4d8",
+          "rev": "df752ccbae4634b153e302578e17bdacf5460497",
           "targets": [
             "Buildings latest"
           ]
