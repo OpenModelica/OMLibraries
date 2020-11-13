@@ -139,7 +139,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f0e035f0932e2d913c24ff33cf7dfff3b839e7fc",
+          "rev": "443cb50b7ce58ac1585688b5de479fb98de274b1",
           "targets": [
             "IBPSA latest"
           ]
@@ -239,7 +239,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0dead434179c75f011b45ff804986e842d9bc712",
+          "rev": "536b2b95047638af0c84dc7e19e7fa36b10bbff0",
           "targets": [
             "Buildings latest"
           ]
@@ -380,7 +380,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "e525d93b42ab303d700f796c374342464ff8a8c5",
+      "rev": "c5175232b65fb94bc43fb0d25e07729c94ca1bc6",
       "url": "https://github.com/modelica-3rdparty/DisHeatLib.git"
     },
     {
@@ -431,7 +431,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1b3312f597596f2c27c3009178901fed037c308d",
+      "rev": "60e939f74f8811ee8c4165852277c32a05077777",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
