@@ -998,6 +998,14 @@
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
+      "dest": "PowerSysPro",
+      "options": {
+        "gitbranch": "master"
+      },
+      "rev": "9395a1c4a2eb6b2762bce186dcb2e343394de882",
+      "url": "https://bitbucket.org/simulage/powersyspro.git"
+    },
+    {
       "dest": "PowerSystems",
       "options": {
         "gitbranch": "release"
