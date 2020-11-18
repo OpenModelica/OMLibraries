@@ -692,7 +692,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "a68b2f3713bc3d9b7e426f30f49856ca40b40b9c",
+          "rev": "49fa705224172c1c61d306cdc54884e4c5b3283e",
           "targets": [
             "Complex",
             "Modelica",
@@ -708,7 +708,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "f9e843fec972279d60d46ad5a89d59db8ecda763",
+          "rev": "7e6701b6a5e880d0849bb7f36fd94d1ef7a78016",
           "targets": [
             "Complex",
             "Modelica",
@@ -727,7 +727,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "e451985dbc8aad78b184afbbb02beb1bee797034",
+          "rev": "204e801696f324cdc294a82c7ba47a6b16d8abbf",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -826,7 +826,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7b1e0f1185ae4f50d39cf4af4f0c481d38910ab1",
+      "rev": "37f768b9c4e3e74b309f38eecc3e0aee1ddeb222",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
