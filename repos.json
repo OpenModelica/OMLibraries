@@ -239,7 +239,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "aa5072987574081ed19a40d05654bcc69faae611",
+          "rev": "8bd84c7022680f7ebd21dd24994fa6a1ffcea91d",
           "targets": [
             "Buildings latest"
           ]
@@ -340,7 +340,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f42427bb77dda0c6eff5e8ffd48512847efeb552",
+      "rev": "662909b4d6690c43a0eb7ee205c884874369007d",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -431,7 +431,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "60e939f74f8811ee8c4165852277c32a05077777",
+      "rev": "972106e2e644f8701d34741425b7c7d95f5f0c33",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
