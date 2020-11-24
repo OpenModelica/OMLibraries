@@ -834,7 +834,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "53cfafbc9201e7b9de23d173fe679f2f70eea5ff",
+      "rev": "b470f535e64db2a26a74d154e78499388b18e9de",
       "url": "https://github.com/modelica/Modelica_LinearSystems2.git"
     },
     {
@@ -981,7 +981,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "26d9d3c588a2db9eb324ce5bb84cebbcb1856b35",
+      "rev": "232b56cd8426aaf5b147f845ee7a79c20711aa3c",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
