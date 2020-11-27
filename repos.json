@@ -340,7 +340,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "fa499cb69a3b9a72cd014d70cef355ec07c8954c",
+      "rev": "ddfd98057a7839091dd2c1f1b22034d61a18b128",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -727,7 +727,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "204e801696f324cdc294a82c7ba47a6b16d8abbf",
+          "rev": "edf0a7d289b407395d75cfacd9603d10423427b4",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -994,7 +994,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f51f4c4f0d13f3167b6670df2fb17520feaf3170",
+      "rev": "b8b3b23ae3c592221fd0493eb3fc9761e37570d1",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
