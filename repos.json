@@ -139,7 +139,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ec2e152df11d06e8a0d8ee62f0c4f15265a2addc",
+          "rev": "8de9437cd089d0eff3c6042c1f87b231cd48ee0d",
           "targets": [
             "IBPSA latest"
           ]
@@ -239,7 +239,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "0140a58109c5d5afa47b46e7e61a8681bb95e490",
+          "rev": "68fae85122621ee97a2abe80c5b1c70ceef70720",
           "targets": [
             "Buildings latest"
           ]
@@ -1002,7 +1002,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "13ca658f6a8a1e12590966d0de16fed70b922eed",
+      "rev": "b8f482ca2b3a72e73971c9fbb2ee5c94accdac71",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
