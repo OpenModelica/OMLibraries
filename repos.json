@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "68fae85122621ee97a2abe80c5b1c70ceef70720",
+          "rev": "b76b5b1eae3c5d6b7a5293fed0e3078a7dcc2a97",
           "targets": [
             "Buildings latest"
           ]
@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "128ad759a4daf4a31cb3e3f2cf36f8ae67da6987",
+      "rev": "c1dc3f61e9642406fc01395c31bfc2309961fc4b",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -1003,7 +1003,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b8f482ca2b3a72e73971c9fbb2ee5c94accdac71",
+      "rev": "f2d4668fbbc640f498bbb94a9edba014d6c03ac3",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
