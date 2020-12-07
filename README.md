@@ -49,4 +49,4 @@ sudo apt-get install omc
     ```
     Note that JSON doesn't allow comments, so delete all comments from the above examples.
 3. Create a pull request with your changes.
-4. Make sure you run the Hudson Job: OpenModelica_UPDATE_LIBRARIES to update the Makefiles
+4. One of the developers will then run the Hudson Job: OpenModelica_UPDATE_LIBRARIES to update the Makefiles
