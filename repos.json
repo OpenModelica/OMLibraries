@@ -473,7 +473,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2308191f123c6650c968ad767107330b06802fe0",
+      "rev": "5723deb73ba5338477ef078b9338fd532a6054b7",
       "url": "https://github.com/modelica-3rdparty/FailureModes.git"
     },
     {
@@ -539,7 +539,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "485491e5d0bf9aea8c68ee31aeeb6e979e0003c4",
+      "rev": "7f849592d3125cbc0624dee2749789cde87f7360",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -1003,7 +1003,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "190c1e6a19a844fe3de9b72a67a3ad15f5313d97",
+      "rev": "c3266392e1df6e05d4ba6bac90c4636f3e812d2b",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
