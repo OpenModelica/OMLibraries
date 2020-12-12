@@ -205,7 +205,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4d7c512b89a21863b273f25468149f543dbc24d6",
+      "rev": "8eea8b416c81fca4a6251bdb5a11f88a4fae3625",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -337,7 +337,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7f849592d3125cbc0624dee2749789cde87f7360",
+      "rev": "efa928d27903043f3b5ca40da9fc7f53911b6ba8",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
