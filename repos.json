@@ -539,7 +539,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "efa928d27903043f3b5ca40da9fc7f53911b6ba8",
+      "rev": "3b4a4bca94d388744b2d045344ea2f9b0b4d405b",
       "url": "https://github.com/modelica-3rdparty/HelmholtzMedia.git"
     },
     {
@@ -728,7 +728,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "edf0a7d289b407395d75cfacd9603d10423427b4",
+          "rev": "ede927f9f835bba6d49533a20a8133f7a0e84d96",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1003,7 +1003,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c3266392e1df6e05d4ba6bac90c4636f3e812d2b",
+      "rev": "8b4bc67394e27111890edfcc781900435daa294b",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
