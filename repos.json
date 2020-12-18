@@ -102,7 +102,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3d5ee54b4086e5c29e7276a7b92d40a3237aed8c",
+      "rev": "5ce57acd279dadd0d25b76a6b02d3f9e9d061246",
       "url": "https://github.com/modelica-3rdparty/AdvancedNoise.git"
     },
     {
@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "010ac56de3770548a1e829de1275612f34c2afc4",
+          "rev": "9c680a6da12197b4bef7ddd269f633a47c5657cd",
           "targets": [
             "Buildings latest"
           ]
@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "882e69d61653d2a97e8719eb7e3ff26c7192189f",
+      "rev": "1e56b77d8cd43269c0d3bcea900ace875ba689e1",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -966,7 +966,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "84d8f920354c9b16b6b0b0d93c1de2e33d47f1f5",
+      "rev": "4cb00611fa047f93f958fa7091710bae971306e4",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -1114,7 +1114,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "d3324b2a3a04ef22fb5598dab791bd8ea1d0584b",
+      "rev": "d80fc335d1fa5d1628c45c2e73204bcb8a614b21",
       "targets": [
         "SolarTherm"
       ],
