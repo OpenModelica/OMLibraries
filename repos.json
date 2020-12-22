@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "9c680a6da12197b4bef7ddd269f633a47c5657cd",
+          "rev": "c88bc146d7312663729932c0d6c161277afa9115",
           "targets": [
             "Buildings latest"
           ]
@@ -728,7 +728,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "ede927f9f835bba6d49533a20a8133f7a0e84d96",
+          "rev": "c3d9b6d7edb55c74de85497951d60f262a08aa6b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -966,7 +966,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "abaa31cfa1d5d0b2cf0045c9775831a2acfd18bb",
+      "rev": "66d3b7322c2aa3d3faeafdb533b2a4f2bfd5d8a1",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -982,7 +982,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "232b56cd8426aaf5b147f845ee7a79c20711aa3c",
+      "rev": "55224a9e76de8aa7f708236bd4d7dee624ecba50",
       "url": "https://github.com/dzimmer/PlanarMechanics.git"
     },
     {
