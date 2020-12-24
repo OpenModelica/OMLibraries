@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3eaeaf34c3c2546fe4018be498602216a3572d62",
+          "rev": "949fc8c0151e423cf1118cd27e61813f55851621",
           "targets": [
             "Buildings latest"
           ]
@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c4f09717374c983cf06a28fc20c4b9eccbaad2e4",
+      "rev": "e3a09a373e8150f23e4fb337c60a3931add0062d",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
