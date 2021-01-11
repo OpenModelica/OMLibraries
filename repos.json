@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "043d5f070bc7db7f0620f8bc84ce1fd3ee6051f6",
+          "rev": "033bfe632d0cde7d53b4e10e2fa43ba4d29cb696",
           "targets": [
             "Buildings latest"
           ]
@@ -966,7 +966,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c32ee1c5170b9b8b84976b22fbae1ede648e11bc",
+      "rev": "7ad2c9bb1ffec2bd0b27bd6139c9d252b873d089",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
