@@ -240,7 +240,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "033bfe632d0cde7d53b4e10e2fa43ba4d29cb696",
+          "rev": "d199dd7ee6cfbb23000f2fe58e4aa2acb13d9ca7",
           "targets": [
             "Buildings latest"
           ]
@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1534b18d8bae49d1da8ce5182fc4ecdd2e2f88e2",
+      "rev": "5f9c9428cb354a495d8dce0cd3cd2ee2d266a658",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -827,7 +827,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "00c448f1f13f4612ad6c1d75e61c8a25e053b179",
+      "rev": "42e56cfb432a7f4b44d87a7ba18b09298e0459c0",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -966,7 +966,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7ad2c9bb1ffec2bd0b27bd6139c9d252b873d089",
+      "rev": "c42f37fc884150110be5ef952581d9144a23b934",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -995,7 +995,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a9fc0f0fe7e8e42f7a29372581187afdad368930",
+      "rev": "f3710d2d6580ae8f4270a947a6103c332fa3d4b7",
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
