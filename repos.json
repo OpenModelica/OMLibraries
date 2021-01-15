@@ -341,7 +341,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5f9c9428cb354a495d8dce0cd3cd2ee2d266a658",
+      "rev": "c97d80f05a720109bd175f997ee3ba6a05180c79",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -728,7 +728,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "a9480f541fa133068ac5b20d9d45e1aedf838436",
+          "rev": "470cb32eb439a9d5b81462a00a2674b1d56f5761",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -966,7 +966,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c42f37fc884150110be5ef952581d9144a23b934",
+      "rev": "cdaf845b8407430f6166be967e3866fcaf34d5c2",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
