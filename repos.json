@@ -242,7 +242,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d199dd7ee6cfbb23000f2fe58e4aa2acb13d9ca7",
+          "rev": "ec8f3d298951167406141e0890389cac114f650f",
           "targets": [
             "Buildings latest"
           ]
@@ -343,7 +343,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7511c6c85534ebbdac6b9601b621742ff133e6d6",
+      "rev": "f39f774e6c94320923be43226f97716453ad4906",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -730,7 +730,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "a06e8d2e1bbace64cefebde3de3ae2ce5790f12e",
+          "rev": "26aa31ed486d6d82ed2f2a95a2c6be0c4cc6c063",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -829,7 +829,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "42e56cfb432a7f4b44d87a7ba18b09298e0459c0",
+      "rev": "450ae467f5f9804b5ecfce847c83053c0d62dca8",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
