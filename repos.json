@@ -1,6 +1,7 @@
 {
   "bad-uses": [
     "conversion default",
+    "Chemical 1.4.0-alpha5",
     "DataFiles 1.0",
     "DEVLib 1",
     "DEVSLib 2.",
@@ -9,6 +10,7 @@
     "ModelManagement 1.1.1",
     "ModeleObsoletes 2015.12",
     "Physiolibrary 3.0.0",
+    "Physiolibrary 3.0.0-alpha5",
     "DESLib 1",
     "DESLib73 1",
     "Interactive 2",
