@@ -441,7 +441,6 @@
           "targets": [
             "Complex",
             "Modelica",
-            "ModelicaReference none",
             "ModelicaServices",
             "ModelicaTest",
             "ObsoleteModelica4"
