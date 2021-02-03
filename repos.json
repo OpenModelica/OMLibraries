@@ -410,21 +410,43 @@
     {
       "core": true,
       "dest": "Modelica",
-      "options": {
-        "gitbranch": "OM/maint/3.2.3",
-        "intertrac": "m:",
-        "license": "bsd3",
-        "no-dependencies": "ModelicaServices",
-        "remove-files": "Resources/Library"
-      },
-      "rev": "20c65f87e4316fa4ebf0846dd6b9f3b21850a4d0",
-      "targets": [
-        "Complex",
-        "Modelica",
-        "ModelicaServices",
-        "ModelicaTest",
-        "ObsoleteModelica3",
-        "ModelicaReference none"
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "OM/maint/3.2.3",
+            "intertrac": "m:",
+            "license": "bsd3",
+            "no-dependencies": "ModelicaServices",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "20c65f87e4316fa4ebf0846dd6b9f3b21850a4d0",
+          "targets": [
+            "Complex",
+            "Modelica",
+            "ModelicaServices",
+            "ModelicaTest",
+            "ObsoleteModelica3",
+            "ModelicaReference none"
+          ]
+        },
+        {
+          "options": {
+            "gitbranch": "OM/maint/4.0.x",
+            "intertrac": "m:",
+            "license": "bsd3",
+            "no-dependencies": "ModelicaServices",
+            "remove-files": "Resources/Library"
+          },
+          "rev": "8e3a72594f0c3c2caddee7198cdf05ff4bdbb279",
+          "targets": [
+            "Complex",
+            "Modelica",
+            "ModelicaReference none",
+            "ModelicaServices",
+            "ModelicaTest",
+            "ObsoleteModelica4"
+          ]
+        },
       ],
       "url": "https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git"
     },
