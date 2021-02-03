@@ -446,7 +446,7 @@
             "ModelicaTest",
             "ObsoleteModelica4"
           ]
-        },
+        }
       ],
       "url": "https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git"
     },
