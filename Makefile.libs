@@ -1,11 +1,11 @@
 .PHONY: AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BioChem BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_Synchronous MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20210202_191559.core
-ALL_TARGET=$(BUILD_DIR)/20210202_191559.all
+CORE_TARGET=$(BUILD_DIR)/20210203_160730.core
+ALL_TARGET=$(BUILD_DIR)/20210203_160730.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_LinearSystems2 Modelica_Requirements MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation VehicleInterfaces WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20210202_191559
+TIMESTAMP=20210203_160730
 AdvancedNoise:
 	# Building git/AdvancedNoise
 	./checkout-git.sh 'git/AdvancedNoise' 'https://github.com/modelica-3rdparty/AdvancedNoise.git' 'master' '5ce57acd279dadd0d25b76a6b02d3f9e9d061246'
@@ -118,12 +118,12 @@ Buildings:
 	echo '7.0.0' > "$(BUILD_DIR)/Buildings 7.0.0.last_change"
 Chemical:
 	# Building git/Chemical
-	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '86b97a59d79d71a38136960c33bc948a44013b88'
+	./checkout-git.sh 'git/Chemical' 'https://github.com/modelica-3rdparty/Chemical.git' 'master' '547823bd46c929bf40a607f96fd105a9fe9971a0'
 	test ! -d 'build//Chemical 1.4.0'
 	cp -a 'git/Chemical/Chemical' "$(BUILD_DIR)/Chemical 1.4.0"
 	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/Chemical 1.4.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/Chemical 1.4.0.license"
-	echo '1.4.0-1-g86b97a5' > "$(BUILD_DIR)/Chemical 1.4.0.last_change"
+	echo '1.4.0-2-g547823b' > "$(BUILD_DIR)/Chemical 1.4.0.last_change"
 DeployStructLib:
 	# Building git/DeployStructLib
 	./checkout-git.sh 'git/DeployStructLib' 'https://github.com/modelica-3rdparty/DeployStructLib.git' 'v1.0' 'v1.0'
@@ -351,6 +351,34 @@ Modelica:
 	echo '' > "$(BUILD_DIR)/ModelicaReference.uses"
 	echo 'bsd3' > "$(BUILD_DIR)/ModelicaReference.license"
 	echo '20210129-004029~git~OM-maint-3.2.3' > "$(BUILD_DIR)/ModelicaReference.last_change"
+	# Building git/Modelica
+	./checkout-git.sh 'git/Modelica' 'https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary.git' 'OM/maint/4.0.x' 'c8bba005371fc19386e2f4cc73768ec90c356d8b'
+	test ! -f 'build//Complex 4.0.0.mo'
+	cp -a 'git/Modelica/Complex.mo' "$(BUILD_DIR)/Complex 4.0.0.mo"
+	echo '' > "$(BUILD_DIR)/Complex 4.0.0.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/Complex 4.0.0.license"
+	echo '4.0.0-14-gc8bba00' > "$(BUILD_DIR)/Complex 4.0.0.last_change"
+	test ! -d 'build//Modelica 4.0.0'
+	cp -a 'git/Modelica/Modelica' "$(BUILD_DIR)/Modelica 4.0.0"
+	echo 'Complex 4.0.0' >> "$(BUILD_DIR)/Modelica 4.0.0.uses"
+	echo 'ModelicaServices 4.0.0' >> "$(BUILD_DIR)/Modelica 4.0.0.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/Modelica 4.0.0.license"
+	echo '4.0.0-14-gc8bba00' > "$(BUILD_DIR)/Modelica 4.0.0.last_change"
+	test ! -d 'build//ModelicaServices 4.0.0'
+	cp -a 'git/Modelica/ModelicaServices' "$(BUILD_DIR)/ModelicaServices 4.0.0"
+	echo > "$(BUILD_DIR)/ModelicaServices 4.0.0.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/ModelicaServices 4.0.0.license"
+	echo '4.0.0-14-gc8bba00' > "$(BUILD_DIR)/ModelicaServices 4.0.0.last_change"
+	test ! -d 'build//ModelicaTest 4.0.0'
+	cp -a 'git/Modelica/ModelicaTest' "$(BUILD_DIR)/ModelicaTest 4.0.0"
+	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/ModelicaTest 4.0.0.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/ModelicaTest 4.0.0.license"
+	echo '4.0.0-14-gc8bba00' > "$(BUILD_DIR)/ModelicaTest 4.0.0.last_change"
+	test ! -f 'build//ObsoleteModelica4 4.0.0.mo'
+	cp -a 'git/Modelica/ObsoleteModelica4.mo' "$(BUILD_DIR)/ObsoleteModelica4 4.0.0.mo"
+	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/ObsoleteModelica4 4.0.0.uses"
+	echo 'bsd3' > "$(BUILD_DIR)/ObsoleteModelica4 4.0.0.license"
+	echo '4.0.0-14-gc8bba00' > "$(BUILD_DIR)/ObsoleteModelica4 4.0.0.last_change"
 Modelica-Arduino:
 	# Building git/Modelica-Arduino
 	./checkout-git.sh 'git/Modelica-Arduino' 'https://github.com/modelica-3rdparty/Modelica-Arduino.git' 'v0.1.0' 'v0.1.0'
@@ -538,7 +566,7 @@ PowerSystems:
 	./checkout-git.sh 'git/PowerSystems' 'https://github.com/modelica/PowerSystems.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//PowerSystems 1.0.0'
 	cp -a 'git/PowerSystems/PowerSystems' "$(BUILD_DIR)/PowerSystems 1.0.0"
-	echo '' > "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
+	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 1.0.0.license"
 	echo '1.0.0' > "$(BUILD_DIR)/PowerSystems 1.0.0.last_change"
 PowerSystems-latest:

@@ -205,7 +205,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "86b97a59d79d71a38136960c33bc948a44013b88",
+      "rev": "547823bd46c929bf40a607f96fd105a9fe9971a0",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -437,7 +437,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "8e3a72594f0c3c2caddee7198cdf05ff4bdbb279",
+          "rev": "c8bba005371fc19386e2f4cc73768ec90c356d8b",
           "targets": [
             "Complex",
             "Modelica",
