@@ -143,7 +143,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "fdd49a5fd0023d34df7969ff3e31531c9e884792",
+          "rev": "d1ee2f415d443f60437bf609840afbfa2dfcb829",
           "targets": [
             "IBPSA latest"
           ]
@@ -243,7 +243,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ec8f3d298951167406141e0890389cac114f650f",
+          "rev": "895a8dc11c40ee36d8cfbf09bc5cbd9caca65962",
           "targets": [
             "Buildings latest"
           ]
@@ -344,7 +344,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f39f774e6c94320923be43226f97716453ad4906",
+      "rev": "547823bd46c929bf40a607f96fd105a9fe9971a0",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -376,7 +376,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ef1faa77179742cc7d2b7694aa49d85380481585",
+      "rev": "8410fe9cef3dd245462677176d5dce86935a653b",
       "url": "https://github.com/modelica-3rdparty/DeployStructLib.git"
     },
     {
@@ -435,7 +435,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "2fb7395115cc109b29813876c0f606af3ab84ac3",
+      "rev": "50219b1f8f44b520676821c496917c0d3f6e8fb9",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
@@ -696,7 +696,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "4e1f9a2ad32885b2bd59ebe64c5e247ecd08138f",
+          "rev": "614a148f61c1ab5d6788d8c11197803132ec7c2f",
           "targets": [
             "Complex",
             "Modelica",
@@ -712,7 +712,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "8e3a72594f0c3c2caddee7198cdf05ff4bdbb279",
+          "rev": "34fe8cf3c7127ae09ca5f41e26b48fb6044e1e34",
           "targets": [
             "Complex",
             "Modelica",
@@ -731,7 +731,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "26aa31ed486d6d82ed2f2a95a2c6be0c4cc6c063",
+          "rev": "fcba7ae7f32b8c4fe1c8f5611fd27435c2907f06",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -969,7 +969,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "cdaf845b8407430f6166be967e3866fcaf34d5c2",
+      "rev": "0a27e7b7f892f20364f390d8f8b4c8930db6cff8",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
@@ -1006,7 +1006,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "04d6bb4759e06b3cdb6b3ec746d707b643878609",
+      "rev": "234760f297b7d736e28d4978692e1bd677a5a22d",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
