@@ -1077,7 +1077,7 @@
     {
       "dest": "ScalableTestGrids",
       "options": {
-        gitbranch": "master"
+        "gitbranch": "master"
       },
       "rev": "dd24cec3d274506e4faff2a8e17099c1daeca534",
       "url": "https://github.com/PowerGrids/ScalableTestGrids.git"
