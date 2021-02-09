@@ -113,9 +113,9 @@
       "multitarget": [
         {
           "options": {
-            "gitbranch": "master"
+            "gitbranch": "development"
           },
-          "rev": "b00e01d911e2e54e148f24e36ee387a8b457d89c"
+          "rev": "820326c668f2746857c70b309f747a2b3e173bdf"
         },
         {
           "options": {
@@ -1070,6 +1070,14 @@
       },
       "rev": "1a08480d778cf54934bc3ec080a838f28eb7f388",
       "url": "https://github.com/modelica-3rdparty/SMEHV.git"
+    },
+    {
+      "dest": "ScalableTestGrids",
+      "options": {
+        gitbranch": "master"
+      },
+      "rev": "dd24cec3d274506e4faff2a8e17099c1daeca534",
+      "url": "https://github.com/PowerGrids/ScalableTestGrids.git"
     },
     {
       "dest": "ScalableTestSuite",
