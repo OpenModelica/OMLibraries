@@ -115,7 +115,10 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "820326c668f2746857c70b309f747a2b3e173bdf"
+          "rev": "820326c668f2746857c70b309f747a2b3e173bdf",
+          "targets": [
+            "AixLib latest"
+          ]
         },
         {
           "options": {
