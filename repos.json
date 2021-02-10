@@ -146,7 +146,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d1ee2f415d443f60437bf609840afbfa2dfcb829",
+          "rev": "dc163e83874d8589b29ec5283e70ac02e6e662d0",
           "targets": [
             "IBPSA latest"
           ]
@@ -734,7 +734,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "8d987c4fe7834e608ca7af8bbd7cba592522a1e4",
+          "rev": "a28abaa9dc5aa54ff2a9403e96922f22623dc390",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -972,7 +972,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "a0cd6e2fe1645ce1a238cb8c05ebf134aedb1390",
+      "rev": "d01084467ea3808a7a508944c98acc9e688c39d3",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
