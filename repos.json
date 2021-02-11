@@ -347,7 +347,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "547823bd46c929bf40a607f96fd105a9fe9971a0",
+      "rev": "5645573fced862430b7b598b4d7ec1a39c7aa0fa",
       "url": "https://github.com/modelica-3rdparty/Chemical.git"
     },
     {
@@ -1079,7 +1079,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "dd24cec3d274506e4faff2a8e17099c1daeca534",
+      "rev": "054638e19aafaf7735770284908e7bc387840ce5",
       "url": "https://github.com/PowerGrids/ScalableTestGrids.git"
     },
     {
