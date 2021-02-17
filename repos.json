@@ -792,7 +792,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c288504483bb06690a50a91c11656ef047eef245",
+      "rev": "2df5410c5026fea72c8850ec728b56ba7e375c9e",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -972,7 +972,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7077bcff2328a3de8c290b133036cf5e457d4e3a",
+      "rev": "c01fc40e21747f03f81101bf91481bb56a19ec8a",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
