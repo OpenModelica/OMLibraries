@@ -1,11 +1,11 @@
 .PHONY: AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BioChem BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_Synchronous MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20210226_191140.core
-ALL_TARGET=$(BUILD_DIR)/20210226_191140.all
+CORE_TARGET=$(BUILD_DIR)/20210228_191139.core
+ALL_TARGET=$(BUILD_DIR)/20210228_191139.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl EMOTH ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_LinearSystems2 Modelica_Requirements MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation VehicleInterfaces WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20210226_191140
+TIMESTAMP=20210228_191139
 AdvancedNoise:
 	# Building git/AdvancedNoise
 	./checkout-git.sh 'git/AdvancedNoise' 'https://github.com/modelica-3rdparty/AdvancedNoise.git' 'master' '5ce57acd279dadd0d25b76a6b02d3f9e9d061246'
@@ -43,12 +43,12 @@ AlgebraTestSuite:
 	echo '20180128-224601~git~master' > "$(BUILD_DIR)/AlgebraTestSuite.last_change"
 ApproxSpline:
 	# Building git/ApproxSpline
-	./checkout-git.sh 'git/ApproxSpline' 'https://github.com/modelica-3rdparty/ApproxSpline.git' 'master' '9467974548607549a19db05ea66050286f370032'
-	test ! -d 'build//ApproxSpline 1.0.0'
-	cp -a 'git/ApproxSpline/ApproxSpline' "$(BUILD_DIR)/ApproxSpline 1.0.0"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/ApproxSpline 1.0.0.uses"
-	echo 'modelica2' > "$(BUILD_DIR)/ApproxSpline 1.0.0.license"
-	echo '1.0.0-20181110-103455~git~master' > "$(BUILD_DIR)/ApproxSpline 1.0.0.last_change"
+	./checkout-git.sh 'git/ApproxSpline' 'https://github.com/modelica-3rdparty/ApproxSpline.git' 'master' '28420f5c1a88c9cd069defbd8c05e4a78a090675'
+	test ! -d 'build//ApproxSpline 1.0.1'
+	cp -a 'git/ApproxSpline/ApproxSpline' "$(BUILD_DIR)/ApproxSpline 1.0.1"
+	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/ApproxSpline 1.0.1.uses"
+	echo 'modelica2' > "$(BUILD_DIR)/ApproxSpline 1.0.1.license"
+	echo '1.0.1-20210227-210712~git~master' > "$(BUILD_DIR)/ApproxSpline 1.0.1.last_change"
 BioChem:
 	# Building git/BioChem
 	./checkout-git.sh 'git/BioChem' 'https://github.com/OpenModelica/BioChem.git' 'v1.0.2' 'v1.0.2'
@@ -566,7 +566,7 @@ PowerSystems:
 	./checkout-git.sh 'git/PowerSystems' 'https://github.com/modelica/PowerSystems.git' 'v1.0.0' 'v1.0.0'
 	test ! -d 'build//PowerSystems 1.0.0'
 	cp -a 'git/PowerSystems/PowerSystems' "$(BUILD_DIR)/PowerSystems 1.0.0"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
+	echo '' > "$(BUILD_DIR)/PowerSystems 1.0.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems 1.0.0.license"
 	echo '1.0.0' > "$(BUILD_DIR)/PowerSystems 1.0.0.last_change"
 PowerSystems-latest:
@@ -574,7 +574,7 @@ PowerSystems-latest:
 	./checkout-git.sh 'git/PowerSystems-latest' 'https://github.com/modelica/PowerSystems.git' 'master' '7369976265a9d7b62097340aba5e463c62cc5061'
 	test ! -d 'build//PowerSystems latest'
 	cp -a 'git/PowerSystems-latest/PowerSystems' "$(BUILD_DIR)/PowerSystems latest"
-	echo 'Modelica 3.2.2' >> "$(BUILD_DIR)/PowerSystems latest.uses"
+	echo '' > "$(BUILD_DIR)/PowerSystems latest.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PowerSystems latest.license"
 	echo '20181227-194150~git~master' > "$(BUILD_DIR)/PowerSystems latest.last_change"
 RealTimeCoordinationLibrary:
