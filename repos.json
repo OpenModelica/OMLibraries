@@ -175,7 +175,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9467974548607549a19db05ea66050286f370032",
+      "rev": "28420f5c1a88c9cd069defbd8c05e4a78a090675",
       "url": "https://github.com/modelica-3rdparty/ApproxSpline.git"
     },
     {
@@ -438,7 +438,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "b6d9e0bd4dbbf5700729c6765ef7be04531c6251",
+      "rev": "3fb6e38b54e2fbe4855bcf368c58ba8f7b905c2f",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
