@@ -1289,11 +1289,26 @@
     },
     {
       "dest": "netCDF-DataReader",
-      "options": {
-        "gitbranch": "master",
-        "license": "lgpl2.1+"
-      },
-      "rev": "706ffafcc5a33f52217b4198f74242072e198803",
+      "multitarget": [
+        {
+          "options": {
+            "gitbranch": "master",
+            "license": "lgpl2.1+"
+          },
+          "rev": "1cf93e5b70cc591a36706d2114e0835c8e43dc7a",
+          "targets": [
+            "NcDataReader2 latest"
+          ]
+        },
+        {
+          "options": {
+            "gitbranch": "master",
+            "gittag": "v2.5.0",
+            "license": "lgpl2.1+"
+          },
+          "rev": "v2.5.0",
+        }
+      ],
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
     },
     {
