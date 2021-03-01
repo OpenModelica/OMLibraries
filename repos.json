@@ -1306,7 +1306,7 @@
             "gittag": "v2.5.0",
             "license": "lgpl2.1+"
           },
-          "rev": "v2.5.0",
+          "rev": "v2.5.0"
         }
       ],
       "url": "https://github.com/modelica-3rdparty/netCDF-DataReader.git"
