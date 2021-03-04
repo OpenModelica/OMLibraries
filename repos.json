@@ -115,7 +115,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "70245bb611015e1330f5e50c9cdc79cc1b41d82e",
+          "rev": "929a75e707069419389c4e3d8a57d5998fad9d86",
           "targets": [
             "AixLib latest"
           ]
@@ -246,7 +246,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c5e3e77004df9f5c5669301a202f0b6cd12d9182",
+          "rev": "3125086a63dfa113c126b1ba9cf1ab54d5828018",
           "targets": [
             "Buildings latest"
           ]
@@ -833,7 +833,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "450ae467f5f9804b5ecfce847c83053c0d62dca8",
+      "rev": "e9399ec3171e5ca7906ecd58564b17e78309ecea",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
