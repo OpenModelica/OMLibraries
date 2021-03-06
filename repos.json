@@ -211,7 +211,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "c2f564ae284726a2df6252a8561856691681572b",
+      "rev": "4d617fe67bc17986500352ee1d1ca8212241e9ca",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -246,7 +246,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2a1c1e583a0921c36dd1cb224abe33a19f40096b",
+          "rev": "d732ad284a9f22d057c746d6b82778fcb695af5b",
           "targets": [
             "Buildings latest"
           ]
@@ -980,7 +980,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "24b8cf389fa777667d0b1ad11999188d826ebf86",
+      "rev": "ae7c58e2a2f7c285822318d05a1a29f02d1528b5",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
