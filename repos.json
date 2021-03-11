@@ -246,7 +246,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a57b237de82ddc7a4cc720e1a0bddde7ab842408",
+          "rev": "a1cf11e9488d219ac9ca1c6ab490b7ba0dba4716",
           "targets": [
             "Buildings latest"
           ]
@@ -734,7 +734,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "b13bc4f826a15a6aaed938311175bce3c4adb878",
+          "rev": "75b7202f8f321f29470cedba3c1f20204cb449b3",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1009,7 +1009,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4fb6451e8954ad6dd28c825e61d3a46e6a21617c",
+      "rev": "df6c20dc49b4491dcc11dc26869f120313f37837",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
@@ -1128,7 +1128,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "0f0135df5dadd776bd553059213a67a21d306acd",
+      "rev": "46d8fe349318f7b8dfe0518b3bf4e8565fa9c53e",
       "targets": [
         "SolarTherm"
       ],
