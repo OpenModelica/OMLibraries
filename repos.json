@@ -151,7 +151,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4d617fe67bc17986500352ee1d1ca8212241e9ca",
+      "rev": "0aa80ed8c2fc609b10c17a174a395b4f6bb37e50",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -437,7 +437,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "34fe8cf3c7127ae09ca5f41e26b48fb6044e1e34",
+          "rev": "7d5ac1113ca72be3b66c0ba3ec898503db743d23",
           "targets": [
             "Complex",
             "Modelica",
