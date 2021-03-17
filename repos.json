@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "aa22d5e100fd76921484eb4f10021022be887d29",
+          "rev": "c4861a6071b364bf024ff59c28f54253f1ac6d89",
           "targets": [
             "IBPSA latest"
           ]
@@ -212,7 +212,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4d617fe67bc17986500352ee1d1ca8212241e9ca",
+      "rev": "0aa80ed8c2fc609b10c17a174a395b4f6bb37e50",
       "url": "https://github.com/modelica-3rdparty/BrineProp.git"
     },
     {
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "ce8128978fcb3c83abcd7c6f65e05e3c13187b4b",
+          "rev": "389704d4943280613b00a14314c73d65e1d75d7d",
           "targets": [
             "Buildings latest"
           ]
@@ -716,7 +716,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "34fe8cf3c7127ae09ca5f41e26b48fb6044e1e34",
+          "rev": "7d5ac1113ca72be3b66c0ba3ec898503db743d23",
           "targets": [
             "Complex",
             "Modelica",
@@ -735,7 +735,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "24e4ba17dbd623536896c2b72ca3947f40a24db8",
+          "rev": "0057d7b2503d2b006ae607f091afec034d096f1b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -981,7 +981,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ae7c58e2a2f7c285822318d05a1a29f02d1528b5",
+      "rev": "856a41222bc046dce3550535c5fd513fcbf71b8d",
       "url": "https://github.com/modelica-3rdparty/Physiomodel.git"
     },
     {
