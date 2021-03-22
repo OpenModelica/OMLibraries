@@ -793,7 +793,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "78ab453505e09b2286292f337cdfd28f2fcc0ff2",
+      "rev": "f95185981f36df8934e3a000f4af8b2402e666c6",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -948,7 +948,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "ab9b6b8527c0c78140365e7b105ae469d4954a64",
+      "rev": "059545d48dd9ceeccfa3b4e47689ec8dd334dcd8",
       "url": "https://github.com/lochel/PNlib.git"
     },
     {
