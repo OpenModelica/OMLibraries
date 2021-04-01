@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3a3cacd46464845293c7bfe18c83a620bb91eeba",
+          "rev": "413106b8339eeafbc6267ac37b7163ead7677dd1",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "947abac770e5265eefdd5e8b37c88cb13bc10e55",
+          "rev": "5512c64d923e4338e3f5cd0384fe90f18acbee87",
           "targets": [
             "Buildings latest"
           ]
@@ -793,7 +793,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f95185981f36df8934e3a000f4af8b2402e666c6",
+      "rev": "178ccdc3d61ec8ce96882bdfa6fd0c2f55bec470",
       "url": "https://github.com/xogeny/ModelicaBook.git"
     },
     {
@@ -973,7 +973,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "070c7d63d3d93de9affb504b633acbf8877abb9d",
+      "rev": "a24c870148560d859606deddd93b7db9d3f23657",
       "url": "https://github.com/MarekMatejak/Physiolibrary.git"
     },
     {
