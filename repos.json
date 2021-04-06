@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "f2581dda76a15fd1a97bdbd0533a5e27760f36e4",
+          "rev": "afcbeb3bca5a0e20d3ba8b462aeaec938ab7a4c0",
           "targets": [
             "IBPSA latest"
           ]
@@ -186,7 +186,7 @@
         "gitbranch": "master",
         "license": "mpl2"
       },
-      "rev": "850f2c486310e31fbb3ccec0e1f80e28b284c93a",
+      "rev": "517a9962647af914cd6d66a7e5385c911cac0742",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
