@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "bac2bffdc0c8c9699476e0f3e6dd5613557b99de",
+          "rev": "bb63e4a97fc6dd09a4c7e71c97a4eed645a137e2",
           "targets": [
             "IBPSA latest"
           ]
@@ -1010,7 +1010,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "785d947e4470762b90e5a8543c5fa9802b5f41f7",
+      "rev": "2dfe90d46f425f63cae22168c5cd1590e66c417e",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
