@@ -186,7 +186,7 @@
         "gitbranch": "master",
         "license": "mpl2"
       },
-      "rev": "517a9962647af914cd6d66a7e5385c911cac0742",
+      "rev": "70166071b0bf6ae24686add66aafc6156de5e4cf",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c2cf28c91074e74dd42f4a5d2ec5fabbadbc50c9",
+          "rev": "ac878bf784f7673a268870af6e72ea8b80459447",
           "targets": [
             "Buildings latest"
           ]
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "c31e3ca62c47dac04d7e3d811d14f33418536786",
+          "rev": "8e889991f913c395ed0b6bb80fe8fd366f29aaa6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
