@@ -81,7 +81,7 @@
     "PhotoVoltaics 1.3.0": "PhotoVoltaics 1.3.1",
     "PhotoVoltaics X.X.X": "PhotoVoltaics 1.1.1",
     "Physiolibrary 2.3.2": "Physiolibrary 2.3.2-beta",
-    "VehicleInterfaces 1.2.4": "Modelica 1.2.5"
+    "VehicleInterfaces 1.2.4": "VehicleInterfaces 1.2.5"
   },
   "repos": [
     {
@@ -232,15 +232,6 @@
       },
       "rev": "b7233fd97a92867bb4ec2c3647c7f7e888398644",
       "url": "https://github.com/AHaumer/DriveControl.git"
-    },
-    {
-      "dest": "EMOTH",
-      "options": {
-        "gitbranch": "release",
-        "license": "bsd3"
-      },
-      "rev": "fa890c8c2781f0c0b2f8efe955ed8a27875dd9ac",
-      "url": "https://github.com/AHaumer/EMOTH.git"
     },
     {
       "dest": "ElectroMechanicalDrives",
