@@ -401,15 +401,6 @@
       "url": "https://github.com/AHaumer/DriveControl.git"
     },
     {
-      "dest": "EMOTH",
-      "options": {
-        "gitbranch": "release",
-        "license": "bsd3"
-      },
-      "rev": "fa890c8c2781f0c0b2f8efe955ed8a27875dd9ac",
-      "url": "https://github.com/AHaumer/EMOTH.git"
-    },
-    {
       "dest": "ElectricalEnergyStorage",
       "options": {
         "gitbranch": "master"
