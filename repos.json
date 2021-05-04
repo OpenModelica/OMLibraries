@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "59cbf853446aace4dd5638adbbe6db9d10291834",
+          "rev": "ad8487ee07f1e254186709ada93b3d97f484a5a8",
           "targets": [
             "AixLib latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "12be0ec07915983e823f94644d972adad3a90f55",
+          "rev": "1667565b2aae3df5f1445bb6505dff9c8e094453",
           "targets": [
             "Buildings latest"
           ]
