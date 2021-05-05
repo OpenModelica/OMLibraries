@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "ad8487ee07f1e254186709ada93b3d97f484a5a8",
+          "rev": "498504e5db6430c363d845aeae50345f48b887e9",
           "targets": [
             "AixLib latest"
           ]
@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "510db83ecd58e9875b62c0f0f9016c3f2782a672",
+          "rev": "33da1663dea7a908fed1e893520686f01c3d4338",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "1667565b2aae3df5f1445bb6505dff9c8e094453",
+          "rev": "9c37781c84e1f72f557ffdb150fe08f174b3682e",
           "targets": [
             "Buildings latest"
           ]
@@ -438,7 +438,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "159518edd538b64e28cd70983a9cc47730323cc4",
+      "rev": "6138312c96142ff3c01190147e6277991bfa2fca",
       "url": "https://github.com/modelica/ExternalMedia.git"
     },
     {
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "8e889991f913c395ed0b6bb80fe8fd366f29aaa6",
+          "rev": "49d46c391a23d1e06daf6753fdf28ba02409a697",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
