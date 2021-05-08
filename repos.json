@@ -186,7 +186,7 @@
         "gitbranch": "master",
         "license": "mpl2"
       },
-      "rev": "70166071b0bf6ae24686add66aafc6156de5e4cf",
+      "rev": "73e66b7c8d7c1f0a5dd74633e9ef09755f68c987",
       "url": "https://github.com/OpenModelica/BioChem.git"
     },
     {
@@ -430,7 +430,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "f8528ad810279f827913f5c1be5f25d3fe07dcaf",
+      "rev": "4fbb699b6f528eb68f4c40354d318675ae8d883a",
       "url": "https://github.com/modelica-3rdparty/ExternData.git"
     },
     {
