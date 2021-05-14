@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "498504e5db6430c363d845aeae50345f48b887e9",
+          "rev": "9032894a453a07777b7acae4d13dd2c70dc537c5",
           "targets": [
             "AixLib latest"
           ]
@@ -236,7 +236,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "3990159a828178a8a2b66ab7b1ff2fdea64f249c",
+      "rev": "c3070d48015ee75c1577f349cb388a498bef7270",
       "url": "https://github.com/modelica-3rdparty/BuildingSystems.git"
     },
     {
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "2756426a773941ecdaa93bc11589f5f66206b575",
+          "rev": "b9e3fc301e6474f6bcf071f7539ce51b7d9b4558",
           "targets": [
             "Buildings latest"
           ]
