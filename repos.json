@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "d466a3841c89b59fd2f7cd437ac69f54b74338ad",
+          "rev": "78760851766e9203d4d35052b062b36afa919abe",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "b9e3fc301e6474f6bcf071f7539ce51b7d9b4558",
+          "rev": "97600b1e0351af229575a49fa60b5ae558763624",
           "targets": [
             "Buildings latest"
           ]
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "87cb5be20dd086657c4cc0c65386c4b419195522",
+          "rev": "bb75923c17eb7d600fe5d108284fbd9d6bcf34e6",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -1001,7 +1001,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "12f7e46b83649e6f0a1c9bd905cb6ede6ab0d0f5",
+      "rev": "057676b8949066e2a93981c8fdd015672c6c77e2",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
