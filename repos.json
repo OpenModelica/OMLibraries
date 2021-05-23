@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "11b3a98c16bfcafe1eedbb4dc164fd6e35dc6f2f",
+          "rev": "3b6d02a184f810b09a78e3b90dc2e34f2d97acc0",
           "targets": [
             "Buildings latest"
           ]
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "d4689260263bb50eb27d1c2cf6c157bc168b0fac",
+          "rev": "20f7e8387af482e1d1dec2644404e09eea963329",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
