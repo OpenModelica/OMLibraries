@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "0e9258336023e38a85e23f685d7dedf09ea6a415",
+          "rev": "789b1d46ea843b320d1bb0a744d6fe926c8b3934",
           "targets": [
             "AixLib latest"
           ]
@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "457215a39bcd5f5c41d53fe3e03f850c1505fa0a",
+          "rev": "df216974a0ed37449497784aa79618c76364a6e4",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "34b4bb945edc7b76a5e527145177da131c87515c",
+          "rev": "e7928f42bd5ffb85e960a7c354cf26c2d078c9d6",
           "targets": [
             "Buildings latest"
           ]
@@ -707,7 +707,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "9935aaaac273bda3d3b16ce4dd1ecbf4f057f93e",
+          "rev": "212e8dda0e198e06ef56e85f2f063d41d416b57e",
           "targets": [
             "Complex",
             "Modelica",
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "20f7e8387af482e1d1dec2644404e09eea963329",
+          "rev": "99ed65a3875c8608aa6d4a707de268096cec8b4b",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
