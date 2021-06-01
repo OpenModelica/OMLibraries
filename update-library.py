@@ -141,7 +141,9 @@ def checkLatest(repo, args):
         continue
       branch = options.get('gitbranch') or 'release'
       oldrev = r['rev']
-      newrev = subprocess.check_output('git ls-remote "%s" | grep \'refs/heads/%s$\' | cut -f1' % (repo['url'],branch), shell=True).strip()
+      output = subprocess.check_output('git ls-remote "%s" | grep \'refs/heads/%s$\' | cut -f1' % (repo['url'],branch), shell=True)
+      str = output.decode('utf-8')
+      newrev = str.strip()
       if oldrev == newrev:
         continue
       repo_no_multi = {'url':repo['url'], 'dest':repo['dest'], 'rev':r['rev'], 'options':options, 'targets':r.get('targets') or []}
@@ -205,7 +207,7 @@ def checkLatest(repo, args):
   else:
     options = repo.get('options') or {}
     intertrac = options.get('intertrac') or ''
-    svncmd = "svn --non-interactive --username anonymous"
+    svncmd = "svn --non-interactive --username anonymous --trust-server-cert-failures=unknown-ca,cn-mismatch,expired,not-yet-valid,other"
     # remoteurl = subprocess.check_output('%s info --xml "svn/%s" | xpath -q -e "/info/entry/repository/root/text()"' % (svncmd,repo['dest']), shell=True).strip()
     remoteurl = repo['url']
     oldrev = int(repo['rev'])
