@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "789b1d46ea843b320d1bb0a744d6fe926c8b3934",
+          "rev": "c672286ac067a335bedc5c86f224a10066d39eb5",
           "targets": [
             "AixLib latest"
           ]
@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "df216974a0ed37449497784aa79618c76364a6e4",
+          "rev": "915991fc97f8823ff171486fc9f8c204b084332d",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "e7928f42bd5ffb85e960a7c354cf26c2d078c9d6",
+          "rev": "b51613b88e416828762b0a4e093832f9c4c32281",
           "targets": [
             "Buildings latest"
           ]
@@ -726,7 +726,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "99ed65a3875c8608aa6d4a707de268096cec8b4b",
+          "rev": "c4e657ecec1a7922a9a01d9feefa4de6bf13d9bb",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
@@ -825,7 +825,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1fd841c47716a9f52fefedbf0074e5acd45776fc",
+      "rev": "a6921e6f677589b057783b8b75462c20b26d89dd",
       "url": "https://github.com/modelica/Modelica_DeviceDrivers.git"
     },
     {
@@ -1001,7 +1001,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "5ed560bf069fbd971e2cd6fce2e517523e5b33d5",
+      "rev": "1aa14db426215d24b8ea6c2160c3a5f1b79cb9a7",
       "url": "https://bitbucket.org/simulage/powersyspro.git"
     },
     {
