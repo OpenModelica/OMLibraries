@@ -337,7 +337,7 @@
             "gitbranch": "maint_7.0.x",
             "license": "buildings"
           },
-          "rev": "ca99d1303d59b9e2e2370b56d9d1813c2a296880"
+          "rev": "3b206727eb4477932aaba20510a4f10b0a9c5cae"
         }
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
