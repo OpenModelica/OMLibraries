@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "3caf1f150e5e62a9c636d54a31ba5e87963373bc",
+          "rev": "c4c4daf7b8d0c832bb7c2234042f8fdc59d32d03",
           "targets": [
             "Buildings latest"
           ]
@@ -337,7 +337,7 @@
             "gitbranch": "maint_7.0.x",
             "license": "buildings"
           },
-          "rev": "3b206727eb4477932aaba20510a4f10b0a9c5cae"
+          "rev": "b09ef282fd5671fb866166e99fa94f05f7b8c65c"
         }
       ],
       "url": "https://github.com/lbl-srg/modelica-buildings.git"
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "c4e657ecec1a7922a9a01d9feefa4de6bf13d9bb",
+          "rev": "9255c7e81727a634484fe894936b5e58cbbc498f",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
