@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "c672286ac067a335bedc5c86f224a10066d39eb5",
+          "rev": "c96c92b665eb28a7b3010f61745340311e868119",
           "targets": [
             "AixLib latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c4c4daf7b8d0c832bb7c2234042f8fdc59d32d03",
+          "rev": "5fa0bed0caa0f27b8ebfa20c1a39e22cdd0f5008",
           "targets": [
             "Buildings latest"
           ]
@@ -725,7 +725,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "70b8d579ced2d8d819eab39490d8e93ac721db06",
+          "rev": "250fdbddc9d5d48327b9eafafad40ae1caa9f704",
           "targets": [
             "Complex trunk",
             "Modelica trunk",
