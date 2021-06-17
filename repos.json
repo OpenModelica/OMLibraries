@@ -116,7 +116,7 @@
           "options": {
             "gitbranch": "development"
           },
-          "rev": "88fd51aa3866327d5d8159b9a27b017940822d60",
+          "rev": "a2b1e1ffbdd33b1bc6d9e7f06f9945db628bb441",
           "targets": [
             "AixLib latest"
           ]
@@ -147,7 +147,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "a1db589ae17684eba2202705320794c347b24bc1",
+          "rev": "27f929653c08448d790ba674fdffc006b7359d31",
           "targets": [
             "IBPSA latest"
           ]
@@ -247,7 +247,7 @@
             "gitbranch": "master",
             "license": "buildings"
           },
-          "rev": "c20cef01fca56977576718ac9abcac7e6241b7c7",
+          "rev": "d2b49d172ce7d8a43e9dd338e9c35513dbe0db43",
           "targets": [
             "Buildings latest"
           ]
