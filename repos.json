@@ -613,7 +613,6 @@
       "url": "https://github.com/PowerGrids/PowerGrids.git"
     },
     {
-      "core": true,
       "dest": "PowerSystems",
       "options": {
         "gittag": "v1.0.0"
