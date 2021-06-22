@@ -428,7 +428,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "c099207787496c959ad93e5edf346c52ca74ee39",
+          "rev": "cab27240a4a3ed4ea137226f056bbc0d79543f7a",
           "targets": [
             "Complex",
             "Modelica",
@@ -626,7 +626,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "7369976265a9d7b62097340aba5e463c62cc5061",
+      "rev": "7bd1de1258bf6761a6910279cb561919415046d1",
       "targets": [
         "PowerSystems latest"
       ],
