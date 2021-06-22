@@ -555,6 +555,7 @@
       "url": "https://github.com/modelica-3rdparty/Optimisers.git"
     },
     {
+      "core": true,
       "dest": "PNlib",
       "options": {
         "gitbranch": "master"
@@ -620,6 +621,7 @@
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
+      "core": true,
       "dest": "PowerSystems-latest",
       "options": {
         "gitbranch": "master"
@@ -678,6 +680,7 @@
       "url": "https://github.com/modelica-3rdparty/Soltermica.git"
     },
     {
+      "core": true,
       "dest": "SystemDynamics",
       "options": {
         "gitbranch": "master",
