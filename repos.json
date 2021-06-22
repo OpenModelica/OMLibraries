@@ -428,7 +428,7 @@
             "no-dependencies": "ModelicaServices",
             "remove-files": "Resources/Library"
           },
-          "rev": "212e8dda0e198e06ef56e85f2f063d41d416b57e",
+          "rev": "c099207787496c959ad93e5edf346c52ca74ee39",
           "targets": [
             "Complex",
             "Modelica",
@@ -703,7 +703,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "1dc16c2e782cfc8e05cac044d0566a68e86b50e3",
+      "rev": "650be2c8cbd5abc3535e92b865e509073afc8aeb",
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
