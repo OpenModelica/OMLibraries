@@ -626,7 +626,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "9b06ac7ef45ad8f31f4b9e6a4bed1d42d76c8931",
+      "rev": "78ae47f5ebac19f9600c5d694dc5b634be37dc18",
       "targets": [
         "PowerSystems latest"
       ],
@@ -665,7 +665,7 @@
       "options": {
         "gitbranch": "master"
       },
-      "rev": "4ea47798bf1e3c07766471c8c06778159a7888f8",
+      "rev": "85458de8e7f64e484c82e03031a9dbc434be26cc",
       "targets": [
         "SolarTherm"
       ],
