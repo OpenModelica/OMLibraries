@@ -1,11 +1,11 @@
 .PHONY: AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BioChem BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_DeviceDrivers Modelica_LinearSystems2 Modelica_Requirements Modelica_Synchronous MultiPhaseMixtureMedia OpenIPSL Optimisers PNlib PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems PowerSystems-latest RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica SystemDynamics ThermalSeparation ThermoPower ThermoSysPro VVDRlib VehicleInterfaces WasteWater WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
-CORE_TARGET=$(BUILD_DIR)/20210930_190700.core
-ALL_TARGET=$(BUILD_DIR)/20210930_190700.all
+CORE_TARGET=$(BUILD_DIR)/20211001_191033.core
+ALL_TARGET=$(BUILD_DIR)/20211001_191033.all
 CORE_LIBS=BioChem Modelica Modelica_DeviceDrivers Modelica_Synchronous PNlib PowerSystems-latest SystemDynamics ThermoPower ThermoSysPro VVDRlib WasteWater
 OTHER_LIBS=AdvancedNoise AixLib AlgebraTestSuite ApproxSpline BondGraph BrineProp BuildSysPro BuildingControlLib BuildingSystems Buildings Chemical DeployStructLib DisHeatLib DriveControl ElectroMechanicalDrives ExternData ExternalMedia ExternalMemoryLib FMITest FailureModes FaultTriggering FeedDriveLibrary FractionalOrder Greenhouses-Library HanserModelica HelmholtzMedia IBPSA IDEAS IndustrialControlSystems KeyWordIO LibRAS LinearMPC MEV ModPowerSystems Modelica-Arduino Modelica-GNU_ScientificLibrary Modelica-MVEM ModelicaADS ModelicaBook ModelicaCompliance ModelicaDFR Modelica_LinearSystems2 Modelica_Requirements MultiPhaseMixtureMedia OpenIPSL Optimisers PVSystems PhotoVoltaics Physiolibrary Physiomodel PlanarMechanics PowerGrids PowerSystems RealTimeCoordinationLibrary ScalableTestSuite Servomechanisms SolarTherm Soltermica ThermalSeparation VehicleInterfaces WindPowerPlants ipsl netCDF-DataReader open-bldc-modelica
 ALL_LIBS=$(CORE_LIBS) $(OTHER_LIBS)
 
-TIMESTAMP=20210930_190700
+TIMESTAMP=20211001_191033
 AdvancedNoise:
 	# Building git/AdvancedNoise
 	./checkout-git.sh 'git/AdvancedNoise' 'https://github.com/modelica-3rdparty/AdvancedNoise.git' 'master' '5ce57acd279dadd0d25b76a6b02d3f9e9d061246'
@@ -532,18 +532,18 @@ Physiomodel:
 	echo '1.0.0' > "$(BUILD_DIR)/Physiomodel 1.0.0.last_change"
 PlanarMechanics:
 	# Building git/PlanarMechanics
-	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' 'f0649e5fa3ead61973cb8acc3e851d7c2199b5b0'
+	./checkout-git.sh 'git/PlanarMechanics' 'https://github.com/dzimmer/PlanarMechanics.git' 'master' '4818bd6b35baad1fc40182e27e429b2038a21be8'
 	test ! -d 'build//PlanarMechanics 1.5.0'
 	cp -a 'git/PlanarMechanics/PlanarMechanics' "$(BUILD_DIR)/PlanarMechanics 1.5.0"
 	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/PlanarMechanics 1.5.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PlanarMechanics 1.5.0.license"
-	echo '1.5.0-23-gf0649e5' > "$(BUILD_DIR)/PlanarMechanics 1.5.0.last_change"
+	echo '1.5.0-44-g4818bd6' > "$(BUILD_DIR)/PlanarMechanics 1.5.0.last_change"
 	test ! -d 'build//PlanarMechanicsTest 1.5.0'
 	cp -a 'git/PlanarMechanics/PlanarMechanicsTest' "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0"
 	echo 'Modelica 4.0.0' >> "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0.uses"
 	echo 'PlanarMechanics 1.5.0' >> "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0.uses"
 	echo 'modelica2' > "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0.license"
-	echo '1.5.0-23-gf0649e5' > "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0.last_change"
+	echo '1.5.0-44-g4818bd6' > "$(BUILD_DIR)/PlanarMechanicsTest 1.5.0.last_change"
 PowerGrids:
 	# Building git/PowerGrids
 	./checkout-git.sh 'git/PowerGrids' 'https://github.com/PowerGrids/PowerGrids.git' 'v1.0.0' 'v1.0.0'
