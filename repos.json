@@ -496,7 +496,6 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDFR.git"
     },
     {
-      "core": true,
       "dest": "Modelica_DeviceDrivers",
       "options": {
         "gittag": "v1.8.2"
@@ -521,7 +520,6 @@
       "url": "https://github.com/modelica-3rdparty/Modelica_Requirements.git"
     },
     {
-      "core": true,
       "dest": "Modelica_Synchronous",
       "options": {
         "gitbranch": "master"
