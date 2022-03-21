@@ -128,7 +128,6 @@
       "url": "https://github.com/modelica-3rdparty/ApproxSpline.git"
     },
     {
-      "core": true,
       "dest": "BioChem",
       "options": {
         "gittag": "v1.0.2",
@@ -497,7 +496,6 @@
       "url": "https://github.com/modelica-3rdparty/ModelicaDFR.git"
     },
     {
-      "core": true,
       "dest": "Modelica_DeviceDrivers",
       "options": {
         "gittag": "v1.8.2"
@@ -522,7 +520,6 @@
       "url": "https://github.com/modelica-3rdparty/Modelica_Requirements.git"
     },
     {
-      "core": true,
       "dest": "Modelica_Synchronous",
       "options": {
         "gitbranch": "master"
@@ -555,7 +552,6 @@
       "url": "https://github.com/modelica-3rdparty/Optimisers.git"
     },
     {
-      "core": true,
       "dest": "PNlib",
       "options": {
         "gitbranch": "master"
@@ -621,7 +617,6 @@
       "url": "https://github.com/modelica/PowerSystems.git"
     },
     {
-      "core": true,
       "dest": "PowerSystems-latest",
       "options": {
         "gitbranch": "master"
@@ -680,7 +675,6 @@
       "url": "https://github.com/modelica-3rdparty/Soltermica.git"
     },
     {
-      "core": true,
       "dest": "SystemDynamics",
       "options": {
         "gitbranch": "master",
@@ -698,7 +692,6 @@
       "url": "https://github.com/thom-marx/ThermalSeparation.git"
     },
     {
-      "core": true,
       "dest": "ThermoPower",
       "options": {
         "gitbranch": "master"
@@ -707,7 +700,6 @@
       "url": "https://github.com/casella/ThermoPower.git"
     },
     {
-      "core": true,
       "dest": "ThermoSysPro",
       "multitarget": [
         {
@@ -726,7 +718,6 @@
       "url": "https://openmodelica.org/git/ThermoSysPro.git"
     },
     {
-      "core": true,
       "dest": "VVDRlib",
       "options": {
         "gitbranch": "master"
@@ -753,7 +744,6 @@
       "url": "https://github.com/modelica/VehicleInterfaces.git"
     },
     {
-      "core": true,
       "dest": "WasteWater",
       "options": {
         "gittag": "v2.1.0"
