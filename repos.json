@@ -701,21 +701,15 @@
     },
     {
       "dest": "ThermoSysPro",
-      "multitarget": [
-        {
-          "options": {
-            "gitbranch": "maint/3.1"
-          },
-          "rev": "db81ae1b5a6a85f6c6c7693244cafa6087e18ff5"
-        },
-        {
-          "options": {
-            "gitbranch": "master"
-          },
-          "rev": "5cef9acb4dedf8af6f4638a4448f08a544ebd30b"
-        }
+      "options": {
+        "gittag": "v3.2",
+        "license": "bsd3"
+      },
+      "rev": "v3.2",
+      "targets": [
+        "ThermoSysPro 3.2"
       ],
-      "url": "https://openmodelica.org/git/ThermoSysPro.git"
+      "url": "https://github.com/ThermoSysPro/ThermoSysPro/.git"
     },
     {
       "dest": "VVDRlib",
